@@ -1,5 +1,6 @@
 # python-notes
-Just notes from here and there.
+
+python is sweet :)
 
 ### 1 - List
 
