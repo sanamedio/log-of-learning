@@ -1,6 +1,6 @@
 # python-notes
 
-python is sweet :)
+python is sweet, gentle and elegant :)
 
 ### 1 - List
 
