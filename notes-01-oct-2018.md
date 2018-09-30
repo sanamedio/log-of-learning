@@ -51,7 +51,7 @@ print (list)
 
 Decorators in Python are used to modify or inject code in functions or classes. Using decorators, you can wrap a class or function method call so that a piece of code can be executed before or after the execution of the original code. Decorators can be used to check for permissions, modify or track the arguments passed to a method, logging the calls to a specific method, etc.
 
-```
+```python
 def my_decorator(func):
     def wrapper():
         print("Something is happening before the function is called.")
