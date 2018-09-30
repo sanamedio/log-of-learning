@@ -31,6 +31,15 @@ We use *args when we aren’t sure how many arguments are going to be passed to 
 \**kwargs is used when we don’t know how many keyword arguments will be passed to a function, or it can be used to pass the values of a dictionary as keyword arguments. The identifiers args and kwargs are a convention, you could also use *bob and \**billy but that would not be wise.
 
 ```python
+def myFun(arg1, *argv): 
+    print ("First argument :", arg1) 
+    for arg in argv: 
+        print("Next argument through *argv :", arg) 
+  
+myFun('Hello', 'Well', '2', 'SEe') 
+```
+
+```python
 def myFun(arg1, **kwargs):  
     for key, value in kwargs.items(): 
         print ("%s == %s" %(key, value)) 
