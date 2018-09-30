@@ -2,17 +2,17 @@
 Just notes from here and there.
 
 1. List
-```
+```python
 mylist  = [ x for x in range(3) ]
 ```
 
 2. Generator List
-```
+```python
 mygenerator = ( x for x in range(3) )
 ```
 
 3. Yeild list from function
-```
+```python
 def createGenerator()
   mylist = range(3)
   for i in mylist:
@@ -28,14 +28,14 @@ We use *args when we aren’t sure how many arguments are going to be passed to 
 
 
 5 Random Shuffle
-```
+```python
 from random import shuffle
 x = ['Keep', 'The', 'Blue', 'Flag', 'Flying', 'High']
 shuffle(x)
 print(x)
 ```
 6. List Sort
-```
+```python
 list = ["1", "4", "0", "6", "9"]
 list = [int(i) for i in list]
 list.sort()
