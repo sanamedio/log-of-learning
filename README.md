@@ -34,6 +34,12 @@ x = ['Keep', 'The', 'Blue', 'Flag', 'Flying', 'High']
 shuffle(x)
 print(x)
 ```
-
+6. List Sort
+```
+list = ["1", "4", "0", "6", "9"]
+list = [int(i) for i in list]
+list.sort()
+print (list)
+```
 
 
