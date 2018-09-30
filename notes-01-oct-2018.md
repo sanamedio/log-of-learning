@@ -72,4 +72,6 @@ def say_whee():
 
 say_whee = my_decorator(say_whee)
 ```
+### 8 - What is PEP 8?
 
+PEP 8 is a coding convention, a set of recommendation, about how to write your Python code more readable. 
