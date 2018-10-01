@@ -39,9 +39,9 @@ if __name__ == "__main__":
     print("Done!") 
 ```
 
-### 24 - __init__
+### 24 - \__init__
 
-"__init__" is a reseved method in python classes. It is known as a constructor in object oriented concepts. This method called when an object is created from the class and it allow the class to initialize the attributes of a class.
+"\__init\__" is a reseved method in python classes. It is known as a constructor in object oriented concepts. This method called when an object is created from the class and it allow the class to initialize the attributes of a class.
 
 ### 23 - self 
 
