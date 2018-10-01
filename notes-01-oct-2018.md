@@ -1,5 +1,14 @@
 # python-notes - 01-oct-2018
 
+### 46 - keywords
+
+and	def	False	import	not	True
+as	del	finally	in	or	try
+assert	elif	for	is	pass	while
+break	else	from	lambda	print	with
+class	except	global	None	raise	yield
+continue	exec	if	nonlocal	return
+
 ### 45 - help() and dir() 
 
 The help() function displays the documentation string and help for its argument.
