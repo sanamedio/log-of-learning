@@ -1,5 +1,41 @@
 # python-notes - 01-oct-2018
 
+### 51 - Bytecode for CPython
+```python
+>>> def f(x, y):                # line 1
+...    print("Hello")           # line 2
+...    if x:                    # line 3
+...       y += x                # line 4
+...    print(x, y)              # line 5
+...    return x+y               # line 6
+...                             # line 7
+>>> import dis                  # line 8
+>>> dis.dis(f)                  # line 9
+  2           0 LOAD_GLOBAL              0 (print)
+              2 LOAD_CONST               1 ('Hello')
+              4 CALL_FUNCTION            1
+              6 POP_TOP
+
+  3           8 LOAD_FAST                0 (x)
+             10 POP_JUMP_IF_FALSE       20
+
+  4          12 LOAD_FAST                1 (y)
+             14 LOAD_FAST                0 (x)
+             16 INPLACE_ADD
+             18 STORE_FAST               1 (y)
+
+  5     >>   20 LOAD_GLOBAL              0 (print)
+             22 LOAD_FAST                0 (x)
+             24 LOAD_FAST                1 (y)
+             26 CALL_FUNCTION            2
+             28 POP_TOP
+
+  6          30 LOAD_FAST                0 (x)
+             32 LOAD_FAST                1 (y)
+             34 BINARY_ADD
+36 RETURN_VALUE
+```
+
 ### 50 - flavours of python
 
 * CPython - The standard reference implementation from python.org
