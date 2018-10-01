@@ -14,6 +14,19 @@
 >>> foo()
 [1, 1, 1]
 ```
+Instead do this:
+
+```python
+>>> def foo(x=None):
+...     if x is None:
+...         x = []
+...     x.append(1)
+...     print x
+>>> foo()
+[1]
+>>> foo()
+[1]
+```
 
 ### 51 - Bytecode for CPython
 ```python
