@@ -121,8 +121,15 @@ Module importing is quite fast, but not instant. This means that:
 * This object (the class) is itself capable of creating objects (the instances), and this is why it's a class.
 
 ```python
-class ObjectCreator(object):
+class ObjectCreator(object): 
     pass
 print ObjectCreator()
 print ObjectCreator
+```
+### 14 - Monkey Patching
+
+* Modifying behaviour of something after it's already defined
+```python
+import datetime
+datetime.datetime.now = lambda: datetime.datetime(2012, 12, 12)
 ```
