@@ -1,5 +1,14 @@
 # python-notes - 01-oct-2018
 
+### 43 - list to tuple
+```python
+weekdays = ['sun','mon','tue','wed','thu','fri','sat']
+listAsTuple = tuple(weekdays)
+print(listAsTuple)
+
+#output: ('sun', 'mon', 'tue', 'wed', 'thu', 'fri', 'sat')
+```
+
 ### 42 - list to dict conversion
 ```python
 weekdays = ['sun','mon','tue','wed','thu','fri']
