@@ -1,5 +1,43 @@
 # python-notes - 01-oct-2018
 
+### 49 - exec() and eval()
+
+exec() is to execute code present as string whereas eval() is to evaluate expressions and get the value they evaluate to.
+
+```python
+>>> a = 5
+>>> eval('37 + a')   # it is an expression
+42
+>>> exec('37 + a')   # it is an expression statement; value is ignored (None is returned)
+>>> exec('a = 47')   # modify a global variable as a side effect
+>>> a
+47
+>>> eval('a = 47')  # you cannot evaluate a statement
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+  File "<string>", line 1
+    a = 47
+      ^
+SyntaxError: invalid syntax
+
+
+>>> program = '''
+for i in range(3):
+    print("Python is cool")
+'''
+>>> exec(program)
+Python is cool
+Python is cool
+Python is cool
+
+>>> a = 2
+>>> my_calculation = '42 * a'
+>>> result = eval(my_calculation)
+>>> result
+84
+
+```
+
 ### 48 - // % **
 ```python
 7//2 #3
