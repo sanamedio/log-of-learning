@@ -1,5 +1,12 @@
 # python-notes - 01-oct-2018
 
+### 48 - // % **
+```python
+7//2 #3
+2**10 #1024
+3.5%1.5 #0.5 
+```
+
 ### 47 - lstrip, rstrip, strip
 
 Functions to remove left, right and both side whitespace
