@@ -1,8 +1,4 @@
-# python-notes
-
-python is sweet, gentle and elegant :)
-
-![alt text](https://imgs.xkcd.com/comics/python.png  "pysavage")
+# python-notes - 01-oct-2018
 
 
 ### 1 - List
