@@ -1,5 +1,14 @@
 # python-notes - 01-oct-2018
 
+### 42 - list to dict conversion
+```python
+weekdays = ['sun','mon','tue','wed','thu','fri']
+listAsDict = dict(zip(weekdays[0::2], weekdays[1::2]))
+print(listAsDict)
+
+#output: {'sun': 'mon', 'thu': 'fri', 'tue': 'wed'}
+```
+
 ### 41 - deepcopy
 
 A deep copy copies an object into another. This means that if you make a change to a copy of an object. Shallow copy keeps internal references to the original object.
