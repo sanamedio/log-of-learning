@@ -299,6 +299,24 @@ def my_func(stuff):
 
 my_func = my_decorator(my_func)
 ```
+Another example:
+
+```python
+def decorator_sample(func):
+    def decorator_hook(*args, **kwargs):
+        print("Before the function call")
+        result = func(*args, **kwargs)
+        print("After the function call")
+        return result
+    return decorator_hook
+
+@decorator_sample
+def product(x, y):
+    "Function to multiply two numbers."
+    return x * y
+
+print(product(3, 3))
+```
 
 ### 14 - Monkey Patching
 
