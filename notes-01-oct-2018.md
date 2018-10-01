@@ -12,7 +12,7 @@
 Functions to remove left, right and both side whitespace
 
 ### 46 - keywords
-
+```python
 and					
 as					
 assert					
@@ -48,7 +48,7 @@ try
 while
 with
 yield
-
+```
 ### 45 - help() and dir() 
 
 The help() function displays the documentation string and help for its argument.
