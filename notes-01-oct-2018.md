@@ -38,10 +38,11 @@
 
 ### 50 - flavours of python
 
-* CPython - The standard reference implementation from python.org
-* PyPy - implementation of Python using the PyPy virtual machine
-* Cython - not a Python implementation at all but a library that lets you use C in your Python
-* Jython - an implementation of Python on the Java virtual machine
+* CPython - The standard reference implementation from python.org. CPython is the reference implementation of Python, written in C. It compiles Python code to intermediate bytecode which is then interpreted by a virtual machine. CPython provides the highest level of compatibility with Python packages and C extension modules.If you are writing open-source Python code and want to reach the widest possible audience, targeting CPython is best. To use packages which rely on C extensions to function, CPython is your only implementation option.All versions of the Python language are implemented in C because CPython is the reference implementation.
+
+* PyPy - Implementation of Python using the PyPy virtual machine. PyPy is a Python interpreter implemented in a restricted statically-typed subset of the Python language called RPython. The interpreter features a just-in-time compiler and supports multiple back-ends (C, CLI, JVM).PyPy aims for maximum compatibility with the reference CPython implementation while improving performance.If you are looking to increase performance of your Python code, it’s worth giving PyPy a try. On a suite of benchmarks, it’s currently over 5 times faster than CPython.
+
+* Jython - An implementation of Python on the Java virtual machine. Jython is a Python implementation that compiles Python code to Java bytecode which is then executed by the JVM (Java Virtual Machine). Additionally, it is able to import and use any Java class like a Python module.If you need to interface with an existing Java codebase or have other reasons to need to write Python code for the JVM, Jython is the best choice.
 
 ### 49 - exec() and eval()
 
