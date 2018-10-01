@@ -152,13 +152,13 @@ datetime.datetime.now = lambda: datetime.datetime(2012, 12, 12)
 ```
 ### 15 - Decorator with annotation
 
-```
+```python
 @my_decorator
 def my_func(stuff):
     do_things
 ```
 above code is equivalent to:
-```
+```python
 def my_func(stuff):
     do_things
 
