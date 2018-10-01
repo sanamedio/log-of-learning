@@ -1,5 +1,17 @@
 # python-notes - 01-oct-2018
- 
+
+### 28 - buildin datatypes
+
+Immutable built-in datatypes of Python
+* Numbers
+* Strings
+* Tuples
+
+Mutable built-in datatypes of Python
+* List
+* Dictionaries
+* Sets
+
 ### 27 - memory management
 
 * Python memory is managed by Python private heap space. All Python objects and data structures are located in a private heap. The programmer does not have an access to this private heap and interpreter takes care of this Python private heap.
