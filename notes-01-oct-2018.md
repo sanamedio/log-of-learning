@@ -99,6 +99,19 @@ def generate():
 
 print(next(generate()))
 ```
+another example:
+
+```python
+def testgen(index):
+  weekdays = ['sun','mon','tue','wed','thu','fri','sat']
+  yield weekdays[index]
+  yield weekdays[index+1]
+
+day = testgen(0)
+print next(day), next(day)
+
+#output: sun mon
+```
 
 ### 34 - Iterator and Iterable
 
