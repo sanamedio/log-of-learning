@@ -1,5 +1,23 @@
 # python-notes - 01-oct-2018
 
+### 26 - print in python 2|3
+
+It seems in python3 print is a function and not a keyword
+
+```python
+#python 2
+>>> p = print
+  File "<stdin>", line 1
+    p = print
+            ^
+SyntaxError: invalid syntax
+
+#python 3
+>>> p = print
+>>> p('hello')
+hello
+```
+
 ### 25 - multithreading
 
 ```python
