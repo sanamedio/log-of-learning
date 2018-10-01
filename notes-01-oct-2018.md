@@ -165,6 +165,7 @@ def my_func(stuff):
 my_func = my_decorator(my_func)
 ```
 ### 16 - Garbage collection in Python
+With respect to CPython
 
 * Python maintains a count of the number of references to each object in memory. If a reference count goes to zero then the associated object is no longer live and the memory allocated to that object can be freed up for something else
 * Occasionally things called "reference cycles" happen. The garbage collector periodically looks for these and cleans them up. An example would be if you have two objects o1 and o2 such that o1.x == o2 and o2.x == o1. If o1 and o2 are not referenced by anything else then they shouldn't be live. But each of them has a reference count of 1.
