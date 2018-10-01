@@ -1,5 +1,11 @@
 # python-notes - 01-oct-2018
 
+### 38 - inline conditional
+
+```python
+is_leap_year = "Yes" if no_of_days == 366 else "No"
+```
+
 ### 37 - dict comprehension
 
 ```python
