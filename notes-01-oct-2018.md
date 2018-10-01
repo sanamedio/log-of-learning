@@ -112,3 +112,17 @@ Module importing is quite fast, but not instant. This means that:
 
 * Module import are cached everytime they are imported; so it does not go through the whole import process again
 * If import is inside a function; it's only imported when the function is run
+
+### 13 - Classes are objects in Python
+
+* While creating a class, a object of same is created.
+* This object can be passed as argument, assigned to variables, attributes can be added or deleted from it and all other stuff that is supported for objects.
+* Classes can be created dynamically.
+* This object (the class) is itself capable of creating objects (the instances), and this is why it's a class.
+
+```python
+class ObjectCreator(object):
+    pass
+print ObjectCreator()
+print ObjectCreator
+```
