@@ -1,5 +1,22 @@
 # python-notes - 01-oct-2018
 
+### 17 - Dynamic class creation
+
+```python
+def choose_class(name):
+    if name == 'foo':
+        class Foo(object):
+            pass
+        return Foo # return the class, not an instance
+    else:
+        class Bar(object):
+            pass
+        return Bar
+```
+```python
+MyShinyClass = type('MyShinyClass', (), {}) # returns a class object
+```
+
 ### 16 - Garbage collection in Python
 With respect to CPython
 
