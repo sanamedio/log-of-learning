@@ -42,9 +42,6 @@
 * PyPy - implementation of Python using the PyPy virtual machine
 * Cython - not a Python implementation at all but a library that lets you use C in your Python
 * Jython - an implementation of Python on the Java virtual machine
-* RPython - restricted Python, and uhh.... has something to do with PyPy; there's also a library called RPython, I believe, that's for interfacing Python with the R language
-* Stackless Python - another implementation with some of the same goals like PyPy
-* IronPython - an implementation of Python that runs on the .NET virtual machine
 
 ### 49 - exec() and eval()
 
