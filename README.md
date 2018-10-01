@@ -1,3 +1,3 @@
-# Why Python?
+# python-notes
 
-Cuz it's sweet, gentle and elegant.
+sweet, gentle and elegant :)
