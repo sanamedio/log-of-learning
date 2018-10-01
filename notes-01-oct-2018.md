@@ -101,4 +101,10 @@ def print_directory_contents(sPath):
         else:
             print(sChildPath)
 ```
+### 11 - Module import location in python code
+
+Module importing is quite fast, but not instant. This means that:
+
+* Putting the imports at the top of the module is fine, because it's a trivial cost that's only paid once.
+* Putting the imports within a function will cause calls to that function to take longer.
 
