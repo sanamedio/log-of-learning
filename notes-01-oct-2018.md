@@ -2,12 +2,41 @@
 
 ### 46 - keywords
 
-and	def	False	import	not	True
-as	del	finally	in	or	try
-assert	elif	for	is	pass	while
-break	else	from	lambda	print	with
-class	except	global	None	raise	yield
-continue	exec	if	nonlocal	return
+and					
+as					
+assert					
+break					
+class					
+continue				
+def
+del
+elif
+else
+except
+exec
+False
+finally
+for
+from
+global
+if
+import
+in
+is
+lambda
+None
+not
+nonlocal
+or
+pass
+print
+raise
+return
+True
+try
+while
+with
+yield
 
 ### 45 - help() and dir() 
 
