@@ -1,5 +1,25 @@
 # python-notes - 01-oct-2018
 
+### 20 - cout << x << y ...
+
+```python
+import sys
+
+class ostream:
+    def __init__(self, file):
+        self.file = file
+        
+    def __lshift__(self, obj):
+        self.file.write(str(obj));
+        return self
+
+cout = ostream(sys.stdout)
+cerr = ostream(sys.stderr)
+nl = '\n'
+
+cout << x << " " << y << nl
+```
+
 ### 19 - __name__ == "__main__"
 
 ```python
