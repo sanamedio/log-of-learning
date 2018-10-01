@@ -1,5 +1,15 @@
 # python-notes - 01-oct-2018
 
+### 41 - deepcopy
+
+A deep copy copies an object into another. This means that if you make a change to a copy of an object. Shallow copy keeps internal references to the original object.
+
+```python
+import copy
+b = copy.deepcopy(a)
+shallow_copy = copy.copy(a)
+```
+
 ### 40 - globals()
 
 ```python
