@@ -1,5 +1,19 @@
 # python-notes - 01-oct-2018
 
+### 35 - yield vs return
+
+```python
+# Simple Python function
+def fn():
+    return "Simple Python function."
+
+# Python Generator function
+def generate():
+    yield "Python Generator function."
+
+print(next(generate()))
+```
+
 ### 34 - Iterator and Iterable
 
 * The collection type like a list, tuple, dictionary, and set are all iterable objects whereas they are also iterable containers which return an iterator while traversing. 
