@@ -1,5 +1,16 @@
 # python-notes - 01-oct-2018
 
+### 39 - enumerate
+
+```python
+alist = ["apple","mango", "orange"] 
+astr = "banana"
+
+print(list(enumerate(alist)) )  
+# Move the starting index to two from zero
+print(list(enumerate(astr, 2)))
+```
+
 ### 38 - inline conditional
 
 ```python
