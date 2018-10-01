@@ -1,5 +1,12 @@
 # python-notes - 01-oct-2018
 
+### 30 - id()
+
+Inbuilt function to give a unique id which remains same during lifetime of the object. 
+```python
+id(object)
+```
+
 ### 29 - try except
 
 There are two optional clauses you can use in the try-except block.
