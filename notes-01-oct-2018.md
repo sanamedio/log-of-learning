@@ -1,5 +1,11 @@
 # python-notes - 01-oct-2018
 
+### 44 - ternary operator
+```python
+print("Hi") if a<b else print("Bye")
+
+mint=a if a<b else b
+```
 ### 43 - list to tuple
 ```python
 weekdays = ['sun','mon','tue','wed','thu','fri','sat']
