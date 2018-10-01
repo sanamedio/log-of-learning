@@ -1,5 +1,9 @@
 # python-notes - 01-oct-2018
 
+### 47 - lstrip, rstrip, strip
+
+Functions to remove left, right and both side whitespace
+
 ### 46 - keywords
 
 and					
