@@ -1,5 +1,32 @@
 # python-notes - 01-oct-2018
 
+### 32 - Inheritance
+
+```python
+class PC: # Base class
+    processor = "Xeon" # Common attribute
+    def set_processor(self, new_processor):
+        processor = new_processor
+
+class Desktop(PC): # Derived class
+    os = "Mac OS High Sierra" # Personalized attribute
+    ram = "32 GB"
+
+class Laptop(PC): # Derived class
+    os = "Windows 10 Pro 64" # Personalized attribute
+    ram = "16 GB"
+
+desk = Desktop()
+print(desk.processor, desk.os, desk.ram)
+
+lap = Laptop()
+print(lap.processor, lap.os, lap.ram)
+```
+
+### 31 - GIL
+
+Python supports GIL (the global interpreter lock) which is a mutex used to secure access to Python objects, synchronizing multiple threads from running the Python bytecodes at the same time.
+
 ### 30 - id()
 
 Inbuilt function to give a unique id which remains same during lifetime of the object. 
