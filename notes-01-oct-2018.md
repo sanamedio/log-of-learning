@@ -1,5 +1,16 @@
 # python-notes - 01-oct-2018
 
+### 22 - timing functions in python
+
+```python
+def timer(fn, *args):
+    import time
+    start = time.clock()
+    return fn(*args), time.clock() - start
+
+timer(max, range(1e6))
+```
+
 ### 21 - dict
 
 ```python
