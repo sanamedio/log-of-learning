@@ -1,5 +1,20 @@
 # python-notes - 01-oct-2018
 
+### 52 - Default argument initialization issue
+
+```python
+>>> def foo(x=[]):
+...     x.append(1)
+...     print x
+... 
+>>> foo()
+[1]
+>>> foo()
+[1, 1]
+>>> foo()
+[1, 1, 1]
+```
+
 ### 51 - Bytecode for CPython
 ```python
 >>> def f(x, y):                # line 1
