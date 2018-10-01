@@ -1,27 +1,118 @@
 # python-notes - 01-oct-2018
 
+### 16 - Garbage collection in Python
+With respect to CPython
 
-### 1 - List
+* Python maintains a count of the number of references to each object in memory. If a reference count goes to zero then the associated object is no longer live and the memory allocated to that object can be freed up for something else
+* Occasionally things called "reference cycles" happen. The garbage collector periodically looks for these and cleans them up. An example would be if you have two objects o1 and o2 such that o1.x == o2 and o2.x == o1. If o1 and o2 are not referenced by anything else then they shouldn't be live. But each of them has a reference count of 1.
+* Certain heuristics are used to speed up garbage collection. For example, recently created objects are more likely to be dead. As objects are created, the garbage collector assigns them to generations. Each object gets one generation, and younger generations are dealt with first.
+
+### 15 - Decorator with annotation
 
 ```python
-mylist  = [ x for x in range(3) ]
+@my_decorator
+def my_func(stuff):
+    do_things
+```
+above code is equivalent to:
+```python
+def my_func(stuff):
+    do_things
+
+my_func = my_decorator(my_func)
 ```
 
-### 2 - Generator List
+### 14 - Monkey Patching
 
+* Modifying behaviour of something after it's already defined
 ```python
-mygenerator = ( x for x in range(3) )
+import datetime
+datetime.datetime.now = lambda: datetime.datetime(2012, 12, 12)
 ```
 
-### 3 - Yeild list from function
+### 13 - Classes are objects in Python
+
+* While creating a class, a object of same is created.
+* This object can be passed as argument, assigned to variables, attributes can be added or deleted from it and all other stuff that is supported for objects.
+* Classes can be created dynamically.
+* This object (the class) is itself capable of creating objects (the instances), and this is why it's a class.
 
 ```python
-def createGenerator()
-  mylist = range(3)
-  for i in mylist:
-    yield i*i
+class ObjectCreator(object): 
+    pass
+print ObjectCreator()
+print ObjectCreator
+```
 
-mygenerator = createGenerator()
+### 12 - Module import caching
+
+* Module import are cached everytime they are imported; so it does not go through the whole import process again
+* If import is inside a function; it's only imported when the function is run
+
+### 11 - Module import location in python code
+
+Module importing is quite fast, but not instant. This means that:
+
+* Putting the imports at the top of the module is fine, because it's a trivial cost that's only paid once.
+* Putting the imports within a function will cause calls to that function to take longer.
+
+### 10 - Print directory listings recursively
+```python
+def print_directory_contents(sPath):
+    import os                                       
+    for sChild in os.listdir(sPath):                
+        sChildPath = os.path.join(sPath,sChild)
+        if os.path.isdir(sChildPath):
+            print_directory_contents(sChildPath)
+        else:
+            print(sChildPath)
+```
+
+### 9 - Counter
+```python
+from collections import Counter 
+c=Counter(['a','b','c','a','b','a']) 
+c
+```
+
+### 8 - What is PEP 8?
+
+PEP 8 is a coding convention, a set of recommendation, about how to write your Python code more readable. 
+
+### 7 - Decorators
+
+Decorators in Python are used to modify or inject code in functions or classes. Using decorators, you can wrap a class or function method call so that a piece of code can be executed before or after the execution of the original code. Decorators can be used to check for permissions, modify or track the arguments passed to a method, logging the calls to a specific method, etc.
+
+```python
+def my_decorator(func):
+    def wrapper():
+        print("Something is happening before the function is called.")
+        func()
+        print("Something is happening after the function is called.")
+    return wrapper
+
+def say_whee():
+    print("Whee!")
+
+say_whee = my_decorator(say_whee)
+```
+
+### 6 - List Sort
+
+```python
+list = ["1", "4", "0", "6", "9"]
+list = [int(i) for i in list]
+list.sort()
+print (list)
+```
+
+### 5 - Random Shuffle
+
+```python
+from random import shuffle
+x = ['Keep', 'The', 'Blue', 'Flag', 'Flying', 'High']
+shuffle(x)
+print(x)
 ```
 
 ### 4 - *args, \**kwargs 
@@ -64,111 +155,25 @@ f2(1,1,q="winning",**d)      # 1 1 () {'a': 7, 'q': 'winning', 'c': 9, 'b': 8}
 f2(1,2,*t,q="winning",**d)   # 1 2 (4, 5, 6) {'a': 7, 'q': 'winning', 'c': 9, 'b': 8} 
 ```
 
-### 5 - Random Shuffle
+### 3 - Yeild list from function
 
 ```python
-from random import shuffle
-x = ['Keep', 'The', 'Blue', 'Flag', 'Flying', 'High']
-shuffle(x)
-print(x)
+def createGenerator()
+  mylist = range(3)
+  for i in mylist:
+    yield i*i
+
+mygenerator = createGenerator()
 ```
-### 6 - List Sort
+
+### 2 - Generator List
 
 ```python
-list = ["1", "4", "0", "6", "9"]
-list = [int(i) for i in list]
-list.sort()
-print (list)
+mygenerator = ( x for x in range(3) )
 ```
-### 7 - Decorators
 
-Decorators in Python are used to modify or inject code in functions or classes. Using decorators, you can wrap a class or function method call so that a piece of code can be executed before or after the execution of the original code. Decorators can be used to check for permissions, modify or track the arguments passed to a method, logging the calls to a specific method, etc.
+### 1 - List
 
 ```python
-def my_decorator(func):
-    def wrapper():
-        print("Something is happening before the function is called.")
-        func()
-        print("Something is happening after the function is called.")
-    return wrapper
-
-def say_whee():
-    print("Whee!")
-
-say_whee = my_decorator(say_whee)
+mylist  = [ x for x in range(3) ]
 ```
-### 8 - What is PEP 8?
-
-PEP 8 is a coding convention, a set of recommendation, about how to write your Python code more readable. 
-
-### 9 - Counter
-```python
-from collections import Counter 
-c=Counter(['a','b','c','a','b','a']) 
-c
-```
-### 10 - Print directory listings recursively
-```python
-def print_directory_contents(sPath):
-    import os                                       
-    for sChild in os.listdir(sPath):                
-        sChildPath = os.path.join(sPath,sChild)
-        if os.path.isdir(sChildPath):
-            print_directory_contents(sChildPath)
-        else:
-            print(sChildPath)
-```
-### 11 - Module import location in python code
-
-Module importing is quite fast, but not instant. This means that:
-
-* Putting the imports at the top of the module is fine, because it's a trivial cost that's only paid once.
-* Putting the imports within a function will cause calls to that function to take longer.
-
-### 12 - Module import caching
-
-* Module import are cached everytime they are imported; so it does not go through the whole import process again
-* If import is inside a function; it's only imported when the function is run
-
-### 13 - Classes are objects in Python
-
-* While creating a class, a object of same is created.
-* This object can be passed as argument, assigned to variables, attributes can be added or deleted from it and all other stuff that is supported for objects.
-* Classes can be created dynamically.
-* This object (the class) is itself capable of creating objects (the instances), and this is why it's a class.
-
-```python
-class ObjectCreator(object): 
-    pass
-print ObjectCreator()
-print ObjectCreator
-```
-### 14 - Monkey Patching
-
-* Modifying behaviour of something after it's already defined
-```python
-import datetime
-datetime.datetime.now = lambda: datetime.datetime(2012, 12, 12)
-```
-### 15 - Decorator with annotation
-
-```python
-@my_decorator
-def my_func(stuff):
-    do_things
-```
-above code is equivalent to:
-```python
-def my_func(stuff):
-    do_things
-
-my_func = my_decorator(my_func)
-```
-### 16 - Garbage collection in Python
-With respect to CPython
-
-* Python maintains a count of the number of references to each object in memory. If a reference count goes to zero then the associated object is no longer live and the memory allocated to that object can be freed up for something else
-* Occasionally things called "reference cycles" happen. The garbage collector periodically looks for these and cleans them up. An example would be if you have two objects o1 and o2 such that o1.x == o2 and o2.x == o1. If o1 and o2 are not referenced by anything else then they shouldn't be live. But each of them has a reference count of 1.
-* Certain heuristics are used to speed up garbage collection. For example, recently created objects are more likely to be dead. As objects are created, the garbage collector assigns them to generations. Each object gets one generation, and younger generations are dealt with first.
-
-
