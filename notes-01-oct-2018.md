@@ -1,6 +1,6 @@
 # python-notes - 01-oct-2018
 
-### 28 - buildin datatypes
+### 28 - builtin datatypes
 
 Immutable built-in datatypes of Python
 * Numbers
