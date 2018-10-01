@@ -1,5 +1,12 @@
 # python-notes - 01-oct-2018
 
+### 37 - dict comprehension
+
+```python
+adict = {var:var**2 for var in range(10, 20)}
+print(adict)
+```
+
 ### 36 - closure
 
 ```python
