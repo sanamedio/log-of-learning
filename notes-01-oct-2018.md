@@ -1,5 +1,21 @@
 # python-notes - 01-oct-2018
 
+### 18 - Code in finally clause 
+
+The code in a finally clause does get executed after the try clause whether or not there is an exception, and even if sys.exit is called. However, the finally clause will not execute if execution never gets to it. This would happen regardless of the value of choice in the following: 
+
+```python
+try:
+    if choice:
+        while True:
+            pass
+    else:
+        print "Please pull the plug on your computer sometime soon..."
+        time.sleep(60 * 60 * 24 * 365 * 10000)
+finally:
+    print "Finally ..."
+```
+
 ### 17 - Dynamic class creation
 
 ```python
