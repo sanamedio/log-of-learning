@@ -1,5 +1,10 @@
 # python-notes - 01-oct-2018
 
+### 34 - Iterator and Iterable
+
+* The collection type like a list, tuple, dictionary, and set are all iterable objects whereas they are also iterable containers which return an iterator while traversing. 
+* Iterable is a interface or behaviour associated with a object whereas iterator is a object which can be used to interact with interable property of the object.
+
 ### 33 - Composition
 
 ```python
