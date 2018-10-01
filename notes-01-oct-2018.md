@@ -1,5 +1,11 @@
 # python-notes - 01-oct-2018
 
+### 45 - help() and dir() 
+
+The help() function displays the documentation string and help for its argument.
+
+The dir() function displays all the members of an object(any kind).
+
 ### 44 - ternary operator
 ```python
 print("Hi") if a<b else print("Bye")
