@@ -150,3 +150,18 @@ print ObjectCreator
 import datetime
 datetime.datetime.now = lambda: datetime.datetime(2012, 12, 12)
 ```
+### 15 - Decorator with annotation
+
+```
+@my_decorator
+def my_func(stuff):
+    do_things
+```
+above code is equivalent to:
+```
+def my_func(stuff):
+    do_things
+
+my_func = my_decorator(my_func)
+```
+
