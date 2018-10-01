@@ -1,5 +1,11 @@
 # python-notes - 01-oct-2018
 
+### 21 - dict
+
+```python
+dict(a=1, b=2, c=3, dee=4) 
+```    
+
 ### 20 - cout << x << y ...
 
 ```python
