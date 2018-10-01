@@ -1,5 +1,19 @@
 # python-notes - 01-oct-2018
 
+### 19 - __name__ == "__main__"
+
+```python
+# a.py
+import b
+```
+```python
+# b.py
+print "Hello World from %s!" % __name__
+
+if __name__ == '__main__':
+    print "Hello World again from %s!" % __name__
+```
+
 ### 18 - Code in finally clause 
 
 The code in a finally clause does get executed after the try clause whether or not there is an exception, and even if sys.exit is called. However, the finally clause will not execute if execution never gets to it. This would happen regardless of the value of choice in the following: 
