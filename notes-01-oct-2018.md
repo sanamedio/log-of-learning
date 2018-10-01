@@ -2,6 +2,9 @@
 
 python is sweet, gentle and elegant :)
 
+![alt text](https://imgs.xkcd.com/comics/python.png  "pysavage")
+
+
 ### 1 - List
 
 ```python
@@ -91,3 +94,5 @@ from collections import Counter
 c=Counter(['a','b','c','a','b','a']) 
 c
 ```
+
+
