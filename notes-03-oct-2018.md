@@ -1,5 +1,16 @@
 # python-notes - 03-oct-2018
 
+### 8 - Tree
+
+```python
+from collections import defaultdict
+def Tree():
+  return defaultdict(Tree)
+
+fs = Tree()
+fs['a']['b']['c']['d']='wtf'
+```
+
 ### 7 - versions 
 
 ```python
