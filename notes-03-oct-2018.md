@@ -1,5 +1,12 @@
 # python-notes - 03-oct-2018
 
+### 15 - 2d array correct initialization
+
+```python
+lst_2d = [[0] * 3 for i in xrange(3)]
+# lst_2d = [[0]*3]*3 is WRONG
+```
+
 ### 14 - string <> datetime
 
 ```python
