@@ -1,5 +1,20 @@
 # python-notes - 03-oct-2018
 
+### 9 - inspect to get call stack
+
+```python
+import inspect  # gives us access to the stack
+from datetime import datetime
+
+LOG = True  # set to False to suppress output
+
+def log(message):
+    if LOG:
+    	n = datetime.utcnow()
+    	f = inspect.stack()[1][3]
+        print("{} - {}: {}".format(n, f, message))
+```
+
 ### 8 - Tree
 
 ```python
