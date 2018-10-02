@@ -1,5 +1,12 @@
 # python-notes - 03-oct-2018
 
+### 11 - Index for loop
+
+```python
+for idx, val in enumerate(ints):
+    print idx, val
+```
+
 ### 10 - Datetime
 ```python
 import datetime
