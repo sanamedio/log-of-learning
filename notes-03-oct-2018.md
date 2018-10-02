@@ -25,3 +25,30 @@ output = subprocess.check_output(['ls', '-l'])
 import subprocess
 output = subprocess.call(['cd', '/'], shell=True)
 ```
+### 3 - pprint
+
+```python
+import pprint as pp
+animals = [{'animal': 'dog', 'legs': 4, 'breeds': ['Border Collie', 'Pit Bull', 'Huskie']}, {'animal': 'cat', 'legs': 4, 'breeds': ['Siamese', 'Persian', 'Sphynx']}]
+pp.pprint(animals, width=1)
+```
+
+### 4 - itertools groupby
+
+```python
+from itertools import groupby
+
+data = [
+    {'animal': 'dog', 'name': 'Roxie', 'age': 5},
+    {'animal': 'dog', 'name': 'Zeus', 'age': 6},
+    {'animal': 'dog', 'name': 'Spike', 'age': 9},
+    {'animal': 'dog', 'name': 'Scooby', 'age': 7},
+    {'animal': 'cat', 'name': 'Fluffy', 'age': 3},
+    {'animal': 'cat', 'name': 'Oreo', 'age': 5},
+    {'animal': 'cat', 'name': 'Bella', 'age': 4}   
+    ]
+
+for key, group in groupby(data, lambda x: x['animal']):
+    for thing in group:
+        print(thing['name'] + " is a " + key)
+```
