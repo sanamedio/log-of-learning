@@ -52,3 +52,23 @@ for key, group in groupby(data, lambda x: x['animal']):
     for thing in group:
         print(thing['name'] + " is a " + key)
 ```
+
+### 5 - Removes duplicates while maintaining order
+
+```python
+from collections import OrderedDict
+x = [1, 8, 4, 5, 5, 5, 8, 1, 8]
+list(OrderedDict.fromkeys(x))
+```
+### 6 - Python HTTP and SMTP servers
+
+```bash
+ python3 -m http.server
+ ```
+ ```bash
+ python -m SimpleHTTPServer
+ ```
+ ```bash
+ python -m smtpd -c DebuggingServer -n
+ ```
+ 
