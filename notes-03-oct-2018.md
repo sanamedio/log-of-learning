@@ -1,5 +1,17 @@
 # python-notes - 03-oct-2018
 
+### 16 - zip( \*iterable )
+
+```python
+>>> a=[[1,2,3],[4,5,6]]
+>>> zip(*a)
+    [(1, 4), (2, 5), (3, 6)]
+
+>>> d={"a":1,"b":2,"c":3}
+>>> zip(*d.iteritems())
+[('a', 'c', 'b'), (1, 3, 2)]
+```
+
 ### 15 - 2d array correct initialization
 
 ```python
