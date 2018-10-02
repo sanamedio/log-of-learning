@@ -13,7 +13,15 @@ if __name__ == '__main__':
 ```
 ### 2 - Calling external command in python
 
-```
+```python
 import subprocess
 subprocess.call(['mkdir', 'empty_folder'])
+```
+```python
+import subprocess
+output = subprocess.check_output(['ls', '-l'])
+```
+```python
+import subprocess
+output = subprocess.call(['cd', '/'], shell=True)
 ```
