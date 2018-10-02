@@ -1,5 +1,25 @@
 # python-notes - 03-oct-2018
 
+### 17 - list appending in python
+
+list in python is a variable length array which automatically resizes on appending if needed and give a linear time overall.
+
+```python
+def f(n):
+    l = []
+    for i in range(n):
+        l.append(i)
+    l.reverse()
+    return l
+
+# this is very slow compared to the one above
+def g(n):
+    l = []
+    for i in range(n):
+        l.insert(0, i)
+    return l
+```
+
 ### 16 - zip( \*iterable )
 
 ```python
