@@ -1,5 +1,14 @@
 # python-notes - 03-oct-2018
 
+### 13 - parallel iteration in two collections
+
+```python
+a = [1, 2, 3]
+b = [4, 5, 6]
+for (a_val, b_val) in zip(a, b):
+    print(a_val, b_val)
+```
+
 ### 12 - variable/attr exist  ?
 
 ```python
