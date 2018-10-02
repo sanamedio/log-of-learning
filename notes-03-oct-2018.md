@@ -11,3 +11,9 @@ def home():
 if __name__ == '__main__':
     app.run(debug=True)
 ```
+### 2 - Calling external command in python
+
+```
+import subprocess
+subprocess.call(['mkdir', 'empty_folder'])
+```
