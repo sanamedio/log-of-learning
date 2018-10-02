@@ -1,5 +1,20 @@
 # python-notes - 03-oct-2018
 
+### 12 - variable/attr exist  ?
+
+```python
+if 'myVar' in locals():
+    # myVar exists.
+```
+```python
+if 'myVar' in globals():
+    # myVar exists.
+```
+```python
+if hasattr(obj, 'attr_name'):
+    # obj.attr_name exists.
+```
+
 ### 11 - Index for loop
 
 ```python
