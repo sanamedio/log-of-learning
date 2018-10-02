@@ -1,5 +1,15 @@
 # python-notes - 03-oct-2018
 
+### 14 - string <> datetime
+
+```python
+from datetime import datetime
+
+date_obj = datetime.strptime('May 29 2015  2:45PM', '%B %d %Y %I:%M%p')
+
+date_string = date_obj.strftime('%B %d %Y %I:%M%p')
+```
+
 ### 13 - parallel iteration in two collections
 
 ```python
