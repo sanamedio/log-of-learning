@@ -6,7 +6,7 @@
 primes = {2, 3, 5, 7}
 odds = {1, 3, 5, 7, 9}
 
-union: items appearing in either
+# union: items appearing in either
 primes | odds      # with an operator
 primes.union(odds) # equivalently with a method
 
@@ -18,7 +18,7 @@ primes.intersection(odds) # equivalently with a method
 primes - odds           # with an operator
 primes.difference(odds) # equivalently with a method
 
- symmetric difference: items appearing in only one set
+# symmetric difference: items appearing in only one set
 primes ^ odds                     # with an operator
 primes.symmetric_difference(odds) # equivalently with a method
 ```
