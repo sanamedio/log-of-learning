@@ -1,5 +1,11 @@
 # python-notes - 03-oct-2018
 
+### 22 - types of errors
+
+* Syntax errors: Errors where the code is not valid Python (generally easy to fix)
+* Runtime errors: Errors where syntactically valid code fails to execute, perhaps due to invalid user input (sometimes easy to fix)
+* Semantic errors: Errors in logic: code executes without a problem, but the result is not what you expect (often very difficult to track-down and fix)
+
 ### 21 - lambda
 
 ```python
