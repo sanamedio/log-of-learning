@@ -1,6 +1,20 @@
 # python-notes - 03-oct-2018
 
+### 26 - Custom exceptions
+```python
+class MySpecialError(ValueError):
+    pass
 
+raise MySpecialError("here's the message")
+```
+
+```python
+try:
+    print("do something")
+    raise MySpecialError("[informative error message here]")
+except MySpecialError:
+    print("do something else")
+```
 
 ### 25 - Accessing Exception 
 
