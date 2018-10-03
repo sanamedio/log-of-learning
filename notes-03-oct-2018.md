@@ -1,5 +1,25 @@
 # python-notes - 03-oct-2018
 
+### 24 - Raising errors
+
+```python
+raise RuntimeError("my error message")
+```
+
+```python
+def fibonacci(N):
+    if N < 0:
+        raise ValueError("N must be non-negative")
+    L = []
+    a, b = 0, 1
+    while len(L) < N:
+        a, b = b, a + b
+        L.append(a)
+    return L
+
+fibonacci(-10)
+```
+
 ### 23 - try except
 
 ```python
