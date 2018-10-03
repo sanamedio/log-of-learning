@@ -1,5 +1,16 @@
 # python-notes - 03-oct-2018
 
+### 21 - lambda
+
+```python
+add = lambda x, y: x + y
+add(1, 2)
+```
+
+```python
+sorted(data, key=lambda item: item['first'])
+```
+
 ### 20 - data types and built-in data structures
 
 
