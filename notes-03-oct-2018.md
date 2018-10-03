@@ -1,5 +1,13 @@
 # python-notes - 03-oct-2018
 
+
+### 18 - as integer ratio
+
+```python
+x = 0.125
+x.as_integer_ratio()
+```
+
 ### 17 - list appending in python
 
 list in python is a variable length array which automatically resizes on appending if needed and give a linear time overall.
