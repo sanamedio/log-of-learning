@@ -1,5 +1,25 @@
 # python-notes - 03-oct-2018
 
+### 20 - data types and built-in data structures
+
+
+| Type |  Example |  Description |
+|-------|----------|------------------|
+| int  |	x = 1 	|   integers (i.e., whole numbers)|
+| float| 	x = 1.0 |	floating-point numbers (i.e., real numbers)|
+| complex | 	x = 1 + 2j |	Complex numbers (i.e., numbers with real and imaginary part)|
+| bool |	x = True |	Boolean: True/False values|
+| str |	x = 'abc' |	String: characters or text|
+| NoneType |	x = None |	Special object indicating nulls|
+
+| Type Name| 	Example | 	Description|
+|----------|------------|--------------|
+|list |	[1, 2, 3] |	Ordered collection|
+| tuple  |	(1, 2, 3) |	Immutable ordered collection| 
+| dict | 	{'a':1, 'b':2, 'c':3} |	Unordered (key,value) mapping |
+| set | 	{1, 2, 3} |	Unordered collection of unique values |
+
+
 ### 19 - set algebra
 
 ```python
