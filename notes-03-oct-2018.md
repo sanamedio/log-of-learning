@@ -1,5 +1,9 @@
 # python-notes - 03-oct-2018
 
+### 25 - Exceptions list
+
+TODO
+
 ### 24 - Raising errors
 
 ```python
