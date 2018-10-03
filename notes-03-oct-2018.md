@@ -8,6 +8,11 @@ x = 0.125
 x.as_integer_ratio()
 ```
 
+```python
+numerator, denominator = x.as_integer_ratio()
+print(numerator / denominator)
+```
+
 ### 17 - list appending in python
 
 list in python is a variable length array which automatically resizes on appending if needed and give a linear time overall.
