@@ -1,5 +1,22 @@
 # python-notes - 03-oct-2018
 
+### 27 - try except else finally
+
+```python
+try:
+    print("try something here")
+except:
+    print("this happens only if it fails")
+else:
+    print("this happens only if it succeeds")
+finally:
+    print("this happens no matter what")
+
+try something here
+this happens only if it succeeds
+this happens no matter what
+```
+
 ### 26 - Custom exceptions
 ```python
 class MySpecialError(ValueError):
