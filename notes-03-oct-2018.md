@@ -1,8 +1,16 @@
 # python-notes - 03-oct-2018
 
-### 25 - Exceptions list
 
-TODO
+
+### 25 - Accessing Exception 
+
+```python
+try:
+    x = 1 / 0
+except ZeroDivisionError as err:
+    print("Error class is:  ", type(err))
+    print("Error message is:", err)
+```
 
 ### 24 - Raising errors
 
