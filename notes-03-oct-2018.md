@@ -1,5 +1,31 @@
 # python-notes - 03-oct-2018
 
+### 23 - try except
+
+```python
+try:
+    print("let's try something:")
+    x = 1 / 0 # ZeroDivisionError
+except:
+    print("something bad happened!")
+```
+
+```python
+def safe_divide(a, b):
+    try:
+        return a / b
+    except:
+        return 1E100
+```
+
+```python
+def safe_divide(a, b):
+    try:
+        return a / b
+    except ZeroDivisionError:
+        return 1E100
+```
+
 ### 22 - types of errors
 
 * Syntax errors: Errors where the code is not valid Python (generally easy to fix)
