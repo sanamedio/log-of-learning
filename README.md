@@ -2,6 +2,6 @@
 
 sweet, gentle and elegant :)
 
-[01-oct-2018](./notes-01-oct-2018.md)
+[01-oct-2018 - 52 entries](./notes-01-oct-2018.md)
 
-[03-oct-2018](./notes-03-oct-2018.md)
+[03-oct-2018 - 27 entries](./notes-03-oct-2018.md)
