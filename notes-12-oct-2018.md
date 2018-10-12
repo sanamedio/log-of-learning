@@ -1,6 +1,9 @@
 # notes-12-oct-2018
 
+### 3 WSGI
 
+- Web Server Gateway Interface
+- Set of specs in Python to standardize interaction between Webserver and Web APP framework.
 
 ### 2 built-in help
 
