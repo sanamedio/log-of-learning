@@ -1,5 +1,22 @@
 # notes-12-oct-2018
 
+### 12 - nonlocal in python 3
+
+```python
+>>> def outside():
+        msg = "Outside!"
+        def inside():
+            nonlocal msg
+            msg = "Inside!"
+            print(msg)
+        inside()
+        print(msg)
+
+>>> outside()
+Inside!
+Inside!
+```
+
 ### 11 - loops implementation
 
 ```python
