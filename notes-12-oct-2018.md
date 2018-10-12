@@ -1,5 +1,28 @@
 # notes-12-oct-2018
 
+### 11 - loops implementation
+
+```python
+for element in iterable:
+    # do something with element
+```
+is actually
+```python
+# create an iterator object from that iterable
+iter_obj = iter(iterable)
+
+# infinite loop
+while True:
+    try:
+        # get the next item
+        element = next(iter_obj)
+        # do something with element
+    except StopIteration:
+        # if StopIteration is raised, break from loop
+        break
+```
+
+
 ### 10 - operator overloading
 
 ```python
