@@ -1,5 +1,15 @@
 # notes-12-oct-2018
 
+### 9 - issubclass
+
+```python
+# Output: True
+print(issubclass(list,object))
+
+# Output: True
+print(isinstance(5.5,object))
+```
+
 ### 8 - Inheritence
 
 ```python
