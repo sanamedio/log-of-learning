@@ -1,5 +1,11 @@
 # notes-12-oct-2018
 
+### 14 - actual print
+
+```python 
+print(*objects, sep=' ', end='\n', file=sys.stdout, flush=False)
+```
+
 ### 13 - dictionary from list and tuple
 
 ```python
