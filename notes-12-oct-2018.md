@@ -1,6 +1,21 @@
 # notes-12-oct-2018
 
-### 6 docstring
+### 7 - Constructors
+
+```python
+class ComplexNumber:
+    def __init__(self,r = 0,i = 0):
+        self.real = r
+        self.imag = i
+
+    def getData(self):
+        print("{0}+{1}j".format(self.real,self.imag))
+
+# Create a new ComplexNumber object
+c1 = ComplexNumber(2,3)
+```
+
+### 6 - docstring
 
 ```python
 class MyClass:
@@ -19,21 +34,21 @@ print(MyClass.func)
 print(MyClass.__doc__)
 ```
 
-### 5 __new__ vs __init__
+### 5 - __new__ vs __init__
 
 - https://stackoverflow.com/questions/4859129/python-and-python-c-api-new-versus-init
 
-### 4 C3 Linearization for Multiple Interitance
+### 4 - C3 Linearization for Multiple Interitance
 
 - https://en.wikipedia.org/wiki/C3_linearization
 - Class.mro()
 
-### 3 WSGI
+### 3 - WSGI
 
 - Web Server Gateway Interface
 - Set of specs in Python to standardize interaction between Webserver and Web APP framework.
 
-### 2 built-in help
+### 2 - built-in help
 
 ```python
 help(object)
