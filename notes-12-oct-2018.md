@@ -1,5 +1,14 @@
 # notes-12-oct-2018
 
+### 13 - dictionary from list and tuple
+
+```python
+dict([[1,2],[3,4]])
+{1: 2, 3: 4}
+>>> dict([(3,26),(4,44)])
+{3: 26, 4: 44}
+```
+
 ### 12 - nonlocal in python 3
 
 ```python
