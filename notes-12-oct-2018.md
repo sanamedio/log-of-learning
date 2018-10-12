@@ -4,6 +4,7 @@
 ### 4 C3 Linearization for Multiple Interitance
 
 - https://en.wikipedia.org/wiki/C3_linearization
+- Class.mro()
 
 ### 3 WSGI
 
