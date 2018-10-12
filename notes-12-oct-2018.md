@@ -4,6 +4,8 @@
 
 ```python 
 print(*objects, sep=' ', end='\n', file=sys.stdout, flush=False)
+
+print('Hello {name}, {greeting}'.format(greeting = 'Goodmorning', name = 'John'))
 ```
 
 ### 13 - dictionary from list and tuple
