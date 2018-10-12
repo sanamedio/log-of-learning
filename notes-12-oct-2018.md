@@ -1,5 +1,8 @@
 # notes-12-oct-2018
 
+### 5 __new__ vs __init__
+
+- https://stackoverflow.com/questions/4859129/python-and-python-c-api-new-versus-init
 
 ### 4 C3 Linearization for Multiple Interitance
 
