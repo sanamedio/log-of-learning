@@ -1,5 +1,24 @@
 # notes-12-oct-2018
 
+### 6 docstring
+
+```python
+class MyClass:
+	"This is my second class"
+	a = 10
+	def func(self):
+		print('Hello')
+
+# Output: 10
+print(MyClass.a)
+
+# Output: <function MyClass.func at 0x0000000003079BF8>
+print(MyClass.func)
+
+# Output: 'This is my second class'
+print(MyClass.__doc__)
+```
+
 ### 5 __new__ vs __init__
 
 - https://stackoverflow.com/questions/4859129/python-and-python-c-api-new-versus-init
