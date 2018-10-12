@@ -1,5 +1,10 @@
 # notes-12-oct-2018
 
+
+### 4 C3 Linearization for Multiple Interitance
+
+- https://en.wikipedia.org/wiki/C3_linearization
+
 ### 3 WSGI
 
 - Web Server Gateway Interface
