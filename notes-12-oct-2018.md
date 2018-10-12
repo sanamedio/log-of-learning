@@ -8,6 +8,7 @@
 help(object)
 dir(object)
 type(object)
+#object? ipython
 ```
 
 ### 1 - Celery
