@@ -11,7 +11,7 @@ print('Hello {name}, {greeting}'.format(greeting = 'Goodmorning', name = 'John')
 ### 13 - dictionary from list and tuple
 
 ```python
-dict([[1,2],[3,4]])
+>>> dict([[1,2],[3,4]])
 {1: 2, 3: 4}
 >>> dict([(3,26),(4,44)])
 {3: 26, 4: 44}
