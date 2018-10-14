@@ -1,5 +1,20 @@
 # 14-oct-2018
 
+### 22 - setting recursion limit in python
+
+```python
+import sys
+
+x=1001
+print(sys.getrecursionlimit())
+
+sys.setrecursionlimit(x)
+print(sys.getrecursionlimit())
+
+#1-> 1000
+#2-> 1001
+```
+
 ### 21 - zipping lists to dict
 
 ```python
