@@ -1,5 +1,16 @@
 # 14-oct-2018
 
+### 21 - zipping lists to dict
+
+```python
+t1 = (1, 2, 3)
+t2 = (10, 20, 30)
+
+print(dict (zip(t1,t2)))
+
+#-> {1: 10, 2: 20, 3: 30}
+```
+
 ### 20 - pygorithm module 
 
 ```python
