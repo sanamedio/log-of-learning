@@ -1,5 +1,19 @@
 # 14-oct-2018
 
+### 16 - Dictionary switch
+```python
+stdcalc = {
+	'sum': lambda x, y: x + y,
+	'subtract': lambda x, y: x - y
+}
+
+print(stdcalc['sum'](9,3))
+print(stdcalc['subtract'](9,3))
+
+#1-> 12
+#2-> 6
+```
+
 ### 15 - unpacking using splat operator
 ```python
 def test(x, y, z):
