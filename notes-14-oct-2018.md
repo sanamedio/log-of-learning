@@ -1,5 +1,14 @@
 # 14-oct-2018
 
+### 8 - Flattening list
+
+```python
+>>> a = [ [1,2] , [3,4] , [5,6] ]
+>>> import itertools 
+>>> list(itertools.chain.from_iterable(a))
+[1, 2, 3, 4, 5, 6]
+```
+
 ### 7 - Zipping lists
 
 ```python
