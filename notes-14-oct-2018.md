@@ -99,6 +99,7 @@ print(multiStr)
 1 2 3 4
 >>> result
 [1, 2, 3, 4]
+>>> x, y = map(int, raw_input().split()) 
 ```
 
 ### 8 - Flattening list
