@@ -1,5 +1,22 @@
 # 15-oct-2018
 
+### 10 - String formatting
+
+```python
+
+>>> "Hello, %s" % name
+>>> "%x" % errno
+>>> "%s %x" % ( name, errno )
+>>> "%(name)s, %(errno)x" % { "name" : name , "errno" : errno }
+
+>>> 'Hello, {}'.format(name)
+
+>>> 'Hey {name} 0x{errno:x} error '.format(name=name, errno=errno)
+
+>>> f'Hello, {name}!'
+>>> f'{5+5}'
+```
+
 ### 9 - var_ ( underscore after the name)
 
 - Avoid clashes with keywords, convention
