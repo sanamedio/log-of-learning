@@ -1,5 +1,15 @@
 # 15-oct-2018
 
+### 5 - wildcard imports and underscore
+
+```python
+>>> from my_module import *
+>>> external_func()
+23
+>>> _internal_func()
+NameError: "name '_internal_func' is not defined"
+```
+
 ### 4 - contextlib to create with interface, generator based
 
 ```python
