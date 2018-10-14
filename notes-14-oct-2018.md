@@ -1,5 +1,11 @@
 # 14-oct-2018
 
+### 28 - gdb + python :O
+
+- Python can be used inside gdb
+- Can interact with GDB functionality
+- https://undo.io/resources/presentations/cppcon-2015-greg-law-give-me-15-minutes-ill-change/
+
 ### 27 - Breakpoint in python interpreter
 
 ```python
