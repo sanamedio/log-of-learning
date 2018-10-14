@@ -1,5 +1,19 @@
 # 14-oct-2018
 
+### 18 - Switch case with system_dict
+```python
+def xswitch(x): 
+	return xswitch._system_dict.get(x, None) 
+
+xswitch._system_dict = {'files': 10, 'folders': 5, 'devices': 2}
+
+print(xswitch('default'))
+print(xswitch('devices'))
+
+#1-> None
+#2-> 2
+```
+
 ### 17 - Infinity in python
 ```python
 p_infinity = float('Inf') 
