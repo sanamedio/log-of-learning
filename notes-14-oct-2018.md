@@ -8,6 +8,12 @@ multiStr = "select * from multi_row \
 where row_id < 5"
 print(multiStr)
 ```
+or
+```python
+multiStr = """select * from multi_row 
+where row_id < 5"""
+print(multiStr)
+```
 
 ### 9 - Lambda and raw input
 
