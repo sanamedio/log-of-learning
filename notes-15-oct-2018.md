@@ -1,5 +1,24 @@
 # 15-oct-2018
 
+### 4 - contextlib to create with interface
+
+```python
+from contextlib import contextmanager
+
+@contextmanager
+def managed_file(name):
+  try:
+    f = open(name,'w')
+    yield f
+  finally:
+    f.close()
+
+>>> with managed_file('hello.txt') as f:
+      f.write('helloworld')
+      f.write('be now')
+```
+
+
 ### 3 - try except finally ~~ with
 
 ```python
