@@ -5,6 +5,7 @@
 - Python can be used inside gdb
 - Can interact with GDB functionality
 - We can do debugging in reverse using gdb
+- Core dump can be directly imported to GDB after seg fault
 - https://undo.io/resources/presentations/cppcon-2015-greg-law-give-me-15-minutes-ill-change/
 
 ### 27 - Breakpoint in python interpreter
