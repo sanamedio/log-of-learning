@@ -15,6 +15,36 @@ class Test:
 dir(Test())
 ```
 
+```python
+class ManglingTest:
+  def __init__(self):
+    self.__mangled = 'hello'
+    
+  def get_mangled(self):
+    return self.__mangled
+```
+
+```python
+class MangledMethod:
+  def __method(self):
+    return 42
+    
+  def call_it(self):
+    return self.__method()
+```
+
+```python
+_MangledGlobal__mangled = 23
+
+class MangledGlobal:
+  def test(self):
+    return __mangled
+
+>>> MangledGlobal().test()
+23
+```
+
+
 ### 5 - wildcard imports and underscore
 
 ```python
