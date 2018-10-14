@@ -22,7 +22,31 @@ coun = Counter(a=1, b=2, c=3, d=120, e=1, f=219)
 for letter, count in coun.most_common(3): 
     print('%s: %d' % (letter, count)) 
 ```
+```python
 
+# A Python program to demonstrate update() 
+from collections import Counter 
+coun = Counter() 
+  
+coun.update([1, 2, 3, 1, 2, 1, 1, 2]) 
+print(coun) 
+  
+coun.update([1, 2, 4]) 
+print(coun) 
+```
+
+```python
+
+# Python program to demonstrate that counts in  
+# Counter can be 0 and negative 
+from collections import Counter 
+  
+c1 = Counter(A=4,  B=3, C=10) 
+c2 = Counter(A=10, B=3, C=4) 
+  
+c1.subtract(c2) 
+print(c1) 
+```
 
 ### 24 - lambda, filter and reduce
 
