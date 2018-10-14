@@ -1,5 +1,22 @@
 # 14-oct-2018
 
+### 15 - unpacking using splat operator
+```python
+def test(x, y, z):
+	print(x, y, z)
+
+testDict = {'x': 1, 'y': 2, 'z': 3} 
+testList = [10, 20, 30]
+
+test(*testDict)
+test(**testDict)
+test(*testList)
+
+#1-> x y z
+#2-> 1 2 3
+#3-> 10 20 30
+```
+
 ### 14 - enumerate in python
 ```python
 testlist = [10, 20, 30]
