@@ -1,5 +1,16 @@
 # 14-oct-2018
 
+### 23 - list partitioning in python
+
+```python
+# Declaring the list geek 
+geek = ['Sun', 'Flowers', 'Peoples', 'Animals', 'Day', 'Night'] 
+  
+# In python 2.7, just remove the list keyword 
+partition = list(zip (*[iter(geek)] * 2)) 
+print (partition) 
+```
+
 ### 22 - setting recursion limit in python
 
 ```python
