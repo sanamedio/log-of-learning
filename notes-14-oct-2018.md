@@ -1,5 +1,14 @@
 # 14-oct-2018
 
+### 9 - Lambda and raw input
+
+```python
+>>> result = map(lambda x:int(x) ,raw_input().split())
+1 2 3 4
+>>> result
+[1, 2, 3, 4]
+```
+
 ### 8 - Flattening list
 
 ```python
