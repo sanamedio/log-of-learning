@@ -1,5 +1,16 @@
 # 14-oct-2018
 
+### 14 - enumerate in python
+```python
+testlist = [10, 20, 30]
+for i, value in enumerate(testlist):
+	print(i, ': ', value)
+
+#1-> 0 : 10
+#2-> 1 : 20
+#3-> 2 : 30
+```
+
 ### 13 - python version
 ```python
 import sys
