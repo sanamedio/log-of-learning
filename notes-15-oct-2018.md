@@ -1,5 +1,14 @@
 # 15-oct-2018
 
+### 7 __bam__ dunder bam
+
+```python
+class PrefixPostfixTest:
+  def __init__(self):
+    self.__bam__ = 42
+
+>>> PrefixPostfixTest().__bam__
+
 ### 6 - __baz is name-mangled by python interpreter
 
 - Happens both to methods and attributes
