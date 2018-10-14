@@ -1,5 +1,17 @@
 # 14-oct-2018
 
+### 7 - Zipping lists
+
+```python
+>>> for x, y in zip(list1,list2):
+...    print x, y
+...
+a p
+b q
+c r
+d s
+```
+
 ### 6 - Transposing matrix
 
 ```python
