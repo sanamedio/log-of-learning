@@ -1,5 +1,22 @@
 # 15-oct-2018
 
+### 3 - try except finally ~~ with
+
+```python
+some_lock = threading.Lock()
+
+#Harmful
+some_lock.acquire()
+try:
+  #Do something
+finally:
+  some_lock.release()
+
+#Better
+with some_lock:
+  #Do something
+```
+
 ### 2 - Context With
 
 ```python
