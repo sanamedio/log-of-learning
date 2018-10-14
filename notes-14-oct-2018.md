@@ -1,5 +1,11 @@
 # 14-oct-2018
 
+### 13 - python version
+```python
+import sys
+print sys.version
+```
+
 ### 12 - set comprehension
 ```python
 testSet = {i * 2 for i in xrange(10)}
