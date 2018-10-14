@@ -1,5 +1,10 @@
 # 14-oct-2018
 
+### 12 - set comprehension
+```python
+testSet = {i * 2 for i in xrange(10)}
+```
+
 ### 11 - underscore in interactive prompt
 
 ```python
