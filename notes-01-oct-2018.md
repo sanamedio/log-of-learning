@@ -1,4 +1,4 @@
-# python-notes - 01-oct-2018
+# 01-oct-2018
 
 ### 52 - Default argument initialization issue
 
