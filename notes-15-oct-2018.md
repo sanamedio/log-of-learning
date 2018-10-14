@@ -1,5 +1,17 @@
 # 15-oct-2018
 
+### 6 - __baz is name-mangled by python interpreter
+
+```python
+class Test:
+  def __init__(self):
+    self.foo = 11
+    self._bar = 23
+    self.__baz = 42
+
+dir(Test())
+```
+
 ### 5 - wildcard imports and underscore
 
 ```python
