@@ -1,5 +1,11 @@
 # 14-oct-2018
 
+### 20 - pygorithm module 
+
+```python
+from pygorithm.data_structures import stack 
+```
+
 ### 19 - list flattening using DFS
 
 ```python
