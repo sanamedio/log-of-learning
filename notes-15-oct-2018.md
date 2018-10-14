@@ -1,5 +1,9 @@
 # 15-oct-2018
 
+### 9 - var_ ( underscore after the name)
+
+- Avoid clashes with keywords, convention
+
 ### 8 - _ ( don't care about it, it's underscore)
 
 ```python
