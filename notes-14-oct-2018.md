@@ -1,7 +1,7 @@
 # 14-oct-2018
 
 ### 17 - Infinity in python
-```
+```python
 p_infinity = float('Inf') 
 n_infinity = float('-Inf')
 ```
