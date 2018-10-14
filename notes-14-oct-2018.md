@@ -1,5 +1,22 @@
 # 14-oct-2018
 
+### 29 - nonlocal vs global
+
+```python
+def outer():
+    x = "local"
+    
+    def inner():
+        nonlocal x
+        x = "nonlocal"
+        print("inner:", x)
+    
+    inner()
+    print("outer:", x)
+
+outer()
+```
+
 ### 28 - gdb + python + reverse debugging 
 
 - Python can be used inside gdb
