@@ -1,5 +1,16 @@
 # 14-oct-2018
 
+### 25 - Counters
+
+```python
+from collections import Counter 
+  
+coun = Counter(a=1, b=2, c=3) 
+print(coun) 
+  
+print(list(coun.elements())) 
+```
+
 
 ### 24 - lambda, filter and reduce
 
