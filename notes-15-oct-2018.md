@@ -1,6 +1,6 @@
 # 15-oct-2018
 
-### 4 - contextlib to create with interface
+### 4 - contextlib to create with interface, generator based
 
 ```python
 from contextlib import contextmanager
