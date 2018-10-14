@@ -2,6 +2,9 @@
 
 ### 6 - __baz is name-mangled by python interpreter
 
+- Happens both to methods and attributes
+- Probably helps in keeping clashes out of the class heirarchy tree
+
 ```python
 class Test:
   def __init__(self):
