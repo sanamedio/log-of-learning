@@ -1,5 +1,15 @@
 # 14-oct-2018
 
+### 11 - underscore in interactive prompt
+
+```python
+>>> 2 + 1
+3
+>>> _
+3
+>>> print _
+3
+```
 
 ### 10 - multiline string
 
