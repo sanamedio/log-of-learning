@@ -1,6 +1,27 @@
 # 15-oct-2018
 
-### 7 __bam__ dunder bam
+### 8 - _ ( don't care about it, it's underscore)
+
+```python
+for _ in range(10):
+  print _
+```
+
+```python
+color, _ , _ , mileage = car
+```
+
+```python
+>>> list()
+[]
+>>> _.append(1)
+>>> _.append(2)
+>>> _
+[1,2]
+```
+
+
+### 7 - __bam__ dunder bam
 
 ```python
 class PrefixPostfixTest:
