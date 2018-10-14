@@ -1,5 +1,20 @@
 # 14-oct-2018
 
+### 27 - Breakpoint in python interpreter
+
+```python
+$ gdb python
+(gdb) b bool_newbb
+Breakpoint 1 at 0x44812f: file Objects/boolobject.c, line 44.
+(gdb) r
+[GCC 6.3.1 20170109] on linux
+Type "help", "copyright", "credits" or "license" for more information.
+>>> a = bool(1)
+
+Breakpoint 1, bool_new (type=0x87a700 <PyBool_Type>, args=(1,), kwds=0x0) at Objects/boolobject.c:44
+44	{
+```
+
 ### 26 - ChainMap
 
 ```python
