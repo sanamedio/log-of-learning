@@ -1,4 +1,4 @@
-# python-notes - 03-oct-2018
+# 03-oct-2018
 
 ### 27 - try except else finally
 
