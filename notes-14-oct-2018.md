@@ -1,5 +1,14 @@
 # 14-oct-2018
 
+
+### 10 - multiline string
+
+```python
+multiStr = "select * from multi_row \
+where row_id < 5"
+print(multiStr)
+```
+
 ### 9 - Lambda and raw input
 
 ```python
