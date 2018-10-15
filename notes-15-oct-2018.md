@@ -3,8 +3,9 @@
 
 ### 16 - unpacking operator
 
-- * is the unpacking operator
-- putting * before a iterable, unpacks it
+- \* is the unpacking operator
+- putting \* before a iterable, unpacks it
+- \** unpacks the values from dicts
 
 ### 15 - metadata for decorator debugging
 
