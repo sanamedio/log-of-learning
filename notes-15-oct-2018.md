@@ -1,5 +1,24 @@
 # 15-oct-2018
 
+### 12 - making objects callable
+
+```python
+class Adder:
+  def __init__(self,n):
+    self.n = n
+    
+  def __call__(self, x ):
+    return self.n + x 
+
+>>> plus_3 = Adder(3)
+>>> plus_3(4)
+7
+
+>>> callable(plus_3)
+True
+```
+
+
 ### 11 - del
 
 ```python
