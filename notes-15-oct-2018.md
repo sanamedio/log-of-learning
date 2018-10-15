@@ -1,6 +1,15 @@
 # 15-oct-2018
 
-### 19 __str__ and __repr__
+### 20 - getting classnames
+
+```python
+def __repr__(self):
+  return (f'{self.__class__.__name__}('f'{self.color!r}, {self.mileage!r})')
+#why !r ?
+
+```
+
+### 19 - __str__ and __repr__
 
 ```python
 class Car:
