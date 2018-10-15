@@ -1,5 +1,9 @@
 # 15-oct-2018
 
+### 22 - Dunder 
+
+- https://dbader.org/blog/python-dunder-methods
+
 ### 21 - Python 2 unicode and str are separate
 
 ```python
