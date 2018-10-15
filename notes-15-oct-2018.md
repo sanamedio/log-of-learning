@@ -16,6 +16,13 @@
 >>> f'Hello, {name}!'
 >>> f'{5+5}'
 ```
+```python
+from string import Template
+t = Template('Hey, $name!')
+t.substitute(name=name)
+```
+
+
 
 ### 9 - var_ ( underscore after the name)
 
