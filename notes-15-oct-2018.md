@@ -1,6 +1,6 @@
 # 15-oct-2018
 
-### 21 - Python 2 unicode - how to handle
+### 21 - Python 2 unicode and str are separate
 
 ```python
 class Car(object):
