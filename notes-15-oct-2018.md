@@ -1,5 +1,17 @@
 # 15-oct-2018
 
+### 15 - metadata for decorator debugging
+
+```python
+import functools
+
+def uppercase(func):
+  @functools.wraps(func)
+  def wrapper():
+    return func().upper()
+  return wrapper
+```
+
 ### 14 - trace using decorators
 
 ```python
