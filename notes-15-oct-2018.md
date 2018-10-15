@@ -1,5 +1,20 @@
 # 15-oct-2018
 
+### 13 - lambda again?
+
+```python
+>>> (lambda x+y: x + y )(5,3)
+
+>>> tuples = [ (1,'d') , (2,'b') , (4,'a'), (3, 'c') ]
+>>> sorted(tuples, key=lambda x : x[1] )
+
+>>> sorted( range(-5,6), key=lambda x: x*x)
+[0,-1,1,-2,2,-3,3,-4,4,-5,5]
+
+
+```
+
+
 ### 12 - making objects callable
 
 ```python
