@@ -1,6 +1,20 @@
 # 15-oct-2018
 
 
+### 18 - is vs ==
+
+- 'is' is same object
+- '==' is a equality comparator
+```python
+a  = [1,2,3]
+b = a
+c = list(a)
+a is b #True
+a is c #False
+a == b #True
+a == c #True
+```
+
 ### 17 - return None
 
 - return None is added to every function without a return Value
