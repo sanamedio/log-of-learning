@@ -1,6 +1,10 @@
 # 15-oct-2018
 
 
+### 17 - return None
+
+- return None is added to every function without a return Value
+
 ### 16 - unpacking operator
 
 - \* is the unpacking operator
