@@ -1,5 +1,23 @@
 # 15-oct-2018
 
+### 19 __str__ and __repr__
+
+```python
+class Car:
+  def __init__(self, color, mileage):
+    self.color = color
+    self.mileage = mileage
+  
+  def __str__(self):
+    return f'a {self.color} car'
+
+
+my_car = Car('red', 3434)
+print(my_car)
+```
+
+- repr for inspecting objects in interpreter session
+- repr strings are for debugging
 
 ### 18 - is vs ==
 
