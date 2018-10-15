@@ -1,5 +1,30 @@
 # 15-oct-2018
 
+### 11 - del
+
+```python
+def yell(text):
+  return test.upper() + "!"
+
+yell('hello')
+
+bark = yell
+
+bark('woof')
+
+del yell
+
+yell('hello?')
+>>NameError blah
+
+bark('hey')
+>>Still works!
+
+bark.__name__
+>>'yell'
+
+```
+
 ### 10 - String formatting
 
 ```python
