@@ -22,6 +22,8 @@ t = Template('Hey, $name!')
 t.substitute(name=name)
 ```
 
+- Template Strings avoid security issues
+
 
 
 ### 9 - var_ ( underscore after the name)
