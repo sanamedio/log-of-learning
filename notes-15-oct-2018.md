@@ -1,5 +1,27 @@
 # 15-oct-2018
 
+### 14 - trace using decorators
+
+```python
+def trace(func):
+  def wrapper(*args, **kwargs):
+    print(f'TRACE: calling { func.__name__}() '
+          f'with {args} , {kwargs}')
+    
+    original_result = func(*args, **kwargs)
+    
+    print(f'TRACE: {func.__name__}() '
+          f'returned {original_result!r}')
+          
+    return original_result
+  return wrapper
+
+@trace
+def say(name,line):
+  return f'{name} : {line}'
+
+```
+
 ### 13 - lambda again?
 
 ```python
