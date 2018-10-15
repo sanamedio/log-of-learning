@@ -1,5 +1,11 @@
 # 15-oct-2018
 
+
+### 16 - unpacking operator
+
+- * is the unpacking operator
+- putting * before a iterable, unpacks it
+
 ### 15 - metadata for decorator debugging
 
 ```python
