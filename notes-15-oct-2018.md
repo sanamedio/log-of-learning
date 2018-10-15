@@ -3,8 +3,8 @@
 
 ### 18 - is vs ==
 
-- 'is' is same object
-- '==' is a equality comparator
+- 'is' is same object ( identity )
+- '==' is a equality comparator ( content )
 ```python
 a  = [1,2,3]
 b = a
