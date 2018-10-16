@@ -19,6 +19,18 @@ print '\nFields by index:'
 for p in [ bob, jane ]:
     print '%s is a %d year old %s' % p
 ```
+If names are not good, it has got auto-rename too:
+
+```python
+import collections
+
+with_class = collections.namedtuple('Person', 'name class age gender', rename=True)
+print with_class._fields
+
+two_ages = collections.namedtuple('Person', 'name age gender age', rename=True)
+print two_ages._fields
+```
+
 
 ### 6 - Asynchronous generator functions
 
