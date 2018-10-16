@@ -1,9 +1,10 @@
 # 17-oct-2018
 
 
-### 8 - pip freeze
+### 8 - pip -> pipenv
 
 - create requirement.txt using pip freeze
+- pipenv = pip + virtualenv combined: better way to manage python 
 
 ### 7 - NamedTuple
 
