@@ -1,5 +1,18 @@
 # 16-oct-2018
 
+### 4 - id() of mutables
+
+```python
+a_list = []
+print('ID:', id(a_list))
+
+a_list += [1]
+print('ID (+=):', id(a_list))
+
+a_list = a_list + [2]
+print('ID (list = list + ...):', id(a_list))
+```
+
 ### 3 - Python Docs ( damn; reached them so late )
 
 - https://docs.python.org/3/reference/index.html
