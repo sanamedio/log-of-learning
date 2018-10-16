@@ -4,6 +4,7 @@
 
 - https://dev.to/btaskaya/lifecycle-of-a-python-code---cpythons-execution-model-85i
 - https://dev.to/btaskaya/a-short-overview-of-cpythons-memory-management-1goi
+- https://troeger.eu/files/teaching/pythonvm08.pdf
 
 ### 1 - GIL
 
