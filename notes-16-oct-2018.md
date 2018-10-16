@@ -1,5 +1,9 @@
 # 16-oct-2018
 
+### 5 - Midnight time evaluates to false
+
+- https://lwn.net/Articles/590299/
+
 ### 4 - id() of mutables
 
 ```python
