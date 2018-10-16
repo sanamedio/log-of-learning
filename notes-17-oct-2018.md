@@ -1,5 +1,10 @@
 # 17-oct-2018
 
+
+### 8 - pip freeze
+
+- create requirement.txt using pip freeze
+
 ### 7 - NamedTuple
 
 ```python
