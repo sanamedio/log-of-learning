@@ -1,5 +1,12 @@
 # 18-oct-2018
 
+### 13 - Strict typing for function arguments
+
+```
+def my_add(a: int, b: int) -> int:
+  return a + b
+```
+
 ### 12 - SimpleNamespace
 
 ```
