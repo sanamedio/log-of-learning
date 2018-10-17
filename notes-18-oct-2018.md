@@ -1,5 +1,16 @@
 # 18-oct-2018
 
+### 7 - objgraph to visualize the memory reference information visually
+
+- https://mg.pov.lt/objgraph/
+
+```python
+x = []
+y = [x, [x], dict(x=x)]
+import objgraph
+objgraph.show_refs([y], filename='sample-graph.png')
+```
+
 ### 6 - debugging reference cycles
 
 - If you set debugging flags to DEBUG_SAVEALL, all unreachable objects found will be appended to gc.garbage list.
