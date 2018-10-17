@@ -1,6 +1,8 @@
 # python-notes
 
-sweet, gentle and elegant :)
+Python is sweet, gentle and elegant :)
+
+Note : It's like my diary for Python learning. 
 
 [01-oct-2018 - 52 entries](./notes-01-oct-2018.md)
 
