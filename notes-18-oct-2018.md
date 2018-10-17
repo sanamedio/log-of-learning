@@ -8,7 +8,7 @@
 x = []
 y = [x, [x], dict(x=x)]
 import objgraph
-objgraph.show_refs([y], filename='sample-graph.png')
+objgraph.show_refs([y], filename='sample-graph.png') #Now this is reason why people fall in love with Python
 ```
 
 ### 6 - debugging reference cycles
