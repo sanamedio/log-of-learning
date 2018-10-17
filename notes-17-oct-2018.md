@@ -1,5 +1,25 @@
 # 17-oct-2018
 
+### 15 - slots
+
+- https://elfsternberg.com/2009/07/06/python-what-the-hell-is-a-slot/
+- A slot is nothing more than a memory management nicety: when you define __slots__ on a class, you’re telling the Python interpreter that the list of attributes described within are the only attributes this class will ever need, and a dynamic dictionary is not needed to manage the references to other objects within the class. This can save enormous amounts of space if you have thousands or millions of objects in memory.
+
+```python
+class Foo:
+    __slots__ = ['x']
+    def __init__(self, n):
+        self.x = n
+
+y = Foo(1)
+print y.x  # prints "1"
+y.x = 2
+print y.x  # prints "2"
+y.z = 4    # Throws exception.
+print y.z
+```
+
+
 ### 14 - revisiting comprehensions
 
 ```python
