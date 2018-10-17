@@ -1,5 +1,14 @@
 # 17-oct-2018
 
+### 14 - revisiting comprehensions
+
+```python
+[ k*k for k in range(1, n+1) ] #list
+{ k*k for k in range(1, n+1) } #set
+( k*k for k in range(1, n+1) ) #generator
+{ k : k*k for k in range(1, n+1) } #map
+```
+
 ### 13 - inline absolute value
 
 ```python
