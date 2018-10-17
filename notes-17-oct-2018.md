@@ -11,6 +11,9 @@ code.interact(local=locals())
 #ipython shell
 import IPython; IPython.embed()
 
+#regular python shell but with both locals and globals passed
+import code
+code.interact(local=dict(globals(), **locals()))
 ```
 
 
