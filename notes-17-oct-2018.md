@@ -1,5 +1,8 @@
 # 17-oct-2018
 
+### 9 - locals()
+
+- Get the variables in local scope. There is no nonlocals() though.
 
 ### 8 - pip -> pipenv
 
