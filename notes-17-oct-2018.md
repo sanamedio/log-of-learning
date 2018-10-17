@@ -1,5 +1,22 @@
 # 17-oct-2018
 
+### 16 - identity weird behaviour
+
+```python
+a = 256
+b = 256
+a is b #True
+
+a = 257
+b = 257
+a is b #False
+
+[] is [] #False
+{} is {} #False
+"" is "" #True
+0 is 0 #True
+```
+
 ### 15 - slots
 
 - https://elfsternberg.com/2009/07/06/python-what-the-hell-is-a-slot/
