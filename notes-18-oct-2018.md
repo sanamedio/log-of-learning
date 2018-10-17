@@ -60,7 +60,7 @@ Load the shared library and execute the myprint() function in Python
 ```python
 import ctypes
 
-testlib = ctypes.CDLL('testlib.so')
+testlib = ctypes.CDLL('/home/user/testlib.so') #absolute path is required
 testlib.myprint()
 ```
 - https://stackoverflow.com/a/5082294
