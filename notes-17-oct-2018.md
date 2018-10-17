@@ -1,5 +1,17 @@
 # 17-oct-2018
 
+### 19 - Underscore for readability in Python 3
+
+```python
+dec_base = 1_000_000
+bin_base = 0b_1111_0000
+hex_base = 0x_1234_abcd
+
+print(dec_base) # 1000000
+print(bin_base) # 240
+print(hex_base) # 305441741
+```
+
 ### 18 - Getter and setter using @decorators
 
 ```python
