@@ -2,14 +2,14 @@
 
 ### 13 - Strict typing for function arguments
 
-```
+```python
 def my_add(a: int, b: int) -> int:
   return a + b
 ```
 
 ### 12 - SimpleNamespace
 
-```
+```python
 from types import SimpleNamespace
 car1 = SimpleNamespace(color='red', mileage=3812.4, automatic=True)
 
