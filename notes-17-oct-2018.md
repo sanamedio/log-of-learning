@@ -6,6 +6,16 @@
 import gc
 gc.disable()
 ```
+Also, this alone might not be enough so:
+```python
+# gc.disable() doesn't work, because some random 3rd-party library will
+# enable it back implicitly.
+gc.set_threshold(0)
+# Suicide immediately after other atexit functions finishes.
+# CPython will do a bunch of cleanups in Py_Finalize which
+# will again cause Copy-on-Write, including a final GC
+atexit.register(os._exit, 0)
+```
 
 ### 21 - Re-entrant lock in Python
 
