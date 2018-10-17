@@ -1,5 +1,23 @@
 # 18-oct-2018
 
+### 4 - refcounting example
+
+```python
+foo = []
+
+# 2 references, 1 from the foo var and 1 from getrefcount
+print(sys.getrefcount(foo))
+
+def bar(a):
+    # 4 references
+    # from the foo var, function argument, getrefcount and Python's function stack
+    print(sys.getrefcount(a))
+
+bar(foo)
+# 2 references, the function scope is destroyed
+print(sys.getrefcount(foo))
+```
+
 ### 3 - CPython garbage collector
 
 - Standard CPython's garbage collector has two components, the reference counting collector and the generational garbage collector, known as gc module.
