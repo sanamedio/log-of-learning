@@ -1,5 +1,11 @@
 # 17-oct-2018
 
+### 13 - inline absolute value
+
+```python
+param = n if n >= 0 else −n
+```
+
 ### 12 - revisiting yield
 
 ```python
