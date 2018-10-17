@@ -14,4 +14,4 @@ sweet, gentle and elegant :)
 
 [16-oct-2018 - 5 entries](./notes-16-oct-2018.md)
 
-[17-oct-2018 - 15 entries](./notes-17-oct-2018.md)
+[17-oct-2018 - 19 entries](./notes-17-oct-2018.md)
