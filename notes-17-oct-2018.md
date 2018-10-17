@@ -1,5 +1,31 @@
 # 17-oct-2018
 
+### 12 - revisiting yield
+
+```python
+def factors(n):
+   k=1
+   while k*k < n:
+      if n % k == 0:
+         yield k
+         yield n // k
+      k += 1
+      if k*k == n:
+         yield k
+```
+
+### 11 - isinstance
+
+```python
+if not isinstance(values, collections.Iterable):
+   raise TypeError( parameter must be an iterable type )
+```
+
+```python
+if not isinstance(x, (int, float)):
+   raise TypeError( x must be numeric )
+```
+
 ### 10 - __getitem__ , next() , __iter__
 
 - An object can be iterated over with "for" if it implements
