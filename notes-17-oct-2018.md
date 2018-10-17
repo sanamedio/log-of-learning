@@ -1,5 +1,12 @@
 # 17-oct-2018
 
+### 22 - Disable Automatic Garbage collection
+
+```python
+import gc
+gc.disable()
+```
+
 ### 21 - Re-entrant lock in Python
 
 - The standard Lock doesn’t know which thread is currently holding the lock. If the lock is held, any thread that attempts to acquire it will block, even if the same thread itself is already holding the lock.In such cases, RLock (re-entrant lock) is used. 
