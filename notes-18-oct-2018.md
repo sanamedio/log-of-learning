@@ -1,5 +1,14 @@
 # 18-oct-2018
 
+### 14 - Memory used by Python objects
+
+```python
+from pympler import summary, muppy
+mem_summary = summary.summarize(muppy.get_objects())
+rows = summary.format_(mem_summary)
+```
+    
+
 ### 13 - Strict typing for function arguments
 
 ```python
