@@ -1,5 +1,11 @@
 # 18-oct-2018
 
+### 3 - CPython garbage collector
+
+- Standard CPython's garbage collector has two components, the reference counting collector and the generational garbage collector, known as gc module.
+- The reference counting algorithm is incredibly efficient and straightforward, but it cannot detect reference cycles. That is why Python has a supplemental algorithm called generational cyclic GC, that deals with reference cycles.
+- The reference counting is fundamental to Python and can't be disabled, whereas the cyclic GC is optional and can be used manually.
+
 ### 2 - Reversing a list using recursion
 
 ```python
