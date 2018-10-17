@@ -3,6 +3,23 @@
 ### 9 - ABC abstract base classes
 
 ```python
+class Base:
+    def foo(self):
+        raise NotImplementedError()
+
+    def bar(self):
+        raise NotImplementedError()
+
+class Concrete(Base):
+    def foo(self):
+        return 'foo() called'
+
+# In this case, Concrete has partially implemented the the Base sort of. Not clean approach.
+
+```
+This is better way of handling it:
+
+```python
 from abc import ABCMeta, abstractmethod
 
 class Base(metaclass=ABCMeta):
