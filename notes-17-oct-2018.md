@@ -1,5 +1,19 @@
 # 17-oct-2018
 
+### 17 - Dropping to shell from within the program (not PDB)
+
+```python
+#regular python shell
+import code
+code.interact(local=locals())
+
+
+#ipython shell
+import IPython; IPython.embed()
+
+```
+
+
 ### 16 - identity weird behaviour
 
 ```python
