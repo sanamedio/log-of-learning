@@ -5,6 +5,7 @@
 - An object can be iterated over with "for" if it implements
    __iter__() or __getitem__().
 - An object can function as an iterator if it implements next().
+- https://stackoverflow.com/a/926649
 
 ### 9 - locals()
 
