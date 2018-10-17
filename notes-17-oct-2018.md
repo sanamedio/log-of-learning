@@ -1,5 +1,34 @@
 # 17-oct-2018
 
+### 21 - Re-entrant lock in Python
+
+- The standard Lock doesn’t know which thread is currently holding the lock. If the lock is held, any thread that attempts to acquire it will block, even if the same thread itself is already holding the lock.In such cases, RLock (re-entrant lock) is used. 
+
+```python
+import threading
+
+num = 0
+lock = Threading.Lock()
+
+lock.acquire()
+num += 1
+lock.acquire() # This will block.
+num += 2
+lock.release()
+
+
+# With RLock, that problem doesn’t happen.
+lock = Threading.RLock()
+
+lock.acquire()
+num += 3
+lock.acquire() # This won’t block.
+num += 4
+lock.release()
+lock.release() # You need to call release once for each call to acquire.
+```
+
+
 ### 20 - Synchronizing threads using Lock
 
 ```python
