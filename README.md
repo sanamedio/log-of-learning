@@ -14,4 +14,4 @@
 
 [17-oct-2018 - 22 entries](./notes-17-oct-2018.md)
 
-[18-oct-2018 - # entries](./notes-18-oct-2018.md)
+[18-oct-2018 - 15 entries](./notes-18-oct-2018.md)
