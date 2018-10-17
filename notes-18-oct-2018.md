@@ -1,5 +1,25 @@
 # 18-oct-2018
 
+### 6 - debugging reference cycles
+
+- If you set debugging flags to DEBUG_SAVEALL, all unreachable objects found will be appended to gc.garbage list.
+
+```python
+import gc
+
+gc.set_debug(gc.DEBUG_SAVEALL)
+
+print(gc.get_count())
+lst = []
+lst.append(lst)
+list_id = id(lst)
+del lst
+gc.collect()
+for item in gc.garbage:
+    print(item)
+    assert list_id == id(item)
+```
+
 ### 5 - Generational GC example
 
 ```python
