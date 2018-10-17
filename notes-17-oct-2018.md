@@ -6,6 +6,7 @@
    __iter__() or __getitem__().
 - An object can function as an iterator if it implements next().
 - https://stackoverflow.com/a/926649
+- https://stackoverflow.com/a/20551346
 
 ### 9 - locals()
 
