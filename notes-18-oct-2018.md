@@ -1,5 +1,33 @@
 # 18-oct-2018
 
+### 8 - Ctypes simple example
+
+Write the C function which you wish to call from Python
+```c
+#include<stdio.h>
+
+void myprint(void);
+
+void myprint(void){
+    printf("Hello world");
+}
+```
+
+Compile the above C code as a shared library
+```bash
+gcc -shared  -o testlib.so -fPIC  testlib.c
+```
+
+Load the shared library and execute the myprint() function in Python
+```python
+import ctypes
+
+testlib = ctypes.CDLL('testlib.so')
+testlib.myprint()
+```
+- https://stackoverflow.com/a/5082294
+
+
 ### 7 - objgraph to visualize the memory reference information visually
 
 - https://mg.pov.lt/objgraph/
