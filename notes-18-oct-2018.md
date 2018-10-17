@@ -1,5 +1,14 @@
 # 18-oct-2018
 
+### 15 - Loading libc and executing functions from that
+
+```python
+import ctypes
+#cdll.LoadLibrary("libc.so.6")  
+libc = CDLL("libc.so.6")       
+libc.time(None)                           
+```
+
 ### 14 - Memory used by Python objects
 
 ```python
