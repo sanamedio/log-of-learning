@@ -1,5 +1,26 @@
 # 18-oct-2018
 
+### 9 - ABC abstract base classes
+
+```python
+from abc import ABCMeta, abstractmethod
+
+class Base(metaclass=ABCMeta):
+    @abstractmethod
+    def foo(self):
+        pass
+
+    @abstractmethod
+    def bar(self):
+        pass
+
+class Concrete(Base):
+    def foo(self):
+        pass
+
+# This will force the Concrete class to implement those methods
+```
+
 ### 8 - Ctypes simple example
 
 Write the C function which you wish to call from Python
