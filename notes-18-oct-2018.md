@@ -1,5 +1,26 @@
 # 18-oct-2018
 
+### 16 - String interning
+
+- When working with empty strings or ASCII strings of one character Python uses string interning. Interned strings act as singletons, that is, if you have two identical strings that are interned, there is only one copy of them in the memory.
+- string interning is not limed to characters or empty strings. Strings that are created during code compilation can also be interned if their length does not exceed 20 characters.
+
+```python
+>>> a = 'teststring'
+>>> b = 'teststring'
+>>> id(a), id(b), a is b
+(4569487216, 4569487216, True)
+>>> a = 'test'*5
+>>> b = 'test'*5
+>>> len(a), id(a), id(b), a is b
+(20, 4569499232, 4569499232, True)
+>>> a = 'test'*6
+>>> b = 'test'*6
+>>> len(a), id(a), id(b), a is b
+(24, 4569479328, 4569479168, False)
+```
+
+
 ### 15 - Loading libc and executing functions from that
 
 ```python
