@@ -3,6 +3,7 @@
 ### 7- input(): disaster
 
 - [ ] TODO find out why this is designed like this: to evaluate the input string
+- Also, notice the dunder import
 
 ```python
 >>> input()
