@@ -33,7 +33,7 @@ False
 True
 >>> 
 ```
-Also, behaviour changes in a function scope, this one TODO: find out why?
+- [ ] Also, behaviour changes in a function scope, this one TODO: find out why?
 
 ```python
 def test():
