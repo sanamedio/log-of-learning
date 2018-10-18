@@ -1,6 +1,46 @@
 # 19-oct-2018
 
-### 7- input(): disaster
+### 8 - pytest benchmark
+
+- nice function performance benchmarking
+
+```bash
+pip3 install pytest pytest-benchmark
+```
+
+```python
+import re
+import string
+import random
+
+# Python ZIP version
+def count_doubles(val):
+    total = 0
+    for c1, c2 in zip(val, val[1:]):
+        if c1 == c2:
+            total += 1
+    return total
+
+
+# Python REGEXP version
+double_re = re.compile(r'(?=(.)\1)')
+
+def count_doubles_regex(val):
+    return len(double_re.findall(val))
+
+
+# Benchmark it
+# generate 1M of random letters to test it
+val = ''.join(random.choice(string.ascii_letters) for i in range(1000000))
+
+def test_pure_python(benchmark):
+    benchmark(count_doubles, val)
+
+def test_regex(benchmark):
+    benchmark(count_doubles_regex, val)
+```
+
+### 7 - input(): disaster
 
 - [ ] TODO find out why this is designed like this: to evaluate the input string
 - Also, notice the dunder import
