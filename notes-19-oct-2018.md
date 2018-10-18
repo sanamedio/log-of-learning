@@ -1,5 +1,12 @@
 # 19-oct-2018
 
+### 5 - list comprehension for flattening
+
+```python
+words = ['her', 'name', 'is', 'rio']
+letters = [letter for word in words for letter in word]
+```    
+
 ### 4 - yield syntax in python3
 
 ```python
