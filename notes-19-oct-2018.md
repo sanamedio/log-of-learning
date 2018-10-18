@@ -1,5 +1,16 @@
 # 19-oct-2018
 
+### 9 - routing up floats
+
+```python
+2.2 * 3.0 == 3.3 * 2.0 #False
+
+>>> 2.2*3.0
+6.6000000000000005
+>>> 3.3*2.0
+6.6
+```
+
 ### 8 - pytest benchmark
 
 - nice function performance benchmarking
