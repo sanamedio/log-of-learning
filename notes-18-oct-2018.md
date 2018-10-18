@@ -3,9 +3,9 @@
 ### 18 - inline unpacking is treated differently
 
 ```python
-Python 3.5.2 (default, Nov 23 2017, 16:37:01) 
-[GCC 5.4.0 20160609] on linux
-Type "help", "copyright", "credits" or "license" for more information.
+#Python 3.5.2 (default, Nov 23 2017, 16:37:01) 
+#[GCC 5.4.0 20160609] on linux
+#Type "help", "copyright", "credits" or "license" for more information.
 >>> a=1.0
 >>> b=1.0
 >>> a is b
