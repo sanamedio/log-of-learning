@@ -1,5 +1,10 @@
 # 19-oct-2018
 
+### 16 - python3 unicode 
+
+- In Python 2, str acts like bytes of data. There is also unicode type to represent Unicode strings.
+- In Python 3, str is a string. bytes are bytes. There is no unicode. str strings are Unicode.
+
 ### 15 - ipython_memory_usage
 
 - [https://github.com/ianozsvald/ipython_memory_usage](https://github.com/ianozsvald/ipython_memory_usage)
