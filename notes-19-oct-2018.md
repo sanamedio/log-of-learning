@@ -18,6 +18,8 @@ class Foo(object):
 Traceback (most recent call last):
   File "<stdin>", line 1, in <module>
 AttributeError: 'Foo' object has no attribute '__secret'
+>>> foo._Foo__secret
+'secret'
 ```
 
 ### 5 - list comprehension for flattening
