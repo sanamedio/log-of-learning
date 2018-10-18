@@ -1,5 +1,18 @@
 # 19-oct-2018
 
+### 14 - dataclasses 
+
+- [ ] https://realpython.com/python-data-classes/
+
+```python
+from dataclasses import dataclass
+
+@dataclass
+class DataClassCard:
+    rank: str
+    suit: str
+```
+
 ### 13 - unzipping
 
 ```python
