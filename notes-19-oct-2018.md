@@ -1,5 +1,17 @@
 # 19-oct-2018
 
+### 7- input(): disaster
+
+- [ ] TODO find out why this is designed like this: to evaluate the input string
+
+```python
+>>> input()
+dir()
+['__builtins__', '__doc__', '__name__', '__package__']
+>>> input()
+__import__('sys').exit()
+```
+
 ### 6 - public, private , secret simple example
 
 ```python
