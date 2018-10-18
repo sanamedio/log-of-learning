@@ -1,5 +1,24 @@
 # 18-oct-2018
 
+### 20 - sys.getcounts
+
+- get count of object allocation by python
+- needs a custom debug build
+```bash
+$ git clone https://github.com/python/cpython
+$ cd cpython
+$ mkdir debug
+$ cd debug
+$ ../configure --with-pydebug
+$ make EXTRA_CFLAGS="-DCOUNT_ALLOCS"
+$ ./python
+```
+
+```python
+import sys
+sys.getcounts()
+```
+
 ### 19 - virtualenv and venv
 
 - Both are used to create virtual environments
