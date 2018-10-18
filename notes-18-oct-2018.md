@@ -1,5 +1,13 @@
 # 18-oct-2018
 
+### 17 - Exiting Python
+
+```python
+os._exit(0) #method 1
+sys.exit(0) #method 2
+raise SystemExit #method 3
+```
+
 ### 16 - String interning
 
 - When working with empty strings or ASCII strings of one character Python uses string interning. Interned strings act as singletons, that is, if you have two identical strings that are interned, there is only one copy of them in the memory.
