@@ -1,5 +1,26 @@
 # 18-oct-2018
 
+### 18 - inline unpacking is treated differently
+
+```python
+>>> a = 1.0
+>>> b = 1.0
+>>> a is b
+False
+>>> a, b = 1.0, 1.0
+>>> a is b
+True
+```
+Also, behaviour changes in a function scope, this one TODO: find out why?
+
+```python
+def test():
+    a = 1.0
+    b = 1.0
+    return a is b
+test() #outputs True
+```
+
 ### 17 - Exiting Python
 
 ```python
