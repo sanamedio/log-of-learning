@@ -17,7 +17,19 @@ $ ./python
 ```python
 import sys
 sys.getcounts()
+
+def print_allocations(top_k=None):
+    allocs = sys.getcounts()
+    if top_k:
+        allocs = sorted(allocs, key=lambda tup: tup[1], reverse=True)[0:top_k]
+
+    for obj in allocs:
+        alive = obj[1]-obj[2]
+        print("Type {},  allocs: {}, deallocs: {}, max: {}, alive: {}".format(*obj,alive))
+
+print_allocations(10)
 ```
+- https://rushter.com/blog/python-object-allocation-statistics/
 
 ### 19 - virtualenv and venv
 
