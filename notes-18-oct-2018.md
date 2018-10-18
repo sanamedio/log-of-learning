@@ -1,5 +1,23 @@
 # 18-oct-2018
 
+### 19 - virtualenv and venv
+
+- Both are used to create virtual environments
+- venv is lighter version 
+- [ ] TODO study each file of virtualenv and venv environment
+
+virtualenv:
+```bash
+$ virtualenv ENV
+$ source ENV/bin/activate
+```
+
+venv from PEP 405 
+```bash
+$ python3 -m venv ENV
+$ source ENV/bin/activate
+```
+
 ### 18 - inline unpacking is treated differently
 
 ```python
