@@ -57,7 +57,7 @@ def dup(n):
 "class of 42 is <class 'int'>"
 ```
 
-### 9 - routing up floats
+### 9 - rounding up floats
 
 ```python
 2.2 * 3.0 == 3.3 * 2.0 #False
