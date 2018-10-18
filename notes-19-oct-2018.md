@@ -1,5 +1,42 @@
 # 19-oct-2018
 
+### 11 - yield where possible
+
+bad
+```python
+def dup(n):
+    A = []
+    for i in range(n):
+        A.extend([i,i])
+    return A
+```
+
+good
+```python
+def dup(n):
+    for i in range(n):
+        yield i
+        yield i
+```
+
+good2
+```python
+def dup(n):
+    for i in xrange(n):
+        yield from [i,i]
+```
+
+
+
+### 10 - danger with format strings
+
+- format string can access object attributes directly
+
+```python
+>> 'class of {0} is {0.__class__}'.format(42)
+"class of 42 is <class 'int'>"
+```
+
 ### 9 - routing up floats
 
 ```python
