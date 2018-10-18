@@ -1,5 +1,25 @@
 # 19-oct-2018
 
+### 6 - public, private , secret simple example
+
+```python
+class Foo(object):
+    def __init__(self):
+        self.public = 'public'
+        self._private = 'public'
+        self.__secret = 'secret'
+
+>>> foo = Foo()
+>>> foo.public
+'public'
+>>> foo._private
+'public'
+>>> foo.__secret
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+AttributeError: 'Foo' object has no attribute '__secret'
+```
+
 ### 5 - list comprehension for flattening
 
 ```python
