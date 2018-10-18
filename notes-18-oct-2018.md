@@ -78,6 +78,8 @@ rows = summary.format_(mem_summary)
 def my_add(a: int, b: int) -> int:
   return a + b
 ```
+- It is worth pointing out that the type annotations has (almost) completely no effect on the runtime, and the runtime could still violate the specified type hints. One needs a static type checker like mypy to actually see any type conflicts. (by @Gear5th from Reddit)
+
 
 ### 12 - SimpleNamespace
 
