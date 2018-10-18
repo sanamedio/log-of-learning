@@ -1,10 +1,16 @@
 # 19-oct-2018
 
+### 4 - yield syntax in python3
+
+```python
+yield from gen()
+```
+
 ### 3 - LEGB scoping rules of Python
 
 LEGB Rule.
 
-L, Local — Names assigned in any way within a function (def or lambda)), and not declared global in that function.
+L, Local — Names assigned in any way within a function (def or lambda), and not declared global in that function.
 
 E, Enclosing-function locals — Name in the local scope of any and all statically enclosing functions (def or lambda), from inner to outer.
 
