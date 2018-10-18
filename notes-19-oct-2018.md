@@ -1,5 +1,29 @@
 # 19-oct-2018
 
+### 17 - Exception handling silling mistake
+
+```python
+>>> try:
+...     l = ["a", "b"]
+...     int(l[2])
+... except ValueError, IndexError:  # To catch both exceptions, right?
+...     pass
+...
+Traceback (most recent call last):
+  File "<stdin>", line 3, in <module>
+IndexError: list index out of range
+```
+rather do,
+```python
+>>> try:
+...     l = ["a", "b"]
+...     int(l[2])
+... except (ValueError, IndexError) as e:  
+...     pass
+...
+>>>
+```
+
 ### 16 - python3 unicode 
 
 - In Python 2, str acts like bytes of data. There is also unicode type to represent Unicode strings.
