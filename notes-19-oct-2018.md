@@ -1,5 +1,45 @@
 # 19-oct-2018
 
+### 15 - ipython_memory_usage
+
+- [https://github.com/ianozsvald/ipython_memory_usage](https://github.com/ianozsvald/ipython_memory_usage)
+- [http://book.pythontips.com/en/latest/__slots__magic.html](http://book.pythontips.com/en/latest/__slots__magic.html)
+
+
+```python
+In [1]: import ipython_memory_usage.ipython_memory_usage as imu
+
+In [2]: imu.start_watching_memory()
+In [2] used 0.0000 MiB RAM in 5.31s, peaked 0.00 MiB above current, total RAM usage 15.57 MiB
+
+In [3]: %cat slots.py
+class MyClass(object):
+        __slots__ = ['name', 'identifier']
+        def __init__(self, name, identifier):
+                self.name = name
+                self.identifier = identifier
+
+num = 1024*256
+x = [MyClass(1,1) for i in range(num)]
+In [3] used 0.2305 MiB RAM in 0.12s, peaked 0.00 MiB above current, total RAM usage 15.80 MiB
+
+In [4]: from slots import *
+In [4] used 9.3008 MiB RAM in 0.72s, peaked 0.00 MiB above current, total RAM usage 25.10 MiB
+
+In [5]: %cat noslots.py
+class MyClass(object):
+        def __init__(self, name, identifier):
+                self.name = name
+                self.identifier = identifier
+
+num = 1024*256
+x = [MyClass(1,1) for i in range(num)]
+In [5] used 0.1758 MiB RAM in 0.12s, peaked 0.00 MiB above current, total RAM usage 25.28 MiB
+
+In [6]: from noslots import *
+In [6] used 22.6680 MiB RAM in 0.80s, peaked 0.00 MiB above current, total RAM usage 47.95 MiB
+```
+
 ### 14 - dataclasses 
 
 - [ ] https://realpython.com/python-data-classes/
