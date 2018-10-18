@@ -1,5 +1,14 @@
 # 19-oct-2018
 
+
+### 12 - benefits of yield
+
+- Only one value is computed at a time. Low memory impact example above
+- Can break in the middle. Don't have to compute everything just to find out you needed none of it. Compute just what you need. 
+- If you often don't need it all, you can gain a lot of performance here.
+- If you need a list (e.g., for slicing), just call list() on the generator.
+- Function state is "saved" between yields.
+
 ### 11 - yield where possible
 
 bad
