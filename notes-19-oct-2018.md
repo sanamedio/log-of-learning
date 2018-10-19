@@ -1,5 +1,18 @@
 # 19-oct-2018
 
+### 22 - coroutine with single source and multiple targets
+
+- (yield) is the place where anything sent to this coroutine goes; and using target.send we pass that value to multiple target coroutines
+
+```python
+@coroutine
+def broadcast(targets):
+    while True:
+        item = (yield)
+        for target in targets:
+            target.send(item)
+```
+
 ### 21 - coroutine vs generator
 
 - [ ] http://www.dabeaz.com/coroutines/Coroutines.pdf
