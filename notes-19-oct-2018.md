@@ -1,5 +1,34 @@
 # 19-oct-2018
 
+### 28 - Summary till now and Questions in my mind
+
+- GIL i.e. Global Interpreter Lock. It seems to be a big issue with python and unsolved problem. Where is GIL code? [ ] TODO find out GIL source code in cpython source tree.
+- Zen of Python says There should be one preferred way of doing things. But, even simple cases like dataclasses has tonnes of different solutions. And probably every new version of Python is bringing a new way of doing things. 
+- Most part of learning resources are focussed on idioms of Python and doing it in Pythonic way. I think that is one reason python felt so different from the start. 
+- The behaviour and features differ greatly between different python implementations and versions. It's difficult to know whether a piece of code will work reliably accross multiple versions. 
+- Package management seems to be done in a different way. But it seems to be a universal problem. Dependency management and version management are not easy.
+- There are lot of shiny things like generators and decorators and coroutines; but these are just abstractions to shorten LOC. These can be achieved with different OOPs patterns, datastructures and algorithms. 
+- Garbage collection is a module. Can we override it? Where is source code of it? Are these core packages present in Cpython source tree? [ ] TODO check
+
+Learning goals:
+- How Python works
+  - Find the lines of code which the interpreter generally go through everytime
+  - Core packages and the API exposed by them
+  - Memory management 
+  - Thread, bytecode, concurrency and execution
+  - Understanding cpython source code
+  - Navigate easily and quickly between C and Python code
+  - Understand Python object model
+- How to apply Python for
+  - Web Development preferably Flask
+  - Fast algorithms and datastructures
+  - Design patterns
+  - Best practices for code and deployment management
+- Do some contribution back
+  - into other projects like Celery
+  - write something useful
+ 
+
 ### 27 - Property decorator
 
 ```python
