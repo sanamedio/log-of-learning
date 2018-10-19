@@ -1,6 +1,6 @@
 # 19-oct-2018
 
-### 19 - empty yield
+### 19 - (yield)
 
 ```python
 def grep(pattern):
@@ -9,7 +9,17 @@ def grep(pattern):
         line = (yield)
         if pattern in line:
             print line,
+            
+
+g = grep("python")
+g.next()
+g.send("Yeah, but no, but yeah, but no")
+g.send("A series of tubes")
+g.send("python generators rock!") #python generators rock!
+ 
 ```
+- (yield) returns what is sent to the generator
+
 
 ### 18 - python 3 faulthandler
 
