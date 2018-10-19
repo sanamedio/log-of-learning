@@ -2,7 +2,7 @@
 
 ### 18 - python 3 faulthandler
 
-- faulthandler handles failures like page seg faults and displays exception and stuff even in case of crash failures.
+- faulthandler handles failures like page seg faults and displays exception and stuff (limited traceback) even in case of crash failures. Won't handle kill -9
 
 ```python
 import faulthandler
