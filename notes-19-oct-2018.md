@@ -19,6 +19,7 @@ g.send("python generators rock!") #python generators rock!
  
 ```
 - (yield) returns what is sent to the generator
+- .next() or .send(None) advances the execution to the first yield
 
 
 ### 18 - python 3 faulthandler
