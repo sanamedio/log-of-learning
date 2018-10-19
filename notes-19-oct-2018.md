@@ -1,5 +1,16 @@
 # 19-oct-2018
 
+### 19 - empty yield
+
+```python
+def grep(pattern):
+    print "Looking for %s" % pattern
+    while True:
+        line = (yield)
+        if pattern in line:
+            print line,
+```
+
 ### 18 - python 3 faulthandler
 
 - faulthandler handles failures like page seg faults and displays exception and stuff (limited traceback) even in case of crash failures. Won't handle kill -9
