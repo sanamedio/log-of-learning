@@ -58,6 +58,9 @@ Learning goals:
 - Do some contribution back
   - into other projects like Celery
   - write something useful
+- Be careful about
+  - Not wasting too much time on tricks and small cool stuff: goals is to understand deeply; not being cool
+  - Going too broad : Limit yourself to understanding Python Core 
  
  Measuring the above goals:
  - [ ] How Python works? Understanding CPython source code and how to meddle with it to get a desired behaviour should be a good milestone. Measure progress
