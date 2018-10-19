@@ -1,5 +1,29 @@
 # 19-oct-2018
 
+### 24 - Coroutines ~~ OOPS
+
+OOPS version:
+```python
+class GrepHandler(object):
+     def __init__(self,pattern,target):
+          self.pattern = pattern
+          self.target  = target
+     def send(self,line):
+          if self.pattern in line:
+               self.target.send(line)
+```
+- [ ] TODO Can I use dataclasses in GrepHandler to reduce boilerplate?
+
+Coroutine version
+```python
+@coroutine
+def grep(pattern, target):
+     while True:
+          line = (yield)
+          if pattern in line:
+               target.send(line)
+```
+
 ### 23 - Variable assignment not being expression
 
 - In python variable assignment cannot be used as a expression for conditionals
