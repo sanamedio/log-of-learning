@@ -1,5 +1,13 @@
 # 19-oct-2018
 
+### 23 - Variable assignment not being expression
+
+- In python variable assignment cannot be used as a expression for conditionals
+
+- ```python
+     while (line = yield): ## syntax error
+  ```
+
 ### 22 - coroutine with single source and multiple targets
 
 - (yield) is the place where anything sent to this coroutine goes; and using target.send we pass that value to multiple target coroutines
