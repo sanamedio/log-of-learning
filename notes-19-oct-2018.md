@@ -3,6 +3,7 @@
 ### 22 - coroutine with single source and multiple targets
 
 - (yield) is the place where anything sent to this coroutine goes; and using target.send we pass that value to multiple target coroutines
+- [ ] Is it possible to take multiple source yield in a non-conflicting way apart from just depending on their order?
 
 ```python
 @coroutine
