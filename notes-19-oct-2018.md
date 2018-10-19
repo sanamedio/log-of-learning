@@ -1,5 +1,22 @@
 # 19-oct-2018
 
+### 20 - Decimal math with floating point error
+
+```python
+from decimal import Decimal
+a = Decimal(str(0.2))
+b = Decimal(str(3))
+c = Decimal(str(0.7))
+d = Decimal(str(0.3))
+e = Decimal(str(2))
+f = Decimal(str(7))
+
+print(f'0.2 * 3 = {a * b}')
+print(f'0.7 * 3 = {c * b}')
+print(f'0.3 * 2 = {d * e}')
+print(f'0.3 * 7 = {e * f}')
+```
+
 ### 19 - (yield)
 
 ```python
