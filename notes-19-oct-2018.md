@@ -145,7 +145,7 @@ python -X faulthandler
 ```
 
 
-### 17 - Exception handling silling mistake
+### 17 - Exception handling silly mistake
 
 ```python
 >>> try:
