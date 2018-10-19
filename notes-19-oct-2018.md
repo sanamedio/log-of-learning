@@ -1,5 +1,29 @@
 # 19-oct-2018
 
+### 18 - python 3 faulthandler
+
+- faulthandler handles failures like page seg faults and displays exception and stuff even in case of crash failures.
+
+```python
+import faulthandler
+faulthandler.enable()
+
+def killme():
+        import sys
+        from ctypes import CDLL
+
+        dll = 'dylib' if sys.platform == 'darwin' else 'so.6'
+        libc = CDLL("libc.%s"%dll)
+        libc.time(-1)
+
+killme()
+```
+Can also be enabled by:
+```bash
+python -X faulthandler
+```
+
+
 ### 17 - Exception handling silling mistake
 
 ```python
