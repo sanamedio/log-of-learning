@@ -2,6 +2,9 @@
 
 ### 24 - Coroutines ~~ OOPS
 
+- coroutine in the below case is faster than OOPS version
+- [ ] self lookups take time, that contributes to slowness of it
+
 OOPS version:
 ```python
 class GrepHandler(object):
