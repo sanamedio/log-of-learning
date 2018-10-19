@@ -2,8 +2,8 @@
 
 ### 26 - Performance optimization - coroutine - and dangers
 
- - Go lower level API
- - Go to c extensions
+ - Go to lower level API and yeild from there
+ - Write a C extension and yield from there
  - do .send() also in C
  - ref : http://www.dabeaz.com/coroutines/Coroutines.pdf( page 35/ slide 70 )
  
