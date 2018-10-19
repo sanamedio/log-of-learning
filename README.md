@@ -20,4 +20,4 @@
 
 [18-oct-2018 - 20 entries](./notes-18-oct-2018.md)
 
-[19-oct-2018 - 00 entries](./notes-19-oct-2018.md)
+[19-oct-2018 - 30 entries](./notes-19-oct-2018.md)
