@@ -1,5 +1,16 @@
 # 19-oct-2018
 
+### 27 - Property decorator
+
+```python
+class Foo:
+  @property
+  def hello():
+    return 'hello world'
+
+Foo().hello() # 'hello world' not function object
+```
+
 ### 26 - Performance optimization - coroutine - and dangers
 
  - Go to lower level API and yeild from there
