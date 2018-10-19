@@ -8,8 +8,8 @@
  - ref : http://www.dabeaz.com/coroutines/Coroutines.pdf( page 35/ slide 70 )
  
  - If you send on already executing coroutine, it will crash your program.
-  - Does this mean there is no default queue involved?
-  - [ ] TODO This seems weird; need to check 
+   - Does this mean there is no default queue involved?
+   - [ ] TODO This seems weird; need to check 
 
 ### 25 - How does coroutine differ from simple argument passing?
 
