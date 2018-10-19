@@ -4,9 +4,9 @@
 
 - In python variable assignment cannot be used as a expression for conditionals
 
-- ```python
+```python
      while (line = yield): ## syntax error
-  ```
+```
 
 ### 22 - coroutine with single source and multiple targets
 
