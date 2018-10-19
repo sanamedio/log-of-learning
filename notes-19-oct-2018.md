@@ -1,5 +1,11 @@
 # 19-oct-2018
 
+### 21 - coroutine vs generator
+
+- [ ] http://www.dabeaz.com/coroutines/Coroutines.pdf
+
+- Key difference between generator chain and coroutine chain is that Generators pulldata through the pipe with iteration whereas Coroutines push data into the pipeline with send().
+
 ### 20 - Decimal math with floating point error
 
 ```python
