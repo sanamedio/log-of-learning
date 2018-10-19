@@ -1,5 +1,18 @@
 # 19-oct-2018
 
+### 25 - How does coroutine differ from simple argument passing?
+
+```python
+@coroutine
+def filter_on_field(fieldname,value,target):
+     while True:
+          d = (yield)
+          if d.get(fieldname) == value:
+               target.send(d)
+```
+- Difference between simple functions and coroutine seems like coroutine maintains a state internally using yield points, whereas functions will start from top. It seems more like a useful abstraction then something fundamentally different.
+- [ ] What will happen if I send to same coroutine? Is it possible to define in such a loopy way?
+
 ### 24 - Coroutines ~~ OOPS
 
 - coroutine in the below case is faster than OOPS version
