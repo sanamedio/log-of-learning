@@ -1,5 +1,10 @@
 # 19-oct-2018
 
+### 29- Source code of core libs
+
+https://github.com/python/cpython/tree/master/Lib
+
+
 ### 28 - Summary till now and Questions in my mind
 
 - GIL i.e. Global Interpreter Lock. It seems to be a big issue with python and unsolved problem. Where is GIL code? [ ] TODO find out GIL source code in cpython source tree.
