@@ -1,5 +1,12 @@
 # 19-oct-2018
 
+### 26 - Performance optimization - coroutine
+
+ - Go lower level API
+ - Go to c extensions
+ - do .send() also in C
+ - ref : http://www.dabeaz.com/coroutines/Coroutines.pdf( page 35/ slide 70 )
+
 ### 25 - How does coroutine differ from simple argument passing?
 
 ```python
