@@ -1,9 +1,35 @@
 # 19-oct-2018
 
+### 30 - Dumping information about threads
+
+```python
+import sys
+import traceback
+
+
+def dump_threads():
+        for thread_id, frame in sys._current_frames().iteritems():
+                print 'Thread #%d' % thread_id
+                print ''.join(traceback.format_stack(frame))
+
+
+import time, threading
+
+
+def foo():
+        for x in xrange(10):
+                time.sleep(1)
+
+
+threading.Thread(target=foo).start()
+dump_threads()
+```
+
 ### 29- Source code of core libs
 
 https://github.com/python/cpython/tree/master/Lib
 
+- [ ] TODO Go through each file in that directory!  
 
 ### 28 - Summary till now and Questions in my mind
 
