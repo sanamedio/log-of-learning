@@ -39,6 +39,7 @@ def grep(pattern, target):
 
 - (yield) is the place where anything sent to this coroutine goes; and using target.send we pass that value to multiple target coroutines
 - [ ] Is it possible to take multiple source yield in a non-conflicting way apart from just depending on their order?
+- You can send object to coroutine, i.e. you can pass for example a tuple ('a',1,1.0), and target can receive it
 
 ```python
 @coroutine
