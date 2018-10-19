@@ -18,12 +18,12 @@ def filter_on_field(fieldname,value,target):
                target.send(d)
 ```
 - Difference between simple functions and coroutine seems like coroutine maintains a state internally using yield points, whereas functions will start from top. It seems more like a useful abstraction then something fundamentally different.
-- [ ] What will happen if I send to same coroutine? Is it possible to define in such a loopy way?
+- [X] What will happen if I send to same coroutine? Is it possible to define in such a loopy way? Ans: Can't be done. Coroutine don't allow this. Check dabeaz slides on coroutine.
 
 ### 24 - Coroutines ~~ OOPS
 
 - coroutine in the below case is faster than OOPS version
-- [ ] self lookups take time, that contributes to slowness of it
+- [ ] self.lookups take time, that contributes to slowness of it
 
 OOPS version:
 ```python
