@@ -8,12 +8,13 @@
 
 Step 1:
 ```bash
-pip install pyrasite
-echo 0 | sudo tee /proc/sys/kernel/yama/ptrace_scope
+$ pip install pyrasite
+$ echo 0 | sudo tee /proc/sys/kernel/yama/ptrace_scope
 ```
-Step 2: Run a Python program or something like ipython
+Step 2:
+Run a Python program or something like ipython
 
 Step 3:
 ```bash
-pyrasite-shell <pid of python process>
+$ pyrasite-shell <pid of python process>
 ```
