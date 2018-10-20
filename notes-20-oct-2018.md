@@ -49,7 +49,7 @@ for x in xrange(100000000000):
     print 'hello'<uncompyle6.semantics.pysource.SourceWalker object at 0x7f073594ef50>
 ```
 
-# 3 - magic methods
+### 3 - magic methods
 
 - getitem
 ```python
