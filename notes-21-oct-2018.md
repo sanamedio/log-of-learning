@@ -6,8 +6,9 @@
 - Event loops , Tasks and Coroutines together makes it simpler to achieve cooperative concurrency in python. They aren't same as multiprocessing
 - An event loop basically waits for something to happen and then acts on the event.
 - Event loop schedules tasks
-- Coroutines are things which can be resumed and suspended
+- Coroutines (wrapped under tasks) are things which can be resumed and suspended
 - The async and await keywords were added in Python 3.5 to define a native coroutine and make them a distinct type when compared with a generator based coroutine
+- [ ] TODO Why other languages don't have such construct or is this because of GIL that we don't talk about multiple threads here? How does this compare to something like nodejs?
 
 
 ```python
