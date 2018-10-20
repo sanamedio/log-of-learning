@@ -8,6 +8,8 @@
 - Event loop schedules tasks
 - Coroutines (wrapped under tasks) are things which can be resumed and suspended
 - The async and await keywords were added in Python 3.5 to define a native coroutine and make them a distinct type when compared with a generator based coroutine
+- Future is an awaitable object. Coroutines can await on Future objects until they either have a result or an exception set, or until they are cancelled.
+- Generators and coroutines have similarity, i.e. both are things that can be suspended and resumed.
 - [ ] TODO Why other languages don't have such construct or is this because of GIL that we don't talk about multiple threads here? How does this compare to something like nodejs?
 - [ ] Is asyncio fundamental construct? How much does is take this kind of Task scheduler?
 
