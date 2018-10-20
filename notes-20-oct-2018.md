@@ -4,6 +4,7 @@
 ### 1 - pyrasite shell
 
 - Allows to get shell on a running python process
+- https://pyrasite.readthedocs.io/en/latest/Shell.html
 
 Step 1:
 ```bash
