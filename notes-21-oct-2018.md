@@ -3,7 +3,7 @@
 ### 1 - asyncio
 
 - asyncio is a library to write concurrent code using the async/await syntax.
-- Event loops , Tasks and Coroutines
+- Event loops , Tasks and Coroutines together makes it simpler to achieve cooperative concurrency in python. They aren't same as multiprocessing
 - An event loop basically waits for something to happen and then acts on the event.
 - Event loop schedules tasks
 - Coroutines are things which can be resumed and suspended
