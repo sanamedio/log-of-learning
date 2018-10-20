@@ -14,6 +14,19 @@
 - [ ] Is asyncio fundamental construct? How much does is take this kind of Task scheduler?
 - [ ] TODO READ THIS https://snarky.ca/how-the-heck-does-async-await-work-in-python-3-5/
 
+Simplest example:
+```python
+import asyncio
+
+async def main():
+    print('Hello ...')
+    await asyncio.sleep(1)
+    print('... World!')
+
+# Python 3.7+
+asyncio.run(main())
+```
+
 ```python
 # simple usage, without any benefit
 import asyncio
