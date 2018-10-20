@@ -12,7 +12,7 @@
 - Generators and coroutines have similarity, i.e. both are things that can be suspended and resumed.
 - [ ] TODO Why other languages don't have such construct or is this because of GIL that we don't talk about multiple threads here? How does this compare to something like nodejs?
 - [ ] Is asyncio fundamental construct? How much does is take this kind of Task scheduler?
-
+- [ ] TODO READ THIS https://snarky.ca/how-the-heck-does-async-await-work-in-python-3-5/
 
 ```python
 # simple usage, without any benefit
