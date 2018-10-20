@@ -67,6 +67,8 @@ Learning goals:
  - [ ] How to apply Python? Write atleast one production ready project in WebDev and deploy it on cloud. Algo, DS and Patterns need to be implemented and practiced via questions
  - [ ] Read Celery source code and find open issues. If not Celery find some other pure python project. Measure progress.
  - [ ] Come up with a Pythonish library - something that makes dev life easier
+ - [ ] Read all PEP
+ - [ ] Read CPython source code
 
 ### 27 - Property decorator
 
