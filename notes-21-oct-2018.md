@@ -32,7 +32,7 @@ finally:
 import asyncio
 
 async def say(what, when): #async 
-    await asyncio.sleep(when)
+    await asyncio.sleep(when) #at this point say function is giving control to or atleast telling that now this should get executed. But the event loop is gonna make that decision when to execute that future
     print(what)
 
 loop = asyncio.get_event_loop()
