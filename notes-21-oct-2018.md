@@ -12,6 +12,7 @@
 
 
 ```python
+# simple usage, without any benefit
 import asyncio
 
 # Define a coroutine that takes in a future
