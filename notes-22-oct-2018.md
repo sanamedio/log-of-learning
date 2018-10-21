@@ -6,6 +6,48 @@
 False is False is False #Outputs True because
 1 < 2 < 3 #True
 ```
+bytecodes:
+```python
+>>> def test():
+...     False is False is False
+... 
+>>> dis.dis(test)
+  2           0 LOAD_GLOBAL              0 (False)
+              3 LOAD_GLOBAL              0 (False)
+              6 DUP_TOP             
+              7 ROT_THREE           
+              8 COMPARE_OP               8 (is)
+             11 JUMP_IF_FALSE_OR_POP    23
+             14 LOAD_GLOBAL              0 (False)
+             17 COMPARE_OP               8 (is)
+             20 JUMP_FORWARD             2 (to 25)
+        >>   23 ROT_TWO             
+             24 POP_TOP             
+        >>   25 POP_TOP             
+             26 LOAD_CONST               0 (None)
+             29 RETURN_VALUE        
+>>> def test2():
+...     1 < 2 < 3 
+... 
+>>> dis.dis(test2)
+  2           0 LOAD_CONST               1 (1)
+              3 LOAD_CONST               2 (2)
+              6 DUP_TOP             
+              7 ROT_THREE           
+              8 COMPARE_OP               0 (<)
+             11 JUMP_IF_FALSE_OR_POP    23
+             14 LOAD_CONST               3 (3)
+             17 COMPARE_OP               0 (<)
+             20 JUMP_FORWARD             2 (to 25)
+        >>   23 ROT_TWO             
+             24 POP_TOP             
+        >>   25 POP_TOP             
+             26 LOAD_CONST               0 (None)
+             29 RETURN_VALUE        
+>>> 
+
+```
+
 
 ### 5 - Inspect : tool for observation
 
