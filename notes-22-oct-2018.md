@@ -1,5 +1,19 @@
 # 22-oct-2018
 
+### 4 - Bytecode processor: BINARY_MULTIPLY
+
+```C
+TARGET(BINARY_MULTIPLY) // MACRO to hide whether it's old switch case or the newer goto jump
+  w = POP()
+  v = TOP()
+  x = PyNumber_Multiply(v,w); // v and w multiplication using Number protocol
+  Py_DECREF(v); // why not do it safely?
+  Py_DECREF(w); // does order of these decrements matter?
+  SET_TOP(x); // what if code has some failure at this point? will it revert the process to last stage?
+  if ( x != NULL ) DISPATCH();
+  break;
+```
+
 ### 3 - .pyc files
 
 - It uses marshal module 
