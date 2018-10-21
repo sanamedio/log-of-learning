@@ -1,5 +1,15 @@
 # 22-oct-2018
 
+### 5 - Inspect : tool for observation
+
+```python
+import random
+import inspect
+
+print( inspect.getsource(random.choice)) #prints source code of choice function
+
+```
+
 ### 4 - Bytecode processor: BINARY_MULTIPLY
 
 - This and previous few notes are from this talk : https://www.youtube.com/watch?v=XGF3Qu4dUqk
