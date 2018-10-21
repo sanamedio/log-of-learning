@@ -1,5 +1,12 @@
 # 22-oct-2018
 
+### 7 - Compile code and getting code object
+
+```python
+>> compile('test.py', 'test.py', 'exec')
+```
+This returns a code object for test.py module
+
 ### 6 - Ternary operation
 
 ```python
