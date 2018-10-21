@@ -16,19 +16,20 @@ print mod("%s%s", ( 'Hello' , 'World' ) ) # HelloWorld
 
 ```C
 //binary modulo in ceval cpython, the code is from a old pycon talk so might not map exactly to cpython
-
+// BINARY_MODULO is for instance a compiled bytecode and now interpreter has to take action on the stack machine so that a correct outcome is calculated
+// one of the case of a giant switch case or goto whatever
 case BINARY_MODULO:
-        w = POP();
-        v = TOP();
-        if( PyString_CheckExact(v)) // if it is pystring, apply pyformat i.e. print format
+        w = POP();// two arguments are needed to do a modulo. Both are avaialble on the stack. Pops first value
+        v = TOP();// doesn't pop, but just takes the value
+        if( PyString_CheckExact(v)) // if it is pystring, apply pyformat i.e. print format, but it's just a optimization;
                 x = PyString_Format(v,w);
         else
                 x = PyNumber_Remainder(v,w); // all other cases even custom ones are handled here
 
-        Py_DECREF(v);
-        Py_DECREF(w);
-        SET_TOP(x);
-        if ( x != NULL) continue;
+        Py_DECREF(v);// now since v is not needed anymore; decrease reference for garbage collection
+        Py_DECREF(w);// same for w , but are these PyObjects? probably yes
+        SET_TOP(x); // put the answer on the top of the stack overwriting
+        if ( x != NULL) continue; // if top of stack is not null ; then do a continue, but what will continue do? this doesn't seem to be doing anything significant before the break
         break;
 ```               
 
