@@ -1,7 +1,7 @@
 # 21-oct-2018
 
 ### 6 - CPython Directory
-
+```
 Folder - Use
 
 Doc - Documentation 
@@ -18,7 +18,7 @@ Objects - Implementation of objects like sets, tuples, lists , some internal obj
 Python - importer, parser , majorly Python, bookeeping etc
 
 There can be other stuff also in these folder here and there.
-
+```
 
 ### 5 - Python is dynamically typed! lower level details
 
