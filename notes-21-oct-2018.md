@@ -1,5 +1,19 @@
 # 21-oct-2018
 
+### 12 - Protocols 
+
+- Sits in ```Include/abstract.h``` and ```Objects/abstract.c```
+- A protocol is another name for Abstract Base Class
+- Five protocols
+    - Object
+    - Buffer ```tp_as_buffer```
+    - Number ```tp_as_number```
+    - Mapping ```tp_as_mapping```
+    - Sequence ```tp_as_sequence```
+        - "fast" sequence, can be used in C for performance
+        - "fast" sequence is aware of internals so it does better than generic sequence interface calls
+
+
 ### 11 - PyTypeObject CPython
 
 - Def. can be found in object.h as \_typeobject
