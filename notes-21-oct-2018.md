@@ -1,8 +1,8 @@
 # 21-oct-2018
 
-### 14 - PyObjct_memory allocator
+### 14 - PyObject_memory allocator
 
-- Other family of memory allocators
+- Other family of memory allocator
 - Compile python with WITH_PYMALLOC ```#define wITH_PYMALLOC```
 - Sits in ```Include/objimpl.h``` anad ```Objects/obmalloc.c```
 - ```PyObject_Malloc() custom small block allocator for python```
