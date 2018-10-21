@@ -4,6 +4,7 @@
 
 - Each level of your code, module , main , function , corresponds to one frame in call stack
 - Each frame in call stack has it's own data stack
+- In cpython souce code, ceval.c contains opcode to operation mapping, i.e. if this instruction, do this on the stack
 
 ### 3 - python bytecode 
 
