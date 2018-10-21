@@ -3,9 +3,15 @@
 ### 14 - PyObjct_memory allocator
 
 - Other family of memory allocators
-- Compile pytohn with WITH_PYMALLOC ```#define wITH_PYMALLOC```
+- Compile python with WITH_PYMALLOC ```#define wITH_PYMALLOC```
 - Sits in ```Include/objimpl.h``` anad ```Objects/obmalloc.c```
-
+- ```PyObject_Malloc() custom small block allocator for python```
+```C
+#define PyObject_MALLOC
+    PyObject_Malloc // by default maps to PyObject_MALLOC
+    PYMALLOC_DEBUG -> _PyObject_DebugMalloc // In case of debug flag, it calls this
+    ! WITH_PYMALLOC -> PyMem_MALLOC // falls back to PyMem_MALLOC
+```
 
 ### 13 - Reference Counting
 
