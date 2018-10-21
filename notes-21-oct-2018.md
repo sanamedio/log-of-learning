@@ -4,7 +4,7 @@
 
 ```bash
 $ gdb python3
-$ break pain
+$ break main
 $ run the_program.py
 ```
 
