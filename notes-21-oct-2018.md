@@ -2,9 +2,9 @@
 
 ### 13 - Reference Counting
 
-- Py_INCREF(o) : Increase ref count
-- Py_DECREF(o) : Decrease ref count, if it's zero can be GCed
-- Py_XINCREF(o), Py_XINCREF(o) are safer versions
+- ```Py_INCREF(o)``` : Increase ref count
+- ```Py_DECREF(o)``` : Decrease ref count, if it's zero can be GCed
+- ```Py_XINCREF(o)```, ```Py_XINCREF(o)``` are safer versions
 
 ### 12 - Protocols 
 
