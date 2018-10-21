@@ -1,6 +1,6 @@
 # 21-oct-2018
 
-### 6 - CPython Directory
+### 6 - CPython Directory Structure
 ```
 Folder - Use
 
