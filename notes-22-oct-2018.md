@@ -1,5 +1,12 @@
 # 22-oct-2018
 
+### 6 - Ternary operation
+
+```python
+False is False is False #Outputs True because
+1 < 2 < 3 #True
+```
+
 ### 5 - Inspect : tool for observation
 
 ```python
