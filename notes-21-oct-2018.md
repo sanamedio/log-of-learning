@@ -5,7 +5,7 @@
 Folder - Use
 
 Doc - Documentation 
-Grammar - Parser 
+Grammar - Parser grammar for python
 Mac PCbuild - Platform
 Miscellany -  Misc Tools
 
