@@ -13,6 +13,34 @@ print mod("%s%s", ( 'Hello' , 'World' ) ) # HelloWorld
 - Compiler will produce the same bytecode in both cases. Can check with dis.dis
 - Interpreter will need to do the corrrect thing
 
+```C
+//binary modulo in ceval cpython, the code is from a old pycon talk so might not map exactly to cpython
+
+case BINARY_MODULO:
+        w = POP();
+        v = TOP();
+        if( PyString_CheckExact(v)) // if it is pystring, apply pyformat i.e. print format
+                x = PyString_Format(v,w);
+        else
+                x = PyNumber_Remainder(v,w); // all other cases even custom ones are handled here
+
+        Py_DECREF(v);
+        Py_DECREF(w);
+        SET_TOP(x);
+        if ( x != NULL) continue;
+        break;
+```               
+
+```python
+class Surprising(object);
+        def __mod__(self, other):
+                print "surprise!"
+
+
+s = Surprising()
+t = Surprising()
+s % t # Surprise!
+```
 
 ### 4 - call stack and data stack
 
