@@ -1,6 +1,6 @@
 # 21-oct-2018
 
-### 5 - Python is dynamically typed!
+### 5 - Python is dynamically typed! lower level details
 
 ```python
 def mod(a,b):
