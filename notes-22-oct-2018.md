@@ -10,7 +10,7 @@ TARGET(BINARY_MULTIPLY) // MACRO to hide whether it's old switch case or the new
   Py_DECREF(v); // why not do it safely? because it's guarenteed at this point that they will be legal
   Py_DECREF(w); // does order of these decrements matter?
   SET_TOP(x); // what if code has some failure at this point? will it revert the process to last stage?
-  if ( x != NULL ) DISPATCH();
+  if ( x != NULL ) DISPATCH(); // earlier there wasn't being done in case of switch case style; but with new one i.e. labels as values version it does some work
   break;
 ```
 
