@@ -23,3 +23,6 @@
 [19-oct-2018 - 30 entries](./notes-19-oct-2018.md)
 
 [20-oct-2018 - 03 entries](./notes-20-oct-2018.md)
+
+[21-oct-2018 - 03 entries](./notes-21-oct-2018.md)
+
