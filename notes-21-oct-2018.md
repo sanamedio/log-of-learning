@@ -5,10 +5,10 @@
 - Sits in ```Include/abstract.h``` and ```Objects/abstract.c```
 - A protocol is another name for Abstract Base Class
 - Five protocols
-    - Object
+    - Object: everything needs to inherit from object
     - Buffer ```tp_as_buffer```
-    - Number ```tp_as_number```
-    - Mapping ```tp_as_mapping```
+    - Number ```tp_as_number``` : things like multiplication, division , mod and other behaviour of numbers etc.
+    - Mapping ```tp_as_mapping```: getitem, setitem etc.
     - Sequence ```tp_as_sequence```
         - "fast" sequence, can be used in C for performance
         - "fast" sequence is aware of internals so it does better than generic sequence interface calls
