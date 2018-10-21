@@ -1,5 +1,10 @@
 # 21-oct-2018
 
+### 4 - call stack and data stack
+
+- Each level of your code, module , main , function , corresponds to one frame in call stack
+- Each frame in call stack has it's own data stack
+
 ### 3 - python bytecode 
 
 ```python
@@ -12,6 +17,8 @@ print mod.func_code.co_code
 print [ord(b) for b in mod.func_code.co_code]
 
 # use dis for getting proper byte code names
+import dis
+dis.dis(mod) # prints bytecode information but not return it
 ```
 
 ### 2 - Python program steps
