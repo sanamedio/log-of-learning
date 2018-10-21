@@ -2,7 +2,7 @@
 
 ### Memory Management - Cpython
 
-Two "families" of Memory Management functionss
+- Two "families" of Memory Management functionss : PyMem_ and PyObject_memory
 
 - PyMem_
     - PyMem_ functions are present in Include/pymem.h and Objects/object.c ( Why not in module? )
