@@ -1,6 +1,6 @@
 # 21-oct-2018
 
-### Memory Management - Cpython
+### 8 - Memory Management Cpython
 
 - Two "families" of Memory Management functionss : PyMem_ and PyObject_memory
 
@@ -18,7 +18,7 @@
 - For both of them there are malloc, realloc, and free
 - suggested to not call malloc directly in C!
 
-### main - Cpython
+### 7 - main Cpython
 
 ```bash
 $ gdb python3
