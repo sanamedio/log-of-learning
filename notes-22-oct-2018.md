@@ -19,7 +19,7 @@ PyNumber_Multiply:
 PyObject * 
 PyNumber_Multiply(PyObject *v, PyObject *w)
 {
-	PyObject *result = binary_op1(v,w,NB_SLOT(nb_multiply));
+	PyObject *result = binary_op1(v,w,NB_SLOT(nb_multiply)); // binary_op1 is local function 
 	if ( result == Py_NotImplemented){
 		PySequenceMethods *mv = v->ob_type->tp_as_sequence;
 		PySequenceMethods *mw = v->ob_type->tp_as_sequence;
