@@ -1,5 +1,12 @@
 # 21-oct-2018
 
+### 2 - Python program steps
+
+- Lexing
+- Parsing
+- Compilation
+- Interpreting
+
 ### 1 - asyncio
 
 - asyncio is a library to write concurrent code using the async/await syntax.
