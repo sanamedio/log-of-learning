@@ -1,5 +1,32 @@
 # 21-oct-2018
 
+### 10 - \_PyObject_New 
+```bash
+(gdb) break _PyObject_New
+(gdb) c
+(gdb) clear _PyObject_New //because this is very frequenct call 
+```
+
+
+### 9 - Py_Main CPython
+
+```bash
+(gdb) break Py_Main
+(gdb) c
+```
+
+- Lives in Modules/main.c
+- Both main and Py_Main sits in modules ( unintiutive)
+- Py_Main does
+    - gets command line options
+    - gets env variables
+    - sets input and output stdio,stderr
+    - Py_Initialize : initialize moduels and stuff
+    - run script / -m module / -c command
+    
+
+
+
 ### 8 - Memory Management Cpython
 
 - Two "families" of Memory Management functionss : PyMem_ and PyObject_memory
