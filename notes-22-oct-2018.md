@@ -4,7 +4,7 @@
 
 ```C
 TARGET(BINARY_MULTIPLY) // MACRO to hide whether it's old switch case or the newer goto jump
-  w = POP()
+  w = POP() // w,v,x act as general purpose registers here
   v = TOP()
   x = PyNumber_Multiply(v,w); // v and w multiplication using Number protocol
   Py_DECREF(v); // why not do it safely?
