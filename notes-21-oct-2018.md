@@ -2,8 +2,8 @@
 
 ### 14 - PyObject_memory allocator
 
-- Other family of memory allocator
-- Compile python with WITH_PYMALLOC ```#define wITH_PYMALLOC```
+- There are two memory allocators. One uses C's default allocator and this is the other family of memory allocator
+- This is enabled when we Compile python with WITH_PYMALLOC ```#define WITH_PYMALLOC```
 - Sits in ```Include/objimpl.h``` anad ```Objects/obmalloc.c```
 - ```PyObject_Malloc() custom small block allocator for python```
 ```C
