@@ -5,7 +5,7 @@
 ```python
 >> compile('test.py', 'test.py', 'exec')
 ```
-This returns a code object for test.py module
+This returns a code object for test.py module. Also you can use dis module from command line ```python -m dis test.py```
 
 ### 6 - Ternary operation
 
