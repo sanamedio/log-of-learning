@@ -12,6 +12,7 @@ print mod("%s%s", ( 'Hello' , 'World' ) ) # HelloWorld
 ```
 - Compiler will produce the same bytecode in both cases. Can check with dis.dis
 - Interpreter will need to do the corrrect thing
+- To improve performance, type information can help ( coming in future python )
 
 ```C
 //binary modulo in ceval cpython, the code is from a old pycon talk so might not map exactly to cpython
