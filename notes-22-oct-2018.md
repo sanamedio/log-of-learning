@@ -19,8 +19,8 @@ PyNumber_Multiply:
 PyObject * 
 PyNumber_Multiply(PyObject *v, PyObject *w)
 {
-	PyObject *result = binary_op1(v,w,NB_SLOT(nb_multiply)); // binary_op1 is local function 
-	if ( result == Py_NotImplemented){
+	PyObject *result = binary_op1(v,w,NB_SLOT(nb_multiply)); // binary_op1 is local function and tries to do multiplication
+	if ( result == Py_NotImplemented){// then we try to see if one of them is a sequence and other is a number and do operation of multiplication according to that
 		PySequenceMethods *mv = v->ob_type->tp_as_sequence;
 		PySequenceMethods *mw = v->ob_type->tp_as_sequence;
 		Py_DECREF(result);
@@ -30,7 +30,7 @@ PyNumber_Multiply(PyObject *v, PyObject *w)
 		else if( mw && mw->sq_repeat){
 			return sequence_repeat(mw->sq_repeat, w,v);
 		}
-		result = binop_type_error(v,w,"*");
+		result = binop_type_error(v,w,"*"); // if all above doesn't happen, creates new type error object and raises it internally
 
 	}
 	return result;
