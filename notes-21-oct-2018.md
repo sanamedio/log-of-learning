@@ -7,7 +7,7 @@
 (gdb) clear _PyObject_New //because this is very frequenct call 
 ```
 - Everything in python is PyObject, very fundamental to Python
-- sets, list, types, frames , etc.
+- sets, list, types, frames , etc. all are PyObject
 - PyObject sits in Include/object.h and Objects/object.c
 
 ```c
