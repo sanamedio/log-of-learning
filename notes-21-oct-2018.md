@@ -8,7 +8,7 @@
 ```
 - Everything in python is PyObject, very fundamental to Python
 - sets, list, types, frames , etc. all are PyObject
-- PyObject sits in Include/object.h and Objects/object.c
+- PyObject sits in ```Include/object.h``` and ```Objects/object.c```
 
 ```c
 typedef struct _object {
@@ -28,7 +28,7 @@ typedef struct _object {
 (gdb) c
 ```
 
-- Lives in Modules/main.c
+- Lives in ```Modules/main.c```
 - Both main and Py_Main sits in modules ( unintiutive)
 - Py_Main does
     - gets command line options
@@ -45,7 +45,7 @@ typedef struct _object {
 - Two "families" of Memory Management functionss : PyMem_ and PyObject_memory
 
 - PyMem_
-    - PyMem_ functions are present in Include/pymem.h and Objects/object.c ( Why not in module? )
+    - PyMem_ functions are present in ```Include/pymem.h``` and ```Objects/object.c``` ( Why not in module? )
     - PyMem_Malloc() -> calls malloc()
     - ```#define PyMem_MALLOC -> calls malloc()```
     - ```#define PYMALLOC_DEBUG -> _PyMem_DebugMalloc()```
@@ -66,7 +66,7 @@ $ break main
 $ run the_program.py
 ```
 
-- Main lives in Modules/python.c
+- Main lives in ```Modules/python.c```
 - Makes copes of argv ( WHy? )
 - sets locale ( How does locale impact?)
 - calls Py_Main, this is same for all platforms
