@@ -10,6 +10,9 @@ def mod(a,b):
 print mod(13,3) # 1
 print mod("%s%s", ( 'Hello' , 'World' ) ) # HelloWorld
 ```
+- Compiler will produce the same bytecode in both cases. Can check with dis.dis
+- Interpreter will need to do the corrrect thing
+
 
 ### 4 - call stack and data stack
 
