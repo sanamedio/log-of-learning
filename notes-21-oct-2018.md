@@ -1,5 +1,23 @@
 # 21-oct-2018
 
+### Memory Management - Cpython
+
+Two "families" of Memory Management functionss
+
+- PyMem_
+    - PyMem_ functions are present in Include/pymem.h and Objects/object.c ( Why not in module? )
+    - PyMem_Malloc() -> calls malloc()
+    - ```#define PyMem_MALLOC -> calls malloc()```
+    - ```#define PYMALLOC_DEBUG -> _PyMem_DebugMalloc()```
+        - kind of mini valgrind
+        - turn this off if using real valgrind
+
+
+- PyObject_memory
+
+- For both of them there are malloc, realloc, and free
+- suggested to not call malloc directly in C!
+
 ### main - Cpython
 
 ```bash
