@@ -1,5 +1,19 @@
 # 21-oct-2018
 
+### 3 - python bytecode 
+
+```python
+def mod(a,b):
+    ans = a%b
+    return ans
+
+print mod.func_code.co_code
+
+print [ord(b) for b in mod.func_code.co_code]
+
+# use dis for getting proper byte code names
+```
+
 ### 2 - Python program steps
 
 - Lexing
