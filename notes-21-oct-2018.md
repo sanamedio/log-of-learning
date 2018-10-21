@@ -1,5 +1,16 @@
 # 21-oct-2018
 
+### 5 - Python is dynamically typed!
+
+```python
+def mod(a,b):
+    result = a % b
+    return result
+
+print mod(13,3) # 1
+print mod("%s%s", ( 'Hello' , 'World' ) ) # HelloWorld
+```
+
 ### 4 - call stack and data stack
 
 - Each level of your code, module , main , function , corresponds to one frame in call stack
