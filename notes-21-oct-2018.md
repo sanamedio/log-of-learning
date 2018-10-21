@@ -2,9 +2,12 @@
 
 ### 13 - Reference Counting
 
+- All objects are ref counted
+- Five MACROS
 - ```Py_INCREF(o)``` : Increase ref count
-- ```Py_DECREF(o)``` : Decrease ref count, if it's zero can be GCed
-- ```Py_XINCREF(o)```, ```Py_XINCREF(o)``` are safer versions
+- ```Py_DECREF(o)``` : Decrease ref count, if it's zero we deallocate
+- ```Py_XINCREF(o)```, ```Py_XINCREF(o)``` : are safer versions, have nullcheck before calling INCREF and DECREF
+- ```Py_CLEAR(o)``` : Makes copy of pointer first and then calls DECREF, used for things which are member of structure
 
 ### 12 - Protocols 
 
