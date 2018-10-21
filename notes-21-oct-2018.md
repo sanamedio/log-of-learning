@@ -1,5 +1,25 @@
 # 21-oct-2018
 
+### 6 - CPython Directory
+
+Folder - Use
+
+Doc - Documentation 
+Grammar - Parser 
+Mac PCbuild - Platform
+Miscellany -  Misc Tools
+
+Important for core devs:
+
+Include - public include files, and gets installed with Python. There are other include files not present in this folder but are used internally
+Lib - Python portion of standard library
+Modules - C portion of standard library
+Objects - Implementation of objects like sets, tuples, lists , some internal objects etc
+Python - importer, parser , majorly Python, bookeeping etc
+
+There can be other stuff also in these folder here and there.
+
+
 ### 5 - Python is dynamically typed! lower level details
 
 ```python
