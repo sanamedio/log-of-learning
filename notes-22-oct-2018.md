@@ -2,6 +2,8 @@
 
 ### 4 - Bytecode processor: BINARY_MULTIPLY
 
+- This and previous few notes are from this talk : https://www.youtube.com/watch?v=XGF3Qu4dUqk
+
 ```C
 TARGET(BINARY_MULTIPLY) // MACRO to hide whether it's old switch case or the newer goto jump
   w = POP() // w,v,x act as general purpose registers here
