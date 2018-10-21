@@ -12,6 +12,7 @@
     - Sequence ```tp_as_sequence```
         - "fast" sequence, can be used in C for performance
         - "fast" sequence is aware of internals so it does better than generic sequence interface calls
+- Sounds like Python and C are very closely related the way this implementation is done. We created memory structures in C and Python is kind of a abstraction over C to manipulate them with easier interface.
 
 
 ### 11 - PyTypeObject CPython
