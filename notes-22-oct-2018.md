@@ -1,5 +1,11 @@
 # 22-oct-2018
 
+### 3 - .pyc files
+
+- It uses marshal module 
+  - Present in ```Include/marshal.h``` and ```Python/marshal.c```
+- Starts with a magic tag documented in ```Python/import.c``` , and last modification time and python code objects serialized
+- While loading modules which are pure python and haven't already been preloaded by the interpreter, first pycache directory is checked for corresponding .pyc file.
 
 ### 2 - Modules written in C (CPython source)
 
