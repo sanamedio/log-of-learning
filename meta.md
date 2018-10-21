@@ -25,3 +25,13 @@ Measure progress- [ ] How to apply Python? Write atleast one production ready pr
 - [ ] Read all PEP
 - [ ] Read CPython source code
 - [ ] Watch PyCon talks
+
+
+
+Learning how to learn:
+
+1. Interweaving - studying mixed topics
+2. Diffuse and Focussed thinking - Give intermitted breaks of free association
+3. Micro questions - Question what you are learning while you are learning through small questions
+4. Recalling - Try to make notes by remembering what you studied not by vocalizing or just immediately typing them down
+5. Spacing - Try to study same stuff over longer period of time than blocked continuous sprint
