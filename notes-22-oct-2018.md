@@ -14,6 +14,29 @@ TARGET(BINARY_MULTIPLY) // MACRO to hide whether it's old switch case or the new
   break;
 ```
 
+PyNumber_Multiply:
+```c
+PyObject * 
+PyNumber_Multiply(PyObject *v, PyObject *w)
+{
+	PyObject *result = binary_op1(v,w,NB_SLOT(nb_multiply));
+	if ( result == Py_NotImplemented){
+		PySequenceMethods *mv = v->ob_type->tp_as_sequence;
+		PySequenceMethods *mw = v->ob_type->tp_as_sequence;
+		Py_DECREF(result);
+		if( mv && mv->sq_repeat){
+			return sequence_repeat(mv->sq_repeat,v,w);
+		}
+		else if( mw && mw->sq_repeat){
+			return sequence_repeat(mw->sq_repeat, w,v);
+		}
+		result = binop_type_error(v,w,"*");
+
+	}
+	return result;
+}
+```
+
 ### 3 - .pyc files
 
 - It uses marshal module 
