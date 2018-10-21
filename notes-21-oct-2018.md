@@ -1,6 +1,6 @@
 # 21-oct-2018
 
-### 14 - PyObject_memory allocator
+### 14 - PyObject_memory small block allocator
 
 - There are two memory allocators. One uses C's default allocator and this is the other family of memory allocator
 - This is enabled when we Compile python with WITH_PYMALLOC ```#define WITH_PYMALLOC```
