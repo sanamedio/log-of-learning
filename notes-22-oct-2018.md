@@ -7,7 +7,7 @@ TARGET(BINARY_MULTIPLY) // MACRO to hide whether it's old switch case or the new
   w = POP() // w,v,x act as general purpose registers here
   v = TOP()
   x = PyNumber_Multiply(v,w); // v and w multiplication using Number protocol
-  Py_DECREF(v); // why not do it safely?
+  Py_DECREF(v); // why not do it safely? because it's guarenteed at this point that they will be legal
   Py_DECREF(w); // does order of these decrements matter?
   SET_TOP(x); // what if code has some failure at this point? will it revert the process to last stage?
   if ( x != NULL ) DISPATCH();
