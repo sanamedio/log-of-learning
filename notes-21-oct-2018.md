@@ -1,6 +1,13 @@
 # 21-oct-2018
 
-### 10 - PyObject
+### 11 - PyTypeObject CPython
+
+- Def. can be found in object.h as \_typeobject
+- Contains lots of fields and function pointers and pointers to struct which again contain function pointers
+- https://ref.readthedocs.io/en/latest/understanding_python/type_system/PyTypeObject.html
+- https://github.com/python/cpython/blob/e42b705188271da108de42b55d9344642170aa2b/Doc/c-api/typeobj.rst#id600
+
+### 10 - PyObject CPython
 ```bash
 (gdb) break _PyObject_New
 (gdb) c
