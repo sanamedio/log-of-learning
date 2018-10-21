@@ -1,5 +1,18 @@
 # 21-oct-2018
 
+### main - Cpython
+
+```bash
+$ gdb python3
+$ break pain
+$ run the_program.py
+```
+
+- Main lives in Modules/python.c
+- Makes copes of argv ( WHy? )
+- sets locale ( How does locale impact?)
+- calls Py_Main, this is same for all platforms
+
 ### 6 - CPython Directory Structure
 ```
 Folder - Use
