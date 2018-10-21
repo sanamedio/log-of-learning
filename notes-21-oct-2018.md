@@ -72,7 +72,7 @@ typedef struct _object {
     - ```#define PyMem_MALLOC -> calls malloc()```
     - ```#define PYMALLOC_DEBUG -> _PyMem_DebugMalloc()```
         - kind of mini valgrind
-        - turn this off if using real valgrind
+        - turn this off if using real valgrind, else both will fight
 
 
 - PyObject_memory
@@ -173,7 +173,7 @@ def mod(a,b):
 
 print mod.func_code.co_code
 
-print [ord(b) for b in mod.func_code.co_code]
+print [ord(b) for b in mod.func_code.co_code] # observe that all are between 0 - 256
 
 # use dis for getting proper byte code names
 import dis
