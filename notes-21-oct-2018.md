@@ -1,5 +1,12 @@
 # 21-oct-2018
 
+### 14 - PyObjct_memory allocator
+
+- Other family of memory allocators
+- Compile pytohn with WITH_PYMALLOC ```#define wITH_PYMALLOC```
+- Sits in ```Include/objimpl.h``` anad ```Objects/obmalloc.c```
+
+
 ### 13 - Reference Counting
 
 - All objects are ref counted
