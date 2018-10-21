@@ -1,5 +1,15 @@
 # 21-oct-2018
 
+### 15 - PyEval_EvalFrameEx
+
+```bash
+(gdb) b PyEval_EvalFrameEx
+(gdb) c
+```
+- Sits in Python/ceval.c
+- It's a stack based virtual machine
+
+
 ### 14 - PyObject_memory small block allocator
 
 - There are two memory allocators. One uses C's default allocator and this is the other family of memory allocator
