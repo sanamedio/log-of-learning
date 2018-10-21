@@ -3,7 +3,7 @@
 ### 6 - Ternary operation
 
 ```python
-False is False is False #Outputs True because
+False is False is False #True, which seems unintiutive because (False is False) is False will evaluate to False
 1 < 2 < 3 #True
 ```
 bytecodes:
