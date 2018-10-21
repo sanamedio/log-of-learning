@@ -1,12 +1,25 @@
 # 21-oct-2018
 
-### 10 - \_PyObject_New 
+### 10 - PyObject
 ```bash
 (gdb) break _PyObject_New
 (gdb) c
 (gdb) clear _PyObject_New //because this is very frequenct call 
 ```
+- Everything in python is PyObject, very fundamental to Python
+- sets, list, types, frames , etc.
+- PyObject sits in Include/object.h and Objects/object.c
 
+```c
+typedef struct _object {
+    _PyObject_HEAD_EXTRA // it's a preprocessor macro, normally not used, there is no semicolor 
+    // in case want to trace all objects, enable trace while compiling and it will add two fields here, prev pointer and next pointer
+    // Normally interpreter does not know the objects, and where they are in heap 
+    Py_ssize_t ob_refcnt; // reference count, big native integer 
+    struct _typeobject *ob_type; // generally we use PyTypeObject
+    // in legal objects, ob_type is never null
+} PyObject;
+```
 
 ### 9 - Py_Main CPython
 
