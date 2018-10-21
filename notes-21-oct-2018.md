@@ -5,7 +5,7 @@
 - Lexing
 - Parsing
 - Compilation
-- Interpreting
+- Interpreting, Python interpreter is a stack based virtual machine which excecutes bytecode
 
 ### 1 - asyncio
 
