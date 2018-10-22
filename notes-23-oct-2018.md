@@ -29,7 +29,7 @@
 
 
 typedef struct {
-  PyObject_VAR_HEAD
+  PyObject_VAR_HEAD // ref_cnt , size, type
   long ob_shash;
   int ob_sstate;
   char ob_sval[1];
