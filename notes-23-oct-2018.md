@@ -1,5 +1,16 @@
 # 23-oct-2018
 
+### 2 - codeobject and funcobject
+
+- related files
+  - ```Include/code.h```
+  - ```Include/funcobject.h```
+  - ```Objects/codeobject.c```
+  - ```Objects/funcobject.c```
+  
+
+
+
 ### 1 - PyStringObject
 
 - ```Objects/abstract.c``` 
@@ -46,3 +57,4 @@ typedef struct {
 - If we create a PyObject pointer to PyStringObject we will only be able access limited fields
 
 - https://en.wikipedia.org/wiki/String_interning
+- pyObject_richCompare and pyStringObject_richCompare
