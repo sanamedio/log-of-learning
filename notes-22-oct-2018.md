@@ -7,7 +7,8 @@
   - ```Include/object.h```
   - ```Objects/object.c```
 - When we store a number like 456, it gets wrapped in PyObject, and a PyInteger and then it is stored.
-(All bytecodes can be seen here : https://docs.python.org/3/library/dis.html . Just wanted to save this link)
+- [ ] TODO https://docs.python.org/3/reference/datamodel.html
+- [ ] TODO (All bytecodes can be seen here : https://docs.python.org/3/library/dis.html)
 
 ### 11 - Frame
 
