@@ -1,5 +1,22 @@
 # 23-oct-2018
 
+### 3 - Dynamically creating type and object from that
+
+```
+>>> NewType = type("NewType", (object,), {"x": "hello"})
+>>> n = NewType()
+>>> n.x
+"hello"
+```
+which is exactly the same as
+```
+>>> class NewType(object):
+>>>     x = "hello"
+>>> n = NewType()
+>>> n.x
+"hello"
+```
+
 ### 2 - code object and func object
 
 - related files
