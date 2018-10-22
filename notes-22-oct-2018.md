@@ -10,7 +10,7 @@
   - A Function has a Code object and a environment, but function is a static representation
   - A Frame also has a code object and an environment but Frame is a runtime representation
   - A Recursive function for example, may have only one function object reference but hundreds of frames.
-
+- When a new frame is created, the argument parameters are copied. (ceval.c L:4000)
 
 ### 10 - Interpreter and Opcodes
 
