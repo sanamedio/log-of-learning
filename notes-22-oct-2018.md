@@ -3,8 +3,9 @@
 ### 9 - PyFrameObject
  
 - Frames are represented by PyFrameObject present in ```include/frameobject.h```
+- [ ] TODO understand the fields
 
-```python
+```c
 typedef struct _frame {
     PyObject_VAR_HEAD
     struct _frame *f_back;      /* previous frame, or NULL */
@@ -44,7 +45,7 @@ typedef struct _frame {
 - When we define functions, they get saved as code objects
 - PyCodeObject struct is defined in ```include/code.h```
 - [ ] TODO study this structure and understand how these fields are used?
-```python
+```c
 /* Bytecode object */
 typedef struct {
     PyObject_HEAD
