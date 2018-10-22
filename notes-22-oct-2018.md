@@ -4,7 +4,7 @@
 
 - When we use compile and create code object; this is what is getting created
 - When we define functions, they get saved as code objects
-
+- [ ] TODO study this structure and understand how these fields are used?
 ```python
 /* Bytecode object */
 typedef struct {
