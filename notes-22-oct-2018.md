@@ -9,6 +9,7 @@ This returns a code object for test.py module. Also you can use dis module from 
 ```python
 >>> compile('test.py', 'test.py', 'exec')
 ```
+- Reference : http://www.pgbovine.net/cpython-internals.htm
 
 ### 6 - Ternary operation
 
