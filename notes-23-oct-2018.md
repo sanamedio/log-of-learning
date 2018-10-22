@@ -40,14 +40,14 @@ Got SystemExit!
 
 ### 3 - Dynamically creating type and object from that
 
-```
+```python
 >>> NewType = type("NewType", (object,), {"x": "hello"})
 >>> n = NewType()
 >>> n.x
 "hello"
 ```
 which is exactly the same as
-```
+```python
 >>> class NewType(object):
 >>>     x = "hello"
 >>> n = NewType()
