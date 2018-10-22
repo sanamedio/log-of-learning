@@ -1,10 +1,15 @@
 # 22-oct-2018
 
-### 11 - Frame stack
+### 11 - Frame
 
 - Frame objects are linked to each other in memory. For example: global_frame -> foo -> bar , where foo and bar are functions and foo is calling bar internally. It happens using ```struct _frame *f_back``` pointer in ```pyFrameObject```(```_frame typedef```). So a frame object contains pointer to last frame object.
 - Each frame has it's own private value stack ```f_valuestack```
 - ```PyEval_EvalFrameEx``` function takes a ```PyFrameObject```, and executes it and gives back a ```PyObject``` as result.
+- Functions, Frames and Code objects
+  - Code Object is a primitive thing; contains bytecodes and semantic information like constants, variables etc.
+  - A Function has a Code object and a environment, but function is a static representation
+  - A Frame also has a code object and an environment but Frame is a runtime representation
+  - A Recursive function for example, may have only one function object reference but hundreds of frames.
 
 
 ### 10 - Interpreter and Opcodes
