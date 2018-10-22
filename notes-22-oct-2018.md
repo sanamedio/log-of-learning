@@ -22,6 +22,10 @@ int_add(PyIntObject *v, PyIntObject *w)
         return PyLong_Type.tp_as_number->nb_add((PyObject *)v, (PyObject *)w);
 }
 ```
+
+- C don't have inheritence, so struct subtyping is used. What this means is PyObject , PyIntObject and PyTypeObject will all have similar structure with more specific fields getting added to those types where they are needed. In that way we can refer to all of them using PyObject pointer and the fields which are present can be accessed in uniform way.
+
+
 - Reference counting is Cpython thing 
 - [ ] TODO https://docs.python.org/3/reference/datamodel.html
 - [ ] TODO (All bytecodes can be seen here : https://docs.python.org/3/library/dis.html)
