@@ -4,7 +4,7 @@
 
 - Every piece of data is a object
 - The python object protocol
-  - ```Include/object.h```
+  - ```Include/object.h``` (Contains good documentation about objects)
   - ```Objects/object.c```
 - When we store a number like 456, it gets wrapped in PyObject, and a PyInteger and then it is stored.
 - Code for dunder add and other stuff can be found in ```objects/intobject.c```
