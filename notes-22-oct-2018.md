@@ -24,7 +24,7 @@ int_add(PyIntObject *v, PyIntObject *w)
 ```
 
 - C don't have inheritence, so struct subtyping is used. What this means is PyObject , PyIntObject and PyTypeObject will all have similar structure with more specific fields getting added to those types where they are needed. In that way we can refer to all of them using PyObject pointer and the fields which are present can be accessed in uniform way.
-
+- The building of these different type of objects structures/types is done by using MACROS
 
 - Reference counting is Cpython thing 
 - [ ] TODO https://docs.python.org/3/reference/datamodel.html
