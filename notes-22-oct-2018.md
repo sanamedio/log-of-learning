@@ -67,8 +67,8 @@ import random
 import inspect
 
 print( inspect.getsource(random.choice)) #prints source code of choice function
-
 ```
+- There is cinspect also which shows source code for C modules; 
 
 ### 4 - Bytecode processor: BINARY_MULTIPLY
 
