@@ -10,7 +10,8 @@
 - defining a function, causes a corresponding func object to be created
 - Each func object contains func_globals which points to the same global table
 - If python project has 10 different files, there would be 10 different globals.That is why we keep pointer to global for each function. What it means is there is real "global" global which everyone can access but might be different globals for different functions.
-- func object has a fiend func_code field which contains the code_object which contains the bytecode
+- func object has a fiend func_code field which contains the code object which contains the bytecode
+- The same code object can get executed with different global pointer and give different results
 
 
 
