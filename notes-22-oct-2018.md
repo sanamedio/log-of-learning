@@ -1,5 +1,10 @@
 # 22-oct-2018
 
+### 10 - Interpreter and Opcodes
+
+- ```/Include/opcode.h``` has all the opcodes defined.
+- CPython runtime’s main interpreter loop locates in ```/Python/ceval.c```.
+
 ### 9 - PyFrameObject
  
 - Frames are represented by PyFrameObject present in ```include/frameobject.h```
