@@ -1,6 +1,6 @@
 # 23-oct-2018
 
-### 2 - codeobject and funcobject
+### 2 - code object and func object
 
 - related files
   - ```Include/code.h```
