@@ -1,5 +1,10 @@
 # 22-oct-2018
 
+### 11 - Frame stack
+
+- Frame objects are linked to each other in memory. For example: global_frame -> foo -> bar , where foo and bar are functions and foo is calling bar internally
+
+
 ### 10 - Interpreter and Opcodes
 
 - ```/Include/opcode.h``` has all the opcodes defined.
