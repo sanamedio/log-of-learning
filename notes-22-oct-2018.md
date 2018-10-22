@@ -1,5 +1,12 @@
 # 22-oct-2018
 
+### 12 - Python Object Model
+
+- Every piece of data is a object
+- The python object protocol
+  - ```Include/object.h```
+  - ```Objects/object.c```
+
 ### 11 - Frame
 
 - Frame objects are linked to each other in memory. For example: global_frame -> foo -> bar , where foo and bar are functions and foo is calling bar internally. It happens using ```struct _frame *f_back``` pointer in ```pyFrameObject```(```_frame typedef```). So a frame object contains pointer to last frame object.
