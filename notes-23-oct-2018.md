@@ -1,5 +1,27 @@
 # 23-oct-2018
 
+### 4 - Interpreter inside interpreter
+
+```python
+>>> shared_var = "Set in main console"
+>>> import code
+>>> ic = code.InteractiveConsole({ 'shared_var': shared_var })
+>>> try:
+...     ic.interact("My custom console banner!")
+... except SystemExit, e:
+...     print "Got SystemExit!"
+... 
+My custom console banner!
+>>> shared_var
+'Set in main console'
+>>> shared_var = "Set in sub-console"
+>>> import sys
+>>> sys.exit()
+Got SystemExit!
+>>> shared_var
+'Set in main console'
+```
+
 ### 3 - Dynamically creating type and object from that
 
 ```
