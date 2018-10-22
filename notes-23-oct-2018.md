@@ -41,5 +41,5 @@ typedef struct {
    */
  } PyStringObject;
 ```
-- In the above implementation every PyStringObject is of different size, as string is saved in ob_sval ( BUT HOW ) and exists at the end of the object. Memory is allocated according toe the size of the string.
+- In the above implementation every PyStringObject is of different size, as string is saved in ob_sval ( BUT HOW, this is not pointer) and exists at the end of the object. Memory is allocated according toe the size of the string.
 
