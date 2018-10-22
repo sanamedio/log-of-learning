@@ -6,6 +6,7 @@
 - The python object protocol
   - ```Include/object.h```
   - ```Objects/object.c```
+(All bytecodes can be seen here : https://docs.python.org/3/library/dis.html . Just wanted to save this link)
 
 ### 11 - Frame
 
