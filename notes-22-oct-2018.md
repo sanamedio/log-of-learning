@@ -5,7 +5,10 @@
 ```python
 >>> compile(open('test.py').read(), 'test.py', 'exec')
 ```
-This returns a code object for test.py module. Also you can use dis module from command line ```python -m dis test.py```
+This returns a code object for test.py module. Also you can use dis module from command line ```python -m dis test.py```. Also, it generally compiles any code to bytecode which is correct till that stage. For example, a file containing ```test.py``` string will also give out a valid bytecode assuming test as a object and .py as attribute. You can check it with:
+```python
+>>> compile('test.py', 'test.py', 'exec')
+```
 
 ### 6 - Ternary operation
 
