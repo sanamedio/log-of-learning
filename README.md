@@ -26,5 +26,5 @@
 
 [21-oct-2018 - 15 entries](./notes-21-oct-2018.md)
 
-[22-oct-2018 - ## entries](./notes-22-oct-2018.md)
+[22-oct-2018 - 07 entries](./notes-22-oct-2018.md)
 
