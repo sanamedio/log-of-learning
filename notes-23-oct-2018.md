@@ -13,9 +13,10 @@
 
 ### 1 - PyStringObject
 
-- ```Objects/abstract.c``` 
-- ```Include/stringobject.h``` PyStringObject
-- ```Objects/stringobject.c```
+- related files
+  - ```Objects/abstract.c``` 
+  - ```Include/stringobject.h``` PyStringObject
+  - ```Objects/stringobject.c```
 
 - ```PyStringObject``` represents a string of characters, defined and documented in ```pystringobject.h```
 ```C
