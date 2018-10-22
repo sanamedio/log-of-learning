@@ -1,6 +1,6 @@
 # 23-oct-2018
 
-### 1 - Abstract object interface
+### 1 - Abstract object interface : PyStringObject
 
 - ```PyStringObject``` represents a string of characters, defined and documented in ```pystringobject.h```
 ```C
