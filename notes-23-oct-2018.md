@@ -1,6 +1,6 @@
 # 23-oct-2018
 
-### 5 Zero-argument and variable-argument lambdas
+### 5 - Zero-argument and variable-argument lambdas
 
 Lambda functions are usually used for a quick transformation of one value into another, but they can also be used to wrap a value in a function:
 ```python
