@@ -1,5 +1,21 @@
 # 23-oct-2018
 
+### 5 Zero-argument and variable-argument lambdas
+
+Lambda functions are usually used for a quick transformation of one value into another, but they can also be used to wrap a value in a function:
+```python
+>>> f = lambda: 'foo'
+>>> f()
+'foo'
+```
+```python
+#They can also accept the usual *args and **kwargs syntax:
+>>> g = lambda *args, **kwargs: args[0], kwargs['thing']
+>>> g(1, 2, 3, thing='stuff')
+(1, 'stuff')
+```
+
+
 ### 4 - Interpreter inside interpreter
 
 ```python
