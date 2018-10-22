@@ -6,6 +6,7 @@
 - The python object protocol
   - ```Include/object.h```
   - ```Objects/object.c```
+- When we store a number like 456, it gets wrapped in PyObject, and a PyInteger and then it is stored.
 (All bytecodes can be seen here : https://docs.python.org/3/library/dis.html . Just wanted to save this link)
 
 ### 11 - Frame
