@@ -2,7 +2,7 @@
 
 ### 11 - Frame stack
 
-- Frame objects are linked to each other in memory. For example: global_frame -> foo -> bar , where foo and bar are functions and foo is calling bar internally
+- Frame objects are linked to each other in memory. For example: global_frame -> foo -> bar , where foo and bar are functions and foo is calling bar internally. It happens using ```struct _frame *f_back``` pointer in ```pyFrameObject```(```_frame typedef```)
 
 
 ### 10 - Interpreter and Opcodes
