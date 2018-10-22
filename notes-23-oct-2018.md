@@ -1,6 +1,6 @@
 # 23-oct-2018
 
-### 1 - Abstract object interface : PyStringObject
+### 1 - PyStringObject
 
 - ```Objects/abstract.c``` 
 - ```Include/stringobject.h``` PyStringObject
