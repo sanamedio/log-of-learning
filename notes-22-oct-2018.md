@@ -3,10 +3,6 @@
 ### 7 - Compile code and getting code object
 
 ```python
->> compile('test.py', 'test.py', 'exec')
-```
-or
-```python
 >>> compile(open('test.py').read(), 'test.py', 'exec')
 ```
 This returns a code object for test.py module. Also you can use dis module from command line ```python -m dis test.py```
