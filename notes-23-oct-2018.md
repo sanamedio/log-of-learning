@@ -67,7 +67,7 @@ which is exactly the same as
 - If python project has 10 different files, there would be 10 different globals.That is why we keep pointer to global for each function. What it means is there is real "global" global which everyone can access but might be different globals for different functions.
 - func object has a fiend func_code field which contains the code object which contains the bytecode
 - The same code object can get executed with different global pointer and give different results
-
+- PyCode_New present in codeobject.c is constructor for a PyCodeObject
 
 
 ### 1 - PyStringObject
