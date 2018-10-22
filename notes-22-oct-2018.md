@@ -8,6 +8,20 @@
   - ```Objects/object.c```
 - When we store a number like 456, it gets wrapped in PyObject, and a PyInteger and then it is stored.
 - Code for dunder add and other stuff can be found in ```objects/intobject.c```
+```C
+static PyObject *
+int_add(PyIntObject *v, PyIntObject *w)
+{
+        register long a,b,x;
+        CONVERT_TO_LONG(v, a);
+        CONVERT_TO_LONG(w, b);
+        /* casts in the line below avoid undefined behaviour on overflow */
+        x = (long)((unsigned long)a + b );
+        if ((x^a) >= 0 || (x^b) >= 0)
+                return PyInt_FromLong(x);
+        return PyLong_Type.tp_as_number->nb_add((PyObject *)v, (PyObject *)w);
+}
+```
 
 - [ ] TODO https://docs.python.org/3/reference/datamodel.html
 - [ ] TODO (All bytecodes can be seen here : https://docs.python.org/3/library/dis.html)
