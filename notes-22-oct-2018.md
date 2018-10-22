@@ -10,6 +10,7 @@ This returns a code object for test.py module. Also you can use dis module from 
 >>> compile('test.py', 'test.py', 'exec')
 ```
 - Reference : http://www.pgbovine.net/cpython-internals.htm
+- Visualize execution : http://www.pythontutor.com
 
 ### 6 - Ternary operation
 
