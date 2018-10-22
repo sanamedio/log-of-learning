@@ -22,7 +22,7 @@ int_add(PyIntObject *v, PyIntObject *w)
         return PyLong_Type.tp_as_number->nb_add((PyObject *)v, (PyObject *)w);
 }
 ```
-
+- Reference counting is Cpython thing 
 - [ ] TODO https://docs.python.org/3/reference/datamodel.html
 - [ ] TODO (All bytecodes can be seen here : https://docs.python.org/3/library/dis.html)
 
