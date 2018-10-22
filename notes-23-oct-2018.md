@@ -2,6 +2,10 @@
 
 ### 1 - Abstract object interface : PyStringObject
 
+- ```Objects/abstract.c``` 
+- ```Include/stringobject.h``` PyStringObject
+- ```Objects/stringobject.c```
+
 - ```PyStringObject``` represents a string of characters, defined and documented in ```pystringobject.h```
 ```C
 /*
