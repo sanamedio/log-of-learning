@@ -1,5 +1,9 @@
 # 23-oct-2018
 
+### 10 - zen of python source coe
+
+- https://github.com/python/cpython/blob/master/Lib/this.py   
+
 ### 9 - memory_profiler
 
 - very useful https://github.com/fabianp/memory_profiler
