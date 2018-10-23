@@ -2,6 +2,8 @@
 
 ### 9 - memory_profiler
 
+- very useful https://github.com/fabianp/memory_profiler
+
 ```python
 @profile
 def my_func():
