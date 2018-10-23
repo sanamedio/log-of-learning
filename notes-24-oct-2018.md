@@ -2,6 +2,8 @@
 
 ### 1 - Meddling with a program in middle
 
+[SO link](https://stackoverflow.com/questions/132058/showing-the-stack-trace-from-a-running-python-application?noredirect=1&lq=1)
+
 ```python
 import code
 import traceback
