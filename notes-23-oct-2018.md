@@ -1,5 +1,33 @@
 # 23-oct-2018
 
+### 9 - memory_profiler
+
+```python
+@profile
+def my_func():
+    a = [1] * (10 ** 6)
+    b = [2] * (2 * 10 ** 7)
+    del b
+    return a
+
+if __name__ == '__main__':
+    my_func()
+```
+
+```bash
+$ python -m memory_profiler test.py
+Filename: test.py
+
+Line #    Mem usage    Increment   Line Contents
+================================================
+     1   26.605 MiB   26.605 MiB   @profile
+     2                             def my_func():
+     3   34.062 MiB    7.457 MiB   	a = [1] * ( 10**6)
+     4  186.688 MiB  152.625 MiB   	b = [2] * ( 2* 10**7)
+     5   34.238 MiB -152.449 MiB   	del b
+     6   34.238 MiB    0.000 MiB   	return a
+```
+
 ### 8 - return statements
 
 ```python
