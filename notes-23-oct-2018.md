@@ -1,5 +1,20 @@
 # 23-oct-2018
 
+### 11 - tuple syntax
+
+```python
+t = ('one', 'two')
+for i in t:
+    print(i)
+
+t = ('one')
+for i in t:
+    print(i)
+
+t = ()
+print(t)
+```
+
 ### 10 - zen of python source code
 
 - https://github.com/python/cpython/blob/master/Lib/this.py   
