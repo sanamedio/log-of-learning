@@ -7,11 +7,11 @@ t = ('one', 'two')
 for i in t:
     print(i)
 
-t = ('one')
+t = ('one') # this is string
 for i in t:
     print(i)
 
-t = ()
+t = () # this is a tuple type Tuple()
 print(t)
 ```
 
