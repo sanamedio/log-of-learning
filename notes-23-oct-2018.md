@@ -1,5 +1,28 @@
 # 23-oct-2018
 
+### 7 - Dictionary hash keys
+
+```python
+#wtfpython repo example
+some_dict = {}
+some_dict[5.5] = "Ruby"
+some_dict[5.0] = "JavaScript"
+some_dict[5] = "Python"
+
+>>> some_dict[5.5]
+"Ruby"
+>>> some_dict[5.0]
+"Python"
+>>> some_dict[5]
+"Python"
+>>> 5 == 5.0 
+True
+>>> hash(5) == hash(5.0)
+True
+```
+- Very good explanation on the rationale [SO link](https://stackoverflow.com/questions/32209155/why-can-a-floating-point-dictionary-key-overwrite-an-integer-key-with-the-same-v/32211042#32211042) about making 1.0 equal 1 causing theire hash values to also be same.
+
+
 ### 6 - Peephole optimization and interpreter optimization
 
 - https://en.wikipedia.org/wiki/Peephole_optimization
