@@ -118,3 +118,4 @@ typedef struct {
 
 - https://en.wikipedia.org/wiki/String_interning
 - pyObject_richCompare and pyStringObject_richCompare
+- String interning happens on compile time
