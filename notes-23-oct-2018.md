@@ -1,8 +1,11 @@
 # 23-oct-2018
 
-### 10 - zen of python source coe
+### 10 - zen of python source code
 
 - https://github.com/python/cpython/blob/master/Lib/this.py   
+```python
+import this
+```
 
 ### 9 - memory_profiler
 
