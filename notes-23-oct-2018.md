@@ -20,6 +20,11 @@ False
 >>> a, b = "wtf!", "wtf!"
 >>> a is b
 True
+
+>>> 'a' * 20 is 'aaaaaaaaaaaaaaaaaaaa'
+True
+>>> 'a' * 21 is 'aaaaaaaaaaaaaaaaaaaaa'
+False
 ```
 - (from wtfpython repo) In the snippets above, strings are implicitly interned. The decision of when to implicitly intern a string is implementation dependent. There are some facts that can be used to guess if a string will be interned or not:
   - All length 0 and length 1 strings are interned.
