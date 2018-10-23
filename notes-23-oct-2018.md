@@ -1,5 +1,33 @@
 # 23-oct-2018
 
+### 6 - Peephole optimization and interpreter optimization
+
+- https://en.wikipedia.org/wiki/Peephole_optimization
+- Constant folding is a technique for peephole optimization in Python. This means the expression 'a'\*20 is replaced by 'aaaaaaaaaaaaaaaaaaaa' during compilation to reduce few clock cycles during runtime. Constant folding only occurs for strings having length less than 20. (Why? Imagine the size of .pyc file generated as a result of the expression 'a'*10\**10). 
+- Peephole optimization code : https://github.com/python/cpython/blob/3.6/Python/peephole.c#L288
+- When we do assignments in the same line in interpreter, it has better visibility sort of and can save memory by assigning to the same object
+```python
+>>> a = "wtf"
+>>> b = "wtf"
+>>> a is b
+True
+
+>>> a = "wtf!"
+>>> b = "wtf!"
+>>> a is b
+False
+
+>>> a, b = "wtf!", "wtf!"
+>>> a is b
+True
+```
+- (from wtfpython repo) In the snippets above, strings are implicitly interned. The decision of when to implicitly intern a string is implementation dependent. There are some facts that can be used to guess if a string will be interned or not:
+  - All length 0 and length 1 strings are interned.
+  - Strings are interned at compile time ('wtf' will be interned but ''.join(\['w', 't', 'f'] will not be interned)
+  - Strings that are not composed of ASCII letters, digits or underscores, are not interned. This explains why 'wtf!' was not interned due to !. Cpython implementation of this rule can be found at this line: https://github.com/python/cpython/blob/3.6/Objects/codeobject.c#L19
+
+
+
 ### 5 - Zero-argument and variable-argument lambdas
 
 Lambda functions are usually used for a quick transformation of one value into another, but they can also be used to wrap a value in a function:
