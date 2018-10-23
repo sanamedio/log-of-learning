@@ -1,5 +1,20 @@
 # 23-oct-2018
 
+### 8 - return statements
+
+```python
+def some_func():
+    try:
+        return 'from_try'
+    finally:
+        return 'from_finally'
+        
+>>> some_func()
+from_finally
+```
+- When a return, break or continue statement is executed in the try suite of a "try…finally" statement, the finally clause is also executed ‘on the way out.
+- The last executed return gets to say what value to return
+
 ### 7 - Dictionary hash keys
 
 ```python
