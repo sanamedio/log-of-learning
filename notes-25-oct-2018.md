@@ -2,6 +2,9 @@
 
 ### 1 - Dynamic array class
 
+- (ctypes.py_object * N) returns py_object_Array_N of type. (ctypes.pyobject * N)() creates a instance of it.
+- Dynamic sizing for arrays created like this needs to be handled externally as they are of fixed size.
+
 ```python
 import ctypes
 
