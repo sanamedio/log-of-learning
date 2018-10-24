@@ -1,5 +1,24 @@
 # 24-oct-2018
 
+### 2 - Source code for objects, classes, closures, generators, iterators
+
+- object protocol : https://docs.python.org/2/c-api/object.html
+- data model : https://docs.python.org/2/reference/datamodel.html
+- iterators
+  - Include/iterobject.h
+  - Objects/iterobject.c
+  - Objects/abstract.c
+  - Python/ceval.c
+- classes and objects 
+  - Include/classobject.h
+  - Objects/classobject.c
+  - Objects/abstract.c
+  - Python/ceval.c
+- Generators 
+  - Include/genobject.h
+  - Objects/genobject.c
+  - Python/ceval.c
+
 ### 1 - Meddling with a program in middle
 
 [SO link](https://stackoverflow.com/questions/132058/showing-the-stack-trace-from-a-running-python-application?noredirect=1&lq=1)
