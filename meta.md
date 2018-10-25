@@ -12,8 +12,8 @@ How Python works
   - Fast algorithms and datastructures
   - Design patterns
   - ~~Best practices for code and deployment management~~
-  - ~~Do some contribution back into other projects like Celery
-  - write something useful~~
+  - ~~Do some contribution back into other projects like Celery~~
+  - ~~write something useful~~
 - Be careful about
   - Not wasting too much time on tricks and small cool stuff: goals is to understand deeply; not being cool
   - Going too broad : Limit yourself to understanding Python Core
