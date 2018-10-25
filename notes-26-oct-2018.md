@@ -1,6 +1,32 @@
 # 26-oct-2018
 
-### 2 - PEP8001
+### 3 - Weak references
+
+- Tracking objects create another reference to them in Python
+- weakref module provides tools to track objects without creating additional references to them
+- When a object is not needed it's automatically removed from the weakref table
+
+```python
+import weakref, gc
+
+class A:
+  def __init__(self, value):
+    self.value = value
+  def __repr__(self):
+    return str(self.value)
+
+a = A(10) # create a refeirernce
+d = weakref.WeakValueDictionary()
+d['primary'] = a
+d['primary'] # 10
+del a
+gc.collect #0
+d['primary'] # raises exception , entry was automatically removed
+```
+```
+
+
+### 2 - PEP8001 - Mostly about how the Python development will continue with BFDL and voting algo for same
 
 
 - https://en.wikipedia.org/wiki/Instant-runoff_voting
