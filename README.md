@@ -33,3 +33,5 @@
 [24-oct-2018 - 02 entries](./notes-24-oct-2018.md)
 
 [25-oct-2018 - 04 entries](./notes-25-oct-2018.md)
+
+[26-oct-2018 - 00 entries](./notes-26-oct-2018.md)
