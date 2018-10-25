@@ -9,8 +9,8 @@ How Python works
 - Understand Python object model
 - How to apply Python for
   - ~~Web Development preferably Flask~~
-  - Fast algorithms and datastructures
-  - Design patterns
+  - ~~Fast algorithms and datastructures~~
+  - ~~Design patterns~~
   - ~~Best practices for code and deployment management~~
   - ~~Do some contribution back into other projects like Celery~~
   - write something ~~useful~~ which is fun
@@ -25,7 +25,7 @@ How Python works
 - [ ] Read all PEP
 - [ ] Read CPython source code
 ~~- [ ] Watch PyCon talks~~
-- [ ] Have fun actually. Don't focus too much on all this. 
+- [ ] Have fun actually. ~~Don't focus too much on all this. ~~
 
 
 
