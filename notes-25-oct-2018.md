@@ -4,8 +4,8 @@
 
 - Grammar to Parse Tree : ```parser/pgen.c```
 - Parse tree to AST : ```Python/ast.c```
-- AST to CFG : ```Python/compile.c```
-- CFG to Bytecode : ```Python/compile.c```
+- AST to CFG : ```Python/compile.c``` ( WHY CFG here)
+- CFG to Bytecode : ```Python/compile.c``` ( WHY CFG here)
 - Bytecode to Machine Execution : ```Python/ceval.c```
 
 ### 2 - Accessing memory using CPython
