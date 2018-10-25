@@ -1,5 +1,17 @@
 # 26-oct-2018
 
+### 2 - PEP8001
+
+
+- https://en.wikipedia.org/wiki/Instant-runoff_voting
+- There is no perfect voting method. It has been shown by the Gibbard-Satterthwaite theorem that any single-winner ranked voting method which is not dictatorial must be susceptible to so-called "tactical voting".
+  - Tactical voting occurs when a voter supports a candidate against their sincere preference in order to prevent an outcome they find most undesirable. There are four major tactical voting strategies (compromising, burying, push-over, and bullet voting).
+- Instant run-off ranked voting is resistant to burying and bullet voting, while being somewhat vulnerable to compromising (less than the plurality method) and vulnerable to push-over voting. Let's summarize those two:
+  - compromising - the voter ranks a less desirable alternative higher because they believe it has a higher chance of being elected; this is sometimes called "casting a useful vote");
+  - push-over - if the voter is relatively sure their preferred candidate will survive the first counting round, they may rank "the weakest" alternative higher in the hope of that weak alternative being easily beatable in a subsequent round.
+
+
+
 ### 1 - Reading PEPs
 
 - https://www.python.org/dev/peps/
