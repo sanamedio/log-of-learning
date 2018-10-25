@@ -1,5 +1,13 @@
 # 25-oct-2018
 
+### 3 - Python compilation
+
+- Grammar to Parse Tree : ```parser/pgen.c```
+- Parse tree to AST : ```Python/ast.c```
+- AST to CFG : ```Python/compile.c```
+- CFG to Bytecode : ```Python/compile.c```
+- Bytecode to Machine Execution : ```Python/ceval.c```
+
 ### 2 - Accessing memory using CPython
 
 - ctypes module gives ability to read memory directly ( only true for CPython)
