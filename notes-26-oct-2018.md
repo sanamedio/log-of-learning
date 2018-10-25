@@ -23,7 +23,7 @@ del a
 gc.collect #0
 d['primary'] # raises exception , entry was automatically removed
 ```
-```
+
 
 
 ### 2 - PEP8001 - Mostly about how the Python development will continue with BFDL and voting algo for same
