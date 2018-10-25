@@ -1,5 +1,32 @@
 # 25-oct-2018
 
+### 2 - Accessing memory using CPython
+
+- ctypes module gives ability to read memory directly ( only true for CPython)
+
+```python
+Python 3.5.2 (default, Nov 23 2017, 16:37:01) 
+[GCC 5.4.0 20160609] on linux
+Type "help", "copyright", "credits" or "license" for more information.
+>>> import ctypes
+>>> ctypes.c_ubyte.from_address(id(10)).value
+16
+>>> ctypes.c_ubyte.from_address(id(10)).value
+16
+>>> ctypes.c_ubyte.from_address(id(10) + 24).value
+10
+>>> ctypes.c_ubyte.from_address(id(10) + 24).value
+10
+>>> ctypes.c_ubyte.from_address(id(10) + 24).value is 10
+True
+>>> ctypes.c_ubyte.from_address(id(10) + 24).value = 11
+>>> 10 == 11
+True
+>>> 10 is 11
+True
+>>> 
+```
+
 ### 1 - Dynamic array class
 
 - (ctypes.py_object * N) returns py_object_Array_N of type. (ctypes.pyobject * N)() creates a instance of it.
