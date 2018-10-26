@@ -1,6 +1,23 @@
 # 26-oct-2018
 
-### 5 - PEP 201 - Lockstep interation
+### 6 - PEP 214: print
+
+```python
+print 'hello world'
+print >> sys.stdout, 'hello world'
+```
+
+Overriding default output,
+```python
+save_stdout = sys.stdout
+try:
+    sys.stdout = mylogfile
+    print 'this message goes to my log file'
+finally:
+    sys.stdout = save_stdout
+```
+
+### 5 - PEP 201: Lockstep interation
 
 ```python
 >>> a = (1, 2, 3)
