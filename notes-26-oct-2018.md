@@ -1,5 +1,41 @@
 # 26-oct-2018
 
+### 7 - Exception hook
+
+```python
+import sys
+
+def my_excepthook(exc_type, exc_value, tb):
+
+	print 'My ExceptHook:'
+
+	#tracebook display : see tb_printinternal from cpython source
+	print ' Traceback (most recent call last):'
+
+	while tb:
+		filename = tb.tb_frame.f_code.co_filename
+		name = tb.tab_frame.f_code.co_name
+		lineno = tb.tb_lineno
+		print ' File "%.500s", line %d, in %.500s' %(filename,lineno,name)
+		tb = tb.tb_next
+
+
+	print ' %s: %s' %(exc_type.__name__, exc_value)
+
+
+
+def divide_zero():
+	1 / 0
+
+
+def f():
+	divide_zero()
+
+if __name__ == '__main__':
+	sys.excepthook = my_excepthook
+	f()
+```
+
 ### 6 - PEP 214: print
 
 ```python
