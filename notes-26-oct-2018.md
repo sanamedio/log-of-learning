@@ -1,5 +1,10 @@
 # 26-oct-2018
 
+### 8 - about PEPs
+
+- There are not too many. It's not like they are giving peps serial numbers from 1 to 4000 
+- There are many PEPs which are accepted, but there is no reference implementation
+
 ### 7 - Exception hook
 
 ```python
