@@ -1,5 +1,19 @@
 # 26-oct-2018
 
+### 5 - PEP 201 - Lockstep interation
+
+```python
+>>> a = (1, 2, 3)
+>>> b = (4, 5, 6)
+>>> for i in map(None, a, b): print i
+...
+(1, 4)
+(2, 5)
+(3, 6)
+>>> map(None, a, b)
+[(1, 4), (2, 5), (3, 6)]
+```
+
 ### 4 - Core Developer Tutorial
 
 - https://cpython-core-tutorial.readthedocs.io/en/latest/
