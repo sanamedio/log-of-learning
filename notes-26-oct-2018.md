@@ -1,5 +1,9 @@
 # 26-oct-2018
 
+### 4 - Core Developer Tutorial
+
+- https://cpython-core-tutorial.readthedocs.io/en/latest/
+
 ### 3 - Weak references
 
 - Tracking objects create another reference to them in Python
