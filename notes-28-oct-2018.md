@@ -1,5 +1,9 @@
 # 28-oct-2018
 
+### 5 - Py_Initialize
+
+As part of the initialization process, `Py_Initialize` from `pylifecycle.c` is called; this handles the initialization of the interpreter and thread state data structures - two very important data structures.
+
 ### 4 - Objects that behave both as String and File Interface
 
 - https://docs.python.org/2/library/mmap.html
