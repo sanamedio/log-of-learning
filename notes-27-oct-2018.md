@@ -1,6 +1,29 @@
 # 27-oct-2018
 
-### 6 - Deque and yield pattern
+### 7 - heapq
+
+```python
+import heapq
+
+nums = [ 1, 8 , 2 , 23, 7 , -4 , 18 , 23, 42 , 37, 2 ]
+print( heapq.nlargest(3, nums))
+print( heapq.nsmallest(3,nums))
+
+
+portfolio = [
+	{'name' : 'IBM' , 'price' : 91.1 },
+	{'name' : 'Oracle' , 'price' : 22.2 }
+]
+
+
+cheap = heapq.nsmallest(3, portfolio, key=lambda s: s['price'])
+expensive = heapq.nlargest(3, portfolio, key=lambda s: s['price'])
+
+print(cheap)
+print(expensive)
+```
+
+### 6 - deque and yield pattern
 
 ```python
 from collections import deque
