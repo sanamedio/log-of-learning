@@ -1,5 +1,12 @@
 # 28-oct-2018
 
+### 7 - What happens when we load a module
+
+- When executing a module passed to the interpreter on the command line, a call to the `PyParser_ParseFileObject` function initiates the parsing of the module. This function calls the tokenization function, `PyTokenizer_FromFile` , passing the module file name as argument. The tokenization function breaks up the content of the module into legal python tokens or throws an exception when an illegal value is found.
+- The `PyTokenizer_FromFile` function in the `Parser/parsetok.c` module scans the python source file from left to right and top to bottom tokenizing the content of the file.
+- The python parser is an LL(1) parser that is based on the description of such parsers as laid out the Dragon book. The Grammar/Grammar module contains the Extended Backus-Naur Form (EBNF) grammar specification for the Python language.
+
+
 ### 6 - Thread State
 
 - The Thread State data struct contains all the information needed by thread to execute some python code object.
