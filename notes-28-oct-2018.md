@@ -29,7 +29,11 @@ typedef struct _is {
         PyObject *builtins_copy;
 } PyInterpreterState;
 ```
-
+- The `*next` field is a reference to another interpreter instance as multiple python interpreters
+can exist within the same process.
+- The `*tstate_head` field points to the main thread of execution - in the event that the python program is multithreaded then the interpreter is shared by all threads created by the program
+- The `codec*` related fields hold information that help with the location and loading of encodings. These are very important for decoding bytes.
+- The modules , modules_by_index , sysdict , builtins and importlib are self explanatory - they are all defined as instances of PyObject which is the root type for all python objects in the virtual machine world.
 
 
 ### 4 - Objects that behave both as String and File Interface
