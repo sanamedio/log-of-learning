@@ -22,6 +22,26 @@ expensive = heapq.nlargest(3, portfolio, key=lambda s: s['price'])
 print(cheap)
 print(expensive)
 ```
+```python
+nums = [1,2,33,3,5]
+import heapq
+heap = list(nums)
+heapq.heapify(heap)
+print(heap)
+heapq.heappop(heap)
+print(heap)
+heapq.heappop(heap)
+print(heap)
+heapq.heappop(heap)
+print(heap)
+heapq.heappop(heap)
+print(heap)
+heapq.heappop(heap)
+print(heap)
+heapq.heappop(heap)
+print(heap)
+```
+
 
 ### 6 - deque and yield pattern
 
