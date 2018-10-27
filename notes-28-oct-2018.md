@@ -39,6 +39,7 @@ typedef struct _ts {
         ...
 } PyThreadState;
 ```
+- Just like `Py_Initialize` was called for setting up stuff, once the program gets executed, `Py_FinalizeEx` is called. This clean-up process involves waiting for threads to exit, calling any exit hooks and also freeing up any memory allocated by the interpreter that is still in use.
 
 ### 5 - Py_Initialize  and Interpreter startup
 
