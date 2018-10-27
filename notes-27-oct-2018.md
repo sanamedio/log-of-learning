@@ -1,5 +1,10 @@
 # 27-oct-2018
 
+### 3 - Elements of style
+
+- https://github.com/crista/exercises-in-programming-style
+- Different ways of writing the same python program; with different trade-offs
+
 ### 2 - Call source code for function object
 
 ```c
