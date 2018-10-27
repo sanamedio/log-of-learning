@@ -1,5 +1,13 @@
 # 28-oct-2018
 
+### 3 - Wrapping a String in File interface
+
+```python
+s = io.StringIO('Hello world')
+s.read(4)
+s.read()
+```
+
 ### 2 - Iterating over a tree
 
 ```python
