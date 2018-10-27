@@ -1,6 +1,6 @@
 # 27-oct-2018
 
-### 6 - Deque and yeild pattern
+### 6 - Deque and yield pattern
 
 ```python
 from collections import deque
