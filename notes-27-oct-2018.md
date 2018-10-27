@@ -1,5 +1,25 @@
 # 27-oct-2018
 
+### 4 - StringIO and sys.out
+
+```python
+Python 3.5.2 (default, Nov 23 2017, 16:37:01) 
+[GCC 5.4.0 20160609] on linux
+Type "help", "copyright", "credits" or "license" for more information.
+>>> import sys, io
+>>> save = sys.stdout
+>>> new_stream = io.StringIO()
+>>> sys.stdout = new_stream
+>>> print("hello world")
+>>> sys.stdout = save
+>>> print("this is me")
+this is me
+>>> new_stream.getvalue()
+'hello world\n'
+>>> 
+```
+
+
 ### 3 - Elements of style
 
 - https://github.com/crista/exercises-in-programming-style
