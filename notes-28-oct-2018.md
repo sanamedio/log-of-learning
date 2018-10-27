@@ -6,6 +6,13 @@
 - The `PyTokenizer_FromFile` function in the `Parser/parsetok.c` module scans the python source file from left to right and top to bottom tokenizing the content of the file.
 - The python parser is an LL(1) parser that is based on the description of such parsers as laid out the Dragon book. The Grammar/Grammar module contains the Extended Backus-Naur Form (EBNF) grammar specification for the Python language.
 
+```python
+code_str = """def hello_world(): return 'hello world' """
+import parser
+from pprint import pprint
+st = parser.suite(code_str)
+pprint(parser.st2list(st))
+```
 
 ### 6 - Thread State
 
