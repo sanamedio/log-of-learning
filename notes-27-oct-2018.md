@@ -2,7 +2,7 @@
 
 ### 2 - Call source code for function object
 
-```python
+```c
 PyObject *
 PyObject_Call(PyObject *func, PyObject *arg, PyObject *kw)
 {
