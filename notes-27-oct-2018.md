@@ -1,5 +1,31 @@
 # 27-oct-2018
 
+### 2 - Call source code for function object
+
+```python
+PyObject *
+PyObject_Call(PyObject *func, PyObject *arg, PyObject *kw)
+{
+    ternaryfunc call;
+
+    if ((call = func->ob_type->tp_call) != NULL) {
+        PyObject *result;
+        if (Py_EnterRecursiveCall(" while calling a Python object"))
+            return NULL;
+        result = (*call)(func, arg, kw);
+        Py_LeaveRecursiveCall();
+        if (result == NULL && !PyErr_Occurred())
+            PyErr_SetString(
+                PyExc_SystemError,
+                "NULL result without error in PyObject_Call");
+        return result;
+    }
+    PyErr_Format(PyExc_TypeError, "'%.200s' object is not callable",
+                 func->ob_type->tp_name);
+    return NULL;
+}
+```
+
 ### 1 - PEP 3148 concurrent futures
 
 ```python
