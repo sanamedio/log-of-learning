@@ -1,5 +1,12 @@
 # 28-oct-2018
 
+### 8 - Symbol table
+
+- The symbol table requires two passes to determine the scope of each name. The first pass collects raw facts from the AST via the symtable_visit_* functions while the second pass analyzes these facts during a pass over the PySTEntryObjects created during pass
+- When a function is entered during the second pass, the parent passes the set of all name bindings visible to its children. These bindings are used to determine if non-local variables are free or implicit globals. Names which are explicitly declared nonlocal must exist in this set of visible names - if they do not, a syntax error is raised. After doing the local analysis, it analyzes each of its child blocks using an updated set of name bindings.
+- There are two kind of globals: implicit and explicit. Explicit is what gets declared with global statement. Whereas, An implicit global variable is one for which compiler has found no binding to the enclosing function scope. The implicit global is either a global or a builtin.
+
+
 ### 7 - What happens when we load a module
 
 - When executing a module passed to the interpreter on the command line, a call to the `PyParser_ParseFileObject` function initiates the parsing of the module. This function calls the tokenization function, `PyTokenizer_FromFile` , passing the module file name as argument. The tokenization function breaks up the content of the module into legal python tokens or throws an exception when an illegal value is found.
