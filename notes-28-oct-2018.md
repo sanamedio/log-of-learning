@@ -1,7 +1,46 @@
 # 28-oct-2018
 
+### 6 - Thread State
 
-### 5 - Py_Initialize
+- The Thread State data struct contains all the information needed by thread to execute some python code object.
+- A portion of Thread State data struct:
+```C
+typedef struct _ts {
+
+        struct _ts *prev;
+        struct -ts *next;
+        PyInterpreterState *interp;
+
+        struct _frame *frame;
+        int recursion_depth;
+        char overflowed;
+
+        char recursion_critical;
+        int tracing;
+        int use_tracing;
+
+        Py_tracefunc c_profilefunc;
+        Py_tracefunc c_tracefunc;
+        PyObject *c_profileobj;
+        PyObject *c_traceobj;
+
+        PyObject *curexc_type;
+        PyObject *curexc_value;
+        PyObject *curexc_traceback;
+
+
+        PyObject *exc_type;
+        PyObject *exc_value;
+        PyObject *exc_traceback;
+
+        PyObject *dict; //Stores per thread state
+        int gilstate_counter;
+
+        ...
+} PyThreadState;
+```
+
+### 5 - Py_Initialize  and Interpreter startup
 
 - As part of the initialization process, `Py_Initialize` from `pylifecycle.c` is called; this handles the initialization of the interpreter and thread state data structures - two very important data structures.
 
