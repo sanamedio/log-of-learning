@@ -36,3 +36,4 @@ Learning how to learn:
 3. Micro questions - Question what you are learning while you are learning through small questions
 4. Recalling - Try to make notes by remembering what you studied not by vocalizing or just immediately typing them down
 5. Spacing - Try to study same stuff over longer period of time than blocked continuous sprint
+6. Immediate vocalization or just typing code from a tutorial gives illusion of learning, not true learning
