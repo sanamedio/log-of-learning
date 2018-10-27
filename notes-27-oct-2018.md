@@ -26,7 +26,7 @@ print(expensive)
 nums = [1,2,33,3,5]
 import heapq
 heap = list(nums)
-heapq.heapify(heap)
+heapq.heapify(heap) # still heap is list, then where is the information about structure stored ?
 print(heap)
 heapq.heappop(heap)
 print(heap)
@@ -36,7 +36,7 @@ heapq.heappop(heap)
 print(heap)
 heapq.heappop(heap)
 print(heap)
-heapq.heappop(heap)
+heapq.heappop(heap) # raises exception if can't pop anymore
 print(heap)
 heapq.heappop(heap)
 print(heap)
