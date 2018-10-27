@@ -1,5 +1,36 @@
 # 27-oct-2018
 
+### 5 - Permutations
+
+```python
+def permute(seq):
+	'''generator based'''
+	if not seq:
+		yield seq
+	else:
+		for i in xrange(len(seq)):
+			rest = seq[:i] + seq[i+1:]
+			for x in permute(rest):
+				yield seq[i:i+1] + x
+
+
+
+
+
+def permute1( seq ):
+	''' normal return based '''
+	if not seq:
+		return [seq]
+
+	else:
+		res= []
+		for i in range(len(seq)):
+			rest = seq[:i] + seq[i+1:]
+			for x in permute1(rest):
+				res.append(seq[i:i+1] + x )
+	return res
+```
+
 ### 4 - StringIO and sys.out
 
 ```python
