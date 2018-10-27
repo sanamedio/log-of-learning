@@ -25,7 +25,7 @@ How Python works
 - [ ] Read all PEP
 - [ ] Read CPython source code
 ~~- [ ] Watch PyCon talks~~
-- [ ] Have fun actually. ~~Don't focus too much on all this. ~~
+- [ ] Have fun actually. ~~Don't focus too much on all this.~~ But avoid giving too much time to stuff which can be easily googled and forgotten in time
 
 
 
