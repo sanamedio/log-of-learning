@@ -1,5 +1,9 @@
 # 28-oct-2018
 
+### 4 - Objects that behave both as String and File Interface
+
+- https://docs.python.org/2/library/mmap.html
+
 ### 3 - Wrapping a String in File interface
 
 ```python
