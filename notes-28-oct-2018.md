@@ -1,8 +1,36 @@
 # 28-oct-2018
 
+
 ### 5 - Py_Initialize
 
-As part of the initialization process, `Py_Initialize` from `pylifecycle.c` is called; this handles the initialization of the interpreter and thread state data structures - two very important data structures.
+- As part of the initialization process, `Py_Initialize` from `pylifecycle.c` is called; this handles the initialization of the interpreter and thread state data structures - two very important data structures.
+
+- Interpreter state data structure
+```c
+typedef struct _is {
+
+        struct _is *next;
+        struct _ts *tstate_head;
+
+        PyObject *modules;
+        PyObject *tstate_head;
+        PyObject *sysdict;
+        PyObject *builtins;
+        PyObject *importlib;
+
+
+        PyObject *codec_search_path;
+        PyObject *codec_search_cache;
+        PyObject *codec_error_registry;
+
+        int codecs_initialized;
+        int fscodec_initialized;
+
+        PyObject *builtins_copy;
+} PyInterpreterState;
+```
+
+
 
 ### 4 - Objects that behave both as String and File Interface
 
