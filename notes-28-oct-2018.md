@@ -35,6 +35,16 @@ typedef struct basicblock_ {
 	 int b_offset;
   } basicblock;
 ```
+```C
+struct instr {
+	unsigned i_jabs : 1;
+	unsigned i_jrel : 1;
+	unsigned char i_opcode;
+	int i_oparg;
+	struct basicblock_ *i_target; // target block ( if jump instruction )
+	int i_lineno;
+};
+```
 
 
 
