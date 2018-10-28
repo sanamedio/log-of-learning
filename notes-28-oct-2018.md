@@ -2,6 +2,7 @@
 
 ### 14 - The need for GIL
 
+- Operating System threads and associated python thread states are created either during the initialization of the interpreters or when invoked by the threading module. Even with multiple threads alive within a python process, only one thread can actively carry out CPU bound tasks at any given time.
 - Although python threads are operating system threads, a thread cannot execute python bytecode unless such thread holds the GIL . The operating system may schedule a thread that does not holdInterpreter and Thread States the GIL to run but as we will see, all such a thread can actually do is wait to get the GIL and only when it holds the GIL is it able to execute bytecode.
 - First of all however, it is important to understand that the GIL is an implementation detail of CPython and not an actual language detail 
 - Jython which is python implemented on the Java virtual machine has no notion of a GIL . The primary reason the GIL exist is for ease of implemenation of the CPython virtual machine. 
