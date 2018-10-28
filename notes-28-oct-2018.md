@@ -41,10 +41,32 @@ struct symtable{
 ```
 
 ```C
+typedef struct _symtable_entry {
 
+	PyObject_HEAD
+	PyObject *ste_id; // int : key in ste_table->st_blocks
+	PyObject *ste_symbols; // variable names to flags mapping
+	PyObject *ste_name; // string: name of current block
+	PyObject *ste_varnames; //list of function parameters
+	PyObject *ste_children; // list of child blocks
+	PyObject *ste_directives; // locations of global and non local statements
+	_Py_block_ty ste_type; // module , class , function
+	int ste_nested; //true if block is nested
+	unsigned ste_free : 1 ; // true if block has free variables
+	unsigned ste_child_free : 1; //true if a child block has free vars including free refs to globals
+	unsigned ste_generator : 1; // true if namespace is a generator
+	unsigned ste_varargs : 1; // true if block has varargs
+	unsigned ste_varkeywords : 1; // true if block has varkeywords
+	
+	unsigned ste_needs_class_Closure : 1; // for class scopes, true if a closure over __class__ should be created
 
-
-
+	int ste_lineno; // first line of block 
+	int ste-col_offset; // offset of first line of block
+	int ste_opt_lineno; // lineno of last exec or import 
+	int ste_opt_col_offset; // offset of last exec or import 
+	int ste_tmpname; // counter for listcomp temp vars
+	struct symtable *ste_table;
+} PySTEntryObject;
 ```
 
 
