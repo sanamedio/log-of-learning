@@ -10,7 +10,7 @@ assocated with a native OS thread within the running python process.
 - The tracing and `use_tracing` flag are related to functionality for tracing the execution of the thread. 
 - The `*curexc_-type , *currexc_value , *curexc_traceback , *exc_type , *exc_value` and `*curexc_traceback` are
 fields that are all used in the exception handling process.
-
+- The next and previous fields of a thread state data structure reference threads states created prior to and just after the given thread state. These fields form a doubly linked list of thread states that share a single interpreter state. The interp field references the interpreter state that the thread state belongs to. The frame references the current frame of execution; as the code object that is executed changes, the value referenced by this field also changes.
 
 ### 14 - The need for GIL
 
