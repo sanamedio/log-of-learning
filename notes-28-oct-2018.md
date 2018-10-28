@@ -2,6 +2,7 @@
 
 ### 14 - The need for GIL
 
+- Although python threads are operating system threads, a thread cannot execute python bytecode unless such thread holds the GIL . The operating system may schedule a thread that does not holdInterpreter and Thread States the GIL to run but as we will see, all such a thread can actually do is wait to get the GIL and only when it holds the GIL is it able to execute bytecode.
 - First of all however, it is important to understand that the GIL is an implementation detail of CPython and not an actual language detail 
 - Jython which is python implemented on the Java virtual machine has no notion of a GIL . The primary reason the GIL exist is for ease of implemenation of the CPython virtual machine. 
 - It is way easier to implement a single global lock than to implement fine grained locks and the core developers have opted for this. There have however been projects to implement fine grained locks within the python virtual machine but these
