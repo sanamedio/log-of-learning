@@ -3,6 +3,7 @@
 ### 11 - basicblock data structure
 
 - A basic block is sequence of instructions which has one entry point and multiple exit points
+- A CFG(Control Flow Graph) is basically composed of basicblocks and connections between them
 ```C
 typedef struct basicblock_ {
 	/* Each basicblock in a compilation unit is linked via
