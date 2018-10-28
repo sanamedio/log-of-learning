@@ -1,5 +1,17 @@
 # 28-oct-2018
 
+### 15 - tstate : Thread State
+
+- The thread state is just a data structure that encapsulates some state for an executing thread. Each thread state is
+assocated with a native OS thread within the running python process.
+- a single python process is home to at least one interpreter state and each interpreter state is home to one or more thread states and each of these thread states maps to an operation system thread of execution.
+- The recursion_depth as the name suggest specifies how deep the stack frame should get during a recursive call. The overflowed flag is set when the stack overflows - after a stack overflow, the thread allows 50 more calls to enable some clean-up operations. 
+- The recursion_critical flag is used to signal to the thread that the code being executed should not overflow. 
+- The tracing and `use_tracing` flag are related to functionality for tracing the execution of the thread. 
+- The `*curexc_-type , *currexc_value , *curexc_traceback , *exc_type , *exc_value` and `*curexc_traceback` are
+fields that are all used in the exception handling process.
+
+
 ### 14 - The need for GIL
 
 - Operating System threads and associated python thread states are created either during the initialization of the interpreters or when invoked by the threading module. Even with multiple threads alive within a python process, only one thread can actively carry out CPU bound tasks at any given time.
