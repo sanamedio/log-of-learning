@@ -33,6 +33,12 @@ typedef struct _is {
 } PyInterpreterState;
 ```
 
+- `*next` : There can be multiple interpreter states within a single OS process that is running a python executable. This `*next` field references another interpreter state data structure within the python process if such exist and these form a linked list of interpreter states. 
+- Each interpreter state has its own set of variables that will be used by a thread of execution that references that interpreter state. 
+- The memory and Global Interpreter Lock available to the process is however shared by all interpreter threads within that process.
+- `*tstate_head` : This field references the thread state of the currently executing thread or in the case of a multithreaded program, the thread that currently holds the Global Interpreter Lock (GIL). This is a data structure that maps to an executin operating system thread.
+
+
 ### 15 - tstate : Thread State
 
 - The thread state is just a data structure that encapsulates some state for an executing thread. Each thread state is
