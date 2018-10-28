@@ -38,6 +38,8 @@
 
 [27-oct-2018 - 07 entries](./notes-27-oct-2018.md)
 
-[28-oct-2018 - 00 entries](./notes-28-oct-2018.md)
+[28-oct-2018 - 16 entries](./notes-28-oct-2018.md)
+
+[29-oct-2018 - 00 entries](./notes-29-oct-2018.md)
 
 
