@@ -1,5 +1,38 @@
 # 28-oct-2018
 
+### 16 - Interpreter and Thread state
+
+- one of the steps during the bootstrapping of the python interpreter is the initialisation of the interpreter state and thread state data structures
+- The Py_Initialize function from the pylifecycle.c module is one of the bootstrap functions invoked during the intialisation of the python interpreter. The function handles the set-up of the python runtime as well as the initialisation of the interpreter state and thread state data structures among other things.
+- The interpreter state is a very simple data structure that captures the global state that is shared by a set of cooperating threads of execution in a python process.
+```C
+typedef struct _is {
+
+	struct _is *next;
+	struct _ts *tstate_head;
+
+	PyObject *modules;
+	PyObject *moduels_by_index;
+	PyObject *sysdict;
+	PyObject *builtins;
+	PyObject *importlib;
+
+	PyObject *codec_search_path;
+	PyObject *codec_search_cache;
+	PyObject *codec_error_registry;
+
+	int codecs_initialized;
+	int fscodec_initialized;
+
+
+	...
+
+
+	PyObject *builtins_copy;
+	PyObject *import_func;
+} PyInterpreterState;
+```
+
 ### 15 - tstate : Thread State
 
 - The thread state is just a data structure that encapsulates some state for an executing thread. Each thread state is
