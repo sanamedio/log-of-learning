@@ -1,5 +1,15 @@
 # 28-oct-2018
 
+### 10 - Variable flags to specify context of name def. (CPython SC)
+
+```C
+#define DEF_GLOBAL 1 // global stmt
+#define DEF_LOCAL 2 // assignment in code block
+#define DEF_PARAM 2<<1 // formal parameter
+#define DEF_NONLOCAL 2<<2 //non local stmt
+#define DEF_FREE 2<<4 // name used but not defined in nested block
+```
+
 ### 9 - Other data structures Cpython
 
 ```C
