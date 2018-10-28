@@ -1,5 +1,14 @@
 # 28-oct-2018
 
+### 14 - The need for GIL
+
+- First of all however, it is important to understand that the GIL is an implementation detail of CPython and not an actual language detail 
+- Jython which is python implemented on the Java virtual machine has no notion of a GIL . The primary reason the GIL exist is for ease of implemenation of the CPython virtual machine. 
+- It is way easier to implement a single global lock than to implement fine grained locks and the core developers have opted for this. There have however been projects to implement fine grained locks within the python virtual machine but these
+have slowed down single threaded programs atimes. 
+- A global lock also provides much needed synchronization when performing certain tasks. Take the reference counting mechanism that is used by CPython for memory management, without the concept of a GIL , you may have two thread interleave their increment and decrement of reference count leading to serious issues with memory handling. 
+- Another reason for this lock is that some C libraries that CPython calls into are inherently not thread safe so some kind of synchronization is required when using them.
+
 ### 13 - How generators are able to capture execution state and update that at will
 
 - Generators have a field that references a frame object and this is filled in when the generator is created. The frame object as we recall has all the state that is required to execute a code object so by having a reference to that execution frame, the generator object can capture all the state required for its execution.
