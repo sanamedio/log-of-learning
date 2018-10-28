@@ -30,6 +30,53 @@ struct compiler {
 ```
 
 ```C
+struct compiler_unit {
+	PySTEntryObject *u_ste;
+
+	PyObject *u_name;
+	PyObject *u_qualname; //dot-separated qualified name (lazy)
+	int u_scope_type;
+
+
+	/* the following fields are dicts that maps objects to the index
+	 * of them in co_XXX. The index is used as the argument for opcodes
+	 * that refer to those collections
+ 	 */
+
+
+
+	PyObject *u_consts; //all constants
+	PyObject *u_names;  // all names
+	PyObject *u_varnames; // local variables
+	PyObject *u_cellvars; // cell variables
+	PyObject *u_freevars; // free variables
+
+
+	PyObject *u_private; // for private name mangling
+
+	Py_ssize_t u_argcount; // number of arguments for block
+	Py_ssize_t u_kwonlyargcount; // Number of keyword only arguments for block
+	
+	// pointer to mosts recently allocated block. by following b_list members, you can reach all early allocated blocks
+
+	basicblock *u_blocks;
+	basicblock *u_curblock;
+
+	int u_nfblocks;
+	struct fblockinfo u_fblock[CO_MAXBLOCKS];
+
+	int u_firstlineno; // the first lineno of the block
+	int u_lineno; // the line no of the current stmt
+	int u_col_offset; // the offset of the current stmt
+	int u_lineno_set; // boolean to indicate whether instr has been generated with current lineno
+};
+
+	
+
+```
+
+
+```C
 struct symtable{
 	PyObject *st_filename;
 	struct _symtable_entry *st_cur;
