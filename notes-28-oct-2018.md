@@ -1,5 +1,42 @@
 # 28-oct-2018
 
+### 11 - basicblock data structure
+
+- A basic block is sequence of instructions which has one entry point and multiple exit points
+```C
+typedef struct basicblock_ {
+	/* Each basicblock in a compilation unit is linked via
+	 * b_list in the reverse order that the blocks are
+	 * allocated. b_list points to the next block, not 
+	 * to be confused with b_next, which is next by
+	 * control flow 
+	 */ 
+
+	 struct basicblock_ *b_list;
+	 // number of instructions used
+	 int b_iused;
+	 // lenght of instruction array ( b_instr )
+	 int b_ialloc;
+	 // pointer to an array of instructions , initially NULL
+	 struct instr *b_instr;
+	 /* if b_next!= NULL, it is pointer to next block
+	  * reached by normal control flow
+	  */
+	 struct basicblock_ *b_next;
+	 // b_seen is used to perform a DFS of basicblocks
+	 unsigned b_seen :1;
+	 // b_return is true if a RETURN_VALUE opcode is inserted
+	 unsigned b_return :1;
+	 // depth of stack upon entry of block, computed by stackdepth()
+	 int b_startdepth;
+	 // instruction offset for block ,computued by assemble_jupm_offsets()
+	
+	 int b_offset;
+  } basicblock;
+```
+
+
+
 ### 10 - Variable flags to specify context of name def. (CPython SC)
 
 ```C
