@@ -1,6 +1,6 @@
 # 28-oct-2018
 
-### 9 - Compiler data structure
+### 9 - Other data structures Cpython
 
 ```C
 struct compiler {
@@ -18,6 +18,35 @@ struct compiler {
 	PyArena *c_arena; /*pointer to memory allocation area*/
 };
 ```
+
+```C
+struct symtable{
+	PyObject *st_filename;
+	struct _symtable_entry *st_cur;
+	struct _symtable_entry *st_top;
+	PyObject *st_blocks;
+	
+	PyObject *st_stack;
+	PyObject *st_global;
+	
+	int st_nblocks;
+	
+	PyObject *st_private;
+	PyFutureFeatures *st_future;
+	
+	int recursion_depth;
+	int recursion_limit;
+	
+};
+```
+
+```C
+
+
+
+
+```
+
 
 ### 8 - Symbol table ( CPython source)
 
