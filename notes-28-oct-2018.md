@@ -1,5 +1,75 @@
 # 28-oct-2018
 
+### 12 - PyTypeObject
+
+```C
+typedef struct _typeobject {
+
+	PyObject_VAR_HEAD
+	const char *tp_name; //for printing in format <module>.<name>
+	Py_ssize_t tp_basicsize, tp_itemsize; //for allocation
+
+
+	destructor tp_dealloc;
+	printfunc tp_print;
+	getattrfunc tp_getattr;
+	setattrfunc tp_setattr;
+	PyAsyncMethods *tp_as_async;
+
+	reprfunc tp_repr;
+
+	PyNumberMethods *tp_as_number;
+	PySequenceMethods *tp_as_sequence;
+	PyMappingMethods *tp_as_mapping;
+
+	hashfunc tp_hash;
+	ternaryfunc tp_call;
+	reprfunc tp_str;
+	getattrofunc tp_getattro;
+	setattrofunc tp_setattro;
+
+	PyBufferProcs *tp_as_buffer;
+	unsigned long tp_flags;
+	const char *tp_doc; // documentation string
+
+
+	traverseproc tp_traverse;
+
+	inquiry tp_clear;
+	richcmpfunc tp_richcompare;
+	Py_ssize_t tp_weaklistoffset;
+
+
+	getiterfunc tp_iter;
+	iternextfunc tp_iternext;
+
+	struct PyMethodDef *tp_methods;
+	struct PyMemberDef *tp_members;
+	struct PyGetSetDef *tp_getset;
+	struct _typeobject *tp_base;
+	PyObject *tp_dict;
+	descrgetfunc tp_descr_get;
+	descrsetfunc tp_descr_set;
+	Py_ssize_t tp_dictoffset;
+	initproc tp_init;
+	allocfunc tp_alloc;
+	newfunc tp_new;
+	freefunc tp_free;
+	inquiry tp_is_gc;
+	PyObject *tp_bases;
+	PyObject *tp_mro;
+	PyObject *tp_cache;
+	PyObject *tp_subclasses;
+	PyObject *tp_weaklist;
+	destructor tp_del;
+
+	unsigned int tp_version_tag;
+	destructor tp_finalize;
+
+} PyTypeObject;
+```
+
+
 ### 11 - basicblock data structure
 
 - A basic block is sequence of instructions which has one entry point and multiple exit points
