@@ -1,5 +1,24 @@
 # 28-oct-2018
 
+### 9 - Compiler data structure
+
+```C
+struct compiler {
+	PyObject *c_filename;
+	struct symtable *c_st;
+	PyFutureFeatures *c_future; /* pointer to module's __future__ */
+	PyCompilerFlags *c_flags;
+	
+	int c_optimize;
+	int c_interactive;
+	int c_nestlevel;
+	
+	struct compiler_unit *u /*compiler state for current block*/
+	PyObject *c_stack; /*Python list holding compiler_unit ptrs*/
+	PyArena *c_arena; /*pointer to memory allocation area*/
+};
+```
+
 ### 8 - Symbol table ( CPython source)
 
 - The symbol table requires two passes to determine the scope of each name. The first pass collects raw facts from the AST via the symtable_visit_* functions while the second pass analyzes these facts during a pass over the PySTEntryObjects created during pass
