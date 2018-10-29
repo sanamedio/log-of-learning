@@ -1,5 +1,35 @@
 # 30-oct-2018
 
+### 4 - Asyncio call soon and functools.partial
+
+```python
+import asyncio
+import functools
+
+def callback( arg, * , kwargs='default'):
+        print( 'callback invoked with {} and {}'.format(arg, kwargs))
+
+
+async def main(loop):
+        print('registering callbacks')
+        loop.call_soon(callback,1)
+        wrapped = functools.partial(callback, kwargs='not default')
+        loop.call_soon(wrapped,2)
+
+        await asyncio.sleep(5)
+
+
+
+
+event_loop = asyncio.get_event_loop()
+try:
+    print('entering event loop')
+    event_loop.run_until_complete(main(event_loop))
+finally:
+    print('closing event loop')
+    event_loop.close()
+```
+
 ### 3 - Using a class as decorator
 
 ```python
