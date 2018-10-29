@@ -11,6 +11,9 @@ py_compile.compile('server.py')
 $ python ./server.pyc
 ```
 
+- for python3 the pyc file will be in pycache folder
+- it will give magic number error if you run a different version interpreter over a different python version pyc.
+
 ### 2 - New style and old style classes
 
 ```python
