@@ -1,7 +1,46 @@
-
 # 29-oct-2018
 
-### 1 - What I learned
+
+### 2 - New style and old style classes
+
+```python
+# old-style class, python2
+class A:
+    pass
+class B(A):
+    pass
+a = A()
+b = B()
+print(type(A), type(B))
+print(type(a), type(b))
+```
+After having executed the Python code above we received the following:
+
+```python
+(<type 'classobj'>, <type 'classobj'>)
+(<type 'instance'>, <type 'instance'>)
+```
+
+```python
+# new-style class python 3
+class A(object):
+    pass
+class B(A):
+    pass
+a = A()
+b = B()
+print(type(A), type(B))
+print(type(a), type(b))
+```
+
+The Python code above returned the following:
+
+```python
+(<type 'type'>, <type 'type'>)
+(<class '__main__.A'>, <class '__main__.B'>)
+```
+
+### 1 - What I learned till now ( revision )
 
 - CPython source code has lot of structures defined. There is a structure for interpreter state, Thread state, Python Object, Python String Object, Instruction, Code Object, Frame Object, Types and so on.
 - The GIL can be held by only one thread at a time. This makes Python only capable of doing one CPU intensive task at a time. So even if you have multiple threads on multicore CPU, only one thread will be executing at a moment. 
@@ -16,43 +55,3 @@
 - Due to the implementation of structs in C, any Py* object can be casted to PyObject and standard fields like refcnt, type etc. can be read from that. 
 - With new style classes in CPython, it's not necessary to subclass from object in Python code. But it should be done for previous versions where new style classes were not supported.
 
-
-### 2 - New style and old style classes
-
-
-```
-# old-style class, python2
-class A:
-    pass
-class B(A):
-    pass
-a = A()
-b = B()
-print(type(A), type(B))
-print(type(a), type(b))
-```
-After having executed the Python code above we received the following:
-
-```
-(<type 'classobj'>, <type 'classobj'>)
-(<type 'instance'>, <type 'instance'>)
-```
-
-```
-# new-style class python 3
-class A(object):
-    pass
-class B(A):
-    pass
-a = A()
-b = B()
-print(type(A), type(B))
-print(type(a), type(b))
-```
-
-The Python code above returned the following:
-
-```
-(<type 'type'>, <type 'type'>)
-(<class '__main__.A'>, <class '__main__.B'>)
-```
