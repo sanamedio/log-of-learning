@@ -36,6 +36,26 @@ for i in range(1,41):
 	time2 = t2.timeit(3)
 	print("n=%2d, fib: %8.6f, fibi:  %7.6f, percent: %10.2f" % (i, time1, time2, time1/time2))
 ```
+side note: implementation of fibonacci where you call yourself without name of function using self and with memorization
+
+```python
+class Fibonacci:
+
+    def __init__(self, i1=0, i2=1):
+        self.memo = {0:i1, 1:i2}
+
+    def __call__(self, n):
+        if n not in self.memo: 
+            self.memo[n] = self.__call__(n-1) + self.__call__(n-2)  
+        return self.memo[n]
+    
+fib = Fibonacci()
+lucas = Fibonacci(2, 1)
+
+for i in range(1, 16):
+    print(i, fib(i), lucas(i)) 
+```
+
 
 ### 1 - Checking if a object is iterable
 
