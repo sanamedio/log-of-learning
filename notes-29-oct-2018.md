@@ -1,5 +1,15 @@
 # 29-oct-2018
 
+### 3 - py_compiler
+
+```python
+import py_compile
+py_compile.compile('server.py')
+```
+
+```bash
+$ python ./server.pyc
+```
 
 ### 2 - New style and old style classes
 
