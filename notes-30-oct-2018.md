@@ -1,5 +1,40 @@
 # 30-oct-2018
 
+### 3 - Using a class as decorator
+
+```python
+def decorator1(f):
+    def helper():
+        print("Decorating", f.__name__)
+        f()
+    return helper
+
+@decorator1
+def foo():
+    print("inside foo()")
+
+foo()
+```
+
+The following will do the same job as above
+
+```python
+class decorator2:
+    
+    def __init__(self, f):
+        self.f = f
+        
+    def __call__(self):
+        print("Decorating", self.f.__name__)
+        self.f()
+
+@decorator2
+def foo():
+    print("inside foo()")
+
+foo()
+```
+
 ### 2 - timeit function without ipython
 
 ```python
