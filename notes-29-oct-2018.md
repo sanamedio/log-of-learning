@@ -2,17 +2,32 @@
 
 ### 3 - py_compile
 
+- Python is both a interpreted and compiled language
+
+If you have a python program called server123.py, then
+
 ```python
 import py_compile
-py_compile.compile('server.py')
+py_compile.compile('server123.py')
 ```
 
 ```bash
-$ python ./server.pyc
+$ python ./server123.pyc
 ```
 
 - for python3 the pyc file will be in pycache folder
 - it will give magic number error if you run a different version interpreter over a different python version pyc.
+
+This also works
+
+```bash
+python -c "import server123"
+python -m server123
+```
+There is also a compileall, i.e.
+```python
+python -m compileall .
+```
 
 ### 2 - New style and old style classes
 
