@@ -1,5 +1,19 @@
 # 30-oct-2018
 
+### 7 - Why GIL
+
+- It’s not that too technically difficult to remove the GIL. But the ramifications will be bad for single-threaded scripts. 
+- The main problem with CPython is that it uses Reference Counting as its main process to keep track of Object’s life. Ref Counting main problem is that addition (Py_INCREF in C API) and subtraction (Py_DECREF in C API) in not atomic in nature in some platforms and is very slow in the supported ones. 
+- Larry Hasting has removed GIL from Python3 by using atomic increment and atomic decrement in x86 platforms. But this slows Python3 by atleast 20x times. Also if you would peek inside a running interpreter you will see Py_INCREF and Py_DECEF is called millions of time even before your script will start to execute. Add this to slow the atomic functions and you will have slow down everything. 
+- Also if you were to remove GIL then you have to make every C code in the VM thread safe which will degrade single threaded performance severely because of the overhead of unnecessary slow down single threaded performance because of the new locks. And if it’s not done then everything will be thread-unsafe and locks and unlocks have to be done manually which is not preferable considering Python is scripting language. 
+- Also removing GIL means end of Refernce Counting and including GC and this thing will severely break C APIs.
+- https://stackoverflow.com/questions/36479159/why-are-numpy-calculations-not-affected-by-the-global-interpreter-lock/36480941
+- https://stackoverflow.com/questions/991904/why-is-there-no-gil-in-the-java-virtual-machine-why-does-python-need-one-so-bad?rq=1
+- https://jeffknupp.com/blog/2012/03/31/pythons-hardest-problem/
+- https://dev.to/docoprusta/explain-python-global-interpreter-lock-gil-like-im-five-25k8
+- https://opensource.com/article/17/4/grok-gil
+
+
 ### 6 - asyncio call at a specific time
 
 ```python
