@@ -91,7 +91,7 @@ if __name__ == '__main__':
 - The size of data stored in queue can constantly increase if further phases are slow causing the program to crash arbirarily.
 - We need to create a busy_waiting on the done_queue in order to know when it is the time to close.
 - Writing a producer-consumer queue needs more effort.
-
+- Instead Queue from python library can be used which solves many of these issues.
 
 
 
