@@ -1,5 +1,82 @@
 # 30-oct-2018
 
+### 8 - More GIL
+
+
+```C
+static PyThread_type_lock interpreter_lock = 0; /* This is the GIL */
+// PyThread_type_lock is an alias for the standard C lock, mutex_t. It is initialized when the Python interpreter begins
+
+void
+PyEval_InitThreads(void)
+{
+    interpreter_lock = PyThread_allocate_lock();
+    PyThread_acquire_lock(interpreter_lock);
+}
+```
+- If a thread runs uninterrupted for 1000 bytecode instructions in Python 2, or runs 15 milliseconds in Python 3, then it gives up the GIL and another thread may run.
+
+```python
+def do_connect():
+    s = socket.socket()
+    s.connect(('python.org', 80))  # drop the GIL
+
+for i in range(2):
+    t = threading.Thread(target=do_connect)
+    t.start()
+```
+
+```C
+/* s.connect((host, port)) method  socketmodule.c*/
+static PyObject *
+sock_connect(PySocketSockObject *s, PyObject *addro)
+{
+    sock_addr_t addrbuf;
+    int addrlen;
+    int res;
+
+    /* convert (host, port) tuple to C address */
+    getsockaddrarg(s, addro, SAS2SA(&addrbuf), &addrlen);
+
+    Py_BEGIN_ALLOW_THREADS
+    res = connect(s->sock_fd, addr, addrlen);
+    Py_END_ALLOW_THREADS
+
+    /* error handling and so on .... */
+}
+```
+- Py_BEGIN_ALLOW_THREADS is the macro where the thread drops GIL. It is defined as `PyThread_release_lock(interpreter_lock);`
+- Py_END_ALLOW_THREADS reacquires the lock. A thread might block at this spot, waiting for another thread to release the lock; once that happens, the waiting thread grabs the GIL back and resumes executing your Python code.
+
+- While the interpreter steps through your bytecode it periodically drops the GIL, without asking permission of the thread whose code it is executing, so other threads can run:
+
+```c
+for (;;) {
+    if (--ticker < 0) {
+        ticker = check_interval;
+   
+        /* Give another thread a chance */
+        PyThread_release_lock(interpreter_lock);
+   
+        /* Other threads may run now */
+   
+        PyThread_acquire_lock(interpreter_lock, 1);
+    }
+
+    bytecode = *next_instr++;
+    switch (bytecode) {
+        /* execute the next instruction ... */
+    }
+}
+```
+- By default the check interval is 1000 bytecodes. All threads run this same code and have the lock taken from them periodically in the same way. In Python 3 the GIL's implementation is more complex, and the check interval is not a fixed number of bytecodes, but 15 milliseconds. 
+- sort() is atomic and += is not atomic and kind of non-thread-safe
+- acquiring a threading.Lock in Python is cheap.
+
+
+
+
+
 ### 7 - Why GIL
 
 - It’s not that too technically difficult to remove the GIL. But the ramifications will be bad for single-threaded scripts. 
