@@ -1,5 +1,43 @@
 # 31-oct-2018
 
+### 5 - reading PyObject with ctypes
+
+```python
+import ctypes
+
+class IntStruct(ctypes.Structure):
+    _fields_ = [("ob_refcnt", ctypes.c_long),
+                ("ob_type", ctypes.c_void_p),
+                ("ob_size", ctypes.c_ulong),
+                ("ob_digit", ctypes.c_long)]
+    
+    def __repr__(self):
+        return ("IntStruct(ob_digit={self.ob_digit}, "
+                "refcount={self.ob_refcnt})").format(self=self)
+
+
+num = 42
+IntStruct.from_address(id(42))
+```
+```python
+import ctypes
+
+class ListStruct(ctypes.Structure):
+	_fields_ = [ ("ob_refcnt", ctypes.c_long),
+			("ob_type", ctypes.c_void_p),
+			("ob_size",ctypes.c_ulong),
+			("ob_item", ctypes.c_long),
+			("allocated", ctypes.c_ulong)]
+	def __repr__(self):
+		return("ListStruct(len={self.ob_size}, "
+			"refcount={self.ob_refcnt})".format(self=self))
+
+L = [1,2,3,4,5]
+print(ListStruct.from_address(id(L)))
+```
+
+
+
 ### 4 - concurrent.futures
 
 ```python
