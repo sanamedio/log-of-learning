@@ -1,5 +1,79 @@
 # 31-oct-2018
 
+### 4 - concurrent.futures
+
+```python
+from time import time
+from concurrent.futures import *
+
+
+def gcd(pair):
+
+	a , b = pair
+	low = min(a,b)
+	for i in range(low, 0 , -1 ):
+		if a % i == 0 and b % i == 0:
+			return i
+
+
+
+
+numbers = [ (1231312,434344) , (2013123,111110),
+	    (34423323,123123), (234345,345345)]
+
+
+numbers = numbers * 100
+
+def linear():
+	start = time()
+	results = list(map(gcd, numbers))
+	end = time()
+	print('linear : Took %.3f seconds' % ( end - start ) )
+
+
+
+def threadpool():
+	start = time()
+	pool = ThreadPoolExecutor(max_workers = 2)
+	results = list(pool.map(gcd, numbers))
+	end = time()
+	print('threadpool : Took %.3f seconds' % ( end - start ) )
+
+
+def processpool():
+	start = time()
+	pool = ProcessPoolExecutor(max_workers=2)
+	results = list(pool.map(gcd, numbers))
+	end = time()
+	print('processpool : Took %.3f seconds' %(end -start))
+
+
+if __name__ == '__main__':
+	linear()
+	threadpool()
+	processpool()
+
+
+#linear : Took 6.746 seconds
+#threadpool : Took 6.620 seconds
+#processpool : Took 3.541 seconds
+```
+- ProcessPoolExecutor uses multiprocessing module low level constructs
+- Steps
+  - It takes all items from input numbers to a map
+  - it serializes it into binary data using pickle module( pickle reliability using copyreg )
+  - It copies the serilaized data into a child interpreter through local sockets
+  - It deserializes the data using pickle in the child interpreter
+  - It then imports pythotn module containing the gcd function
+  - It runs that in the child process parallel with others
+  - It serilaizes the result through bytes
+  - it copies those bytes back through socket
+  - deserilaizatoin of results in parent process
+  - it merges results into single list and returns that
+
+
+
+
 ### 3 - coroutine yield and send together 
 
 ```python
