@@ -1,5 +1,36 @@
 # 31-oct-2018
 
+### coroutine yield and send together 
+
+```python
+
+def my_coroutine():
+	while True:
+		received = yield
+		print('Received ', received)
+
+it = my_coroutine()
+next(it)
+it.send('First')
+it.send('Second')
+
+```
+```python
+def minimize():
+    current = yield
+    while True:
+        value = yield current
+        current = min(value, current)
+        
+it = minimize()
+next(it)
+print(it.send(4)) # 4
+print(it.send(22)) # 4
+print(it.send(-1)) # -1
+```
+
+
+
 ### 2 - Pipeline using a Queue class with Locks ( done wrong )
 
 ```python
