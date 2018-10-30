@@ -1,5 +1,16 @@
 # 31-oct-2018
 
+### 6 - self wrapping Object
+
+```python
+>>> L = []
+>>> L.append(L)
+>>> print(L)
+[[...]]
+>>> 
+
+```
+
 ### 5 - reading PyObject with ctypes
 
 ```python
