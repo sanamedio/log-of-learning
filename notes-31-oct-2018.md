@@ -1,6 +1,6 @@
 # 31-oct-2018
 
-### 2 - Pipeline using a Queue class with Locks
+### 2 - Pipeline using a Queue class with Locks ( done wrong )
 
 ```python
 from threading import *
@@ -87,6 +87,12 @@ def main():
 if __name__ == '__main__':
 	main()
 ```
+- When the worker vary in speeds, a later phase might starve due to slow earlier state, doing nothing but checking whether anything is present in the queue or not.
+- The size of data stored in queue can constantly increase if further phases are slow causing the program to crash arbirarily.
+- We need to create a busy_waiting on the done_queue in order to know when it is the time to close.
+- Writing a producer-consumer queue needs more effort.
+
+
 
 
 ### 1 - Counter with and without locking
