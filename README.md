@@ -46,3 +46,5 @@
 
 [31-oct-2018 - 07 entries](./notes-31-oct-2018.md)
 
+[01-nov-2018 - 00 entries](./notes-01-oct-2018.md)
+
