@@ -11,3 +11,8 @@
   - There was no client side discussion in tutorial. I am assuming to provide rich interface, JS needs to get invovled. May be some different frontend framework than it's using by default.
   - There was no dynamic reactivity in the tutorial. Request stuff- Response stuff: server side rendering.
   - Good for quick development of simple Apps
+- Files(default)
+  - urls.py: Contains the routing and stuff, multiple present in the project
+  - from urls.py(not literally) it goes to views.py which contains views which refer to templates
+  - while rendering template or doing other stuff, models.py models are updated,queried
+  - manage.py is control center during development, can be used to runserver and get shell directly into application and running tests
