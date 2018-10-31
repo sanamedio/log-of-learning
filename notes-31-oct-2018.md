@@ -1,5 +1,18 @@
 # 31-oct-2018
 
+### 7 - python3 print(\*a)
+
+```python
+Python 3.5.2 (default, Nov 23 2017, 16:37:01) 
+[GCC 5.4.0 20160609] on linux
+Type "help", "copyright", "credits" or "license" for more information.
+>>> print(*[1,2,3]) # no need to do ' '.join([])
+1 2 3
+>>> print([1,2,3])
+[1, 2, 3]
+>>> 
+```
+
 ### 6 - self wrapping Object
 
 ```python
