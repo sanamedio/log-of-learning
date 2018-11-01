@@ -1,5 +1,37 @@
 # 02-nov-2018
 
+### 5 - Copying data from numpy to ctypes
+
+```python
+import numpy as np
+import ctypes
+
+
+# Preparing example
+
+class TransferData(ctypes.Structure):
+    _fields_ = [
+        ('statusReady', ctypes.c_bool),
+        ('velocity', ctypes.c_double * 4),
+        ('pressure', ctypes.c_double * 4)
+    ]
+
+
+data = TransferData()
+output = np.array([12., 13., 11., 10.])
+
+
+# Actual code
+
+# Both values should be equal but there could be problems with alignment settings
+assert ctypes.sizeof(data.pressure) == output.nbytes
+
+ctypes.memmove(ctypes.byref(data.pressure), output.ctypes.data, output.nbytes)
+
+
+print(list(data.pressure))
+```
+
 ### 4 - How to design a class
 
 - https://stackoverflow.com/questions/4203163/how-do-i-design-a-class-in-python?noredirect=1&lq=1
