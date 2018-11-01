@@ -1,5 +1,10 @@
 # 02-nov-2018
 
+### 4 - How to design a class
+
+- https://stackoverflow.com/questions/4203163/how-do-i-design-a-class-in-python?noredirect=1&lq=1
+
+
 ### 3 - staticmethods and classmethods (cls variable)
 
 - PEP8
