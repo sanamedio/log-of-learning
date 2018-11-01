@@ -1,5 +1,58 @@
 # 01-nov-2018
 
+### 6 - with exit semantics
+
+incorrect dunder exit:
+```python
+class Rectangle:
+	
+	def __init__(self, width, height):
+		self.width = width
+		self.height = height
+
+	def __enter__(self):
+		print("in __enter__")
+		return self
+
+	def __exit__(self):
+		#never called from 'with' because
+		# semantics are wrong
+
+	def divide_by_zero(self):
+		return self.width / 0
+
+with Rectangle(3,4) ass r:
+	r.divide_by_zero()
+	# __exit__ should be called but isn't
+```
+
+correct dunder exit:
+```python
+class Rectangle:
+
+	def __init__(self, width, height):
+		self.width = width
+		self.height = height
+
+	def __enter__(self):
+		print("in __enter__")
+		return self
+
+	def __exit__(self, exception_type, exception_value, traceback):
+		print("in __exit__")
+
+	def divide_by_zero(self):
+		# causes ZeroDivisionError exception
+		return self.width / 0 
+
+with Rectangle(3,4) as r:
+	# exception successfully pass to __exit__
+	r.divide_by_zero()
+```
+
+
+
+
 ### 5 - with behind the scenes
 
 ```python
