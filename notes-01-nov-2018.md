@@ -1,6 +1,38 @@
 # 01-nov-2018
 
-### 6 - with exit semantics
+### 7 - return from dunder init antipattern
+
+```python
+class Rectangle:
+
+	def __init__(self, width, height):
+		self.width = width
+		self.height = height
+		self.area = width * height
+		#causes "should return None erro"
+		return self.area
+
+
+
+
+#### correct way 
+
+class Rectangle:
+		
+	def __init__(self, width, height):
+		self.width = width
+		self.height = height
+		self._area = width * height
+
+	@property
+	def area(self):
+		return self._area
+
+
+```
+
+
+### 6 - with exit semantics antipattern
 
 incorrect dunder exit:
 ```python
