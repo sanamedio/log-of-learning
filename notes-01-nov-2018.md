@@ -126,7 +126,7 @@ class Rectangle:
 
 class Square(Rectangle):
         def __init__(self,length):
-                super(self, Square).__init__(length,length0
+                super(self, Square).__init__(length,length)
 
 s = Square(5)
 print(s.area)
