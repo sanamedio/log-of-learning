@@ -1,5 +1,46 @@
 # 01-nov-2018
 
+
+### 4 - unintended for else
+
+```python
+
+def magic_number(lst, x):
+        for i in lst:
+                if x == i:
+                        print("magic number appeared")
+        else:
+                print("List does not contain magic number"
+
+```
+
+- The problem here is that without breaking the first if , it will print both prints, hence a break needs to be put in the first if
+
+### 3- bad super call antipattern
+
+```python
+class Rectangle:
+        def __init__(self, height, width):
+                self.height = height
+                self.width = width
+                self.area = height * width
+
+class Square(Rectangle):
+        def __init__(self,length):
+                super(self, Square).__init__(length,length0
+
+s = Square(5)
+print(s.area)
+```
+
+ - In python2 call to super, first argument is the class name itself, and not self
+ - In python3 no need to put any arguments to super
+
+
+
+
+
+
 ### 2 - Antipatterns in python
 
 - Accessing private variabls directly from outside
