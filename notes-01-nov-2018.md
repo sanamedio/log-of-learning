@@ -1,5 +1,53 @@
 # 01-nov-2018
 
+### 2 - Antipatterns in python
+
+- Accessing private variabls directly from outside
+```python
+def Rectangle:
+
+        def __init__(self, height, weight):
+                self._height = height
+                self._weight = weight
+
+
+r = Rectangle(5,6)
+print(r._width)
+```
+
+- Assigning lambda expression to a variable
+```python
+def f(x): return 2+x
+
+f = lamda x: 2+x 
+```
+
+- Assigning a built in module 
+```python
+list = [1,2,3] # list() is a builtin, pllease dont mess that up xce
+```
+- Catching exceptions in the right order
+
+wrong:
+```python
+try:
+  5/0
+except Exception as e:
+  print("Exception")
+except ZeroDivisionError as e:
+  print("ZeroDivisionError")
+```
+right:
+```python
+try:
+  5/0
+except ZeroDivisionError as e:
+  print("ZeroDivisionErro")
+except Exception as e:
+  print("Eception")
+```
+
+
 ### 1 - Django tutorial
 
 - https://docs.djangoproject.com/en/2.1/intro/tutorial01  
