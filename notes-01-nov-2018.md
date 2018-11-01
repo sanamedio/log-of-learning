@@ -1,5 +1,19 @@
 # 01-nov-2018
 
+### 5 - with behind the scenes
+
+```python
+with EXPRESSION:
+        BLOCK
+```
+is equivalent to:
+```python
+EXPRESSION.__enter__()
+try:
+        BLOCK
+finally:
+        EXPRESSION.__exit__(exception_type, exception_value, traceback)
+```
 
 ### 4 - unintended for else
 
