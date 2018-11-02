@@ -48,4 +48,4 @@
 
 [01-nov-2018 - 07 entries](./notes-01-nov-2018.md)
 
-[02-nov-2018 - 00 entries](./notes-02-nov-2018.md)
+[02-nov-2018 - 05 entries](./notes-02-nov-2018.md)
