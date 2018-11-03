@@ -2,7 +2,7 @@
 # python-notes
 # ============
 
-### 329 out of 100000 entries done
+### 335 out of 100000 entries done
 
 [01-oct-2018 - 52 entries](./notes-01-oct-2018.md)
 
@@ -23,7 +23,6 @@
 [19-oct-2018 - 30 entries](./notes-19-oct-2018.md)
 
 [20-oct-2018 - 03 entries](./notes-20-oct-2018.md)
-
 
 [21-oct-2018 - 15 entries](./notes-21-oct-2018.md)
 
@@ -51,5 +50,7 @@
 
 [02-nov-2018 - 05 entries](./notes-02-nov-2018.md)
 
-[03-nov-2018 - 00 entries](./notes-03-nov-2018.md)
+[03-nov-2018 - 06 entries](./notes-03-nov-2018.md)
+
+[04-nov-2018 - 00 entries](./notes-04-nov-2018.md)
 
