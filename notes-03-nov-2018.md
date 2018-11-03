@@ -1,5 +1,31 @@
 # 03-nov-2018
 
+### 4 - Python classes are dynamic
+
+- change in class, reflects in alreaady created instances
+
+```python
+>>> class Class:
+...   def one(self):
+...     return 1
+... 
+>>> c=Class()
+>>> c.one()
+1
+>>> def two(self):
+...   return 2
+... 
+>>> Class.two=two
+>>> c.two()
+2
+>>> Class.three=lambda self:3
+>>> c.three()
+3
+>>> Class.one=lambda self:'New One.'
+>>> c.one()
+'New One.'
+```
+
 ### 3 - itertools combination(similar for Pn)
 
 ```python
