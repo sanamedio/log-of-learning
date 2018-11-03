@@ -1,5 +1,37 @@
 # 03-nov-2018
 
+### 6 - monkeypatching methods and properties
+
+```python
+
+def monkeypatch_method(cls):
+    """
+    A decorator to add a single method to an existing class::
+        @monkeypatch_method(<someclass>)
+        def <newmethod>(self, [...]):
+            pass
+    """
+
+    def decorator(func):
+        setattr(cls, func.__name__, func)
+        return func
+    return decorator
+
+
+def monkeypatch_property(cls):
+    """
+    A decorator to add a single method as a property to an existing class::
+        @monkeypatch_property(<someclass>)
+        def <newmethod>(self, [...]):
+            pass
+    """
+
+    def decorator(func):
+        setattr(cls, func.__name__, property(func))
+        return func
+return decorator
+```
+
 ### 5 - numpy vs python loop
 
 ```python
