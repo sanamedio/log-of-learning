@@ -1,5 +1,39 @@
 # 03-nov-2018
 
+### 5 - numpy vs python loop
+
+```python
+
+def numpy_based():
+	a = np.arange(10000000)
+	b = np.arange(10000000)
+	c = a + b
+
+def range_based():
+	a = range(10000000)
+	b = range(10000000)
+	c = []
+	for i in range(len(a)):
+		c.append(a[i] + b[i])
+	
+
+def calculate_time( func):
+	start = time.clock()
+	func()
+	elapsed = ( time.clock() - start )
+	print("Time used by " + str(func.__name__) + " " + str(elapsed) )
+
+
+import time
+import numpy as np
+
+
+calculate_time(numpy_based)
+calculate_time(range_based)
+#>>Time used by numpy_based 0.20645400000000003
+#>>Time used by range_based 2.315855
+```
+
 ### 4 - Python classes are dynamic
 
 - change in class, reflects in alreaady created instances
