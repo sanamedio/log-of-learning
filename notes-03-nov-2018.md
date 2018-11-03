@@ -6,6 +6,7 @@
 import platform
 print(platform.architecture())
 print(platform.python_version())
+print(platform.uname())
 ```
 - https://docs.python.org/2/library/platform.html
 
