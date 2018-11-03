@@ -1,5 +1,22 @@
 # 03-nov-2018
 
+### 3 - itertools combination(similar for Pn)
+
+```python
+>>> from itertools import combinations
+ 
+>>> teams = ["Packers", "49ers", "Ravens", "Patriots"]
+>>> for game in combinations(teams, 2):
+...     print game
+ 
+>>> ('Packers', '49ers')
+>>> ('Packers', 'Ravens')
+>>> ('Packers', 'Patriots')
+>>> ('49ers', 'Ravens')
+>>> ('49ers', 'Patriots')
+>>> ('Ravens', 'Patriots')
+```
+
 ### 2 - curses in python for terminal draw
 
 ```python
