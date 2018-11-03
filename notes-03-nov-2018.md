@@ -30,6 +30,25 @@ def monkeypatch_property(cls):
         setattr(cls, func.__name__, property(func))
         return func
 return decorator
+
+class Test:
+        pass
+
+
+@monkeypatch_method(Test)
+def hello(self):
+        print("hello")
+
+@monkeypatch_property(Test)
+def fella(self):
+        return "fsck"
+
+
+t = Test()
+t.hello()
+print (t.fella)
+
+
 ```
 
 ### 5 - numpy vs python loop
