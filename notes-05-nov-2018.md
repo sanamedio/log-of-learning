@@ -1,5 +1,17 @@
 # 05-nov-2018
 
+### 2 - better way to refer to libc
+
+```python
+>>> import ctypes
+>>> import ctypes.util
+>>> libc = ctypes.CDLL(ctypes.util.find_library("c")
+... )
+>>> libc
+<CDLL 'libc.so.6', handle 7fae30f804e0 at 0x7fae2fb44a58>
+>>> 
+```
+
 ### 1 - type hints for python 3
 
 - Can generate types automatically using instagram's https://github.com/Instagram/MonkeyType
