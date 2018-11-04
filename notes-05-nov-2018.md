@@ -1,6 +1,23 @@
 # 05-nov-2018
 
-### 5 - FUSE - filesystem in userspace
+### 6 - While writing a library ( like Django ) things to take care of for portability between VMs
+
+- https://jacobian.org/writing/python-implementation-details/
+  - Using the \_\_builtins__ super-global instead of import \_\_builtin__.
+  - Assumptions about the terminal that’s available. Not all terminals will support curses, so anything involving term colors or even isatty is a bit suspect.
+  - Assumptions about what’s available in the os module. os.access, os.chmod, os.getpid, may not be available.
+  - Relying on features of “old-style” classes, or dynamically creating classes at runtime based on types.ClassType. In general, avoid old-style classes completely if at all possible.
+  - Assumptions about function internals, especially im_func.func_code.
+  - Assumptions about dict ordering. Remember that dict really is unordered; just because you “usually” get the same order doesn’t mean that you’ve gotten a magic ordered dict.
+  - Making code that requires gc.collect.
+  - Relying on built-in exception message strings; some (IndexError) differ between VMs.
+  - Not paying close attention to type conversion at boundaries (sockets, databases); you might get a boxed type (i.e. a java.lang.String) from the underlying VM where you’re not expecting it.
+  - Not thinking carefully about PYTHONPATH, or ignoring things like JYTHONPATH.
+  - Not using \_\_import__ properly. Use importlib instead.
+  - Assuming the existence or format of .pyc or .pyo objects, or assuming that Python modules must be \*.py, or really any assumptions about the names of files.
+
+
+### 5 - FUSE : filesystem in userspace
 
 - https://en.wikipedia.org/wiki/Filesystem_in_Userspace
 - ```sudo apt install python-fuse``` (no idea how to install for python3)
