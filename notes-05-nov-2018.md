@@ -1,5 +1,33 @@
 # 05-nov-2018
 
+### 7 - macropy library 
+
+```python
+#target.py
+from macropy.tracing import macros, trace
+
+with trace:
+    sum([i for i in range(5)])
+```
+
+```python
+#run.py
+
+import macropy.activate
+import target
+```
+```bash
+python run.py
+```
+output:
+```python
+sum([ i for i in range(5) ])
+range(5) -> range(0, 5)
+[i for i in range(5)] -> [0, 1, 2, 3, 4]
+sum([ i for i in range(5) ]) -> 10
+```
+
+
 ### 6 - While writing a library ( like Django ) things to take care of for portability between VMs
 
 - https://jacobian.org/writing/python-implementation-details/
