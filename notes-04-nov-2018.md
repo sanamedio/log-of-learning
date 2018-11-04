@@ -1,5 +1,15 @@
 # 04-nov-2018
 
+### 8 - segfault in python recursion
+
+```python
+>>> import sys
+>>> sys.setrecursionlimit(1<<30)
+>>> f = lambda f : f(f)
+>>> f(f)
+Segmentation fault (core dumped)
+```
+
 ### 7 - Elementary cellular automata plotted using matplotlib
 
 - TODO: improve the code later!
