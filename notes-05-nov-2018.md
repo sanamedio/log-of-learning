@@ -1,5 +1,10 @@
 # 05-nov-2018
 
+### 5 - FUSE - filesystem in userspace
+
+- https://en.wikipedia.org/wiki/Filesystem_in_Userspace
+- ```sudo apt install python-fuse``` (no idea how to install for python3)
+
 ### 4 - using pandas to directly load data ( pandas is kinda awesome)
 
 install:
