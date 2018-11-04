@@ -1,5 +1,27 @@
 # 05-nov-2018
 
+### 3 - test data generation in python using mimesis
+
+```python
+Python 3.7.0 (default, Nov  4 2018, 00:07:25) 
+[GCC 5.4.0 20160609] on linux
+Type "help", "copyright", "credits" or "license" for more information.
+>>> from mimesis import Person
+>>> person = Person('en')
+>>> person.full_name()
+'Sheldon Mcdonald'
+>>> person.occupation()
+'Preacher'
+>>> person.occupation()
+'Scrap Dealer'
+>>> person.telephone()
+'436.227.0495'
+>>> person.identifier()
+'53-04/14'
+>>> person.identifier(mask='####/##-#')
+'0299/48-5'
+```
+
 ### 2 - better way to refer to libc
 
 ```python
