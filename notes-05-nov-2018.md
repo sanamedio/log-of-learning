@@ -1,5 +1,59 @@
 # 05-nov-2018
 
+### 4 - using pandas to directly load data ( pandas is kinda awesome)
+
+install:
+```bash
+pip install pandas
+```
+
+run:
+```python
+Python 3.7.0 (default, Nov  4 2018, 00:07:25) 
+[GCC 5.4.0 20160609] on linux
+Type "help", "copyright", "credits" or "license" for more information.
+>>> import pandas as pd
+>>> 
+>>> direct_link = 'http://www.randalolson.com/wp-content/uploads/percent-bachelors-degrees-women-usa.csv'
+>>> women_majors = pd.read_csv(direct_link)
+>>> 
+>>> print(women_majors.info())
+<class 'pandas.core.frame.DataFrame'>
+RangeIndex: 42 entries, 0 to 41
+Data columns (total 18 columns):
+Year                             42 non-null int64
+Agriculture                      42 non-null float64
+Architecture                     42 non-null float64
+Art and Performance              42 non-null float64
+Biology                          42 non-null float64
+Business                         42 non-null float64
+Communications and Journalism    42 non-null float64
+Computer Science                 42 non-null float64
+Education                        42 non-null float64
+Engineering                      42 non-null float64
+English                          42 non-null float64
+Foreign Languages                42 non-null float64
+Health Professions               42 non-null float64
+Math and Statistics              42 non-null float64
+Physical Sciences                42 non-null float64
+Psychology                       42 non-null float64
+Public Administration            42 non-null float64
+Social Sciences and History      42 non-null float64
+dtypes: float64(17), int64(1)
+memory usage: 6.0 KB
+None
+>>> women_majors.head()
+   Year             ...               Social Sciences and History
+0  1970             ...                                      36.8
+1  1971             ...                                      36.2
+2  1972             ...                                      36.1
+3  1973             ...                                      36.4
+4  1974             ...                                      37.3
+
+[5 rows x 18 columns]
+>>> 
+```
+
 ### 3 - test data generation in python using mimesis
 
 ```python
