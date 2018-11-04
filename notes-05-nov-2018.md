@@ -1,6 +1,6 @@
 # 05-nov-2018
 
-### 1 : type hints for python 3
+### 1 - type hints for python 3
 
 - Can generate types automatically using instagram's https://github.com/Instagram/MonkeyType
 - using typing module, the type hints can be read and appropriate exception can be raised like follows
