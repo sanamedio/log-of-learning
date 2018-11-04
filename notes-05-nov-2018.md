@@ -1,6 +1,6 @@
 # 05-nov-2018
 
-### 7 - macropy library 
+### 7 - macropy library and "with trace"
 
 ```python
 #target.py
