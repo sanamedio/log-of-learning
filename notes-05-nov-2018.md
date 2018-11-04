@@ -1,5 +1,10 @@
 # 05-nov-2018
 
+### 8 - dbus python
+
+- Tried installing with pip didn't work, so tried apt-get and it worked. Mostly whatever doesn't get installed via pip, usually needs apt-get
+- 
+
 ### 7 - macropy library and "with trace"
 
 ```python
