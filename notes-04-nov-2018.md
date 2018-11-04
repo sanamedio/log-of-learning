@@ -1,5 +1,13 @@
 # 04-nov-2018
 
+### 12 - iterators use c recusion stack
+
+```python
+i=''
+for _ in range(9**6):i=filter(int,i)
+del i
+```
+
 ### 11 - crashing using marshal
 
 - According to python wiki this should cause seg fault, but on my system it hangs everything down and causes a restart later on. It is trying to load data from random places in memory. I think behaviour will be dependent on random numbers. DONT USE THIS IT CAUSES CRASH OF OS
