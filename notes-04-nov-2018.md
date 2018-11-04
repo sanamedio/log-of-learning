@@ -1,6 +1,31 @@
 # 04-nov-2018
 
-### 9 - segfault using ctypes pointer
+### 11 - crashing using marshal
+
+- According to python wiki this should cause seg fault, but on my system it hangs everything down and causes a restart later on. It is trying to load data from random places in memory. I think behaviour will be dependent on random numbers. DONT USE THIS IT CAUSES CRASH OF OS
+- https://wiki.python.org/moin/CrashingPython
+
+```python
+  >>> import os, marshal
+    >>> while True:
+    ...     try:
+    ...         marshal.loads(os.urandom(16))
+    ...     except:
+    ...         pass
+    ... 
+    #(caused my system to hang : ubuntu 16 linux )
+```
+
+### 10 - tracing program execution using -m trace
+
+- very useful to see each line of python code executing and subsequence program behaviour. But can't change the values in between. for that use pdb
+
+```bash
+python3 -u -m trace -t test.py
+```
+
+
+### 9 - segfault using ctypes 
 
 ```python
 Python 3.7.0 (default, Nov  4 2018, 00:07:25) 
@@ -9,6 +34,11 @@ Type "help", "copyright", "credits" or "license" for more information.
 >>> import ctypes
 >>> p = ctypes.pointer(ctypes.c_char.from_address(5))
 >>> p[0] = b'x'
+Segmentation fault (core dumped)
+```
+
+```python
+>>> import ctypes; ctypes.string_at(1)
 Segmentation fault (core dumped)
 ```
 
