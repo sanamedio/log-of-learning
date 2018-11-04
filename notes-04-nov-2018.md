@@ -1,5 +1,123 @@
 # 04-nov-2018
 
+### 7 - Elementary cellular automata plotted using matplotlib
+
+- TODO: improve the code later!
+
+```python
+import sys;
+
+
+if len(sys.argv) >= 5:
+	RULE = int(sys.argv[1])
+	WIDTH = int(sys.argv[2])
+	HEIGHT = int(sys.argv[3])
+	TIME = float(sys.argv[4])
+elif len(sys.argv) == 4:
+	RULE = int(sys.argv[1])
+	WIDTH = int(sys.argv[2])
+	HEIGHT = int(sys.argv[3])
+	TIME = 0.1
+elif len(sys.argv) == 3:
+	RULE = int(sys.argv[1])
+	WIDTH = int(sys.argv[2])
+	HEIGHT = 100
+	TIME = 0.1
+elif len(sys.argv) == 2:
+	RULE = int(sys.argv[1])
+	WIDTH = 100
+	HEIGHT = 100
+	TIME = 0.1
+else:
+	RULE = 150
+	WIDTH = 100
+	HEIGHT = 100
+	TIME = 0.1
+	
+
+binary_rule = format(RULE, '08b')
+
+def get_next_row(binary_rule,windo):
+	
+	for i,v in enumerate(reversed(binary_rule)):
+		if v  == '1':
+			prec = format(i,'03b')
+
+			if prec == windo:
+				return '1'
+
+	return '0'
+			
+
+
+
+
+def print_blocks(x):
+	for i in x :
+		if i == '0':
+			print(bytes((219,)).decode('cp437'),end='')
+		else:
+			print(' ',end='')
+	print('')
+
+
+
+print('binary rule : ' +  binary_rule)
+	
+
+for i,v in enumerate(reversed(binary_rule)):
+	print(  format(i,'03b') + " -> " + v )
+
+
+
+tstr = "0"*WIDTH + "1" + "0"*WIDTH
+
+
+#print(tstr)
+#print_blocks(tstr)
+
+array_twod = []
+
+iterations = 0
+
+import time
+while True:
+	if iterations > HEIGHT:
+		break
+	iterations = iterations + 1
+
+	array_twod += [ [ float(x) for x in tstr] ]
+	result = ""
+	for i in range(len(tstr)):
+		temp_str = tstr
+		if i ==0 :
+			result = result + get_next_row( binary_rule , temp_str[-1] + temp_str[0] + temp_str[1] )
+		elif i == len(tstr)-1:
+			result = result + get_next_row( binary_rule , temp_str[i-1] + temp_str[i] + temp_str[0] )	
+		else:
+			result  = result +  get_next_row(binary_rule,temp_str[i-1:i+2])
+
+			
+	#print_blocks(result)
+	tstr = result
+	#time.sleep(TIME)
+
+
+
+def plotme(x):
+	import matplotlib.pyplot as plt 
+	import numpy as np 
+ 
+	a = np.array(x)
+	#print(a) 
+	plt.imshow(a, cmap='hot') 
+	plt.show()
+
+
+plotme(array_twod)
+```
+
+
 ### 6 - Elementary cellular automata in python
 
 - http://mathworld.wolfram.com/ElementaryCellularAutomaton.html
