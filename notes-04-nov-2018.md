@@ -1,5 +1,21 @@
 # 04-nov-2018
 
+### 15 - better_exceptions module
+
+- Shows values of variables in stacktrace, very useful
+```bash
+pip install better_exceptions
+export BETTER_EXCEPTIONS=1
+python test.py
+```
+
+for interactive prompt:
+```bash
+python -m better_exceptions
+```
+
+- https://github.com/Qix-/better-exceptions
+
 ### 14 - simple reactive dashboards in python using dash
 
 - https://github.com/pydata/pandas-datareader 
