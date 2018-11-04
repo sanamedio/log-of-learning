@@ -1,5 +1,17 @@
 # 04-nov-2018
 
+### 9 - segfault using ctypes pointer
+
+```python
+Python 3.7.0 (default, Nov  4 2018, 00:07:25) 
+[GCC 5.4.0 20160609] on linux
+Type "help", "copyright", "credits" or "license" for more information.
+>>> import ctypes
+>>> p = ctypes.pointer(ctypes.c_char.from_address(5))
+>>> p[0] = b'x'
+Segmentation fault (core dumped)
+```
+
 ### 8 - segfault in python recursion
 
 ```python
