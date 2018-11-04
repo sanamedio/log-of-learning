@@ -1,5 +1,75 @@
 # 04-nov-2018
 
+### 6 - Elementary cellular automata in python
+
+- http://mathworld.wolfram.com/ElementaryCellularAutomaton.html
+
+```python
+import sys;
+RULE = int(sys.argv[1])
+TIME = float(sys.argv[2])
+
+binary_rule = format(RULE, '08b')
+
+def get_next_row(binary_rule,windo):
+	
+	for i,v in enumerate(reversed(binary_rule)):
+		if v  == '1':
+			prec = format(i,'03b')
+
+			if prec == windo:
+				return '1'
+
+	return '0'
+			
+
+
+
+
+def print_blocks(x):
+	for i in x :
+		if i == '0':
+			print(bytes((219,)).decode('cp437'),end='')
+		else:
+			print(' ',end='')
+	print('')
+
+
+
+print('binary rule : ' +  binary_rule)
+	
+
+for i,v in enumerate(reversed(binary_rule)):
+	print(  format(i,'03b') + " -> " + v )
+
+
+
+tstr = "0"*70 + "1" + "0"*70
+
+
+print(tstr)
+print_blocks(tstr)
+
+import time
+while True:
+	result = ""
+	for i in range(len(tstr)):
+		temp_str = tstr
+		if i ==0 :
+			result = result + get_next_row( binary_rule , temp_str[-1] + temp_str[0] + temp_str[1] )
+		elif i == len(tstr)-1:
+			result = result + get_next_row( binary_rule , temp_str[i-1] + temp_str[i] + temp_str[0] )	
+		else:
+			result  = result +  get_next_row(binary_rule,temp_str[i-1:i+2])
+
+			
+	print_blocks(result)
+	tstr = result
+	time.sleep(TIME)
+
+## call the program with some arguments like 150 0.1, where 150 will be cellular automata id, and 0.1 is time between rendering each line, speed of simulation
+```
+
 ### 5 - prime numbers with lambda
 
 ```python
