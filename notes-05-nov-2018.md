@@ -170,6 +170,11 @@ if __name__ == '__main__':
     
 ```
 
+```bash
+ curl -v  --socks5 127.0.0.1:9011 -U username:password https://github.com
+```
+
+
 ### 8 - dbus python
 
 - https://en.wikipedia.org/wiki/D-Bus
