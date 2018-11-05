@@ -3,7 +3,7 @@
 ### 8 - dbus python
 
 - Tried installing with pip didn't work, so tried apt-get and it worked. Mostly whatever doesn't get installed via pip, usually needs apt-get
-- 
+- https://gkbrk.com/2018/02/simple-dbus-service-in-python/ (TODO GET IT WORKING, NOT WORKED YET )
 
 ### 7 - macropy library and "with trace"
 
