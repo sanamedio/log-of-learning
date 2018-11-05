@@ -1,5 +1,175 @@
 # 05-nov-2018
 
+
+### 9 - socks5 proxy in python minimal
+
+- https://rushter.com/blog/python-socks-server/
+- struct pack and unpack are very useful while communicating over bytes, but format strings need to know
+- SOCKS is a generic proxy protocol that relays TCP connections from one point to another using intermediate connection (socks server). Originally, SOCKS proxies were mostly used as a circuit-level gateways, that is, a firewall between local and external resources (the internet).
+- https://www.ietf.org/rfc/rfc1928.txt
+
+```python
+from socketserver import ThreadingMixIn, TCPServer, StreamRequestHandler
+import struct,select,socket
+
+
+SOCKS_VERSION=5
+
+
+# we can replace ThreadingMixIn with ForkingTCPServer
+class ThreadingTCPServer(ThreadingMixIn, TCPServer):
+    pass
+
+
+
+class SocksProxy( StreamRequestHandler):
+
+
+    username= 'username'
+    password = 'password'
+
+
+    def handle( self ):
+        #out main logic
+        
+        # header
+        # read and unpack 2 2bytes from a client
+        # version and method both are one bytes
+        # we are implementing a subset
+
+        #!BB means , format string, two bytes and network-endianess
+
+        header = self.connection.recv(2)
+        version, nmethods = struct.unpack("!BB", header)
+
+        assert version == SOCKS_VERSION
+        assert nmethods > 0
+
+
+        methods =   self.get_available_methods(nmethods)
+
+
+        # username/password
+        if 2 not in set(methods):
+            #close connection
+            #self.connection.sendall(struct.pack("!BB", SOCKS_VERSION, 255))
+            self.server.close_request(self.request)
+            return
+
+        #send server choice
+        self.connection.sendall(struct.pack("!BB", SOCKS_VERSION,2))
+
+
+        if not self.verify_credentials():
+            return
+
+        #request
+
+        version,  cmd,  _ , address_type = struct.unpack("!BBBB", self.connection.recv(4))
+        assert version == SOCKS_VERSION
+
+        if address_type == 1: #ipv4
+            address = socket.inet_ntoa(self.connection.recv(4))
+        elif address_type == 3: #dominaname
+            domain_length = ord(self.connection.recv(1)[0])
+            address = self.connection.recv(domain_length)
+        
+        port = struct.unpack('!H', self.connection.recv(2))[0]
+
+        #reply
+
+        try:
+            if cmd == 1: #connect
+                remote = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+                remote.connect((address,port))
+                bind_address = remote.getsockname()
+            else:
+                self.server.close_request(self.request)
+
+            addr = struct.unpack("!I", socket.inet_aton(bind_address[0]))[0]
+
+            port = bind_address[1]
+
+            reply = struct.pack("!BBBBIH", SOCKS_VERSION, 0,0, address_type, addr, port)
+        
+        except Exception as err:
+            reply = self.generate_failed_reply(address_type, 5)
+        
+        self.connection.sendall(reply)
+
+
+        #establish data exchange
+
+        if reply[1] == 0 and cmd == 1:
+            self.exchange_loop(self.connection, remote)
+
+
+
+
+
+
+
+
+
+    def get_available_methods(self, n):
+        methods = []
+        for i in range(n):
+            methods.append(ord(self.connection.recv(1)))
+        return methods
+
+
+    def verify_credentials(self):
+        version = ord(self.connection.recv(1))
+        assert version == 1
+
+        username_len = ord(self.connection.recv(1))
+        username = self.connection.recv(username_len).decode('utf-8')
+
+        password_len = ord(self.connection.recv(1))
+        password = self.connection.recv(password_len).decode('utf-8')
+
+        if username == self.username and password == self.password:
+            # sucess, statu s= 0
+            response = struct.pack("!BB", version, 0 )
+            self.connection.sendall(response)
+            return True
+    
+        #failure
+        response = struct.pack("!BB", version, 0xFF)
+        self.connection.sendall(response)
+        self.server.close_request(self.request)
+        return False
+    
+
+    def generate_failed_reply(self, address_type, error_number):
+        return struct.pack("!BBBBIH", SOCKS_VERSION, error_number , 0 , address_type, 0, 0  )
+
+    def exchange_loop(self, client, remote):
+
+        while True:
+
+            #wait until client or remote is avl to read
+            r , w , e = select.select([client, remote], [], [])
+
+
+            if client in r:
+                data = client.recv(4096)
+                if remote.send(data) <= 0:
+                    break
+
+            if remote in r:
+                data = remote.recv(4096)
+                if client.send(data) <= 0:
+                    break
+
+
+
+if __name__ == '__main__':
+    with ThreadingTCPServer(('127.0.0.1', 9013), SocksProxy) as server:
+        server.serve_forever()
+    
+```
+
 ### 8 - dbus python
 
 - https://en.wikipedia.org/wiki/D-Bus
