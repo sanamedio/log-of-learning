@@ -106,11 +106,6 @@ class SocksProxy( StreamRequestHandler):
 
 
 
-
-
-
-
-
     def get_available_methods(self, n):
         methods = []
         for i in range(n):
@@ -149,15 +144,16 @@ class SocksProxy( StreamRequestHandler):
         while True:
 
             #wait until client or remote is avl to read
+	    # reading from both client and remote , and select is helping here, https://docs.python.org/2/library/select.html
             r , w , e = select.select([client, remote], [], [])
 
 
-            if client in r:
+            if client in r: # if read data is from mclient, then send it to remote
                 data = client.recv(4096)
                 if remote.send(data) <= 0:
                     break
 
-            if remote in r:
+            if remote in r:# vice versea
                 data = remote.recv(4096)
                 if client.send(data) <= 0:
                     break
