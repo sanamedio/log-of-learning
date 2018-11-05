@@ -1,5 +1,9 @@
 # 05-nov-2018
 
+### 10 - GIL implementation in python 
+
+- https://rushter.com/blog/python-gil-thread-scheduling/
+- Basically, the job of the GIL is to pause the while loop for all threads except for a thread that currently owns the GIL. For example, if you have three threads, two of them will be suspended. Typically but not necessarily, only one Python thread can execute Python opcodes at a time, and the rest will be waiting a split second of time until the GIL will be switched to them.
 
 ### 9 - socks5 proxy in python minimal
 
