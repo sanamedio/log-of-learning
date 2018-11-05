@@ -1,5 +1,163 @@
 # 05-nov-2018
 
+### 11 - Simple virtual machine implementation in python
+
+```python
+class Machine:
+
+
+    def __init__(  self, program):
+        # program is tutple of tuple which represents instructions
+        self.program = program
+
+
+        self.a = self.b = self.t = None # registers
+
+        #whether to branch
+        self.flag = False
+
+
+        # ocde pointer
+        self.pc = 0
+
+
+
+    def execute(self):
+        while self.pc is not None:
+            i = self.program[self.pc]
+            print( self.pc, self.a, self.b , self.t, self.flag, i )
+            instr , rest = i[0],i[1:]
+            self.pc += 1 # don't forget to inrement the counter
+            getattr( self, 'i_' + instr)(*rest)
+
+
+    def i_copy(self, a, b):
+        """Duplicates register b in a"""
+        setattr(self, a , getattr(self,b))
+
+
+    def i_set(self,a, b):
+        setattr(self,a,b)
+
+
+    def i_exec(self, reg, op, *args):
+        """Calls op and stores the result in reg"""
+        setattr(self, reg ,getattr(self,'o_' + op )(*args))
+
+    def i_test(self, op , *rest):
+        if getattr(self, 'o_' + op, )(*rest):
+            self.flag = True
+        else:
+            self.flag = False
+        
+    def i_branch(self,line):
+        """Jump to line if flag is set"""
+        if self.flag : self.pc = line
+
+
+    def i_jump(self, line):
+        """jump to line"""
+        self.pc = line
+
+    def o_zero(self, reg):
+        """ is reg zero? """
+        return getattr(self,reg) == 0
+
+    def o_lt(self, a, b):
+        return getattr(self,a) < getattr(self,b)
+
+
+    def o_sub(self, a , b):
+        return getattr(self,a) - getattr(self,b)
+
+
+
+
+m = Machine((
+
+    ('test', 'zero', 'b'),
+    ('branch', None),
+    ('copy' , 't', 'a'),
+
+    ('test', 'lt', 't', 'b'),
+    ('branch' , 7),
+
+    ('exec', 't', 'sub', 't', 'b'),
+    ('jump',3),
+
+    ('copy', 'a', 'b'),
+    ('copy', 'b', 't'),
+    ('jump', 0),
+)
+)
+
+m.a = 56
+m.b = 12
+m.execute()
+print (m.a)
+
+```
+
+output:
+```bash
+0 56 12 None False ('test', 'zero', 'b')
+1 56 12 None False ('branch', None)
+2 56 12 None False ('copy', 't', 'a')
+3 56 12 56 False ('test', 'lt', 't', 'b')
+4 56 12 56 False ('branch', 7)
+5 56 12 56 False ('exec', 't', 'sub', 't', 'b')
+6 56 12 44 False ('jump', 3)
+3 56 12 44 False ('test', 'lt', 't', 'b')
+4 56 12 44 False ('branch', 7)
+5 56 12 44 False ('exec', 't', 'sub', 't', 'b')
+6 56 12 32 False ('jump', 3)
+3 56 12 32 False ('test', 'lt', 't', 'b')
+4 56 12 32 False ('branch', 7)
+5 56 12 32 False ('exec', 't', 'sub', 't', 'b')
+6 56 12 20 False ('jump', 3)
+3 56 12 20 False ('test', 'lt', 't', 'b')
+4 56 12 20 False ('branch', 7)
+5 56 12 20 False ('exec', 't', 'sub', 't', 'b')
+6 56 12 8 False ('jump', 3)
+3 56 12 8 False ('test', 'lt', 't', 'b')
+4 56 12 8 True ('branch', 7)
+7 56 12 8 True ('copy', 'a', 'b')
+8 12 12 8 True ('copy', 'b', 't')
+9 12 8 8 True ('jump', 0)
+0 12 8 8 True ('test', 'zero', 'b')
+1 12 8 8 False ('branch', None)
+2 12 8 8 False ('copy', 't', 'a')
+3 12 8 12 False ('test', 'lt', 't', 'b')
+4 12 8 12 False ('branch', 7)
+5 12 8 12 False ('exec', 't', 'sub', 't', 'b')
+6 12 8 4 False ('jump', 3)
+3 12 8 4 False ('test', 'lt', 't', 'b')
+4 12 8 4 True ('branch', 7)
+7 12 8 4 True ('copy', 'a', 'b')
+8 8 8 4 True ('copy', 'b', 't')
+9 8 4 4 True ('jump', 0)
+0 8 4 4 True ('test', 'zero', 'b')
+1 8 4 4 False ('branch', None)
+2 8 4 4 False ('copy', 't', 'a')
+3 8 4 8 False ('test', 'lt', 't', 'b')
+4 8 4 8 False ('branch', 7)
+5 8 4 8 False ('exec', 't', 'sub', 't', 'b')
+6 8 4 4 False ('jump', 3)
+3 8 4 4 False ('test', 'lt', 't', 'b')
+4 8 4 4 False ('branch', 7)
+5 8 4 4 False ('exec', 't', 'sub', 't', 'b')
+6 8 4 0 False ('jump', 3)
+3 8 4 0 False ('test', 'lt', 't', 'b')
+4 8 4 0 True ('branch', 7)
+7 8 4 0 True ('copy', 'a', 'b')
+8 4 4 0 True ('copy', 'b', 't')
+9 4 0 0 True ('jump', 0)
+0 4 0 0 True ('test', 'zero', 'b')
+1 4 0 0 True ('branch', None)
+4
+```
+
+
 ### 10 - GIL implementation in python 
 
 - https://rushter.com/blog/python-gil-thread-scheduling/
