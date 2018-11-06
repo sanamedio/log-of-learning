@@ -53,7 +53,8 @@ if __name__ == '__main__':
 
 python trace:
 ```python
- python -m trace -t asynciotest.py  | grep asynciotest.py
+$ python -m trace -t asynciotest.py  | grep asynciotest.py
+
 asynciotest.py(1): import asyncio
 <frozen importlib._bootstrap>(177): <frozen importlib._bootstrap>(178): <frozen importlib._bootstrap>(182): <frozen importlib._bootstrap>(183): <frozen importlib._bootstrap>(185): asynciotest.py(2): from asyncio.queues import Queue
 <frozen importlib._bootstrap>(1019): <frozen importlib._bootstrap>(1044): asynciotest.py(3): import os
