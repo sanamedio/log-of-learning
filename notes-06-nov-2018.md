@@ -1,5 +1,11 @@
 # 06-nov-2018
 
+### 5 - listing all avaialble modules
+
+```python
+help('modules')
+```
+
 ### 4 - generating primes as list or generator
 
 ```python
