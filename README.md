@@ -56,5 +56,5 @@
 
 [05-nov-2018 - 11 entries](./notes-05-nov-2018.md)
 
-[06-nov-2018 - 00 entries](./notes-06-nov-2018.md)
+[06-nov-2018 - 08 entries](./notes-06-nov-2018.md)
 
