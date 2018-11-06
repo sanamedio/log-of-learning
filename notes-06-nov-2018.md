@@ -1,6 +1,17 @@
 # 06-nov-2018
 
-### 5 - listing all avaialble modules
+### 6 - Overriding Control:C
+
+```python
+from time import sleep
+while True:
+    try:
+        sleep(.1)
+    except: # THIS Catches all, even Keyboard Interrupt
+        pass 
+```
+
+### 5 - listing all available modules
 
 ```python
 help('modules')
