@@ -1,5 +1,53 @@
 # 06-nov-2018
 
+### 4 - generating primes as list or generator
+
+```python
+def generate_primes(n):
+
+        limit = n
+        root = int(n**0.5)
+        flags = [ True for x in range(n+1)]
+
+        flags[1] = False
+        flags[2] = True
+
+
+        i = 0
+        for i in range(2,root+1):
+                t = i*i
+                while t <= limit:
+                        flags[t] = False
+                        t += i
+
+        zipped= zip(range(1,n+1),flags[1:])
+        return ( [ key for key,value in dict(zipped).items() if value  ] )
+
+
+
+
+from collections import defaultdict
+
+def generate_primes_yield():
+
+
+        v = 2
+        composites = defaultdict(lambda: list())
+
+
+        while True:
+                yield v
+                composites[v*v].append(v)
+                v+=1
+                while v in composites:
+                        for f in composites[v]:
+                                composites[v+f].append(f)
+                        del composites[v]
+                        v += 1
+
+```
+
+
 ### 3 - Tracing asyncio
 
 python program with asyncio Queues named ```asynciotest.py```:
