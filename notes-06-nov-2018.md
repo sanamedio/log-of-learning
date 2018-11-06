@@ -1,5 +1,35 @@
 # 06-nov-2018
 
+### 7 - Writing your own enumerator
+
+```python
+class my_enumerate:
+
+
+        def __init__(self, some_iter):
+                self.some_iter = iter(some_iter)
+                self.count = 0
+
+
+        def __iter__(self):
+                return self
+
+
+        def __next__(self):
+                val = next(self.some_iter)
+                self.count += 1
+
+                return self.count , val
+
+
+
+
+
+for n,val in my_enumerate(['a','b','c']):
+        print (n,val)
+
+```
+
 ### 6 - Overriding Control:C
 
 ```python
