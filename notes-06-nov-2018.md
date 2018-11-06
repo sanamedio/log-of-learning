@@ -1,5 +1,29 @@
 # 06-nov-2018
 
+
+
+### 2 - using List comprehension to shorten code
+
+- Follow ```process``` and ```process2``` do the same thing:
+
+```python
+def process(data_set, condition, modify):
+        """process data_set by modify function on condition"""
+
+        collection = list()
+
+        for datus in data_set:
+                if condition(datum):
+                        collection.append(datum)
+                else:
+                        new = modify(datum)
+                        collection.append(new)
+
+
+def process2(data_set, condition, modify):
+        return [ d if condition(d) else modify(d) for d in data_set ] #more elegant
+```
+
 ### 1 - Factorial in three ways
 
 ```python
