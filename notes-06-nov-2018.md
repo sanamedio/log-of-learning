@@ -1,5 +1,12 @@
 # 06-nov-2018
 
+### 8 - Listing Errors Classes
+
+```python
+>>> print(* [ x for x in dir(locals()['__builtins__']) if x.endswith('Error') ]) 
+ArithmeticError AssertionError AttributeError BlockingIOError BrokenPipeError BufferError ChildProcessError ConnectionAbortedError ConnectionError ConnectionRefusedError ConnectionResetError EOFError EnvironmentError FileExistsError FileNotFoundError FloatingPointError IOError ImportError IndentationError IndexError InterruptedError IsADirectoryError KeyError LookupError MemoryError ModuleNotFoundError NameError NotADirectoryError NotImplementedError OSError OverflowError PermissionError ProcessLookupError RecursionError ReferenceError RuntimeError SyntaxError SystemError TabError TimeoutError TypeError UnboundLocalError UnicodeDecodeError UnicodeEncodeError UnicodeError UnicodeTranslateError ValueError ZeroDivisionError
+```
+
 ### 7 - Writing your own enumerator
 
 ```python
