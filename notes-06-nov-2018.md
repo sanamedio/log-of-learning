@@ -1,6 +1,296 @@
 # 06-nov-2018
 
+### 3 - Tracing asyncio
 
+python program with asyncio Queues named ```asynciotest.py```:
+```python
+import asyncio
+from asyncio.queues import Queue
+import os
+
+
+main_queue = Queue(50)
+counter = 0
+message = os.urandom(1024) # random 1kb message
+
+
+async def producer():
+	while loop.is_running:
+		await main_queue.put(message)
+
+
+
+async def consumer():
+	global counter
+	while loop.is_running():
+		await main_queue.get()
+		counter += 1
+		await asyncio.sleep(0.1)
+
+
+
+async def end():
+	await asyncio.sleep(2)
+
+
+	asyncio.get_event_loop().stop()
+	print("in queue :{}".format(main_queue.qsize()))
+	print("processed items : {}".format(counter))
+
+
+if __name__ == '__main__':
+	loop = asyncio.get_event_loop()
+	asyncio.ensure_future(producer())
+	asyncio.ensure_future(consumer())
+	asyncio.ensure_future(end())
+
+	try:
+		loop.run_forever()
+	except KeyboardInterrupt:
+		import sys
+		sys.exit()	
+```
+
+python trace:
+```python
+ python -m trace -t asynciotest.py  | grep asynciotest.py
+asynciotest.py(1): import asyncio
+<frozen importlib._bootstrap>(177): <frozen importlib._bootstrap>(178): <frozen importlib._bootstrap>(182): <frozen importlib._bootstrap>(183): <frozen importlib._bootstrap>(185): asynciotest.py(2): from asyncio.queues import Queue
+<frozen importlib._bootstrap>(1019): <frozen importlib._bootstrap>(1044): asynciotest.py(3): import os
+asynciotest.py(6): main_queue = Queue(50)
+asynciotest.py(7): counter = 0
+asynciotest.py(8): message = os.urandom(1024) # random 1kb message
+asynciotest.py(11): async def producer():
+asynciotest.py(17): async def consumer():
+asynciotest.py(26): async def end():
+asynciotest.py(35): if __name__ == '__main__':
+asynciotest.py(36): 	loop = asyncio.get_event_loop()
+asynciotest.py(37): 	asyncio.ensure_future(producer())
+asynciotest.py(38): 	asyncio.ensure_future(consumer())
+asynciotest.py(39): 	asyncio.ensure_future(end())
+asynciotest.py(41): 	try:
+asynciotest.py(42): 		loop.run_forever()
+asynciotest.py(12): 	while loop.is_running:
+asynciotest.py(13): 		await main_queue.put(message)
+asynciotest.py(12): 	while loop.is_running:
+asynciotest.py(13): 		await main_queue.put(message)
+asynciotest.py(12): 	while loop.is_running:
+asynciotest.py(13): 		await main_queue.put(message)
+asynciotest.py(12): 	while loop.is_running:
+asynciotest.py(13): 		await main_queue.put(message)
+asynciotest.py(12): 	while loop.is_running:
+asynciotest.py(13): 		await main_queue.put(message)
+asynciotest.py(12): 	while loop.is_running:
+asynciotest.py(13): 		await main_queue.put(message)
+asynciotest.py(12): 	while loop.is_running:
+asynciotest.py(13): 		await main_queue.put(message)
+asynciotest.py(12): 	while loop.is_running:
+asynciotest.py(13): 		await main_queue.put(message)
+asynciotest.py(12): 	while loop.is_running:
+asynciotest.py(13): 		await main_queue.put(message)
+asynciotest.py(12): 	while loop.is_running:
+asynciotest.py(13): 		await main_queue.put(message)
+asynciotest.py(12): 	while loop.is_running:
+asynciotest.py(13): 		await main_queue.put(message)
+asynciotest.py(12): 	while loop.is_running:
+asynciotest.py(13): 		await main_queue.put(message)
+asynciotest.py(12): 	while loop.is_running:
+asynciotest.py(13): 		await main_queue.put(message)
+asynciotest.py(12): 	while loop.is_running:
+asynciotest.py(13): 		await main_queue.put(message)
+asynciotest.py(12): 	while loop.is_running:
+asynciotest.py(13): 		await main_queue.put(message)
+asynciotest.py(12): 	while loop.is_running:
+asynciotest.py(13): 		await main_queue.put(message)
+asynciotest.py(12): 	while loop.is_running:
+asynciotest.py(13): 		await main_queue.put(message)
+asynciotest.py(12): 	while loop.is_running:
+asynciotest.py(13): 		await main_queue.put(message)
+asynciotest.py(12): 	while loop.is_running:
+asynciotest.py(13): 		await main_queue.put(message)
+asynciotest.py(12): 	while loop.is_running:
+asynciotest.py(13): 		await main_queue.put(message)
+asynciotest.py(12): 	while loop.is_running:
+asynciotest.py(13): 		await main_queue.put(message)
+asynciotest.py(12): 	while loop.is_running:
+asynciotest.py(13): 		await main_queue.put(message)
+asynciotest.py(12): 	while loop.is_running:
+asynciotest.py(13): 		await main_queue.put(message)
+asynciotest.py(12): 	while loop.is_running:
+asynciotest.py(13): 		await main_queue.put(message)
+asynciotest.py(12): 	while loop.is_running:
+asynciotest.py(13): 		await main_queue.put(message)
+asynciotest.py(12): 	while loop.is_running:
+asynciotest.py(13): 		await main_queue.put(message)
+asynciotest.py(12): 	while loop.is_running:
+asynciotest.py(13): 		await main_queue.put(message)
+asynciotest.py(12): 	while loop.is_running:
+asynciotest.py(13): 		await main_queue.put(message)
+asynciotest.py(12): 	while loop.is_running:
+asynciotest.py(13): 		await main_queue.put(message)
+asynciotest.py(12): 	while loop.is_running:
+asynciotest.py(13): 		await main_queue.put(message)
+asynciotest.py(12): 	while loop.is_running:
+asynciotest.py(13): 		await main_queue.put(message)
+asynciotest.py(12): 	while loop.is_running:
+asynciotest.py(13): 		await main_queue.put(message)
+asynciotest.py(12): 	while loop.is_running:
+asynciotest.py(13): 		await main_queue.put(message)
+asynciotest.py(12): 	while loop.is_running:
+asynciotest.py(13): 		await main_queue.put(message)
+asynciotest.py(12): 	while loop.is_running:
+asynciotest.py(13): 		await main_queue.put(message)
+asynciotest.py(12): 	while loop.is_running:
+asynciotest.py(13): 		await main_queue.put(message)
+asynciotest.py(12): 	while loop.is_running:
+asynciotest.py(13): 		await main_queue.put(message)
+asynciotest.py(12): 	while loop.is_running:
+asynciotest.py(13): 		await main_queue.put(message)
+asynciotest.py(12): 	while loop.is_running:
+asynciotest.py(13): 		await main_queue.put(message)
+asynciotest.py(12): 	while loop.is_running:
+asynciotest.py(13): 		await main_queue.put(message)
+asynciotest.py(12): 	while loop.is_running:
+asynciotest.py(13): 		await main_queue.put(message)
+asynciotest.py(12): 	while loop.is_running:
+asynciotest.py(13): 		await main_queue.put(message)
+asynciotest.py(12): 	while loop.is_running:
+asynciotest.py(13): 		await main_queue.put(message)
+asynciotest.py(12): 	while loop.is_running:
+asynciotest.py(13): 		await main_queue.put(message)
+asynciotest.py(12): 	while loop.is_running:
+asynciotest.py(13): 		await main_queue.put(message)
+asynciotest.py(12): 	while loop.is_running:
+asynciotest.py(13): 		await main_queue.put(message)
+asynciotest.py(12): 	while loop.is_running:
+asynciotest.py(13): 		await main_queue.put(message)
+asynciotest.py(12): 	while loop.is_running:
+asynciotest.py(13): 		await main_queue.put(message)
+asynciotest.py(12): 	while loop.is_running:
+asynciotest.py(13): 		await main_queue.put(message)
+asynciotest.py(12): 	while loop.is_running:
+asynciotest.py(13): 		await main_queue.put(message)
+asynciotest.py(12): 	while loop.is_running:
+asynciotest.py(13): 		await main_queue.put(message)
+asynciotest.py(19): 	while loop.is_running():
+asynciotest.py(20): 		await main_queue.get()
+asynciotest.py(21): 		counter += 1
+asynciotest.py(22): 		await asyncio.sleep(0.1)
+asynciotest.py(27): 	await asyncio.sleep(2)
+asynciotest.py(12): 	while loop.is_running:
+asynciotest.py(13): 		await main_queue.put(message)
+asynciotest.py(19): 	while loop.is_running():
+asynciotest.py(20): 		await main_queue.get()
+asynciotest.py(21): 		counter += 1
+asynciotest.py(22): 		await asyncio.sleep(0.1)
+asynciotest.py(12): 	while loop.is_running:
+asynciotest.py(13): 		await main_queue.put(message)
+asynciotest.py(19): 	while loop.is_running():
+asynciotest.py(20): 		await main_queue.get()
+asynciotest.py(21): 		counter += 1
+asynciotest.py(22): 		await asyncio.sleep(0.1)
+asynciotest.py(12): 	while loop.is_running:
+asynciotest.py(13): 		await main_queue.put(message)
+asynciotest.py(19): 	while loop.is_running():
+asynciotest.py(20): 		await main_queue.get()
+asynciotest.py(21): 		counter += 1
+asynciotest.py(22): 		await asyncio.sleep(0.1)
+asynciotest.py(12): 	while loop.is_running:
+asynciotest.py(13): 		await main_queue.put(message)
+asynciotest.py(19): 	while loop.is_running():
+asynciotest.py(20): 		await main_queue.get()
+asynciotest.py(21): 		counter += 1
+asynciotest.py(22): 		await asyncio.sleep(0.1)
+asynciotest.py(12): 	while loop.is_running:
+asynciotest.py(13): 		await main_queue.put(message)
+asynciotest.py(19): 	while loop.is_running():
+asynciotest.py(20): 		await main_queue.get()
+asynciotest.py(21): 		counter += 1
+asynciotest.py(22): 		await asyncio.sleep(0.1)
+asynciotest.py(12): 	while loop.is_running:
+asynciotest.py(13): 		await main_queue.put(message)
+asynciotest.py(19): 	while loop.is_running():
+asynciotest.py(20): 		await main_queue.get()
+asynciotest.py(21): 		counter += 1
+asynciotest.py(22): 		await asyncio.sleep(0.1)
+asynciotest.py(12): 	while loop.is_running:
+asynciotest.py(13): 		await main_queue.put(message)
+asynciotest.py(19): 	while loop.is_running():
+asynciotest.py(20): 		await main_queue.get()
+asynciotest.py(21): 		counter += 1
+asynciotest.py(22): 		await asyncio.sleep(0.1)
+asynciotest.py(12): 	while loop.is_running:
+asynciotest.py(13): 		await main_queue.put(message)
+asynciotest.py(19): 	while loop.is_running():
+asynciotest.py(20): 		await main_queue.get()
+asynciotest.py(21): 		counter += 1
+asynciotest.py(22): 		await asyncio.sleep(0.1)
+asynciotest.py(12): 	while loop.is_running:
+asynciotest.py(13): 		await main_queue.put(message)
+asynciotest.py(19): 	while loop.is_running():
+asynciotest.py(20): 		await main_queue.get()
+asynciotest.py(21): 		counter += 1
+asynciotest.py(22): 		await asyncio.sleep(0.1)
+asynciotest.py(12): 	while loop.is_running:
+asynciotest.py(13): 		await main_queue.put(message)
+asynciotest.py(19): 	while loop.is_running():
+asynciotest.py(20): 		await main_queue.get()
+asynciotest.py(21): 		counter += 1
+asynciotest.py(22): 		await asyncio.sleep(0.1)
+asynciotest.py(12): 	while loop.is_running:
+asynciotest.py(13): 		await main_queue.put(message)
+asynciotest.py(19): 	while loop.is_running():
+asynciotest.py(20): 		await main_queue.get()
+asynciotest.py(21): 		counter += 1
+asynciotest.py(22): 		await asyncio.sleep(0.1)
+asynciotest.py(12): 	while loop.is_running:
+asynciotest.py(13): 		await main_queue.put(message)
+asynciotest.py(19): 	while loop.is_running():
+asynciotest.py(20): 		await main_queue.get()
+asynciotest.py(21): 		counter += 1
+asynciotest.py(22): 		await asyncio.sleep(0.1)
+asynciotest.py(12): 	while loop.is_running:
+asynciotest.py(13): 		await main_queue.put(message)
+asynciotest.py(19): 	while loop.is_running():
+asynciotest.py(20): 		await main_queue.get()
+asynciotest.py(21): 		counter += 1
+asynciotest.py(22): 		await asyncio.sleep(0.1)
+asynciotest.py(12): 	while loop.is_running:
+asynciotest.py(13): 		await main_queue.put(message)
+asynciotest.py(19): 	while loop.is_running():
+asynciotest.py(20): 		await main_queue.get()
+asynciotest.py(21): 		counter += 1
+asynciotest.py(22): 		await asyncio.sleep(0.1)
+asynciotest.py(12): 	while loop.is_running:
+asynciotest.py(13): 		await main_queue.put(message)
+asynciotest.py(19): 	while loop.is_running():
+asynciotest.py(20): 		await main_queue.get()
+asynciotest.py(21): 		counter += 1
+asynciotest.py(22): 		await asyncio.sleep(0.1)
+asynciotest.py(12): 	while loop.is_running:
+asynciotest.py(13): 		await main_queue.put(message)
+asynciotest.py(19): 	while loop.is_running():
+asynciotest.py(20): 		await main_queue.get()
+asynciotest.py(21): 		counter += 1
+asynciotest.py(22): 		await asyncio.sleep(0.1)
+asynciotest.py(12): 	while loop.is_running:
+asynciotest.py(13): 		await main_queue.put(message)
+asynciotest.py(19): 	while loop.is_running():
+asynciotest.py(20): 		await main_queue.get()
+asynciotest.py(21): 		counter += 1
+asynciotest.py(22): 		await asyncio.sleep(0.1)
+asynciotest.py(12): 	while loop.is_running:
+asynciotest.py(13): 		await main_queue.put(message)
+asynciotest.py(19): 	while loop.is_running():
+asynciotest.py(20): 		await main_queue.get()
+asynciotest.py(21): 		counter += 1
+asynciotest.py(22): 		await asyncio.sleep(0.1)
+asynciotest.py(12): 	while loop.is_running:
+asynciotest.py(13): 		await main_queue.put(message)
+asynciotest.py(30): 	asyncio.get_event_loop().stop()
+asynciotest.py(31): 	print("in queue :{}".format(main_queue.qsize()))
+asynciotest.py(32): 	print("processed items : {}".format(counter))
+```
 
 ### 2 - using List comprehension to shorten code
 
