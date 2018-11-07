@@ -1,5 +1,84 @@
 # 08-nov-2018
 
+### 3 - Svn file downloader in python using yield and subprocess
+
+- What I learned 
+  - yield is really useful with subprocess output
+  - hashlib.md5 hexdigest helped in keeping same named files unique
+  - reading subprocess output line by line not hard
+  - ```bash -c``` really useful in embedding piped linux commands inside a script 
+
+
+```python
+import os
+import subprocess
+import hashlib
+import sys
+import ntpath
+
+
+BASEPATH = 'https://svn.abcdef.com/svn/svnfolder/' 
+REGEX = '\.cpp$'
+OUTPUT_DIR = 'temp'
+FILE_EXT = '.cpp'
+
+
+cmdscript = 'svn list --recursive '+ BASEPATH +  ' | grep ' + REGEX
+
+def run_process(s):
+    p = subprocess.Popen(s, stdout=subprocess.PIPE)
+    return p.communicate()[0]
+
+
+
+def run_process_iter(s):
+    proc = subprocess.Popen(s, stdout=subprocess.PIPE, bufsize=1)
+    while True:
+        line = proc.stdout.readline()
+        yield line
+
+
+
+g = run_process_iter(['/bin/bash', '-c', cmdscript] ) 
+
+
+def get_hash(s):
+    result = hashlib.md5(s.encode())
+    return result.hexdigest()
+
+
+
+
+def start_download():
+    for x in g:
+        t= BASEPATH + x.strip()
+        print('downloading from svn : ' + t.strip())
+
+        output = run_process(['svn','cat',t])
+
+        with open(OUTPUT_DIR + '/' +  get_hash(t)+ FILE_EXT, 'wb') as f:
+            f.write('//content from : '+ t+ '\n')
+            f.write(output)
+
+
+def safe_create_dir(directory):
+    if not os.path.exists(directory):
+        os.makedirs(directory)
+
+
+if __name__ == '__main__':
+    try:
+        safe_create_dir(OUTPUT_DIR)
+    except:
+        print("Failed while creating the output directory")
+
+
+    try:
+        start_download()
+    except KeyboardInterrupt:
+        print("User stopped the download process")
+```
+
 
 ### 2 - Cellular Automta Game for Learning and practicing thinking
 
