@@ -58,3 +58,4 @@
 
 [06-nov-2018 - 08 entries](./notes-06-nov-2018.md)
 
+[07-nov-2018 - 00 entries](./notes-07-nov-2018.md)
