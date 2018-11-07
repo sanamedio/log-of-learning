@@ -1,6 +1,14 @@
 # 07-nov-2018
 
-### 5 - pandas useful functions
+### 6- Little theory on pandas
+
+- Pandas is a library for data analysis - ingesting, cleaning, manipulating and writing data.
+- Numpy is for numerical crunching and matrix manipulation at fairly low level.
+- Matplotlib is for plotting graphs.
+- Tools for reading and writing data between in-memory data structures and different formats: CSV and text files, Microsoft Excel, SQL databases, and the fast HDF5 format
+- Highly optimized for performance, with critical code paths written in Cython or C.
+
+### 5 - pandas input and output
 
 ```python
 
