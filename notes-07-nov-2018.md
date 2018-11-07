@@ -1,5 +1,80 @@
 # 07-nov-2018
 
+### 4 - matplotlib with pandas
+
+
+```python
+plt.plot([1, 2, 3, 4], [1, 4, 9, 16])
+```
+
+```python
+import matplotlib.pyplot as plt
+plt.plot([1,2,3,4])
+plt.ylabel('some numbers')
+plt.show()
+```
+
+```python
+In [10]: plt.plot([1, 2, 3, 4], [1, 4, 9, 16])
+Out[10]: [<matplotlib.lines.Line2D at 0x7ff1f9c24550>]
+
+In [11]: plt.show()
+```
+
+```python
+import matplotlib.pyplot as plt
+import pandas as pd
+import numpy as np
+
+df = pd.DataFrame(np.random.randn(10,4),index=pd.date_range('1/1/2000',
+   periods=10), columns=list('ABCD'))
+
+df.plot()
+plt.show()
+```
+
+```python
+#bar plot
+df = pd.DataFrame(np.random.rand(10,4),columns=['a','b','c','d')
+df.plot.bar()
+plt.show()
+```
+
+```python
+## histogramms
+In [32]: import pandas as pd
+    ...: import numpy as np
+    ...: 
+    ...: df=pd.DataFrame({'a':np.random.randn(1000)+1,'b':np.random.randn(
+    ...: 1000),'c':
+    ...: np.random.randn(1000) - 1}, columns=['a', 'b', 'c'])
+    ...: 
+    ...: df.diff().hist(bins=20)
+    ...: 
+Out[32]: 
+array([[<matplotlib.axes._subplots.AxesSubplot object at 0x7ff1f98153d0>,
+        <matplotlib.axes._subplots.AxesSubplot object at 0x7ff1f9792110>],
+       [<matplotlib.axes._subplots.AxesSubplot object at 0x7ff1f97bae90>,
+        <matplotlib.axes._subplots.AxesSubplot object at 0x7ff2017c2c50>]],
+      dtype=object)
+
+In [33]: plt.show()
+```
+
+```python
+In [34]: import pandas as pd
+    ...: import numpy as np
+    ...: df = pd.DataFrame(np.random.rand(50, 4), columns=['a', 'b', 'c', 
+    ...: 'd'])
+    ...: df.plot.scatter(x='a', y='b')
+    ...: 
+Out[34]: <matplotlib.axes._subplots.AxesSubplot at 0x7ff2016de610>
+
+In [35]: plt.show()
+```
+
+
+
 ### 3 - pandas panel ( 3D )
 
 ```python
