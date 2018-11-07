@@ -34,13 +34,15 @@ df.to_clipboard() # Writes to the clipboard
 
 ### 4 - matplotlib with pandas
 
+```python
+import matplotlib.pyplot as plt
+```
 
 ```python
 plt.plot([1, 2, 3, 4], [1, 4, 9, 16])
 ```
 
 ```python
-import matplotlib.pyplot as plt
 plt.plot([1,2,3,4])
 plt.ylabel('some numbers')
 plt.show()
