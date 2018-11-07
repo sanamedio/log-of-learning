@@ -47,7 +47,7 @@ old.py
 ```
 
 Refactored new code with low cyclomatic complexity:
-```python```
+```python
 #new.py
 class Bird(object):
   name = ''
