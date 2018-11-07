@@ -1,6 +1,59 @@
 # 07-nov-2018
 
-### 2 - pandas dataframe
+### 3 - pandas panel ( 3D )
+
+```python
+# from random 3d array
+import pandas as pd
+import numpy as np
+
+data = np.random.rand(2,4,5)
+p = pd.Panel(data)
+print p
+```
+
+```python
+#creating an empty panel
+import pandas as pd
+import numpy as np
+
+data = {'Item1' : pd.DataFrame(np.random.randn(4, 3)), 
+        'Item2' : pd.DataFrame(np.random.randn(4, 2))}
+p = pd.Panel(data)
+print p
+```
+
+```python
+#creating an empty panel
+import pandas as pd
+p = pd.Panel()
+print p
+```
+
+```python
+#from dataframes
+import pandas as pd
+import numpy as np
+data = {'Item1' : pd.DataFrame(np.random.randn(4, 3)), 
+        'Item2' : pd.DataFrame(np.random.randn(4, 2))}
+p = pd.Panel(data)
+print p['Item1']
+```
+
+```python
+import pandas as pd
+import numpy as np
+data = {'Item1' : pd.DataFrame(np.random.randn(4, 3)), 
+        'Item2' : pd.DataFrame(np.random.randn(4, 2))}
+p = pd.Panel(data)
+print p.major_xs(1)
+print p.minor_xs(1)
+```
+
+
+
+
+### 2 - pandas dataframe ( 2D )
 
 ```python
 #empty
@@ -113,7 +166,7 @@ print df ['one']
 
 
 
-### 1 - pandas series
+### 1 - pandas series ( 1D )
 
 ```python
 #empty series in pandas
