@@ -8,6 +8,16 @@
 - Duck-typing avoids tests using type() or isinstance(). 
 - Instead, it typically employs the ```EAFP (Easier to Ask Forgiveness than Permission)``` style of programming.
 
+```python
+try:
+   _ = (e for e in my_object)
+except TypeError:
+   print my_object, 'is not iterable'
+```
+
+- from this https://stackoverflow.com/questions/1952464/in-python-how-do-i-determine-if-an-object-is-iterable
+
+
 ### 13 - checking if object is iterable
 
 ```python
