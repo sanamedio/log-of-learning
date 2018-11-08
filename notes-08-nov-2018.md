@@ -5,28 +5,28 @@
 - use another layer to pass the argument, and due to scoping it will avaialble in side the original decorator and returns will pass-through the internal one like earlier
 
 ```python
-from functools import wraps
+def mydecorator_not_really(count):
 
-def mydecorator_not_actually(count):
     def true_decorator(f):
         @wraps(f)
         def wrapped(*args, **kwargs):
-            for i in range(count):
-                print "Before decorated function"
+            print("Count ", count, sep=':')
             r = f(*args, **kwargs)
-            for i in range(count):
-                print "After decorated function"
+            print("Count ", count, sep=':')
             return r
         return wrapped
     return true_decorator
 
-@mydecorator_not_actually(count=5)
-def myfunc(myarg):
-    print "my function", myarg
-    return "return value"
 
-r = myfunc('asdf')
-print r
+
+@mydecorator_not_really(count=123)
+def myfunc(myarg):
+    print("my func : " , myarg)
+    return "me"
+
+
+r = myfunc('asdasda')
+print(r)
 ```
 
 output:
