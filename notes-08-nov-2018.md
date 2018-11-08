@@ -1,5 +1,25 @@
 # 08-nov-2018
 
+
+### 8 - Using sys.\_getframe to get filename and lineno's 
+
+```python
+def _functionId(nFramesUp):
+
+    import sys
+    co = sys._getframe(nFramesUp+1).f_code
+    return "{} ({} @ {})".format( co.co_name, co.co_filename, co.co_firstlineno)
+
+def notImplementedYet():
+    raise Exception("Not yet implemmeted : {} ".format( _functionId(1)))
+
+def funcyou():
+    notImplementedYet()
+
+if __name__ == '__main__':
+    funcyou()
+```
+
 ### 7 - Traversing a tree ( predefined structure with children attribute )
 
 - TODO improve the below implementation to print out any kind of nested structure using iterable check and cycle checks
