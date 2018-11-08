@@ -1,5 +1,55 @@
 # 08-nov-2018
 
+### 9 - Timeout a function using SIGALRM
+
+```python
+import signal
+
+
+# signal.alarm can raise SIGALRM after t seconds and that's used here
+
+class TimeoutFunctionException(Exception):
+    pass
+
+
+class TimeoutFunction:
+
+    def __init__(self, function, timeout):
+        self.timeout = timeout
+        self.function = function
+
+
+    def handle_timeout(self, signum, frame):
+        raise TimeoutFunctionException()
+
+
+
+    def __call__(self, *args):
+        old = signal.signal(signal.SIGALRM, self.handle_timeout) # setting signal handler as handle_timeout function of SIGALRM, and saving the old signal handler into old varialbe
+        signal.alarm( self.timeout)
+
+        try:
+            result = self.function(*args) # calling the function and saving result but why not **kwargs, i think those are also needed
+        finally:
+            signal.signal(signal.SIGALRM, old) # finally reset the old signal handler
+        signal.alarm(0)
+        return result # return result
+
+
+
+
+if __name__ == '__main__':
+
+    import sys
+    stdin_read = TimeoutFunction(sys.stdin.readline, 1 ) # 1 second timeout
+    try:
+        line = stdin_read()
+    except TimeoutFunctionException:
+        print( "Too slow!!")
+    else:
+        print("You worked it out")
+
+```
 
 ### 8 - Using sys.\_getframe to get filename and lineno's 
 
