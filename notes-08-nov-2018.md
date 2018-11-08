@@ -1,5 +1,42 @@
 # 08-nov-2018
 
+### 13 - checking if object is iterable
+
+```python
+In [8]: def test(func): 
+   ...:     try: 
+   ...:         iter(func) 
+   ...:     except TypeError as te: 
+   ...:         print( func, ' is not iterable') 
+   ...:         return False 
+   ...:     return True 
+   ...:                                                                   
+
+In [9]: test([])                                                          
+Out[9]: True
+
+In [10]: test('a')                                                        
+Out[10]: True
+
+In [11]: test(123)                                                        
+123  is not iterable
+Out[11]: False
+```
+
+```python
+In [20]: isinstance([], collections.Iterable)                             
+Out[20]: True
+
+In [21]: isinstance('aasd', collections.Iterable)                         
+Out[21]: True
+
+In [22]: isinstance(12345, collections.Iterable)                          
+Out[22]: False
+```
+
+
+
+
 ### 12 - itertools product
 
 ```python
