@@ -82,24 +82,6 @@ r = myfunc('asdasda')
 print(r)
 ```
 
-output:
-```
-Before decorated function
-Before decorated function
-Before decorated function
-Before decorated function
-Before decorated function
-my function asdf
-After decorated function
-After decorated function
-After decorated function
-After decorated function
-After decorated function
-return value
-```
-
-
-
 ### 3 - Svn file downloader in python using yield and subprocess
 
 - What I learned 
