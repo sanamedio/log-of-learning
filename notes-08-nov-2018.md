@@ -1,5 +1,13 @@
 # 08-nov-2018
 
+### 14 - Easier to Ask for Forgiveness than Permission
+
+- Pythonic programming style that determines an object's type by inspection of its method or attribute signature rather than by explicit relationship to some type object 
+- "If it looks like a duck and quacks like a duck, it must be a duck."
+- By emphasizing interfaces rather than specific types, well-designed code improves its flexibility by allowing polymorphic substitution. 
+- Duck-typing avoids tests using type() or isinstance(). 
+- Instead, it typically employs the ```EAFP (Easier to Ask Forgiveness than Permission)``` style of programming.
+
 ### 13 - checking if object is iterable
 
 ```python
