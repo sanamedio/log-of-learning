@@ -2,6 +2,8 @@
 
 ### 9 - Timeout a function using SIGALRM
 
+- One important fact to note when using signal module is that it doesn’t work well in a multi-threaded flow. The callback has to be registered in main thread, and the alarm will also be received by the main thread. (from http://chamilad.github.io/blog/2015/11/26/timing-out-of-long-running-methods-in-python/ )
+
 ```python
 import signal
 
