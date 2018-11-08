@@ -32,4 +32,5 @@
      - No sense of urgency 
      - Being used to mediocrity and lack of focus
      - Casual attitude
+     - Perception of a habitual pace. Illusion that learning can only happen at this speed.
     
