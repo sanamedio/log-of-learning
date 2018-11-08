@@ -1,6 +1,31 @@
 # 08-nov-2018
 
-### 14 - Easier to Ask for Forgiveness than Permission
+### 15 - RingBuffer
+
+```python
+class RingBuffer:
+
+    def __init__(self, size):
+        self.data = [ None for x in range(size)]
+        self.size = size
+
+    
+    def get_content(self):
+        return self.data
+
+    def append(self, x):
+        self.data.pop(0) #pop from 0th position
+        self.data.append(x) #push at the end
+        return True
+
+rb = RingBuffer(4)
+
+for i in range(10):
+    rb.append(i)
+    print(rb.get_content())
+```
+
+### 14 - Easier to Ask for Forgiveness than Permission ( EAFP style )
 
 - Pythonic programming style that determines an object's type by inspection of its method or attribute signature rather than by explicit relationship to some type object 
 - "If it looks like a duck and quacks like a duck, it must be a duck."
