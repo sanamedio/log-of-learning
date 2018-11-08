@@ -1,5 +1,55 @@
 # 08-nov-2018
 
+### 12 - itertools product
+
+```python
+In [1]: import itertools                                                  
+
+In [2]: from pprint import pprint                                         
+
+In [3]: inputdata = [ 
+   ...:     [ 'a','b', 'c' ] 
+   ...:     , 
+   ...:     ['d'] 
+   ...:     , 
+   ...:     ['e','f'], 
+   ...:     ]                                                             
+
+In [4]: *inputdata                                                        
+  File "<ipython-input-4-826bef7464dd>", line 1
+    *inputdata
+              ^
+SyntaxError: can't use starred expression here
+
+
+In [5]: (*inputdata)                                                      
+  File "<ipython-input-5-90123e56c144>", line 1
+    (*inputdata)
+    ^
+SyntaxError: can't use starred expression here
+
+
+In [6]: itertools.product(*inputdata)                                     
+Out[6]: <itertools.product at 0x7fe7e2d4ba20>
+
+In [7]: list(itertools.product(*inputdata))                               
+Out[7]: 
+[('a', 'd', 'e'),
+ ('a', 'd', 'f'),
+ ('b', 'd', 'e'),
+ ('b', 'd', 'f'),
+ ('c', 'd', 'e'),
+ ('c', 'd', 'f')]
+
+In [8]: pprint( list( itertools.product(*inputdata)))                     
+[('a', 'd', 'e'),
+ ('a', 'd', 'f'),
+ ('b', 'd', 'e'),
+ ('b', 'd', 'f'),
+ ('c', 'd', 'e'),
+ ('c', 'd', 'f')]
+```
+
 
 ### 11 - IPython start from python -c
 
