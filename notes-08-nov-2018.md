@@ -5,7 +5,6 @@
 
 ```python
 def _functionId(nFramesUp):
-
     import sys
     co = sys._getframe(nFramesUp+1).f_code
     return "{} ({} @ {})".format( co.co_name, co.co_filename, co.co_firstlineno)
