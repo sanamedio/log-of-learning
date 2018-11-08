@@ -2,7 +2,7 @@
 
 ### 10 - Timeout function as a decorator
 
-```python
+```
 import signal
 
 class TimeoutError(Exception):
@@ -10,6 +10,9 @@ class TimeoutError(Exception):
         self.value = value
     def __str__(self):
         return repr(self.value) #repr returns the __repr__ of that datatype, for strings it's the content
+
+
+
 
 #decorator
 def timeout(seconds_before_timeout):
@@ -28,7 +31,7 @@ def timeout(seconds_before_timeout):
                 signal.alarm(0) #cancels the alarm , this is intentionally inside your finally block
             return result 
 
-        new_f.func_name = f.func_name # sorts out that naming problem in trace
+        new_f.__name__ = f.__name__ # sorts out that naming problem in trace
 
         return new_f
     return decorate
@@ -38,17 +41,21 @@ import time
 
 @timeout(5)
 def mytest():
-    print "Start"
+    print ("Start")
     for i in range(1,10):
         time.sleep(1)
         print("{} seconds have passed".format(i))
 
 if __name__ == '__main__':
     mytest()
-```
+
 
 ```
-$ python timeout_deco.py 
+
+
+
+```python
+python timeout_deco.py 
 Start
 1 seconds have passed
 2 seconds have passed
@@ -57,12 +64,12 @@ Start
 Traceback (most recent call last):
   File "timeout_deco.py", line 45, in <module>
     mytest()
-    └ <function mytest at 0x7f2e0333bc80>
+    └ <function timeout.<locals>.decorate.<locals>.new_f at 0x7f472b316ae8>
   File "timeout_deco.py", line 23, in new_f
     result = f(*args, **kwargs)
              │  │       └ {}
              │  └ ()
-             └ <function mytest at 0x7f2e0333bb90>
+             └ <function mytest at 0x7f472b3169d8>
   File "timeout_deco.py", line 41, in mytest
     time.sleep(1)
     └ <module 'time' (built-in)>
@@ -71,6 +78,7 @@ Traceback (most recent call last):
           └ <class '__main__.TimeoutError'>
 TimeoutError: 'Timed Out'
 ```
+
 
 ### 9 - Timeout a function using SIGALRM
 
