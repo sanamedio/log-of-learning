@@ -1,5 +1,12 @@
 # 08-nov-2018
 
+### 5 - http.server and SimpleHTTPServer in python program
+
+```bash
+python -c "import SimpleHTTPServer; SimpleHTTPServer.test()"
+python3 -c "from http import server; server.test()"
+```
+
 ### 4 - What if I want to pass arguments to the decorator itself (not the decorated function)?
 
 - use another layer to pass the argument, and due to scoping it will avaialble in side the original decorator and returns will pass-through the internal one like earlier
