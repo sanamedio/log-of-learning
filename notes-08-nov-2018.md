@@ -1,5 +1,10 @@
 # 08-nov-2018
 
+### 6 - Time complexity of python list, deque, set etc.
+
+- https://wiki.python.org/moin/TimeComplexity
+- Surprisingly set union takes linear worst case time. I guess union-find gives better complexity but may be limited in other operations. Also many of the other data structures present in python are not present in the list.( not sure when this list was last updated. somewhere in 2017)
+
 ### 5 - http.server and SimpleHTTPServer in python program
 
 ```bash
