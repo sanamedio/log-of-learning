@@ -1,5 +1,46 @@
 # 08-nov-2018
 
+### 7 - Traversing a tree ( predefined structure with children attribute )
+
+- TODO improve the below implementation to print out any kind of nested structure using iterable check and cycle checks
+
+```python
+tree = {'count': 2,
+        'text': '1',
+        'kids': [{'count': 3,
+                  'text': '1.1',
+                  'kids': [{'count': 1,
+                            'text': '1.1.1',
+                            'kids': [{'count':0,
+                                      'text': '1.1.1.1',
+                                      'kids': []}]},
+                           {'count': 0,
+                            'text': '1.1.2',
+                            'kids': []},
+                           {'count': 0,
+                            'text': '1.1.3',
+                            'kids': []}]},
+                 {'count': 0,
+                  'text': '1.2',
+                  'kids': []}]}
+
+
+def traverse(data):
+
+    print( ' ' * traverse.level + data['text'])
+
+
+    for kid in data['kids']:
+        traverse.level += 1
+        traverse(kid)
+        traverse.level -= 1
+
+
+if __name__ == '__main__':
+    traverse.level = 1
+    traverse(tree)                        
+```
+
 ### 6 - Time complexity of python list, deque, set etc.
 
 - https://wiki.python.org/moin/TimeComplexity
