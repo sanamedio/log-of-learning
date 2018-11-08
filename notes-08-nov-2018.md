@@ -2,7 +2,7 @@
 
 ### 10 - Timeout function as a decorator
 
-```
+```python
 import signal
 
 class TimeoutError(Exception):
@@ -54,7 +54,7 @@ if __name__ == '__main__':
 
 
 
-```python
+```
 python timeout_deco.py 
 Start
 1 seconds have passed
