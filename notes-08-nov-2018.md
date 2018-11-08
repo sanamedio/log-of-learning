@@ -1,5 +1,17 @@
 # 08-nov-2018
 
+
+### 11 - IPython start from python -c
+
+```bash
+$ python3 -c "import IPython; IPython.embed()"
+Python 3.6.6 (default, Sep 12 2018, 18:26:19) 
+Type 'copyright', 'credits' or 'license' for more information
+IPython 7.1.1 -- An enhanced Interactive Python. Type '?' for help.
+
+In [1]:  
+```
+
 ### 10 - Timeout function as a decorator
 
 ```python
