@@ -27,9 +27,9 @@
   5. Spacing - Try to study same stuff over longer period of time than blocked continuous sprint
   6. Immediate vocalization or just typing code from a tutorial gives illusion of learning, not true learning
 
-  Why I am not learning fast?
-    - Not serious enough about it
-    - No sense of urgency 
-    - Being used to mediocrity and lack of focus
-    - Casual attitude
+  - Why I am not learning fast?
+     - Not serious enough about it
+     - No sense of urgency 
+     - Being used to mediocrity and lack of focus
+     - Casual attitude
     
