@@ -34,7 +34,7 @@ class TimeoutFunction:
             result = self.function(*args) # calling the function and saving result but why not **kwargs, i think those are also needed
         finally:
             signal.signal(signal.SIGALRM, old) # finally reset the old signal handler
-        signal.alarm(0)
+        signal.alarm(0) #this probably should be inside finally block, it cancels the alarm in case of function gets an exception
         return result # return result
 
 
