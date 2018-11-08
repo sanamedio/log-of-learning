@@ -29,8 +29,13 @@
 
   - Why I am not learning fast?
      - Not serious enough about it
-     - No sense of urgency 
+       - If you don't think it's worth it, leave it now!
+     - No sense of urgency
+       - Are you happy with what you will achieve with this pace? 
      - Being used to mediocrity and lack of focus
+       - Are you the kind of person who reach mastery or who is happy with mediocre skills ?
      - Casual attitude
+       - Can we kill casual attitude with a criticism feedback loop ? 
      - Perception of a habitual pace. Illusion that learning can only happen at this speed.
+       - Are you the kind who live in illusions and perceptions? or the kind who break out of them?
     
