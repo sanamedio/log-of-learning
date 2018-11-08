@@ -1,5 +1,77 @@
 # 08-nov-2018
 
+### 10 - Timeout function as a decorator
+
+```python
+import signal
+
+class TimeoutError(Exception):
+    def __init__(self, value = "Timed Out"):
+        self.value = value
+    def __str__(self):
+        return repr(self.value) #repr returns the __repr__ of that datatype, for strings it's the content
+
+#decorator
+def timeout(seconds_before_timeout):
+    def decorate(f):
+        def handler(signum, frame):
+            raise TimeoutError()
+
+        def new_f(*args , **kwargs):
+            old = signal.signal(signal.SIGALRM, handler)
+            signal.alarm(seconds_before_timeout)
+
+            try:
+                result = f(*args, **kwargs)
+            finally:
+                signal.signal(signal.SIGALRM, old)
+                signal.alarm(0) #cancels the alarm , this is intentionally inside your finally block
+            return result 
+
+        new_f.func_name = f.func_name # sorts out that naming problem in trace
+
+        return new_f
+    return decorate
+
+
+import time
+
+@timeout(5)
+def mytest():
+    print "Start"
+    for i in range(1,10):
+        time.sleep(1)
+        print("{} seconds have passed".format(i))
+
+if __name__ == '__main__':
+    mytest()
+```
+
+```
+$ python timeout_deco.py 
+Start
+1 seconds have passed
+2 seconds have passed
+3 seconds have passed
+4 seconds have passed
+Traceback (most recent call last):
+  File "timeout_deco.py", line 45, in <module>
+    mytest()
+    └ <function mytest at 0x7f2e0333bc80>
+  File "timeout_deco.py", line 23, in new_f
+    result = f(*args, **kwargs)
+             │  │       └ {}
+             │  └ ()
+             └ <function mytest at 0x7f2e0333bb90>
+  File "timeout_deco.py", line 41, in mytest
+    time.sleep(1)
+    └ <module 'time' (built-in)>
+  File "timeout_deco.py", line 16, in handler
+    raise TimeoutError()
+          └ <class '__main__.TimeoutError'>
+TimeoutError: 'Timed Out'
+```
+
 ### 9 - Timeout a function using SIGALRM
 
 - One important fact to note when using signal module is that it doesn’t work well in a multi-threaded flow. The callback has to be registered in main thread, and the alarm will also be received by the main thread. (from http://chamilad.github.io/blog/2015/11/26/timing-out-of-long-running-methods-in-python/ )
