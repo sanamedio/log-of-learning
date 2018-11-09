@@ -1,5 +1,22 @@
 # 10-nov-2018
 
+### 7 - Inspect
+
+```python
+inspect.ismodule(object)
+inspect.isclass(object)
+inspect.ismethod(object)
+inspect.isfunction(object)
+inspect.iscode(object)
+inspect.iscoroutinefunction()
+
+inspect.getdoc(object)
+inspect.getcomments(object)
+inspect.getfile(object) 
+inspect.getmodule(object)
+```
+
+
 ### 6 - from modulefinder import ModuleFinder
 
 ```python
