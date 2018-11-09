@@ -9,6 +9,7 @@ def isAsync(someFunc):
     return asyncio.iscoroutinefunction(someFunc) # it uses inspects iscoroutineblah internally probably
 ```
 
+- some better approaches here : https://stackoverflow.com/questions/36076619/test-if-function-or-method-is-normal-or-asynchronous
 
 ### 7 - Inspect
 
