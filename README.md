@@ -62,5 +62,7 @@
 
 [08-nov-2018 - 15 entries](./notes-08-nov-2018.md)
 
-[09-nov-2018 - 00 entries](./notes-09-nov-2018.md)
+[09-nov-2018 - 06 entries](./notes-09-nov-2018.md)
+
+[10-nov-2018 - 00 entries](./notes-10-nov-2018.md)
 
