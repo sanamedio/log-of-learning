@@ -1,5 +1,24 @@
 # 09-nov-2018
 
+### 2 - Using dict to get attributes of a object( I think I mentioend it earlier also )
+
+```python
+>>> class A(object):
+...     def __init__(self):
+...             self.a = 'one'
+...             self.b = 'two'
+...     def mymethod(self):
+...             pass
+... 
+>>> a = A()
+>>> for attr, value in a.__dict__.iteritems():
+...     print( attr, value)
+... 
+('a', 'one')
+('b', 'two')
+>>> 
+```
+
 ### 1 - Using inner function to save data and printing a nested object 
 
 ```python
