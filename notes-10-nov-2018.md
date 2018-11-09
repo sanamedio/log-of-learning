@@ -1,5 +1,17 @@
 # 10-nov-2018
 
+### 8 - Checking if a function is Async or not
+
+```python
+import asyncio
+
+def isAsync(someFunc):
+    return asyncio.iscoroutinefunction(someFunc) # it uses inspects iscoroutineblah internally probably
+```
+
+
+
+
 ### 7 - Inspect
 
 ```python
@@ -15,7 +27,32 @@ inspect.getcomments(object)
 inspect.getfile(object) 
 inspect.getmodule(object)
 ```
-
+or better do:
+```python
+>>> print(* list(filter(lambda x : x.startswith('is') , dir(inspect))), sep='\n')
+isabstract
+isasyncgen
+isasyncgenfunction
+isawaitable
+isbuiltin
+isclass
+iscode
+iscoroutine
+iscoroutinefunction
+isdatadescriptor
+isframe
+isfunction
+isgenerator
+isgeneratorfunction
+isgetsetdescriptor
+ismemberdescriptor
+ismethod
+ismethoddescriptor
+ismodule
+isroutine
+istraceback
+```
+- Inspect is really cool module 
 
 ### 6 - from modulefinder import ModuleFinder
 
