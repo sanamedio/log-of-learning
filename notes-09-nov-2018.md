@@ -1,5 +1,27 @@
 # 09-nov-2018
 
+### 4 - Generate a random binary number
+
+```python
+>>> def get_random_bits(n):
+...     return format( random.getrandbits(n), '0' +str(n) + 'b' )
+... 
+>>> get_random_bits(10)
+'0110011010'
+>>> get_random_bits(0)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+  File "<stdin>", line 2, in get_random_bits
+ValueError: number of bits must be greater than zero
+>>> get_random_bits(1)
+'0'
+>>> get_random_bits(1)
+'0'
+>>> get_random_bits(1)
+'1'
+>>> 
+```
+
 ### 3 - In-memory String compression using gzip and StringIO
 
 ```python
