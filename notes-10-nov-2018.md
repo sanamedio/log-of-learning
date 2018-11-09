@@ -10,8 +10,6 @@ def isAsync(someFunc):
 ```
 
 
-
-
 ### 7 - Inspect
 
 ```python
@@ -27,6 +25,18 @@ inspect.getcomments(object)
 inspect.getfile(object) 
 inspect.getmodule(object)
 ```
+
+NOTE: There is no inspect.iscallable, but there is a builins.callble, which is already preloaded. 
+```
+>> callable(object) 
+True
+>> import builtins
+>> builtins.callable(object)
+True
+>> callable is buildins.callable
+True
+```
+
 or better do:
 ```python
 >>> print(* list(filter(lambda x : x.startswith('is') , dir(inspect))), sep='\n')
