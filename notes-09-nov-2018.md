@@ -76,6 +76,23 @@ RuntimeError: Boom
 ... 
 >>> 
 ```
+- Can reset Mock objects memory
+```python
+>>> try:
+...     m(1,foo='bar')
+... except RuntimeError:
+...     assert True
+... else:
+...     assert False
+... 
+>>> assert m.call_args == mock.call(1,foo='bar')
+>>> assert len(m.call_args_list) > 1
+>>> 
+>>> m.reset_mock()
+>>> assert m.call_args is None
+```
+
+
 
 ### 5 - Flask + matplotlib ( nice stuff really )
 
