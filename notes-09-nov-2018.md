@@ -26,6 +26,45 @@ SyntaxError: invalid syntax
 >>> m.configure_mock(bar='baz')
 ```
 
+```python
+>>> m.return_value = 42
+>>> assert n() = 42
+  File "<stdin>", line 1
+    assert n() = 42
+               ^
+SyntaxError: invalid syntax
+>>> assert m() == 42
+>>> 
+>>> m.side_effect = [ 'foo' , 'bar', 'baz' ]
+>>> assert m() == 'foo'
+>>> assert m() == 'eee'
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+AssertionError
+>>> assert m() == 'bar'
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+AssertionError
+>>> m()
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+  File "/usr/lib/python3.6/unittest/mock.py", line 939, in __call__
+    return _mock_self._mock_call(*args, **kwargs)
+  File "/usr/lib/python3.6/unittest/mock.py", line 998, in _mock_call
+    result = next(effect)
+StopIteration
+>>> m.side_effect = RuntimeError('Boom')
+>>> m()
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+  File "/usr/lib/python3.6/unittest/mock.py", line 939, in __call__
+    return _mock_self._mock_call(*args, **kwargs)
+  File "/usr/lib/python3.6/unittest/mock.py", line 995, in _mock_call
+    raise effect
+RuntimeError: Boom
+>>> 
+```
+
 ### 5 - Flask + matplotlib ( nice stuff really )
 
 - Didn't ever thought of dynamically generating images
