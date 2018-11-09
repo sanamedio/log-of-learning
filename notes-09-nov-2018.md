@@ -1,5 +1,19 @@
 # 09-nov-2018
 
+### 3 - Inmemory String compression using gzip and StringIO
+
+```python
+>>> import gzip
+>>> import StringIO
+>>> buf = StringIO.StringIO()
+>>> compressed = gzip.GzipFile(fileobj=buf, mode="wb")
+>>> compressed.write("hello wrold")
+11
+>>> print buf.getvalue()
+vb�[�
+>>> 
+```
+
 ### 2 - Using dict to get attributes of a object( I think I mentioend it earlier also )
 
 ```python
