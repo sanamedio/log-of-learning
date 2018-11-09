@@ -1,5 +1,19 @@
 # 09-nov-2018
 
+### 6 - Mocks
+
+```python
+Python 3.6.6 (default, Sep 12 2018, 18:26:19) 
+[GCC 8.0.1 20180414 (experimental) [trunk revision 259383]] on linux
+Type "help", "copyright", "credits" or "license" for more information.
+>>> from unittest import mock
+>>> m = mock.Mock()
+>>> assert isinstance(m.foo, mock.Mock)
+>>> assert isinstance(m.bar, mock.Mock)
+>>> assert isinstance(m(), mock.Mock)
+>>> assert m.foo is not m.bar is not m()
+```
+
 ### 5 - Flask + matplotlib ( nice stuff really )
 
 - Didn't ever thought of dynamically generating images
