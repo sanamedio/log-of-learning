@@ -1,6 +1,6 @@
 # 09-nov-2018
 
-### 3 - Inmemory String compression using gzip and StringIO
+### 3 - In-memory String compression using gzip and StringIO
 
 ```python
 >>> import gzip
