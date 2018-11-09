@@ -1,5 +1,253 @@
 # 10-nov-2018
 
+### 6 - from modulefinder import ModuleFinder
+
+```python
+#test.py
+import os
+import sys
+import traceback
+import modulefinder
+import google
+import datetime
+
+print("hello world")
+```
+
+```python
+$ python3
+Python 3.6.6 (default, Sep 12 2018, 18:26:19) 
+[GCC 8.0.1 20180414 (experimental) [trunk revision 259383]] on linux
+Type "help", "copyright", "credits" or "license" for more information.
+>>> import sys, modulefinder
+>>> finder = modulefinder.ModuleFinder()
+>>> finder.run_script('test.py')
+>>> finder.report()
+
+  Name                      File
+  ----                      ----
+m __future__                /usr/lib/python3.6/__future__.py
+m __main__                  test.py
+m _ast                      
+m _bisect                   
+m _blake2                   
+m _bootlocale               /usr/lib/python3.6/_bootlocale.py
+m _bz2                      /usr/lib/python3.6/lib-dynload/_bz2.cpython-36m-x86_64-linux-gnu.so
+m _codecs                   
+m _collections              
+m _collections_abc          /usr/lib/python3.6/_collections_abc.py
+m _compat_pickle            /usr/lib/python3.6/_compat_pickle.py
+m _compression              /usr/lib/python3.6/_compression.py
+m _datetime                 
+m _dummy_thread             /usr/lib/python3.6/_dummy_thread.py
+m _functools                
+m _hashlib                  /usr/lib/python3.6/lib-dynload/_hashlib.cpython-36m-x86_64-linux-gnu.so
+m _heapq                    
+m _imp                      
+m _io                       
+m _locale                   
+m _lzma                     /usr/lib/python3.6/lib-dynload/_lzma.cpython-36m-x86_64-linux-gnu.so
+m _md5                      
+m _opcode                   /usr/lib/python3.6/lib-dynload/_opcode.cpython-36m-x86_64-linux-gnu.so
+m _operator                 
+m _pickle                   
+m _posixsubprocess          
+m _random                   
+m _sha1                     
+m _sha256                   
+m _sha3                     
+m _sha512                   
+m _signal                   
+m _socket                   
+m _sre                      
+m _ssl                      /usr/lib/python3.6/lib-dynload/_ssl.cpython-36m-x86_64-linux-gnu.so
+m _stat                     
+m _string                   
+m _strptime                 /usr/lib/python3.6/_strptime.py
+m _struct                   
+m _thread                   
+m _threading_local          /usr/lib/python3.6/_threading_local.py
+m _tracemalloc              
+m _warnings                 
+m _weakref                  
+m _weakrefset               /usr/lib/python3.6/_weakrefset.py
+m abc                       /usr/lib/python3.6/abc.py
+m argparse                  /usr/lib/python3.6/argparse.py
+m ast                       /usr/lib/python3.6/ast.py
+m atexit                    
+m base64                    /usr/lib/python3.6/base64.py
+m bdb                       /usr/lib/python3.6/bdb.py
+m binascii                  
+m bisect                    /usr/lib/python3.6/bisect.py
+m builtins                  
+m bz2                       /usr/lib/python3.6/bz2.py
+m calendar                  /usr/lib/python3.6/calendar.py
+m cmd                       /usr/lib/python3.6/cmd.py
+m code                      /usr/lib/python3.6/code.py
+m codecs                    /usr/lib/python3.6/codecs.py
+m codeop                    /usr/lib/python3.6/codeop.py
+P collections               /usr/lib/python3.6/collections/__init__.py
+m collections.abc           /usr/lib/python3.6/collections/abc.py
+m contextlib                /usr/lib/python3.6/contextlib.py
+m copy                      /usr/lib/python3.6/copy.py
+m copyreg                   /usr/lib/python3.6/copyreg.py
+m datetime                  /usr/lib/python3.6/datetime.py
+m difflib                   /usr/lib/python3.6/difflib.py
+m dis                       /usr/lib/python3.6/dis.py
+m doctest                   /usr/lib/python3.6/doctest.py
+m dummy_threading           /usr/lib/python3.6/dummy_threading.py
+P email                     /usr/lib/python3.6/email/__init__.py
+m email._encoded_words      /usr/lib/python3.6/email/_encoded_words.py
+m email._header_value_parser /usr/lib/python3.6/email/_header_value_parser.py
+m email._parseaddr          /usr/lib/python3.6/email/_parseaddr.py
+m email._policybase         /usr/lib/python3.6/email/_policybase.py
+m email.base64mime          /usr/lib/python3.6/email/base64mime.py
+m email.charset             /usr/lib/python3.6/email/charset.py
+m email.contentmanager      /usr/lib/python3.6/email/contentmanager.py
+m email.encoders            /usr/lib/python3.6/email/encoders.py
+m email.errors              /usr/lib/python3.6/email/errors.py
+m email.feedparser          /usr/lib/python3.6/email/feedparser.py
+m email.generator           /usr/lib/python3.6/email/generator.py
+m email.header              /usr/lib/python3.6/email/header.py
+m email.headerregistry      /usr/lib/python3.6/email/headerregistry.py
+m email.iterators           /usr/lib/python3.6/email/iterators.py
+m email.message             /usr/lib/python3.6/email/message.py
+m email.parser              /usr/lib/python3.6/email/parser.py
+m email.policy              /usr/lib/python3.6/email/policy.py
+m email.quoprimime          /usr/lib/python3.6/email/quoprimime.py
+m email.utils               /usr/lib/python3.6/email/utils.py
+P encodings                 /usr/lib/python3.6/encodings/__init__.py
+m encodings.aliases         /usr/lib/python3.6/encodings/aliases.py
+m encodings.mbcs            /usr/lib/python3.6/encodings/mbcs.py
+m enum                      /usr/lib/python3.6/enum.py
+m errno                     
+m fnmatch                   /usr/lib/python3.6/fnmatch.py
+m functools                 /usr/lib/python3.6/functools.py
+m gc                        
+m genericpath               /usr/lib/python3.6/genericpath.py
+m getopt                    /usr/lib/python3.6/getopt.py
+m gettext                   /usr/lib/python3.6/gettext.py
+m glob                      /usr/lib/python3.6/glob.py
+m grp                       
+m gzip                      /usr/lib/python3.6/gzip.py
+m hashlib                   /usr/lib/python3.6/hashlib.py
+m heapq                     /usr/lib/python3.6/heapq.py
+P html                      /usr/lib/python3.6/html/__init__.py
+m html.entities             /usr/lib/python3.6/html/entities.py
+P http                      /usr/lib/python3.6/http/__init__.py
+m http.client               /usr/lib/python3.6/http/client.py
+m http.server               /usr/lib/python3.6/http/server.py
+m imp                       /usr/lib/python3.6/imp.py
+P importlib                 /usr/lib/python3.6/importlib/__init__.py
+m importlib._bootstrap      /usr/lib/python3.6/importlib/_bootstrap.py
+m importlib._bootstrap_external /usr/lib/python3.6/importlib/_bootstrap_external.py
+m importlib.abc             /usr/lib/python3.6/importlib/abc.py
+m importlib.machinery       /usr/lib/python3.6/importlib/machinery.py
+m importlib.util            /usr/lib/python3.6/importlib/util.py
+m inspect                   /usr/lib/python3.6/inspect.py
+m io                        /usr/lib/python3.6/io.py
+m ipaddress                 /usr/lib/python3.6/ipaddress.py
+m itertools                 
+m keyword                   /usr/lib/python3.6/keyword.py
+m linecache                 /usr/lib/python3.6/linecache.py
+m locale                    /usr/lib/python3.6/locale.py
+P logging                   /usr/lib/python3.6/logging/__init__.py
+m lzma                      /usr/lib/python3.6/lzma.py
+m marshal                   
+m math                      
+m mimetypes                 /usr/lib/python3.6/mimetypes.py
+m modulefinder              /usr/lib/python3.6/modulefinder.py
+m ntpath                    /usr/lib/python3.6/ntpath.py
+m opcode                    /usr/lib/python3.6/opcode.py
+m operator                  /usr/lib/python3.6/operator.py
+m optparse                  /usr/lib/python3.6/optparse.py
+m os                        /usr/lib/python3.6/os.py
+m pdb                       /usr/lib/python3.6/pdb.py
+m pickle                    /usr/lib/python3.6/pickle.py
+m pkgutil                   /usr/lib/python3.6/pkgutil.py
+m platform                  /usr/lib/python3.6/platform.py
+m plistlib                  /usr/lib/python3.6/plistlib.py
+m posix                     
+m posixpath                 /usr/lib/python3.6/posixpath.py
+m pprint                    /usr/lib/python3.6/pprint.py
+m pwd                       
+m py_compile                /usr/lib/python3.6/py_compile.py
+m pydoc                     /usr/lib/python3.6/pydoc.py
+P pydoc_data                /usr/lib/python3.6/pydoc_data/__init__.py
+m pydoc_data.topics         /usr/lib/python3.6/pydoc_data/topics.py
+m pyexpat                   
+m quopri                    /usr/lib/python3.6/quopri.py
+m random                    /usr/lib/python3.6/random.py
+m re                        /usr/lib/python3.6/re.py
+m readline                  /usr/lib/python3.6/lib-dynload/readline.cpython-36m-x86_64-linux-gnu.so
+m reprlib                   /usr/lib/python3.6/reprlib.py
+m select                    
+m selectors                 /usr/lib/python3.6/selectors.py
+m shlex                     /usr/lib/python3.6/shlex.py
+m shutil                    /usr/lib/python3.6/shutil.py
+m signal                    /usr/lib/python3.6/signal.py
+m socket                    /usr/lib/python3.6/socket.py
+m socketserver              /usr/lib/python3.6/socketserver.py
+m sre_compile               /usr/lib/python3.6/sre_compile.py
+m sre_constants             /usr/lib/python3.6/sre_constants.py
+m sre_parse                 /usr/lib/python3.6/sre_parse.py
+m ssl                       /usr/lib/python3.6/ssl.py
+m stat                      /usr/lib/python3.6/stat.py
+m string                    /usr/lib/python3.6/string.py
+m struct                    /usr/lib/python3.6/struct.py
+m subprocess                /usr/lib/python3.6/subprocess.py
+m sys                       
+m tarfile                   /usr/lib/python3.6/tarfile.py
+m tempfile                  /usr/lib/python3.6/tempfile.py
+m termios                   /usr/lib/python3.6/lib-dynload/termios.cpython-36m-x86_64-linux-gnu.so
+m textwrap                  /usr/lib/python3.6/textwrap.py
+m threading                 /usr/lib/python3.6/threading.py
+m time                      
+m token                     /usr/lib/python3.6/token.py
+m tokenize                  /usr/lib/python3.6/tokenize.py
+m traceback                 /usr/lib/python3.6/traceback.py
+m tracemalloc               /usr/lib/python3.6/tracemalloc.py
+m tty                       /usr/lib/python3.6/tty.py
+m types                     /usr/lib/python3.6/types.py
+P unittest                  /usr/lib/python3.6/unittest/__init__.py
+m unittest.case             /usr/lib/python3.6/unittest/case.py
+m unittest.loader           /usr/lib/python3.6/unittest/loader.py
+m unittest.main             /usr/lib/python3.6/unittest/main.py
+m unittest.result           /usr/lib/python3.6/unittest/result.py
+m unittest.runner           /usr/lib/python3.6/unittest/runner.py
+m unittest.signals          /usr/lib/python3.6/unittest/signals.py
+m unittest.suite            /usr/lib/python3.6/unittest/suite.py
+m unittest.util             /usr/lib/python3.6/unittest/util.py
+P urllib                    /usr/lib/python3.6/urllib/__init__.py
+m urllib.parse              /usr/lib/python3.6/urllib/parse.py
+m uu                        /usr/lib/python3.6/uu.py
+m warnings                  /usr/lib/python3.6/warnings.py
+m weakref                   /usr/lib/python3.6/weakref.py
+m webbrowser                /usr/lib/python3.6/webbrowser.py
+P xml                       /usr/lib/python3.6/xml/__init__.py
+P xml.parsers               /usr/lib/python3.6/xml/parsers/__init__.py
+m xml.parsers.expat         /usr/lib/python3.6/xml/parsers/expat.py
+m zipfile                   /usr/lib/python3.6/zipfile.py
+m zipimport                 
+m zlib                      
+
+Missing modules:
+? _dummy_threading imported from dummy_threading
+? _frozen_importlib imported from importlib, importlib.abc
+? _frozen_importlib_external imported from importlib, importlib._bootstrap, importlib.abc
+? _winapi imported from subprocess
+? _winreg imported from platform
+? google imported from __main__
+? java.lang imported from platform
+? msvcrt imported from subprocess
+? nt imported from ntpath, os, shutil
+? org.python.core imported from copy, pickle
+? os.path imported from os, pkgutil, py_compile, tracemalloc, unittest, unittest.util
+? vms_lib imported from platform
+? winreg imported from mimetypes, platform
+```
+
+
 ### 4 - Listing only user-imported modules
 
 ```python
