@@ -64,6 +64,18 @@ Traceback (most recent call last):
 RuntimeError: Boom
 >>> 
 ```
+- Mock objects save all interactions with them
+```python
+>>> m.assert_called()
+>>> try:
+...     m.assert_called_once()
+... except AssertionError:
+...     assert True
+... else:
+...     assert False
+... 
+>>> 
+```
 
 ### 5 - Flask + matplotlib ( nice stuff really )
 
