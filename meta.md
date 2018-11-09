@@ -10,7 +10,18 @@
 
   Build stuff with Python
   - Build useful things
-  - first do it, then do it right, then do it better
+  - Learn by building Computer Science ideas like:
+    - Zero knowledge proofs
+    - Proof of knowledge
+    - Proof of Stake
+    - Proof of work
+    - blockchain
+    - Interactive Proof systems
+    - CAP theorum
+    - Tower of Hanoi
+    - Josepheus Problem
+    - etc.
+    
 
   Be careful about
 
