@@ -300,7 +300,7 @@ Type "help", "copyright", "credits" or "license" for more information.
  '/usr/lib/python36.zip',
  '/usr/lib/python3.6',
  '/usr/lib/python3.6/lib-dynload',
- '/home/whishworks/.local/lib/python3.6/site-packages',
+ '/home/current_user/.local/lib/python3.6/site-packages',
  '/usr/local/lib/python3.6/dist-packages',
  '/usr/lib/python3/dist-packages']
 >>> 
