@@ -14,6 +14,18 @@ Type "help", "copyright", "credits" or "license" for more information.
 >>> assert m.foo is not m.bar is not m()
 ```
 
+```python
+>>> m.foo = 'bar'
+>>> assert m.foo = 'bar'
+  File "<stdin>", line 1
+    assert m.foo = 'bar'
+                 ^
+SyntaxError: invalid syntax
+>>> assert m.foo == 'bar'
+>>> 
+>>> m.configure_mock(bar='baz')
+```
+
 ### 5 - Flask + matplotlib ( nice stuff really )
 
 - Didn't ever thought of dynamically generating images
