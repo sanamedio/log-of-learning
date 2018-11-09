@@ -14,7 +14,18 @@ Type "help", "copyright", "credits" or "license" for more information.
 {'sys', 'google'}
 >>> 
 ```
-
+another way:
+```python
+>>> x = dir()
+>>> x = list(dir())
+>>> import numpy
+>>> y = list(dir())
+>>> set(x) - set(y)
+set()
+>>> set(y) - set(x)
+{'numpy'}
+>>> 
+```
 
 ### 3 - default module  and module search paths
 
