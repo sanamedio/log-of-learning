@@ -27,7 +27,7 @@ inspect.getmodule(object)
 ```
 
 NOTE: There is no inspect.iscallable, but there is a builins.callble, which is already preloaded. 
-```
+```python
 >> callable(object) 
 True
 >> import builtins
