@@ -1,5 +1,21 @@
 # 10-nov-2018
 
+### 4 - Listing only user-imported modules
+
+```python
+Python 3.6.6 (default, Sep 12 2018, 18:26:19) 
+[GCC 8.0.1 20180414 (experimental) [trunk revision 259383]] on linux
+Type "help", "copyright", "credits" or "license" for more information.
+>>> import sys
+>>> set(globals())&set(sys.modules)
+{'sys'}
+>>> import google
+>>> set(globals())&set(sys.modules)
+{'sys', 'google'}
+>>> 
+```
+
+
 ### 3 - default module  and module search paths
 
 - All global (variable/function) names in Python are considered to be in the pseudo-module namespace named ```__main__```.
