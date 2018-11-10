@@ -1,12 +1,13 @@
 # 10-nov-2018
 
-### 12 - Prover part of Graph isomorphism Zero-konwledge proof simulation in python (continued from 11)
+### 12 - Prover and Verifier part of Graph isomorphism Zero-konwledge proof simulation in python (continued from 11)
 
 - How does Zero knowledge proofs differ from normal proofs?
   - Aren't they proof by contradiction? NO
   - Do they target different problems? Specifically problems where we need to not reveal information? MAYBE. But it's possible that the problem they solve can be reduced to other NPish problems and that way what we achieve with ZKP can help solve other problems.
+  - In this Graph isomorphism case, how does information not leak? How can we say that based on the answers of the Prover, Verifer can't find out the true mapping between G1 and G2? - 
   
-
+Prover:
 ```python
 class Prover():
 
@@ -27,7 +28,7 @@ class Prover():
         isomorphism = randomPermutation(self.n) # this is a new random isomorphism, not related to the true isomorphism between G1 and G2 which prover knows, since prover knows this, he can also easily know the inverse of this isomorphism.
 
 
-        pi = makePermutationFunction(isomorphism) #permutation function only needs size
+        pi = makePermutationFunction(isomorphism) #this isomomrphism was created from a random mapping. 
 
         H = applyIsomorphism(self.G1, pi) # for each edge in the G1, let's apply the isomorphism, and convert it to a isomophic graph H
 
@@ -40,14 +41,55 @@ class Prover():
     def proveIsomorphicTo(self, graphChoice): #Second round of protocol, when Verifier sends informmation to prover, or more like a question
         randomIsomorphism = self.state # self.state will be containing our randomly generated isomorphism which we used to create H from G1 ; which we sent to to the Verifier
 
-        piInverse = makeInversePermutationFunction(randomIsomorphism) # this only needs length 
+        piInverse = makeInversePermutationFunction(randomIsomorphism) # since you know what isomophism was used, creating inverse is easy 
 
         if graphChoice == 1: # if the Verifier asks for G1
             return piInverse # return the piInverse as it is.
         else:
-            f = makePermutationFunction(self.isomorphism) # only needs length, and generates from random space
-            return lambda i : f(piInverse(i))
+            f = makePermutationFunction(self.isomorphism) # but here if he asks about G2, now we can use our original true G1 to G2 isomophism only known to prover to create a isomophism function.
+            return lambda i : f(piInverse(i)) # we take the fog kind of stuff we already know G1 to H and G1 to G2, so we can find out H to G2. So now Verifier know this information, H-> G1 mapping and H->G2 mapping, where H we have eelected at random
 ```
+Verifier
+```
+class Verifier():
+
+    def __init__(self, G1, G2): # see the difference, no preknonwn isomorphism here
+        self.G1 = G1
+        self.G2 = G2
+        self.n = numVertices(G1)
+        assert self.n == numVertices(G2) # these checks are more programmatical
+
+
+    def chooseGraph(self, H):
+        choice = random.choice([1,2])
+        self.state = H , choice # state is just to maintain information between multiple steps of the protocol
+        return choice #this gets sent to Prover
+
+
+    def accepts(self, isomorphism): # last step of protocol
+        H, choice = self.state
+        graphToCheck =[ self.G1, self.G2][choice - 1]
+        f = isomorphism
+
+        isValidIsomorphism = ( graphToCheck == applyIsomorphism(H, f))
+        return isValidIsomorphism
+
+
+
+
+
+
+def runProtocol(G1, G2, isomorphism):
+    p = Prover(G1,G2, isomorphism)
+    v = Verifier(G1,G2)
+
+    H = p.sendIsomorphicCopy()
+    choice = v.chooseGraph(H)
+    witnessIsomorphism = p.proveIsomorphicTo(choice)
+
+    return v.accepts(witnessIsomorphism)
+```
+
 
 
 ### 11 - Generating a random permutation and isomophiic mapping functions
