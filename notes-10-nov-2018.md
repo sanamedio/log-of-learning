@@ -3,7 +3,10 @@
 ### 11 - Generating a random permutation and isomophiic mapping functions
 
 - Following Zero Knowledge proof tutorial [jeremy-zkp-tutorial-py](https://jeremykun.com/2016/07/05/zero-knowledge-proofs-a-primer/)
-- 
+- ZEP is a kind of prooving technique where there are two entities Proover and Verifier. The idea is that Proover wants to Prove something and Verify needs to verify that within the constraints that Proover don't want to reveal the information, yet somehow do it.
+- https://en.wikipedia.org/wiki/Zero-knowledge_proof
+- For example if we want to prove to a blind person that multicolored balls exist then we can play a game with him where he will show us two balls. What he wants to prove is that balls are of same color, whereas we want to prove that they are of different colors, without passing this information via eyes( which sense color,). So he will show us the balls, and then switch/no-switch them behind himself(without showing us) and ask us whether he switched or not. If we can answer correctly it means the balls are of different colors. This has to be repeated as number of trials as Verifiers want to feel confident. If for example, balls were of same colors; there would be 0.5 chance of guessing it correctly. and in N trials the chance of us guessing correctly each time would diminish rapidly. 
+- TODO Read alibaba example
 
 ```python
 Python 3.6.6 (default, Sep 12 2018, 18:26:19) 
