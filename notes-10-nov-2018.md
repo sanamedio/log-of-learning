@@ -5,9 +5,10 @@
 - Using python features, writing a lisp interpreter becomes easy
 - https://repl.it/talk/learn/PyLisp-LISP-in-Just-Over-100-Lines-of-Python/6712
 
-TODO : debug
+TODO : ~~debug~~ VSCode debugging mode is awesome. 
 
 ```python
+import re
 import re
 
 class Lispi():
@@ -35,15 +36,15 @@ class Lispi():
             }
 
     def run(self, code):
-        print('run called : ' + code)
+        # print('run called : ' + code)
         return self.eval(self.parse(code))
 
     def parse(self, program):
-        print('parse called : ' + program)
+        # print('parse called : ' + program)
         return self.read(self.tokenize(program))
 
     def tokenize(self, chars):
-        print('tokenize called: ' + chars)
+        # print('tokenize called: ' + chars)
         tokens = re.sub(r'\s+' , ' ' , chars) 
         tokens = tokens.replace('(' , ' ( ')
         tokens = tokens.replace(')' , ' ) ')
@@ -53,7 +54,7 @@ class Lispi():
 
     def read(self, tokens):
         
-        print('read called: ' + str(tokens))
+        # print('read called: ' + str(tokens))
         
         if not tokens:
             return
@@ -73,13 +74,13 @@ class Lispi():
     def atom(self, token):
         
         if re.compile('\d+').match(token):
-            print("matched " + token)
+            # print("matched " + token)
             return int(token)
         else:
             return token
 
     def eval(self, exp , env = None):
-        print('eval called : ' + str(exp))
+        # print('eval called : ' + str(exp))
 
         if env is None:
             env = self.env
@@ -97,7 +98,7 @@ class Lispi():
         elif exp[0] == 'if':
             _ , condition, if_clause , else_clause = exp
             condition = str(self.eval(condition))
-            result = if_clause if eval(condition,env) else else_clause
+            result = eval(if_clause,env) if eval(condition,env) else eval(else_clause,env)
             return result
 
         elif exp[0] == 'define':
@@ -110,7 +111,7 @@ class Lispi():
             return lambda args : self.eval(body, { **env , **dict(zip(params, args)) })
 
         else:
-            print('fell here ' + str(type(exp)) + " " + str(exp))
+            # print('fell here ' + str(type(exp)) + " " + str(exp))
             fn = exp[0]
             args = exp[1:]
             args = [self.eval(arg, env) for arg in args]
