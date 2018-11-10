@@ -5,7 +5,7 @@
 - How does Zero knowledge proofs differ from normal proofs?
   - Aren't they proof by contradiction? NO
   - Do they target different problems? Specifically problems where we need to not reveal information? MAYBE. But it's possible that the problem they solve can be reduced to other NPish problems and that way what we achieve with ZKP can help solve other problems.
-  - In this Graph isomorphism case, how does information not leak? How can we say that based on the answers of the Prover, Verifer can't find out the true mapping between G1 and G2?
+  - In this Graph isomorphism case, how does information not leak? How can we say that based on the answers of the Prover, Verifer can't find out the true mapping between G1 and G2? This question may be assuming that Verifier will not follow the protocol. Verifier's task is to establish the fact that the Prover knows the correct isomorphisms, not attacking the Zero knowledge protocol for getting information from Prover. But what if a malicious entity enact as verifier? 
   - http://www.wisdom.weizmann.ac.il/~naor/PAPERS/SUDOKU_DEMO/ - Nice example of ZKP
   
 Prover:
