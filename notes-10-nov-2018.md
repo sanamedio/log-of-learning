@@ -1,5 +1,136 @@
 # 10-nov-2018
 
+### 9 - Lispi
+
+- Using python features, writing a lisp interpreter becomes easy
+- https://repl.it/talk/learn/PyLisp-LISP-in-Just-Over-100-Lines-of-Python/6712
+
+Note: the code is not working, need to fix it
+
+```python
+import re
+
+class Lispi():
+
+    def __init__(self):
+        def gen_lambda(sign):
+            lamfunc = lambda args: eval(str(args[0]) + sign + str(args[1]))
+            return lamfunc
+
+
+        self.env = {
+                '==' : gen_lambda('=='),
+                '!=' : gen_lambda('!='),
+                '<'  : gen_lambda('<'),
+                '<=' : gen_lambda('<='),
+                '>'  : gen_lambda('>'),
+                '>=' : gen_lambda('>='),
+                '+'  : gen_lambda('+'),
+                '-'  : gen_lambda('-'),
+                '*'  : gen_lambda('*'),
+                '/'  : gen_lambda('/'),
+                'car': lambda args: args[0][0],
+                'cdr': lambda args: args[0][1:],
+                'cons': lambda args: [args[0]] + args[1]
+            }
+
+    def run(self, code):
+        print('run called : ' + code)
+        return self.eval(self.parse(code))
+
+    def parse(self, program):
+        print('parse called : ' + program)
+        return self.read(self.tokenize(program))
+
+    def tokenize(self, chars):
+        print('tokenize called: ' + chars)
+        tokens = re.sub(r'\s+' , ' ' , chars) 
+        tokens = tokens.replace('(' , ' ( ')
+        tokens = tokens.replace(')' , ' ) ')
+        tokens = tokens.split(' ')
+        return [t for t in tokens if t != '' ]
+
+
+    def read(self, tokens):
+        
+        print('read called: ' + str(tokens))
+        
+        if not tokens:
+            return
+        token = tokens.pop(0)
+        if token == '(' :
+            token_list = []
+            while tokens[0] != ')':
+                token_list.append(self.read(tokens)) # this way it creates recursive structure , a list of list of list of list .....
+            tokens.pop(0) # for the )
+            return token_list
+        elif token == ')':
+            raise SyntaxError('unexpected bracket')
+        else:
+            return self.atom(token)
+
+
+    def atom(self, token):
+        
+        if re.compile('\d+').match(token):
+            print("matched " + token)
+            return int(token)
+        else:
+            return token
+
+    def eval(self, exp , env = None):
+        print('eval called : ' + str(exp))
+
+        if env is None:
+            env = self.env
+
+        if not exp:
+            return
+
+        if isinstance(exp, int):
+            return exp
+        elif isinstance(exp, str):
+            try:
+                return env[exp]
+            except KeyError:
+                return exp
+        elif exp[0] == 'if':
+            _ , condition, if_clause , else_clause = exp
+            condition = str(self.eval(condition))
+            result = if_clause if eval(condition,env) else else_clause
+            return result
+
+        elif exp[0] == 'define':
+            _ , var , e = exp
+            env[var] = self.eval(e)
+            return env[var]
+
+        elif exp[0] == 'lambda':
+            _, params, body  = exp
+            return lambda args : self.eval(body, { **env , **dict(zip(params, args)) })
+
+        else:
+            print('fell here ' + str(type(exp)) + " " + str(exp))
+            fn = exp[0]
+            args = exp[1:]
+            args = [self.eval(arg, env) for arg in args]
+            return env[fn](args)
+
+
+    def repl(self):
+        while True:
+            program = input('%>> ')
+            try:
+                print(self.run(program))
+            except RuntimeError as err:
+                print(err)
+
+
+if __name__ == '__main__':
+    lisp = Lispi()
+    lisp.repl()
+```
+
 ### 8 - Checking if a function is Async or not
 
 ```python
