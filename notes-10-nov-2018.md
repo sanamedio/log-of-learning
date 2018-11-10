@@ -1,5 +1,46 @@
 # 10-nov-2018
 
+### 10 - Hunting Traces by hunter module
+
+- it can set traces on modules, functions ,code etc.
+
+```bash
+$ python3 -m pip install --user hunter
+```
+
+```python
+python3
+Python 3.6.6 (default, Sep 12 2018, 18:26:19) 
+[GCC 8.0.1 20180414 (experimental) [trunk revision 259383]] on linux
+Type "help", "copyright", "credits" or "license" for more information.
+>>> import posixpath #not necessary to import
+>>> import hunter
+>>> hunter.trace(module='posixpath')
+<hunter._tracer.Tracer at 0x7f2dd1be25e8: threading_support=False, handler=<hunter._predicates.When: condition=<hunter._predicates.Query: query_eq=(('module', 'posixpath'),)>, actions=(CallPrinter(stream=<colorama.ansitowin32.AnsiToWin32 object at 0x7f2dd30e22b0>, force_colors=False, filename_alignment=40, thread_alignment=12, repr_limit=1024),)>>
+>>> import os
+>>> os.path.join("a", "b")
+         /usr/lib/python3.6/posixpath.py:75    call      => join(a='a')
+         /usr/lib/python3.6/posixpath.py:80    line         a = os.fspath(a)
+         /usr/lib/python3.6/posixpath.py:81    line         sep = _get_sep(a)
+         /usr/lib/python3.6/posixpath.py:41    call         => _get_sep(path='a')
+         /usr/lib/python3.6/posixpath.py:42    line            if isinstance(path, bytes):
+         /usr/lib/python3.6/posixpath.py:45    line            return '/'
+         /usr/lib/python3.6/posixpath.py:45    return       <= _get_sep: '/'
+         /usr/lib/python3.6/posixpath.py:82    line         path = a
+         /usr/lib/python3.6/posixpath.py:83    line         try:
+         /usr/lib/python3.6/posixpath.py:84    line         if not p:
+         /usr/lib/python3.6/posixpath.py:86    line         for b in map(os.fspath, p):
+         /usr/lib/python3.6/posixpath.py:87    line         if b.startswith(sep):
+         /usr/lib/python3.6/posixpath.py:89    line         elif not path or path.endswith(sep):
+         /usr/lib/python3.6/posixpath.py:92    line         path += sep + b
+         /usr/lib/python3.6/posixpath.py:86    line         for b in map(os.fspath, p):
+         /usr/lib/python3.6/posixpath.py:96    line         return path
+         /usr/lib/python3.6/posixpath.py:96    return    <= join: 'a/b'
+'a/b'
+>>> 
+```
+
+
 ### 9 - Lispi
 
 - Using python features, writing a lisp interpreter becomes easy
