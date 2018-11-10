@@ -49,4 +49,7 @@
        - Can we kill casual attitude with a criticism feedback loop ? 
      - Perception of a habitual pace. Illusion that learning can only happen at this speed.
        - Are you the kind who live in illusions and perceptions? or the kind who break out of them?
+  - Reread stuff
+    - http://www.excaliburtsa.org.uk/wp-content/uploads/2017/11/Self-regulated-learning-Bjork.pdf
+    - Learning how to learn book
     
