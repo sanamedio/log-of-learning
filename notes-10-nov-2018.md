@@ -1,5 +1,55 @@
 # 10-nov-2018
 
+### 12 - Prover part of Graph isomorphism Zero-konwledge proof simulation in python (continued from 11)
+
+- How does Zero knowledge proofs differ from normal proofs?
+  - Aren't they proof by contradiction? NO
+  - Do they target different problems? Specifically problems where we need to not reveal information? MAYBE. But it's possible that the problem they solve can be reduced to other NPish problems and that way what we achieve with ZKP can help solve other problems.
+  
+
+```python
+class Prover():
+
+    def __init__(self, G1, G2, isomorphism ):
+
+        # G1 and G2 are known to both parties, but the correct isomorphism between G1 and G2 is known only to the Prover. What Prover wants to get Verified by Verfier is that he knows the isomorphism between G1 and G2, without revealing the isomorphism
+        self.G1 = G1 #list of edge tuples
+        self.G2 = G2 #list of edge tuples
+        self.n = numVertices(G1) #num vertices is separate function to find out vertices, it won't be same as length of G as it's a edge-list represetation
+        assert self.n == numVertices(G2)
+
+        self.isomorphism = isomorphism #only prover knows this
+        self.state = None
+
+
+    def sendIsomorphicCopy(self): # First round of protocol, when prover sends information to Verifier
+
+        isomorphism = randomPermutation(self.n) # this is a new random isomorphism, not related to the true isomorphism between G1 and G2 which prover knows, since prover knows this, he can also easily know the inverse of this isomorphism.
+
+
+        pi = makePermutationFunction(isomorphism) #permutation function only needs size
+
+        H = applyIsomorphism(self.G1, pi) # for each edge in the G1, let's apply the isomorphism, and convert it to a isomophic graph H
+
+        self.state = isomorphism # 
+        return H
+
+
+
+
+    def proveIsomorphicTo(self, graphChoice): #Second round of protocol, when Verifier sends informmation to prover, or more like a question
+        randomIsomorphism = self.state # self.state will be containing our randomly generated isomorphism which we used to create H from G1 ; which we sent to to the Verifier
+
+        piInverse = makeInversePermutationFunction(randomIsomorphism) # this only needs length 
+
+        if graphChoice == 1: # if the Verifier asks for G1
+            return piInverse # return the piInverse as it is.
+        else:
+            f = makePermutationFunction(self.isomorphism) # only needs length, and generates from random space
+            return lambda i : f(piInverse(i))
+```
+
+
 ### 11 - Generating a random permutation and isomophiic mapping functions
 
 - Following Zero Knowledge proof tutorial [jeremy-zkp-tutorial-py](https://jeremykun.com/2016/07/05/zero-knowledge-proofs-a-primer/)
