@@ -3,6 +3,7 @@
 ### 11 - Generating a random permutation and isomophiic mapping functions
 
 - Following Zero Knowledge proof tutorial [jeremy-zkp-tutorial-py](https://jeremykun.com/2016/07/05/zero-knowledge-proofs-a-primer/)
+- 
 
 ```python
 Python 3.6.6 (default, Sep 12 2018, 18:26:19) 
@@ -35,9 +36,9 @@ Type "help", "copyright", "credits" or "license" for more information.
 >>> def makePermutationFunction(L):
 ...     return lambda i : L[i-1] + 1
 ... 
->>> makePermutationFunction([0,1,2])
+>>> makePermutationFunction([0,1,2]) 
 <function makePermutationFunction.<locals>.<lambda> at 0x7fd4a98d60d0>
->>> def makeInversePermutationFunction(L):
+>>> def makeInversePermutationFunction(L): # just shift everything from the previous function to other Hand side and equation will become this. 
 ...     return lambda i: 1 + L.index(i-1)
 ... 
 >>> def applyIsomorphism(G, f):
