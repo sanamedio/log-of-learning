@@ -9,7 +9,6 @@ TODO : ~~debug~~ VSCode debugging mode is awesome.
 
 ```python
 import re
-import re
 
 class Lispi():
 
