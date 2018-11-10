@@ -5,7 +5,7 @@
 - Using python features, writing a lisp interpreter becomes easy
 - https://repl.it/talk/learn/PyLisp-LISP-in-Just-Over-100-Lines-of-Python/6712
 
-Note: the code is not working, need to fix it
+TODO : debug
 
 ```python
 import re
