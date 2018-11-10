@@ -172,6 +172,20 @@ if __name__ == '__main__':
     lisp.repl()
 ```
 
+Test run:
+```bash
+$ python3 /home/whishworks/ve/lispi.py
+%>> (define pi 3)
+3
+%>> (define square ( lambda (x) ( * x x ) ) )
+<function Lispi.eval.<locals>.<lambda> at 0x7f142c735ea0>
+%>> (define circle-area (lambda (r) ( * pi (square r))))
+<function Lispi.eval.<locals>.<lambda> at 0x7f142c6ff400>
+%>> (circle-area 10)
+300
+%>>
+```
+
 ### 8 - Checking if a function is Async or not
 
 ```python
