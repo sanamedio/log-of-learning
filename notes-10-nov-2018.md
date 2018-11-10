@@ -1,5 +1,51 @@
 # 10-nov-2018
 
+### 11 - Generating a random permutation and isomophiic mapping functions
+
+- Following Zero Knowledge proof tutorial [jeremy-zkp-tutorial-py](https://jeremykun.com/2016/07/05/zero-knowledge-proofs-a-primer/)
+
+```python
+Python 3.6.6 (default, Sep 12 2018, 18:26:19) 
+[GCC 8.0.1 20180414 (experimental) [trunk revision 259383]] on linux
+Type "help", "copyright", "credits" or "license" for more information.
+>>> import random
+>>> def randomPermutation(n):
+...     L = list(range(n))
+...     random.shuffle(L)
+...     return L
+... 
+>>> randomPermutation(1)
+[0]
+>>> randomPermutation(2)
+[1, 0]
+>>> randomPermutation(3)
+[2, 0, 1]
+>>> randomPermutation(4)
+[0, 1, 2, 3]
+>>> randomPermutation(5)
+[1, 2, 4, 3, 0]
+>>> randomPermutation(5)
+[0, 1, 4, 2, 3]
+>>> randomPermutation(5)
+[4, 3, 2, 0, 1]
+>>> randomPermutation(5)
+[3, 4, 2, 0, 1]
+>>> randomPermutation(5)
+[2, 1, 0, 3, 4]
+>>> def makePermutationFunction(L):
+...     return lambda i : L[i-1] + 1
+... 
+>>> makePermutationFunction([0,1,2])
+<function makePermutationFunction.<locals>.<lambda> at 0x7fd4a98d60d0>
+>>> def makeInversePermutationFunction(L):
+...     return lambda i: 1 + L.index(i-1)
+... 
+>>> def applyIsomorphism(G, f):
+...     return [(f(i), f(j)) for (i,j) in G ]
+... 
+>>> 
+```
+
 ### 10 - Hunting Traces by hunter module
 
 - it can set traces on modules, functions ,code etc.
