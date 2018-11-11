@@ -1,5 +1,26 @@
 # 11-nov-2018
 
+### 7 - Flask parameters
+
+```python
+from flask import request
+
+@app.route('/hello')
+def api_hello():
+    if 'name' in request.args:
+        return 'Hello ' + request.args['name']
+    else:
+        return 'Hello John Doe'
+```
+
+```
+GET /hello
+Hello John Doe
+
+GET /hello?name=Luis
+Hello Luis
+```
+
 ### 6 - Averaging and Summing decorators
 
 ```python
