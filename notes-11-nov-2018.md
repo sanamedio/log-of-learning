@@ -1,5 +1,50 @@
 # 11-nov-2018
 
+### 6 - Averaging and Summing decorators
+
+```python
+import functools
+
+
+def summed(f):
+    return lambda *x : sum(f(*x))
+
+
+def averaged(f):
+    def aux(acc,x):
+        return ( acc[0] + x , acc[1] + 1)
+
+    def out(*x):
+        s, n = functools.reduce(aux , f(*x), (0,0))
+        return s/ n if n > 0 else 0
+
+
+    return out
+
+
+
+
+@averaged
+def producer2():
+    yield 10
+    yield 5
+    yield 2.5
+    yield 7.5
+
+
+assert producer2() == (10 + 5 + 2.5 + 7.5) / 4
+
+@summed
+def producer1():
+    yield 10
+    yield 5
+    yield 2.5
+    yield 7.5
+
+assert producer1() == (10 + 5 + 2.5 + 7.5)
+```
+
+
 ### 5 - Adding a method to a instance using decorator
 
 ```python
