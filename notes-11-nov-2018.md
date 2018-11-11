@@ -1,5 +1,23 @@
 # 11-nov-2018
 
+### 10 - Flask Response
+
+```python
+from flask import Response
+
+@app.route('/hello', methods = ['GET'])
+def api_hello():
+    data = {
+        'hello'  : 'world',
+        'number' : 3
+    }
+    js = json.dumps(data)
+
+    resp = Response(js, status=200, mimetype='application/json')
+
+    return resp
+```
+
 ### 9 - Flask Request Data and Headers
 
 - Flask examples are from [this](http://blog.luisrei.com/articles/flaskrest.html)
