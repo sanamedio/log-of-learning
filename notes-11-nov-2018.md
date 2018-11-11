@@ -1,5 +1,35 @@
 # 11-nov-2018
 
+### 5 - Adding a method to a instance using decorator
+
+```python
+def addto(instance):
+    def decorator(f):
+        import types
+        f =  types.MethodType(f , instance)
+        setattr(instance, f.__name__, f)
+        return f
+    return decorator
+
+
+
+#example
+
+
+class Foo:
+    def __init__(self):
+        self.x = 42
+
+foo = Foo()
+
+@addto(foo)
+def print_x(self):
+    print (self.x)
+
+
+foo.print_x()
+```
+
 ### 4 - Writing your own debug decorator
 
 - https://wiki.python.org/moin/PythonDecoratorLibrary
