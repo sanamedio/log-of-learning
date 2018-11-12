@@ -1,5 +1,17 @@
 # 12-nov-2018
 
+### 5 - Self or call it anything, doesnt matter
+
+```python
+In [29]: class Test: 
+    ...:     def __init__(elf, x ): 
+    ...:         elf.x = x 
+    ...:                                                                                                                                                                                                           
+
+In [30]: Test(2)                                                                                                                                                                                                   
+Out[30]: <__main__.Test at 0x7f46bf6016d8>
+```
+
 ### 4 - Numpy reshaping
 
 ```python
