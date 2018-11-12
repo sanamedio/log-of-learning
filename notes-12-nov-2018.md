@@ -1,5 +1,40 @@
 # 12-nov-2018
 
+### 7 - Code from numpy quickstart
+
+```python
+In [1]: import numpy as np                                                                                                                                                                                         
+
+In [2]: a = np.arange(15).reshape(3,5)                                                                                                                                                                             
+
+In [3]: a                                                                                                                                                                                                          
+Out[3]: 
+array([[ 0,  1,  2,  3,  4],
+       [ 5,  6,  7,  8,  9],
+       [10, 11, 12, 13, 14]])
+
+In [4]: a.shape                                                                                                                                                                                                    
+Out[4]: (3, 5)
+
+In [5]: a.ndim                                                                                                                                                                                                     
+Out[5]: 2
+
+In [6]: a.dtype.name                                                                                                                                                                                               
+Out[6]: 'int64'
+
+In [7]: a.size                                                                                                                                                                                                     
+Out[7]: 15
+
+In [8]: type(a)                                                                                                                                                                                                    
+Out[8]: numpy.ndarray
+
+In [9]: b = np.array([1,2,34,5])                                                                                                                                                                                   
+
+In [10]: type(b)                                                                                                                                                                                                   
+Out[10]: numpy.ndarray
+
+```
+
 ### 6 - Difference between cls and self
 
 ```python
