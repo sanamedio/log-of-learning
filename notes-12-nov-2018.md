@@ -34,6 +34,26 @@ In [10]: type(b)
 Out[10]: numpy.ndarray
 
 ```
+```python
+In [9]: b = np.array([1,2,34,5])                                                                                                                                                                                   
+
+In [10]: type(b)                                                                                                                                                                                                   
+Out[10]: numpy.ndarray
+
+In [11]: a = np.array([2,3,4])                                                                                                                                                                                     
+
+In [12]: a                                                                                                                                                                                                         
+Out[12]: array([2, 3, 4])
+
+In [13]: a.dtype                                                                                                                                                                                                   
+Out[13]: dtype('int64')
+
+In [14]: b = np.array([1.2, 3.5, 5.1] )                                                                                                                                                                            
+
+In [15]: b.dtype                                                                                                                                                                                                   
+Out[15]: dtype('float64')
+```
+
 
 ### 6 - Difference between cls and self
 
