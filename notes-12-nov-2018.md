@@ -1,5 +1,20 @@
 # 12-nov-2018
 
+### 4 - Numpy reshaping
+
+```python
+In [1]: import numpy                                                                                                                                                                                               
+
+In [2]: numpy.arange(15)                                                                                                                                                                                           
+Out[2]: array([ 0,  1,  2,  3,  4,  5,  6,  7,  8,  9, 10, 11, 12, 13, 14])
+
+In [3]: numpy.arange(15).reshape(3,5)                                                                                                                                                                              
+Out[3]: 
+array([[ 0,  1,  2,  3,  4],
+       [ 5,  6,  7,  8,  9],
+       [10, 11, 12, 13, 14]])
+```
+
 ### 3 - @total_ordering to do less work
 
 - no need to implement all of the comparators
