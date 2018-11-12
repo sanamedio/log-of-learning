@@ -1,5 +1,27 @@
 # 12-nov-2018
 
+### 6 - Difference between cls and self
+
+```python
+
+In [36]: class Test: 
+    ...:     def __new__(cls): 
+    ...:         print(cls) 
+    ...:                                                                                                                                                                                                           
+
+In [37]: Test()                                                                                                                                                                                                    
+<class '__main__.Test'>
+
+In [38]: class Test: 
+    ...:     def __init__(self): 
+    ...:         print(self) 
+    ...:                                                                                                                                                                                                           
+
+In [39]: Test()                                                                                                                                                                                                    
+<__main__.Test object at 0x7f46bf69e470>
+Out[39]: <__main__.Test at 0x7f46bf69e470>
+```
+
 ### 5 - Self or call it anything, doesnt matter
 
 ```python
