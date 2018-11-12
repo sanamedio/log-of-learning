@@ -1,5 +1,28 @@
 # 12-nov-2018
 
+### 9 - Autoshaping
+
+```python
+In [64]: a = np.arange(30)                                                                                                                                                                                         
+
+In [67]: a.shape = 2, -1 , 3 # -1 means whatever is convinient sort of                                                                                                                                                                                      
+
+In [68]: a                                                                                                                                                                                                         
+Out[68]: 
+array([[[ 0,  1,  2],
+        [ 3,  4,  5],
+        [ 6,  7,  8],
+        [ 9, 10, 11],
+        [12, 13, 14]],
+
+       [[15, 16, 17],
+        [18, 19, 20],
+        [21, 22, 23],
+        [24, 25, 26],
+        [27, 28, 29]]])
+```
+
+
 ### 8 - Histogram plot of normal distribution
 
 ```python
