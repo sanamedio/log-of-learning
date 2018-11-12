@@ -1,5 +1,100 @@
 # 12-nov-2018
 
+### 10 - Top down recursive parsing
+
+- Just handles the priority of operators
+- While the next tokens priority is higher, keep delegating computation to another recusive compute(), otherwise break and return yourself. Each compute frame in recursion will handle a level of priority and once it returns the previous level of compute() will continue processing.
+
+```python
+import re
+token_regex = re.compile("\s*(?:(\d+)|(.))")
+
+#simple
+class literal_token:
+    def __init__(self, value):
+        self.value = int(value)
+    def get_value(self):
+        return self.value
+
+
+class operator_add_token:
+    priority = 10
+    def action(self, current):
+        return current + calculate(10)
+
+
+class operator_sub_token:
+    priority = 10
+    def action(self, current):
+        return current - calculate(10)
+
+class operator_mul_token:
+    priority = 20
+    def action(self, current):
+        return current * calculate(20)
+
+class operator_div_token:
+    priority = 20
+    def action(self, current):
+        return current / calculate(20)
+
+
+class end_token:
+    priority = 0
+
+
+#initial priority is zero, every positive >0 priority action will finish
+def calculate(current_priority=0):
+    
+    print 'calculate ' + str(current_priority)
+    
+    global token
+    
+    current = token
+    result = current.get_value()
+    
+    token = next_token()
+    
+    while current_priority < token.priority: # if equal priority or more is found it will break the loop which means just send back results, otherwise keep delegating action to the next part of expression
+        print current_priority, ' : ' , token.__class__, token.priority
+        current = token
+        token = next_token()
+        print '>> prev_result' , current.__class__ , result
+        result = current.action(result)
+        print '>> result' , result
+    return result
+
+def tokenize(program):
+    for number, operator in token_regex.findall(program):
+        if number:
+            yield literal_token(number)
+        elif operator == "+":
+            yield operator_add_token()
+        elif operator == "-":
+            yield operator_sub_token()
+        elif operator == "*":
+            yield operator_mul_token()
+        elif operator == "/":
+            yield operator_div_token()
+        else:
+            raise SyntaxError("unknown operator")
+    yield end_token()
+
+
+def parse(program):
+    print(program)
+    global token, next_token
+    next_token = tokenize(program).next
+    token = next_token()
+    return calculate(0)
+
+
+if __name__ == '__main__':
+    import sys
+    print(parse(sys.argv[1]))
+```
+
+
 ### 9 - Autoshaping
 
 ```python
