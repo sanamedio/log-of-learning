@@ -53,7 +53,21 @@ In [14]: b = np.array([1.2, 3.5, 5.1] )
 In [15]: b.dtype                                                                                                                                                                                                   
 Out[15]: dtype('float64')
 ```
+```python
+In [17]: b = np.array( [ [1,2] , [3,4] ] )                                                                                                                                                                         
 
+In [18]: b                                                                                                                                                                                                         
+Out[18]: 
+array([[1, 2],
+       [3, 4]])
+
+In [19]: b = np.array( [ (1,2)  , (3,4) ] )                                                                                                                                                                        
+
+In [20]: b                                                                                                                                                                                                         
+Out[20]: 
+array([[1, 2],
+       [3, 4]])
+```
 
 ### 6 - Difference between cls and self
 
