@@ -1,5 +1,10 @@
 # 12-nov-2018
 
+### 2 - dir() and dunder dict
+
+- dir() doesn't just look up an object's ```__dict__``` (which sometimes doesn't even exist), it will use the object's heritage (its class or type, and any superclasses, or parents, of that class or type) to give you a complete picture of all available attributes.
+
+- An instance ```__dict__``` is just the 'local' set of attributes on that instance, and does not contain every attribute available on the instance. Instead, you need to look at the class and the class's inheritance tree too.
 
 ### 1 - Async decorator
 
