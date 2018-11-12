@@ -1,5 +1,59 @@
 # 12-nov-2018
 
+### 3 - @total_ordering to do less work
+
+- no need to implement all of the comparators
+
+```python
+from functools import total_ordering
+
+@total_ordering
+class Account:
+
+
+    def __init__(self, owner, amount=0):
+        self.owner = owner
+        self.amount = amount
+        self._transactions = []
+
+    def __repr__(self):
+        return 'Account({}, {})'.format(self.owner, self.amount)
+
+    def __str__(self):
+        return 'Account of {} with starting amount : {}'.format(self.owner, self.amount)
+
+    def add_transaction(self, amount):
+        if not isinstance(amount , int ):
+            raise ValueError('please use int for amount')
+        self._transactions.append(amount)
+
+    @property
+    def balance(self):
+        return self.amount + sum(self._transactions)
+
+    def __eq__(self, other):
+        return self.balance == other.balance
+
+    def __lt__(self, other):
+        return self.balance < other.balance
+
+
+
+acc = Account('gigs',10)
+
+
+acc2 = Account('loki', 100)
+acc2.add_transaction(20)
+acc2.add_transaction(30)
+
+
+print(acc.balance)
+print(acc2.balance)
+
+
+print ( acc2 > acc)
+```
+
 ### 2 - dir() and dunder dict
 
 - dir() doesn't just look up an object's ```__dict__``` (which sometimes doesn't even exist), it will use the object's heritage (its class or type, and any superclasses, or parents, of that class or type) to give you a complete picture of all available attributes.
