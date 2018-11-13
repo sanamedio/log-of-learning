@@ -18,6 +18,25 @@ Type "help", "copyright", "credits" or "license" for more information.
 >>> 
 ```
 
+```python
+Python 3.6.6 (default, Sep 12 2018, 18:26:19) 
+[GCC 8.0.1 20180414 (experimental) [trunk revision 259383]] on linux
+Type "help", "copyright", "credits" or "license" for more information.
+>>> import requests
+>>> from stem import Signal
+>>> from stem.control import Controller
+>>> response = requests.get('http://icanhazip.com/', proxies={'http' : '127.0.0.1:8118' } )
+>>> response.text.strip()
+'204.85.191.30'
+>>> with Controller.from_port(port=9051) as controller:
+...     controller.authenticate(password='mypassword')
+...     controller.signal(Signal.NEWNYM)
+... 
+>>> response = requests.get('http://icanhazip.com/' , proxies= {'http' : '127.0.0.1:8118' } )
+>>> response.text.strip()
+'66.70.217.179'
+>>> 
+```
 
 
 ### 2 - Plotly offline with Jupyter tutorial
