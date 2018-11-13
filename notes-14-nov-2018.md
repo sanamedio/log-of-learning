@@ -1,5 +1,16 @@
 # 14-nov-2018
 
+### 3 - SHA256 for subsequent bytes
+
+```python
+>>> hashlib.sha256(b'1').hexdigest()
+'6b86b273ff34fce19d6b804eff5a3f5747ada4eaa22f1d49c01e52ddb7875b4b'
+>>> hashlib.sha256(b'2').hexdigest()
+'d4735e3a265e16eee03f59718b9b5d03019c07d8b6c51f90da3a666eec13ab35'
+>>> hashlib.sha256(b'3').hexdigest()
+'4e07408562bedb8b60ce05c1decfe3ad16b72230967de01f640b7e4729b49fce'
+```
+
 ### 2 - Dunder import 
 
 ```python
