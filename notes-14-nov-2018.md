@@ -1,5 +1,30 @@
 # 14-nov-2018
 
+### 5 - Newton Raphson
+
+```python
+H = 1e-5
+
+def derivative(f,x): return (f(x+H) - f(x))/H
+def newton(f, x): return x - ( f(x) / derivative(f,x))
+def runner(f,n): 
+    x = 0
+    itr = 0
+    while itr < n:
+        x = newton(f,1) if itr == 0 else newton(f,x)
+        itr = itr + 1
+    return x
+
+if __name__ == '__main__':
+    import sys 
+    print( runner( lambda x: eval(sys.argv[1]) , 100) )
+```
+
+```bash
+python newton.py x*x-2
+```
+
+
 ### 4 - Smallest Number in python
 
 ```python
