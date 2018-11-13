@@ -6,7 +6,45 @@
 - ngrok exposes local ports to public IPs through the central ngrok server
 - Tor can work behind the firewall
 - How to reach to ngrok through a tor connection ?
+- We can configure python to use the privproxy which is in turn using tor. But how to make tor make request there?
+- Okay, it respects http_proxy env variable, so directly it can be passed. ( need to test)
+- How to write a service like ngrok?
+  - Need a publically exposed system
+  - That system will accept connections and redirect them on random ports
+- How to write something like Tor?
+  - How tor works?
+    - Multiple layers of encryption
+    - Multiple nodes running the application
+    - Bouncing of data between nodes
+    - Establish a chain of nodes, and use it for sommetime. 
+      - Where to store information about chain? Who will know the chain?
+      - Does it mean every packet which gets initiated, contains data about all the nodes on the circuit?
+      - Does it mean that information of Tor nodes is available to the tor browser?
+      - Does it really matter if tor nodes become public known?
+        - I think it doesn't work in that way
+      - It will help to write a simple network simulator in python
 
+```python
+## Just trying my thinking, but what it means to write a Network simulator?
+class NetworkNode:
+       
+       def __init__(self,ip,mac_adddress):
+              self.ip = ip
+              self.mac_address = mac_address
+       
+       def send_data_by_ip(self, target_ip):
+              '''sends data to target_ip'''
+              pass
+       
+       def send_data_by_mac(self, target_mac_address):
+              '''sends data to target_mac_address'''
+              pass
+       
+       def receive_data(self):
+              '''reads one packet and returns that'''
+              pass
+       
+```
 
 ### 3 - Tor using python
 
