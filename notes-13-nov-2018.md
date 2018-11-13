@@ -1,5 +1,13 @@
 # 13-nov-2018
 
+
+### 4 - How to connect to ngrok when firewall is interfering?
+
+- ngrok exposes local ports to public IPs through the central ngrok server
+- Tor can work behind the firewall
+- How to reach to ngrok through a tor connection ?
+
+
 ### 3 - Tor using python
 
 - https://gist.github.com/DusanMadar/8d11026b7ce0bce6a67f7dd87b999f6b
