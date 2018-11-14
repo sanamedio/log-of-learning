@@ -1,5 +1,39 @@
 # 14-nov-2018
 
+### 6 - Sympy
+
+```python
+>>> from sympy import *
+>>> x , y , z = symbols('x y z')
+>>> x
+x
+>>> y
+y
+>>> z
+z
+>>> expr = cos(x) + 1
+>>> expr.subs(x,y)
+cos(y) + 1
+>>> expr.subs(x, 0)
+2
+>>> expr.subs(y, 0)
+cos(x) + 1
+>>> expand_
+expand_complex(      expand_log(          expand_multinomial(  expand_power_exp(    
+expand_func(         expand_mul(          expand_power_base(   expand_trig(         
+>>> expand_func((x+y)**2)
+(x + y)**2
+>>> expand_func((x+y)**2)
+(x + y)**2
+>>> symplify("(x+y)**2")
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'symplify' is not defined
+>>> sympify("(x+y)**2")
+(x + y)**2
+>>> 
+```
+
 ### 5 - Newton Raphson
 
 ```python
