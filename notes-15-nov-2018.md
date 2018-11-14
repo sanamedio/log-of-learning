@@ -1,5 +1,28 @@
 # 15-nov-2018
 
+### 2 - Seemingly weird
+
+```python
+Python 3.6.6 (default, Sep 12 2018, 18:26:19) 
+[GCC 8.0.1 20180414 (experimental) [trunk revision 259383]] on linux
+Type "help", "copyright", "credits" or "license" for more information.
+>>> a = 1
+>>> def Foo(a):
+...     a = 2
+... 
+>>> Foo(a)
+>>> a
+1
+>>> b = []
+>>> def Foo(b):
+...     b.append(1)
+... 
+>>> Foo(b)
+>>> b
+[1]
+>>> 
+```
+
 ### 1 - Some tricks with list,set and maps
 
 - from [here](https://github.com/taizilongxu/interview_python)
