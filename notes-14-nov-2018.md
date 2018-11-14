@@ -1,5 +1,48 @@
 # 14-nov-2018
 
+### 12 - Greenlet select
+
+- Select allows to timeout, which I guess is the minimum timeout ( doesnt mean necessarily you will get the processing time after that ).
+- Select applies on the current greenlet only.
+
+```python
+import time
+import gevent
+from gevent import select
+
+
+start = time.time()
+tic = lambda: 'at %1.1f seconds' % ( time.time() - start)
+
+
+def gr1():
+    print('Started POlling :%s' % tic())
+    select.select([] , [] , [] , 2 )
+    print('Ended polling : %s' %tic())
+
+
+
+def gr2():
+    print('Start polling:%s' %tic())
+    select.select([], [] , [] , 2 )
+    print( ' Ending polling : %s' % tic())
+
+
+
+def gr3():
+    print("hey lets do some stuff while the greenlets poll, %s" % tic())
+    gevent.sleep(1)
+
+
+gevent.joinall([
+    gevent.spawn(gr1),
+    gevent.spawn(gr2),
+    gevent.spawn(gr3),
+])
+
+```
+
+
 ### 11 - Concurrency using gevent
 
 - Gevent makes it easier to do cooperative yield style concurrency between different parts of code
