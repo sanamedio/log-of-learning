@@ -319,7 +319,7 @@ if __name__ == '__main__':
 
 Test run:
 ```bash
-$ python3 /home/whishworks/ve/lispi.py
+$ python3 lispi.py
 %>> (define pi 3)
 3
 %>> (define square ( lambda (x) ( * x x ) ) )
