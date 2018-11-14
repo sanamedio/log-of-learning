@@ -1,5 +1,32 @@
 # 14-nov-2018
 
+### 11 - Concurrency using gevent
+
+- Gevent makes it easier to do cooperative yield style concurrency between different parts of code
+- It is built on top of greenlet: Only one greenlet is ever running at any given time.
+
+```python
+import gevent
+
+
+def foo():
+    print('Running in foo')
+    gevent.sleep(0) #forcing yield
+    print('Explicit context switch to foo again')
+    
+def bar():
+    print('Explicit context switch to bar')
+    gevent.sleep(0)
+    print('Implicit context switch back to bar')
+
+gevent.joinall([
+    gevent.spawn(foo),
+    gevent.spawn(bar)
+    ])
+```
+- Why the order of adding the functions in gevent joinall, impacts the order of execution of steps ? Is it because we are spawning the first one few steps earlier(in the interpreter) than the second one and since python interpreter is kind of single threaded ; 
+
+
 ### 10 - event driven network programming using Twisted
 
 - Echo server
