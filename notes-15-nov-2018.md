@@ -1,5 +1,33 @@
 # 15-nov-2018
 
+### 3 - method types example
+
+```python
+def foo(x):
+    print "executing foo(%s)"%(x)
+
+class A():
+    def foo(self,x):
+        print( "executing foo(%s,%s)"%(self,x))
+
+    @classmethod
+    def class_foo(cls,x):
+        print( "executing class_foo(%s,%s)"%(cls,x))
+
+    @staticmethod
+    def static_foo(x):
+        print( "executing static_foo(%s)"%x)
+
+a=A()
+
+a.foo('bar')
+A.class_foo('bar')
+A.static_foo('bar')
+foo('bar')
+```
+
+- static method don't have access to cls
+
 ### 2 - Seemingly weird
 
 - Immutables and Mutables can behave quite differently
@@ -25,6 +53,9 @@ Type "help", "copyright", "credits" or "license" for more information.
 [1]
 >>> 
 ```
+
+
+
 - https://stackoverflow.com/questions/633127/viewing-all-defined-variables
 
 ```python
