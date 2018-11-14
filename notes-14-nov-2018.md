@@ -99,6 +99,29 @@ Type "help", "copyright", "credits" or "license" for more information.
 >>> pyglet.app.run()
 ```
 
+```python
+import pyglet
+
+window = pyglet.window.Window()
+
+@window.event
+def on_key_press(symbol, modifiers):
+    print('A key was pressed' , symbol , modifiers)
+
+@window.event
+def on_draw():
+    window.clear()
+
+@window.event
+def on_mouse_press(x,y,button, modifiers):
+    print('The  mouse button '  , x , y , button, modifiers)
+
+# this logs all the events
+#window.push_handlers(pyglet.window.event.WindowEventLogger())
+
+pyglet.app.run()
+```
+
 ### 6 - Sympy
 
 ```python
