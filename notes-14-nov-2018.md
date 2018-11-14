@@ -1,5 +1,27 @@
 # 14-nov-2018
 
+### 10 - event driven network programming using Twisted
+
+- Echo server
+```python
+from twisted.internet import protocol, reactor, endpoints
+
+
+class Echo(protocol.Protocol):
+    def dataReceived(self, data):
+        self.transport.write(data)
+
+class EchoFactory(protocol.Factory):
+    def buildProtocol(self, addr):
+        return Echo()
+
+
+# starts tcp server at 1234 , can be tested with netcat
+endpoints.serverFromString(reactor, "tcp:1234").listen(EchoFactory())
+
+reactor.run()
+```
+
 ### 9 - sys.getsizeof for int, byteobject, string
 
 ```python
