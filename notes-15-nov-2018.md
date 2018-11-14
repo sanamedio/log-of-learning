@@ -23,6 +23,8 @@ Type "help", "copyright", "credits" or "license" for more information.
 >>> 
 ```
 
+- https://stackoverflow.com/questions/633127/viewing-all-defined-variables
+
 ### 1 - Some tricks with list,set and maps
 
 - from [here](https://github.com/taizilongxu/interview_python)
