@@ -1,5 +1,47 @@
 # 15-nov-2018
 
+### 5 - Multiple inheritence differs between 2 and 3
+
+```python
+
+Python3 : 
+In [6]: class A(): 
+   ...:     def foo1(self): 
+   ...:         print( "A") 
+   ...: class B(A): 
+   ...:     def foo2(self): 
+   ...:         pass 
+   ...: class C(A): 
+   ...:     def foo1(self): 
+   ...:         print( "C" ) 
+   ...: class D(B, C): 
+   ...:     pass 
+   ...:  
+   ...: d = D() 
+   ...: d.foo1()                                                                
+C
+```
+
+Python2 :
+```python
+In [2]: class A():
+   ...:     def foo1(self):
+   ...:         print "A"
+   ...: class B(A):
+   ...:     def foo2(self):
+   ...:         pass
+   ...: class C(A):
+   ...:     def foo1(self):
+   ...:         print "C"
+   ...: class D(B, C):
+   ...:     pass
+   ...: 
+   ...: d = D()
+   ...: d.foo1()
+   ...: 
+A
+```
+
 ### 4 - Class variable
 
 ```python
