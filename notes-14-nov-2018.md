@@ -117,6 +117,8 @@ NameError: name 'symplify' is not defined
 
 ### 5 - Newton Raphson
 
+- https://en.wikipedia.org/wiki/Newton%27s_method
+
 ```python
 H = 1e-5
 
