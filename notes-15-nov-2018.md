@@ -1,5 +1,21 @@
 # 15-nov-2018
 
+### 7 - Using partials
+
+```python
+In [21]: def derivAt(f, x, dx): 
+    ...:     return (f(x+dx) - f(x))/dx 
+    ...:                                                                        
+
+In [22]: def deriv(f,dx): 
+    ...:     def d(x): 
+    ...:         return derivAt(f,x,dx) 
+    ...:     return d 
+    ...:                                                                        
+
+In [23]: derivOfSquare(square, 0.00001) #returns a function with predefined function and h value   
+```
+
 ### 6 - Write your own square root function
 
 ```python
