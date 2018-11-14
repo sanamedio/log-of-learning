@@ -24,6 +24,38 @@ gevent.joinall([
     gevent.spawn(bar)
     ])
 ```
+
+Same thing with decorator(just for sake of it)
+```python
+import gevent
+
+
+def logger(f):
+    def inner():
+        print( '>> ' , f.__name__)
+        r = f()
+        print( '<< ' , f.__name__)
+        return r
+    return inner
+
+
+@logger
+def foo():
+    gevent.sleep(0)
+
+
+@logger
+def bar():
+    gevent.sleep(0)
+
+
+
+gevent.joinall([
+    gevent.spawn(foo),
+    gevent.spawn(bar)
+    ])
+```
+
 - Why the order of adding the functions in gevent joinall, impacts the order of execution of steps ? Is it because we are spawning the first one few steps earlier(in the interpreter) than the second one and since python interpreter is kind of single threaded ; 
 
 
