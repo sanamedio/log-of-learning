@@ -1,5 +1,17 @@
 # 14-nov-2018
 
+### 15 - Gevents spawns greenlets
+
+```python
+Python 3.6.6 (default, Sep 12 2018, 18:26:19) 
+[GCC 8.0.1 20180414 (experimental) [trunk revision 259383]] on linux
+Type "help", "copyright", "credits" or "license" for more information.
+>>> import gevent
+>>> gevent.spawn(lambda : "hello" , 1,2,3)
+<Greenlet "Greenlet-0" at 0x7fa104924c48: <lambda>(1, 2, 3)>
+```
+- greenlets are deterministic.
+
 ### 14 - Speeding up parallel requests using gevents
 
 ```python
