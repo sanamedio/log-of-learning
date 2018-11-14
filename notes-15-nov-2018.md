@@ -15,6 +15,14 @@ In [22]: def deriv(f,dx):
 
 In [23]: derivOfSquare(square, 0.00001) #returns a function with predefined function and h value   
 ```
+```python
+
+In [27]: def deriv(f,dx): 
+    ...:     return lambda x : derivAt(f,x,dx) 
+    ...:     
+In [30]: derivOfSquare= deriv( lambda x: x*x , 0.0001) 
+```
+
 
 ### 6 - Write your own square root function
 
