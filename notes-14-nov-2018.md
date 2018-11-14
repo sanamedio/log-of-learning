@@ -6,6 +6,18 @@
 ```python
 import gevent
 import random
+import time
+from functools import wraps
+
+def timethis(func):
+    @wraps(func)
+    def wrapper(*args, **kwargs):
+        start = time.perf_counter()
+        r = func(*args, **kwargs)
+        end = time.perf_counter()
+        print('{}.{} : {}'.format(func.__module__, func.__name__, end-start))
+        return r
+    return wrapper
 
 
 def task(pid):
@@ -13,13 +25,19 @@ def task(pid):
     gevent.sleep(random.randint(0,2)*0.001)
     print("task %s done" % pid)
 
+
+@timethis
 def synchronous():
     for i in range(1,10):
         task(i)
 
+
+@timethis
 def asynchronous():
     threads = [ gevent.spawn(task, i ) for i in range(10)] #only instances are created not run
     gevent.joinall(threads) # what is I don't join ? this is necessary because it starts the tread instances
+
+
 
 print ("Synchronous")
 
@@ -28,6 +46,8 @@ synchronous()
 print ("Async")
 asynchronous()
 ```
+
+
 output:
 ```
 Synchronous
@@ -40,19 +60,22 @@ task 6 done
 task 7 done
 task 8 done
 task 9 done
+__main__.synchronous : 0.011868374000187032
 Async
 task 0 done
 task 1 done
-task 7 done
 task 3 done
-task 5 done
 task 6 done
+task 7 done
+task 9 done
 task 2 done
 task 4 done
+task 5 done
 task 8 done
-task 9 done
+__main__.asynchronous : 0.0031379409920191392
 ```
-
+- notice that the async is faster than sync
+- also, that its not time.sleep but gevent.sleep
 
 ### 12 - Greenlet select
 
