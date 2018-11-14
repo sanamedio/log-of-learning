@@ -1,5 +1,65 @@
 # 14-nov-2018
 
+### 8 - SQLAlchemy simple example
+
+- Object mapping to database
+```python
+import os,sys
+from sqlalchemy import Column, ForeignKey, Integer, String
+from sqlalchemy.ext.declarative import declarative_base
+from sqlalchemy.orm import relationship, sessionmaker
+from sqlalchemy import create_engine
+
+Base = declarative_base()
+
+
+class Person(Base):
+
+    __tablename__ = 'person'
+
+    person_id = Column(Integer, primary_key = True)
+    person_name = Column(String(250), nullable = False)
+
+
+class Address(Base):
+    __tablename__ = 'address'
+    
+    id_ = Column(Integer, primary_key=True)
+    street_name = Column(String(250))
+    street_number = Column(String(250))
+    post_code = Column(String(250), nullable=False)
+    person_id = Column(Integer, ForeignKey('person.person_id'))
+    person = relationship(Person)
+
+engine = create_engine('sqlite:///sqlalchemy_example.db')
+
+Base.metadata.create_all(engine)
+
+
+Base.metadata.bind = engine
+
+DBSession = sessionmaker(bind=engine)
+
+session = DBSession()
+
+new_person = Person(person_name='new person')
+session.add(new_person)
+session.commit()
+
+
+new_address = Address(post_code='0001' , person=new_person)
+session.add(new_address)
+session.commit()
+
+
+print(session.query(Person).all())
+
+
+person = session.query(Person).first()
+print(person.person_name)
+```
+
+
 ### 7 - Pyglet multimedia library Hello World
 
 ```python
