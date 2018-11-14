@@ -1,5 +1,42 @@
 # 15-nov-2018
 
+### 6 - Write your own square root function
+
+```python
+
+In [12]:  
+    ...: def sqroot(n , eps ,mx): 
+    ...:    x = 1.0 
+    ...:    itr = 0 
+    ...:    while abs( x*x - n ) > eps and itr < mx: 
+    ...:       x = x - (x*x-n)/2*x 
+    ...:       itr = itr + 1 
+    ...:    return x 
+    ...:     
+    ...:     
+    ...:     
+    ...:                                                                        
+
+In [13]: sqroot(2,0.0001, 10)                                                   
+Out[13]: 1.3351578377717581
+
+In [14]: sqroot(2,0.0001, 100)                                                  
+Out[14]: 1.3801553432658384
+
+In [15]: sqroot(2,0.0001, 1000)                                                 
+Out[15]: 1.403003973690669
+
+In [16]: sqroot(2,0.0001, 10000)                                                
+Out[16]: 1.4106685607006662
+
+In [17]: sqroot(2,0.0001, 100000)                                               
+Out[17]: 1.4130943389174646
+
+In [18]: sqroot(2,0.0001, 10000000)                                             
+Out[18]: 1.4141017458848133
+```
+   
+
 ### 5 - Multiple inheritence differs between 2 and 3
 
 ```python
