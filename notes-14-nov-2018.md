@@ -28,6 +28,31 @@ synchronous()
 print ("Async")
 asynchronous()
 ```
+output:
+```
+Synchronous
+task 1 done
+task 2 done
+task 3 done
+task 4 done
+task 5 done
+task 6 done
+task 7 done
+task 8 done
+task 9 done
+Async
+task 0 done
+task 1 done
+task 7 done
+task 3 done
+task 5 done
+task 6 done
+task 2 done
+task 4 done
+task 8 done
+task 9 done
+```
+
 
 ### 12 - Greenlet select
 
