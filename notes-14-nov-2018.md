@@ -1,5 +1,34 @@
 # 14-nov-2018
 
+
+### 13 - Random non-deterministic event scheduling with gevents
+
+```python
+import gevent
+import random
+
+
+def task(pid):
+    """ Some non-deterministic task like random wait"""
+    gevent.sleep(random.randint(0,2)*0.001)
+    print("task %s done" % pid)
+
+def synchronous():
+    for i in range(1,10):
+        task(i)
+
+def asynchronous():
+    threads = [ gevent.spawn(task, i ) for i in range(10)] #only instances are created not run
+    gevent.joinall(threads) # what is I don't join ? this is necessary because it starts the tread instances
+
+print ("Synchronous")
+
+synchronous()
+
+print ("Async")
+asynchronous()
+```
+
 ### 12 - Greenlet select
 
 - Select allows to timeout, which I guess is the minimum timeout ( doesnt mean necessarily you will get the processing time after that ).
