@@ -2,6 +2,9 @@
 
 ### 2 - Seemingly weird
 
+- Immutables and Mutables can behave quite differently
+- How can I combine id and python inspection capability to map state of python interpreter; to help me see scope changes and other stuff better?
+
 ```python
 Python 3.6.6 (default, Sep 12 2018, 18:26:19) 
 [GCC 8.0.1 20180414 (experimental) [trunk revision 259383]] on linux
@@ -22,8 +25,50 @@ Type "help", "copyright", "credits" or "license" for more information.
 [1]
 >>> 
 ```
-
 - https://stackoverflow.com/questions/633127/viewing-all-defined-variables
+
+```python
+>>> from pprint import pprint
+>>> pprint(vars())
+{'__annotations__': {},
+ '__builtins__': <module 'builtins' (built-in)>,
+ '__doc__': None,
+ '__loader__': <class '_frozen_importlib.BuiltinImporter'>,
+ '__name__': '__main__',
+ '__package__': None,
+ '__spec__': None,
+ 'pprint': <function pprint at 0x7f4c0e8b7598>}
+>>> pprint(dir())
+['__annotations__',
+ '__builtins__',
+ '__doc__',
+ '__loader__',
+ '__name__',
+ '__package__',
+ '__spec__',
+ 'pprint']
+>>> pprint(globals())
+{'__annotations__': {},
+ '__builtins__': <module 'builtins' (built-in)>,
+ '__doc__': None,
+ '__loader__': <class '_frozen_importlib.BuiltinImporter'>,
+ '__name__': '__main__',
+ '__package__': None,
+ '__spec__': None,
+ 'pprint': <function pprint at 0x7f4c0e8b7598>}
+>>> pprint(locals())
+{'__annotations__': {},
+ '__builtins__': <module 'builtins' (built-in)>,
+ '__doc__': None,
+ '__loader__': <class '_frozen_importlib.BuiltinImporter'>,
+ '__name__': '__main__',
+ '__package__': None,
+ '__spec__': None,
+ 'pprint': <function pprint at 0x7f4c0e8b7598>}
+>>> 
+```
+
+
 
 ### 1 - Some tricks with list,set and maps
 
