@@ -1,5 +1,42 @@
 # 14-nov-2018
 
+### 16 - Multiprocessing vs Gevents
+
+```python
+import time
+
+
+def echo(i):
+    time.sleep(0.001)
+    return i
+
+def check_runs(Pool):
+
+    p = Pool(10)
+
+    run1 = [ a for a in p.imap_unordered(echo, range(10))]
+    run2 = [ a for a in p.imap_unordered(echo, range(10))]
+    run3 = [ a for a in p.imap_unordered(echo, range(10))]
+    run4 = [ a for a in p.imap_unordered(echo, range(10))]
+
+    print( Pool.__module__,run1 == run2 == run3 == run4 )
+
+
+# dterminites
+from gevent.pool import Pool
+check_runs(Pool)
+
+
+# non deterministic
+from multiprocessing.pool import Pool
+check_runs(Pool)
+```
+outputs:
+```
+gevent.pool True
+multiprocessing.pool False
+```
+
 ### 15 - Gevents spawns greenlets
 
 - http://sdiehl.github.io/gevent-tutorial/
