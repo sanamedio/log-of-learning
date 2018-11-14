@@ -25,16 +25,9 @@ def timethis(f):
 
 def fetch(pid):
     response =urlopen('http://icanhazip.com')
-
     result = response.read()
-
-
     print("Process {}: {}  ".format(pid,result))
-
     return result
-
-
-
 
 @timethis
 def synchronous():
@@ -80,6 +73,8 @@ Process 2: Hello python
 Process 1: Hello python  
 __main__asynchronous : 0.5121218599961139
 ```
+
+- Usefulness of monkey patching 
 
 ### 13 - Random non-deterministic event scheduling with gevents
 
