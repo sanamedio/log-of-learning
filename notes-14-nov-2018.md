@@ -1,5 +1,23 @@
 # 14-nov-2018
 
+### 9 - sys.getsizeof for int, byteobject, string
+
+```python
+Python 3.6.6 (default, Sep 12 2018, 18:26:19) 
+[GCC 8.0.1 20180414 (experimental) [trunk revision 259383]] on linux
+Type "help", "copyright", "credits" or "license" for more information.
+>>> import sys
+>>> sys.getsizeof(1)
+28
+>>> sys.getsizeof('1')
+50
+>>> sys.getsizeof("1")
+50
+>>> sys.getsizeof(b'1')
+34
+>>> 
+```
+
 ### 8 - SQLAlchemy simple example
 
 - Object mapping to database
