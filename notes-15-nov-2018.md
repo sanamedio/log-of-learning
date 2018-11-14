@@ -35,3 +35,17 @@ dict_keys(['b', 'c', 'd', 'a'])
 ['b', 'c', 'd', 'a']
 >>> 
 ```
+- from keys
+```python
+>>> dict1={}.fromkeys(('x','y'),-1)
+>>> dict={'x':-1,'y':-1}
+>>> dict2={}.fromkeys(('x','y'))
+>>> dict2={'x':None, 'y':None}
+>>> dict
+{'x': -1, 'y': -1}
+>>> dict1
+{'x': -1, 'y': -1}
+>>> dict2
+{'x': None, 'y': None}
+>>> 
+```
