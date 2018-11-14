@@ -1,5 +1,85 @@
 # 14-nov-2018
 
+### 14 - Speeding up parallel requests using gevents
+
+```python
+import gevent.monkey
+gevent.monkey.patch_socket()
+
+
+import gevent
+from urllib.request import urlopen
+import simplejson as json
+import time
+
+def timethis(f):
+
+    def wrapper(*args, **kwargs):
+        start = time.perf_counter()
+        r = f(*args, **kwargs)
+        end = time.perf_counter()
+        print('{}{} : {}'.format( f.__module__, f.__name__ , end - start ))
+        return r
+    return wrapper
+
+
+def fetch(pid):
+    response =urlopen('http://icanhazip.com')
+
+    result = response.read()
+
+
+    print("Process {}: {}  ".format(pid,result))
+
+    return result
+
+
+
+
+@timethis
+def synchronous():
+    for i in range(1,10):
+        fetch(i)
+
+@timethis
+def asynchronous():
+    threads =  []
+    for i in range(1,10):
+        threads.append(gevent.spawn(fetch, i ))
+    gevent.joinall(threads)
+
+
+print("Synchrnous")
+synchronous()
+
+print("ASynchnorhous")
+asynchronous()
+```
+output :
+```
+Synchrnous
+Process 1: Hello python  
+Process 2: Hello python  
+Process 3: Hello python  
+Process 4: Hello python  
+Process 5: Hello python  
+Process 6: Hello python  
+Process 7: Hello python  
+Process 8: Hello python  
+Process 9: Hello python  
+__main__synchronous : 7.785602852003649
+ASynchnorhous
+Process 7: Hello python  
+Process 9: Hello python  
+Process 6: Hello python  
+Process 4: Hello python  
+Process 3: Hello python  
+Process 5: Hello python  
+Process 8: Hello python  
+Process 2: Hello python  
+Process 1: Hello python  
+__main__asynchronous : 0.5121218599961139
+```
 
 ### 13 - Random non-deterministic event scheduling with gevents
 
