@@ -1,5 +1,47 @@
 # 15-nov-2018
 
+### 15 - Gevent Group
+
+```python
+
+In [3]: def main(): 
+   ...:     import gevent 
+   ...:     from gevent.pool import Group 
+   ...:     def talk(msg): 
+   ...:         for i in range(3): 
+   ...:             print(msg) 
+   ...:     g1 = gevent.spawn(talk, 'bar') 
+   ...:     g2 = gevent.spawn(talk, 'foo') 
+   ...:     g3 = gevent.spawn(talk, 'bizz') 
+   ...:     group = Group() 
+   ...:     group.add(g1) 
+   ...:     group.add(g2) 
+   ...:     group.join() 
+   ...:     group.add(g3) 
+   ...:     group.join() 
+   ...:                                                                                               
+
+In [4]: main()                                                                                        
+bar
+bar
+bar
+foo
+foo
+foo
+bizz
+bizz
+bizz
+bar
+bar
+bar
+foo
+foo
+foo
+bizz
+bizz
+bizz
+```
+
 ### 14 - Gevent Queue
 
 - weird issues with python3 interpreter, not able to take in Queue , but worked well with ipython in pipenv
