@@ -13,7 +13,6 @@ class QuoteProtocol(protocol.Protocol):
 
     def __init__(self, factory):
         self.factory=  factory
-        self.factory.numConnection = 0
 
 
     def connectionMade(self):
@@ -39,6 +38,7 @@ class QuoteProtocol(protocol.Protocol):
 
 
 class QuoteFactory(Factory):
+    numConnection = 0 # it counts the number of open connections
 
     def __init__(self, quote=None):
         self.quote = quote or b"Truth never dies"
