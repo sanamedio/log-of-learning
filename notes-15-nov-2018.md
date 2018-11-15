@@ -1,5 +1,65 @@
 # 15-nov-2018
 
+### 13 - gevents Events, and AsynResult
+
+```python
+import gevent
+from gevent.event import Event
+
+evt = Event()
+
+def setter():
+    ''' after 3 seconsd wake all the threads, waiting on evt'''
+
+    print('A : wait, doin sumthin')
+    gevent.sleep(3)
+    print('DOne now!')
+    evt.set()
+
+def waiter():
+    print('Will wait for you bro')
+    evt.wait()
+    print('its about time')
+
+def main():
+    gevent.joinall([
+        gevent.spawn(setter),
+        gevent.spawn(waiter),
+        gevent.spawn(waiter),
+        gevent.spawn(waiter)
+        ])
+
+if __name__ == '__main__': main()
+```
+
+```python
+import gevent
+from gevent.event import AsyncResult
+a = AsyncResult()
+b = AsyncResult()
+c = AsyncResult()
+
+def setter():
+    gevent.sleep(3)
+
+    a.set('Hello!')
+    print(c.get())
+
+def waiter():
+    x = a.get()
+    b.set(x)
+
+def waiter2():
+    print(b.get())
+    c.set('World')
+
+gevent.joinall([
+    gevent.spawn(setter),
+    gevent.spawn(waiter),
+    gevent.spawn(waiter2)
+])
+```
+
 ### 12 - Monkey patching with gevents
 
 ```python
