@@ -3,7 +3,7 @@
 ### 3 - Rotation of 2d matrix
 
 ```python
-clockwise = zip(*orignal[::-1])
+clockwise = zip(*original[::-1])
 c_clockwise = zip(*original)[::-1]
 ```
 
