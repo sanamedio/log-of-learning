@@ -1,5 +1,47 @@
 # 15-nov-2018
 
+### 9 - exceptions in greenlets
+
+- stacktrace is stopped inside greenlet themselves
+
+```python
+import gevent
+
+def win():
+    return 'you win'
+
+def fail():
+    raise Exception('You fail at failing')
+
+
+winner = gevent.spawn(win)
+loser = gevent.spawn(fail)
+
+print(winner.started) 
+print(loser.started)
+
+try:
+    gevent.joinall([winner, loser])
+except Exception as e:
+    #exceptions raised in greenlets stay inside greenlets? why?
+    # that's why it won't reach here!
+    print('This will never be reached')
+
+
+print(winner.value)
+print(loser.value)
+
+print(winner.ready())
+print(loser.ready())
+
+print(winner.successful())
+print(loser.successful())
+
+print(loser.exception)
+
+print(loser.get())
+```
+
 ### 8 - Creating Greenlets for gevent
 
 ```python
