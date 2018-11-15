@@ -1,5 +1,60 @@
 # 15-nov-2018
 
+
+### 16 - Twisted Echo Client server
+
+- Twisted has nice event driven style of handling protocols
+
+
+client.py:
+```python
+from twisted.internet import protocol, reactor
+
+
+class Client(protocol.Protocol):
+    def connectionMade(self):
+        self.transport.write(b"Hello ,world!")
+
+    def dataReceived(self,data):
+        print("Server said:", data)
+        self.transport.loseConnection()
+
+
+class ClientFactory(protocol.ClientFactory):
+    def buildProtocol(self, addr):
+        return Client()
+
+    def clientConnectionFailed(self, connector ,reason):
+        print("Connection failed")
+        reactor.stop()
+
+    def clientConnectionLost(self, connection, reason):
+        print("Connection lost")
+        reactor.stop()
+
+
+reactor.connectTCP("localhost", 8000 , ClientFactory())
+reactor.run()
+```
+
+server.py
+```python
+from twisted.internet import protocol, reactor
+
+class Echo(protocol.Protocol):
+    def dataReceived(self, data):
+        self.transport.write(data)
+        print('Client sent to me:' ,data)
+
+class EchoFactory(protocol.Factory):
+    def buildProtocol(self, addr):
+            return Echo()
+
+
+reactor.listenTCP(8000, EchoFactory())
+reactor.run()
+```
+
 ### 15 - Gevent Group
 
 ```python
