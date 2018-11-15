@@ -69,6 +69,144 @@ Out[7]:
 In [8]:  
 ```
 
+```python
+In [6]: def main(): 
+   ...:     import gevent 
+   ...:     from gevent.queue import Queue, Empty 
+   ...:     tasks = Queue(maxsize=3) 
+   ...:     def worker(name): 
+   ...:         try: 
+   ...:             while True: 
+   ...:                 task = tasks.get(timeout=1) 
+   ...:                 print('Worker %s got task %s' % (name, task)) 
+   ...:                 gevent.sleep(0) 
+   ...:         except Empty: 
+   ...:             print('Quitting time!') 
+   ...:     def boss(): 
+   ...:         for i in range(1,10): 
+   ...:             tasks.put(i) 
+   ...:         print('assigned all work') 
+   ...:         for i in range(10,20): 
+   ...:             tasks.put(i) 
+   ...:         print('Assigned all work in interaction 2') 
+   ...:     gevent.joinall([ 
+   ...:         gevent.spawn(boss), 
+   ...:         gevent.spawn(worker,'steve'), 
+   ...:         gevent.spawn(worker, 'john'), 
+   ...:         gevent.spawn(worker, 'bob'), 
+   ...:         ]) 
+   ...:                                                                                               
+
+In [7]: main()                                                                                        
+Worker steve got task 1
+Worker john got task 2
+Worker bob got task 3
+Worker steve got task 4
+Worker john got task 5
+Worker bob got task 6
+assigned all work
+Worker steve got task 7
+Worker john got task 8
+Worker bob got task 9
+Worker steve got task 10
+Worker john got task 11
+Worker bob got task 12
+Worker steve got task 13
+Worker john got task 14
+Worker bob got task 15
+Worker steve got task 16
+Worker john got task 17
+Worker bob got task 18
+Assigned all work in interaction 2
+Worker steve got task 19
+Quitting time!
+Quitting time!
+Quitting time!
+
+In [8]:     
+```
+better example to understand how blocking queue impacts:
+
+```python
+
+In [10]: def main(): 
+    ...:     import gevent 
+    ...:     import random 
+    ...:     from gevent.queue import Queue, Empty 
+    ...:     tasks = Queue(maxsize=3) 
+    ...:     def worker(name): 
+    ...:         try: 
+    ...:             while True: 
+    ...:                 task = tasks.get(timeout=1) 
+    ...:                 print('Worker %s got task %s' % (name, task)) 
+    ...:                 gevent.sleep(random.randint(1,3)) 
+    ...:                 gevent.sleep(0) 
+    ...:         except Empty: 
+    ...:             print('Quitting time!') 
+    ...:     def boss(): 
+    ...:         for i in range(1,10): 
+    ...:             print('boss waiting to put work {}'.format(i)) 
+    ...:             tasks.put(i) 
+    ...:         print('assigned all work') 
+    ...:         for i in range(10,20): 
+    ...:             print('boss waiting to put work {}'.format(i)) 
+    ...:             tasks.put(i) 
+    ...:         print('Assigned all work in interaction 2') 
+    ...:     gevent.joinall([ 
+    ...:         gevent.spawn(boss), 
+    ...:         gevent.spawn(worker,'steve'), 
+    ...:         gevent.spawn(worker, 'john'), 
+    ...:         gevent.spawn(worker, 'bob'), 
+    ...:         ]) 
+    ...:                                                                                              
+
+In [11]: main()                                                                                       
+boss waiting to put work 1
+boss waiting to put work 2
+boss waiting to put work 3
+boss waiting to put work 4
+Worker steve got task 1
+Worker john got task 2
+Worker bob got task 3
+boss waiting to put work 5
+boss waiting to put work 6
+boss waiting to put work 7
+Worker steve got task 4
+boss waiting to put work 8
+Worker john got task 5
+boss waiting to put work 9
+Worker bob got task 6
+Worker steve got task 7
+assigned all work
+boss waiting to put work 10
+boss waiting to put work 11
+Worker john got task 8
+boss waiting to put work 12
+Worker steve got task 9
+boss waiting to put work 13
+Worker bob got task 10
+boss waiting to put work 14
+Worker steve got task 11
+boss waiting to put work 15
+Worker john got task 12
+boss waiting to put work 16
+Worker steve got task 13
+boss waiting to put work 17
+Worker bob got task 14
+boss waiting to put work 18
+Worker john got task 15
+boss waiting to put work 19
+Worker steve got task 16
+Assigned all work in interaction 2
+Worker john got task 17
+Worker steve got task 18
+Worker bob got task 19
+Quitting time!
+Quitting time!
+Quitting time!
+```
+
+
 ### 13 - gevents Events, and AsynResult
 
 ```python
