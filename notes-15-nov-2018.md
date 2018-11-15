@@ -1,5 +1,113 @@
 # 15-nov-2018
 
+### 17 - Twisted quote server ( Too convoluted example , cant understand the point yet)
+
+- May be idea is to build a quote abstraction over the default protocol and how that can be made using twisted. 
+
+```python
+#server
+from twisted.internet.protocol import Factory
+from twisted.internet import reactor, protocol
+
+class QuoteProtocol(protocol.Protocol):
+
+    def __init__(self, factory):
+        self.factory=  factory
+        self.factory.numConnection = 0
+
+
+    def connectionMade(self):
+        self.factory.numConnection += 1
+
+    def dataReceived(self, data):
+        print ("Number of active connection : %d" % ( self.factory.numConnection, ))
+        print ("> Recieved: %s " % (data))
+        print ("> Sending : %s " % (self.getQuote()))
+
+        self.transport.write(self.getQuote())
+        self.updateQuote(data)
+
+    def connectionLost(self, reason ):
+        self.factory.numConnection -= 1
+
+    def getQuote(self):
+        return self.factory.quote
+
+    def updateQuote(self, quote):
+        self.factory.quote = quote
+
+
+
+class QuoteFactory(Factory):
+
+    def __init__(self, quote=None):
+        self.quote = quote or b"Truth never dies"
+
+    def buildProtocol(self, addr):
+        return QuoteProtocol(self)
+
+
+reactor.listenTCP(9000, QuoteFactory())
+reactor.run()
+```
+
+```python
+#client
+from twisted.internet import reactor, protocol
+
+
+quote_counter = 0
+
+class QuoteProtocol(protocol.Protocol):
+    def __init__(self, factory):
+        self.factory = factory
+
+    def connectionMade(self):
+        self.sendQuote()
+
+
+    def sendQuote(self):
+        self.transport.write(self.factory.quote)
+
+
+    def dataReceived(self, data):
+        print("received quote:" , data)
+        self.transport.loseConnection()
+
+
+
+
+
+class QuoteClientFactory(protocol.ClientFactory):
+
+    def __init__(self, quote):
+        self.quote = quote
+
+
+    def buildProtocol(self, addr):
+        return QuoteProtocol(self)
+
+    def clientConnectionFailed(self, connector, reason):
+        print("conection failed : ", reason.getErrorMessage())
+        maybeStopReactor()
+
+    def clientConnectionLost(self, connector, reason):
+        print ('connection lost' , reason.getErrorMessage())
+        maybeStopReactor()
+
+def maybeStopReactor():
+    global quote_counter
+    quote_counter -= 1
+    if not quote_counter:
+        reactor.stop()
+
+quotes = [b"asdasda" , b"asdasqwerwertwert", b"asdafrhdfgasdasd"]
+
+
+for quote in 10000*quotes:
+    reactor.connectTCP('localhost', 9000, QuoteClientFactory(quote))
+reactor.run()
+```
 
 ### 16 - Twisted Echo Client server
 
