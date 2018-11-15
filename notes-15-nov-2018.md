@@ -1,5 +1,32 @@
 # 15-nov-2018
 
+### 12 - Monkey patching with gevents
+
+```python
+import socket
+print(socket.socket)
+
+
+print("Aftermonkey ")
+from gevent import monkey
+monkey.patch_socket()
+print(socket.socket)
+
+
+import select
+print(select.select)
+monkey.patch_select()
+print("After monkey patch")
+print(select.select)
+
+```
+```
+<class 'socket.socket'>
+Aftermonkey 
+<class 'gevent._socket3.socket'>
+<built-in function select>
+After monkey patch
+```
 
 ### 11 - gevent Timeout
 
