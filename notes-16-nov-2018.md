@@ -1,5 +1,12 @@
 # 16-nov-2018
 
+### 3 - Rotation of 2d matrix
+
+```python
+clockwise = zip(*orignal[::-1])
+c_clockwise = zip(*original)[::-1]
+```
+
 ### 2 - combinations yielding
 
 ```python
