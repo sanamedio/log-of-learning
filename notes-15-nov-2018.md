@@ -1,8 +1,72 @@
 # 15-nov-2018
 
 
-### 11 
+### 11 - gevent Timeout
 
+```python
+import gevent
+from gevent import Timeout
+
+
+seconds = 10
+
+timeout = Timeout(seconds)
+timeout.start()
+
+
+def wait():
+    gevent.sleep(10)
+
+
+try:
+    gevent.spawn(wait).join()
+except Timeout:
+    print('Could not complete')
+```
+
+```python
+import gevent
+from gevent import Timeout
+
+time_to_wait = 5
+
+class TooLong(Exception):
+    pass
+
+with Timeout(time_to_wait, TooLong):
+    gevent.sleep(10)
+```
+
+```python
+import gevent
+from gevent import Timeout
+
+def wait():
+    gevent.sleep(2)
+
+
+timer = Timeout(1).start()
+thread1 = gevent.spawn(wait)
+
+
+try:
+    thread1.join(timeout=timer)
+except Timeout:
+    print('Thread 1 timed out')
+
+timeer = Timeout.start_new(1)
+thread2 = gevent.spawn(wait)
+
+try:
+    thread2.get(timeout=timer)
+except Timeout:
+    print('Thread 2 timed out')
+
+try:
+    gevent.with_timeout(1, wait)
+except Timeout:
+    print('Thread 3 timed out')
+```
 
 ### 10 - gevent.kill
 
