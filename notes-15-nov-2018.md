@@ -1,8 +1,9 @@
 # 15-nov-2018
 
-### 17 - Twisted quote server ( Too convoluted example , cant understand the point yet)
+### 17 - Twisted quote server 
 
 - May be idea is to build a quote abstraction over the default protocol and how that can be made using twisted. 
+- Incrementing connection count when a new connection is created, and decrement when it is closed. Still why it is that even with too many requests count is remaining at 3 ::::: If we remove the lost connection call , it will not leave the connections and count will increase. So what probaby it shows is that how quickly requests come and get closed. What if I do a heavy processing?
 
 ```python
 #server
