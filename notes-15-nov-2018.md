@@ -1,5 +1,21 @@
 # 15-nov-2018
 
+### 10 - gevent.kill
+
+```python
+import gevent
+import signal
+
+def run_forever():
+    gevent.sleep(1000)
+
+
+if __name__ == '__main__':
+    gevent.signal(signal.SIGQUIT, gevent.kill)
+    thread = gevent.spawn(run_forever)
+    thread.join()
+```
+
 ### 9 - exceptions in greenlets
 
 - stacktrace is stopped inside greenlet themselves
