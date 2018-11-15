@@ -1,5 +1,79 @@
 # 15-nov-2018
 
+### 18 - Really nice twisted chatserver and can work with telnet
+
+- No idea why netcat doesn't send a proper newline. Need to google. Otherwise would not need telnet on ubuntu
+- It's like state machine with per user instances which handle them, and there is a global factory instance where you store shared data, works like a charm
+- orielly book on twisted example
+
+```python
+from twisted.internet.protocol import Factory
+from twisted.protocols.basic import LineReceiver
+from twisted.internet import reactor
+
+def bytify(s):
+    print('bytify : ' , s)
+    
+    if not isinstance(s,bytes):
+        if s: return bytes(s,'utf-8')
+
+    return b''
+
+
+class ChatProtocol(LineReceiver):
+    def __init__(self, factory):
+        self.factory = factory
+        self.name = None
+        self.state ="REGISTER"
+
+    def connectionMade(self):
+        self.sendLine(bytify("What's your name?"))
+
+    def connectionLost(self,reason):
+        if self.name in self.factory.users:
+            del self.factory.users[self.name]
+            self.broadcastMessage(bytify("%s has left the channel." %(self.name,)))
+
+    def lineReceived(self, line):
+        if self.state == "REGISTER":
+            self.handle_REGISTER(line)
+        else:
+            self.handle_CHAT(line)
+
+    def handle_REGISTER(self, name):
+        if name in self.factory.users:
+            self.sendLine(bytify("name taken, please choose other"))
+            return
+
+        self.sendLine(bytify("Welcome , %s!" % (name,)))
+        self.broadcastMessage(bytify("%s has joined the channel" % (name,)))
+        self.name = name
+        self.factory.users[name] = self
+        self.state = "CHAT"
+
+
+    def handle_CHAT(self, message):
+        message  = "<%s> %s" %(self.name, message)
+        self.broadcastMessage(bytify(message))
+
+    def broadcastMessage(self,message):
+        for name, protocol in self.factory.users.items():
+            if protocol != self:
+                protocol.sendLine(bytify(message))
+
+
+
+class ChatFactory(Factory):
+    def __init__(self):
+        self.users=  {}
+
+    def buildProtocol(self, addr):
+        return ChatProtocol(self)
+
+reactor.listenTCP(8000,ChatFactory())
+reactor.run()
+```
+
 ### 17 - Twisted quote server 
 
 - May be idea is to build a quote abstraction over the default protocol and how that can be made using twisted. 
