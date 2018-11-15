@@ -1,5 +1,74 @@
 # 15-nov-2018
 
+### 14 - Gevent Queue
+
+- weird issues with python3 interpreter, not able to take in Queue , but worked well with ipython in pipenv
+
+```python
+
+In [7]:  
+   ...: import gevent 
+   ...: from gevent.queue import Queue 
+   ...:  
+   ...: tasks = Queue() 
+   ...:  
+   ...: def worker(n): 
+   ...:     while not tasks.empty(): 
+   ...:         task = tasks.get() 
+   ...:         print('Worker %s got task %s' % (n, task)) 
+   ...:         gevent.sleep(0) 
+   ...:  
+   ...:     print('Quitting time!') 
+   ...:  
+   ...: def boss(): 
+   ...:     for i in range(1,25): 
+   ...:         tasks.put_nowait(i) 
+   ...:  
+   ...: gevent.spawn(boss).join() 
+   ...:  
+   ...: gevent.joinall([ 
+   ...:     gevent.spawn(worker, 'steve'), 
+   ...:     gevent.spawn(worker, 'john'), 
+   ...:     gevent.spawn(worker, 'nancy'), 
+   ...: ]) 
+   ...:  
+   ...:  
+   ...:                                                                                                  
+Worker steve got task 1
+Worker john got task 2
+Worker nancy got task 3
+Worker steve got task 4
+Worker john got task 5
+Worker nancy got task 6
+Worker steve got task 7
+Worker john got task 8
+Worker nancy got task 9
+Worker steve got task 10
+Worker john got task 11
+Worker nancy got task 12
+Worker steve got task 13
+Worker john got task 14
+Worker nancy got task 15
+Worker steve got task 16
+Worker john got task 17
+Worker nancy got task 18
+Worker steve got task 19
+Worker john got task 20
+Worker nancy got task 21
+Worker steve got task 22
+Worker john got task 23
+Worker nancy got task 24
+Quitting time!
+Quitting time!
+Quitting time!
+Out[7]: 
+[<Greenlet "Greenlet-6" at 0x7f078538f598: _run>,
+ <Greenlet "Greenlet-7" at 0x7f078538f6a8: _run>,
+ <Greenlet "Greenlet-8" at 0x7f078538f7b8: _run>]
+
+In [8]:  
+```
+
 ### 13 - gevents Events, and AsynResult
 
 ```python
