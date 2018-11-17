@@ -1,5 +1,71 @@
 # 17-nov-2018
 
+### 2 - Min Queue and Max queue implementations ( not efficient )
+
+```python
+arr = [ 1,2,123,4534,23,434534,3,4234,234234234]
+
+class MaxQueue:
+
+    def __init__(self,size):
+        self.size = size
+        self.data = []
+
+    def enq(self,item):
+
+        if len(self.data) == self.size:
+            if item > min(self.data):
+                self.data.remove(min(self.data))
+                self.data.append(item)
+        else:
+            self.data.append(item)
+
+
+    def __repr__(self):
+        return str(self.data)
+
+
+class MinQueue:
+
+    def __init__(self,size):
+        self.size = size
+        self.data = []
+
+    def enq(self,item):
+
+        if len(self.data) == self.size:
+            if item < max(self.data):
+                self.data.remove(max(self.data))
+                self.data.append(item)
+        else:
+            self.data.append(item)
+
+
+    def __repr__(self):
+        return str(self.data)
+
+
+mq = MaxQueue(3)
+
+print(arr)
+
+for item in arr:
+    mq.enq(item)
+
+print(mq)
+
+mq = MinQueue(3)
+
+for item in arr:
+    mq.enq(item)
+
+print(mq)
+```
+
+
+        
+
+
 ### 1 - Permutations (without inbulit)
 
 ```python
