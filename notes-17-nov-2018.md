@@ -61,8 +61,31 @@ for item in arr:
 
 print(mq)
 ```
+```python
+import random
 
+class RandomQueue:
 
+    def __init__(self, size):
+        self.size = size
+        self.data = []
+
+    def enq(self,item):
+        self.data.append(item)
+
+    def deq(self):
+
+        if len(self.data) > 0 :
+
+            x = random.choice(self.data)
+            self.data.remove(x)
+            return x
+
+        return None
+
+    def __repr__(self):
+        return str(self.data)
+```
         
 
 
