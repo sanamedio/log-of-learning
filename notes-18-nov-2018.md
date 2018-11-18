@@ -1,5 +1,48 @@
 # 18-nov-2018
 
+### 5 - clipping list to n elements of each type
+
+```python
+
+import collections
+
+def delete_all_nth_slow(array,n):
+
+
+    result = []
+
+    for i in array:
+
+        if result.count(i) < n:
+            result.append(i)
+    return result
+
+
+
+
+def delete_all_nth(array,n):
+
+    result = []
+
+    counts = collections.defaultdict(int)
+
+
+    for i in array:
+
+        if counts[i] <n:
+            result.append(i)
+            counts[i] += 1
+
+
+    return result
+
+
+if __name__ == '__main__':
+                
+    print( delete_all_nth_slow([1,1,1,1,2,2,2],2))
+    print( delete_all_nth([1,1,1,1,2,2,2],2))
+```
+
 
 ### 4 - Common stuff between dicts
 
