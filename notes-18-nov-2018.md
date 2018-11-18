@@ -1,5 +1,29 @@
 # 18-nov-2018
 
+
+### 4 - Common stuff between dicts
+
+- doesnt work for python2
+
+```python
+
+a = {
+   'x' : 1,
+   'y' : 2,
+   'z' : 3
+}
+
+b = {
+   'w' : 10,
+   'x' : 11,
+   'y' : 2
+}
+
+print('Common keys:', a.keys() & b.keys())
+print('Keys in a not in b:', a.keys() - b.keys())
+print('(key,value) pairs in common:', a.items() & b.items())
+```
+
 ### 3 - list filter with clipping
 
 ```python
