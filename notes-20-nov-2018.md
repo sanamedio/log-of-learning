@@ -1,5 +1,37 @@
 # 20-nov-2018
 
+### 2 - websockets
+
+```python
+#server.py
+import asyncio
+import websockets
+
+async def echo(websocket,path):
+    async for message in websocket:
+        print(message)
+        await websocket.send(message)
+
+asyncio.get_event_loop().run_until_complete(
+        websockets.serve(echo, 'localhost', 8765))
+
+asyncio.get_event_loop().run_forever()
+```
+
+```python
+import asyncio
+import websockets
+
+
+async def hello(uri):
+    async with websockets.connect(uri) as websocket:
+        await websocket.send("hello world")
+        await websocket.recv()
+
+
+asyncio.get_event_loop().run_until_complete(
+        hello('ws://localhost:8765'))
+```
 
 ### 1 - visualizing python object space with json
 
