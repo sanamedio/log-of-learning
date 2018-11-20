@@ -4,17 +4,24 @@
 
 ```python
 def check_arguments(*deco_args):
-
-    print(deco_args)
-
     def wrapper(f):
         def inner(*args):
             for t,a in zip(deco_args,args):
                 print(t,a)
                 if not isinstance(a,t):
-                    raise AssertionError
-            r = f(args) 
-            
+                    raise AssertionError("Check arguments")
+            r = f(args)
+            return r
+        return inner
+    return wrapper
+
+
+def check_return(t):
+    def wrapper(f):
+        def inner(*args):
+            r = f(args)
+            if not isinstance(r,t):
+                raise AssertionError("Check return value")
             return r
         return inner
     return wrapper
@@ -23,11 +30,17 @@ def check_arguments(*deco_args):
 @check_arguments(int,str)
 def hello(*args):
     print ("the arguments are fine")
+    return 1
+
+@check_return(str)
+def hello2(*args):
+    print ("the same function for checking return")
+    return 1
 
 
 if __name__ == '__main__':
     hello(1,'hello')
-    hello('hello',1)
+    hello2(1,'hello')
 ```
 
 ### 3 - Rx python
