@@ -3,7 +3,44 @@
 ### 3 - Rx python
 
 ```python
-n [11]: from rx import Observable                                                                       
+In [19]: from rx import Observable                                                                       
+
+In [20]: from random import randint                                                                      
+
+In [21]: three_emissions = Observable.range(1,10)                                                        
+
+In [22]: three_random_ints = three_emissions.map(lambda i: randint(1,10000)).publish().auto_connect(2)   
+
+In [23]: three_random_ints.subscribe(lambda i: print("1 >> {}".format(i)))                               
+Out[23]: <rx.disposables.anonymousdisposable.AnonymousDisposable at 0x7fb10f83ee48>
+
+In [24]: three_random_ints.subscribe(lambda i: print("2 >> {}".format(i)))                               
+1 >> 4679
+2 >> 4679
+1 >> 8771
+2 >> 8771
+1 >> 2499
+2 >> 2499
+1 >> 2937
+2 >> 2937
+1 >> 7743
+2 >> 7743
+1 >> 5035
+2 >> 5035
+1 >> 3552
+2 >> 3552
+1 >> 7478
+2 >> 7478
+1 >> 5886
+2 >> 5886
+1 >> 1772
+2 >> 1772
+Out[24]: <rx.disposables.anonymousdisposable.AnonymousDisposable at 0x7fb10f80a240>
+```
+
+
+```python
+In [11]: from rx import Observable                                                                       
 
 In [12]: from random import randint                                                                      
 
