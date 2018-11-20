@@ -5,6 +5,18 @@
 ```python
 from rx import Observable
 
+source  = Observable.of("alpha", "beta", "gamma", "delta" , "eps")
+
+
+source.subscribe(lambda value: print("recieve {}".format(value)))
+
+
+```
+
+
+```python
+from rx import Observable
+
 
 source = Observable.of("Aplha", "beta", "gamma" , "delta", "eps")
 
