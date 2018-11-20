@@ -41,6 +41,32 @@ source.subscribe(PrintObserver())
 
 ```
 
+```python
+from rx import Observable, Observer
+
+class PrintObserver(Observer):
+
+    def on_next(self, value):
+        print("Received {}".format(value))
+
+
+
+    def on_completed(self):
+        print("done!")
+
+    def on_error(self, error):
+        print("Error {}".format(error))
+
+
+
+source = Observable.of("Alpha", "Beta", "Gamma", "delta", "epsilon")
+
+source.subscribe(PrintObserver())
+```
+
+
+
+
 ### 2 - websockets
 
 ```python
