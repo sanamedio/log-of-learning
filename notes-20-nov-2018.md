@@ -3,6 +3,32 @@
 ### 3 - Rx python
 
 ```python
+In [3]: from rx import Observable                                                                        
+
+In [4]: from random import randint                                                                       
+
+In [5]: three_emissions = Observable.range(1,3)                                                          
+
+In [6]: three_random_ints = three_emissions.map(lambda i: randint(1,10000))                              
+
+In [7]: three_random_ints.subscribe(lambda i: print("1 >> {}".format(i)))                                
+1 >> 1085
+1 >> 3997
+1 >> 4460
+Out[7]: <rx.disposables.anonymousdisposable.AnonymousDisposable at 0x7fb10f9784a8>
+
+In [8]: three_random_ints.subscribe(lambda i: print("2 >> {}".format(i)))                                
+2 >> 9907
+2 >> 7866
+2 >> 7957
+Out[8]: <rx.disposables.anonymousdisposable.AnonymousDisposable at 0x7fb10f95f7f0>
+
+In [9]:  
+
+```
+
+
+```python
 Python 3.6.6 (default, Sep 12 2018, 18:26:19) 
 Type 'copyright', 'credits' or 'license' for more information
 IPython 7.1.1 -- An enhanced Interactive Python. Type '?' for help.
