@@ -3,6 +3,19 @@
 ### 3 - Rx python
 
 ```python
+from rx import Observable
+
+
+source = Observable.of("Aplha", "beta", "gamma" , "delta", "eps")
+
+
+source.subscribe(on_next=lambda value: print("received {}".format(value)),
+                 on_completed=lambda :print("Done"),
+                 on_error=lambda error:print("erro occured {}".format(error)))
+
+```
+
+```python
 from rx import Observable, Observer
 
 def push_five_strings(observer):
