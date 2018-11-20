@@ -1,5 +1,46 @@
 # 20-nov-2018
 
+### 3 - Rx python
+
+```python
+from rx import Observable, Observer
+
+def push_five_strings(observer):
+
+    observer.on_next("Alpha")
+    observer.on_next("Beta")
+    observer.on_next("Gamma")
+   
+    import time
+    if int(time.time())%2 == 0 : #to show exceptions randomly between multiple runs
+        raise Exception
+    observer.on_next("Delta")
+    observer.on_next("Delta")
+    observer.on_next("Epsilon")
+    observer.on_completed()
+
+
+
+
+class PrintObserver(Observer):
+
+    def on_next(self, value):
+        print("Received {}".format(value))
+
+
+    def on_completed(self):
+        print("Done!")
+
+    def on_error(self, error):
+        print("erropr Occured: {}".format(error))
+
+
+source = Observable.create(push_five_strings)
+
+source.subscribe(PrintObserver())
+
+```
+
 ### 2 - websockets
 
 ```python
