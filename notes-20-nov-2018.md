@@ -3,6 +3,38 @@
 ### 3 - Rx python
 
 ```python
+Python 3.6.6 (default, Sep 12 2018, 18:26:19) 
+Type 'copyright', 'credits' or 'license' for more information
+IPython 7.1.1 -- An enhanced Interactive Python. Type '?' for help.
+
+In [1]: from rx import Observable                                                                        
+
+In [2]: Observable.interval(1000)                                                                        
+Out[2]: <rx.core.anonymousobservable.AnonymousObservable at 0x7f69926ec6d8>
+
+In [3]: Observable.interval(1000).map(lambda i: "{} loki".format(i))                                     
+Out[3]: <rx.core.anonymousobservable.AnonymousObservable at 0x7f6991e93eb8>
+
+In [4]: Observable.interval(1000).map(lambda i: "{} loki".format(i)).subscribe(lambda s: print(s))       
+Out[4]: <rx.disposables.anonymousdisposable.AnonymousDisposable at 0x7f6993ff6cf8>
+
+0 loki
+1 loki
+2 loki
+3 loki
+4 loki
+5 loki
+6 loki
+7 loki
+8 loki
+In [5]:                                                                                                  
+Do you really want to exit ([y]/n)? 9 loki
+10 loki
+y
+```
+
+
+```python
 from rx import Observable
 
 Observable.of("Alpha", "Beta", "Gamma", "Delta", "Epsilon") \
