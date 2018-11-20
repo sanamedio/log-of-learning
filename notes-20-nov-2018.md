@@ -3,6 +3,35 @@
 ### 3 - Rx python
 
 ```python
+n [11]: from rx import Observable                                                                       
+
+In [12]: from random import randint                                                                      
+
+In [13]: three_emissions = Observable.range(1,3)                                                         
+
+In [14]: three_random_ints = three_emissions.map(lambda i: randint(1,10000)).publish()                   
+
+In [15]: three_random_ints.subscribe(lambda i: print("1 >> {}".format(i)))                               
+Out[15]: <rx.disposables.anonymousdisposable.AnonymousDisposable at 0x7fb10f9355c0>
+
+In [16]: three_random_ints.subscribe(lambda i: print("2 >> {}".format(i)))                               
+Out[16]: <rx.disposables.anonymousdisposable.AnonymousDisposable at 0x7fb10f8e1828>
+
+In [17]: three_random_ints.connect()                                                                     
+1 >> 9016
+2 >> 9016
+1 >> 964
+2 >> 964
+1 >> 2683
+2 >> 2683
+Out[17]: <rx.disposables.compositedisposable.CompositeDisposable at 0x7fb10f8e17b8>
+
+In [18]:  
+```
+
+
+
+```python
 In [3]: from rx import Observable                                                                        
 
 In [4]: from random import randint                                                                       
