@@ -3,6 +3,36 @@
 ### 3 - Rx python
 
 ```python
+In [25]: from sqlalchemy import create_engine, text                                                      
+
+In [26]: from rx import Observable                                                                       
+
+In [27]: engine = create_engine('sqlite:///test.db')                                                     
+
+In [28]: conn = engine.connect()                                                                         
+
+In [29]: def customer_for_id(customer_id): 
+    ...:     stmt = text("SELECT * FROM CUSTOMER WHERE CUSTOMER_ID = :id") 
+    ...:     return Observable.from_(conn.execute(stmt, id=customer_id)) 
+    ...:                                     
+
+In [31]: Observable.of(1,3,5) \ 
+    ...:     .flat_map(lambda id: customer_for_id(id)) \ 
+    ...:     .subscribe(lambda r: print(r))                                                              
+(1, 'loki')
+(3, 'loki3')
+Out[31]: <rx.disposables.anonymousdisposable.AnonymousDisposable at 0x7fb10f1c7630>
+
+In [32]: Observable.of(1,3,5) \ 
+    ...:     .flat_map(lambda id: customer_for_id(id)) \ 
+    ...:     .subscribe(lambda r: print(r))                                                              
+(1, 'loki')
+(3, 'loki3')
+Out[32]: <rx.disposables.anonymousdisposable.AnonymousDisposable at 0x7fb1135ba7b8>
+```
+
+
+```python
 In [19]: from rx import Observable                                                                       
 
 In [20]: from random import randint                                                                      
