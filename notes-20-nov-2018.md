@@ -5,6 +5,15 @@
 ```python
 from rx import Observable
 
+Observable.of("Alpha", "Beta", "Gamma", "Delta", "Epsilon") \
+    .map(lambda s: len(s)) \
+    .filter(lambda i: i >= 5) \
+    .subscribe(lambda value: print("Received {0}".format(value)))
+```
+
+```python
+from rx import Observable
+
 source = Observable.of("adfgdfgdfgd","bdfgdfgdfg", "c")
 
 lengths = source.map(lambda s: len(s))
