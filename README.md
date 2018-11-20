@@ -84,5 +84,5 @@
 
 [19-nov-2018 - 01 entries](./notes-19-nov-2018.md)
 
-[20-nov-2018 - 00 entries](./notes-20-nov-2018.md)
+[20-nov-2018 - 04 entries](./notes-20-nov-2018.md)
 
