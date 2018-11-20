@@ -86,3 +86,6 @@
 
 [20-nov-2018 - 04 entries](./notes-20-nov-2018.md)
 
+[21-nov-2018 - 00 entries](./notes-21-nov-2018.md)
+
+
