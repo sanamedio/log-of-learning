@@ -1,5 +1,35 @@
 # 20-nov-2018
 
+### 4 - Decorator for argument typechecking
+
+```python
+def check_arguments(*deco_args):
+
+    print(deco_args)
+
+    def wrapper(f):
+        def inner(*args):
+            for t,a in zip(deco_args,args):
+                print(t,a)
+                if not isinstance(a,t):
+                    raise AssertionError
+            r = f(args) 
+            
+            return r
+        return inner
+    return wrapper
+
+
+@check_arguments(int,str)
+def hello(*args):
+    print ("the arguments are fine")
+
+
+if __name__ == '__main__':
+    hello(1,'hello')
+    hello('hello',1)
+```
+
 ### 3 - Rx python
 
 ```python
