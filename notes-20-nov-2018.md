@@ -5,6 +5,19 @@
 ```python
 from rx import Observable
 
+source = Observable.of("adfgdfgdfgd","bdfgdfgdfg", "c")
+
+lengths = source.map(lambda s: len(s))
+
+filtered = lengths.filter(lambda i : i>= 5)
+
+
+filtered.subscribe(lambda value: print("{}".format(value)))
+```
+
+```python
+from rx import Observable
+
 source  = Observable.of("alpha", "beta", "gamma", "delta" , "eps")
 
 
