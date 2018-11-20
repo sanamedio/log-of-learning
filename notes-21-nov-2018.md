@@ -1,5 +1,41 @@
 # 21-nov-2018
 
+### 2 - Determine if a string is a permutation of another
+
+```python
+# determine if a string is permuation of another or not
+# each character will have same count in both, so frequency table shsould match
+# if we can write a position indepdent hash function, that would be same for both
+# if we sort them both will be equal
+# 
+
+def check_perm_sorting(x,y):
+    return sorted(x) == sorted(y)
+
+def check_perm_counter(x,y):
+    from collections import Counter
+    x_ = Counter(x)
+    y_ = Counter(y)
+    return x_ == y_
+
+
+TO_CHECK = [check_perm_sorting, check_perm_counter
+        ]
+
+for check in TO_CHECK:
+    print("Running check for "+ check.__name__,end=" ")
+    assert check("abcd", "dcba") == True
+    assert check("aaa", "aaa") == True
+    assert check("abab","baba") == True
+    assert check("","") == True
+    assert check("a","a") == True
+    assert check("aasdsds", "asdasd") == False
+    assert check("aaabbb", "bbaaac") == False
+    print("succesful !")
+~                             
+```
+
+
 ### 1 - Determine if a string contains unique characters
 
 from [here](https://github.com/donnemartin/interactive-coding-challenges)
