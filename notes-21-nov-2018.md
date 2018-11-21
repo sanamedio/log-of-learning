@@ -1,5 +1,100 @@
 # 21-nov-2018
 
+### 4 - Treeset implementation 
+
+```python
+import random
+
+
+class Node:
+
+    def __init__(self, value= None,left = None, right =None):
+        self.left = left
+        self.right = right
+        self.value = value
+        self.deleted = False
+
+
+    def __str__(self):
+        return str([self.value,self.left,self.right])
+
+def insert(s , val ):
+    if s == None:
+        return Node(val, None, None)
+    else:
+        if   s.value < val:
+             s.right = insert(s.right, val)
+        elif s.value > val:
+             s.left = insert(s.left, val)
+    return s
+
+
+def find(s,x):
+    if s is None:
+        return None
+    else:
+        if s.value > x:
+            return find(s.left,x)
+        elif s.value < x:
+            return find(s.right,x)
+        elif s.value == x:
+            return s
+    return s
+
+
+
+def inorder(s):
+    if s is not None:
+        yield from inorder(s.left)
+        if not s.deleted:
+            yield (s.value)
+        yield from inorder(s.right)
+
+
+def count(s):
+    if s == None:
+        return 0
+    else:
+        return 1+ count(s.left) + count(s.right)
+
+class TreeSet:
+
+    def __init__(self):
+        self.tree = None
+
+    def add(self,x):
+        if self.tree is None:
+            self.tree = Node(x,None,None)
+        else:
+            self.tree = insert(self.tree,x)
+        return self
+
+    def remove(self,x):
+        z = find(self.tree,x)
+        z.deleted = True
+
+    def __len__(self):
+        return count(self.tree)
+    
+    def __repr__(self):
+        return list(inorder(self.tree))
+
+    def __str__(self):
+        return str(self.__repr__())
+
+if __name__ == '__main__':
+    
+    ts = TreeSet()
+
+    for i in range(100):
+        ts.add(i%5)
+
+    ts.remove(0)
+    ts.remove(1)
+
+    print(ts)
+```
+
 ### 3 - binary tree traversals
 
 ```python
