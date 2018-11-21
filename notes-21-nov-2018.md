@@ -1,5 +1,48 @@
 # 21-nov-2018
 
+### 3 - binary tree traversals
+
+```python
+class Node:
+    def __init__(self, value= None,left = None, right =None):
+        self.left = left
+        self.right = right
+        self.value = value
+
+def insert(s , val ):
+    if s == None:
+        return Node(val, None, None)
+    else:
+        if   s.value < val:
+             s.right = insert(s.right, val)
+        elif s.value >= val:
+             s.left = insert(s.left, val)
+    return s
+
+def traverse(s, t, f):
+    if s:
+        (t == 0 and f(s.value))
+        traverse(s.left,t,f)
+        (t == 1 and f(s.value))
+        traverse(s.right,t,f)
+        (t == 2 and f(s.value))
+
+root = Node(1,None,None)
+
+for i in range(2,10):
+    root = insert(root,i)
+
+
+def print_(*args):
+    print(*args,end=' ')
+
+traverse(root,0,print_)
+print('')
+traverse(root,1,print_)
+print('')
+traverse(root,2,print_)
+```
+
 ### 2 - Determine if a string is a permutation of another
 
 ```python
