@@ -1,5 +1,19 @@
 # 21-nov-2018
 
+### 5 - primes
+
+```python
+def primes(n):
+    result = []
+    for x in range(2,n):
+        if not any([x%y==0 for y in result]):
+            result.append(x)
+    return result 
+
+if __name__ == '__main__':
+    print(primes(100))
+```
+
 ### 4 - Treeset implementation 
 
 ```python
