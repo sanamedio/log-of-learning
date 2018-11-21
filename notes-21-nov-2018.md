@@ -14,6 +14,14 @@ if __name__ == '__main__':
     print(primes(100))
 ```
 
+Prime numbers between root(n) to n(not included)
+```python
+>>> n = 100
+>>> reduce(lambda a,x: [i for i in a if i%x!=0],range(2,int(sqrt(n))),range(2,n))
+[11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67, 71, 73, 79, 83, 89, 97]
+>>> 
+```
+
 ### 4 - Treeset implementation 
 
 ```python
