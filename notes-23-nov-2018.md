@@ -1,6 +1,33 @@
 # 23-nov-2018
 
-# 1 - Typing usage
+### 2 - contextlib for perf
+
+```python
+from time import perf_counter
+from array import array
+from contextlib import contextmanager
+
+@contextmanager
+def timing(label: str):
+    t0 = perf_counter()
+    yield lambda: (label, t1 - t0)
+    t1 = perf_counter()
+
+
+with timing('ARray tests') as total:
+    with timing('ARray creation innermul') as inner:
+        x = array('d', [0] * 100000)
+    with timing('Array creation outer mul') as outer:
+        x = array('d', [0] * 100000)
+
+
+
+print('total [%s]: %.6f s' %total())
+print('   Timing [%s]: %.6f s' %inner())
+print('   Timing [%s]: %.6f s' %outer())
+```
+
+### 1 - Typing usage
 
 ```python
 from typing import List
