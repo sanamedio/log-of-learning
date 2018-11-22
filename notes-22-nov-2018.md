@@ -2,6 +2,23 @@
 
 ### 2 - list enumeration
 
+```python
+mylist = ["a","b","c","d"]  
+  
+print list(enumerate(mylist))  
+# [(0, 'a'), (1, 'b'), (2, 'c'), (3, 'd')]  
+  
+print [(i, j) for i, j in enumerate(mylist)]  
+# [(0, 'a'), (1, 'b'), (2, 'c'), (3, 'd')]  
+  
+print [pair for pair in enumerate(mylist)]  
+# [(0, 'a'), (1, 'b'), (2, 'c'), (3, 'd')]  
+  
+# which basically does the same as:  
+print [(mylist.index(a), a) for a in mylist]  
+# [(0, 'a'), (1, 'b'), (2, 'c'), (3, 'd')]  
+```
+
 
 ### 1 - Flask advantages/features
 
