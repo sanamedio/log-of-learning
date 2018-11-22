@@ -1,5 +1,9 @@
 # 23-nov-2018
 
+### 3 - using github as a pypi server
+
+https://medium.freecodecamp.org/how-to-use-github-as-a-pypi-server-1c3b0d07db2
+
 ### 2 - contextlib for perf
 
 ```python
