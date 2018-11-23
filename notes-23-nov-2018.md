@@ -1,5 +1,30 @@
 # 23-nov-2018
 
+### 4 - cherrypy
+
+```python
+Python 3.6.6 (default, Sep 12 2018, 18:26:19) 
+[GCC 8.0.1 20180414 (experimental) [trunk revision 259383]] on linux
+Type "help", "copyright", "credits" or "license" for more information.
+>>> import cherrypy
+>>> class HelloWorld():
+...     @cherrypy.expose
+...     def index(self):
+...             return "Hello world"
+... 
+>>> cherrypy.quickstart(HelloWorld())
+[23/Nov/2018:19:18:26] ENGINE Listening for SIGTERM.
+[23/Nov/2018:19:18:26] ENGINE Listening for SIGHUP.
+[23/Nov/2018:19:18:26] ENGINE Listening for SIGUSR1.
+[23/Nov/2018:19:18:26] ENGINE Bus STARTING
+CherryPy Checker:
+The Application mounted at '' has an empty config.
+
+[23/Nov/2018:19:18:26] ENGINE Started monitor thread 'Autoreloader'.
+[23/Nov/2018:19:18:26] ENGINE Serving on http://127.0.0.1:8080
+[23/Nov/2018:19:18:26] ENGINE Bus STARTED
+```
+
 ### 3 - using github as a pypi server
 
 https://medium.freecodecamp.org/how-to-use-github-as-a-pypi-server-1c3b0d07db2
