@@ -1,5 +1,20 @@
 # 23-nov-2018
 
+### 5 - euclid
+
+- you divide(subtract) by b initially, and then incrementally go down the value of b
+
+```python
+def euclid(a,b):
+    a = abs(a)
+    b = abs(b)
+    while b != 0 :
+        if a > b : a = a - b
+        else:   b = b - a
+        print (a,b)
+    return a
+```
+
 ### 4 - cherrypy
 
 ```python
