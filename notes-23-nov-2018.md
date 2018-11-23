@@ -1,5 +1,58 @@
 # 23-nov-2018
 
+### 6 - Simple graph model 
+
+```python
+class Graph:
+
+    def __init__(self,n):
+        self.graph = [ set() for x in range(n) ]
+        self.n = n
+
+
+    def add_edge(self,v,u):
+        self.graph[v].add(u)
+        self.graph[u].add(v)
+
+
+    def remove_edge(self,v,u):
+        if u in self.graph[v]: 
+            self.graph[v].remove(u)
+        if v in self.graph[u]: 
+            self.graph[u].remove(v)
+
+    def __repr__(self):
+        r  =""
+        for i in range(self.n):
+            r +=  str(i) + " : "
+            for j in self.graph[i]:
+                r +=  str(j) + " " 
+            r += "\n"
+        return r
+
+    def __str__(self):
+        return self.__repr__()
+
+
+
+g = Graph(10)
+
+g.add_edge(1,2)
+g.add_edge(1,3)
+
+print(g)
+
+
+g.add_edge(1,2)
+g.add_edge(1,3)
+
+
+g.remove_edge(1,2)
+g.remove_edge(1,3)
+
+print(g)
+```
+
 ### 5 - euclid
 
 - you divide(subtract) by b initially, and then incrementally go down the value of b
