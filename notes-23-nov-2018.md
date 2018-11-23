@@ -1,6 +1,6 @@
 # 23-nov-2018
 
-### 6 - Simple graph model 
+### 6 - Simple graph adj list structure 
 
 ```python
 class Graph:
