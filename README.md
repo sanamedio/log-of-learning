@@ -91,3 +91,6 @@
 [22-nov-2018 - 03 entries](./notes-22-nov-2018.md)
 
 [23-nov-2018 - 06 entries](./notes-23-nov-2018.md)
+
+[24-nov-2018 - 00 entries](./notes-24-nov-2018.md)
+
