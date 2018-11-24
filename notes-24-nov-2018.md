@@ -3,7 +3,7 @@
 ### 1 - brainfuck interpreter
 
 - https://en.wikipedia.org/wiki/Brainfuck
-- need to test it, especially bracket matchign
+- works on simple addition example of wikipedia
 
 ```python
 import sys
@@ -38,8 +38,10 @@ def cmpile(source_code):
         elif memory[code_pointer] == '[':
             if memory[data_pointer] == 0:
                 f = code_pointer
-                match_bracket = 0
-                while (memory[f] != ']' and match_bracket != 0  ):
+                match_bracket = 1
+                while True:
+                    if match_bracket ==0:
+                        break
                     if memory[f] == '[':
                         match_bracket+=1
                     elif memory[f] == ']':
@@ -47,15 +49,17 @@ def cmpile(source_code):
                     f = f+1
                 code_pointer = f
         elif memory[code_pointer] == ']':
-            if memory[data_pointer] == 0:
+            if memory[data_pointer] != 0:
                 f = code_pointer
-                match_bracket = 0
-                while memory[f] != '[' and match_bracket !=0:
+                match_bracket = 1
+                while True:
+                    f = f-1
                     if memory[f] == ']':
                         match_bracket+=1
                     elif memory[f] == '[':
                         match_bracket-=1
-                    f = f-1
+                    if match_bracket == 0:
+                        break
                 code_pointer = f
 
 
@@ -72,6 +76,5 @@ def cmpile(source_code):
 
 
 
-
-cmpile(list('>>>>+++[>.,[+++]>>>+++]'))
+cmpile(list('++>+++++[<+>-]'))
 ```
