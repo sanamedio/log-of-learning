@@ -3,7 +3,7 @@
 ### 1 - brainfuck interpreter
 
 - https://en.wikipedia.org/wiki/Brainfuck
-- works on simple addition example of wikipedia
+- works on simple addition example of wikipedia, but failing on others!
 
 ```python
 import sys
