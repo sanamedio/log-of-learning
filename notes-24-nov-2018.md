@@ -1,5 +1,68 @@
 # 24-nov-2018
 
+### 2 - Generating magic squares
+
+```python
+def permutations(t,i):
+    if i == len(t)-1:
+        yield tuple(t)
+    else:
+        for j in range(i,len(t)):
+            t[i],t[j] = t[j],t[i]
+            yield from permutations(t,i+1)
+            t[i],t[j] = t[j],t[i]
+
+
+def check_magic(t):
+    a = [ [None for i in range(3) ] for j in range(3) ]
+
+    for i in range(3):
+        for j in range(3):
+            a[i][j] = t[i*3+j]
+
+    for row in a:
+        if sum(row) != 15:
+            return False
+
+    for row in zip(*a):
+        if sum(row) != 15:
+            return False
+
+    if sum([ a[i][i] for i in range(3) ]) != 15:
+        return False
+
+    if sum([ a[2-i][i] for i in range(3) ]) != 15:
+        return False
+
+    return True
+
+
+
+
+m_squares = set()
+
+for m in permutations([1,2,3,4,5,6,7,8,9],0):
+    if check_magic(m) :
+        m_squares.add(m)
+
+
+class Matrix:
+    def __init__(self,l):
+        self.m = [ [None for x in range(3) ] for y in range(3) ] 
+        for i in range(3):
+            print('')
+            for j in range(3):
+                print(l[i*3+j],end=' ')
+        print('')
+
+
+
+
+
+for m in m_squares:
+   Matrix(m)
+```
+
 ### 1 - brainfuck interpreter
 
 - https://en.wikipedia.org/wiki/Brainfuck
