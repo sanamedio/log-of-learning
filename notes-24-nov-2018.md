@@ -47,7 +47,7 @@ for m in permutations([1,2,3,4,5,6,7,8,9],0):
 
 
 class Matrix:
-    def __init__(self,l):
+    def __init__(self,l): # I know this is wrong, and should not do this in init
         self.m = [ [None for x in range(3) ] for y in range(3) ] 
         for i in range(3):
             print('')
