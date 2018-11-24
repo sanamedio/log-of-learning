@@ -43,7 +43,7 @@ def endView():
    print( 'Goodbye!')
 ```
 
-```
+```python
 #controller.py
 from model import Person
 import view
