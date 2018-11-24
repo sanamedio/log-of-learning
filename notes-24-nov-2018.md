@@ -161,7 +161,7 @@ class Person():
    
    @classmethod
    #returns all people inside db.txt as list of Person objects
-   def getAll(self):
+   def getAll(cls):
       database = open('db.txt', 'r')
       result = []
       json_list = json.loads(database.read())
