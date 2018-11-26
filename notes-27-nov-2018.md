@@ -2,11 +2,15 @@
 
 ### 6 - Scapy sending simple ICMP packet
 
+```python
 >>> send(IP(dst="www.google.com")/ICMP()/"Helloworld")                 
 .
 Sent 1 packets.
-
-
+>>> send(IP(dst="www.google.com",src="www.google.com")/ICMP()/"Helloworld")
+.
+Send 1 packets.
+#spoofed packet
+```
 
 ### 5 - spoofing packets
 
