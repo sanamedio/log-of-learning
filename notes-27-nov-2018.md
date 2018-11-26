@@ -1,6 +1,6 @@
 # 27-nov-2018
 
-### 8 - Sending a recieving packets
+### 8 - Sending and recieving packets
 
 - ```sr()``` The sr() function is for sending packets and receiving answers. The function returns a couple of packet and answers, and the unanswered packets.
 - ```sr1()``` This function is a variant that only return one packet that answered thesent packet (or the packet set) sent.When using sr() or sr1() the packets must be layer 3 packets (IP, ARP, etc.)
