@@ -1,5 +1,13 @@
 # 27-nov-2018
 
+### 6 - Scapy sending simple ICMP packet
+
+>>> send(IP(dst="www.google.com")/ICMP()/"Helloworld")                 
+.
+Sent 1 packets.
+
+
+
 ### 5 - spoofing packets
 
 - https://stackoverflow.com/questions/414025/is-there-a-python-library-than-can-simulate-network-traffic-from-different-addre
