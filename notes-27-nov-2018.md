@@ -19,5 +19,6 @@
 0007 Ether / IP / TCP 192.168.1.14:55846 > 5.175.26.232:https FA
 0008 Ether / IP / TCP 192.168.1.14:55848 > 5.175.26.232:https PA / Raw
 0009 Ether / IP / TCP 192.168.1.14:55848 > 5.175.26.232:https FA
->>>   
+>>> p.plot(lambda x:len(x))    
+<Matplotlib plot>
 ```
