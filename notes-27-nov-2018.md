@@ -1,5 +1,26 @@
 # 27-nov-2018
 
+### 3 - generating packets with specific configs
+
+
+```python
+>>> IP()                                                                                                                                              
+<IP  |>
+>>> a = IP(dst="176.16.1.40")                                                                                                                         
+>>> a                                                                                                                                                 
+<IP  dst=176.16.1.40 |>
+>>> a.dst                                                                                                                                             
+'176.16.1.40'
+>>> a.ttl                                                                                                                                             
+64
+
+#I want a broadcast MAC address, and IP payload to ketchup.com and to mayo.com, TTL value from 1 to 9, and an UDP payload:
+
+>>> Ether(dst="ff:ff:ff:ff:ff:ff")/IP(dst=["www.google.com", "www.facebook.com"], ttl=(1,9))/UDP()                                                    
+<Ether  dst=ff:ff:ff:ff:ff:ff type=0x800 |<IP  frag=0 ttl=(1, 9) proto=udp dst=[Net('www.google.com'), Net('www.facebook.com')] |<UDP  |>>>
+>>>   
+```
+
 ### 2 - scapy packet crafting
 
 - I really like this library. 
