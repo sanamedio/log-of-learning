@@ -2,6 +2,7 @@
 
 ### 7 - lsc() listing all functions in scapy
 
+- from here http://web.archive.org/web/20120401161821/http://packetstorm.linuxsecurity.com/papers/general/blackmagic.txt
 - Scapy has a send, receive and a send&receive mode.
 - Scapy can send packets at layer 2 (datalink) and layer 3 (network)
 - Scapy has several highlevel functions such as p0f() and arpcachepoison
