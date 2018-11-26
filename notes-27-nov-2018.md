@@ -1,5 +1,67 @@
 # 27-nov-2018
 
+
+### 4 - scapy ls() and packet defaults
+
+```python
+>> ls(IP)                                                                      
+version    : BitField (4 bits)                   = (4)
+ihl        : BitField (4 bits)                   = (None)
+tos        : XByteField                          = (0)
+len        : ShortField                          = (None)
+id         : ShortField                          = (1)
+flags      : FlagsField (3 bits)                 = (<Flag 0 ()>)
+frag       : BitField (13 bits)                  = (0)
+ttl        : ByteField                           = (64)
+proto      : ByteEnumField                       = (0)
+chksum     : XShortField                         = (None)
+src        : SourceIPField                       = (None)
+dst        : DestIPField                         = (None)
+options    : PacketListField                     = ([])
+>>> ls(ICMP)                                                                    
+type       : ByteEnumField                       = (8)
+code       : MultiEnumField (Depends on type)    = (0)
+chksum     : XShortField                         = (None)
+id         : XShortField (Cond)                  = (0)
+seq        : XShortField (Cond)                  = (0)
+ts_ori     : ICMPTimeStampField (Cond)           = (70431032)
+ts_rx      : ICMPTimeStampField (Cond)           = (70431032)
+ts_tx      : ICMPTimeStampField (Cond)           = (70431032)
+gw         : IPField (Cond)                      = ('0.0.0.0')
+ptr        : ByteField (Cond)                    = (0)
+reserved   : ByteField (Cond)                    = (0)
+length     : ByteField (Cond)                    = (0)
+addr_mask  : IPField (Cond)                      = ('0.0.0.0')
+nexthopmtu : ShortField (Cond)                   = (0)
+unused     : ShortField (Cond)                   = (0)
+unused     : IntField (Cond)                     = (0)
+>>> ls(TCP)                                                                     
+sport      : ShortEnumField                      = (20)
+dport      : ShortEnumField                      = (80)
+seq        : IntField                            = (0)
+ack        : IntField                            = (0)
+dataofs    : BitField (4 bits)                   = (None)
+reserved   : BitField (3 bits)                   = (0)
+flags      : FlagsField (9 bits)                 = (<Flag 2 (S)>)
+window     : ShortField                          = (8192)
+chksum     : XShortField                         = (None)
+urgptr     : ShortField                          = (0)
+options    : TCPOptionsField                     = ([])
+>>> ls(UDP)                                                                     
+sport      : ShortEnumField                      = (53)
+dport      : ShortEnumField                      = (53)
+len        : ShortField                          = (None)
+chksum     : XShortField                         = (None)
+>>> ls(HTTP)                                                                    
+---------------------------------------------------------------------------
+NameError                                 Traceback (most recent call last)
+<ipython-input-5-a70c72b721b3> in <module>
+----> 1 ls(HTTP)
+
+NameError: name 'HTTP' is not defined
+>>>               
+```
+
 ### 3 - generating packets with specific configs
 
 
