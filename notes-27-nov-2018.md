@@ -1,6 +1,8 @@
 # 27-nov-2018
 
-### 5 - create TCP connnection using scapy
+### 5 - spoofing packets
+
+- https://stackoverflow.com/questions/414025/is-there-a-python-library-than-can-simulate-network-traffic-from-different-addre
 
 ```python
 >>> target='localhost'                                                 
