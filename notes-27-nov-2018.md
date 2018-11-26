@@ -1,5 +1,31 @@
 # 27-nov-2018
 
+### 9 - Stepping into a function using IPython
+
+```python
+In [1]: def foo(a, b):
+   ...:     print a + b
+   ...:
+
+In [2]: import ipdb
+
+In [3]: ipdb.runcall(foo, 1, 2)
+> <ipython-input-1-2e565fd9c4a4>(2)foo()
+      1 def foo(a, b):
+----> 2     print a + b
+      3
+
+ipdb>
+```
+or
+```
+>> %debug foo(1,2)
+```
+or
+```
+from IPython.core.debugger import Pdb; ipdb=Pdb()
+```
+
 ### 8 - Sending and recieving packets
 
 - ```sr()``` The sr() function is for sending packets and receiving answers. The function returns a couple of packet and answers, and the unanswered packets.
