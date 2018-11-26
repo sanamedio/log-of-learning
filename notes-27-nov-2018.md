@@ -1,5 +1,43 @@
 # 27-nov-2018
 
+### 5 - create TCP connnection using scapy
+
+```python
+>>> target='localhost'                                                 
+>>> spoofed_ip='1.1.1.1'                                               
+>>> port=8000                                                          
+>>> p1=IP(dst=target,src=spoofed_ip)/TCP(dport=port,sport=5000,flags='S
+...: ') 
+...: send(p1)                                                          
+.
+Sent 1 packets.
+>>> seq=12345                                                          
+>>> p2=IP(dst=target,src=spoofed_ip)/TCP(dport=port,sport=5000,flags='A
+...: ', 
+...:                                      ack=seq+1,seq=1)             
+>>> send(p2)                                                           
+.
+Sent 1 packets.
+>>> send(p2)                                                           
+.
+Sent 1 packets.
+>>> port = 8002                                                        
+>>> p1=IP(dst=target,src=spoofed_ip)/TCP(dport=port,sport=5000,flags='S
+...: ') 
+...: send(p1)                                                          
+.
+Sent 1 packets.
+>>> seq=12347                                                          
+>>> p2=IP(dst=target,src=spoofed_ip)/TCP(dport=port,sport=5000,flags='A
+...: ', 
+...:                                      ack=seq+1,seq=1)             
+>>> send(p2)                                                           
+.
+Sent 1 packets.
+>>>  
+```
+
+- shows two new TCP connections in netstat
 
 ### 4 - scapy ls() and packet defaults
 
