@@ -1,5 +1,99 @@
 # 27-nov-2018
 
+### 8 - Sending a recieving packets
+
+- ```sr()``` The sr() function is for sending packets and receiving answers. The function returns a couple of packet and answers, and the unanswered packets.
+- ```sr1()``` This function is a variant that only return one packet that answered thesent packet (or the packet set) sent.When using sr() or sr1() the packets must be layer 3 packets (IP, ARP, etc.)
+- ```srp()``` The function srp() does the same for layer 2 packets (Ethernet, 802.3, etc).
+
+```python
+>>> h  = sr1(IP(dst="10.1.99.2")/ICMP())                               
+Begin emission:
+.Finished sending 1 packets.
+
+......^C
+Received 7 packets, got 0 answers, remaining 1 packets
+>>> h  = sr1(IP(dst="www.google.com")/ICMP())                          
+Begin emission:
+Finished sending 1 packets.
+*
+Received 1 packets, got 1 answers, remaining 0 packets
+>>> h                                                                  
+<IP  version=4 ihl=5 tos=0x0 len=28 id=0 flags= frag=0 ttl=56 proto=icmp chksum=0x23cc src=216.58.197.36 dst=192.168.1.14 options=[] |<ICMP  type=echo-reply code=0 chksum=0x0 id=0x0 seq=0x0 |>>
+>>> h.show()                                                           
+###[ IP ]### 
+  version= 4
+  ihl= 5
+  tos= 0x0
+  len= 28
+  id= 0
+  flags= 
+  frag= 0
+  ttl= 56
+  proto= icmp
+  chksum= 0x23cc
+  src= 216.58.197.36
+  dst= 192.168.1.14
+  \options\
+###[ ICMP ]### 
+     type= echo-reply
+     code= 0
+     chksum= 0x0
+     id= 0x0
+     seq= 0x0
+
+>>> h = sr1(IP(dst="www.google.com")/ICMP()/"Helloworld")              
+Begin emission:
+Finished sending 1 packets.
+*
+Received 1 packets, got 1 answers, remaining 0 packets
+>>> h.show()                                                           
+###[ IP ]### 
+  version= 4
+  ihl= 5
+  tos= 0x0
+  len= 38
+  id= 0
+  flags= 
+  frag= 0
+  ttl= 56
+  proto= icmp
+  chksum= 0x23c2
+  src= 216.58.197.36
+  dst= 192.168.1.14
+  \options\
+###[ ICMP ]### 
+     type= echo-reply
+     code= 0
+     chksum= 0xffdf
+     id= 0x0
+     seq= 0x0
+###[ Raw ]### 
+        load= 'Helloworld'
+
+>>> p=sr(IP(dst="www.facebook.com")/TCP(dport=23))                     
+Begin emission:
+.Finished sending 1 packets.
+^C
+Received 1 packets, got 0 answers, remaining 1 packets
+>>> p=sr(IP(dst="www.facebook.com")/TCP(dport=443))                    
+Begin emission:
+.Finished sending 1 packets.
+*
+Received 2 packets, got 1 answers, remaining 0 packets
+>>> p                                                                  
+(<Results: TCP:1 UDP:0 ICMP:0 Other:0>,
+ <Unanswered: TCP:0 UDP:0 ICMP:0 Other:0>)
+>>> ans,uans = p                                                       
+>>> ans.summary()                                                      
+IP / TCP 192.168.1.14:ftp_data > 157.240.23.35:https S ==> IP / TCP 157.240.23.35:https > 192.168.1.14:ftp_data SA
+>>> p=sr(IP(dst="www.google.com")/TCP(dport=[23,80,53,443]))           
+Begin emission:
+.Finished sending 4 packets.
+*.............................................................................................................................................................................................................................................................................................................................................................................................................................................................................
+```
+
+
 ### 7 - lsc() listing all functions in scapy
 
 - from here http://web.archive.org/web/20120401161821/http://packetstorm.linuxsecurity.com/papers/general/blackmagic.txt
