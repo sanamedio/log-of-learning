@@ -2,6 +2,8 @@
 
 ### 6 - Scapy sending simple ICMP packet
 
+- from https://theitgeekchronicles.files.wordpress.com/2012/05/scapyguide1.pdf
+
 ```python
 >>> send(IP(dst="www.google.com")/ICMP()/"Helloworld")                 
 .
@@ -9,7 +11,16 @@ Sent 1 packets.
 >>> send(IP(dst="www.google.com",src="www.google.com")/ICMP()/"Helloworld")
 .
 Send 1 packets.
-#spoofed packet
+>>> send(IP(dst="www.google.com",src="www.facebook.com")/ICMP()/"helloworld")
+.
+Send 1 packets.
+
+>>> send(IP(ttl=120,dst="www.google.com",src="www.facebook.com")/ICMP()/"helloworld")
+.
+Send 1 packets.
+>>> send(IP(ttl=120,dst="www.google.com",src="www.facebook.com")/ICMP(type=0)/"helloworld")
+.
+Send 1 packets.
 ```
 
 ### 5 - spoofing packets
