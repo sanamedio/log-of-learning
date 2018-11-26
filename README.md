@@ -96,3 +96,6 @@
 
 [25-nov-2018 - 01 entries](./notes-25-nov-2018.md)
 
+[26-nov-2018 - 00 entries](./notes-26-nov-2018.md)
+
+
