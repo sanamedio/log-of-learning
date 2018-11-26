@@ -1,5 +1,36 @@
 # 27-nov-2018
 
+### 10 - using scrapy to download files from svn
+
+- Scraping subversion web view over HTTP
+- https://doc.scrapy.org/en/latest/intro/tutorial.html
+
+```python
+import scrapy
+
+class SvnSpider(scrapy.Spider):
+    name = "svn"
+    http_user = 'a@b.com'
+    http_pass = '12345'
+
+    allowed_domains = ["abc.company.com"]
+
+    start_urls = (
+        'https://abc.company.com/svn/',
+    )
+    def parse(self, response):
+        page = response.url.split("/")[-1]
+        if response.url.endswith('.java'):
+            yield {
+                    'url' : response.url,
+                    'filename': page,
+                    'content' : response.text
+                }
+        for a in  response.css('a'):
+            yield response.follow(a, callback=self.parse)
+```
+
+
 ### 9 - Stepping into a function using IPython
 
 ```python
