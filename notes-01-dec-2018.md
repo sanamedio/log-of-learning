@@ -1,5 +1,65 @@
 # 01-01-2018
 
+### 3 - matplotlib + seaborn + scipy binomial distribution
+
+```python
+In [23]: n = 10                                                                                                                             
+
+In [24]: p = 0.3                                                                                                                            
+
+In [25]: import numpy as np                                                                                                                 
+
+In [26]: k = np.arange(0,21)                                                                                                                
+
+In [27]: k                                                                                                                                  
+Out[27]: 
+array([ 0,  1,  2,  3,  4,  5,  6,  7,  8,  9, 10, 11, 12, 13, 14, 15, 16,
+       17, 18, 19, 20])
+
+In [28]: from scipy.stats import binom                                                                                                      
+
+In [29]: binomial = binom.pmf(k, n  , p )                                                                                                   
+
+In [30]: binomial                                                                                                                           
+Out[30]: 
+array([2.82475249e-02, 1.21060821e-01, 2.33474440e-01, 2.66827932e-01,
+       2.00120949e-01, 1.02919345e-01, 3.67569090e-02, 9.00169200e-03,
+       1.44670050e-03, 1.37781000e-04, 5.90490000e-06, 0.00000000e+00,
+       0.00000000e+00, 0.00000000e+00, 0.00000000e+00, 0.00000000e+00,
+       0.00000000e+00, 0.00000000e+00, 0.00000000e+00, 0.00000000e+00,
+       0.00000000e+00])
+
+In [31]: plt.plot(k, binomial, 'o-')                                                                                                        
+Out[31]: [<matplotlib.lines.Line2D at 0x7fd1fa30d860>]
+
+In [32]: plt.show()                                                                                                                         
+
+In [33]: binom_simulation = binom.rvs(n=10, p = 0.3, size = 10000)                                                                          
+
+In [34]: binom_simulation                                                                                                                   
+Out[34]: array([2, 2, 2, ..., 4, 4, 3])
+
+In [35]: plt.hist(binom_simulation, bins = 10, normed=True)                                                                                 
+/home/whishworks/.local/lib/python3.6/site-packages/matplotlib/axes/_axes.py:6521: MatplotlibDeprecationWarning: 
+The 'normed' kwarg was deprecated in Matplotlib 2.1 and will be removed in 3.1. Use 'density' instead.
+  alternative="'density'", removal="3.1")
+Out[35]: 
+(array([0.03255556, 0.14133333, 0.26888889, 0.28788889, 0.22033333,
+        0.11155556, 0.03944444, 0.00777778, 0.001     , 0.00033333]),
+ array([0. , 0.9, 1.8, 2.7, 3.6, 4.5, 5.4, 6.3, 7.2, 8.1, 9. ]),
+ <a list of 10 Patch objects>)
+
+In [36]: plt.hist(binom_simulation, bins = 10, density=True)                                                                                
+Out[36]: 
+(array([0.03255556, 0.14133333, 0.26888889, 0.28788889, 0.22033333,
+        0.11155556, 0.03944444, 0.00777778, 0.001     , 0.00033333]),
+ array([0. , 0.9, 1.8, 2.7, 3.6, 4.5, 5.4, 6.3, 7.2, 8.1, 9. ]),
+ <a list of 10 Patch objects>)
+
+In [37]: plt.show()                                                                                                                         
+
+In [38]:  
+```
 
 ### 2 - matplotlib + seaborn + scipy uniform distribution
 
