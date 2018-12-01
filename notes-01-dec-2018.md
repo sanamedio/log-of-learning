@@ -1,5 +1,39 @@
 # 01-01-2018
 
+### 5 - visualizing random.random
+
+```python
+import matplotlib.pyplot as plt
+import seaborn as sns
+import random
+
+
+data = [ random.random() for x in range(1,100000)]
+sns.distplot(data,kde=False,color='blue')
+plt.show()
+```
+
+### 4 - matplotlib + seaborn + scipy normal distribution
+
+
+```python
+from scipy.stats import norm
+import matplotlib.pyplot as plt
+import seaborn as sns
+
+# normal distribution simulation data with mean 10 and deviation 2
+data_normal = norm.rvs(size= 100000 , loc=10, scale=2)
+
+
+
+from pprint import pprint
+
+pprint(data_normal)
+
+ax = sns.distplot(data_normal)
+plt.show()
+```
+
 ### 3 - matplotlib + seaborn + scipy binomial distribution
 
 ```python
