@@ -1,6 +1,6 @@
 # 01-01-2018
 
-### 1 - requests + flask + datatables + pygithub3
+### 1 - flask + datatables + pygithub3
 
 - python2, takes a organization name and puts all the repo data into a datatable. crappy code 
 - https://github.com/copitux/python-github3
