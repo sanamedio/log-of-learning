@@ -102,7 +102,7 @@ lot of code snippets, to explore python
 
 [27-nov-2018 - 10 entries](./notes-27-nov-2018.md)
 
-[28-nov-2018 - 00 entries](./notes-28-nov-2018.md)
+[01-dec-2018 - 00 entries](./notes-01-dec-2018.md)
 
 
 
