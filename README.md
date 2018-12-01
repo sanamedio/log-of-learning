@@ -2,7 +2,7 @@
 # python-notes
 # ============
 
-lot of code snippets, to explore python
+a lot of snippets, to explore python
 
 ### 517 out of 100000 entries done
 
