@@ -3,6 +3,8 @@
 
 # 2 - modulus and floor div with python
 
+- from here : https://luminousmen.com/post/7
+
 ```python
 >>> -12 % 10
 8
