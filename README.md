@@ -106,6 +106,7 @@ a lot of snippets, to explore python
 
 [02-dec-2018 - 05 entries](./notes-02-dec-2018.md)
 
+[03-dec-2018 - 00 entries](./notes-03-dec-2018.md)
 
 
 
