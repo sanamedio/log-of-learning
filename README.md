@@ -4,7 +4,7 @@
 
 a lot of snippets, to explore python
 
-### 517 out of 100000 entries done
+### 529 out of 100000 entries done
 
 [01-oct-2018 - 52 entries](./notes-01-oct-2018.md)
 
@@ -104,7 +104,9 @@ a lot of snippets, to explore python
 
 [01-dec-2018 - 05 entries](./notes-01-dec-2018.md)
 
-[02-dec-2018 - 00 entries](./notes-02-dec-2018.md)
+[02-dec-2018 - 05 entries](./notes-02-dec-2018.md)
+
+
 
 
 
