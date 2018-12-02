@@ -78,8 +78,6 @@ In [6]: print(G.edges())
 [(0, 1), (1, 2), (2, 3)]
 
 In [7]: nx.draw(G)                                                                                                                          
-/home/whishworks/.local/lib/python3.6/site-packages/networkx/drawing/nx_pylab.py:611: MatplotlibDeprecationWarning: isinstance(..., numbers.Number)
-  if cb.is_numlike(alpha):
 
 In [8]: plt.show()                                                                                                                          
 ```
