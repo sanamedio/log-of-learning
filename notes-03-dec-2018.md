@@ -1,5 +1,18 @@
 # 03-dec-2018
 
+
+# 2 - modulus and floor div with python
+
+```python
+>>> -12 % 10
+8
+>>> -12 // 10
+-2
+>>> -12 / 10
+-1.2
+>>> 
+```
+
 # 1 - default argument initialization
 
 - always gets me into thinking otherwise; quite unintiutive at first
