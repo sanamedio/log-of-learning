@@ -1,5 +1,29 @@
 # 02-dec-2018 
 
+
+### 4 - Visualizing random numbers in 2d with scatter plot
+
+```python
+
+In [34]: import numpy as np                                                                                        
+
+In [35]: import matplotlib.pyplot as plt                                                                           
+
+In [36]: import random                                                                                             
+
+In [37]: x = [ random.random() for x in range(500) ]                                                               
+
+In [38]: y = [ random.random() for t in range(500) ]                                                               
+
+In [39]: plt.scatter(x, y)                                                                                         
+Out[39]: <matplotlib.collections.PathCollection at 0x7f4b0a5607b8>
+
+In [40]: plt.show()                                                                                                
+
+In [41]:  
+```
+
+
 ### 3 - Matplotlib visualizing 2d arrays
 
 - plt.imshow is good way to visualize large matrixes as it color codes magnitude
