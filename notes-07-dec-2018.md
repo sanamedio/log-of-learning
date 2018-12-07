@@ -4,6 +4,7 @@
 ### 1 - writing your own grammar engine?
 
 - just an attempt to start understanding strings with rules
+- The idea is that assuming your input is character based tokens; what it takes to write a engine that can evaluate the string based on give rules. Don't know what the algorithm is called; and am trying to do it from experimentation to learn.
 
 ```python
 class Grammar:
