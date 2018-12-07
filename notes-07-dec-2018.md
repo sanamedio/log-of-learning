@@ -5,7 +5,7 @@
 
 - just an attempt to start understanding strings with rules
 
-```
+```python
 class Grammar:
         rules= """
         N : N*0;
