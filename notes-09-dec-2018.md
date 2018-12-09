@@ -61,47 +61,89 @@ import  matplotlib.pyplot as plt
 from pprint import pprint
 import random
 
+def shellSort(arr):
+
+    n = len(arr)
+    gap = n//2
+    ppp = [list(arr)]
+
+    while gap > 0:
+
+        for i in range(gap,n):
+
+            temp = arr[i]
+
+            j = i
+            while  j >= gap and arr[j-gap] >temp:
+                arr[j] = arr[j-gap]
+                j -= gap
+
+            arr[j] = temp
+            ppp+= [list(arr)]
+        gap //= 2
+    plt.imshow(ppp, interpolation='nearest', cmap='gist_heat')
+    plt.show()
+
+
+def selectionSort(A):
+    arr = A 
+    ppp = [list(arr)]
+    for i in range(len(A)): 
+
+        min_idx = i 
+        for j in range(i+1, len(A)): 
+            if A[min_idx] > A[j]: 
+                min_idx = j
+
+        A[i], A[min_idx] = A[min_idx], A[i]
+        ppp += [list(arr)]
+    plt.imshow(ppp, interpolation='nearest' , cmap='gist_heat')
+    plt.show()
+
+
+
 
 def bubbleSort(arr):
 
-    
-	ppp = [arr]
 
-	n = len(arr)
- 
-	for i in range(n):
- 
-		for j in range(0, n-i-1):
- 
-			if arr[j] > arr[j+1] :
-				arr[j], arr[j+1] = arr[j+1], arr[j]
+    ppp = [list(arr)]
 
-		ppp += [ list(arr) ]
+    n = len(arr)
 
-	plt.imshow(ppp, interpolation='nearest' , cmap='gist_heat')
-	plt.show()
+    for i in range(n):
+
+        for j in range(0, n-i-1): 
+
+            if arr[j] > arr[j+1] :
+                arr[j], arr[j+1] = arr[j+1], arr[j]
+
+        ppp += [ list(arr) ]
+
+    plt.imshow(ppp, interpolation='nearest' , cmap='gist_heat')
+    plt.show()
 
 
 
-def insertionSort(arr): 
+def insertionSort(arr):
 
-	ppp = [arr]
-	for i in range(1, len(arr)): 
+    ppp = [list(arr)]
+    for i in range(1, len(arr)): 
 
-		key = arr[i] 
+        key = arr[i]  
 
-		j = i-1
-		while j >=0 and key < arr[j] : 
-			arr[j+1] = arr[j] 
-			j -= 1
-		arr[j+1] = key 
-		ppp += [ list(arr) ]
-	#pprint(ppp)	
-	plt.imshow(ppp,interpolation='nearest',cmap='gist_heat')
-	plt.show()
+        j = i-1
+        while j >=0 and key < arr[j] : 
+            arr[j+1] = arr[j] 
+            j -= 1
+        arr[j+1] = key 
+        ppp += [ list(arr) ]
+    #pprint(ppp)    
+    plt.imshow(ppp,interpolation='nearest',cmap='gist_heat')
+    plt.show()
 
 arr = [ float(random.random()) for x in range(100) ]
-bubbleSort(arr) 
-for i in range(len(arr)): 
-	print "%f" %arr[i], 
+shellSort(arr)
+for i in range(len(arr)):
+    print "%f" %arr[i], 
 ```
+
