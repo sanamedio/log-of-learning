@@ -1,5 +1,29 @@
 # 09-dec-2018
 
+
+
+### 3 - Matplotlib subplots for plotting multiple data
+
+```python
+# https://matplotlib.org/tutorials/introductory/sample_plots.html#sphx-glr-tutorials-introductory-sample-plots-py
+import matplotlib.pyplot as plt
+import numpy as np
+
+np.random.seed(19233232)
+data = np.random.randn(2,100)
+
+
+fig, axs = plt.subplots(2,2, figsize=(5,5))
+
+axs[0,0].hist(data[0])
+axs[1,0].scatter(data[0],data[1])
+axs[0,1].plot(data[0],data[1])
+axs[1,1].hist2d(data[0],data[1])
+
+plt.show()
+```
+
+
 ### 2 - Different interpolation methods in matplotlib
 
 - from https://matplotlib.org/gallery/images_contours_and_fields/interpolation_methods.html
