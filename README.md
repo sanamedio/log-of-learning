@@ -4,7 +4,7 @@
 
 a lot of snippets, to explore stuff
 
-### 533 out of 100000 entries done
+### 533/100000
 
 [01-oct-2018 - 52 entries](./notes-01-oct-2018.md)
 
