@@ -110,8 +110,9 @@ a lot of snippets, to explore stuff
 
 [07-dec-2018 - 01 entries](./notes-07-dec-2018.md)
 
-[09-dec-2018 - 00 entries](./notes-09-dec-2018.md)
+[09-dec-2018 - 03 entries](./notes-09-dec-2018.md)
 
+[10-dec-2018 - 00 entries](./notes-10-dec-2018.md)
 
 
 
