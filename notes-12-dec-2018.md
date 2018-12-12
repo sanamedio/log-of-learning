@@ -1,6 +1,22 @@
 # 12-dec-2018
 
 
+### 2 - random number quiz 
+
+- from here https://pynative.com/python-random-number-generation-exercise-questions-and-challenge/
+
+
+```python
+# numbers between 100 and 999 which are divisible by 5
+In [1]: import random
+In [2]: for num in xrange(3):
+   ...:     print(random.randrange(100,999,5))
+   ...:     
+630
+650
+880
+```
+
 ### 1 - tsne in python
 
 - TSNE can help visualize high dimensional datasets and can make it easy to visually decode.
