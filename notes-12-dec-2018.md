@@ -1,5 +1,23 @@
 # 12-dec-2018
 
+### 3 - knuth shuffle
+
+```python
+
+In [5]: def knuth_shuffle(items):
+   ...:        for i in xrange(len(items)):
+   ...:            j = randrange(i,len(items))
+   ...:            items[i], items[j] = items[j], items[i]
+   ...:        print items
+   ...:        
+
+In [6]: knuth_shuffle([1,2,3])
+[2, 3, 1]
+
+In [7]: 
+
+```
+
 
 ### 2 - random number quiz 
 
