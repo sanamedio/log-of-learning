@@ -22,3 +22,27 @@ Out[5]: "it's 3"
 
 In [6]:            
 ```
+
+
+```python
+In [6]: from pampy import match,_                                                                                                                                                                                                             
+
+In [7]: def fibonacci(n): 
+   ...:     return match(n, 
+   ...:         1, 1, 
+   ...:         2, 1, 
+   ...:         _, lambda x: fibonacci(x-1) + fibonacci(x-2) 
+   ...:         ) 
+   ...:                                                                                                                                                                                                                                       
+
+In [8]: fibonacci(1)                                                                                                                                                                                                                          
+Out[8]: 1
+
+In [9]: fibonacci(5)                                                                                                                                                                                                                          
+Out[9]: 5
+
+In [10]: fibonacci(10)                                                                                                                                                                                                                        
+Out[10]: 55
+
+In [11]: 
+```
