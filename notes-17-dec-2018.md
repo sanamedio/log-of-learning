@@ -2,7 +2,7 @@
 
 ### 1 - pampy
 
-- seems like a very useful library
+- https://github.com/santinic/pampy
 
 ```python
 Python 3.6.7 (default, Oct 22 2018, 11:32:17) 
@@ -45,4 +45,28 @@ In [10]: fibonacci(10)
 Out[10]: 55
 
 In [11]: 
+```
+
+```python
+match(x,
+    3,              "this matches the number 3",
+
+    int,            "matches any integer",
+
+    (str, int),     lambda a, b: "a tuple (a, b) you can use in a function",
+
+    [1, 2, _],      "any list of 3 elements that begins with [1, 2]",
+
+    {'x': _},       "any dict with a key 'x' and any value associated",
+
+    _,              "anything else"
+)
+```
+
+```python
+from pampy import match, _
+
+x = [1, [2, 3], 4]
+
+match(x, [1, [_, 3], _], lambda a, b: [1, [a, 3], b])           # => [1, [2, 3], 4]
 ```
