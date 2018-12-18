@@ -116,5 +116,8 @@ a lot of snippets, to explore stuff
 
 [17-dec-2018 - 01 entries](./notes-17-dec-2018.md)
 
+[19-dec-2018 - 01 entries](./notes-19-dec-2018.md)
+
+
 
 
