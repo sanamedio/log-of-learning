@@ -3,6 +3,7 @@
 ### 1 - fibonacci over tcp socket
 
 - exposing a simple fibonacci function over a TCP socket 
+- from this talk : https://www.youtube.com/watch?v=MCs5OvhV9S4&amp=&feature=share
 
 ```python
 from socket import *
@@ -48,7 +49,7 @@ $ nc localhost 25000
 3
 ```
 Threaded server to support multiple clients:
-```
+```python
 from socket import *
 from threading import Thread
 
