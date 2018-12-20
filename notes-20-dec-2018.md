@@ -1,5 +1,22 @@
 # 20-dec-2018
 
+### 2 - colored terminal output in IDLE
+
+```python
+import sys
+
+
+try: color = sys.stdout.shell
+except AttributeError: raise RuntimeError("use IDLE")
+
+
+color.write("hi, asdasd", "KEYWORD")
+color.write("No\n", "COMMENT")
+```
+
+- The "Colors" you can put are: SYNC, stdin, BUILTIN, STRING, console, COMMENT, stdout, TODO, stderr, hit, DEFINITION, KEYWORD, ERROR, and sel.
+- IDLE is a popular python IDE
+
 ### 1 - fibonacci over tcp socket
 
 - exposing a simple fibonacci function over a TCP socket 
