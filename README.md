@@ -120,6 +120,7 @@ a lot of snippets, to explore stuff
 
 [20-dec-2018 - 02 entries](./notes-20-dec-2018.md)
 
+[21-dec-2018 - 00 entries](./notes-21-dec-2018.md)
 
 
 
