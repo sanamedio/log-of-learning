@@ -2,6 +2,8 @@
 
 ### 11 - palindrome checking using deque
 
+- http://interactivepython.org/courselib/static/pythonds/BasicDS/PalindromeChecker.html
+
 ```python
 def palchecker(aString):
     chardeque = []
