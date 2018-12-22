@@ -54,7 +54,24 @@ alist = [54,26,93,17,77,31,44,55,20]
 selectionSort(alist)
 print(alist)
 ```
+insertion sort( start from 1st index, and assume list is being created from start of array; shift the elements to right until there is a right space created, and put the stuff in right place)
+```python
+def insertionSort(alist):
+   for index in range(1,len(alist)):
 
+     currentvalue = alist[index]
+     position = index
+
+     while position>0 and alist[position-1]>currentvalue:
+         alist[position]=alist[position-1]
+         position = position-1
+
+     alist[position]=currentvalue
+
+alist = [54,26,93,17,77,31,44,55,20]
+insertionSort(alist)
+print(alist)
+```
 
 ### 16 - hash table implementation with rehashing ( integer keys )
 
