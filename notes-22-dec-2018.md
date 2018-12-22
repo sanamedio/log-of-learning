@@ -1,5 +1,29 @@
 # 22-dec-2018
 
+### 11 - palindrome checking using deque
+
+```python
+def palchecker(aString):
+    chardeque = []
+
+    for ch in aString:
+        chardeque.append(ch)
+
+    stillEqual = True
+
+    while chardeque.__len__() > 1 and stillEqual:
+        first = chardeque.pop(0)
+        last = chardeque.pop()
+        if first != last:
+            stillEqual = False
+
+    return stillEqual
+
+print(palchecker("lsdkjfskf"))
+print(palchecker("radar"))
+```
+
+
 ### 10 - printer queue simulation
 
 ```python
