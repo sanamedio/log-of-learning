@@ -228,6 +228,26 @@ def toStr(n,base):
 
 print(toStr(1453,16))
 ```
+with stack:
+```python
+
+rStack = []
+
+def toStr(n,base):
+    convertString = "0123456789ABCDEF"
+    while n > 0:
+        if n < base:
+            rStack.append(convertString[n])
+        else:
+            rStack.append(convertString[n % base])
+        n = n // base
+    res = ""
+    while not rStack.__len__() == 0:
+        res = res + str(rStack.pop())
+    return res
+
+print(toStr(1453,16))
+```
 
 ### 6 - Checking paranthesis
 
