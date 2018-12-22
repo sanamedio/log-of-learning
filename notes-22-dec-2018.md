@@ -30,6 +30,28 @@ testlist = [ 0 , 1 , 2 , 89, 13 , 18 , 19 ,32, 42]
 print(binarySearch(testlist, 3 ))
 print(binarySearch(testlist, 13))
 ```
+recursive:
+```python
+def binarySearch(alist, low ,high, item):
+
+    if low > high:
+        return False
+    elif alist[ (low+high)//2] == item:
+        return True
+    else:
+        mid = (low + high) // 2
+        if alist[mid] > item:
+            return binarySearch(alist,low, mid-1, item)
+        else:
+            return binarySearch(alist,mid+1,high,item)
+
+
+testlist = [ 0 , 1 , 2 , 89, 13 , 18 , 19 ,32, 42]
+
+
+print(binarySearch(testlist,0,len(testlist)-1, 3 ))
+print(binarySearch(testlist,0, len(testlist)-1, 13))
+```
 
 ### 14 - coin exchange problem
 
