@@ -1,5 +1,34 @@
 # 22-dec-2018
 
+
+### 6 - Checking paranthesis
+
+```python
+def parChecker(symbolString):
+    s = []
+    balanced = True
+    index = 0
+    while index < len(symbolString) and balanced:
+        symbol = symbolString[index]
+        if symbol == "(":
+            s.append(symbol)
+        else:
+            if len(s) == 0:
+                balanced = False
+            else:
+                s.pop()
+
+        index = index + 1
+
+    if balanced and len(s)==0:
+        return True
+    else:
+        return False
+
+print(parChecker('((()))'))
+print(parChecker('(()'))
+```
+
 ### 5 - Timing a python standard type operations
 
 - http://interactivepython.org/courselib/static/pythonds/AlgorithmAnalysis/Lists.html
