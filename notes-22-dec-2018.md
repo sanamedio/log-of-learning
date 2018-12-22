@@ -1,5 +1,23 @@
 # 22-dec-2018
 
+### 12 - make a turtle recurse
+
+```python
+import turtle
+
+myTurtle = turtle.Turtle()
+myWin = turtle.Screen()
+
+def drawSpiral(myTurtle, lineLen):
+    if lineLen > 0:
+        myTurtle.forward(lineLen)
+        myTurtle.right(90)
+        drawSpiral(myTurtle,lineLen-5)
+
+drawSpiral(myTurtle,200)
+myWin.exitonclick()
+```
+
 ### 11 - palindrome checking using deque
 
 - http://interactivepython.org/courselib/static/pythonds/BasicDS/PalindromeChecker.html
