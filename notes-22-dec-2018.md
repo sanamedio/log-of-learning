@@ -1,5 +1,25 @@
 # 22-dec-2018
 
+### 7 - number to binary through division
+
+```python
+def divideBy2(decNumber):
+    remstack = []
+
+    while decNumber > 0:
+        rem = decNumber % 2
+        remstack.append(rem)
+        decNumber = decNumber // 2
+
+    binString = ""
+    while not len(remstack)==0:
+        binString = binString + str(remstack.pop())
+
+    return binString
+
+print(divideBy2(42))
+
+```
 
 ### 6 - Checking paranthesis
 
@@ -31,7 +51,6 @@ print(parChecker('(()'))
 
 for multiple kinds of brackets:
 ```python
-from pythonds.basic.stack import Stack
 
 def parChecker(symbolString):
     s = []
