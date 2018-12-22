@@ -124,5 +124,8 @@ a lot of snippets, to explore stuff
 
 [22-dec-2018 - 17 entries](./notes-22-dec-2018.md)
 
+[23-dec-2018 - 00 entries](./notes-23-dec-2018.md)
+
+
 
 
