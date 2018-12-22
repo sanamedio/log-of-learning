@@ -1,5 +1,24 @@
 # 22-dec-2018
 
+### 13 - tower of hanoi
+
+- in base case you just move the disk directly; as good as calling moveTower without any height
+- in normal case you move the h-1 pegs on the top of bottom peg to another tower, and then move the bottom peg to right tower; and then move back the h-1 pegs again to the top of it. 
+- Although, if the h-1 pegs are themselvse a tower of more than one peg; they would also need help ; 
+
+```python
+def moveTower(height,fromPole, toPole, withPole):
+    if height >= 1:
+        moveTower(height-1,fromPole,withPole,toPole)
+        moveDisk(fromPole,toPole)
+        moveTower(height-1,withPole,toPole,fromPole)
+
+def moveDisk(fp,tp):
+    print("moving disk from",fp,"to",tp)
+
+moveTower(3,"A","B","C")
+```
+
 ### 12 - make a turtle recurse
 
 spiral:
