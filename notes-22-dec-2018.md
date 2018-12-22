@@ -2,6 +2,8 @@
 
 ### 14 - coin exchange problem
 
+- http://interactivepython.org/courselib/static/pythonds/Recursion/DynamicProgramming.html
+
 with plain recursion:
 ```python
 def recMC(coinValueList,change):
