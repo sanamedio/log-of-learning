@@ -1,11 +1,17 @@
 # 22-dec-2018
 
-### 2 - center the string
+### 2 - center, ljust, rjust the string
 
 ```python
 
 In [13]: "asdasdsad".center(20)
 Out[13]: '     asdasdsad      '
+
+In [15]: "asdasdsad".ljust(20)
+Out[15]: 'asdasdsad           '
+
+In [16]: "asdasdsad".rjust(20)
+Out[16]: '           asdasdsad'
 
 ```
 
