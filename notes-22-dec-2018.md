@@ -66,3 +66,8 @@ L.sort(key=int)
 out = sorted(L, key=int)
 ```
 
+```python
+# just to remind me, last item is not included, but first item is
+list(range(10,1,-1))
+[10, 9, 8, 7, 6, 5, 4, 3, 2]
+```
