@@ -21,6 +21,31 @@ print(divideBy2(42))
 
 ```
 
+base convertor:
+```python
+
+def baseConverter(decNumber,base):
+    digits = "0123456789ABCDEF"
+
+    remstack = []
+
+    while decNumber > 0:
+        rem = decNumber % base
+        remstack.append(rem)
+        decNumber = decNumber // base
+
+    newString = ""
+    while not len(remstack) == 0:
+        newString = newString + digits[remstack.pop()]
+
+    return newString
+
+print(baseConverter(25,2))
+print(baseConverter(25,16))
+
+```
+
+
 ### 6 - Checking paranthesis
 
 ```python
