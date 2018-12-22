@@ -1,5 +1,14 @@
 # 22-dec-2018
 
+### 2 - center the string
+
+```python
+
+In [13]: "asdasdsad".center(20)
+Out[13]: '     asdasdsad      '
+
+```
+
 ### 1 - list 
 
 - http://effbot.org/zone/python-list.htm
