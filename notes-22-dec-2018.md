@@ -2,6 +2,11 @@
 
 ### 4 - logic gates and Fraction class
 
+- http://interactivepython.org/courselib/static/pythonds/Introduction/Summary.html
+- Computer science is the study of problem solving.
+- Computer science uses abstraction as a tool for representing both processes and data.
+- Abstract data types allow programmers to manage the complexity of a problem domain by hiding the details of the data.
+
 ```python
 def gcd(m,n):
     while m%n != 0:
