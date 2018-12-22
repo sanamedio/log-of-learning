@@ -1,5 +1,15 @@
 # 22-dec-2018
 
+### 3 - subset operations
+
+```python
+#Asks whether all elements of the first set are in the second
+
+a = {1,2,3}
+b = {1,2,3,4,5,6}
+print( a<=b)
+```
+
 ### 2 - center, ljust, rjust the string
 
 ```python
