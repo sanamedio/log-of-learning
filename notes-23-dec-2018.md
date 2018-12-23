@@ -55,6 +55,37 @@ print(r.getRightChild().getRootVal())
 
 ```
 
+- when you see a bracket, just push the current node to stack and go down. When you see a number, take out from stack and move to parents. Same thing for ending bracket. When you see a operator, set value to current node and go down to right node.
+```python
+def buildParseTree(fpexp):
+    fplist = fpexp.split()
+    pStack = []
+    eTree = BinaryTree('')
+    pStack.append(eTree)
+    currentTree = eTree
+    for i in fplist:
+        if i == '(':
+            currentTree.insertLeft('')
+            pStack.append(currentTree)
+            currentTree = currentTree.getLeftChild()
+        elif i not in ['+', '-', '*', '/', ')']:
+            currentTree.setRootVal(int(i))
+            parent = pStack.pop()
+            currentTree = parent
+        elif i in ['+', '-', '*', '/']:
+            currentTree.setRootVal(i)
+            currentTree.insertRight('')
+            pStack.append(currentTree)
+            currentTree = currentTree.getRightChild()
+        elif i == ')':
+            currentTree = pStack.pop()
+        else:
+            raise ValueError
+    return eTree
+
+pt = buildParseTree("( ( 10 + 5 ) * 3 )")
+```
+
 ### 2 - using list to maintain a binary tree
 
 - its not a search tree, just a binary tree
