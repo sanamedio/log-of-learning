@@ -1,6 +1,37 @@
 # 29-dec-2018
 
-## 3 - two player optimal play
+### 4 - Modulus and deterministic functions of state
+
+- any sequence which is based on some state data; like fibonacci depends on last two numbers of the sequence, would repeat over a modulus; In other words; in a modular world -> there are only so many states of all the variables and things start repeating after a certain point.
+
+```python
+# fibonacci modulus series with modulus M
+a = 1
+b = 1
+
+M = 1000
+
+setme = set()
+
+for i in xrange(15001):
+    c = (a + b)%M
+    b = (a)%M
+
+
+    if (c,b) not in setme:
+        setme.add( (c,b))
+    else:
+        print(i)
+        print("Repeating states now")
+        break
+
+
+
+    a = c
+
+```
+
+### 3 - two player optimal play
 
 - The game is like there is a collection of sticks. At every turn a player can pick either 1 or 2 sticks. Two players are playing. from the base state and building a recursive game play; all the optimal moves can be reached.
 
@@ -22,7 +53,7 @@ for k in xrange(100):
 ```
 
 
-## 2 - building list of factors in inefficient way
+### 2 - building list of factors in inefficient way
 
 - http://www.codeabbey.com/index/task_view/integer-factorization
 - should do faster with sieve, but this is fun too.
@@ -53,7 +84,7 @@ while didSomething :
 print(l)
 ```
 
-## 1 - negative numbers python
+### 1 - negative numbers python
 
 - infinite precision causes it to not act like a normal 32-bit negative
 
