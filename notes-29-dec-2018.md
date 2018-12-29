@@ -1,5 +1,27 @@
 # 29-dec-2018
 
+## 3 - two player optimal play
+
+- The game is like there is a collection of sticks. At every turn a player can pick either 1 or 2 sticks. Two players are playing. from the base state and building a recursive game play; all the optimal moves can be reached.
+
+```python
+def test(k):
+    if k<= 1:
+        return False
+    elif k == 2:
+        return True
+    elif k == 3:
+        return True
+    else:
+        return not ( test(k-1) or test(k-2))
+
+
+
+for k in xrange(100):
+    print( k, test(k) )
+```
+
+
 ## 2 - building list of factors in inefficient way
 
 - http://www.codeabbey.com/index/task_view/integer-factorization
