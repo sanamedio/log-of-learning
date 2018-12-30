@@ -1,5 +1,35 @@
 # 31-dec-2018
 
+### 6 - words with vowel trigram from setence
+
+```python
+import re
+
+
+def threeVowels(string):
+
+
+    arr = string.split(' ')
+
+    count = 0
+
+
+
+
+    for word in arr:
+        if re.search(r'[aeiou]{3,}', word ) != None:
+            count += 1
+
+
+    return count
+
+
+if __name__ == '__main__' :
+
+
+    print(threeVowels('this is a funny thing hahahah aeiou'))
+```
+
 ### 5 - finding The first non repeating character in a string
 
 ```python
