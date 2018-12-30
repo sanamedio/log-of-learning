@@ -1,5 +1,39 @@
 # 31-dec-2018
 
+### 5 - finding The first non repeating character in a string
+
+```python
+def firstNonRepChar(string):
+
+
+    hashTable = {}
+
+    for c in string:
+        if c not in hashTable:
+            hashTable[c] = 1
+        else:
+            hashTable[c] += 1
+
+
+
+    for c in string:
+        if hashTable[c] == 1 :
+            return c
+
+
+    return -1
+
+
+
+
+if __name__ == '__main__':
+    print(firstNonRepChar('gjsdfklgjsldjeiortioz'))
+    print(firstNonRepChar(''))
+    print(firstNonRepChar('aaaa'))
+
+```
+
+
 ### 4 - isPrime
 
 - the upper bound sqrt and ceil don't work when n is taken; and if you take too higher without thinking; it will give wrong answer for lower numbers. simple but error prone
