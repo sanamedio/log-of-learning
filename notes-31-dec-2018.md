@@ -1,6 +1,46 @@
 # 31-dec-2018
 
 
+### 8 - threesum
+
+```python
+def threeSum(arr,S):
+
+    # scanning plus two poitners
+
+    arr = sorted(arr)
+
+
+
+    for i in range(0, len(arr)-2):
+
+
+        ptr_start , ptr_end = i+1, len(arr) - 1
+
+
+
+        while ptr_start < ptr_end:
+
+
+            total = arr[i]  + arr[ptr_start]  + arr[ptr_end]
+
+
+            if total == S:
+                return True
+            elif total < S:
+                ptr_start += 1
+            else:
+                ptr_end -= 1
+
+    return False
+
+
+
+if __name__ == '__main__':
+
+    print(threeSum([1,1,1,1,1,1,1,1,2,3,1,12,2,3,23,1,2,2,34,12,12],3))
+```
+
 ### 7 - finding majority element in linear time without extra space
 
 
