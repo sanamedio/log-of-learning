@@ -1,5 +1,30 @@
 # 31-dec-2018
 
+### 3 - clockAngle
+
+- smaller angle between hour hand and minute hand of a clock at a particular instant
+
+```python
+def clockAngle(hours, mins):
+    h = 0.5 * ( 60 * hours + mins );
+    m = 6 * mins
+
+    angle = abs(h-m)
+
+    if angle > 180 :
+        return 360 - angle
+    else:
+        return angle
+
+
+
+if __name__ == '__main__':
+    print (clockAngle(0,0))
+    print (clockAngle(6,30))
+    print (clockAngle(6,0))
+    print (clockAngle(12,0))
+```
+
 ### 2 - nestedSum
 - take sum of nested arrays
 
