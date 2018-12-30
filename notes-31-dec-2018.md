@@ -1,5 +1,39 @@
 # 31-dec-2018
 
+### 4 - isPrime
+
+- the upper bound sqrt and ceil don't work when n is taken; and if you take too higher without thinking; it will give wrong answer for lower numbers. simple but error prone
+
+```python
+import math
+
+
+def isprime(n):
+
+    if n < 2 :
+        return False
+
+
+
+    for i in range(2, int(math.ceil(math.sqrt(n+1)))):
+        print n, i
+        if n % i == 0 :
+            return False
+
+
+    return True
+
+
+
+if __name__ == '__main__':
+
+    assert isprime(1) == False
+    assert isprime(2) == True
+    assert isprime(24) == False
+    assert isprime(23) == True
+    assert isprime(25) == True # failed
+```
+
 ### 3 - clockAngle
 
 - smaller angle between hour hand and minute hand of a clock at a particular instant
