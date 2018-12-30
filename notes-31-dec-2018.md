@@ -1,5 +1,56 @@
 # 31-dec-2018
 
+
+### 7 - finding majority element in linear time without extra space
+
+
+```python
+import math
+
+
+
+def majorityElement(arr):
+
+
+    candidate = None
+    count = 0
+
+
+
+    for i in range(len(arr)):
+
+        if candidate is None or count ==0 :
+            candidate = arr[i]
+            count = 1
+        elif arr[i] == candidate:
+            count += 1
+        else:
+            count -= 1
+
+
+
+    count = 0
+
+
+    for el in arr:
+        if el == candidate:
+            count += 1
+
+
+    if count > math.floor(len(arr) / 2 ):
+        return candidate
+    else:
+        return None
+
+
+
+if __name__ == '__main__':
+
+    print(majorityElement([1,2,3,4,1,2,3,4,1]))
+    print(majorityElement([]))
+    print(majorityElement([2,1,1,1,1,1,1,2,2,2,2,2,2]))
+```
+
 ### 6 - words with vowel trigram from setence
 
 ```python
