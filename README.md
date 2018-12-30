@@ -132,5 +132,5 @@ a lot of snippets, to explore stuff
 
 [29-dec-2018 - 04 entries](./notes-29-dec-2018.md)
 
-[31-dec-2018 - 00 entries)(./notes-31-dec-2018.md)
+[31-dec-2018 - 00 entries](./notes-31-dec-2018.md)
 
