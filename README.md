@@ -4,7 +4,7 @@
 
 a lot of snippets, to explore stuff
 
-### 572/100000
+### 580/100000
 
 [01-oct-2018 - 52 entries](./notes-01-oct-2018.md)
 
@@ -132,5 +132,5 @@ a lot of snippets, to explore stuff
 
 [29-dec-2018 - 04 entries](./notes-29-dec-2018.md)
 
-[31-dec-2018 - 00 entries](./notes-31-dec-2018.md)
+[31-dec-2018 - 08 entries](./notes-31-dec-2018.md)
 
