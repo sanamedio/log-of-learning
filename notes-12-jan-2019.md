@@ -14,7 +14,7 @@ with open("problemset.all","w") as f:
         url = "https://practice.abcdefghi.org/explore/?page={}&sortBy=accuracy".format(i)
         print(url)
         t.get(url)
-        links = [ x.find_elements_by_tag_name('a') for x in t.find_elements_by_class_name('problem-block')]
+        links = [ x.find_elements_by_tag_name('a') for x in t.find_elements_by_class_name('problems')]
         all_links = [ item for sublist in links for item in sublist ]
-        f.write('\n'.join([ a.get_attribute('href') for a in all_links if '/problems/' in a.get_attribute('href') ]))
+        f.write('\n'.join([ a.get_attribute('href') for a in all_links if '/problems' in a.get_attribute('href') ]))
 ```
