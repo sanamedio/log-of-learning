@@ -9,9 +9,9 @@ from selenium import webdriver
 
 t= webdriver.Firefox()
 
-with open("gfg.all","w") as f:
+with open("problemset.all","w") as f:
     for i in range(1,61):
-        url = "https://practice.geeksforgeeks.org/explore/?page={}&sortBy=accuracy".format(i)
+        url = "https://practice.abcdefghi.org/explore/?page={}&sortBy=accuracy".format(i)
         print(url)
         t.get(url)
         links = [ x.find_elements_by_tag_name('a') for x in t.find_elements_by_class_name('problem-block')]
