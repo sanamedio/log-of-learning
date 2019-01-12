@@ -1,5 +1,19 @@
 # 12-jan-2019
 
+### 2 - ijson
+
+- https://pypi.org/project/ijson/
+- Streaming json as events
+```python
+import ijson
+f = open("test.json")
+gen = ijson.parse(f)
+print( next(gen))
+print( next(gen))
+print( next(gen))
+```
+
+
 ### 1 - selenium webdriver
 
 - selenium can help a lot in simplifying webscraping for websites which dynamically load content
