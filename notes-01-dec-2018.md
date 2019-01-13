@@ -74,7 +74,7 @@ In [34]: binom_simulation
 Out[34]: array([2, 2, 2, ..., 4, 4, 3])
 
 In [35]: plt.hist(binom_simulation, bins = 10, normed=True)                                                                                 
-/home/whishworks/.local/lib/python3.6/site-packages/matplotlib/axes/_axes.py:6521: MatplotlibDeprecationWarning: 
+/home/kuroop/.local/lib/python3.6/site-packages/matplotlib/axes/_axes.py:6521: MatplotlibDeprecationWarning: 
 The 'normed' kwarg was deprecated in Matplotlib 2.1 and will be removed in 3.1. Use 'density' instead.
   alternative="'density'", removal="3.1")
 Out[35]: 
