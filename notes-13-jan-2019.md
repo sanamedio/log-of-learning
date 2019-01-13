@@ -3,7 +3,7 @@
 ### 2 - pycuber
 
 - nice library to manipulate rubic cube.
-- need to keep it for later use in a solver
+- need to keep it for later use in a solver https://github.com/adrianliaw/PyCuber
 ```python
 Python 3.6.7 (default, Oct 22 2018, 11:32:17) 
 [GCC 8.2.0] on linux
