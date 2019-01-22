@@ -36,4 +36,4 @@ if __name__ == '__main__':
     print(simulate( 100000, consecutive_roll, (5,5) ))
 ```
 
-- the answer looks a little weird; why they have to be same
+- https://math.stackexchange.com/questions/192177/how-many-times-to-roll-a-die-before-getting-two-consecutive-sixes
