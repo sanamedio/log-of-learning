@@ -33,3 +33,38 @@ Sat, 26 Jan 2019 17:29:11 +0530 | INFO   | server     |  | Starting WebSocket se
 Sat, 26 Jan 2019 17:29:15 +0530 | ACCESS | session    | url:'http://localhost:8080/' id:'1548503955611529129' remote:'127.0.0.1' command:'./my-program' origin:'http://websocketd.com' | CONNECT
 Sat, 26 Jan 2019 17:29:21 +0530 | ACCESS | session    | url:'http://localhost:8080/' id:'1548503955611529129' remote:'127.0.0.1' command:'./my-program' origin:'http://websocketd.com' pid:'821' | DISCONNECT
 ```
+
+```html
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>websocketd count example</title>
+    <style>
+      #count {
+        font: bold 150px arial;
+        margin: auto;
+        padding: 10px;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    
+    <div id="count"></div>
+    
+    <script>
+      var ws = new WebSocket('ws://localhost:8080/');
+      ws.onopen = function() {
+        document.body.style.backgroundColor = '#cfc';
+      };
+      ws.onclose = function() {
+        document.body.style.backgroundColor = null;
+      };
+      ws.onmessage = function(event) {
+        document.getElementById('count').textContent = event.data;
+      };
+    </script>
+    
+  </body>
+</html>
+```
