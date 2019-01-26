@@ -1,5 +1,62 @@
 # 26-jan-2019
 
+### 2 - websocketd send-receive
+
+- data can be both sent and received over websocketd from and to python to browser
+
+```python
+#!/usr/bin/python
+from sys import stdout,stdin
+from time import sleep
+
+# Count from 1 to 10 with a sleep
+for count in range(0, 10):
+  line = stdin.readline().strip()
+  while len(line) == 0:
+    line = stdin.readline().strip()
+ 
+  print(count + 1,line)
+  stdout.flush()
+  sleep(0.1)
+```
+
+```html
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>websocketd count example</title>
+    <style>
+      #count {
+        font: bold 150px arial;
+        margin: auto;
+        padding: 10px;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    
+    <div id="count"></div>
+    
+    <script>
+      var ws = new WebSocket('ws://localhost:8080/');
+      ws.onopen = function() {
+        document.body.style.backgroundColor = '#cfc';
+	ws.send("hello onopen\n")
+      };
+      ws.onclose = function() {
+        document.body.style.backgroundColor = null;
+	ws.send("hello onclone\n")
+      };
+      ws.onmessage = function(event) {
+        document.getElementById('count').textContent = event.data;
+	ws.send("hello onmessage\n");
+      };
+    </script>
+    
+  </body>
+</html>
+```
 
 ### 1 - websocketd
 
