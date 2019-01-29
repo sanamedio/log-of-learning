@@ -8,7 +8,8 @@ a lot of snippets, to explore stuff
 
 | Date  | Count |
 | ------------- | ------------- |
-|[27-jan-2019](./notes-27-jan-2019.md)|00 |
+|[29-jan-2019](./notes-29-jan-2019.md)|00 |
+|[27-jan-2019](./notes-27-jan-2019.md)|01 |
 |[26-jan-2019](./notes-26-jan-2019.md)|04 | 
 |[21-jan-2019](./notes-21-jan-2019.md)|01 |
 |[17-jan-2019](./notes-17-jan-2019.md)|01 |
