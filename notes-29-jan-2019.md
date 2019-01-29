@@ -1,6 +1,6 @@
 # 29-jan-2019
 
-### 2 - radix
+### 2 - radix sort
 
 ```python
 
@@ -29,7 +29,7 @@ if __name__ == '__main__':
 ```
 
 
-### 1 - partition
+### 1 - partitions of a integer
 
 - partitions of a number
 
