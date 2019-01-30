@@ -49,6 +49,21 @@ services:
                 image: "redis:alpine"
 ```
 
+docker-compose.yml ( with volume)
+```yaml
+version : '3'
+services:
+        web:
+                build: .
+                ports:
+                        - "5000:5000"
+                volumes:
+                        - .:/code
+        redis:
+                image: "redis:alpine"
+
+```
+
 Dockerfile
 ```Dockerfile
 FROM python:3.4-alpine
