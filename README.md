@@ -4,11 +4,11 @@
 
 a lot of snippets, to explore stuff
 
-### 594/100000
+### 596/100000
 
 | Date  | Count |
 | ------------- | ------------- |
-|[29-jan-2019](./notes-29-jan-2019.md)|00 |
+|[29-jan-2019](./notes-29-jan-2019.md)|02 |
 |[27-jan-2019](./notes-27-jan-2019.md)|01 |
 |[26-jan-2019](./notes-26-jan-2019.md)|04 | 
 |[21-jan-2019](./notes-21-jan-2019.md)|01 |
