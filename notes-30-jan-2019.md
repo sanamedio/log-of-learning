@@ -3,6 +3,7 @@
 ### 2 - amazon sqs
 
 - https://lobster1234.github.io/2017/06/25/boto-and-sqs/
+- unordered delivery
 
 ```python
 #!/usr/local/bin/python3
