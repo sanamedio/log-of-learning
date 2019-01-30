@@ -1,5 +1,116 @@
 # 20-jan-2019
 
+### 3 - amazon sqs, sns and s3
+
+- on file upload to s3, a notification is published to sns to whom a sqs and an email service has subscribed.
+
+```python
+import boto3, json
+
+s3BucketName="trawler-urls-bucket-lokilokiloki111"
+
+
+
+
+sns_topic_name = "s3-object-created-" + s3BucketName.replace (" ", "_")
+sqs_queue_name = "trawlerDataProcessor"
+
+
+s3_client = boto3.resource('s3')
+s3_client.create_bucket(Bucket= s3BucketName )
+
+
+sns_client = boto3.client('sns')
+sns_topic_arn = sns_client.create_topic( Name = sns_topic_name)['TopicArn']
+
+
+s3PubToSnsPolicy = {'Version': '2008-10-17',
+                    'Id': 'Policy-S3-publish-to-sns', 'Statement': [{
+    'Effect': 'Allow',
+    'Principal': {'AWS': '*'},
+    'Action': ['sns:Publish'],
+    'Resource': sns_topic_arn,
+    'Condition': {'ArnLike': {'aws:SourceArn': 'arn:aws:s3:*:*:'
+                  + s3BucketName + ''}},
+    }]}
+
+
+sns_client.set_topic_attributes( TopicArn = sns_topic_arn ,
+                                 AttributeName = "Policy" ,
+                                 AttributeValue = json.dumps(s3PubToSnsPolicy)
+                                )
+
+
+sns_client.set_topic_attributes( TopicArn = sns_topic_arn ,
+                                 AttributeName = "DisplayName" ,
+                                 AttributeValue = 'Urls2Crawl'
+                                )
+
+
+
+bucket_notifications_configuration = {
+    "TopicConfigurations" : [{
+        "Events" : [ "s3:ObjectCreated:*" ],
+        "TopicArn" : sns_topic_arn
+        }
+        ]
+    }
+
+
+s3_client.BucketNotification( s3BucketName).put(
+                                   NotificationConfiguration = bucket_notifications_configuration )
+
+
+#import pdb; pdb.set_trace()
+
+sns_client.subscribe( TopicArn = sns_topic_arn , Protocol = "email", Endpoint="lokendra.sharma.one@gmail.com" )
+
+
+sqs_client = boto3.client('sqs')
+
+sqs_policy = {
+    "Version":"2012-10-17",
+    "Statement":[
+      {
+        "Effect" : "Allow",
+        "Principal" : { "AWS": "*" },
+        "Action" : "sqs:SendMessage",
+        "Resource" : "*",
+        "Condition" : {
+          "ArnEquals" : {
+            "aws:SourceArn" : sns_topic_arn
+          }
+        }
+      }
+    ]
+}
+
+
+sqs_attributes = {  'DelaySeconds':'3',
+                    'ReceiveMessageWaitTimeSeconds' : '20',
+                    'VisibilityTimeout' : '300',
+                    'MessageRetentionPeriod':'86400',
+                    'Policy' : json.dumps(sqs_policy)
+                }
+
+resp = sqs_client.create_queue( QueueName = sqs_queue_name, Attributes = sqs_attributes )
+sqs_queue_url = resp['QueueUrl']
+
+
+resp = sqs_client.get_queue_attributes( QueueUrl = sqs_queue_url, AttributeNames=[ 'QueueArn' ] )
+sqs_queue_arn = resp['Attributes']['QueueArn']
+
+sns_client.subscribe(
+    TopicArn = sns_topic_arn,
+    Protocol = "sqs",
+    Endpoint = sqs_queue_arn
+)
+
+
+s3Up = boto3.resource('s3')
+s3Up.meta.client.upload_file('SOME_FILE.TXT', s3BucketName, 'hello.txt')
+```
+
 ### 2 - amazon sqs
 
 - https://lobster1234.github.io/2017/06/25/boto-and-sqs/
