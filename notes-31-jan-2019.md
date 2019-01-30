@@ -1,5 +1,24 @@
 # 31-jan-2019
 
+### 2 - Python unbuffered=1 why?
+
+- https://www.reddit.com/r/learnpython/comments/5ebkq6/what_does_pythonunbuffered1_do/
+
+```python
+import time
+for i in range(10):
+    print(i, end=" ")
+    time.sleep(.2)
+print()
+```
+
+```python
+import time
+for i in range(10):
+    print(i, end=" ", flush=True)
+    time.sleep(.2)
+print()
+```
 
 ### 1 - flask redis docker docker-compose alpine
 
