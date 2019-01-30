@@ -1,6 +1,6 @@
 # 31-jan-2019
 
-### 2 - Python unbuffered=1 why?
+### 2 - PYTHONUNBUFFERED=1 why?
 
 - https://www.reddit.com/r/learnpython/comments/5ebkq6/what_does_pythonunbuffered1_do/
 
