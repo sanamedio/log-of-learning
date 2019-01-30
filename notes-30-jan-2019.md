@@ -63,7 +63,7 @@ s3_client.BucketNotification( s3BucketName).put(
 
 #import pdb; pdb.set_trace()
 
-sns_client.subscribe( TopicArn = sns_topic_arn , Protocol = "email", Endpoint="lokendra.sharma.one@gmail.com" )
+sns_client.subscribe( TopicArn = sns_topic_arn , Protocol = "email", Endpoint="l.s.1[at]gmail.com" )
 
 
 sqs_client = boto3.client('sqs')
