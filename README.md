@@ -2,7 +2,7 @@
 # python-notes
 # ============
 
-a lot of snippets, to explore stuff
+a lot of snippets, to explore stuff ~77 days so far
 
 ### 609/100000
 
