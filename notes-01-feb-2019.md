@@ -1,5 +1,16 @@
 # 01-feb-2019
 
+
+### 2 - creating a dynamodb table
+
+```python
+import boto3
+d = boto3.resource('dynamodb')
+
+d.create_table(TableName="test", KeySchema=[ {'AttributeName':'id', 'KeyType' :'HASH'}], AttributeDefinitions= [ { 'AttributeType' :'N', 'AttributeName' : 'id'}], ProvisionedThroughput = { 'ReadCapacityUnits' : 1, 'WriteCapacityUnits':1})
+```
+
+
 ### 1 - converting python ds to dynamodb supported ds
 
 ```python
