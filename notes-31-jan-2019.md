@@ -1,5 +1,185 @@
 # 31-jan-2019
 
+### 4 - streaming fraud detection kafka
+
+- https://github.com/florimondmanca/kafka-fraud-detector
+- needed to modify few things, for testing ```$ docker-compose -f docker-compose.kafka.yml exec broker kafka-console-consumer --bootstrap-server localhost:9092 --topic streaming.transactions.fraud --from-beginning```
+
+
+generator
+```python
+"""Produce fake transactions into a Kafka topic."""
+
+import os
+from time import sleep
+import json
+
+from kafka import KafkaProducer
+from transactions import create_random_transaction
+
+TRANSACTIONS_TOPIC = os.environ.get('TRANSACTIONS_TOPIC')
+KAFKA_BROKER_URL = os.environ.get('KAFKA_BROKER_URL')
+TRANSACTIONS_PER_SECOND = float(os.environ.get('TRANSACTIONS_PER_SECOND'))
+SLEEP_TIME = 1 / TRANSACTIONS_PER_SECOND
+
+
+if __name__ == '__main__':
+    producer = KafkaProducer(
+        bootstrap_servers=KAFKA_BROKER_URL,
+        # Encode all values as JSON
+        value_serializer=lambda value: json.dumps(value).encode(),
+    )
+    while True:
+        transaction: dict = create_random_transaction()
+        producer.send(TRANSACTIONS_TOPIC, value=transaction)
+        print(transaction)  # DEBUG
+        sleep(SLEEP_TIME)
+```
+
+```python
+"""Utilities to model money transactions."""
+
+from random import choices, randint
+from string import ascii_letters, digits
+
+account_chars = digits + ascii_letters
+
+
+def _random_account_id() -> str:
+    """Return a random account number made of 12 characters."""
+    return ''.join(choices(account_chars, k=12))
+
+
+def _random_amount() -> float:
+    """Return a random amount between 1.00 and 1000.00."""
+    return randint(100, 100000) / 100
+
+
+def create_random_transaction() -> dict:
+    """Create a fake, randomised transaction."""
+    return {
+        'source': _random_account_id(),
+        'target': _random_account_id(),
+        'amount': _random_amount(),
+        # Keep it simple: it's all euros
+        'currency': 'EUR',
+    }
+```
+
+
+consumer
+```python
+"""Example Kafka consumer."""
+
+import json
+import os
+
+from kafka import KafkaConsumer, KafkaProducer
+
+KAFKA_BROKER_URL = os.environ.get('KAFKA_BROKER_URL')
+TRANSACTIONS_TOPIC = os.environ.get('TRANSACTIONS_TOPIC')
+LEGIT_TOPIC = os.environ.get('LEGIT_TOPIC')
+FRAUD_TOPIC = os.environ.get('FRAUD_TOPIC')
+
+
+def is_suspicious(transaction):
+    """Determine whether a transaction is suspicious."""
+    return transaction['amount'] >= 900
+
+
+if __name__ == '__main__':
+    consumer = KafkaConsumer(
+        TRANSACTIONS_TOPIC,
+        bootstrap_servers=KAFKA_BROKER_URL,
+        value_deserializer=lambda value: json.loads(value),
+    )
+    producer = KafkaProducer(
+        bootstrap_servers=KAFKA_BROKER_URL,
+        value_serializer=lambda value: json.dumps(value).encode(),
+    )
+    for message in consumer:
+        transaction = message.value
+        topic = FRAUD_TOPIC if is_suspicious(transaction) else LEGIT_TOPIC
+        producer.send(topic, value=transaction)
+        print(topic, transaction)  # DEBUG
+```
+
+```Dockerfile
+FROM python:3.6
+
+WORKDIR /usr/app
+
+ADD ./requirements.txt ./
+RUN pip install -r requirements.txt
+ADD ./ ./
+
+CMD ["python3", "app.py"]
+```
+
+kafka+zookeeper
+```yaml
+version: '3'
+
+services:
+
+  zookeeper:
+    image: confluentinc/cp-zookeeper:latest
+    ports:
+            - "2181:2181"
+    environment:
+      ZOOKEEPER_CLIENT_PORT: 2181
+      ZOOKEEPER_TICK_TIME: 2000
+
+  broker:
+    image: confluentinc/cp-kafka:latest
+    depends_on:
+      - zookeeper
+    ports:
+            - "9092:9092"
+    environment:
+      KAFKA_BROKER_ID: 1
+      KAFKA_ZOOKEEPER_CONNECT: zookeeper:2181
+      KAFKA_ADVERTISED_LISTENERS: PLAINTEXT://broker:9092
+      KAFKA_OFFSETS_TOPIC_REPLICATION_FACTOR: 1
+
+networks:
+  default:
+    external:
+      name: kafka-network
+```
+
+generator+consumer
+```yaml
+version: '3'
+
+services:
+
+  generator:
+    build: ./generator
+    environment:
+      KAFKA_BROKER_URL: broker:9092
+      TRANSACTIONS_TOPIC: queueing.transactions
+      TRANSACTIONS_PER_SECOND: 1000
+
+  detector:
+    build: ./detector
+    environment:
+      KAFKA_BROKER_URL: broker:9092
+      TRANSACTIONS_TOPIC: queueing.transactions
+      LEGIT_TOPIC: streaming.transactions.legit
+      FRAUD_TOPIC: streaming.transactions.fraud
+
+networks:
+  default:
+    external:
+      name: kafka-network
+```
+
+
+
+
+
+
 ### 3 - django docker-compose postgres 
 
 - https://docs.docker.com/compose/django/
