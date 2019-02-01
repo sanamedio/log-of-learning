@@ -2,13 +2,13 @@
 # python-notes
 # ============
 
-a lot of snippets, to explore stuff ~77 days so far
+bits and pieces from an ongoing adventure!
 
-### 610/100000
+### 612/100000
 
 | Date  | Count |
 | ------------- | ------------- |
-|[01-feb-2019](./notes-01-feb-2019.md)|00 |
+|[01-feb-2019](./notes-01-feb-2019.md)|02 |
 |[31-jan-2019](./notes-31-jan-2019.md)|05 |
 |[30-jan-2019](./notes-30-jan-2019.md)|03 |
 |[29-jan-2019](./notes-29-jan-2019.md)|02 |
