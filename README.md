@@ -8,6 +8,7 @@ bits and pieces from an ongoing adventure!
 
 | Date  | Count |
 | ------------- | ------------- |
+|[03-feb-2019](./notes-03-feb-2019.md)|00 |
 |[01-feb-2019](./notes-01-feb-2019.md)|02 |
 |[31-jan-2019](./notes-31-jan-2019.md)|05 |
 |[30-jan-2019](./notes-30-jan-2019.md)|03 |
