@@ -1,5 +1,188 @@
 # 05-feb-2019
 
+### 4 - not python but useful for local projects
+
+- ```docker network create docker-network```
+- ```docker-compose up```
+- sets up lot of useful tools for learning system design like kafka, mysql, zookeeper, cassandra, haproxy, nginx, spark, memcached, redis, activemq, elasticsearch, logstash, kibana, solr, mongo, postgres
+
+```yaml
+version: '3'
+
+services:
+ 
+  spark_master:
+    image: sequenceiq/spark:1.4.0
+    hostname: spark_master
+    ports:
+    - "4040:4040"
+    - "8042:8042"
+    - "7077:7077"
+    - "8088:8088"
+    - "8080:8080"
+    restart: always
+    #mem_limit: 1024m
+    command: bash /usr/local/spark/sbin/start-master.sh && ping localhost > /dev/null
+
+  spark_worker:
+    image: sequenceiq/spark:1.4.0
+    links:
+    - spark_master:spark_master
+    expose:
+    - "8081"
+    restart: always
+    command: bash /usr/local/spark/sbin/start-slave.sh spark://master:7077 && ping localhost >/dev/null
+
+
+
+
+  memcached:
+    image: bitnami/memcached:latest
+
+  cassandra:
+    image: bitnami/cassandra:latest
+
+  solr:
+    image: solr
+    ports:
+      - "8983:8983"
+
+  zookeeper:
+    image: confluentinc/cp-zookeeper:latest
+    ports:
+            - "2181:2181"
+    environment:
+      ZOOKEEPER_CLIENT_PORT: 2181
+      ZOOKEEPER_TICK_TIME: 2000
+
+
+  mongo:
+    image: mongo
+    ports:
+        - "27017:27017"
+
+  kafka:
+    image: confluentinc/cp-kafka:latest
+    depends_on:
+      - zookeeper
+    ports:
+            - "9092:9092"
+    environment:
+      KAFKA_BROKER_ID: 1
+      KAFKA_ZOOKEEPER_CONNECT: zookeeper:2181
+      KAFKA_ADVERTISED_LISTENERS: PLAINTEXT://kafka:9092
+      KAFKA_OFFSETS_TOPIC_REPLICATION_FACTOR: 1
+
+  mysql:
+    image: mysql:5.7
+    environment:
+      MYSQL_DATABASE: 'db'
+      MYSQL_USER: 'user'
+      MYSQL_PASSWORD: 'password'
+      MYSQL_ROOT_PASSWORD: 'password'
+    ports:
+      - '3306:3306'
+    expose:
+      - '3306'
+
+  redis:
+    image: redis
+    ports:
+      - "6379:6379"
+
+  postgres:
+      image: postgres
+      ports:
+          - "5432:5432"
+      environment:
+          POSTGRES_USER: "user"
+          POSTGRES_PASSWORD: "password"
+
+  haproxy:
+    image: dockercloud/haproxy
+    environment:
+      - BALANCE=leastconn
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+    ports:
+      - 8099:80
+
+
+  nginx: 
+    image: nginx:latest
+    ports:
+      - 80:80
+      - 443:443
+
+
+  activemq:
+    image: webcenter/activemq:5.14.3
+    ports:
+      # mqtt
+      - "1883:1883"
+      # amqp
+      - "5672:5672"
+      # ui
+      - "8161:8161"
+      # stomp
+      - "61613:61613"
+      # ws
+      - "61614:61614"
+      # jms
+      - "61616:61616"
+    environment:
+      ACTIVEMQ_REMOVE_DEFAULT_ACCOUNT: "true"
+      ACTIVEMQ_ADMIN_LOGIN: admin
+      ACTIVEMQ_ADMIN_PASSWORD: password
+      ACTIVEMQ_WRITE_LOGIN: write
+      ACTIVEMQ_WRITE_PASSWORD: password
+      ACTIVEMQ_READ_LOGIN: read
+      ACTIVEMQ_READ_PASSWORD: password
+      ACTIVEMQ_JMX_LOGIN: jmx
+      ACTIVEMQ_JMX_PASSWORD: password
+      ACTIVEMQ_STATIC_TOPICS: static-topic-1;static-topic-2
+      ACTIVEMQ_STATIC_QUEUES: static-queue-1;static-queue-2
+      ACTIVEMQ_ENABLED_SCHEDULER: "true"
+      ACTIVEMQ_MIN_MEMORY: 512
+      ACTIVEMQ_MAX_MEMORY: 2048
+
+  elasticsearch:
+    ulimits:
+        nofile:
+            soft: 65536
+            hard: 65536
+    image: docker.elastic.co/elasticsearch/elasticsearch-oss:6.2.2
+    ports:
+      - "9200:9200"
+      - "9300:9300"
+    environment:
+      ES_JAVA_OPTS: "-Xms1g -Xmx1g"
+
+
+  logstash:
+    image: docker.elastic.co/logstash/logstash-oss:6.2.2
+    ports:
+      - "5000:5000"
+    depends_on:
+      - elasticsearch
+    links:
+      - elasticsearch
+
+  kibana:
+    image: docker.elastic.co/kibana/kibana-oss:6.2.2
+    ports:
+      - "5601:5601"
+    depends_on:
+      - elasticsearch
+    links:
+        - elasticsearch
+
+networks:
+  default:
+      external:
+        name: docker-network
+```
+
 ### 3 - ec2 instance boto3 examples
 
 ```python
