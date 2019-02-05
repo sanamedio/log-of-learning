@@ -1,5 +1,132 @@
 # 05-feb-2019
 
+### 3 - ec2 instance boto3 examples
+
+```python
+import boto3
+ec2 = boto3.resource('ec2')
+
+
+#describe instance
+response = ec2.describe_instances()
+print(response)
+
+
+
+#monitor unmonitor instance
+if sys.argv[1] == 'ON':
+    response = ec2.monitor_instances(InstanceIds=['INSTANCE_ID'])
+else:
+    response = ec2.unmonitor_instances(InstanceIds=['INSTANCE_ID'])
+print(response)
+
+
+
+
+
+
+
+
+#create instance
+ec2.create_instances(ImageId='<ami-image-id>', MinCount=1, MaxCount=5)
+
+
+
+#stop terminate instance
+ids = ['instance-id-1', 'instance-id-2', ...]
+
+
+ec2.instances.filter(InstanceIds=ids).stop()
+ec2.instances.filter(InstanceIds=ids).terminate()
+
+
+
+## getting running isntances
+instances = ec2.instances.filter(
+    Filters=[{'Name': 'instance-state-name', 'Values': ['running']}])
+for instance in instances:
+    print(instance.id, instance.instance_type)
+
+
+
+# print  status
+for status in ec2.meta.client.describe_instance_status()['InstanceStatuses']:
+    print(status)
+
+
+
+# ebs snapshot
+snapshot = ec2.create_snapshot(VolumeId='volume-id', Description='description')
+volume = ec2.create_volume(SnapshotId=snapshot.id, AvailabilityZone='us-west-2a')
+ec2.Instance('instance-id').attach_volume(VolumeId=volume.id, Device='/dev/sdy')
+snapshot.delete()
+
+
+
+# vpc configuration
+vpc = ec2.create_vpc(CidrBlock='10.0.0.0/24')
+subnet = vpc.create_subnet(CidrBlock='10.0.0.0/25')
+gateway = ec2.create_internet_gateway()
+
+
+gateway.attach_to_vpc(VpcId=vpc.id)
+gateway.detach_from_vpc(VpcId=vpc.id)
+
+address = ec2.VpcAddress('eipalloc-35cf685d')
+address.associate('i-71b2f60b')
+address.association.delete()
+
+
+
+##reboot instance
+
+try:
+    ec2.reboot_instances(InstanceIds=['INSTANCE_ID'], DryRun=True)
+except ClientError as e:
+    if 'DryRunOperation' not in str(e):
+        print("You don't have permission to reboot instances.")
+        raise
+
+try:
+    response = ec2.reboot_instances(InstanceIds=['INSTANCE_ID'], DryRun=False)
+    print('Success', response)
+except ClientError as e:
+    print('Error', e)
+
+
+
+
+
+#start and stop instances
+if action == 'ON':
+    # Do a dryrun first to verify permissions
+    try:
+        ec2.start_instances(InstanceIds=[instance_id], DryRun=True)
+    except ClientError as e:
+        if 'DryRunOperation' not in str(e):
+            raise
+
+    # Dry run succeeded, run start_instances without dryrun
+    try:
+        response = ec2.start_instances(InstanceIds=[instance_id], DryRun=False)
+        print(response)
+    except ClientError as e:
+        print(e)
+else:
+    # Do a dryrun first to verify permissions
+    try:
+        ec2.stop_instances(InstanceIds=[instance_id], DryRun=True)
+    except ClientError as e:
+        if 'DryRunOperation' not in str(e):
+            raise
+
+    # Dry run succeeded, call stop_instances without dryrun
+    try:
+        response = ec2.stop_instances(InstanceIds=[instance_id], DryRun=False)
+        print(response)
+    except ClientError as e:
+        print(e)
+```
 
 ### 2 - cloudwatch amazon examples
 
