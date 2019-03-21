@@ -28,7 +28,7 @@ t1.start()
 t2.start()
 ```
 
-```
+```python
 import threading
 import time
 
@@ -63,7 +63,7 @@ if __name__ == '__main__':
     main()
 ```
 
-```
+```python
 import threading
 import time
 
@@ -99,7 +99,7 @@ if __name__ == '__main__':
 ```
 
 
-```
+```python
 import threading
 import time
 
@@ -143,7 +143,7 @@ if __name__ == '__main__':
     main()
 ```
 
-```
+```python
 def dine(self):
     fork1, fork2 = self.forkOnLeft, self.forkOnRight
 
