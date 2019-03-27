@@ -1,5 +1,18 @@
 # 27-mar-2019
 
+### 2 - async fastAPI example
+
+```python
+from fastapi import FastAPI
+  
+app = FastAPI()
+
+
+@app.get("/")
+async def root():
+    return {"message" : "Hello World" }
+```
+
 ### 1 - fastAPI models
 
 - https://fastapi.tiangolo.com/
