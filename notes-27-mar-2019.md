@@ -1,5 +1,20 @@
 # 27-mar-2019
 
+### 3 - openapi path parameters
+
+- https://fastapi.tiangolo.com/tutorial/path-params/
+
+```python
+from fastapi import FastAPI
+
+app = FastAPI()
+
+
+@app.get("/items/{item_id}")
+async def read_item(item_id):
+    return {"item_id" : item_id }
+```
+
 ### 2 - async fastAPI example
 
 ```python
