@@ -1,4 +1,28 @@
 # 02-apr-2019
 
 
-### 1 - 
+### 1 - Schema Validation in FastAPI
+
+- https://fastapi.tiangolo.com/tutorial/body-schema/
+
+```python
+from fastapi import FastAPI,Body
+from pydantic import BaseModel, Schema
+
+
+app= FastAPI()
+
+
+class Item(BaseModel):
+    name: str
+    description: str = Schema(None,title="thsdlks sldkfj sdk",max_length=30)
+    price: float = Schema(..., gt=0, description="the price must be gt>0")
+    tax: float = None
+
+
+
+@app.put("/items/{item_id}")
+async def update_item(*, item_id: int, item:  Item = Body(..., embed=True)):
+    results = {"item_id" : item_id, "item" : item }
+    return results
+```
