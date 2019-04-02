@@ -1,5 +1,15 @@
 # 02-apr-2019
 
+### 2 - Taking tables from webpages using pandas
+
+- this is coolest thing! No need to parse HTML
+- https://medium.com/@ageitgey/quick-tip-the-easiest-way-to-grab-data-out-of-a-web-page-in-python-7153cecfca58
+
+```python
+import pandas as pd
+tables= pd.read_html("https://www.spoj.com/users/xilinx/")
+print(tables[0])
+```
 
 ### 1 - Schema Validation in FastAPI
 
