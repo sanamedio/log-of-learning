@@ -4,11 +4,12 @@
 
 bits and pieces from an ongoing adventure!
 
-### 624/100000
+### 626/100000
 
 | Date  | Count |
 | ------------- | ------------- |
-|[02-apr-2019](./notes-02-apr-2019.md)|00 |
+|[07-apr-2019](./notes-07-apr-2019.md)|00 |
+|[02-apr-2019](./notes-02-apr-2019.md)|02 |
 |[27-mar-2019](./notes-27-mar-2019.md)|07 |
 |[23-mar-2019](./notes-23-mar-2019.md)|01 |
 |[21-mar-2019](./notes-21-mar-2019.md)|02 |
