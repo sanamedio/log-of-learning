@@ -24,7 +24,7 @@ class Calculator:
 ```
 
 tests:-
-```
+```python
 from unittest import TestCase
 from main import Calculator
 
