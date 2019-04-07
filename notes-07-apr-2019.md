@@ -42,6 +42,34 @@ class TestCalculator(TestCase):
         self.assertEqual(sum(2,3), 9 )
 ```
 
+we can also do a mock function
+```python
+import time
+
+
+class Calculator:
+    def sum(self,a,b):
+        time.sleep(10)
+        return a  +b
+from unittest import TestCase
+from unittest.mock import patch
+
+
+def mock_sum(a,b):
+    return a + b
+
+
+
+class TestCalculator(TestCase):
+
+    @patch('main.Calculator.sum', side_effect=mock_sum)
+    def test_sum(self, sum):
+        self.assertEqual(sum(2,3) , 5)
+        self.assertEqual(sum(7,3), 10)
+```
+
+
+
 better example:
 
 main.py
