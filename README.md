@@ -2,7 +2,7 @@
 # python-notes
 # ============
 
-bits and pieces from an ongoing adventure!
+lifelong learning
 
 ### 629/100000
 
