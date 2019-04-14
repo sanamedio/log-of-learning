@@ -8,6 +8,7 @@ lifelong learning
 
 | Date  | Count |
 | ------------- | ------------- |
+|[14-apr-2019](./notes-14-apr-2019.md)|00 |
 |[07-apr-2019](./notes-07-apr-2019.md)|03 |
 |[02-apr-2019](./notes-02-apr-2019.md)|02 |
 |[27-mar-2019](./notes-27-mar-2019.md)|07 |
