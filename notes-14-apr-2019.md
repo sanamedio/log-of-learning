@@ -20,3 +20,21 @@ message = client.messages.create(
  
 print(message.sid)
 ```
+- after you reply once, there is a 24-hour 2 way conversation window; all this is to avoid spamming I guess
+- earlier firsrt message needed to follow a template, but now it's open template, send anything
+
+```python
+from twilio.rest import Client 
+ 
+account_sid = '' 
+auth_token = '' 
+client = Client(account_sid, auth_token) 
+ 
+message = client.messages.create( 
+                              from_='whatsapp:+ccccc',  
+                              body='Hello! This is an editable text message. You are free to change it and write whatever you like.',      
+                              to='whatsapp:+ccccc' 
+                          ) 
+ 
+print(message.sid)
+```
