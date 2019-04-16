@@ -2,7 +2,7 @@
 # python-notes
 # ============
 
-life long learning ~on hiatus from Apr-16-2019~
+**on hiatus from Apr-16-2019**
 
 ### 633/100000
 
