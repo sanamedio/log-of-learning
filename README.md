@@ -2,9 +2,9 @@
 # python-notes
 # ============
 
-life long learning
+life long learning ~on hiatus~
 
-### 632/100000
+### 633/100000
 
 | Date  | Count |
 | ------------- | ------------- |
