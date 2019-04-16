@@ -1,5 +1,20 @@
 # 16-apr-2019
 
+### 4 - JWT in python
+
+```python
+Python 3.6.7 (default, Oct 22 2018, 11:32:17) 
+[GCC 8.2.0] on linux
+Type "help", "copyright", "credits" or "license" for more information.
+>>> import jwt
+>>> encoded = jwt.encode({'some': 'payload'}, 'secret', algorithm='HS256')
+>>> encoded
+b'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzb21lIjoicGF5bG9hZCJ9.Joh1R2dYzkRvDkqv3sygm5YyK8Gi4ShZqbhK2gxcs2U'
+>>> jwt.decode(encoded, 'secret', algorithms=['HS256'])
+{'some': 'payload'}
+>>> 
+```
+
 ### 3 - executing web assembly with python
 
 - https://github.com/wasmerio/wasmer
