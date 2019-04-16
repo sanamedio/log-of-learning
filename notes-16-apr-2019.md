@@ -1,5 +1,41 @@
 # 16-apr-2019
 
+### 5 - using valgrind with python
+
+```
+:~$ export PYTHONMALLOC=malloc
+:~$ cat > test.py
+#!/usr/bin/python3
+print("ahasdasd")
+:~$ chmod +x test.py
+:~$ ./test.py
+ahasdasd
+:~$ valgrind ./test.py
+==8923== Memcheck, a memory error detector
+==8923== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==8923== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==8923== Command: ./test.py
+==8923== 
+ahasdasd
+==8923== 
+==8923== HEAP SUMMARY:
+==8923==     in use at exit: 932,854 bytes in 7,627 blocks
+==8923==   total heap usage: 69,889 allocs, 62,262 frees, 9,744,995 bytes allocated
+==8923== 
+==8923== LEAK SUMMARY:
+==8923==    definitely lost: 0 bytes in 0 blocks
+==8923==    indirectly lost: 0 bytes in 0 blocks
+==8923==      possibly lost: 362,459 bytes in 2,368 blocks
+==8923==    still reachable: 570,395 bytes in 5,259 blocks
+==8923==         suppressed: 0 bytes in 0 blocks
+==8923== Rerun with --leak-check=full to see details of leaked memory
+==8923== 
+==8923== For lists of detected and suppressed errors, rerun with: -s
+==8923== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+:~$ 
+```
+
+
 ### 4 - JWT in python
 
 ```python
