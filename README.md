@@ -2,13 +2,13 @@
 # python-notes
 # ============
 
-life long learning ~on hiatus~
+life long learning ~on hiatus from Apr-16-2019~
 
 ### 633/100000
 
 | Date  | Count |
 | ------------- | ------------- |
-|[16-apr-2019](./notes-16-apr-2019.md)|02 |
+|[16-apr-2019](./notes-16-apr-2019.md)|03 |
 |[14-apr-2019](./notes-14-apr-2019.md)|01 |
 |[07-apr-2019](./notes-07-apr-2019.md)|03 |
 |[02-apr-2019](./notes-02-apr-2019.md)|02 |
