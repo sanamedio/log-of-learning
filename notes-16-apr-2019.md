@@ -1,5 +1,21 @@
 # 16-apr-2019
 
+### 3 - executing web assembly with python
+
+- https://github.com/wasmerio/wasmer
+
+```python
+from wasmer import Instance
+
+wasm_bytes = open('Downloads/simple.wasm','rb').read()
+
+instance = Instance(wasm_bytes)
+
+result = instance.exports.sum(5, 37)
+
+print(result)
+```
+
 ### 2 - pysolr
 
 - https://lucidworks.com/2015/11/03/solr-on-docker-2/
