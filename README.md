@@ -1,8 +1,6 @@
 # ============
-# python-notes
+# programming-notes
 # ============
-
-**on hiatus from Apr-16-2019**
 
 ### 633/100000
 
