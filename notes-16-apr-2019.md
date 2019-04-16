@@ -36,7 +36,7 @@ print(result)
 - https://lucidworks.com/2015/11/03/solr-on-docker-2/
 - https://stackoverflow.com/questions/33336626/connect-to-solr-server-running-on-localhost
 
-```
+```python
 import pysolr
 
 solr = pysolr.Solr('http://localhost:8983/solr/gettingstarted', timeout=10)
