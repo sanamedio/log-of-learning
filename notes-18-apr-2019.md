@@ -373,7 +373,7 @@ func main() {
 }
 ```
 
-```
+```golang
 package main
  
 import (
