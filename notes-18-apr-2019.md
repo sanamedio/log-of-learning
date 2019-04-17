@@ -3,7 +3,7 @@
 
 ### 1 - golang syntax
 
-```golang```
+```golang
 package main
 
 import "fmt"
@@ -89,4 +89,102 @@ func main(){
     fmt.Println(n8*-1)
 }
 ```
+
+```golang
+package main
+ 
+import (
+    "fmt"
+)
+ 
+func main() {
+    var i int = 10
+    var s string = "Japan"
+    fmt.Println(i)
+    fmt.Println(s)
+}
+```
+
+
+```golang
+package main
+ 
+import (
+    "fmt"
+)
+ 
+func main() {
+    var intVar int
+    var strVar string
+ 
+    intVar = 10
+    strVar = "Australia"
+ 
+    fmt.Println(intVar)
+    fmt.Println(strVar)
+}
+```
+
+```
+package main
+ 
+import (
+	"fmt"
+)
+ 
+func main() {
+	s := "Japan"
+	fmt.Println(s)
+}
+```
+
+
+```golang
+package main
+ 
+import (
+	"fmt"
+)
+ 
+var s = "Japan"
+ 
+func main() {
+	fmt.Println(s)
+	x := true
+ 
+	if x {
+		y := 1
+		if x != false {
+			fmt.Println(s)
+			fmt.Println(x)
+			fmt.Println(y)
+		}
+	}
+	fmt.Println(x)
+}
+```
+
+```golang
+package main
+import "fmt"
+const (
+        x=10
+        y=20
+        z=30
+    )
+func main(){
+    const name string ="John Carry" // Constant with data type
+    fmt.Println(name)
+    const age = 35 // Constant without data type
+    fmt.Println(age)
+    fmt.Println(x,y,z)
+}
+```
+
+
+
+
+
+
+
 
