@@ -11,6 +11,54 @@ package main
 import "fmt"
  
 func main() {
+    fmt.Println(add(20, 30))
+}
+ 
+func add(x int, y int) (total int) {
+    total = x + y
+    return total
+}
+```
+
+```golang
+package main
+ 
+import "fmt"
+ 
+func main() {
+    add(20, 30)
+}
+ 
+func add(x int, y int) {
+    total := 0
+    total = x + y
+    fmt.Println(total)
+}
+```
+
+```golang
+package main
+ 
+import "fmt"
+ 
+func main() {
+    fmt.Println(add(20, 30))
+}
+ 
+func add(x int, y int) int {
+    total := 0
+    total = x + y
+    return total
+}
+```
+
+
+```golang
+package main
+ 
+import "fmt"
+ 
+func main() {
 	i := 5
 	for {
 		fmt.Println("Hello")
