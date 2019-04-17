@@ -1,5 +1,33 @@
 # 18-apr-2019
 
+### 2 - golang defer
+
+- how does defer internally works? does it do it in reversed order ?
+
+```golang
+package main
+import "fmt"
+
+/*
+A defer statement is often used with paired operations like open and close, connect and disconnect, or lock and unlock to ensure that resources are released in all cases, no matter how complex the control flow. The right place for a defer statement that releases a resource is immediately after the resource has been successfully acquired.
+*/
+
+
+func first(){
+    fmt.Println("First")
+}
+
+func second() {
+    fmt.Println("Secondd")
+}
+
+
+func main() {
+    defer second()
+    first()
+}
+```
+
 
 ### 1 - golang syntax
 
