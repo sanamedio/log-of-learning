@@ -41,7 +41,7 @@ resource "aws_security_group" "instance" {
 ```
 
 
-```
+```terraform
 provider "aws" {
   region = "us-west-2"
 }
