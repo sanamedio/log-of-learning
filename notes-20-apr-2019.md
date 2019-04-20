@@ -3,6 +3,7 @@
 
 ### 1 - terraform basic script for aws http server
 
+- https://blog.gruntwork.io/an-introduction-to-terraform-f17df9c6d180
 
 
 ```terraform
