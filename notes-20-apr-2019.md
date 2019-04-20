@@ -58,8 +58,10 @@ output "public_ip" {
 }
 ```
 
+it will return a public ip
+
 ```bash
-$ curl http://3.87.187.106:8080
+$ curl http://<aws_istance_public_ip>:8080
 hello, world loki
 ```
 
