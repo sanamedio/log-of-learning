@@ -1,5 +1,11 @@
 # 20-apr-2019
 
+### 2 - generating random string on terminal using openssl
+
+```bash
+$ openssl rand -hex 10
+dd2a471b80beb62142eb
+```
 
 ### 1 - terraform basic script for aws http server
 
