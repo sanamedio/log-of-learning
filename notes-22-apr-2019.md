@@ -1,6 +1,79 @@
 ### 22-apr-2019
 
-### 1 - pysnooper
+
+### 2 - golang tcp-server and client
+
+- This is a tcp server and client. Interesting thing to observe is both sides we use buffer reader abstraction - whether it's a tcp stream or a input stream. I love the "dial" nomenclature.
+- I think error need to handled better as when server is not on, client gets this weird memory error if server is not started , that looks so anti-patternish
+
+server:
+```golang
+package main
+
+
+import (
+
+    "net"
+    "fmt"
+    "bufio"
+    "strings"
+)
+
+
+func main(){
+
+    fmt.Println("starting segver...")
+
+
+    ln, _ := net.Listen("tcp", ":8081")
+
+
+    conn, _ := ln.Accept()
+
+
+    for {
+        message , _ := bufio.NewReader(conn).ReadString('\n')
+        fmt.Print("Mesasge erceived:", string(message))
+        newmessage := strings.ToUpper(message)
+        conn.Write([]byte(newmessage + "\n" ))
+    }
+}
+```
+
+client:
+```golang
+package main
+
+
+import (
+    "net"
+    "fmt"
+    "bufio"
+    "os"
+)
+
+
+func main(){
+
+
+    conn, _ := net.Dial("tcp", "127.0.0.1:8081" )
+
+    for {
+        reader  := bufio.NewReader(os.Stdin)
+        fmt.Print("Text to send: ")
+
+        text, _ := reader.ReadString('\n')
+
+        fmt.Fprintf(conn, text + "\n" )
+
+
+        message, _ := bufio.NewReader(conn).ReadString('\n')
+        fmt.Print("Message from server : " + message)
+    }
+}
+```
+
+### 1 - pysnooper for logging injection
 
 - this is awesome
 
