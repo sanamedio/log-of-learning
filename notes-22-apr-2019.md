@@ -6,6 +6,8 @@
 - This is a tcp server and client. Interesting thing to observe is both sides we use buffer reader abstraction - whether it's a tcp stream or a input stream. I love the "dial" nomenclature.
 - I think error need to handled better as when server is not on, client gets this weird memory error if server is not started , that looks so anti-patternish
 
+https://systembash.com/a-simple-go-tcp-server-and-tcp-client/
+
 server:
 ```golang
 package main
