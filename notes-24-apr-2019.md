@@ -1,5 +1,47 @@
 # 24-apr-2019
 
+
+### 5 - python http logging
+
+https://coderwall.com/p/z2_hwa/quick-and-dirty-http-logging-in-python
+
+```python
+import urllib2
+
+# New lines begin here
+http_logger = urllib2.HTTPHandler(debuglevel = 1)
+opener = urllib2.build_opener(http_logger) # put your other handlers here too!
+urllib2.install_opener(opener)
+# End of new lines
+
+request = urllib2.Request('http://jigsaw.w3.org/HTTP/300/302.html')
+response = urllib2.urlopen(request)
+print "Response code was: %d" % response.getcode()
+```
+
+output in python2:
+```
+send: 'GET /HTTP/300/302.html HTTP/1.1\r\nAccept-Encoding: identity\r\nHost: jigsaw.w3.org\r\nConnection: close\r\nUser-Agent: Python-urllib/2.7\r\n\r\n'
+reply: 'HTTP/1.1 302 Found\r\n'
+header: Connection: close
+header: Date: Tue, 23 Apr 2019 22:56:43 GMT
+header: Content-Length: 389
+header: Content-Type: text/html;charset=ISO-8859-1
+header: Location: http://jigsaw.w3.org/HTTP/300/Overview.html
+header: Server: Jigsaw/2.3.0-beta4
+send: 'GET /HTTP/300/Overview.html HTTP/1.1\r\nAccept-Encoding: identity\r\nHost: jigsaw.w3.org\r\nConnection: close\r\nUser-Agent: Python-urllib/2.7\r\n\r\n'
+reply: 'HTTP/1.1 200 OK\r\n'
+header: Connection: close
+header: Date: Tue, 23 Apr 2019 22:56:43 GMT
+header: Content-Length: 1651
+header: Content-Type: text/html
+header: Etag: "14u2rht:164ua3k6o"
+header: Last-Modified: Mon, 18 Jul 2011 09:47:18 GMT
+header: Server: Jigsaw/2.3.0-beta2
+Response code was: 200
+```
+
+
 ### 4 - golang now
 
 ```golang
