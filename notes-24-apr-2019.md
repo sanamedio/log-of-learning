@@ -1,7 +1,9 @@
 # 24-apr-2019
 
 
-### 3 - colorful text
+### 3 - colorful text in golang
+
+https://code.tutsplus.com/tutorials/12-indispensable-go-packages-and-libraries--cms-29008
 
 ```golang
 package main
@@ -13,6 +15,26 @@ import (
 func main() {
     color.Red("Roses are red")
     color.Blue("Violets are blue")
+}
+```
+
+```golang
+package main
+ 
+import (
+    "github.com/fatih/color"
+    "fmt"
+)
+ 
+func main() {
+    minion := color.New(color.FgBlack).Add(color.BgYellow).Add(color.Bold)
+    minion.Println("Minion says: banana!!!!!!")
+ 
+    m := minion.PrintlnFunc()
+    m("I want another banana!!!!!")
+ 
+    slantedRed := color.New(color.FgRed, color.BgWhite, color.Italic).SprintFunc()
+    fmt.Println("I've made a huge", slantedRed("mistake"))
 }
 ```
 
