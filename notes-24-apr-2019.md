@@ -1,5 +1,9 @@
 # 24-apr-2019
 
+### 6 - adding latency to network for testing
+
+- https://github.com/Shopify/toxiproxy
+- https://stackoverflow.com/questions/14752943/using-nginx-to-simulate-slow-response-time-for-testing-purposes
 
 ### 5 - python http logging
 
