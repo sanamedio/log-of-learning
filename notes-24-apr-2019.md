@@ -1,5 +1,28 @@
 # 24-apr-2019
 
+### 4 - golang now
+
+```golang
+package main
+ 
+import (
+    "github.com/jinzhu/now"
+    "fmt"
+)
+ 
+func main() {
+ 
+    fmt.Println("All the beginnings...")
+    fmt.Println(now.BeginningOfMinute())
+    fmt.Println(now.BeginningOfHour())
+    fmt.Println(now.BeginningOfDay())
+    fmt.Println(now.BeginningOfWeek())
+    fmt.Println(now.BeginningOfMonth())
+    fmt.Println(now.BeginningOfQuarter())
+    fmt.Println(now.BeginningOfYear())
+ 
+}
+```
 
 ### 3 - colorful text in golang
 
