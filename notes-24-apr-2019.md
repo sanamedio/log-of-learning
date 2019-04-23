@@ -1,5 +1,21 @@
 # 24-apr-2019
 
+
+### 3 - colorful text
+
+```golang
+package main
+ 
+import (
+    "github.com/fatih/color"
+)
+ 
+func main() {
+    color.Red("Roses are red")
+    color.Blue("Violets are blue")
+}
+```
+
 ### 2 - golang-set
 
 ```golang
