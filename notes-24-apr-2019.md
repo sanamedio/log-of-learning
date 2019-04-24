@@ -2,8 +2,14 @@
 
 ### 6 - adding latency to network for testing
 
+With a combination of toxiproxy and toxy - both TCP level and HTTP level throttling and latency control can be done. toxyproxy is written in golang. Nginx and haproxy require too much boilerplate setup.
+
 - https://github.com/Shopify/toxiproxy
 - https://stackoverflow.com/questions/14752943/using-nginx-to-simulate-slow-response-time-for-testing-purposes
+- https://github.com/h2non/toxy
+
+
+http://httpbin.org - nice endpoint with configurable behaviours
 
 ### 5 - python http logging
 
