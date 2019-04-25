@@ -1,5 +1,9 @@
 # 24-apr-2019
 
+### 7 - go basic simple programs
+
+https://github.com/adonovan/gopl.io
+
 ### 6 - adding latency to network for testing
 
 With a combination of toxiproxy and toxy - both TCP level and HTTP level throttling and latency control can be done. toxyproxy is written in golang. Nginx and haproxy require too much boilerplate setup.
