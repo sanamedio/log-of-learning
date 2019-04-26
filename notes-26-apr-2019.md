@@ -2,8 +2,8 @@
 
 ### 5 - AWS 
 
-https://wblinks.com/notes/aws-tips-i-wish-id-known-before-i-started/
-https://www.airpair.com/aws/posts/building-a-scalable-web-app-on-amazon-web-services-p1?wed
+- https://wblinks.com/notes/aws-tips-i-wish-id-known-before-i-started/
+- https://www.airpair.com/aws/posts/building-a-scalable-web-app-on-amazon-web-services-p1?wed
 
 ### 4 - getting links from text
 
