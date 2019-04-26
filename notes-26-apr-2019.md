@@ -1,5 +1,43 @@
 # 26-apr-2019
 
+### 3 - go routine
+
+running a function in goroutine, makes it run parallely
+
+```golang
+package main
+
+
+import "fmt"
+import "net/http"
+import "time"
+
+func log(msg string){
+
+
+    fmt.Println(msg)
+}
+
+
+func main(){
+
+
+    http.HandleFunc("/", HelloServer)
+    http.ListenAndServe(":8080", nil )
+
+
+}
+
+
+
+func HelloServer(w http.ResponseWriter, r *http.Request) {
+
+    go log("Hello " + time.Now().String())
+    fmt.Fprintf(w, "Hello, %s!", r.URL.Path[1:] )
+
+}
+```
+
 ### 2 - sentry with golang
 
 - https://docs.sentry.io/clients/go/ 
