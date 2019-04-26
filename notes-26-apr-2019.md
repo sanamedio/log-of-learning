@@ -1,5 +1,29 @@
 # 26-apr-2019
 
+### 4 - getting links from text
+
+```golang
+package main
+
+import "fmt"
+import "gitlab.com/golang-commonmark/linkify"
+
+func main() {
+	input := `
+	Check out this link to http://google.com
+You can also email support@example.com to view more.
+
+Some more links: fsf.org http://www.gnu.org/licenses/gpl-3.0.en.html 127.0.0.1
+                 localhost:80	github.com/trending?l=Go	//reddit.com/r/golang
+mailto:r@golang.org some.nonexistent.host.name flibustahezeous3.onion
+`
+	for _, l := range linkify.Links(input) {
+		fmt.Printf("Scheme: %-8s  URL: %s\n", l.Scheme, input[l.Start:l.End])
+	}
+
+}
+```
+
 ### 3 - go routine
 
 running a function in goroutine, makes it run parallely
