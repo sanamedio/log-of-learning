@@ -18,7 +18,7 @@ done;
 
 
 server:
-```
+```bash
 #!/bin/sh
 
 port="4242"
