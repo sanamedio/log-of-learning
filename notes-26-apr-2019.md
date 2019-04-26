@@ -1,5 +1,36 @@
 # 26-apr-2019
 
+### 2 - sentry with golang
+
+- https://docs.sentry.io/clients/go/ 
+
+```golang
+package main
+
+import "github.com/getsentry/raven-go"
+import "os"
+import "log"
+import "fmt"
+
+
+func init() {
+    raven.SetDSN("https://c10f4d3a8d6eXXXXXXXXXf830bc9ef:8bd45cXXXXXXXXd3154db8f6a2b@sentry.io/000000")
+}
+
+
+func main(){
+    
+    f, err := os.Open("filename.ext")
+    if err != nil {
+        raven.CaptureErrorAndWait(err, nil)
+        log.Panic(err)
+    }
+
+    fmt.Println(f)
+
+
+}
+```
 
 ### 1 - server/client in bash for quick use
 
