@@ -1,5 +1,62 @@
 ### 29-apr-2019
 
+### 5 - spawining processes in golang
+
+somehow looks more understandable than other languages
+
+```golang
+package main
+
+import "fmt"
+import "io/ioutil"
+import "os/exec"
+
+
+func main() {
+
+    dateCmd := exec.Command("date")
+
+    dateOut, err := dateCmd.Output()
+    if err != nil {
+        panic(err)
+    }
+
+
+    fmt.Println("> date")
+    fmt.Println(string(dateOut))
+
+
+    grepCmd := exec.Command("grep", "hello" )
+
+
+    grepIn, _ := grepCmd.StdinPipe()
+    grepOut, _ := grepCmd.StdoutPipe()
+
+
+    grepCmd.Start()
+    grepIn.Write([]byte("hello grep\ngoodbyegrep"))
+    grepIn.Close()
+
+    grepBytes, _ := ioutil.ReadAll(grepOut)
+    grepCmd.Wait()
+
+    fmt.Println("> grep hello")
+    fmt.Println(string(grepBytes))
+
+    lsCmd := exec.Command("bash", "-c" ,"ls -lah")
+    lsOut, err := lsCmd.Output()
+    if err != nil {
+
+        panic(err)
+    }
+
+    fmt.Println("> ls -lah")
+    fmt.Println(string(lsOut))
+
+
+}
+```
+
 ### 4 - TCP puzzler
 
 - TCP work as state machine on both sides. There are states which both client and server might not agree on.
