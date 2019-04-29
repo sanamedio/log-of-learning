@@ -1,5 +1,16 @@
 ### 29-apr-2019
 
+### 6 - kubernetes
+
+katacoda.com/courses/kubernetes
+
+key points :-
+
+1. Kubernete makes container management easier
+2. concept of deployment, replication controllers,services, secrets, persistent volumes etc.
+3. Tooling around kubernete for pakage management, recovery etc.
+4. Kubeless to deploy serverless functions
+
 ### 5 - spawining processes in golang
 
 somehow looks more understandable than other languages
