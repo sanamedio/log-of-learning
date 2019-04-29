@@ -1,5 +1,15 @@
 ### 29-apr-2019
 
+### 4 - TCP puzzler
+
+- TCP work as state machine on both sides. There are states which both client and server might not agree on.
+https://www.joyent.com/blog/tcp-puzzlers
+- strace can be used with netcat to study the way both end points behave at system call level. Also netstat can be used to see the state of connection on each of them.
+
+```
+ strace -e trace=connect,poll,read,write,close  nc -l -p 8080 
+ ```
+
 ### 3 - Running binaries as processes
 
 https://gobyexample.com/
