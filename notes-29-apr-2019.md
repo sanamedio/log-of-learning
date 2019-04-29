@@ -14,6 +14,8 @@ https://www.joyent.com/blog/tcp-puzzlers
 
 https://gobyexample.com/
 
+this completely replaces the original go application. Anything ran after the exec won't actually execute from go program.
+
 ```golang
 // In the previous example we looked at
 // [spawning external processes](spawning-processes). We
