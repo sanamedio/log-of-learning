@@ -11,6 +11,41 @@ key points :-
 3. Tooling around kubernete for pakage management, recovery etc.
 4. Kubeless to deploy serverless functions
 
+some handy commands:
+
+```
+kubectl cluster-info
+
+kubectl get nodes
+
+Use "kubectl api-resources" for a complete list of supported resources.
+
+
+Examples:
+  # List all pods in ps output format.
+  kubectl get pods
+  
+  # List a single replication controller with specified NAME in ps output format.
+  kubectl get replicationcontroller web
+  
+  # List deployments in JSON output format, in the "v1" version of the "apps" API group:
+  kubectl get deployments.v1.apps -o json
+  
+  # List a single pod in JSON output format.
+  kubectl get -o json pod web-pod-13je7
+  
+  # List a pod identified by type and name specified in "pod.yaml" in JSON output format.
+  kubectl get -f pod.yaml -o json
+  
+  # List all replication controllers and services together in ps output format.
+  kubectl get rc,services
+  
+  # List one or more resources by their type and names.
+  kubectl get rc/web service/frontend pods/web-pod-13je7
+
+```
+
+
 ### 5 - spawining processes in golang
 
 somehow looks more understandable than other languages
