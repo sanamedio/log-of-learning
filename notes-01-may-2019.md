@@ -1,5 +1,55 @@
 # 01-may-2019
 
+### 2 - python with etcd
+
+etcd is distributed store, and used inside a kubernete cluster to keep distributed configs
+
+https://dzone.com/articles/apache-zookeeper-vs-etcd3
+https://coreos.com/etcd/docs/latest/learning/why.html
+https://github.com/kragniz/python-etcd3
+
+Can create notification on key creation like this:-
+```python3
+import etcd3
+import time
+
+etcd = etcd3.client()
+
+def testfunc(event):
+    print event
+
+watch_id = etcd.add_watch_callback("foo", testfunc, range_end="foo2")
+
+
+while True:
+    time.sleep(1)
+
+```
+
+
+start the callback server 
+```
+~$ python test.py
+<class 'etcd3.events.PutEvent'> key=foo value=test
+```
+
+test it like:
+```python3
+In [3]: import etcd3
+
+In [4]: etcd = etcd3.client()
+
+In [5]: etcd.put("foo" , "asdas")
+Out[5]: 
+header {
+  cluster_id: 14841639068965178418
+  member_id: 10276657743932975437
+  revision: 36
+  raft_term: 2
+}
+
+```
+
 
 ### 1 - monotonic time in python
 
