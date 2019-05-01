@@ -4,9 +4,9 @@
 
 etcd is distributed store, and used inside a kubernete cluster to keep distributed configs
 
-https://dzone.com/articles/apache-zookeeper-vs-etcd3
-https://coreos.com/etcd/docs/latest/learning/why.html
-https://github.com/kragniz/python-etcd3
+- https://dzone.com/articles/apache-zookeeper-vs-etcd3
+- https://coreos.com/etcd/docs/latest/learning/why.html
+- https://github.com/kragniz/python-etcd3
 
 Can create notification on key creation like this:-
 ```python3
