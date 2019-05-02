@@ -1,5 +1,25 @@
 ### 02-may-2019
 
+### 2 - Python disable warnings
+
+some ways to disable insecure requests warning
+
+```
+export PYTHONWARNINGS="ignore:Unverified HTTPS request"
+```
+
+
+```python
+import requests
+from requests.packages.urllib3.exceptions import InsecureRequestWarning
+
+requests.packages.urllib3.disable_warnings(InsecureRequestWarning)
+```
+
+```python
+import urllib3
+urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
+```
 
 ### 1 - embedded etcd3 server in golang
 
