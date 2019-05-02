@@ -1,5 +1,27 @@
 ### 02-may-2019
 
+### 3 - knight closure
+
+```python
+
+visited = []
+
+def knight_closure(x,y):
+    global visited
+
+    print(x,y)
+    visited = visited + [ (x, y) ]
+
+    for i in range(-2,3):
+        for j in range(-2,3):
+            if (abs(i) + abs(j)) == 3 and (0<= x+i < 8) and (0 <= y+j < 8) and (x+i,y+j) not in visited:
+                knight_closure(x+i,y+j)
+
+
+
+knight_closure(0,0)
+```
+
 ### 2 - Python disable warnings
 
 some ways to disable insecure requests warning
