@@ -1,6 +1,42 @@
 # 05-may-2019
 
-### 1 - turning machine
+### 2 - ipc queues 
+
+nix systems come with different methods of shared communication, posix and sysv queues are one of them. shared memory is another. ipcs command can be used to see currently open channels. worth exploring..
+
+```python
+Python 2.7.15rc1 (default, Nov 12 2018, 14:31:15) 
+[GCC 7.3.0] on linux2
+Type "help", "copyright", "credits" or "license" for more information.
+>>> from ipcqueue import posixmq
+>>> q = posixmq.Queue('/foo')
+>>> q.qsize()
+0
+>>> q.put([1,'A'])
+>>> q.put([2,'B'])
+>>> q.put([3,'C'],priority=2)
+>>> q.put([4,'D'],priority=0)
+>>> q.get()
+[3, 'C']
+>>> q.get()
+[1, 'A']
+>>> q.get()
+[2, 'B']
+>>> q.get()
+[4, 'D']
+>>> q.get()
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+  File "/home/loki/.local/lib/python2.7/site-packages/ipcqueue/posixmq.py", line 170, in get
+    raise QueueError(res)
+ipcqueue.posixmq.QueueError: 6, Interrupted by signal
+>>> q.close()
+>>> q.unlink()
+>>> 
+```
+
+
+### 1 - Turing machine
 
 https://www.python-course.eu/turing_machine.php
 
