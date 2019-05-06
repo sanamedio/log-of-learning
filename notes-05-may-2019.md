@@ -4,6 +4,8 @@
 
 nix systems come with different methods of shared communication, posix and sysv queues are one of them. shared memory is another. ipcs command can be used to see currently open channels. worth exploring..
 
+- https://pythonhosted.org/ipcqueue/#module-ipcqueue.posixmq
+
 ```python
 Python 2.7.15rc1 (default, Nov 12 2018, 14:31:15) 
 [GCC 7.3.0] on linux2
