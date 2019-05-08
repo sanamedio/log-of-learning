@@ -1,5 +1,27 @@
 ### 08-may-2019
 
+### 4 - sched for scheduling
+
+https://pymotw.com/2/sched/
+
+```python
+import sched
+import time
+
+
+scheduler = sched.scheduler(time.time, time.sleep)
+
+def print_event(name):
+    print( 'EVENT:', time.time(), name)
+
+
+print('START:' , time.time())
+scheduler.enter(2,1,print_event, ('first',))
+scheduler.enter(3,1,print_event, ('second',))
+
+scheduler.run()
+```
+
 ### 3 - xml rpc server-client
 
 - this is way too underrated 
