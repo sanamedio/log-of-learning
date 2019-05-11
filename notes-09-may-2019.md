@@ -6,6 +6,9 @@ https://www.cockroachlabs.com/docs/stable/build-a-python-app-with-cockroachdb.ht
 
 psycopg2 is postgres python client which can be used for cockroach db
 
+Python DBAPI spec
+https://www.python.org/dev/peps/pep-0249/
+
 ```python
 import psycopg2
 
