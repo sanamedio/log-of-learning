@@ -19,8 +19,10 @@ What I learned
  - auto scaling can be done based on cpu/memory 
  - healthprobe | liveness probes are easy to configure
  - k8s help you utilize your computing resources to best and provides good biased choices towards microservices architecture
-
+ - It kind of makes you cloud independent? kubernete is manager for your resources, so it comes in between your apps and the underlying infra
 
 https://github.com/dgkanatsios/CKAD-exercises
 
 https://www.linux.com/blog/learn/chapter/Intro-to-Kubernetes/2017/5/set-cicd-pipeline-kubernetes-part-1-overview
+
+https://idursun.com/posts/zero_to_kubernetes/
