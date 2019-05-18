@@ -114,8 +114,9 @@ if __name__ == '__main__':
     cpu = Cpu(mem)
     cpu.execute()
 ```
-
-
+- removed a print option
+- made all references absolute
+- the bug which took time was that memory addressing was wrong
 
 v0.2
 ```python
