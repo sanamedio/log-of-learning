@@ -1,8 +1,136 @@
 # 18-may-2019
 
 
-### 1 - a simple CPU emulator v0.00001
+### 1 - a simple CPU emulator 
 
+
+v0.2
+```python
+class Memory:
+
+    __memory = None
+
+
+    def __init__(self,size):
+        self.__memory = [ 0 for x in range(size) ]
+
+
+    def read(self,position):
+        return self.__memory[position]
+
+
+    def write(self,position,value):
+        self.__memory[position] = value
+
+    def size(self):
+        return len(self.__memory)
+
+
+class Cpu:
+
+    accumulator = 0
+    ipointer = 0
+    memory = None
+
+
+    instr_map = {
+                0: 'add',# add some value to accumulator
+                1: 'jmp', # jmp to a relative position if accumulator is non zero
+                2: 'load', # load value of a memory location to accumulator
+                3: 'unload', # write value of accumulator to a memory location
+                4: 'prn', # print to visual output
+                
+
+            }
+
+
+    def __init__(self, mem):
+        self.accumulator=0
+        self.memory = mem
+        self.ipointer=0
+
+
+   
+
+
+    def execute(self ):
+
+            
+        while self.ipointer < self.memory.size():
+
+            #print ('ipointer : ' + str(self.ipointer))
+            
+
+            instruction = 'nop'
+
+            if self.memory.read(self.ipointer) in self.instr_map:
+                instruction = self.instr_map[self.memory.read(self.ipointer)]
+
+            if instruction == 'add': #1 operand
+                operand = self.memory.read(self.ipointer+1)
+                self.accumulator += operand
+                self.ipointer += 2
+
+            elif instruction == 'jmp':
+                if self.accumulator != 0:
+                    operand = self.memory.read(self.ipointer+1)
+                    self.ipointer = (self.ipointer +  operand)%self.memory.size()
+                else:
+                    self.ipointer += 2
+
+            elif instruction == 'load':
+                operand = self.memory.read(self.ipointer+1)
+                self.accumulator = self.memory.read(operand)
+                self.ipointer += 2
+
+            elif instruction == 'unload':
+                operand = self.memory.read(self.ipointer+1)
+                self.memory.write(operand,self.accumulator)
+                self.ipointer += 2
+
+            elif instruction == 'prn':
+                operand = self.memory.read(self.ipointer+1)
+                print (operand, (self.accumulator))
+                self.ipointer += 2
+
+
+            elif instruction == 'nop':
+                self.ipointer+=1
+                pass
+
+
+        
+
+
+
+if __name__ == '__main__':
+
+    
+
+
+    program_bytes = [
+            2,9,
+            0, -1,
+            4, "msg",
+            1, -4,
+            99, 10,
+            ]
+
+
+    mem = Memory(100)
+
+    for i in range(len(program_bytes)):
+        mem.write(i,program_bytes[i])
+
+    cpu = Cpu(mem)
+    cpu.execute()
+
+```
+
+
+
+
+v0.1
 ```python
 class Cpu:
 
