@@ -1,7 +1,7 @@
 # 18-may-2019
 
 
-### 1 - a simple computer
+### 1 - a simple CPU emulator
 
 ```python
 class Cpu:
