@@ -126,7 +126,13 @@ if __name__ == '__main__':
     cpu.execute()
 
 ```
-
+- this is still pretty high level
+- how different threads work on the same cpu, that part
+- how strings need to be saved?
+- how devices are interfaced ?
+- how the addressing is done?
+- how can I make the jump simpler?
+- 
 
 
 
