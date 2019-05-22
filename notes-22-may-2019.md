@@ -4,7 +4,7 @@
 
 https://treyhunner.com/2019/05/python-builtins-worth-learning/
 
-```
+```python
 def palindromic(sequence):
     """Return True if the sequence is the same thing in reverse."""
     for n, m in zip(sequence, reversed(sequence)):
@@ -13,7 +13,7 @@ def palindromic(sequence):
     return True
 ```
 
-```
+```python
 def palindromic(sequence):
     """Return True if the sequence is the same thing in reverse."""
     return all(
