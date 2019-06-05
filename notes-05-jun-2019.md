@@ -3,6 +3,8 @@
 
 ### 1 - stack, heap, and code virtual locations
 
+- from book OS three easy pieces
+
 ```C
 #include <stdio.h>
 #include <stdlib.h>
