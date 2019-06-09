@@ -1,5 +1,51 @@
 # 08-jun-2019
 
+### 2 - finding bitwise and of a range
+
+https://www.geeksforgeeks.org/bitwise-and-or-of-a-range/
+
+boring method
+```python
+import functools
+M = 8
+N = 15
+print(functools.reduce(  lambda x,y: x & y, range(M,N) ))
+```
+better approach
+```python
+# finding bitwise and of a range
+# if the numbers differ in the binary sizes or the position of MSB bit - leftmost bit, it means there will be a number in between which will have lot of tailing zeroes and one 1 in the left.. which will nullify the smaller number, and beyond that the padding zeroes of the smaller number will nullify the larger number
+# so, 
+
+
+
+M , N = [ int(x.strip()) for x in input().strip().split() ]
+
+def get_msb(x):
+    return len(bin(x)[2:])
+
+
+result  = 0
+
+while M and N: #both are not zero
+
+    if get_msb(M) == get_msb(N):
+        x = pow(2,get_msb(M)-1)
+        result += x
+        M -= x
+        N -= x
+    else:
+        break
+
+
+print(result)
+```
+
+
+
+
+
+
 ### 1 - building grep with keras 99.57% accuracy
 
 
