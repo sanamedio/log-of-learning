@@ -177,7 +177,7 @@ plt.show()
 
 - In particularly, secrets should be used in preference to the default pseudo-random number generator in the random module, which is designed for modelling and simulation, not security or cryptography.
 
-```
+```python
 Python 3.6.7 (default, Oct 22 2018, 11:32:17) 
 Type 'copyright', 'credits' or 'license' for more information
 IPython 7.1.1 -- An enhanced Interactive Python. Type '?' for help.
