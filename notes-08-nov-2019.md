@@ -1,7 +1,7 @@
 # 08-nov-2019
 
 
-### 1 - torrent download usinig python
+### 1 - torrent download using python
 
 ```sudo apt-get install python-libtorrent```
 
