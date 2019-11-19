@@ -1,19 +1,19 @@
 import os
 import re
 
-mds = [ md for md in os.listdir(".") if md.endswith(".md") ]
+mds = [ md for md in os.listdir("./notes/") if md.endswith(".md") ]
 
 
 result = []
 k = 1
 for md in mds:
 
-    data = open(md).readlines()
+    data = open("./notes/"+md).readlines()
 
 
     for line in data:
         if re.search("### \d+ - ", line.strip()):
-            result += [ ("|"+ str(k)  + "|["+line.strip().split(" - ",1)[1] + "](./"+ md +") |")]
+            result += [ ("|"+ str(k)  + "|["+line.strip().split(" - ",1)[1] + "](./notes/"+ md +") |")]
             k = k+1
 
 
