@@ -1,5 +1,50 @@
 # 20-nov-2019
 
+### 3 - turtle animation of sine
+
+```python3
+import turtle
+from math import pi, sin as sine
+
+
+screen = turtle.Screen()
+screen.setup(800,600)
+screen.tracer(0)            
+don = turtle.Turtle()
+don.speed(0)
+don.width(5)
+don.hideturtle()            
+
+
+
+
+
+def draw_sine(start_angle):
+    screen.setworldcoordinates(0, -1.25, 2 * pi, 1.25)
+    angle = 0.0 
+    don.penup()
+    don.goto(angle,sine(angle+start_angle))
+    don.pendown()
+    
+    while angle < 2*pi :
+        don.goto(angle, sine(angle+start_angle))
+        angle += 0.05
+    don.penup()
+
+angle = 0.0
+
+import time
+
+
+while True :
+    draw_sine(angle)
+    screen.update()
+    angle += 0.01
+    time.sleep(0.05)
+    don.clear()
+```
+
+
 
 
 ### 2 - Diagnosing memory leaks using guppy
