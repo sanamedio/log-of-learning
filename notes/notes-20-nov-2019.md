@@ -2,6 +2,8 @@
 
 ### 3 - turtle animation of sine
 
+- took basics from here https://learn.wecode24.com/animation-with-turtle-graphics/
+
 ```python3
 import turtle
 from math import pi, sin as sine
