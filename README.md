@@ -3,289 +3,290 @@
 # programming-notes
 # =================
 
-### 699/100000
+### 700/100000
 
 | ID  | NAME |
 | ------------- | ------------- |
-|699|[type hints for python 3](./notes/notes-05-nov-2018.md) |
-|698|[better way to refer to libc](./notes/notes-05-nov-2018.md) |
-|697|[test data generation in python using mimesis](./notes/notes-05-nov-2018.md) |
-|696|[using pandas to directly load data ( pandas is kinda awesome)](./notes/notes-05-nov-2018.md) |
-|695|[FUSE : filesystem in userspace](./notes/notes-05-nov-2018.md) |
-|694|[While writing a library ( like Django ) things to take care of for portability between VMs](./notes/notes-05-nov-2018.md) |
-|693|[macropy library and "with trace"](./notes/notes-05-nov-2018.md) |
-|692|[dbus python](./notes/notes-05-nov-2018.md) |
-|691|[socks5 proxy in python minimal](./notes/notes-05-nov-2018.md) |
-|690|[GIL implementation in python](./notes/notes-05-nov-2018.md) |
-|689|[Simple virtual machine implementation in python](./notes/notes-05-nov-2018.md) |
-|688|[embedded etcd3 server in golang](./notes/notes-02-may-2019.md) |
-|687|[Python disable warnings](./notes/notes-02-may-2019.md) |
-|686|[knight closure](./notes/notes-02-may-2019.md) |
-|685|[Python Fire to expose internals and debugging](./notes/notes-04-nov-2018.md) |
-|684|[pyenv and pipenv](./notes/notes-04-nov-2018.md) |
-|683|[Flask JWT example](./notes/notes-04-nov-2018.md) |
-|682|[Flask uses Werkzeug internally](./notes/notes-04-nov-2018.md) |
-|681|[prime numbers with lambda](./notes/notes-04-nov-2018.md) |
-|680|[Elementary cellular automata in python](./notes/notes-04-nov-2018.md) |
-|679|[Elementary cellular automata plotted using matplotlib](./notes/notes-04-nov-2018.md) |
-|678|[segfault in python recursion](./notes/notes-04-nov-2018.md) |
-|677|[segfault using ctypes](./notes/notes-04-nov-2018.md) |
-|676|[tracing program execution using -m trace](./notes/notes-04-nov-2018.md) |
-|675|[crashing using marshal](./notes/notes-04-nov-2018.md) |
-|674|[iterators use c recusion stack](./notes/notes-04-nov-2018.md) |
-|673|[StringIO vs BytesIO (from SO)](./notes/notes-04-nov-2018.md) |
-|672|[simple reactive dashboards in python using dash](./notes/notes-04-nov-2018.md) |
-|671|[better_exceptions module](./notes/notes-04-nov-2018.md) |
-|670|[default arguments check](./notes/notes-21-dec-2018.md) |
-|669|[Timer example](./notes/notes-21-dec-2018.md) |
-|668|[Methods of saving state](./notes/notes-21-dec-2018.md) |
-|667|[bisect module is good replacement to lower_bound upper_bound](./notes/notes-05-nov-2019.md) |
-|666|[server/client in bash for quick use](./notes/notes-26-apr-2019.md) |
-|665|[sentry with golang](./notes/notes-26-apr-2019.md) |
-|664|[go routine](./notes/notes-26-apr-2019.md) |
-|663|[getting links from text](./notes/notes-26-apr-2019.md) |
-|662|[AWS](./notes/notes-26-apr-2019.md) |
-|661|[Using inner function to save data and printing a nested object](./notes/notes-09-nov-2018.md) |
-|660|[Using dict to get attributes of a object( I think I mentioend it earlier also )](./notes/notes-09-nov-2018.md) |
-|659|[In-memory String compression using gzip and StringIO](./notes/notes-09-nov-2018.md) |
-|658|[Generate a random binary number](./notes/notes-09-nov-2018.md) |
-|657|[Flask + matplotlib ( nice stuff really )](./notes/notes-09-nov-2018.md) |
-|656|[Mocks](./notes/notes-09-nov-2018.md) |
-|655|[Factorial in three ways](./notes/notes-06-nov-2018.md) |
-|654|[using List comprehension to shorten code](./notes/notes-06-nov-2018.md) |
-|653|[Tracing asyncio](./notes/notes-06-nov-2018.md) |
-|652|[generating primes as list or generator](./notes/notes-06-nov-2018.md) |
-|651|[listing all available modules](./notes/notes-06-nov-2018.md) |
-|650|[Overriding Control:C](./notes/notes-06-nov-2018.md) |
-|649|[Writing your own enumerator](./notes/notes-06-nov-2018.md) |
-|648|[Listing Errors Classes](./notes/notes-06-nov-2018.md) |
-|647|[more advanced sortings](./notes/notes-23-dec-2018.md) |
-|646|[using list to maintain a binary tree](./notes/notes-23-dec-2018.md) |
-|645|[Binary tree class](./notes/notes-23-dec-2018.md) |
-|644|[flask redis docker docker-compose alpine](./notes/notes-31-jan-2019.md) |
-|643|[PYTHONUNBUFFERED=1 why?](./notes/notes-31-jan-2019.md) |
-|642|[django docker-compose postgres](./notes/notes-31-jan-2019.md) |
-|641|[streaming fraud detection kafka](./notes/notes-31-jan-2019.md) |
-|640|[making functions](./notes/notes-31-jan-2019.md) |
-|639|[misplaced future](./notes/notes-02-nov-2018.md) |
-|638|[method could be a function](./notes/notes-02-nov-2018.md) |
-|637|[staticmethods and classmethods (cls variable)](./notes/notes-02-nov-2018.md) |
-|636|[How to design a class](./notes/notes-02-nov-2018.md) |
-|635|[Copying data from numpy to ctypes](./notes/notes-02-nov-2018.md) |
-|634|[mocking](./notes/notes-07-apr-2019.md) |
-|633|[conditions object and python multithreading](./notes/notes-07-apr-2019.md) |
-|632|[function initilaization with mutables](./notes/notes-07-apr-2019.md) |
-|631|[What I learned till now ( revision )](./notes/notes-29-oct-2018.md) |
-|630|[New style and old style classes](./notes/notes-29-oct-2018.md) |
-|629|[py_compile](./notes/notes-29-oct-2018.md) |
-|628|[Turing machine](./notes/notes-05-may-2019.md) |
-|627|[ipc queues](./notes/notes-05-may-2019.md) |
-|626|[Async decorator](./notes/notes-12-nov-2018.md) |
-|625|[dir() and dunder dict](./notes/notes-12-nov-2018.md) |
-|624|[@total_ordering to do less work](./notes/notes-12-nov-2018.md) |
-|623|[Numpy reshaping](./notes/notes-12-nov-2018.md) |
-|622|[Self or call it anything, doesnt matter](./notes/notes-12-nov-2018.md) |
-|621|[Difference between cls and self](./notes/notes-12-nov-2018.md) |
-|620|[Code from numpy quickstart](./notes/notes-12-nov-2018.md) |
-|619|[Histogram plot of normal distribution](./notes/notes-12-nov-2018.md) |
-|618|[Autoshaping](./notes/notes-12-nov-2018.md) |
-|617|[Top down recursive parsing](./notes/notes-12-nov-2018.md) |
-|616|[pysnooper for logging injection](./notes/notes-22-apr-2019.md) |
-|615|[golang tcp-server and client](./notes/notes-22-apr-2019.md) |
-|614|[Flask simple app](./notes/notes-03-oct-2018.md) |
-|613|[Calling external command in python](./notes/notes-03-oct-2018.md) |
-|612|[pprint](./notes/notes-03-oct-2018.md) |
-|611|[itertools groupby](./notes/notes-03-oct-2018.md) |
-|610|[Removes duplicates while maintaining order](./notes/notes-03-oct-2018.md) |
-|609|[Python HTTP and SMTP servers](./notes/notes-03-oct-2018.md) |
-|608|[versions](./notes/notes-03-oct-2018.md) |
-|607|[Tree](./notes/notes-03-oct-2018.md) |
-|606|[inspect to get call stack](./notes/notes-03-oct-2018.md) |
-|605|[Datetime](./notes/notes-03-oct-2018.md) |
-|604|[Index for loop](./notes/notes-03-oct-2018.md) |
-|603|[variable/attr exist  ?](./notes/notes-03-oct-2018.md) |
-|602|[parallel iteration in two collections](./notes/notes-03-oct-2018.md) |
-|601|[string <> datetime](./notes/notes-03-oct-2018.md) |
-|600|[2d array correct initialization](./notes/notes-03-oct-2018.md) |
-|599|[zip( \*iterable )](./notes/notes-03-oct-2018.md) |
-|598|[list appending in python](./notes/notes-03-oct-2018.md) |
-|597|[as integer ratio](./notes/notes-03-oct-2018.md) |
-|596|[set algebra](./notes/notes-03-oct-2018.md) |
-|595|[data types and built-in data structures](./notes/notes-03-oct-2018.md) |
-|594|[lambda](./notes/notes-03-oct-2018.md) |
-|593|[types of errors](./notes/notes-03-oct-2018.md) |
-|592|[try except](./notes/notes-03-oct-2018.md) |
-|591|[Raising errors](./notes/notes-03-oct-2018.md) |
-|590|[Accessing Exception](./notes/notes-03-oct-2018.md) |
-|589|[Custom exceptions](./notes/notes-03-oct-2018.md) |
-|588|[try except else finally](./notes/notes-03-oct-2018.md) |
-|587|[str2dict](./notes/notes-03-mar-2019.md) |
-|586|[Permutations (without inbulit)](./notes/notes-17-nov-2018.md) |
-|585|[Min Queue and Max queue implementations ( not efficient )](./notes/notes-17-nov-2018.md) |
-|584|[twilio with python for whatsapp](./notes/notes-14-apr-2019.md) |
-|583|[flask + pymongo + rest api](./notes/notes-07-jan-2019.md) |
-|582|[flask counter](./notes/notes-16-jan-2019.md) |
-|581|[platform module](./notes/notes-03-nov-2018.md) |
-|580|[curses in python for terminal draw](./notes/notes-03-nov-2018.md) |
-|579|[itertools combination(similar for Pn)](./notes/notes-03-nov-2018.md) |
-|578|[Python classes are dynamic](./notes/notes-03-nov-2018.md) |
-|577|[numpy vs python loop](./notes/notes-03-nov-2018.md) |
-|576|[monkeypatching methods and properties](./notes/notes-03-nov-2018.md) |
-|575|[Deduplication](./notes/notes-28-oct-2018.md) |
-|574|[Iterating over a tree](./notes/notes-28-oct-2018.md) |
-|573|[Wrapping a String in File interface](./notes/notes-28-oct-2018.md) |
-|572|[Objects that behave both as String and File Interface](./notes/notes-28-oct-2018.md) |
-|571|[Py_Initialize  and Interpreter startup](./notes/notes-28-oct-2018.md) |
-|570|[Thread State](./notes/notes-28-oct-2018.md) |
-|569|[What happens when we load a module](./notes/notes-28-oct-2018.md) |
-|568|[Symbol table ( CPython source)](./notes/notes-28-oct-2018.md) |
-|567|[Other data structures Cpython](./notes/notes-28-oct-2018.md) |
-|566|[Variable flags to specify context of name def. (CPython SC)](./notes/notes-28-oct-2018.md) |
-|565|[basicblock data structure](./notes/notes-28-oct-2018.md) |
-|564|[PyTypeObject](./notes/notes-28-oct-2018.md) |
-|563|[How generators are able to capture execution state and update that at will](./notes/notes-28-oct-2018.md) |
-|562|[The need for GIL](./notes/notes-28-oct-2018.md) |
-|561|[tstate : Thread State](./notes/notes-28-oct-2018.md) |
-|560|[Interpreter and Thread state](./notes/notes-28-oct-2018.md) |
-|559|[get python config information](./notes/notes-19-oct-2018.md) |
-|558|[Naming list slices](./notes/notes-19-oct-2018.md) |
-|557|[LEGB scoping rules of Python](./notes/notes-19-oct-2018.md) |
-|556|[yield syntax in python3](./notes/notes-19-oct-2018.md) |
-|555|[list comprehension for flattening](./notes/notes-19-oct-2018.md) |
-|554|[public, private , secret simple example](./notes/notes-19-oct-2018.md) |
-|553|[input(): disaster](./notes/notes-19-oct-2018.md) |
-|552|[pytest benchmark](./notes/notes-19-oct-2018.md) |
-|551|[rounding up floats](./notes/notes-19-oct-2018.md) |
-|550|[danger with format strings](./notes/notes-19-oct-2018.md) |
-|549|[yield where possible](./notes/notes-19-oct-2018.md) |
-|548|[benefits of yield](./notes/notes-19-oct-2018.md) |
-|547|[unzipping](./notes/notes-19-oct-2018.md) |
-|546|[dataclasses](./notes/notes-19-oct-2018.md) |
-|545|[ipython_memory_usage](./notes/notes-19-oct-2018.md) |
-|544|[python3 unicode](./notes/notes-19-oct-2018.md) |
-|543|[Exception handling silly mistake](./notes/notes-19-oct-2018.md) |
-|542|[python 3 faulthandler](./notes/notes-19-oct-2018.md) |
-|541|[(yield)](./notes/notes-19-oct-2018.md) |
-|540|[Decimal math with floating point error](./notes/notes-19-oct-2018.md) |
-|539|[coroutine vs generator](./notes/notes-19-oct-2018.md) |
-|538|[coroutine with single source and multiple targets](./notes/notes-19-oct-2018.md) |
-|537|[Variable assignment not being expression](./notes/notes-19-oct-2018.md) |
-|536|[Coroutines ~~ OOPS](./notes/notes-19-oct-2018.md) |
-|535|[How does coroutine differ from simple argument passing?](./notes/notes-19-oct-2018.md) |
-|534|[Performance optimization - coroutine - and dangers](./notes/notes-19-oct-2018.md) |
-|533|[Property decorator](./notes/notes-19-oct-2018.md) |
-|532|[Summary till now and Questions in my mind](./notes/notes-19-oct-2018.md) |
-|531|[Dumping information about threads](./notes/notes-19-oct-2018.md) |
-|530|[Path of imports](./notes/notes-14-oct-2018.md) |
-|529|[Enums](./notes/notes-14-oct-2018.md) |
-|528|[Return Multiple values from a function](./notes/notes-14-oct-2018.md) |
-|527|[Check Memory usage of an object](./notes/notes-14-oct-2018.md) |
-|526|[Checking if strings are anagram or not](./notes/notes-14-oct-2018.md) |
-|525|[Transposing matrix](./notes/notes-14-oct-2018.md) |
-|524|[Zipping lists](./notes/notes-14-oct-2018.md) |
-|523|[Flattening list](./notes/notes-14-oct-2018.md) |
-|522|[Lambda and raw input](./notes/notes-14-oct-2018.md) |
-|521|[multiline string](./notes/notes-14-oct-2018.md) |
-|520|[underscore in interactive prompt](./notes/notes-14-oct-2018.md) |
-|519|[set comprehension](./notes/notes-14-oct-2018.md) |
-|518|[python version](./notes/notes-14-oct-2018.md) |
-|517|[enumerate in python](./notes/notes-14-oct-2018.md) |
-|516|[unpacking using splat operator](./notes/notes-14-oct-2018.md) |
-|515|[Dictionary switch](./notes/notes-14-oct-2018.md) |
-|514|[Infinity in python](./notes/notes-14-oct-2018.md) |
-|513|[Switch case with system_dict](./notes/notes-14-oct-2018.md) |
-|512|[list flattening using DFS](./notes/notes-14-oct-2018.md) |
-|511|[pygorithm module](./notes/notes-14-oct-2018.md) |
-|510|[zipping lists to dict](./notes/notes-14-oct-2018.md) |
-|509|[setting recursion limit in python](./notes/notes-14-oct-2018.md) |
-|508|[list partitioning in python](./notes/notes-14-oct-2018.md) |
-|507|[lambda, filter and reduce](./notes/notes-14-oct-2018.md) |
-|506|[Counters](./notes/notes-14-oct-2018.md) |
-|505|[ChainMap](./notes/notes-14-oct-2018.md) |
-|504|[Breakpoint in python interpreter](./notes/notes-14-oct-2018.md) |
-|503|[gdb + python + reverse debugging](./notes/notes-14-oct-2018.md) |
-|502|[nonlocal vs global](./notes/notes-14-oct-2018.md) |
-|501|[Cyclomatic complexity with radon](./notes/notes-08-nov-2018.md) |
-|500|[Cellular Automta Game for Learning and practicing thinking](./notes/notes-08-nov-2018.md) |
-|499|[Svn file downloader in python using yield and subprocess](./notes/notes-08-nov-2018.md) |
-|498|[What if I want to pass arguments to the decorator itself (not the decorated function)?](./notes/notes-08-nov-2018.md) |
-|497|[http.server and SimpleHTTPServer in python program](./notes/notes-08-nov-2018.md) |
-|496|[Time complexity of python list, deque, set etc.](./notes/notes-08-nov-2018.md) |
-|495|[Traversing a tree ( predefined structure with children attribute )](./notes/notes-08-nov-2018.md) |
-|494|[Using sys.\_getframe to get filename and lineno's](./notes/notes-08-nov-2018.md) |
-|493|[Timeout a function using SIGALRM](./notes/notes-08-nov-2018.md) |
-|492|[Timeout function as a decorator](./notes/notes-08-nov-2018.md) |
-|491|[IPython start from python -c](./notes/notes-08-nov-2018.md) |
-|490|[itertools product](./notes/notes-08-nov-2018.md) |
-|489|[checking if object is iterable](./notes/notes-08-nov-2018.md) |
-|488|[Easier to Ask for Forgiveness than Permission ( EAFP style )](./notes/notes-08-nov-2018.md) |
-|487|[RingBuffer](./notes/notes-08-nov-2018.md) |
-|486|[primality test](./notes/notes-11-jan-2019.md) |
-|485|[torrent download using python](./notes/notes-08-nov-2019.md) |
-|484|[linecache module](./notes/notes-08-may-2019.md) |
-|483|[sysconfig to get details about python env](./notes/notes-08-may-2019.md) |
-|482|[xml rpc server-client](./notes/notes-08-may-2019.md) |
-|481|[sched for scheduling](./notes/notes-08-may-2019.md) |
-|480|[golang all basic features](./notes/notes-11-may-2019.md) |
-|479|[Dumping process's memory](./notes/notes-20-nov-2019.md) |
-|478|[Diagnosing memory leaks using guppy](./notes/notes-20-nov-2019.md) |
-|477|[turtle animation of sine](./notes/notes-20-nov-2019.md) |
-|476|[pythonic palindrome](./notes/notes-22-may-2019.md) |
-|475|[crypto asymmetric in python](./notes/notes-28-oct-2019.md) |
-|474|[dynamodb flask counter](./notes/notes-30-jan-2019.md) |
-|473|[amazon sqs](./notes/notes-30-jan-2019.md) |
-|472|[amazon sqs, sns and s3](./notes/notes-30-jan-2019.md) |
-|471|[Learning kubernetes by hands-on](./notes/notes-13-may-2019.md) |
-|470|[scapy hello](./notes/notes-27-nov-2018.md) |
-|469|[scapy packet crafting](./notes/notes-27-nov-2018.md) |
-|468|[generating packets with specific configs](./notes/notes-27-nov-2018.md) |
-|467|[scapy ls() and packet defaults](./notes/notes-27-nov-2018.md) |
-|466|[spoofing packets](./notes/notes-27-nov-2018.md) |
-|465|[Scapy sending simple ICMP packet](./notes/notes-27-nov-2018.md) |
-|464|[lsc() listing all functions in scapy](./notes/notes-27-nov-2018.md) |
-|463|[Sending and recieving packets](./notes/notes-27-nov-2018.md) |
-|462|[Stepping into a function using IPython](./notes/notes-27-nov-2018.md) |
-|461|[using scrapy to download files from svn](./notes/notes-27-nov-2018.md) |
-|460|[fastAPI models](./notes/notes-27-mar-2019.md) |
-|459|[async fastAPI example](./notes/notes-27-mar-2019.md) |
-|458|[openapi path parameters](./notes/notes-27-mar-2019.md) |
-|457|[openapi paths, order matter](./notes/notes-27-mar-2019.md) |
-|456|[sending back objects](./notes/notes-27-mar-2019.md) |
-|455|[bool type in parameters](./notes/notes-27-mar-2019.md) |
-|454|[multiple parameters](./notes/notes-27-mar-2019.md) |
-|453|[golang syntax](./notes/notes-18-apr-2019.md) |
-|452|[golang defer](./notes/notes-18-apr-2019.md) |
-|451|[golang variadic functions](./notes/notes-18-apr-2019.md) |
-|450|[building grep using keras](./notes/notes-07-jun-2019.md) |
-|449|[building grep using keras part 2](./notes/notes-07-jun-2019.md) |
-|448|[fastapi](./notes/notes-23-mar-2019.md) |
-|447|[Retry Decorator with exponential backoff](./notes/notes-11-nov-2018.md) |
-|446|[Decorator Decorator](./notes/notes-11-nov-2018.md) |
-|445|[pseudo-Currying](./notes/notes-11-nov-2018.md) |
-|444|[Writing your own debug decorator](./notes/notes-11-nov-2018.md) |
-|443|[Adding a method to a instance using decorator](./notes/notes-11-nov-2018.md) |
-|442|[Averaging and Summing decorators](./notes/notes-11-nov-2018.md) |
-|441|[Flask parameters](./notes/notes-11-nov-2018.md) |
-|440|[Flask Request type](./notes/notes-11-nov-2018.md) |
-|439|[Flask Request Data and Headers](./notes/notes-11-nov-2018.md) |
-|438|[Flask Response](./notes/notes-11-nov-2018.md) |
-|437|[Flask handling 404](./notes/notes-11-nov-2018.md) |
-|436|[Flask Authorizatoin](./notes/notes-11-nov-2018.md) |
-|435|[Counter with and without locking](./notes/notes-31-oct-2018.md) |
-|434|[Pipeline using a Queue class with Locks ( done wrong )](./notes/notes-31-oct-2018.md) |
-|433|[coroutine yield and send together](./notes/notes-31-oct-2018.md) |
-|432|[concurrent.futures](./notes/notes-31-oct-2018.md) |
-|431|[reading PyObject with ctypes](./notes/notes-31-oct-2018.md) |
-|430|[self wrapping Object](./notes/notes-31-oct-2018.md) |
-|429|[python3 print(\*a)](./notes/notes-31-oct-2018.md) |
-|428|[writing your own grammar engine?](./notes/notes-07-dec-2018.md) |
-|427|[negative numbers python](./notes/notes-29-dec-2018.md) |
-|426|[building list of factors in inefficient way](./notes/notes-29-dec-2018.md) |
-|425|[two player optimal play](./notes/notes-29-dec-2018.md) |
-|424|[Modulus and deterministic functions of state](./notes/notes-29-dec-2018.md) |
-|423|[uninstalling things with pip](./notes/notes-13-jan-2019.md) |
-|422|[pycuber](./notes/notes-13-jan-2019.md) |
-|421|[red black tree](./notes/notes-13-jan-2019.md) |
+|700|[type hints for python 3](./notes/notes-05-nov-2018.md) |
+|699|[better way to refer to libc](./notes/notes-05-nov-2018.md) |
+|698|[test data generation in python using mimesis](./notes/notes-05-nov-2018.md) |
+|697|[using pandas to directly load data ( pandas is kinda awesome)](./notes/notes-05-nov-2018.md) |
+|696|[FUSE : filesystem in userspace](./notes/notes-05-nov-2018.md) |
+|695|[While writing a library ( like Django ) things to take care of for portability between VMs](./notes/notes-05-nov-2018.md) |
+|694|[macropy library and "with trace"](./notes/notes-05-nov-2018.md) |
+|693|[dbus python](./notes/notes-05-nov-2018.md) |
+|692|[socks5 proxy in python minimal](./notes/notes-05-nov-2018.md) |
+|691|[GIL implementation in python](./notes/notes-05-nov-2018.md) |
+|690|[Simple virtual machine implementation in python](./notes/notes-05-nov-2018.md) |
+|689|[embedded etcd3 server in golang](./notes/notes-02-may-2019.md) |
+|688|[Python disable warnings](./notes/notes-02-may-2019.md) |
+|687|[knight closure](./notes/notes-02-may-2019.md) |
+|686|[Python Fire to expose internals and debugging](./notes/notes-04-nov-2018.md) |
+|685|[pyenv and pipenv](./notes/notes-04-nov-2018.md) |
+|684|[Flask JWT example](./notes/notes-04-nov-2018.md) |
+|683|[Flask uses Werkzeug internally](./notes/notes-04-nov-2018.md) |
+|682|[prime numbers with lambda](./notes/notes-04-nov-2018.md) |
+|681|[Elementary cellular automata in python](./notes/notes-04-nov-2018.md) |
+|680|[Elementary cellular automata plotted using matplotlib](./notes/notes-04-nov-2018.md) |
+|679|[segfault in python recursion](./notes/notes-04-nov-2018.md) |
+|678|[segfault using ctypes](./notes/notes-04-nov-2018.md) |
+|677|[tracing program execution using -m trace](./notes/notes-04-nov-2018.md) |
+|676|[crashing using marshal](./notes/notes-04-nov-2018.md) |
+|675|[iterators use c recusion stack](./notes/notes-04-nov-2018.md) |
+|674|[StringIO vs BytesIO (from SO)](./notes/notes-04-nov-2018.md) |
+|673|[simple reactive dashboards in python using dash](./notes/notes-04-nov-2018.md) |
+|672|[better_exceptions module](./notes/notes-04-nov-2018.md) |
+|671|[default arguments check](./notes/notes-21-dec-2018.md) |
+|670|[Timer example](./notes/notes-21-dec-2018.md) |
+|669|[Methods of saving state](./notes/notes-21-dec-2018.md) |
+|668|[bisect module is good replacement to lower_bound upper_bound](./notes/notes-05-nov-2019.md) |
+|667|[server/client in bash for quick use](./notes/notes-26-apr-2019.md) |
+|666|[sentry with golang](./notes/notes-26-apr-2019.md) |
+|665|[go routine](./notes/notes-26-apr-2019.md) |
+|664|[getting links from text](./notes/notes-26-apr-2019.md) |
+|663|[AWS](./notes/notes-26-apr-2019.md) |
+|662|[Using inner function to save data and printing a nested object](./notes/notes-09-nov-2018.md) |
+|661|[Using dict to get attributes of a object( I think I mentioend it earlier also )](./notes/notes-09-nov-2018.md) |
+|660|[In-memory String compression using gzip and StringIO](./notes/notes-09-nov-2018.md) |
+|659|[Generate a random binary number](./notes/notes-09-nov-2018.md) |
+|658|[Flask + matplotlib ( nice stuff really )](./notes/notes-09-nov-2018.md) |
+|657|[Mocks](./notes/notes-09-nov-2018.md) |
+|656|[Factorial in three ways](./notes/notes-06-nov-2018.md) |
+|655|[using List comprehension to shorten code](./notes/notes-06-nov-2018.md) |
+|654|[Tracing asyncio](./notes/notes-06-nov-2018.md) |
+|653|[generating primes as list or generator](./notes/notes-06-nov-2018.md) |
+|652|[listing all available modules](./notes/notes-06-nov-2018.md) |
+|651|[Overriding Control:C](./notes/notes-06-nov-2018.md) |
+|650|[Writing your own enumerator](./notes/notes-06-nov-2018.md) |
+|649|[Listing Errors Classes](./notes/notes-06-nov-2018.md) |
+|648|[more advanced sortings](./notes/notes-23-dec-2018.md) |
+|647|[using list to maintain a binary tree](./notes/notes-23-dec-2018.md) |
+|646|[Binary tree class](./notes/notes-23-dec-2018.md) |
+|645|[flask redis docker docker-compose alpine](./notes/notes-31-jan-2019.md) |
+|644|[PYTHONUNBUFFERED=1 why?](./notes/notes-31-jan-2019.md) |
+|643|[django docker-compose postgres](./notes/notes-31-jan-2019.md) |
+|642|[streaming fraud detection kafka](./notes/notes-31-jan-2019.md) |
+|641|[making functions](./notes/notes-31-jan-2019.md) |
+|640|[misplaced future](./notes/notes-02-nov-2018.md) |
+|639|[method could be a function](./notes/notes-02-nov-2018.md) |
+|638|[staticmethods and classmethods (cls variable)](./notes/notes-02-nov-2018.md) |
+|637|[How to design a class](./notes/notes-02-nov-2018.md) |
+|636|[Copying data from numpy to ctypes](./notes/notes-02-nov-2018.md) |
+|635|[mocking](./notes/notes-07-apr-2019.md) |
+|634|[conditions object and python multithreading](./notes/notes-07-apr-2019.md) |
+|633|[function initilaization with mutables](./notes/notes-07-apr-2019.md) |
+|632|[What I learned till now ( revision )](./notes/notes-29-oct-2018.md) |
+|631|[New style and old style classes](./notes/notes-29-oct-2018.md) |
+|630|[py_compile](./notes/notes-29-oct-2018.md) |
+|629|[Turing machine](./notes/notes-05-may-2019.md) |
+|628|[ipc queues](./notes/notes-05-may-2019.md) |
+|627|[Async decorator](./notes/notes-12-nov-2018.md) |
+|626|[dir() and dunder dict](./notes/notes-12-nov-2018.md) |
+|625|[@total_ordering to do less work](./notes/notes-12-nov-2018.md) |
+|624|[Numpy reshaping](./notes/notes-12-nov-2018.md) |
+|623|[Self or call it anything, doesnt matter](./notes/notes-12-nov-2018.md) |
+|622|[Difference between cls and self](./notes/notes-12-nov-2018.md) |
+|621|[Code from numpy quickstart](./notes/notes-12-nov-2018.md) |
+|620|[Histogram plot of normal distribution](./notes/notes-12-nov-2018.md) |
+|619|[Autoshaping](./notes/notes-12-nov-2018.md) |
+|618|[Top down recursive parsing](./notes/notes-12-nov-2018.md) |
+|617|[pysnooper for logging injection](./notes/notes-22-apr-2019.md) |
+|616|[golang tcp-server and client](./notes/notes-22-apr-2019.md) |
+|615|[Flask simple app](./notes/notes-03-oct-2018.md) |
+|614|[Calling external command in python](./notes/notes-03-oct-2018.md) |
+|613|[pprint](./notes/notes-03-oct-2018.md) |
+|612|[itertools groupby](./notes/notes-03-oct-2018.md) |
+|611|[Removes duplicates while maintaining order](./notes/notes-03-oct-2018.md) |
+|610|[Python HTTP and SMTP servers](./notes/notes-03-oct-2018.md) |
+|609|[versions](./notes/notes-03-oct-2018.md) |
+|608|[Tree](./notes/notes-03-oct-2018.md) |
+|607|[inspect to get call stack](./notes/notes-03-oct-2018.md) |
+|606|[Datetime](./notes/notes-03-oct-2018.md) |
+|605|[Index for loop](./notes/notes-03-oct-2018.md) |
+|604|[variable/attr exist  ?](./notes/notes-03-oct-2018.md) |
+|603|[parallel iteration in two collections](./notes/notes-03-oct-2018.md) |
+|602|[string <> datetime](./notes/notes-03-oct-2018.md) |
+|601|[2d array correct initialization](./notes/notes-03-oct-2018.md) |
+|600|[zip( \*iterable )](./notes/notes-03-oct-2018.md) |
+|599|[list appending in python](./notes/notes-03-oct-2018.md) |
+|598|[as integer ratio](./notes/notes-03-oct-2018.md) |
+|597|[set algebra](./notes/notes-03-oct-2018.md) |
+|596|[data types and built-in data structures](./notes/notes-03-oct-2018.md) |
+|595|[lambda](./notes/notes-03-oct-2018.md) |
+|594|[types of errors](./notes/notes-03-oct-2018.md) |
+|593|[try except](./notes/notes-03-oct-2018.md) |
+|592|[Raising errors](./notes/notes-03-oct-2018.md) |
+|591|[Accessing Exception](./notes/notes-03-oct-2018.md) |
+|590|[Custom exceptions](./notes/notes-03-oct-2018.md) |
+|589|[try except else finally](./notes/notes-03-oct-2018.md) |
+|588|[str2dict](./notes/notes-03-mar-2019.md) |
+|587|[Permutations (without inbulit)](./notes/notes-17-nov-2018.md) |
+|586|[Min Queue and Max queue implementations ( not efficient )](./notes/notes-17-nov-2018.md) |
+|585|[twilio with python for whatsapp](./notes/notes-14-apr-2019.md) |
+|584|[flask + pymongo + rest api](./notes/notes-07-jan-2019.md) |
+|583|[flask counter](./notes/notes-16-jan-2019.md) |
+|582|[platform module](./notes/notes-03-nov-2018.md) |
+|581|[curses in python for terminal draw](./notes/notes-03-nov-2018.md) |
+|580|[itertools combination(similar for Pn)](./notes/notes-03-nov-2018.md) |
+|579|[Python classes are dynamic](./notes/notes-03-nov-2018.md) |
+|578|[numpy vs python loop](./notes/notes-03-nov-2018.md) |
+|577|[monkeypatching methods and properties](./notes/notes-03-nov-2018.md) |
+|576|[Deduplication](./notes/notes-28-oct-2018.md) |
+|575|[Iterating over a tree](./notes/notes-28-oct-2018.md) |
+|574|[Wrapping a String in File interface](./notes/notes-28-oct-2018.md) |
+|573|[Objects that behave both as String and File Interface](./notes/notes-28-oct-2018.md) |
+|572|[Py_Initialize  and Interpreter startup](./notes/notes-28-oct-2018.md) |
+|571|[Thread State](./notes/notes-28-oct-2018.md) |
+|570|[What happens when we load a module](./notes/notes-28-oct-2018.md) |
+|569|[Symbol table ( CPython source)](./notes/notes-28-oct-2018.md) |
+|568|[Other data structures Cpython](./notes/notes-28-oct-2018.md) |
+|567|[Variable flags to specify context of name def. (CPython SC)](./notes/notes-28-oct-2018.md) |
+|566|[basicblock data structure](./notes/notes-28-oct-2018.md) |
+|565|[PyTypeObject](./notes/notes-28-oct-2018.md) |
+|564|[How generators are able to capture execution state and update that at will](./notes/notes-28-oct-2018.md) |
+|563|[The need for GIL](./notes/notes-28-oct-2018.md) |
+|562|[tstate : Thread State](./notes/notes-28-oct-2018.md) |
+|561|[Interpreter and Thread state](./notes/notes-28-oct-2018.md) |
+|560|[get python config information](./notes/notes-19-oct-2018.md) |
+|559|[Naming list slices](./notes/notes-19-oct-2018.md) |
+|558|[LEGB scoping rules of Python](./notes/notes-19-oct-2018.md) |
+|557|[yield syntax in python3](./notes/notes-19-oct-2018.md) |
+|556|[list comprehension for flattening](./notes/notes-19-oct-2018.md) |
+|555|[public, private , secret simple example](./notes/notes-19-oct-2018.md) |
+|554|[input(): disaster](./notes/notes-19-oct-2018.md) |
+|553|[pytest benchmark](./notes/notes-19-oct-2018.md) |
+|552|[rounding up floats](./notes/notes-19-oct-2018.md) |
+|551|[danger with format strings](./notes/notes-19-oct-2018.md) |
+|550|[yield where possible](./notes/notes-19-oct-2018.md) |
+|549|[benefits of yield](./notes/notes-19-oct-2018.md) |
+|548|[unzipping](./notes/notes-19-oct-2018.md) |
+|547|[dataclasses](./notes/notes-19-oct-2018.md) |
+|546|[ipython_memory_usage](./notes/notes-19-oct-2018.md) |
+|545|[python3 unicode](./notes/notes-19-oct-2018.md) |
+|544|[Exception handling silly mistake](./notes/notes-19-oct-2018.md) |
+|543|[python 3 faulthandler](./notes/notes-19-oct-2018.md) |
+|542|[(yield)](./notes/notes-19-oct-2018.md) |
+|541|[Decimal math with floating point error](./notes/notes-19-oct-2018.md) |
+|540|[coroutine vs generator](./notes/notes-19-oct-2018.md) |
+|539|[coroutine with single source and multiple targets](./notes/notes-19-oct-2018.md) |
+|538|[Variable assignment not being expression](./notes/notes-19-oct-2018.md) |
+|537|[Coroutines ~~ OOPS](./notes/notes-19-oct-2018.md) |
+|536|[How does coroutine differ from simple argument passing?](./notes/notes-19-oct-2018.md) |
+|535|[Performance optimization - coroutine - and dangers](./notes/notes-19-oct-2018.md) |
+|534|[Property decorator](./notes/notes-19-oct-2018.md) |
+|533|[Summary till now and Questions in my mind](./notes/notes-19-oct-2018.md) |
+|532|[Dumping information about threads](./notes/notes-19-oct-2018.md) |
+|531|[Path of imports](./notes/notes-14-oct-2018.md) |
+|530|[Enums](./notes/notes-14-oct-2018.md) |
+|529|[Return Multiple values from a function](./notes/notes-14-oct-2018.md) |
+|528|[Check Memory usage of an object](./notes/notes-14-oct-2018.md) |
+|527|[Checking if strings are anagram or not](./notes/notes-14-oct-2018.md) |
+|526|[Transposing matrix](./notes/notes-14-oct-2018.md) |
+|525|[Zipping lists](./notes/notes-14-oct-2018.md) |
+|524|[Flattening list](./notes/notes-14-oct-2018.md) |
+|523|[Lambda and raw input](./notes/notes-14-oct-2018.md) |
+|522|[multiline string](./notes/notes-14-oct-2018.md) |
+|521|[underscore in interactive prompt](./notes/notes-14-oct-2018.md) |
+|520|[set comprehension](./notes/notes-14-oct-2018.md) |
+|519|[python version](./notes/notes-14-oct-2018.md) |
+|518|[enumerate in python](./notes/notes-14-oct-2018.md) |
+|517|[unpacking using splat operator](./notes/notes-14-oct-2018.md) |
+|516|[Dictionary switch](./notes/notes-14-oct-2018.md) |
+|515|[Infinity in python](./notes/notes-14-oct-2018.md) |
+|514|[Switch case with system_dict](./notes/notes-14-oct-2018.md) |
+|513|[list flattening using DFS](./notes/notes-14-oct-2018.md) |
+|512|[pygorithm module](./notes/notes-14-oct-2018.md) |
+|511|[zipping lists to dict](./notes/notes-14-oct-2018.md) |
+|510|[setting recursion limit in python](./notes/notes-14-oct-2018.md) |
+|509|[list partitioning in python](./notes/notes-14-oct-2018.md) |
+|508|[lambda, filter and reduce](./notes/notes-14-oct-2018.md) |
+|507|[Counters](./notes/notes-14-oct-2018.md) |
+|506|[ChainMap](./notes/notes-14-oct-2018.md) |
+|505|[Breakpoint in python interpreter](./notes/notes-14-oct-2018.md) |
+|504|[gdb + python + reverse debugging](./notes/notes-14-oct-2018.md) |
+|503|[nonlocal vs global](./notes/notes-14-oct-2018.md) |
+|502|[Cyclomatic complexity with radon](./notes/notes-08-nov-2018.md) |
+|501|[Cellular Automta Game for Learning and practicing thinking](./notes/notes-08-nov-2018.md) |
+|500|[Svn file downloader in python using yield and subprocess](./notes/notes-08-nov-2018.md) |
+|499|[What if I want to pass arguments to the decorator itself (not the decorated function)?](./notes/notes-08-nov-2018.md) |
+|498|[http.server and SimpleHTTPServer in python program](./notes/notes-08-nov-2018.md) |
+|497|[Time complexity of python list, deque, set etc.](./notes/notes-08-nov-2018.md) |
+|496|[Traversing a tree ( predefined structure with children attribute )](./notes/notes-08-nov-2018.md) |
+|495|[Using sys.\_getframe to get filename and lineno's](./notes/notes-08-nov-2018.md) |
+|494|[Timeout a function using SIGALRM](./notes/notes-08-nov-2018.md) |
+|493|[Timeout function as a decorator](./notes/notes-08-nov-2018.md) |
+|492|[IPython start from python -c](./notes/notes-08-nov-2018.md) |
+|491|[itertools product](./notes/notes-08-nov-2018.md) |
+|490|[checking if object is iterable](./notes/notes-08-nov-2018.md) |
+|489|[Easier to Ask for Forgiveness than Permission ( EAFP style )](./notes/notes-08-nov-2018.md) |
+|488|[RingBuffer](./notes/notes-08-nov-2018.md) |
+|487|[primality test](./notes/notes-11-jan-2019.md) |
+|486|[torrent download using python](./notes/notes-08-nov-2019.md) |
+|485|[linecache module](./notes/notes-08-may-2019.md) |
+|484|[sysconfig to get details about python env](./notes/notes-08-may-2019.md) |
+|483|[xml rpc server-client](./notes/notes-08-may-2019.md) |
+|482|[sched for scheduling](./notes/notes-08-may-2019.md) |
+|481|[golang all basic features](./notes/notes-11-may-2019.md) |
+|480|[Dumping process's memory](./notes/notes-20-nov-2019.md) |
+|479|[Diagnosing memory leaks using guppy](./notes/notes-20-nov-2019.md) |
+|478|[turtle animation of sine](./notes/notes-20-nov-2019.md) |
+|477|[pythonic palindrome](./notes/notes-22-may-2019.md) |
+|476|[crypto asymmetric in python](./notes/notes-28-oct-2019.md) |
+|475|[dynamodb flask counter](./notes/notes-30-jan-2019.md) |
+|474|[amazon sqs](./notes/notes-30-jan-2019.md) |
+|473|[amazon sqs, sns and s3](./notes/notes-30-jan-2019.md) |
+|472|[Learning kubernetes by hands-on](./notes/notes-13-may-2019.md) |
+|471|[scapy hello](./notes/notes-27-nov-2018.md) |
+|470|[scapy packet crafting](./notes/notes-27-nov-2018.md) |
+|469|[generating packets with specific configs](./notes/notes-27-nov-2018.md) |
+|468|[scapy ls() and packet defaults](./notes/notes-27-nov-2018.md) |
+|467|[spoofing packets](./notes/notes-27-nov-2018.md) |
+|466|[Scapy sending simple ICMP packet](./notes/notes-27-nov-2018.md) |
+|465|[lsc() listing all functions in scapy](./notes/notes-27-nov-2018.md) |
+|464|[Sending and recieving packets](./notes/notes-27-nov-2018.md) |
+|463|[Stepping into a function using IPython](./notes/notes-27-nov-2018.md) |
+|462|[using scrapy to download files from svn](./notes/notes-27-nov-2018.md) |
+|461|[fastAPI models](./notes/notes-27-mar-2019.md) |
+|460|[async fastAPI example](./notes/notes-27-mar-2019.md) |
+|459|[openapi path parameters](./notes/notes-27-mar-2019.md) |
+|458|[openapi paths, order matter](./notes/notes-27-mar-2019.md) |
+|457|[sending back objects](./notes/notes-27-mar-2019.md) |
+|456|[bool type in parameters](./notes/notes-27-mar-2019.md) |
+|455|[multiple parameters](./notes/notes-27-mar-2019.md) |
+|454|[golang syntax](./notes/notes-18-apr-2019.md) |
+|453|[golang defer](./notes/notes-18-apr-2019.md) |
+|452|[golang variadic functions](./notes/notes-18-apr-2019.md) |
+|451|[building grep using keras](./notes/notes-07-jun-2019.md) |
+|450|[building grep using keras part 2](./notes/notes-07-jun-2019.md) |
+|449|[fastapi](./notes/notes-23-mar-2019.md) |
+|448|[Retry Decorator with exponential backoff](./notes/notes-11-nov-2018.md) |
+|447|[Decorator Decorator](./notes/notes-11-nov-2018.md) |
+|446|[pseudo-Currying](./notes/notes-11-nov-2018.md) |
+|445|[Writing your own debug decorator](./notes/notes-11-nov-2018.md) |
+|444|[Adding a method to a instance using decorator](./notes/notes-11-nov-2018.md) |
+|443|[Averaging and Summing decorators](./notes/notes-11-nov-2018.md) |
+|442|[Flask parameters](./notes/notes-11-nov-2018.md) |
+|441|[Flask Request type](./notes/notes-11-nov-2018.md) |
+|440|[Flask Request Data and Headers](./notes/notes-11-nov-2018.md) |
+|439|[Flask Response](./notes/notes-11-nov-2018.md) |
+|438|[Flask handling 404](./notes/notes-11-nov-2018.md) |
+|437|[Flask Authorizatoin](./notes/notes-11-nov-2018.md) |
+|436|[Counter with and without locking](./notes/notes-31-oct-2018.md) |
+|435|[Pipeline using a Queue class with Locks ( done wrong )](./notes/notes-31-oct-2018.md) |
+|434|[coroutine yield and send together](./notes/notes-31-oct-2018.md) |
+|433|[concurrent.futures](./notes/notes-31-oct-2018.md) |
+|432|[reading PyObject with ctypes](./notes/notes-31-oct-2018.md) |
+|431|[self wrapping Object](./notes/notes-31-oct-2018.md) |
+|430|[python3 print(\*a)](./notes/notes-31-oct-2018.md) |
+|429|[writing your own grammar engine?](./notes/notes-07-dec-2018.md) |
+|428|[negative numbers python](./notes/notes-29-dec-2018.md) |
+|427|[building list of factors in inefficient way](./notes/notes-29-dec-2018.md) |
+|426|[two player optimal play](./notes/notes-29-dec-2018.md) |
+|425|[Modulus and deterministic functions of state](./notes/notes-29-dec-2018.md) |
+|424|[uninstalling things with pip](./notes/notes-13-jan-2019.md) |
+|423|[pycuber](./notes/notes-13-jan-2019.md) |
+|422|[red black tree](./notes/notes-13-jan-2019.md) |
+|421|[Understanding cache in detail](./notes/notes-21-nov-2019.md) |
 |420|[Some tricks with list,set and maps](./notes/notes-15-nov-2018.md) |
 |419|[Seemingly weird](./notes/notes-15-nov-2018.md) |
 |418|[method types example](./notes/notes-15-nov-2018.md) |
