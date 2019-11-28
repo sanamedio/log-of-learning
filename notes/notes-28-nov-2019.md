@@ -1,5 +1,24 @@
 # 28-nov-2019
 
+### 7 - classmethod vs staticmethod
+
+```python
+class A(object):
+    def foo(self, x):
+        print "executing foo(%s, %s)" % (self, x)
+
+    @classmethod
+    def class_foo(cls, x):
+        print "executing class_foo(%s, %s)" % (cls, x)
+
+    @staticmethod
+    def static_foo(x):
+        print "executing static_foo(%s)" % x    
+
+a = A()
+```
+
+
 ### 6 - nim game play with DP
 
 - https://www.programcreek.com/2014/04/leetcode-nim-game-java/
