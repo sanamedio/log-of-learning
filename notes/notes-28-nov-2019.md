@@ -1,5 +1,35 @@
 # 28-nov-2019
 
+### 4 - pain fence problem - memory optimized DP
+
+- This is like many problems where you can count for a higher N by observing a simple pattern between nearby elements and write a recurrance
+
+```python
+#https://www.programcreek.com/2014/05/leetcode-pain-fence-java/
+
+
+def num_way(n, k ):
+
+
+    
+
+    dp[] = {0, k , k*k, 0 }
+
+
+    if n <= 2:
+        return dp[n]
+
+
+    for i in range(2,n):
+        dp[3] = (k*1)* (dp[1] + dp[2])
+        dp[1] = dp[2]
+        dp[2] = dp[3]
+
+
+    return dp[3]
+
+```
+
 ### 3 - Removing duplicates by swapping the dupes to the end
 
 - given an array, bring the unique elements to the front without using any extra space
