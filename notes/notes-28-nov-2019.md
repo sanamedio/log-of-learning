@@ -1,5 +1,33 @@
 # 28-nov-2019
 
+### 6 - nim game play with DP
+
+- https://www.programcreek.com/2014/04/leetcode-nim-game-java/
+- two person game theory play. You either win immediately, or find a way to push other player to a loser state ( of mind :D )
+
+```python
+import functools
+
+
+@functools.lru_cache(maxsize=128)
+def nim(n):
+    if n < 4:
+        return True #the caller is the winner
+    else:
+        for i in range(1,4):
+            if (not nim(n-i)) == True:
+                return True
+
+    return False
+
+
+
+
+for i in range(1,100):
+    print(i, " --> " , nim(i))
+```
+
+
 ### 5 - the mathematics of bulb switch problem
 
 - https://www.programcreek.com/2014/05/leetcode-bulb-switcher-java/
