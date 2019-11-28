@@ -1,5 +1,11 @@
 # 27-nov-2019
 
+### 3 - pip can directly work on URLS!
+
+```bash
+pip install https://github.com/mitsuhiko/flask/tarball/master
+```
+
 ### 2 - dutch national flag 3-way sort
 
 nice stuff
