@@ -1,5 +1,12 @@
 # 28-nov-2019
 
+### 5 - the mathematics of bulb switch problem
+
+- https://www.programcreek.com/2014/05/leetcode-bulb-switcher-java/
+- why it turns out to be perfect squares patterns ; one argument is that perfect squares have odd number of  divisors, as the factors all are having even powers and then if we use the divisor count formula it makes number of divisors as odd and the implication is reverse as well. -> 
+https://math.stackexchange.com/questions/906159/a-number-is-a-perfect-square-if-and-only-if-it-has-odd-number-of-positive-diviso
+
+
 ### 4 - pain fence problem - memory optimized DP
 
 - This is like many problems where you can count for a higher N by observing a simple pattern between nearby elements and write a recurrance
