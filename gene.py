@@ -1,8 +1,11 @@
 import os
 import re
+from datetime import datetime
+
 
 mds = [ md for md in os.listdir("./notes/") if md.endswith(".md") ]
 
+mds.sort(key = lambda date: datetime.strptime(date.split(".")[0].split("notes-")[1], '%d-%b-%Y')) 
 
 result = []
 k = 1
