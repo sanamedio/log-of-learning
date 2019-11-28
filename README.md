@@ -3,16 +3,19 @@
 # programming-notes
 # =================
 
-### 710/100000
+### 713/100000
 
 | ID  | NAME |
 | ------------- | ------------- |
-|710|[two way data binding in pure JS](./notes/notes-28-nov-2019.md) |
-|709|[finding lattice point is easier than I thought](./notes/notes-28-nov-2019.md) |
-|708|[Removing duplicates by swapping the dupes to the end](./notes/notes-28-nov-2019.md) |
-|707|[pain fence problem - memory optimized DP](./notes/notes-28-nov-2019.md) |
-|706|[the mathematics of bulb switch problem](./notes/notes-28-nov-2019.md) |
-|705|[nim game play with DP](./notes/notes-28-nov-2019.md) |
+|713|[two way data binding in pure JS](./notes/notes-28-nov-2019.md) |
+|712|[finding lattice point is easier than I thought](./notes/notes-28-nov-2019.md) |
+|711|[Removing duplicates by swapping the dupes to the end](./notes/notes-28-nov-2019.md) |
+|710|[pain fence problem - memory optimized DP](./notes/notes-28-nov-2019.md) |
+|709|[the mathematics of bulb switch problem](./notes/notes-28-nov-2019.md) |
+|708|[nim game play with DP](./notes/notes-28-nov-2019.md) |
+|707|[classmethod vs staticmethod](./notes/notes-28-nov-2019.md) |
+|706|[handling negative power](./notes/notes-28-nov-2019.md) |
+|705|[merge two sorted linked list](./notes/notes-28-nov-2019.md) |
 |704|[Pseudo random numbers](./notes/notes-27-nov-2019.md) |
 |703|[dutch national flag 3-way sort](./notes/notes-27-nov-2019.md) |
 |702|[pip can directly work on URLS!](./notes/notes-27-nov-2019.md) |
