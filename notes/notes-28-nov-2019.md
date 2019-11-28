@@ -1,5 +1,39 @@
 # 28-nov-2019
 
+### 8 - handling negative power
+
+```python
+import math
+
+
+def pow(a,b):
+
+
+    negative = True if b < 0 else False
+    b = abs(b)
+
+
+    if b == 0 :
+        return 1
+    elif b == 1:
+        return a
+    elif b== 2:
+        return a*a
+
+    if b%2 == 0:
+        result = pow(a, b//2) * pow(a, b//2)
+    else:
+        result = a* pow(a,b-1)
+
+
+    return 1.0/result if negative else result
+
+
+
+print(pow(2,-3))
+```
+
+
 ### 7 - classmethod vs staticmethod
 
 ```python
