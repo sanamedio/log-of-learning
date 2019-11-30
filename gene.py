@@ -16,7 +16,7 @@ for md in mds:
     temp_res = []
     for line in data:
         if re.search("### \d+ - ", line.strip()):
-            temp_res += [ ("|["+(line.strip().split(" - ",1)[1]).capitalize() + "](./notes/"+ md +") |")]
+            temp_res += [ ("["+(line.strip().split(" - ",1)[1]).capitalize() + "](./notes/"+ md +") ")]
             k = k+1
     result += list(reversed(temp_res))
 
@@ -35,4 +35,4 @@ prefix = """
 """
 
 
-print (prefix + "\n".join(list(reversed([ "|" + str(i+1)+"|" + result[i] for i in range(len(result))]))))
+print (prefix + "\n".join(list(reversed([ "|" + str(i+1)+"|" + result[i] + "|" for i in range(len(result))]))))
