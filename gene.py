@@ -7,7 +7,6 @@ mds = [ md for md in os.listdir("./notes/") if md.endswith(".md") ]
 
 mds.sort(key = lambda date: datetime.strptime(date.split(".")[0].split("notes-")[1], '%d-%b-%Y')) 
 
-print(mds)
 
 result = []
 k = 1
@@ -17,7 +16,7 @@ for md in mds:
     temp_res = []
     for line in data:
         if re.search("### \d+ - ", line.strip()):
-            temp_res += [ ("|["+line.strip().split(" - ",1)[1] + "](./notes/"+ md +") |")]
+            temp_res += [ ("|["+(line.strip().split(" - ",1)[1]).capitalize() + "](./notes/"+ md +") |")]
             k = k+1
     result += list(reversed(temp_res))
 
