@@ -1,5 +1,37 @@
 # 01-dec-2019
 
+### 4 - async/await with axios
+
+- revisiting syntax of node
+
+```js
+const axios = require('axios');
+
+async function asyncFunc2() {
+
+
+        try{
+        const response = await axios.get("https://icanhazdadjoke.com/",
+                {
+                 headers : {
+                        "Accept" : "application/json"
+                 }
+                });
+
+        const data = await response;
+        return data;
+        } catch(error) {
+
+                console.log("error", error);
+        }
+
+}
+
+
+asyncFunc2().then( (result) => console.log(result) )
+```
+
+
 ### 3 - Command line app with axios to show jokes
 
 From https://developer.okta.com/blog/2019/06/18/command-line-app-with-nodejs
