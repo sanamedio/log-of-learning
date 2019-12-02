@@ -3,11 +3,14 @@
 # programming-notes
 # =================
 
-### 717/100000
+### 720/100000
 
 | SNO | LINK |
-|------------- |
-|717|[Preety boxes and colors while making node cli tools](./notes/notes-01-dec-2019.md) |
+|-----|------- |
+|720|[Reversing a linked list in python](./notes/notes-02-dec-2019.md) |
+|719|[Async/await with axios](./notes/notes-01-dec-2019.md) |
+|718|[Command line app with axios to show jokes](./notes/notes-01-dec-2019.md) |
+|717|[Pretty boxes and colors while making node cli tools](./notes/notes-01-dec-2019.md) |
 |716|[Listing global npm modules](./notes/notes-01-dec-2019.md) |
 |715|[Quick tkinter gui to help in time boxing](./notes/notes-30-nov-2019.md) |
 |714|[Headless selenium](./notes/notes-30-nov-2019.md) |
