@@ -21,7 +21,6 @@ for md in mds:
             date_arr += [md.split(".md")[0].split("notes-")[1]]
             k = k+1
     result += list(reversed(temp_res))
-    date_arr = list(reversed(date_arr))
 
 
 
