@@ -3,10 +3,12 @@
 # programming-notes
 # =================
 
-### 715/100000
+### 717/100000
 
 | SNO | LINK |
-|-----|------- |
+|------------- |
+|717|[Preety boxes and colors while making node cli tools](./notes/notes-01-dec-2019.md) |
+|716|[Listing global npm modules](./notes/notes-01-dec-2019.md) |
 |715|[Quick tkinter gui to help in time boxing](./notes/notes-30-nov-2019.md) |
 |714|[Headless selenium](./notes/notes-30-nov-2019.md) |
 |713|[Merge two sorted linked list](./notes/notes-28-nov-2019.md) |
