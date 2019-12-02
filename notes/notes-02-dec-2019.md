@@ -1,5 +1,30 @@
 # 02-dec-2019
 
+### 3 - finding max diff between two numbers where the larger element lies on the right of smaller element
+
+```python3
+arr = [1, 5 ,2 ,1 , 25, 6, 23, 0 ]
+
+size = len(arr)
+
+def maxDiff(arr, arr_size):
+
+    max_diff = arr[1] - arr[0]
+    min_element =   arr[0]
+
+    for i in range(1,arr_size):
+        if arr[i] - min_element > max_diff:
+            max_diff = arr[i] - min_element
+
+        if arr[i]  < min_element:
+            min_element = arr[i]
+
+    return max_diff
+
+
+print( maxDiff(arr,size))
+```
+
 ### 2 - buy and sell stocks in python
 
 This is standard programming interview puzzle.
