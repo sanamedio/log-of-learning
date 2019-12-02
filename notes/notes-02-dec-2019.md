@@ -1,5 +1,101 @@
 # 02-dec-2019
 
+### 2 - buy and sell stocks in python
+
+This is standard programming interview puzzle.
+
+It has even more solutions, and divide and conquer one is plain cool.
+http://keithschwarz.com/interesting/code/?dir=single-sell-profit
+https://stackoverflow.com/questions/7086464/maximum-single-sell-profit
+
+version2: solution based on simple observation of local minima and maximas
+```python3
+def stockBuySell(prices,size):
+
+    n = len(prices)
+
+    if n == 1:
+        return
+
+    i = 0
+
+    while i < n-1:
+
+
+        while (i < n-1) and (prices[i+1] <= prices[i]):
+            i = i + 1
+
+
+        if i == n - 1:
+            break
+
+
+        buy = i
+        i = i + 1
+
+        while (i < n) and (prices[i] >= prices[i-1]):
+            i = i + 1
+
+        sell = i - 1
+
+        print( "Buy: ", buy, " Sell: ", sell )
+
+
+if __name__ == '__main__':
+        prices = [100,180,260,310,40, 535, 695]
+        n = len(prices)
+
+        stockBuySell(prices,n)
+
+```
+
+
+
+
+version1: brute force, observe the number of function call is even more than n^2
+```python3
+
+
+cnt = 0
+
+
+def maxProfit( price, start, end):
+
+    global cnt
+
+    cnt += 1
+
+    if end <= start:
+        return 0
+
+    profit = 0
+
+
+    for i in range(start,end):
+        for j in range(i+1,end+1):
+
+            if price[j] > price[i]:
+
+                curr_profit = price[j] - price[i]
+
+                curr_profit += maxProfit(price,start, i-1)
+                curr_profit += maxProfit(price,j+1, end)
+
+                profit = max(profit, curr_profit)
+
+    return profit
+
+
+if __name__ == '__main__':
+
+    prices = [ 100,180,260,310,40,535,695 ]
+
+    n = len(prices)
+
+    print (maxProfit(prices, 0 , n-1))
+    print (cnt)
+```
+
 
 ### 1 - Reversing a Linked list in Python
 
