@@ -3,10 +3,21 @@
 # programming-notes
 # =================
 
-### 720/100000
+### 731/100000
 
 | SNO | LINK| DATE |
 |-----|----|-----|
+|731|[Python2 vs python3 comparision](./notes/notes-05-dec-2019.md) |05-dec-2019|
+|730|[Parking lot oo design](./notes/notes-03-dec-2019.md) |03-dec-2019|
+|729|[Online chat system oo design](./notes/notes-03-dec-2019.md) |03-dec-2019|
+|728|[Lru cache oo design](./notes/notes-03-dec-2019.md) |03-dec-2019|
+|727|[Hash table oo design](./notes/notes-03-dec-2019.md) |03-dec-2019|
+|726|[Deck of cards oo design](./notes/notes-03-dec-2019.md) |03-dec-2019|
+|725|[Call center oo design](./notes/notes-03-dec-2019.md) |03-dec-2019|
+|724|[Regular expression parser](./notes/notes-03-dec-2019.md) |03-dec-2019|
+|723|[Inverted index vs forward index](./notes/notes-03-dec-2019.md) |03-dec-2019|
+|722|[Finding max diff between two numbers where the larger element lies on the right of smaller element](./notes/notes-02-dec-2019.md) |02-dec-2019|
+|721|[Buy and sell stocks in python](./notes/notes-02-dec-2019.md) |02-dec-2019|
 |720|[Reversing a linked list in python](./notes/notes-02-dec-2019.md) |02-dec-2019|
 |719|[Async/await with axios](./notes/notes-01-dec-2019.md) |01-dec-2019|
 |718|[Command line app with axios to show jokes](./notes/notes-01-dec-2019.md) |01-dec-2019|
