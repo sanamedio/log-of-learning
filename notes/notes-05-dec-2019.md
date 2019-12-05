@@ -4,7 +4,8 @@
 
 - Python can do a lot with minimal lines of code. Many times we want links present in webpage and that can help us in scripting in bash during scraping. I personally use this small flexible snippet for the same.
 
-Something like getting all the links from wikipedia webpage can be achieved on command line with this script as:-
+Something like getting all the links from wikipedia webpage can be achieved on command line by passing the <link>, <css selector> and <attribute> to grab.
+
 
 ```bash
 $ python3 select-by-css.py "https://wikipedia.com" "a" "href"
