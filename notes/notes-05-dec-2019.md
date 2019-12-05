@@ -7,10 +7,23 @@
 Something like getting all the links from wikipedia webpage can be achieved on command line with this script as:-
 
 ```bash
-python3 select-by-css.py "https://wikipedia.com" "a" "href"
+$ python3 select-by-css.py "https://wikipedia.com" "a" "href"
 ```
 
-code:-
+You can combine it with other stuff on the bash like this :-
+
+```bash
+$ python3 select-by-css.py "https://trends24.in/india/" "a" "href" | grep "?q=" | cut -d"=" -f2 | tr -dc '[:alpha:]\n\r' | sort | uniq
+
+AAPKaWifi
+ALBUMOFTHEYEAR
+AmmaForever
+ARayOfHope
+artistoftheyear
+(stripped for brevity...) 
+```
+
+select-by-css.py code:-
 ```python3
 from bs4 import BeautifulSoup
 import requests
