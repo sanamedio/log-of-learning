@@ -34,9 +34,10 @@ prefix = """
 
 ### """+ str(k-1) + """/100000
 
-| SNO | LINK| DATE |
-|-----|----|-----|
+| SNO | LINK|
+|-----|----|
 """
 
 
-print (prefix + "\n".join(list(reversed([ "|" + str(i+1)+"|" + result[i] + "|" + date_arr[i] + "|" for i in range(len(result))]))))
+#print (prefix + "\n".join(list(reversed([ "|" + str(i+1)+"|" + result[i] + "|" + date_arr[i] + "|" for i in range(len(result))]))))
+print (prefix + "\n".join(list(reversed([ "|" + str(i+1)+"|" + result[i] + "|" for i in range(len(result))]))))
