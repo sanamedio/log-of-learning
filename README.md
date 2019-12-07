@@ -715,7 +715,7 @@
 |29|[Try except](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-01-oct-2018.md#29---try-except) |01-oct-2018|
 |28|[Builtin datatypes](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-01-oct-2018.md#28---builtin-datatypes) |01-oct-2018|
 |27|[Memory management](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-01-oct-2018.md#27---memory-management) |01-oct-2018|
-|26|[Print in python 2|3](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-01-oct-2018.md#26---print-in-python-2|3) |01-oct-2018|
+|26|[Print in python 2 vs 3](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-01-oct-2018.md#26---print-in-python-2-vs-3) |01-oct-2018|
 |25|[Multithreading](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-01-oct-2018.md#25---multithreading) |01-oct-2018|
 |24|[\__init__](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-01-oct-2018.md#24---\__init__) |01-oct-2018|
 |23|[Self](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-01-oct-2018.md#23---self) |01-oct-2018|
