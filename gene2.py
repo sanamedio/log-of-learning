@@ -3,6 +3,8 @@ import re
 from datetime import datetime
 
 
+BLOB_PATH="https://github.com/l0k3ndr/programming-notes/blob/master/notes/"
+
 mds = [ md for md in os.listdir("./notes/") if md.endswith(".md") ]
 
 mds.sort(key = lambda date: datetime.strptime(date.split(".")[0].split("notes-")[1], '%d-%b-%Y')) 
@@ -17,7 +19,7 @@ for md in mds:
     temp_res = []
     for line in data:
         if re.search("### \d+ - ", line.strip()):
-            temp_res += [ ("["+(line.strip().split(" - ",1)[1]).capitalize() + "](./notes/"+ md +") ")]
+            temp_res += [ ("["+(line.strip().split(" - ",1)[1]).capitalize() + "]("+ BLOB_PATH + md + "#" +  line.strip().lower().replace("###","")[1:].replace(" ","-") + ") ")]
             date_arr += [md.split(".md")[0].split("notes-")[1]]
             k = k+1
     result += list(reversed(temp_res))
