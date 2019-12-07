@@ -627,7 +627,8 @@ c
 
 ### 8 - What is PEP 8?
 
-PEP 8 is a coding convention, a set of recommendation, about how to write your Python code more readable. 
+[PEP8](https://www.python.org/dev/peps/pep-0008/) is a coding convention, a set of recommendation, about how to write your Python code more readable. 
+
 
 ### 7 - Decorators
 
