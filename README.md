@@ -19,7 +19,7 @@
 |725|[Call center oo design](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-03-dec-2019.md#3---call-center-oo-design) |03-dec-2019|
 |724|[Regular expression parser](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-03-dec-2019.md#2---regular-expression-parser) |03-dec-2019|
 |723|[Inverted index vs forward index](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-03-dec-2019.md#1---inverted-index-vs-forward-index) |03-dec-2019|
-|722|[Finding max diff between two numbers where the larger element lies on the right of smaller element](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-02-dec-2019.md#3---finding-max-diff-between-two-numbers-where-the-larger-element-lies-on-the-right-of-smaller-element) |02-dec-2019|
+|722|[Finding max diff between two numbers problem](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-02-dec-2019.md#3---finding-max-diff-between-two-numbers-problem) |02-dec-2019|
 |721|[Buy and sell stocks in python](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-02-dec-2019.md#2---buy-and-sell-stocks-in-python) |02-dec-2019|
 |720|[Reversing a linked list in python](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-02-dec-2019.md#1---reversing-a-linked-list-in-python) |02-dec-2019|
 |719|[Async/await with axios](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-01-dec-2019.md#4---async/await-with-axios) |01-dec-2019|
@@ -472,7 +472,7 @@
 |272|[Pep 201: lockstep interation](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-26-oct-2018.md#5---pep-201:-lockstep-interation) |26-oct-2018|
 |271|[Core developer tutorial](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-26-oct-2018.md#4---core-developer-tutorial) |26-oct-2018|
 |270|[Weak references](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-26-oct-2018.md#3---weak-references) |26-oct-2018|
-|269|[Pep8001 - mostly about how the python development will continue with bfdl and voting algo for same](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-26-oct-2018.md#2---pep8001---mostly-about-how-the-python-development-will-continue-with-bfdl-and-voting-algo-for-same) |26-oct-2018|
+|269|[Pep8001](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-26-oct-2018.md#2---pep8001) |26-oct-2018|
 |268|[Reading peps](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-26-oct-2018.md#1---reading-peps) |26-oct-2018|
 |267|[Files related to ast, parser and compilation in cpython source tree](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-25-oct-2018.md#4---files-related-to-ast,-parser-and-compilation-in-cpython-source-tree) |25-oct-2018|
 |266|[Python compilation](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-25-oct-2018.md#3---python-compilation) |25-oct-2018|
