@@ -4,6 +4,7 @@
 ### 1 - threadlocal in python
 
 [Threadlocal storage in Python](https://stackoverflow.com/questions/1408171/thread-local-storage-in-python)
+[Good explanation from Java](http://tutorials.jenkov.com/java-concurrency/threadlocal.html)
 
 ```python
 import threading
