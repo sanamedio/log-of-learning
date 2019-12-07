@@ -1,7 +1,6 @@
 # 21-oct-2018
 
 ### 15 - PyEval_EvalFrameEx
-[create an anchor](#anchors-in-markdown)
 
 ```bash
 (gdb) b PyEval_EvalFrameEx
@@ -77,6 +76,7 @@ typedef struct _object {
 ```
 
 ### 9 - Py_Main CPython
+[create an anchor](#anchors-in-markdown)
 
 ```bash
 (gdb) break Py_Main
