@@ -108,9 +108,9 @@ d['primary'] # raises exception , entry was automatically removed
 
 
 
-### 2 - PEP8001 - Mostly about how the Python development will continue with BFDL and voting algo for same
+### 2 - PEP8001
 
-
+- Mostly about how the Python development will continue with BFDL and voting algo for same
 - https://en.wikipedia.org/wiki/Instant-runoff_voting
 - There is no perfect voting method. It has been shown by the Gibbard-Satterthwaite theorem that any single-winner ranked voting method which is not dictatorial must be susceptible to so-called "tactical voting".
   - Tactical voting occurs when a voter supports a candidate against their sincere preference in order to prevent an outcome they find most undesirable. There are four major tactical voting strategies (compromising, burying, push-over, and bullet voting).
