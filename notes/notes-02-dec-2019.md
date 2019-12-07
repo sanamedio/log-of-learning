@@ -1,6 +1,8 @@
 # 02-dec-2019
 
-### 3 - finding max diff between two numbers where the larger element lies on the right of smaller element
+### 3 - finding max diff between two numbers problem
+
+-  where the larger element lies on the right of smaller element
 
 ```python3
 arr = [1, 5 ,2 ,1 , 25, 6, 23, 0 ]
