@@ -3,10 +3,12 @@
 # programming-notes
 # =================
 
-### 734/100000
+### 736/100000
 
 | SNO | LINK|
 |-----|----|
+|736|[Sorting when element is at max k-place deranged](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-07-dec-2019.md#2---sorting-when-element-is-at-max-k-place-deranged) |
+|735|[Threadlocal in python](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-07-dec-2019.md#1---threadlocal-in-python) |
 |734|[Not ""](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-06-dec-2019.md#1---not-"") |
 |733|[Css selectors and beautiful soup](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-05-dec-2019.md#3---css-selectors-and-beautiful-soup) |
 |732|[Watching youtube videos in turtle window](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-05-dec-2019.md#2---watching-youtube-videos-in-turtle-window) |
