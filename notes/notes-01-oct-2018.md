@@ -383,7 +383,7 @@ Mutable built-in datatypes of Python
 * The allocation of Python heap space for Python objects is done by Python memory manager. The core API gives access to some tools for the programmer to code.
 * Python also have an inbuilt garbage collector, which recycle all the unused memory and frees the memory and makes it available to the heap space.
 
-### 26 - print in python 2|3
+### 26 - print in python 2 vs 3
 
 It seems in python3 print is a function and not a keyword
 
