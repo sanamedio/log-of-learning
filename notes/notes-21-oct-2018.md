@@ -76,7 +76,6 @@ typedef struct _object {
 ```
 
 ### 9 - Py_Main CPython
-[create an anchor](#anchors-in-markdown)
 
 ```bash
 (gdb) break Py_Main
