@@ -3,10 +3,11 @@
 # programming-notes
 # =================
 
-### 733/100000
+### 734/100000
 
 | SNO | LINK| DATE |
 |-----|----|-----|
+|734|[Not ""](./notes/notes-06-dec-2019.md) |06-dec-2019|
 |733|[Css selectors and beautiful soup](./notes/notes-05-dec-2019.md) |05-dec-2019|
 |732|[Watching youtube videos in turtle window](./notes/notes-05-dec-2019.md) |05-dec-2019|
 |731|[Python2 vs python3 comparision](./notes/notes-05-dec-2019.md) |05-dec-2019|
