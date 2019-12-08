@@ -1,5 +1,11 @@
 # 08-dec-2019
 
+### 3 - A + B = C using regex
+
+This is absolutely brilliant.(for a fun excercise)
+
+http://www.drregex.com/2018/09/a-regex-i-submitted-to-reddit-climbed.html?m=1
+
 ### 2 - Mongodb oplog access
 
 ```bash
