@@ -2,6 +2,8 @@
 
 ### 2 - Sorting when element is at max K-place deranged
 
+- python has heapq, so SortedQueue can be replaced with heapq to get nlogk complexity, otherwise currently it has nklogk
+
 ```python
 
 ## check how to implement a priority queue correctly with logk time complexity
