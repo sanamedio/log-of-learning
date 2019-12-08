@@ -1,5 +1,12 @@
 # 08-dec-2019
 
+### 4 - CircleCI tutorial with Flask and Github
+
+Something other than our old Jenkins:
+
+https://circleci.com/blog/setting-up-continuous-integration-with-github/
+
+
 ### 3 - A + B = C using regex
 
 This is absolutely brilliant.(for a fun excercise)
