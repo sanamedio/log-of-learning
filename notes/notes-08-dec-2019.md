@@ -1,5 +1,11 @@
 # 08-dec-2019
 
+### 5 - Difference between let and var in JS
+
+We can say let is more strict than var and helps in predicting scopes easily
+
+https://stackoverflow.com/questions/762011/whats-the-difference-between-using-let-and-var
+
 ### 4 - CircleCI tutorial with Flask and Github
 
 Something other than our old Jenkins:
