@@ -4,6 +4,7 @@
 
 - [link](https://www.pramp.com/question/r1Kw0vwG6OhK9AEGAyWV)
 
+correct solution:-
 ```python3
 def findGrantsCap(grants, new_budget):
 
