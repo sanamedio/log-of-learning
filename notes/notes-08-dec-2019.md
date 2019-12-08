@@ -1,5 +1,29 @@
 # 08-dec-2019
 
+### 6 - Award Budget Cuts (coding problem)
+
+- [link](https://www.pramp.com/question/r1Kw0vwG6OhK9AEGAyWV)
+
+```python3
+def findGrantsCap(grants, new_budget):
+
+	n = len(grants)
+	grants = list(reversed(sorted(grants)))
+	grants.append(0)
+	surplus = sum(grants) - new_budget
+
+	if surplus <= 0:
+		return grants[0]
+	
+	for i in range(0,n):
+		surplus -= (i+1) * (grants[i] - grants[i+1])
+		if surplus <= 0:
+			break
+
+	return grants[i+1] + ( -surplus / float(i+1) )
+```
+
+
 ### 5 - Difference between let and var in JS
 
 We can say let is more strict than var and helps in predicting scopes easily

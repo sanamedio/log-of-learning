@@ -3,10 +3,12 @@
 # programming-notes
 # =================
 
-### 740/100000
+### 742/100000
 
 | SNO | LINK|
 |-----|----|
+|742|[Award budget cuts (coding problem)](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-08-dec-2019.md#6---award-budget-cuts-(coding-problem)) |
+|741|[Difference between let and var in js](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-08-dec-2019.md#5---difference-between-let-and-var-in-js) |
 |740|[Circleci tutorial with flask and github](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-08-dec-2019.md#4---circleci-tutorial-with-flask-and-github) |
 |739|[A + b = c using regex](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-08-dec-2019.md#3---a-+-b-=-c-using-regex) |
 |738|[Mongodb oplog access](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-08-dec-2019.md#2---mongodb-oplog-access) |
