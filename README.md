@@ -3,10 +3,14 @@
 # programming-notes
 # =================
 
-### 736/100000
+### 740/100000
 
 | SNO | LINK|
 |-----|----|
+|740|[Circleci tutorial with flask and github](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-08-dec-2019.md#4---circleci-tutorial-with-flask-and-github) |
+|739|[A + b = c using regex](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-08-dec-2019.md#3---a-+-b-=-c-using-regex) |
+|738|[Mongodb oplog access](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-08-dec-2019.md#2---mongodb-oplog-access) |
+|737|[Entry points(how i missed it?)](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-08-dec-2019.md#1---entry-points(how-i-missed-it?)) |
 |736|[Sorting when element is at max k-place deranged](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-07-dec-2019.md#2---sorting-when-element-is-at-max-k-place-deranged) |
 |735|[Threadlocal in python](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-07-dec-2019.md#1---threadlocal-in-python) |
 |734|[Not ""](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-06-dec-2019.md#1---not-"") |
