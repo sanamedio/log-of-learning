@@ -230,6 +230,9 @@ if not isinstance(x, (int, float)):
 
 ### 9 - locals()
 
+```python
+locals()
+```
 - Get the variables in local scope. There is no nonlocals() though.
 
 ### 8 - pip -> pipenv
