@@ -170,9 +170,11 @@ yield
 ```
 ### 45 - help() and dir() 
 
+```python
 The help() function displays the documentation string and help for its argument.
 
 The dir() function displays all the members of an object(any kind).
+```
 
 ### 44 - ternary operator
 ```python
