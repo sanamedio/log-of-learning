@@ -33,7 +33,7 @@ for md in mds:
                 categories += ["general"]
             last_type = None
             
-            temp_res += [ ("["+(line.strip().split(" - ",1)[1]).capitalize() + "]("+ BLOB_PATH + md + "#" +  line.strip().lower().replace("###","")[1:].replace(" ","-").replace("?","").replace("(","").replace(")","").replace(",","") + ") ")]
+            temp_res += [ ("["+(line.strip().split(" - ",1)[1]).capitalize() + "]("+ BLOB_PATH + md + "#" +  line.strip().lower().replace("###","")[1:].replace(" ","-").replace("?","").replace("(","").replace(")","").replace(",","").replacea("_","") + ") ")]
             date_arr += [md.split(".md")[0].split("notes-")[1]]
             k = k+1
 
