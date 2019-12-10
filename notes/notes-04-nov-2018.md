@@ -70,6 +70,9 @@ if __name__ == '__main__':
 
 ### 13 - StringIO vs BytesIO (from SO)
 
+```python
+```
+
 - StringIO works with str data, while BytesIO works with bytes data. bytes are raw data, e.g. 65, while str interprets this data, e.g. using the ASCII encoding 65 is the letter 'A'.
 - bytes data is preferable when you want to work with data agnostically - i.e. you don't care what is contained in it. For example, sockets only transmit raw bytes data.
 - str is used when you want to present data to users, or interpret at a higher level. For example, if you know that a file contains text, you can directly interpret the raw bytes as text.
