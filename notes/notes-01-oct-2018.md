@@ -121,6 +121,12 @@ Python is cool
 
 Functions to remove left, right and both side whitespace
 
+```python
+" abc  ".lstrip() -> "abc  "
+" abc  ".rstrip() -> " abc"
+" abc  ".strip() -> "abc"
+```
+
 ### 46 - keywords
 ```python
 and					
