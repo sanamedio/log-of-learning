@@ -8,6 +8,7 @@
 
 | LINK |
 |------|
+|[Entry points](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-08-dec-2019.md#1---entry-points) |
 |[Circleci tutorial with flask and github](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-08-dec-2019.md#4---circleci-tutorial-with-flask-and-github) |
 |[Award budget cuts (coding problem)](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-08-dec-2019.md#6---award-budget-cuts-coding-problem) |
 |[Threadlocal in python](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-07-dec-2019.md#1---threadlocal-in-python) |
@@ -68,11 +69,15 @@
 |[Monotonic time in python](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-01-may-2019.md#1---monotonic-time-in-python) |
 |[Python with etcd - getting notified of key creation](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-01-may-2019.md#2---python-with-etcd---getting-notified-of-key-creation) |
 |[Locks with python-etcd3](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-01-may-2019.md#3---locks-with-python-etcd3) |
+|[Python release vs. distribution](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-30-apr-2019.md#2---python-release-vs.-distribution) |
+|[Golang cmd prompt](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-24-apr-2019.md#1---golang-cmd-prompt) |
 |[Python http logging](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-24-apr-2019.md#5---python-http-logging) |
 |[Pysnooper for logging injection](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-22-apr-2019.md#1---pysnooper-for-logging-injection) |
+|[Range is a sequence](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-16-apr-2019.md#1---range-is-a-sequence) |
 |[Pysolr](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-16-apr-2019.md#2---pysolr) |
 |[Executing web assembly with python](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-16-apr-2019.md#3---executing-web-assembly-with-python) |
 |[Jwt in python](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-16-apr-2019.md#4---jwt-in-python) |
+|[Using valgrind with python](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-16-apr-2019.md#5---using-valgrind-with-python) |
 |[Twilio with python for whatsapp](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-14-apr-2019.md#1---twilio-with-python-for-whatsapp) |
 |[Mocking](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-07-apr-2019.md#1---mocking) |
 |[Conditions object and python multithreading](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-07-apr-2019.md#2---conditions-object-and-python-multithreading) |
@@ -88,9 +93,12 @@
 |[Multiple parameters](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-27-mar-2019.md#7---multiple-parameters) |
 |[Fastapi](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-23-mar-2019.md#1---fastapi) |
 |[Multithreaded hello world](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-21-mar-2019.md#1---multithreaded-hello-world) |
+|[Dining philosophers](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-21-mar-2019.md#2---dining-philosophers) |
 |[Str2dict](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-03-mar-2019.md#1---str2dict) |
+|[Docker-compose and python development](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-05-feb-2019.md#1---docker-compose-and-python-development) |
 |[Cloudwatch amazon examples](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-05-feb-2019.md#2---cloudwatch-amazon-examples) |
 |[Ec2 instance boto3 examples](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-05-feb-2019.md#3---ec2-instance-boto3-examples) |
+|[Not python but useful for local projects](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-05-feb-2019.md#4---not-python-but-useful-for-local-projects) |
 |[Equating two sides of a license plate](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-03-feb-2019.md#1---equating-two-sides-of-a-license-plate) |
 |[Converting python ds to dynamodb supported ds](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-01-feb-2019.md#1---converting-python-ds-to-dynamodb-supported-ds) |
 |[Creating a dynamodb table](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-01-feb-2019.md#2---creating-a-dynamodb-table) |
@@ -205,9 +213,11 @@
 |[Class vs instance attribute(just for remembering)](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-24-nov-2018.md#10---class-vs-instance-attributejust-for-remembering) |
 |[Typing usage](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-23-nov-2018.md#1---typing-usage) |
 |[Contextlib for perf](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-23-nov-2018.md#2---contextlib-for-perf) |
+|[Using github as a pypi server](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-23-nov-2018.md#3---using-github-as-a-pypi-server) |
 |[Cherrypy](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-23-nov-2018.md#4---cherrypy) |
 |[Euclid](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-23-nov-2018.md#5---euclid) |
 |[Simple graph adj list structure](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-23-nov-2018.md#6---simple-graph-adj-list-structure) |
+|[Flask advantages/features](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-22-nov-2018.md#1---flask-advantages/features) |
 |[List enumeration](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-22-nov-2018.md#2---list-enumeration) |
 |[Bitwise operations](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-22-nov-2018.md#3---bitwise-operations) |
 |[Determine if a string contains unique characters](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-21-nov-2018.md#1---determine-if-a-string-contains-unique-characters) |
@@ -310,10 +320,13 @@
 |[Cellular automta game for learning and practicing thinking](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-08-nov-2018.md#2---cellular-automta-game-for-learning-and-practicing-thinking) |
 |[Svn file downloader in python using yield and subprocess](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-08-nov-2018.md#3---svn-file-downloader-in-python-using-yield-and-subprocess) |
 |[What if i want to pass arguments to the decorator itself (not the decorated function)?](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-08-nov-2018.md#4---what-if-i-want-to-pass-arguments-to-the-decorator-itself-not-the-decorated-function) |
+|[Http.server and simplehttpserver in python program](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-08-nov-2018.md#5---http.server-and-simplehttpserver-in-python-program) |
+|[Time complexity of python list, deque, set etc.](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-08-nov-2018.md#6---time-complexity-of-python-list,-deque,-set-etc.) |
 |[Traversing a tree ( predefined structure with children attribute )](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-08-nov-2018.md#7---traversing-a-tree--predefined-structure-with-children-attribute-) |
 |[Using sys.\_getframe to get filename and lineno's](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-08-nov-2018.md#8---using-sys.\_getframe-to-get-filename-and-lineno's) |
 |[Timeout a function using sigalrm](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-08-nov-2018.md#9---timeout-a-function-using-sigalrm) |
 |[Timeout function as a decorator](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-08-nov-2018.md#10---timeout-function-as-a-decorator) |
+|[Ipython start from python -c](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-08-nov-2018.md#11---ipython-start-from-python--c) |
 |[Itertools product](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-08-nov-2018.md#12---itertools-product) |
 |[Checking if object is iterable](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-08-nov-2018.md#13---checking-if-object-is-iterable) |
 |[Easier to ask for forgiveness than permission ( eafp style )](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-08-nov-2018.md#14---easier-to-ask-for-forgiveness-than-permission--eafp-style-) |
@@ -336,10 +349,14 @@
 |[Test data generation in python using mimesis](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-05-nov-2018.md#3---test-data-generation-in-python-using-mimesis) |
 |[Using pandas to directly load data ( pandas is kinda awesome)](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-05-nov-2018.md#4---using-pandas-to-directly-load-data--pandas-is-kinda-awesome) |
 |[Fuse : filesystem in userspace](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-05-nov-2018.md#5---fuse-:-filesystem-in-userspace) |
+|[While writing a library ( like django ) things to take care of for portability between vms](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-05-nov-2018.md#6---while-writing-a-library--like-django--things-to-take-care-of-for-portability-between-vms) |
 |[Macropy library and "with trace"](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-05-nov-2018.md#7---macropy-library-and-"with-trace") |
+|[Dbus python](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-05-nov-2018.md#8---dbus-python) |
 |[Socks5 proxy in python minimal](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-05-nov-2018.md#9---socks5-proxy-in-python-minimal) |
+|[Gil implementation in python](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-05-nov-2018.md#10---gil-implementation-in-python) |
 |[Simple virtual machine implementation in python](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-05-nov-2018.md#11---simple-virtual-machine-implementation-in-python) |
 |[Python fire to expose internals and debugging](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-04-nov-2018.md#1---python-fire-to-expose-internals-and-debugging) |
+|[Pyenv and pipenv](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-04-nov-2018.md#2---pyenv-and-pipenv) |
 |[Flask jwt example](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-04-nov-2018.md#3---flask-jwt-example) |
 |[Flask uses werkzeug internally](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-04-nov-2018.md#4---flask-uses-werkzeug-internally) |
 |[Prime numbers with lambda](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-04-nov-2018.md#5---prime-numbers-with-lambda) |
@@ -347,9 +364,11 @@
 |[Elementary cellular automata plotted using matplotlib](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-04-nov-2018.md#7---elementary-cellular-automata-plotted-using-matplotlib) |
 |[Segfault in python recursion](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-04-nov-2018.md#8---segfault-in-python-recursion) |
 |[Segfault using ctypes](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-04-nov-2018.md#9---segfault-using-ctypes) |
+|[Tracing program execution using -m trace](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-04-nov-2018.md#10---tracing-program-execution-using--m-trace) |
 |[Crashing using marshal](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-04-nov-2018.md#11---crashing-using-marshal) |
 |[Iterators use c recusion stack](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-04-nov-2018.md#12---iterators-use-c-recusion-stack) |
 |[Simple reactive dashboards in python using dash](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-04-nov-2018.md#14---simple-reactive-dashboards-in-python-using-dash) |
+|[Better_exceptions module](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-04-nov-2018.md#15---better_exceptions-module) |
 |[Platform module](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-03-nov-2018.md#1---platform-module) |
 |[Curses in python for terminal draw](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-03-nov-2018.md#2---curses-in-python-for-terminal-draw) |
 |[Itertools combination(similar for pn)](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-03-nov-2018.md#3---itertools-combinationsimilar-for-pn) |
@@ -359,7 +378,9 @@
 |[Misplaced future](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-02-nov-2018.md#1---misplaced-future) |
 |[Method could be a function](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-02-nov-2018.md#2---method-could-be-a-function) |
 |[Staticmethods and classmethods (cls variable)](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-02-nov-2018.md#3---staticmethods-and-classmethods-cls-variable) |
+|[How to design a class](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-02-nov-2018.md#4---how-to-design-a-class) |
 |[Copying data from numpy to ctypes](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-02-nov-2018.md#5---copying-data-from-numpy-to-ctypes) |
+|[Django tutorial](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-01-nov-2018.md#1---django-tutorial) |
 |[Antipatterns in python](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-01-nov-2018.md#2---antipatterns-in-python) |
 |[Unintended for else](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-01-nov-2018.md#4---unintended-for-else) |
 |[With behind the scenes](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-01-nov-2018.md#5---with-behind-the-scenes) |
@@ -378,27 +399,49 @@
 |[Asyncio call soon and functools.partial](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-30-oct-2018.md#4---asyncio-call-soon-and-functools.partial) |
 |[Asyncio call later](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-30-oct-2018.md#5---asyncio-call-later) |
 |[Asyncio call at a specific time](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-30-oct-2018.md#6---asyncio-call-at-a-specific-time) |
+|[Why gil](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-30-oct-2018.md#7---why-gil) |
 |[More gil](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-30-oct-2018.md#8---more-gil) |
 |[Dict comprehension shortcut for reversing key,value](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-30-oct-2018.md#9---dict-comprehension-shortcut-for-reversing-key,value) |
 |[Various ways to use subprocess](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-30-oct-2018.md#10---various-ways-to-use-subprocess) |
+|[What i learned till now ( revision )](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-29-oct-2018.md#1---what-i-learned-till-now--revision-) |
 |[New style and old style classes](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-29-oct-2018.md#2---new-style-and-old-style-classes) |
 |[Py_compile](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-29-oct-2018.md#3---py_compile) |
 |[Deduplication](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-28-oct-2018.md#1---deduplication) |
 |[Iterating over a tree](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-28-oct-2018.md#2---iterating-over-a-tree) |
 |[Wrapping a string in file interface](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-28-oct-2018.md#3---wrapping-a-string-in-file-interface) |
+|[Objects that behave both as string and file interface](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-28-oct-2018.md#4---objects-that-behave-both-as-string-and-file-interface) |
+|[Py_initialize  and interpreter startup](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-28-oct-2018.md#5---py_initialize--and-interpreter-startup) |
+|[Thread state](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-28-oct-2018.md#6---thread-state) |
 |[What happens when we load a module](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-28-oct-2018.md#7---what-happens-when-we-load-a-module) |
+|[Symbol table ( cpython source)](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-28-oct-2018.md#8---symbol-table--cpython-source) |
+|[Other data structures cpython](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-28-oct-2018.md#9---other-data-structures-cpython) |
+|[Variable flags to specify context of name def. (cpython sc)](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-28-oct-2018.md#10---variable-flags-to-specify-context-of-name-def.-cpython-sc) |
+|[Pytypeobject](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-28-oct-2018.md#12---pytypeobject) |
+|[The need for gil](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-28-oct-2018.md#14---the-need-for-gil) |
+|[Tstate : thread state](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-28-oct-2018.md#15---tstate-:-thread-state) |
+|[Interpreter and thread state](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-28-oct-2018.md#16---interpreter-and-thread-state) |
 |[Pep 3148 concurrent futures](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-27-oct-2018.md#1---pep-3148-concurrent-futures) |
+|[Call source code for function object](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-27-oct-2018.md#2---call-source-code-for-function-object) |
+|[Elements of style](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-27-oct-2018.md#3---elements-of-style) |
 |[Stringio and sys.out](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-27-oct-2018.md#4---stringio-and-sys.out) |
 |[Permutations](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-27-oct-2018.md#5---permutations) |
 |[Deque and yield pattern](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-27-oct-2018.md#6---deque-and-yield-pattern) |
 |[Heapq](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-27-oct-2018.md#7---heapq) |
+|[Reading peps](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-26-oct-2018.md#1---reading-peps) |
+|[Pep8001](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-26-oct-2018.md#2---pep8001) |
 |[Weak references](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-26-oct-2018.md#3---weak-references) |
+|[Core developer tutorial](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-26-oct-2018.md#4---core-developer-tutorial) |
 |[Pep 201: lockstep interation](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-26-oct-2018.md#5---pep-201:-lockstep-interation) |
 |[Pep 214: print](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-26-oct-2018.md#6---pep-214:-print) |
 |[Exception hook](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-26-oct-2018.md#7---exception-hook) |
 |[Dynamic array class](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-25-oct-2018.md#1---dynamic-array-class) |
 |[Accessing memory using cpython](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-25-oct-2018.md#2---accessing-memory-using-cpython) |
+|[Python compilation](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-25-oct-2018.md#3---python-compilation) |
+|[Files related to ast, parser and compilation in cpython source tree](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-25-oct-2018.md#4---files-related-to-ast,-parser-and-compilation-in-cpython-source-tree) |
 |[Meddling with a program in middle](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-24-oct-2018.md#1---meddling-with-a-program-in-middle) |
+|[Source code for objects, classes, closures, generators, iterators](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-24-oct-2018.md#2---source-code-for-objects,-classes,-closures,-generators,-iterators) |
+|[Pystringobject](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-23-oct-2018.md#1---pystringobject) |
+|[Code object and func object](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-23-oct-2018.md#2---code-object-and-func-object) |
 |[Dynamically creating type and object from that](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-23-oct-2018.md#3---dynamically-creating-type-and-object-from-that) |
 |[Interpreter inside interpreter](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-23-oct-2018.md#4---interpreter-inside-interpreter) |
 |[Zero-argument and variable-argument lambdas](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-23-oct-2018.md#5---zero-argument-and-variable-argument-lambdas) |
@@ -409,15 +452,38 @@
 |[Zen of python source code](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-23-oct-2018.md#10---zen-of-python-source-code) |
 |[Tuple syntax](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-23-oct-2018.md#11---tuple-syntax) |
 |[Python pre-loaded modules by interpreter](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-22-oct-2018.md#1---python-pre-loaded-modules-by-interpreter) |
+|[Modules written in c (cpython source)](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-22-oct-2018.md#2---modules-written-in-c-cpython-source) |
+|[.pyc files](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-22-oct-2018.md#3---.pyc-files) |
+|[Bytecode processor: binary_multiply](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-22-oct-2018.md#4---bytecode-processor:-binary_multiply) |
 |[Inspect : tool for observation](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-22-oct-2018.md#5---inspect-:-tool-for-observation) |
 |[Ternary operation](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-22-oct-2018.md#6---ternary-operation) |
 |[Compile code and getting code object](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-22-oct-2018.md#7---compile-code-and-getting-code-object) |
+|[Pycodeobject](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-22-oct-2018.md#8---pycodeobject) |
+|[Pyframeobject](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-22-oct-2018.md#9---pyframeobject) |
+|[Interpreter and opcodes](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-22-oct-2018.md#10---interpreter-and-opcodes) |
+|[Frame](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-22-oct-2018.md#11---frame) |
+|[Python object model](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-22-oct-2018.md#12---python-object-model) |
 |[Asyncio](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-21-oct-2018.md#1---asyncio) |
+|[Python program steps](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-21-oct-2018.md#2---python-program-steps) |
 |[Python bytecode](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-21-oct-2018.md#3---python-bytecode) |
+|[Call stack and data stack](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-21-oct-2018.md#4---call-stack-and-data-stack) |
 |[Python is dynamically typed! lower level details](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-21-oct-2018.md#5---python-is-dynamically-typed!-lower-level-details) |
+|[Cpython directory structure](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-21-oct-2018.md#6---cpython-directory-structure) |
+|[Main cpython](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-21-oct-2018.md#7---main-cpython) |
+|[Memory management cpython](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-21-oct-2018.md#8---memory-management-cpython) |
+|[Py_main cpython](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-21-oct-2018.md#9---py_main-cpython) |
+|[Pyobject cpython](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-21-oct-2018.md#10---pyobject-cpython) |
+|[Pytypeobject cpython](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-21-oct-2018.md#11---pytypeobject-cpython) |
+|[Protocols](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-21-oct-2018.md#12---protocols) |
+|[Reference counting](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-21-oct-2018.md#13---reference-counting) |
+|[Pyobject_memory small block allocator](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-21-oct-2018.md#14---pyobject_memory-small-block-allocator) |
+|[Pyeval_evalframeex](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-21-oct-2018.md#15---pyeval_evalframeex) |
 |[Magic methods](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-20-oct-2018.md#3---magic-methods) |
 |[Uncompyle6](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-20-oct-2018.md#2---uncompyle6) |
+|[Pyrasite shell](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-20-oct-2018.md#1---pyrasite-shell) |
+|[Get python config information](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-19-oct-2018.md#1---get-python-config-information) |
 |[Naming list slices](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-19-oct-2018.md#2---naming-list-slices) |
+|[Legb scoping rules of python](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-19-oct-2018.md#3---legb-scoping-rules-of-python) |
 |[Yield syntax in python3](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-19-oct-2018.md#4---yield-syntax-in-python3) |
 |[List comprehension for flattening](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-19-oct-2018.md#5---list-comprehension-for-flattening) |
 |[Public, private , secret simple example](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-19-oct-2018.md#6---public,-private-,-secret-simple-example) |
@@ -429,6 +495,7 @@
 |[Unzipping](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-19-oct-2018.md#13---unzipping) |
 |[Dataclasses](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-19-oct-2018.md#14---dataclasses) |
 |[Ipython_memory_usage](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-19-oct-2018.md#15---ipython_memory_usage) |
+|[Python3 unicode](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-19-oct-2018.md#16---python3-unicode) |
 |[Exception handling silly mistake](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-19-oct-2018.md#17---exception-handling-silly-mistake) |
 |[Python 3 faulthandler](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-19-oct-2018.md#18---python-3-faulthandler) |
 |[(yield)](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-19-oct-2018.md#19---yield) |
@@ -438,9 +505,11 @@
 |[Coroutines ~~ oops](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-19-oct-2018.md#24---coroutines-~~-oops) |
 |[How does coroutine differ from simple argument passing?](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-19-oct-2018.md#25---how-does-coroutine-differ-from-simple-argument-passing) |
 |[Property decorator](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-19-oct-2018.md#27---property-decorator) |
+|[Summary till now and questions in my mind](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-19-oct-2018.md#28---summary-till-now-and-questions-in-my-mind) |
 |[Dumping information about threads](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-19-oct-2018.md#30---dumping-information-about-threads) |
 |[Efficient recursion of fibonacci](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-18-oct-2018.md#1---efficient-recursion-of-fibonacci) |
 |[Reversing a list using recursion](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-18-oct-2018.md#2---reversing-a-list-using-recursion) |
+|[Cpython garbage collector](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-18-oct-2018.md#3---cpython-garbage-collector) |
 |[Refcounting example](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-18-oct-2018.md#4---refcounting-example) |
 |[Generational gc example](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-18-oct-2018.md#5---generational-gc-example) |
 |[Debugging reference cycles](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-18-oct-2018.md#6---debugging-reference-cycles) |
@@ -456,8 +525,13 @@
 |[String interning](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-18-oct-2018.md#16---string-interning) |
 |[Exiting python](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-18-oct-2018.md#17---exiting-python) |
 |[Inline unpacking is treated differently](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-18-oct-2018.md#18---inline-unpacking-is-treated-differently) |
+|[Virtualenv and venv](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-18-oct-2018.md#19---virtualenv-and-venv) |
 |[Sys.getcounts](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-18-oct-2018.md#20---sys.getcounts) |
+|[Everything on this link](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-17-oct-2018.md#1---everything-on-this-link) |
+|[Id() and is](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-17-oct-2018.md#2---id-and-is) |
+|[Datamodel](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-17-oct-2018.md#3---datamodel) |
 |[Namedtuple](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-17-oct-2018.md#7---namedtuple) |
+|[Pip -> pipenv](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-17-oct-2018.md#8---pip-->-pipenv) |
 |[Isinstance](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-17-oct-2018.md#11---isinstance) |
 |[Revisiting yield](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-17-oct-2018.md#12---revisiting-yield) |
 |[Inline absolute value](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-17-oct-2018.md#13---inline-absolute-value) |
@@ -470,6 +544,9 @@
 |[Synchronizing threads using lock](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-17-oct-2018.md#20---synchronizing-threads-using-lock) |
 |[Re-entrant lock in python](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-17-oct-2018.md#21---re-entrant-lock-in-python) |
 |[Disable automatic garbage collection](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-17-oct-2018.md#22---disable-automatic-garbage-collection) |
+|[Gil](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-16-oct-2018.md#1---gil) |
+|[Lifecycle of python code](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-16-oct-2018.md#2---lifecycle-of-python-code) |
+|[Python docs ( damn; reached them so late )](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-16-oct-2018.md#3---python-docs--damn;-reached-them-so-late-) |
 |[Id() of mutables](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-16-oct-2018.md#4---id-of-mutables) |
 |[Context with](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-15-oct-2018.md#2---context-with) |
 |[Try except finally ~~ with](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-15-oct-2018.md#3---try-except-finally-~~-with) |
@@ -488,6 +565,7 @@
 |[__str__ and __repr__](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-15-oct-2018.md#19---__str__-and-__repr__) |
 |[Getting classnames](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-15-oct-2018.md#20---getting-classnames) |
 |[Python 2 unicode and str are separate](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-15-oct-2018.md#21---python-2-unicode-and-str-are-separate) |
+|[Dunder](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-15-oct-2018.md#22---dunder) |
 |[Path of imports](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-14-oct-2018.md#1---path-of-imports) |
 |[Enums](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-14-oct-2018.md#2---enums) |
 |[Return multiple values from a function](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-14-oct-2018.md#3---return-multiple-values-from-a-function) |
@@ -515,8 +593,12 @@
 |[Counters](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-14-oct-2018.md#25---counters) |
 |[Chainmap](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-14-oct-2018.md#26---chainmap) |
 |[Breakpoint in python interpreter](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-14-oct-2018.md#27---breakpoint-in-python-interpreter) |
+|[Gdb + python + reverse debugging](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-14-oct-2018.md#28---gdb-+-python-+-reverse-debugging) |
 |[Nonlocal vs global](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-14-oct-2018.md#29---nonlocal-vs-global) |
+|[Celery](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-12-oct-2018.md#1---celery) |
 |[Built-in help](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-12-oct-2018.md#2---built-in-help) |
+|[Wsgi](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-12-oct-2018.md#3---wsgi) |
+|[__new__ vs __init__](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-12-oct-2018.md#5---__new__-vs-__init__) |
 |[Docstring](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-12-oct-2018.md#6---docstring) |
 |[Constructors](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-12-oct-2018.md#7---constructors) |
 |[Inheritence](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-12-oct-2018.md#8---inheritence) |
@@ -531,6 +613,7 @@
 |[Pprint](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-03-oct-2018.md#3---pprint) |
 |[Itertools groupby](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-03-oct-2018.md#4---itertools-groupby) |
 |[Removes duplicates while maintaining order](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-03-oct-2018.md#5---removes-duplicates-while-maintaining-order) |
+|[Python http and smtp servers](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-03-oct-2018.md#6---python-http-and-smtp-servers) |
 |[Versions](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-03-oct-2018.md#7---versions) |
 |[Tree](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-03-oct-2018.md#8---tree) |
 |[Inspect to get call stack](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-03-oct-2018.md#9---inspect-to-get-call-stack) |
@@ -545,6 +628,7 @@
 |[As integer ratio](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-03-oct-2018.md#18---as-integer-ratio) |
 |[Set algebra](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-03-oct-2018.md#19---set-algebra) |
 |[Lambda](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-03-oct-2018.md#21---lambda) |
+|[Types of errors](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-03-oct-2018.md#22---types-of-errors) |
 |[Try except](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-03-oct-2018.md#23---try-except) |
 |[Raising errors](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-03-oct-2018.md#24---raising-errors) |
 |[Accessing exception](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-03-oct-2018.md#25---accessing-exception) |
@@ -557,8 +641,10 @@
 |[Random shuffle](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-01-oct-2018.md#5---random-shuffle) |
 |[List sort](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-01-oct-2018.md#6---list-sort) |
 |[Decorators](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-01-oct-2018.md#7---decorators) |
+|[What is pep 8?](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-01-oct-2018.md#8---what-is-pep-8) |
 |[Counter](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-01-oct-2018.md#9---counter) |
 |[Print directory listings recursively](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-01-oct-2018.md#10---print-directory-listings-recursively) |
+|[Module import location in python code](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-01-oct-2018.md#11---module-import-location-in-python-code) |
 |[Classes are objects in python](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-01-oct-2018.md#13---classes-are-objects-in-python) |
 |[Monkey patching](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-01-oct-2018.md#14---monkey-patching) |
 |[Decorator with annotation](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-01-oct-2018.md#15---decorator-with-annotation) |
@@ -606,7 +692,6 @@
 
 | LINK |
 |------|
-|[Entry points](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-08-dec-2019.md#1---entry-points) |
 |[Mongodb oplog access](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-08-dec-2019.md#2---mongodb-oplog-access) |
 |[A + b = c using regex](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-08-dec-2019.md#3---a-+-b-=-c-using-regex) |
 |[Difference between let and var in js](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-08-dec-2019.md#5---difference-between-let-and-var-in-js) |
@@ -628,7 +713,6 @@
 |[Golang all basic features](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-11-may-2019.md#1---golang-all-basic-features) |
 |[Embedded etcd3 server in golang](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-02-may-2019.md#1---embedded-etcd3-server-in-golang) |
 |[Kubernetes autoscaling](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-30-apr-2019.md#1---kubernetes-autoscaling) |
-|[Python release vs. distribution](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-30-apr-2019.md#2---python-release-vs.-distribution) |
 |[Go exit value, is not same as what is returned](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-29-apr-2019.md#1---go-exit-value,-is-not-same-as-what-is-returned) |
 |[Handling sys signals in golang](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-29-apr-2019.md#2---handling-sys-signals-in-golang) |
 |[Running binaries as processes](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-29-apr-2019.md#3---running-binaries-as-processes) |
@@ -640,7 +724,6 @@
 |[Go routine](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-26-apr-2019.md#3---go-routine) |
 |[Getting links from text](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-26-apr-2019.md#4---getting-links-from-text) |
 |[Aws](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-26-apr-2019.md#5---aws) |
-|[Golang cmd prompt](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-24-apr-2019.md#1---golang-cmd-prompt) |
 |[Golang-set](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-24-apr-2019.md#2---golang-set) |
 |[Colorful text in golang](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-24-apr-2019.md#3---colorful-text-in-golang) |
 |[Golang now](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-24-apr-2019.md#4---golang-now) |
@@ -652,109 +735,26 @@
 |[Golang syntax](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-18-apr-2019.md#1---golang-syntax) |
 |[Golang defer](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-18-apr-2019.md#2---golang-defer) |
 |[Golang variadic functions](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-18-apr-2019.md#3---golang-variadic-functions) |
-|[Range is a sequence](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-16-apr-2019.md#1---range-is-a-sequence) |
-|[Using valgrind with python](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-16-apr-2019.md#5---using-valgrind-with-python) |
-|[Dining philosophers](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-21-mar-2019.md#2---dining-philosophers) |
-|[Docker-compose and python development](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-05-feb-2019.md#1---docker-compose-and-python-development) |
-|[Not python but useful for local projects](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-05-feb-2019.md#4---not-python-but-useful-for-local-projects) |
 |[Uninstalling things with pip](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-13-jan-2019.md#1---uninstalling-things-with-pip) |
-|[Using github as a pypi server](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-23-nov-2018.md#3---using-github-as-a-pypi-server) |
-|[Flask advantages/features](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-22-nov-2018.md#1---flask-advantages/features) |
 |[Dir() and dunder dict](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-12-nov-2018.md#2---dir-and-dunder-dict) |
-|[Http.server and simplehttpserver in python program](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-08-nov-2018.md#5---http.server-and-simplehttpserver-in-python-program) |
-|[Time complexity of python list, deque, set etc.](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-08-nov-2018.md#6---time-complexity-of-python-list,-deque,-set-etc.) |
-|[Ipython start from python -c](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-08-nov-2018.md#11---ipython-start-from-python--c) |
-|[While writing a library ( like django ) things to take care of for portability between vms](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-05-nov-2018.md#6---while-writing-a-library--like-django--things-to-take-care-of-for-portability-between-vms) |
-|[Dbus python](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-05-nov-2018.md#8---dbus-python) |
-|[Gil implementation in python](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-05-nov-2018.md#10---gil-implementation-in-python) |
-|[Pyenv and pipenv](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-04-nov-2018.md#2---pyenv-and-pipenv) |
-|[Tracing program execution using -m trace](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-04-nov-2018.md#10---tracing-program-execution-using--m-trace) |
 |[Stringio vs bytesio (from so)](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-04-nov-2018.md#13---stringio-vs-bytesio-from-so) |
-|[Better_exceptions module](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-04-nov-2018.md#15---better_exceptions-module) |
-|[How to design a class](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-02-nov-2018.md#4---how-to-design-a-class) |
-|[Django tutorial](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-01-nov-2018.md#1---django-tutorial) |
-|[Why gil](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-30-oct-2018.md#7---why-gil) |
-|[What i learned till now ( revision )](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-29-oct-2018.md#1---what-i-learned-till-now--revision-) |
-|[Objects that behave both as string and file interface](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-28-oct-2018.md#4---objects-that-behave-both-as-string-and-file-interface) |
-|[Py_initialize  and interpreter startup](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-28-oct-2018.md#5---py_initialize--and-interpreter-startup) |
-|[Thread state](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-28-oct-2018.md#6---thread-state) |
-|[Symbol table ( cpython source)](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-28-oct-2018.md#8---symbol-table--cpython-source) |
-|[Other data structures cpython](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-28-oct-2018.md#9---other-data-structures-cpython) |
-|[Variable flags to specify context of name def. (cpython sc)](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-28-oct-2018.md#10---variable-flags-to-specify-context-of-name-def.-cpython-sc) |
 |[Basicblock data structure](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-28-oct-2018.md#11---basicblock-data-structure) |
-|[Pytypeobject](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-28-oct-2018.md#12---pytypeobject) |
 |[How generators are able to capture execution state and update that at will](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-28-oct-2018.md#13---how-generators-are-able-to-capture-execution-state-and-update-that-at-will) |
-|[The need for gil](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-28-oct-2018.md#14---the-need-for-gil) |
-|[Tstate : thread state](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-28-oct-2018.md#15---tstate-:-thread-state) |
-|[Interpreter and thread state](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-28-oct-2018.md#16---interpreter-and-thread-state) |
-|[Call source code for function object](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-27-oct-2018.md#2---call-source-code-for-function-object) |
-|[Elements of style](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-27-oct-2018.md#3---elements-of-style) |
-|[Reading peps](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-26-oct-2018.md#1---reading-peps) |
-|[Pep8001](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-26-oct-2018.md#2---pep8001) |
-|[Core developer tutorial](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-26-oct-2018.md#4---core-developer-tutorial) |
 |[About peps](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-26-oct-2018.md#8---about-peps) |
-|[Python compilation](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-25-oct-2018.md#3---python-compilation) |
-|[Files related to ast, parser and compilation in cpython source tree](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-25-oct-2018.md#4---files-related-to-ast,-parser-and-compilation-in-cpython-source-tree) |
-|[Source code for objects, classes, closures, generators, iterators](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-24-oct-2018.md#2---source-code-for-objects,-classes,-closures,-generators,-iterators) |
-|[Pystringobject](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-23-oct-2018.md#1---pystringobject) |
-|[Code object and func object](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-23-oct-2018.md#2---code-object-and-func-object) |
-|[Modules written in c (cpython source)](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-22-oct-2018.md#2---modules-written-in-c-cpython-source) |
-|[.pyc files](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-22-oct-2018.md#3---.pyc-files) |
-|[Bytecode processor: binary_multiply](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-22-oct-2018.md#4---bytecode-processor:-binary_multiply) |
-|[Pycodeobject](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-22-oct-2018.md#8---pycodeobject) |
-|[Pyframeobject](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-22-oct-2018.md#9---pyframeobject) |
-|[Interpreter and opcodes](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-22-oct-2018.md#10---interpreter-and-opcodes) |
-|[Frame](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-22-oct-2018.md#11---frame) |
-|[Python object model](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-22-oct-2018.md#12---python-object-model) |
-|[Python program steps](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-21-oct-2018.md#2---python-program-steps) |
-|[Call stack and data stack](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-21-oct-2018.md#4---call-stack-and-data-stack) |
-|[Cpython directory structure](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-21-oct-2018.md#6---cpython-directory-structure) |
-|[Main cpython](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-21-oct-2018.md#7---main-cpython) |
-|[Memory management cpython](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-21-oct-2018.md#8---memory-management-cpython) |
-|[Py_main cpython](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-21-oct-2018.md#9---py_main-cpython) |
-|[Pyobject cpython](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-21-oct-2018.md#10---pyobject-cpython) |
-|[Pytypeobject cpython](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-21-oct-2018.md#11---pytypeobject-cpython) |
-|[Protocols](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-21-oct-2018.md#12---protocols) |
-|[Reference counting](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-21-oct-2018.md#13---reference-counting) |
-|[Pyobject_memory small block allocator](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-21-oct-2018.md#14---pyobject_memory-small-block-allocator) |
-|[Pyeval_evalframeex](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-21-oct-2018.md#15---pyeval_evalframeex) |
-|[Pyrasite shell](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-20-oct-2018.md#1---pyrasite-shell) |
-|[Get python config information](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-19-oct-2018.md#1---get-python-config-information) |
-|[Legb scoping rules of python](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-19-oct-2018.md#3---legb-scoping-rules-of-python) |
 |[Benefits of yield](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-19-oct-2018.md#12---benefits-of-yield) |
-|[Python3 unicode](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-19-oct-2018.md#16---python3-unicode) |
 |[Coroutine vs generator](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-19-oct-2018.md#21---coroutine-vs-generator) |
 |[Performance optimization - coroutine - and dangers](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-19-oct-2018.md#26---performance-optimization---coroutine---and-dangers) |
-|[Summary till now and questions in my mind](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-19-oct-2018.md#28---summary-till-now-and-questions-in-my-mind) |
-|[Cpython garbage collector](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-18-oct-2018.md#3---cpython-garbage-collector) |
-|[Virtualenv and venv](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-18-oct-2018.md#19---virtualenv-and-venv) |
-|[Everything on this link](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-17-oct-2018.md#1---everything-on-this-link) |
-|[Id() and is](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-17-oct-2018.md#2---id-and-is) |
-|[Datamodel](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-17-oct-2018.md#3---datamodel) |
 |[Frozen set](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-17-oct-2018.md#4---frozen-set) |
 |[Coroutine function](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-17-oct-2018.md#5---coroutine-function) |
 |[Asynchronous generator functions](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-17-oct-2018.md#6---asynchronous-generator-functions) |
-|[Pip -> pipenv](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-17-oct-2018.md#8---pip-->-pipenv) |
 |[Locals()](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-17-oct-2018.md#9---locals) |
 |[__getitem__ , next() , __iter__](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-17-oct-2018.md#10---__getitem__-,-next-,-__iter__) |
-|[Gil](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-16-oct-2018.md#1---gil) |
-|[Lifecycle of python code](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-16-oct-2018.md#2---lifecycle-of-python-code) |
-|[Python docs ( damn; reached them so late )](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-16-oct-2018.md#3---python-docs--damn;-reached-them-so-late-) |
 |[Midnight time evaluates to false](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-16-oct-2018.md#5---midnight-time-evaluates-to-false) |
 |[Assertions](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-15-oct-2018.md#1---assertions) |
 |[Var_ ( underscore after the name)](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-15-oct-2018.md#9---var_--underscore-after-the-name) |
 |[Unpacking operator](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-15-oct-2018.md#16---unpacking-operator) |
 |[Return none](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-15-oct-2018.md#17---return-none) |
-|[Dunder](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-15-oct-2018.md#22---dunder) |
-|[Gdb + python + reverse debugging](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-14-oct-2018.md#28---gdb-+-python-+-reverse-debugging) |
-|[Celery](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-12-oct-2018.md#1---celery) |
-|[Wsgi](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-12-oct-2018.md#3---wsgi) |
 |[C3 linearization for multiple interitance](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-12-oct-2018.md#4---c3-linearization-for-multiple-interitance) |
-|[__new__ vs __init__](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-12-oct-2018.md#5---__new__-vs-__init__) |
-|[Python http and smtp servers](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-03-oct-2018.md#6---python-http-and-smtp-servers) |
 |[Data types and built-in data structures](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-03-oct-2018.md#20---data-types-and-built-in-data-structures) |
-|[Types of errors](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-03-oct-2018.md#22---types-of-errors) |
-|[What is pep 8?](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-01-oct-2018.md#8---what-is-pep-8) |
-|[Module import location in python code](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-01-oct-2018.md#11---module-import-location-in-python-code) |
 |[Module import caching](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-01-oct-2018.md#12---module-import-caching) |
 |[Try except](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-01-oct-2018.md#29---try-except) |

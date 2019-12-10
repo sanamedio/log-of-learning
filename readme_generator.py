@@ -37,7 +37,7 @@ for md in mds:
             date_arr += [md.split(".md")[0].split("notes-")[1]]
             k = k+1
 
-        if re.search("^```python", line.strip()):
+        if re.search("^```python", line.strip()) or re.search("python",line.strip(), re.IGNORECASE) or re.search("py", line.strip(), re.IGNORECASE):
             last_type = "python"
 
     result += list(temp_res)
