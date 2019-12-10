@@ -567,7 +567,8 @@
 |[Wildcard imports and underscore](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-15-oct-2018.md#5---wildcard-imports-and-underscore) |
 |[__baz is name-mangled by python interpreter](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-15-oct-2018.md#6---baz-is-name-mangled-by-python-interpreter) |
 |[__bam__ dunder bam](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-15-oct-2018.md#7---bam-dunder-bam) |
-|[_ ( don't care about it, it's underscore)](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-15-oct-2018.md#8-----don't-care-about-it-it's-underscore) |
+|[Underscore variable](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-15-oct-2018.md#8---underscore-variable) |
+|[Underscore after variable name](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-15-oct-2018.md#9---underscore-after-variable-name) |
 |[String formatting](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-15-oct-2018.md#10---string-formatting) |
 |[Del](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-15-oct-2018.md#11---del) |
 |[Making objects callable](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-15-oct-2018.md#12---making-objects-callable) |
@@ -756,5 +757,4 @@
 |[Basicblock data structure](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-28-oct-2018.md#11---basicblock-data-structure) |
 |[Midnight time evaluates to false](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-16-oct-2018.md#5---midnight-time-evaluates-to-false) |
 |[Assertions](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-15-oct-2018.md#1---assertions) |
-|[Var_ ( underscore after the name)](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-15-oct-2018.md#9---var--underscore-after-the-name) |
 |[Try except](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-01-oct-2018.md#29---try-except) |
