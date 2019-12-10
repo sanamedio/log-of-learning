@@ -580,6 +580,7 @@
 |[List to tuple](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-01-oct-2018.md#43---list-to-tuple) |
 |[Ternary operator](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-01-oct-2018.md#44---ternary-operator) |
 |[Keywords](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-01-oct-2018.md#46---keywords) |
+|[Lstrip, rstrip, strip](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-01-oct-2018.md#47---lstrip,-rstrip,-strip) |
 |[// % **](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-01-oct-2018.md#48---//-%-**) |
 |[Exec() and eval()](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-01-oct-2018.md#49---exec()-and-eval()) |
 |[Bytecode for cpython](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-01-oct-2018.md#51---bytecode-for-cpython) |
@@ -756,5 +757,4 @@
 |[Gil](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-01-oct-2018.md#31---gil) |
 |[Iterator and iterable](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-01-oct-2018.md#34---iterator-and-iterable) |
 |[Help() and dir()](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-01-oct-2018.md#45---help()-and-dir()) |
-|[Lstrip, rstrip, strip](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-01-oct-2018.md#47---lstrip,-rstrip,-strip) |
 |[Flavours of python](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-01-oct-2018.md#50---flavours-of-python) |
