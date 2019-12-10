@@ -372,16 +372,14 @@ id(object)
 
 There are two optional clauses you can use in the try-except block.
 
-###### The “else” clause:
-It is useful if you want to run a piece of code when the try block doesn’t create an exception.
+The “else” clause: It is useful if you want to run a piece of code when the try block doesn’t create an exception.
 
-###### The “finally” clause:
-It is useful when you want to execute some steps which run, irrespective of whether there occurs an exception or not.
-
-
+The “finally” clause: It is useful when you want to execute some steps which run, irrespective of whether there occurs an exception or not.
 
 ### 28 - builtin datatypes
 
+```python
+```
 Immutable built-in datatypes of Python
 * Numbers
 * Strings
