@@ -621,12 +621,12 @@ print ObjectCreator
 
 ### 12 - Module import caching
 
-* Module import are cached everytime they are imported; so it does not go through the whole import process again
+* Module import in python are cached everytime they are imported; so it does not go through the whole import process again
 * If import is inside a function; it's only imported when the function is run
 
 ### 11 - Module import location in python code
 
-Module importing is quite fast, but not instant. This means that:
+Module importing in python is quite fast, but not instant. This means that:
 
 * Putting the imports at the top of the module is fine, because it's a trivial cost that's only paid once.
 * Putting the imports within a function will cause calls to that function to take longer.
