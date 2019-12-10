@@ -200,11 +200,11 @@ t.substitute(name=name)
 
 
 
-### 9 - var_ ( underscore after the name)
+### 9 - underscore after variable name
 
-- Avoid clashes with keywords, convention
+- Avoid clashes with keywords, convention in python
 
-### 8 - _ ( don't care about it, it's underscore)
+### 8 - underscore variable
 
 ```python
 for _ in range(10):
