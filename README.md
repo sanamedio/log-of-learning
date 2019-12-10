@@ -562,17 +562,24 @@
 |[Classes are objects in python](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-01-oct-2018.md#13---classes-are-objects-in-python) |
 |[Monkey patching](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-01-oct-2018.md#14---monkey-patching) |
 |[Decorator with annotation](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-01-oct-2018.md#15---decorator-with-annotation) |
+|[Garbage collection in python](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-01-oct-2018.md#16---garbage-collection-in-python) |
 |[Dynamic class creation](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-01-oct-2018.md#17---dynamic-class-creation) |
 |[Code in finally clause](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-01-oct-2018.md#18---code-in-finally-clause) |
 |[__name__ == "__main__"](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-01-oct-2018.md#19---__name__-==-"__main__") |
 |[Cout << x << y ...](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-01-oct-2018.md#20---cout-<<-x-<<-y-...) |
 |[Dict](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-01-oct-2018.md#21---dict) |
 |[Timing functions in python](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-01-oct-2018.md#22---timing-functions-in-python) |
+|[Self](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-01-oct-2018.md#23---self) |
+|[\__init__](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-01-oct-2018.md#24---\__init__) |
 |[Multithreading](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-01-oct-2018.md#25---multithreading) |
 |[Print in python 2 vs 3](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-01-oct-2018.md#26---print-in-python-2-vs-3) |
+|[Memory management](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-01-oct-2018.md#27---memory-management) |
+|[Builtin datatypes](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-01-oct-2018.md#28---builtin-datatypes) |
 |[Id()](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-01-oct-2018.md#30---id) |
+|[Gil](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-01-oct-2018.md#31---gil) |
 |[Inheritance](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-01-oct-2018.md#32---inheritance) |
 |[Composition](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-01-oct-2018.md#33---composition) |
+|[Iterator and iterable](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-01-oct-2018.md#34---iterator-and-iterable) |
 |[Yield vs return](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-01-oct-2018.md#35---yield-vs-return) |
 |[Closure](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-01-oct-2018.md#36---closure) |
 |[Dict comprehension](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-01-oct-2018.md#37---dict-comprehension) |
@@ -583,10 +590,12 @@
 |[List to dict conversion](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-01-oct-2018.md#42---list-to-dict-conversion) |
 |[List to tuple](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-01-oct-2018.md#43---list-to-tuple) |
 |[Ternary operator](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-01-oct-2018.md#44---ternary-operator) |
+|[Help() and dir()](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-01-oct-2018.md#45---help-and-dir) |
 |[Keywords](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-01-oct-2018.md#46---keywords) |
 |[Lstrip, rstrip, strip](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-01-oct-2018.md#47---lstrip,-rstrip,-strip) |
 |[// % **](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-01-oct-2018.md#48---//-%-**) |
 |[Exec() and eval()](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-01-oct-2018.md#49---exec-and-eval) |
+|[Flavours of python](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-01-oct-2018.md#50---flavours-of-python) |
 |[Bytecode for cpython](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-01-oct-2018.md#51---bytecode-for-cpython) |
 |[Default argument initialization issue](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-01-oct-2018.md#52---default-argument-initialization-issue) |
 
@@ -748,13 +757,4 @@
 |[What is pep 8?](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-01-oct-2018.md#8---what-is-pep-8) |
 |[Module import location in python code](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-01-oct-2018.md#11---module-import-location-in-python-code) |
 |[Module import caching](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-01-oct-2018.md#12---module-import-caching) |
-|[Garbage collection in python](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-01-oct-2018.md#16---garbage-collection-in-python) |
-|[Self](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-01-oct-2018.md#23---self) |
-|[\__init__](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-01-oct-2018.md#24---\__init__) |
-|[Memory management](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-01-oct-2018.md#27---memory-management) |
-|[Builtin datatypes](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-01-oct-2018.md#28---builtin-datatypes) |
 |[Try except](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-01-oct-2018.md#29---try-except) |
-|[Gil](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-01-oct-2018.md#31---gil) |
-|[Iterator and iterable](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-01-oct-2018.md#34---iterator-and-iterable) |
-|[Help() and dir()](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-01-oct-2018.md#45---help-and-dir) |
-|[Flavours of python](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-01-oct-2018.md#50---flavours-of-python) |
