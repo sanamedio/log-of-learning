@@ -8,7 +8,7 @@
 
 | LINK |
 |------|
-|[Award budget cuts (coding problem)](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-08-dec-2019.md#6---award-budget-cuts-(coding-problem)) |
+|[Award budget cuts (coding problem)](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-08-dec-2019.md#6---award-budget-cuts-coding-problem) |
 |[Threadlocal in python](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-07-dec-2019.md#1---threadlocal-in-python) |
 |[Sorting when element is at max k-place deranged](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-07-dec-2019.md#2---sorting-when-element-is-at-max-k-place-deranged) |
 |[Not ""](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-06-dec-2019.md#1---not-"") |
@@ -91,7 +91,7 @@
 |[Converting python ds to dynamodb supported ds](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-01-feb-2019.md#1---converting-python-ds-to-dynamodb-supported-ds) |
 |[Creating a dynamodb table](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-01-feb-2019.md#2---creating-a-dynamodb-table) |
 |[Flask redis docker docker-compose alpine](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-31-jan-2019.md#1---flask-redis-docker-docker-compose-alpine) |
-|[Pythonunbuffered=1 why?](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-31-jan-2019.md#2---pythonunbuffered=1-why?) |
+|[Pythonunbuffered=1 why?](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-31-jan-2019.md#2---pythonunbuffered=1-why) |
 |[Django docker-compose postgres](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-31-jan-2019.md#3---django-docker-compose-postgres) |
 |[Streaming fraud detection kafka](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-31-jan-2019.md#4---streaming-fraud-detection-kafka) |
 |[Making functions](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-31-jan-2019.md#5---making-functions) |
@@ -151,7 +151,7 @@
 |[Tower of hanoi](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-22-dec-2018.md#13---tower-of-hanoi) |
 |[Coin exchange problem](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-22-dec-2018.md#14---coin-exchange-problem) |
 |[Binary search](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-22-dec-2018.md#15---binary-search) |
-|[Hash table implementation with rehashing ( integer keys )](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-22-dec-2018.md#16---hash-table-implementation-with-rehashing-(-integer-keys-)) |
+|[Hash table implementation with rehashing ( integer keys )](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-22-dec-2018.md#16---hash-table-implementation-with-rehashing--integer-keys-) |
 |[Sortings](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-22-dec-2018.md#17---sortings) |
 |[Default arguments check](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-21-dec-2018.md#1---default-arguments-check) |
 |[Timer example](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-21-dec-2018.md#2---timer-example) |
@@ -166,7 +166,7 @@
 |[Visualizing sorts using matplotlib nearest imshow](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-09-dec-2018.md#1---visualizing-sorts-using-matplotlib-nearest-imshow) |
 |[Different interpolation methods in matplotlib](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-09-dec-2018.md#2---different-interpolation-methods-in-matplotlib) |
 |[Matplotlib subplots for plotting multiple data](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-09-dec-2018.md#3---matplotlib-subplots-for-plotting-multiple-data) |
-|[Writing your own grammar engine?](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-07-dec-2018.md#1---writing-your-own-grammar-engine?) |
+|[Writing your own grammar engine?](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-07-dec-2018.md#1---writing-your-own-grammar-engine) |
 |[Secrets](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-02-dec-2018.md#1---secrets) |
 |[Drawing a simple graph 0->1->2->3 using networkx](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-02-dec-2018.md#2---drawing-a-simple-graph-0->1->2->3-using-networkx) |
 |[Matplotlib visualizing 2d arrays](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-02-dec-2018.md#3---matplotlib-visualizing-2d-arrays) |
@@ -180,10 +180,10 @@
 |[Scapy hello](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-27-nov-2018.md#1---scapy-hello) |
 |[Scapy packet crafting](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-27-nov-2018.md#2---scapy-packet-crafting) |
 |[Generating packets with specific configs](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-27-nov-2018.md#3---generating-packets-with-specific-configs) |
-|[Scapy ls() and packet defaults](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-27-nov-2018.md#4---scapy-ls()-and-packet-defaults) |
+|[Scapy ls() and packet defaults](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-27-nov-2018.md#4---scapy-ls-and-packet-defaults) |
 |[Spoofing packets](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-27-nov-2018.md#5---spoofing-packets) |
 |[Scapy sending simple icmp packet](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-27-nov-2018.md#6---scapy-sending-simple-icmp-packet) |
-|[Lsc() listing all functions in scapy](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-27-nov-2018.md#7---lsc()-listing-all-functions-in-scapy) |
+|[Lsc() listing all functions in scapy](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-27-nov-2018.md#7---lsc-listing-all-functions-in-scapy) |
 |[Sending and recieving packets](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-27-nov-2018.md#8---sending-and-recieving-packets) |
 |[Stepping into a function using ipython](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-27-nov-2018.md#9---stepping-into-a-function-using-ipython) |
 |[Using scrapy to download files from svn](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-27-nov-2018.md#10---using-scrapy-to-download-files-from-svn) |
@@ -198,7 +198,7 @@
 |[Command pattern](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-24-nov-2018.md#7---command-pattern) |
 |[Sys.exc_info](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-24-nov-2018.md#8---sys.exc_info) |
 |[Lifo queue](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-24-nov-2018.md#9---lifo-queue) |
-|[Class vs instance attribute(just for remembering)](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-24-nov-2018.md#10---class-vs-instance-attribute(just-for-remembering)) |
+|[Class vs instance attribute(just for remembering)](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-24-nov-2018.md#10---class-vs-instance-attributejust-for-remembering) |
 |[Typing usage](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-23-nov-2018.md#1---typing-usage) |
 |[Contextlib for perf](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-23-nov-2018.md#2---contextlib-for-perf) |
 |[Cherrypy](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-23-nov-2018.md#4---cherrypy) |
@@ -215,14 +215,14 @@
 |[Websockets](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-20-nov-2018.md#2---websockets) |
 |[Rx python](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-20-nov-2018.md#3---rx-python) |
 |[Decorator for argument typechecking](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-20-nov-2018.md#4---decorator-for-argument-typechecking) |
-|[Vars() on objects](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-19-nov-2018.md#1---vars()-on-objects) |
+|[Vars() on objects](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-19-nov-2018.md#1---vars-on-objects) |
 |[Calculating with dictionaries](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-18-nov-2018.md#1---calculating-with-dictionaries) |
 |[Subdict](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-18-nov-2018.md#2---subdict) |
 |[List filter with clipping](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-18-nov-2018.md#3---list-filter-with-clipping) |
 |[Common stuff between dicts](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-18-nov-2018.md#4---common-stuff-between-dicts) |
 |[Clipping list to n elements of each type](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-18-nov-2018.md#5---clipping-list-to-n-elements-of-each-type) |
-|[Permutations (without inbulit)](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-17-nov-2018.md#1---permutations-(without-inbulit)) |
-|[Min queue and max queue implementations ( not efficient )](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-17-nov-2018.md#2---min-queue-and-max-queue-implementations-(-not-efficient-)) |
+|[Permutations (without inbulit)](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-17-nov-2018.md#1---permutations-without-inbulit) |
+|[Min queue and max queue implementations ( not efficient )](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-17-nov-2018.md#2---min-queue-and-max-queue-implementations--not-efficient-) |
 |[Another twisted server](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-16-nov-2018.md#1---another-twisted-server) |
 |[Combinations yielding](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-16-nov-2018.md#2---combinations-yielding) |
 |[Rotation of 2d matrix](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-16-nov-2018.md#3---rotation-of-2d-matrix) |
@@ -263,7 +263,7 @@
 |[Plotly offline interactive graphs](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-13-nov-2018.md#1---plotly-offline-interactive-graphs) |
 |[Plotly offline with jupyter tutorial](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-13-nov-2018.md#2---plotly-offline-with-jupyter-tutorial) |
 |[Tor using python](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-13-nov-2018.md#3---tor-using-python) |
-|[How to connect to ngrok when firewall is interfering?](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-13-nov-2018.md#4---how-to-connect-to-ngrok-when-firewall-is-interfering?) |
+|[How to connect to ngrok when firewall is interfering?](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-13-nov-2018.md#4---how-to-connect-to-ngrok-when-firewall-is-interfering) |
 |[Async decorator](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-12-nov-2018.md#1---async-decorator) |
 |[@total_ordering to do less work](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-12-nov-2018.md#3---@total_ordering-to-do-less-work) |
 |[Numpy reshaping](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-12-nov-2018.md#4---numpy-reshaping) |
@@ -295,28 +295,28 @@
 |[Lispi](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-10-nov-2018.md#9---lispi) |
 |[Hunting traces by hunter module](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-10-nov-2018.md#10---hunting-traces-by-hunter-module) |
 |[Generating a random permutation and isomophiic mapping functions](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-10-nov-2018.md#11---generating-a-random-permutation-and-isomophiic-mapping-functions) |
-|[Prover and verifier part of graph isomorphism zero-konwledge proof simulation in python (continued from 11)](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-10-nov-2018.md#12---prover-and-verifier-part-of-graph-isomorphism-zero-konwledge-proof-simulation-in-python-(continued-from-11)) |
+|[Prover and verifier part of graph isomorphism zero-konwledge proof simulation in python (continued from 11)](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-10-nov-2018.md#12---prover-and-verifier-part-of-graph-isomorphism-zero-konwledge-proof-simulation-in-python-continued-from-11) |
 |[Using inner function to save data and printing a nested object](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-09-nov-2018.md#1---using-inner-function-to-save-data-and-printing-a-nested-object) |
-|[Using dict to get attributes of a object( i think i mentioend it earlier also )](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-09-nov-2018.md#2---using-dict-to-get-attributes-of-a-object(-i-think-i-mentioend-it-earlier-also-)) |
+|[Using dict to get attributes of a object( i think i mentioend it earlier also )](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-09-nov-2018.md#2---using-dict-to-get-attributes-of-a-object-i-think-i-mentioend-it-earlier-also-) |
 |[In-memory string compression using gzip and stringio](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-09-nov-2018.md#3---in-memory-string-compression-using-gzip-and-stringio) |
 |[Generate a random binary number](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-09-nov-2018.md#4---generate-a-random-binary-number) |
-|[Flask + matplotlib ( nice stuff really )](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-09-nov-2018.md#5---flask-+-matplotlib-(-nice-stuff-really-)) |
+|[Flask + matplotlib ( nice stuff really )](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-09-nov-2018.md#5---flask-+-matplotlib--nice-stuff-really-) |
 |[Mocks](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-09-nov-2018.md#6---mocks) |
 |[Cyclomatic complexity with radon](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-08-nov-2018.md#1---cyclomatic-complexity-with-radon) |
 |[Cellular automta game for learning and practicing thinking](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-08-nov-2018.md#2---cellular-automta-game-for-learning-and-practicing-thinking) |
 |[Svn file downloader in python using yield and subprocess](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-08-nov-2018.md#3---svn-file-downloader-in-python-using-yield-and-subprocess) |
-|[What if i want to pass arguments to the decorator itself (not the decorated function)?](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-08-nov-2018.md#4---what-if-i-want-to-pass-arguments-to-the-decorator-itself-(not-the-decorated-function)?) |
-|[Traversing a tree ( predefined structure with children attribute )](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-08-nov-2018.md#7---traversing-a-tree-(-predefined-structure-with-children-attribute-)) |
+|[What if i want to pass arguments to the decorator itself (not the decorated function)?](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-08-nov-2018.md#4---what-if-i-want-to-pass-arguments-to-the-decorator-itself-not-the-decorated-function) |
+|[Traversing a tree ( predefined structure with children attribute )](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-08-nov-2018.md#7---traversing-a-tree--predefined-structure-with-children-attribute-) |
 |[Using sys.\_getframe to get filename and lineno's](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-08-nov-2018.md#8---using-sys.\_getframe-to-get-filename-and-lineno's) |
 |[Timeout a function using sigalrm](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-08-nov-2018.md#9---timeout-a-function-using-sigalrm) |
 |[Timeout function as a decorator](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-08-nov-2018.md#10---timeout-function-as-a-decorator) |
 |[Itertools product](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-08-nov-2018.md#12---itertools-product) |
 |[Checking if object is iterable](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-08-nov-2018.md#13---checking-if-object-is-iterable) |
-|[Easier to ask for forgiveness than permission ( eafp style )](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-08-nov-2018.md#14---easier-to-ask-for-forgiveness-than-permission-(-eafp-style-)) |
+|[Easier to ask for forgiveness than permission ( eafp style )](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-08-nov-2018.md#14---easier-to-ask-for-forgiveness-than-permission--eafp-style-) |
 |[Ringbuffer](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-08-nov-2018.md#15---ringbuffer) |
-|[Pandas series ( 1d )](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-07-nov-2018.md#1---pandas-series-(-1d-)) |
-|[Pandas dataframe ( 2d )](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-07-nov-2018.md#2---pandas-dataframe-(-2d-)) |
-|[Pandas panel ( 3d )](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-07-nov-2018.md#3---pandas-panel-(-3d-)) |
+|[Pandas series ( 1d )](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-07-nov-2018.md#1---pandas-series--1d-) |
+|[Pandas dataframe ( 2d )](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-07-nov-2018.md#2---pandas-dataframe--2d-) |
+|[Pandas panel ( 3d )](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-07-nov-2018.md#3---pandas-panel--3d-) |
 |[Matplotlib with pandas](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-07-nov-2018.md#4---matplotlib-with-pandas) |
 |[Pandas input and output](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-07-nov-2018.md#5---pandas-input-and-output) |
 |[Factorial in three ways](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-06-nov-2018.md#1---factorial-in-three-ways) |
@@ -330,7 +330,7 @@
 |[Type hints for python 3](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-05-nov-2018.md#1---type-hints-for-python-3) |
 |[Better way to refer to libc](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-05-nov-2018.md#2---better-way-to-refer-to-libc) |
 |[Test data generation in python using mimesis](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-05-nov-2018.md#3---test-data-generation-in-python-using-mimesis) |
-|[Using pandas to directly load data ( pandas is kinda awesome)](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-05-nov-2018.md#4---using-pandas-to-directly-load-data-(-pandas-is-kinda-awesome)) |
+|[Using pandas to directly load data ( pandas is kinda awesome)](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-05-nov-2018.md#4---using-pandas-to-directly-load-data--pandas-is-kinda-awesome) |
 |[Fuse : filesystem in userspace](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-05-nov-2018.md#5---fuse-:-filesystem-in-userspace) |
 |[Macropy library and "with trace"](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-05-nov-2018.md#7---macropy-library-and-"with-trace") |
 |[Socks5 proxy in python minimal](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-05-nov-2018.md#9---socks5-proxy-in-python-minimal) |
@@ -348,13 +348,13 @@
 |[Simple reactive dashboards in python using dash](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-04-nov-2018.md#14---simple-reactive-dashboards-in-python-using-dash) |
 |[Platform module](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-03-nov-2018.md#1---platform-module) |
 |[Curses in python for terminal draw](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-03-nov-2018.md#2---curses-in-python-for-terminal-draw) |
-|[Itertools combination(similar for pn)](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-03-nov-2018.md#3---itertools-combination(similar-for-pn)) |
+|[Itertools combination(similar for pn)](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-03-nov-2018.md#3---itertools-combinationsimilar-for-pn) |
 |[Python classes are dynamic](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-03-nov-2018.md#4---python-classes-are-dynamic) |
 |[Numpy vs python loop](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-03-nov-2018.md#5---numpy-vs-python-loop) |
 |[Monkeypatching methods and properties](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-03-nov-2018.md#6---monkeypatching-methods-and-properties) |
 |[Misplaced future](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-02-nov-2018.md#1---misplaced-future) |
 |[Method could be a function](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-02-nov-2018.md#2---method-could-be-a-function) |
-|[Staticmethods and classmethods (cls variable)](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-02-nov-2018.md#3---staticmethods-and-classmethods-(cls-variable)) |
+|[Staticmethods and classmethods (cls variable)](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-02-nov-2018.md#3---staticmethods-and-classmethods-cls-variable) |
 |[Copying data from numpy to ctypes](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-02-nov-2018.md#5---copying-data-from-numpy-to-ctypes) |
 |[Antipatterns in python](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-01-nov-2018.md#2---antipatterns-in-python) |
 |[Unintended for else](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-01-nov-2018.md#4---unintended-for-else) |
@@ -362,12 +362,12 @@
 |[With exit semantics antipattern](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-01-nov-2018.md#6---with-exit-semantics-antipattern) |
 |[Return from dunder init antipattern](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-01-nov-2018.md#7---return-from-dunder-init-antipattern) |
 |[Counter with and without locking](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-31-oct-2018.md#1---counter-with-and-without-locking) |
-|[Pipeline using a queue class with locks ( done wrong )](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-31-oct-2018.md#2---pipeline-using-a-queue-class-with-locks-(-done-wrong-)) |
+|[Pipeline using a queue class with locks ( done wrong )](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-31-oct-2018.md#2---pipeline-using-a-queue-class-with-locks--done-wrong-) |
 |[Coroutine yield and send together](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-31-oct-2018.md#3---coroutine-yield-and-send-together) |
 |[Concurrent.futures](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-31-oct-2018.md#4---concurrent.futures) |
 |[Reading pyobject with ctypes](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-31-oct-2018.md#5---reading-pyobject-with-ctypes) |
 |[Self wrapping object](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-31-oct-2018.md#6---self-wrapping-object) |
-|[Python3 print(\*a)](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-31-oct-2018.md#7---python3-print(\*a)) |
+|[Python3 print(\*a)](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-31-oct-2018.md#7---python3-print\*a) |
 |[Checking if a object is iterable](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-30-oct-2018.md#1---checking-if-a-object-is-iterable) |
 |[Timeit function without ipython](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-30-oct-2018.md#2---timeit-function-without-ipython) |
 |[Using a class as decorator](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-30-oct-2018.md#3---using-a-class-as-decorator) |
@@ -417,7 +417,7 @@
 |[Yield syntax in python3](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-19-oct-2018.md#4---yield-syntax-in-python3) |
 |[List comprehension for flattening](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-19-oct-2018.md#5---list-comprehension-for-flattening) |
 |[Public, private , secret simple example](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-19-oct-2018.md#6---public,-private-,-secret-simple-example) |
-|[Input(): disaster](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-19-oct-2018.md#7---input():-disaster) |
+|[Input(): disaster](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-19-oct-2018.md#7---input:-disaster) |
 |[Pytest benchmark](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-19-oct-2018.md#8---pytest-benchmark) |
 |[Rounding up floats](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-19-oct-2018.md#9---rounding-up-floats) |
 |[Danger with format strings](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-19-oct-2018.md#10---danger-with-format-strings) |
@@ -427,12 +427,12 @@
 |[Ipython_memory_usage](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-19-oct-2018.md#15---ipython_memory_usage) |
 |[Exception handling silly mistake](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-19-oct-2018.md#17---exception-handling-silly-mistake) |
 |[Python 3 faulthandler](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-19-oct-2018.md#18---python-3-faulthandler) |
-|[(yield)](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-19-oct-2018.md#19---(yield)) |
+|[(yield)](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-19-oct-2018.md#19---yield) |
 |[Decimal math with floating point error](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-19-oct-2018.md#20---decimal-math-with-floating-point-error) |
 |[Coroutine with single source and multiple targets](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-19-oct-2018.md#22---coroutine-with-single-source-and-multiple-targets) |
 |[Variable assignment not being expression](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-19-oct-2018.md#23---variable-assignment-not-being-expression) |
 |[Coroutines ~~ oops](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-19-oct-2018.md#24---coroutines-~~-oops) |
-|[How does coroutine differ from simple argument passing?](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-19-oct-2018.md#25---how-does-coroutine-differ-from-simple-argument-passing?) |
+|[How does coroutine differ from simple argument passing?](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-19-oct-2018.md#25---how-does-coroutine-differ-from-simple-argument-passing) |
 |[Property decorator](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-19-oct-2018.md#27---property-decorator) |
 |[Dumping information about threads](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-19-oct-2018.md#30---dumping-information-about-threads) |
 |[Efficient recursion of fibonacci](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-18-oct-2018.md#1---efficient-recursion-of-fibonacci) |
@@ -460,24 +460,24 @@
 |[Revisiting comprehensions](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-17-oct-2018.md#14---revisiting-comprehensions) |
 |[Slots](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-17-oct-2018.md#15---slots) |
 |[Identity weird behaviour](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-17-oct-2018.md#16---identity-weird-behaviour) |
-|[Dropping to shell from within the program (not pdb)](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-17-oct-2018.md#17---dropping-to-shell-from-within-the-program-(not-pdb)) |
+|[Dropping to shell from within the program (not pdb)](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-17-oct-2018.md#17---dropping-to-shell-from-within-the-program-not-pdb) |
 |[Getter and setter using @decorators](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-17-oct-2018.md#18---getter-and-setter-using-@decorators) |
 |[Underscore for readability in python 3](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-17-oct-2018.md#19---underscore-for-readability-in-python-3) |
 |[Synchronizing threads using lock](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-17-oct-2018.md#20---synchronizing-threads-using-lock) |
 |[Re-entrant lock in python](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-17-oct-2018.md#21---re-entrant-lock-in-python) |
 |[Disable automatic garbage collection](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-17-oct-2018.md#22---disable-automatic-garbage-collection) |
-|[Id() of mutables](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-16-oct-2018.md#4---id()-of-mutables) |
+|[Id() of mutables](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-16-oct-2018.md#4---id-of-mutables) |
 |[Context with](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-15-oct-2018.md#2---context-with) |
 |[Try except finally ~~ with](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-15-oct-2018.md#3---try-except-finally-~~-with) |
 |[Contextlib to create with interface, generator based](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-15-oct-2018.md#4---contextlib-to-create-with-interface,-generator-based) |
 |[Wildcard imports and underscore](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-15-oct-2018.md#5---wildcard-imports-and-underscore) |
 |[__baz is name-mangled by python interpreter](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-15-oct-2018.md#6---__baz-is-name-mangled-by-python-interpreter) |
 |[__bam__ dunder bam](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-15-oct-2018.md#7---__bam__-dunder-bam) |
-|[_ ( don't care about it, it's underscore)](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-15-oct-2018.md#8---_-(-don't-care-about-it,-it's-underscore)) |
+|[_ ( don't care about it, it's underscore)](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-15-oct-2018.md#8---_--don't-care-about-it,-it's-underscore) |
 |[String formatting](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-15-oct-2018.md#10---string-formatting) |
 |[Del](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-15-oct-2018.md#11---del) |
 |[Making objects callable](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-15-oct-2018.md#12---making-objects-callable) |
-|[Lambda again?](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-15-oct-2018.md#13---lambda-again?) |
+|[Lambda again?](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-15-oct-2018.md#13---lambda-again) |
 |[Trace using decorators](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-15-oct-2018.md#14---trace-using-decorators) |
 |[Metadata for decorator debugging](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-15-oct-2018.md#15---metadata-for-decorator-debugging) |
 |[Is vs ==](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-15-oct-2018.md#18---is-vs-==) |
@@ -532,11 +532,11 @@
 |[Inspect to get call stack](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-03-oct-2018.md#9---inspect-to-get-call-stack) |
 |[Datetime](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-03-oct-2018.md#10---datetime) |
 |[Index for loop](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-03-oct-2018.md#11---index-for-loop) |
-|[Variable/attr exist  ?](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-03-oct-2018.md#12---variable/attr-exist--?) |
+|[Variable/attr exist  ?](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-03-oct-2018.md#12---variable/attr-exist--) |
 |[Parallel iteration in two collections](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-03-oct-2018.md#13---parallel-iteration-in-two-collections) |
 |[String <> datetime](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-03-oct-2018.md#14---string-<>-datetime) |
 |[2d array correct initialization](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-03-oct-2018.md#15---2d-array-correct-initialization) |
-|[Zip( \*iterable )](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-03-oct-2018.md#16---zip(-\*iterable-)) |
+|[Zip( \*iterable )](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-03-oct-2018.md#16---zip-\*iterable-) |
 |[List appending in python](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-03-oct-2018.md#17---list-appending-in-python) |
 |[As integer ratio](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-03-oct-2018.md#18---as-integer-ratio) |
 |[Set algebra](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-03-oct-2018.md#19---set-algebra) |
@@ -566,7 +566,7 @@
 |[Timing functions in python](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-01-oct-2018.md#22---timing-functions-in-python) |
 |[Multithreading](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-01-oct-2018.md#25---multithreading) |
 |[Print in python 2 vs 3](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-01-oct-2018.md#26---print-in-python-2-vs-3) |
-|[Id()](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-01-oct-2018.md#30---id()) |
+|[Id()](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-01-oct-2018.md#30---id) |
 |[Inheritance](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-01-oct-2018.md#32---inheritance) |
 |[Composition](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-01-oct-2018.md#33---composition) |
 |[Yield vs return](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-01-oct-2018.md#35---yield-vs-return) |
@@ -574,7 +574,7 @@
 |[Dict comprehension](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-01-oct-2018.md#37---dict-comprehension) |
 |[Inline conditional](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-01-oct-2018.md#38---inline-conditional) |
 |[Enumerate](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-01-oct-2018.md#39---enumerate) |
-|[Globals()](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-01-oct-2018.md#40---globals()) |
+|[Globals()](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-01-oct-2018.md#40---globals) |
 |[Deepcopy](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-01-oct-2018.md#41---deepcopy) |
 |[List to dict conversion](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-01-oct-2018.md#42---list-to-dict-conversion) |
 |[List to tuple](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-01-oct-2018.md#43---list-to-tuple) |
@@ -582,7 +582,7 @@
 |[Keywords](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-01-oct-2018.md#46---keywords) |
 |[Lstrip, rstrip, strip](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-01-oct-2018.md#47---lstrip,-rstrip,-strip) |
 |[// % **](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-01-oct-2018.md#48---//-%-**) |
-|[Exec() and eval()](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-01-oct-2018.md#49---exec()-and-eval()) |
+|[Exec() and eval()](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-01-oct-2018.md#49---exec-and-eval) |
 |[Bytecode for cpython](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-01-oct-2018.md#51---bytecode-for-cpython) |
 |[Default argument initialization issue](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-01-oct-2018.md#52---default-argument-initialization-issue) |
 
@@ -651,27 +651,27 @@
 |[Uninstalling things with pip](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-13-jan-2019.md#1---uninstalling-things-with-pip) |
 |[Using github as a pypi server](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-23-nov-2018.md#3---using-github-as-a-pypi-server) |
 |[Flask advantages/features](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-22-nov-2018.md#1---flask-advantages/features) |
-|[Dir() and dunder dict](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-12-nov-2018.md#2---dir()-and-dunder-dict) |
+|[Dir() and dunder dict](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-12-nov-2018.md#2---dir-and-dunder-dict) |
 |[Http.server and simplehttpserver in python program](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-08-nov-2018.md#5---http.server-and-simplehttpserver-in-python-program) |
 |[Time complexity of python list, deque, set etc.](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-08-nov-2018.md#6---time-complexity-of-python-list,-deque,-set-etc.) |
 |[Ipython start from python -c](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-08-nov-2018.md#11---ipython-start-from-python--c) |
-|[While writing a library ( like django ) things to take care of for portability between vms](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-05-nov-2018.md#6---while-writing-a-library-(-like-django-)-things-to-take-care-of-for-portability-between-vms) |
+|[While writing a library ( like django ) things to take care of for portability between vms](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-05-nov-2018.md#6---while-writing-a-library--like-django--things-to-take-care-of-for-portability-between-vms) |
 |[Dbus python](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-05-nov-2018.md#8---dbus-python) |
 |[Gil implementation in python](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-05-nov-2018.md#10---gil-implementation-in-python) |
 |[Pyenv and pipenv](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-04-nov-2018.md#2---pyenv-and-pipenv) |
 |[Tracing program execution using -m trace](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-04-nov-2018.md#10---tracing-program-execution-using--m-trace) |
-|[Stringio vs bytesio (from so)](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-04-nov-2018.md#13---stringio-vs-bytesio-(from-so)) |
+|[Stringio vs bytesio (from so)](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-04-nov-2018.md#13---stringio-vs-bytesio-from-so) |
 |[Better_exceptions module](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-04-nov-2018.md#15---better_exceptions-module) |
 |[How to design a class](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-02-nov-2018.md#4---how-to-design-a-class) |
 |[Django tutorial](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-01-nov-2018.md#1---django-tutorial) |
 |[Why gil](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-30-oct-2018.md#7---why-gil) |
-|[What i learned till now ( revision )](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-29-oct-2018.md#1---what-i-learned-till-now-(-revision-)) |
+|[What i learned till now ( revision )](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-29-oct-2018.md#1---what-i-learned-till-now--revision-) |
 |[Objects that behave both as string and file interface](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-28-oct-2018.md#4---objects-that-behave-both-as-string-and-file-interface) |
 |[Py_initialize  and interpreter startup](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-28-oct-2018.md#5---py_initialize--and-interpreter-startup) |
 |[Thread state](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-28-oct-2018.md#6---thread-state) |
-|[Symbol table ( cpython source)](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-28-oct-2018.md#8---symbol-table-(-cpython-source)) |
+|[Symbol table ( cpython source)](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-28-oct-2018.md#8---symbol-table--cpython-source) |
 |[Other data structures cpython](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-28-oct-2018.md#9---other-data-structures-cpython) |
-|[Variable flags to specify context of name def. (cpython sc)](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-28-oct-2018.md#10---variable-flags-to-specify-context-of-name-def.-(cpython-sc)) |
+|[Variable flags to specify context of name def. (cpython sc)](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-28-oct-2018.md#10---variable-flags-to-specify-context-of-name-def.-cpython-sc) |
 |[Basicblock data structure](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-28-oct-2018.md#11---basicblock-data-structure) |
 |[Pytypeobject](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-28-oct-2018.md#12---pytypeobject) |
 |[How generators are able to capture execution state and update that at will](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-28-oct-2018.md#13---how-generators-are-able-to-capture-execution-state-and-update-that-at-will) |
@@ -689,7 +689,7 @@
 |[Source code for objects, classes, closures, generators, iterators](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-24-oct-2018.md#2---source-code-for-objects,-classes,-closures,-generators,-iterators) |
 |[Pystringobject](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-23-oct-2018.md#1---pystringobject) |
 |[Code object and func object](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-23-oct-2018.md#2---code-object-and-func-object) |
-|[Modules written in c (cpython source)](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-22-oct-2018.md#2---modules-written-in-c-(cpython-source)) |
+|[Modules written in c (cpython source)](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-22-oct-2018.md#2---modules-written-in-c-cpython-source) |
 |[.pyc files](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-22-oct-2018.md#3---.pyc-files) |
 |[Bytecode processor: binary_multiply](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-22-oct-2018.md#4---bytecode-processor:-binary_multiply) |
 |[Pycodeobject](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-22-oct-2018.md#8---pycodeobject) |
@@ -720,20 +720,20 @@
 |[Cpython garbage collector](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-18-oct-2018.md#3---cpython-garbage-collector) |
 |[Virtualenv and venv](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-18-oct-2018.md#19---virtualenv-and-venv) |
 |[Everything on this link](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-17-oct-2018.md#1---everything-on-this-link) |
-|[Id() and is](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-17-oct-2018.md#2---id()-and-is) |
+|[Id() and is](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-17-oct-2018.md#2---id-and-is) |
 |[Datamodel](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-17-oct-2018.md#3---datamodel) |
 |[Frozen set](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-17-oct-2018.md#4---frozen-set) |
 |[Coroutine function](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-17-oct-2018.md#5---coroutine-function) |
 |[Asynchronous generator functions](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-17-oct-2018.md#6---asynchronous-generator-functions) |
 |[Pip -> pipenv](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-17-oct-2018.md#8---pip-->-pipenv) |
-|[Locals()](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-17-oct-2018.md#9---locals()) |
-|[__getitem__ , next() , __iter__](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-17-oct-2018.md#10---__getitem__-,-next()-,-__iter__) |
+|[Locals()](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-17-oct-2018.md#9---locals) |
+|[__getitem__ , next() , __iter__](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-17-oct-2018.md#10---__getitem__-,-next-,-__iter__) |
 |[Gil](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-16-oct-2018.md#1---gil) |
 |[Lifecycle of python code](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-16-oct-2018.md#2---lifecycle-of-python-code) |
-|[Python docs ( damn; reached them so late )](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-16-oct-2018.md#3---python-docs-(-damn;-reached-them-so-late-)) |
+|[Python docs ( damn; reached them so late )](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-16-oct-2018.md#3---python-docs--damn;-reached-them-so-late-) |
 |[Midnight time evaluates to false](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-16-oct-2018.md#5---midnight-time-evaluates-to-false) |
 |[Assertions](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-15-oct-2018.md#1---assertions) |
-|[Var_ ( underscore after the name)](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-15-oct-2018.md#9---var_-(-underscore-after-the-name)) |
+|[Var_ ( underscore after the name)](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-15-oct-2018.md#9---var_--underscore-after-the-name) |
 |[Unpacking operator](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-15-oct-2018.md#16---unpacking-operator) |
 |[Return none](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-15-oct-2018.md#17---return-none) |
 |[Dunder](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-15-oct-2018.md#22---dunder) |
@@ -745,7 +745,7 @@
 |[Python http and smtp servers](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-03-oct-2018.md#6---python-http-and-smtp-servers) |
 |[Data types and built-in data structures](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-03-oct-2018.md#20---data-types-and-built-in-data-structures) |
 |[Types of errors](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-03-oct-2018.md#22---types-of-errors) |
-|[What is pep 8?](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-01-oct-2018.md#8---what-is-pep-8?) |
+|[What is pep 8?](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-01-oct-2018.md#8---what-is-pep-8) |
 |[Module import location in python code](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-01-oct-2018.md#11---module-import-location-in-python-code) |
 |[Module import caching](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-01-oct-2018.md#12---module-import-caching) |
 |[Garbage collection in python](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-01-oct-2018.md#16---garbage-collection-in-python) |
@@ -756,5 +756,5 @@
 |[Try except](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-01-oct-2018.md#29---try-except) |
 |[Gil](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-01-oct-2018.md#31---gil) |
 |[Iterator and iterable](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-01-oct-2018.md#34---iterator-and-iterable) |
-|[Help() and dir()](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-01-oct-2018.md#45---help()-and-dir()) |
+|[Help() and dir()](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-01-oct-2018.md#45---help-and-dir) |
 |[Flavours of python](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-01-oct-2018.md#50---flavours-of-python) |
