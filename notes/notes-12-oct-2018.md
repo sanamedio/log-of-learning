@@ -157,8 +157,10 @@ print(MyClass.__doc__)
 ### 4 - C3 Linearization for Multiple Interitance
 
 - https://en.wikipedia.org/wiki/C3_linearization
-- Class.mro() 
-- Class.\__mro__
+```python
+Class.mro() 
+Class.__mro__
+```
 
 ### 3 - WSGI
 
