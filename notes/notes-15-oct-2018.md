@@ -73,7 +73,8 @@ a == c #True
 - return None is added to every function without a return Value
 
 ### 16 - unpacking operator
-
+```python
+```
 - \* is the unpacking operator
 - putting \* before a iterable, unpacks it
 - \** unpacks the values from dicts
