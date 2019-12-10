@@ -506,10 +506,12 @@
 |[Python 3 faulthandler](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-19-oct-2018.md#18---python-3-faulthandler) |
 |[(yield)](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-19-oct-2018.md#19---yield) |
 |[Decimal math with floating point error](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-19-oct-2018.md#20---decimal-math-with-floating-point-error) |
+|[Coroutine vs generator](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-19-oct-2018.md#21---coroutine-vs-generator) |
 |[Coroutine with single source and multiple targets](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-19-oct-2018.md#22---coroutine-with-single-source-and-multiple-targets) |
 |[Variable assignment not being expression](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-19-oct-2018.md#23---variable-assignment-not-being-expression) |
 |[Coroutines ~~ oops](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-19-oct-2018.md#24---coroutines-~~-oops) |
 |[How does coroutine differ from simple argument passing?](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-19-oct-2018.md#25---how-does-coroutine-differ-from-simple-argument-passing) |
+|[Performance optimization - coroutine - and dangers](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-19-oct-2018.md#26---performance-optimization---coroutine---and-dangers) |
 |[Property decorator](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-19-oct-2018.md#27---property-decorator) |
 |[Summary till now and questions in my mind](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-19-oct-2018.md#28---summary-till-now-and-questions-in-my-mind) |
 |[Dumping information about threads](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-19-oct-2018.md#30---dumping-information-about-threads) |
@@ -536,6 +538,8 @@
 |[Everything on this link](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-17-oct-2018.md#1---everything-on-this-link) |
 |[Id() and is](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-17-oct-2018.md#2---id-and-is) |
 |[Datamodel](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-17-oct-2018.md#3---datamodel) |
+|[Frozen set](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-17-oct-2018.md#4---frozen-set) |
+|[Coroutine function](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-17-oct-2018.md#5---coroutine-function) |
 |[Namedtuple](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-17-oct-2018.md#7---namedtuple) |
 |[Pip -> pipenv](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-17-oct-2018.md#8---pip-->-pipenv) |
 |[Isinstance](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-17-oct-2018.md#11---isinstance) |
@@ -742,10 +746,6 @@
 |[Golang defer](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-18-apr-2019.md#2---golang-defer) |
 |[Golang variadic functions](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-18-apr-2019.md#3---golang-variadic-functions) |
 |[Basicblock data structure](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-28-oct-2018.md#11---basicblock-data-structure) |
-|[Coroutine vs generator](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-19-oct-2018.md#21---coroutine-vs-generator) |
-|[Performance optimization - coroutine - and dangers](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-19-oct-2018.md#26---performance-optimization---coroutine---and-dangers) |
-|[Frozen set](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-17-oct-2018.md#4---frozen-set) |
-|[Coroutine function](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-17-oct-2018.md#5---coroutine-function) |
 |[Asynchronous generator functions](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-17-oct-2018.md#6---asynchronous-generator-functions) |
 |[Locals()](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-17-oct-2018.md#9---locals) |
 |[__getitem__ , next() , __iter__](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-17-oct-2018.md#10---__getitem__--next--__iter__) |
