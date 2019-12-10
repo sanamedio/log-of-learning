@@ -279,6 +279,9 @@ print two_ages._fields
 
 ### 4 - Frozen set
 
+```python
+frozenset()
+```
 - Frozen sets : These represent an immutable set. They are created by the built-in frozenset() constructor. As a frozenset is immutable and hashable, it can be used again as an element of another set, or as a dictionary key.
 
 
