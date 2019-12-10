@@ -2,7 +2,7 @@
 
 ### 3 - pip can directly work on URLS!
 
-```bash
+```python
 pip install https://github.com/mitsuhiko/flask/tarball/master
 ```
 
