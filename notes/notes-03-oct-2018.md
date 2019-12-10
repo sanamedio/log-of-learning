@@ -108,7 +108,8 @@ sorted(data, key=lambda item: item['first'])
 
 ### 20 - data types and built-in data structures
 
-
+```python
+```
 | Type |  Example |  Description |
 |-------|----------|------------------|
 | int  |	x = 1 	|   integers (i.e., whole numbers)|
