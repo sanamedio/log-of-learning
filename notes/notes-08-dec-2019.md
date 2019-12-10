@@ -53,6 +53,6 @@ PRIMARY> use local
 PRIMARY> db.oplog.rs.find()
 ```
 
-### 1 - Entry points(how I missed it?)
+### 1 - Entry points
 
 https://amir.rachum.com/blog/2017/07/28/python-entry-points/
