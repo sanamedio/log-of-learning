@@ -64,6 +64,8 @@ have slowed down single threaded programs atimes.
 
 ### 13 - How generators are able to capture execution state and update that at will
 
+```python
+```
 - Generators have a field that references a frame object and this is filled in when the generator is created. The frame object as we recall has all the state that is required to execute a code object so by having a reference to that execution frame, the generator object can capture all the state required for its execution.
 
 
