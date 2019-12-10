@@ -87,7 +87,7 @@
 |[Fastapi models](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-27-mar-2019.md#1---fastapi-models) |
 |[Async fastapi example](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-27-mar-2019.md#2---async-fastapi-example) |
 |[Openapi path parameters](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-27-mar-2019.md#3---openapi-path-parameters) |
-|[Openapi paths, order matter](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-27-mar-2019.md#4---openapi-paths,-order-matter) |
+|[Openapi paths, order matter](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-27-mar-2019.md#4---openapi-paths-order-matter) |
 |[Sending back objects](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-27-mar-2019.md#5---sending-back-objects) |
 |[Bool type in parameters](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-27-mar-2019.md#6---bool-type-in-parameters) |
 |[Multiple parameters](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-27-mar-2019.md#7---multiple-parameters) |
@@ -109,7 +109,7 @@
 |[Making functions](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-31-jan-2019.md#5---making-functions) |
 |[Dynamodb flask counter](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-30-jan-2019.md#1---dynamodb-flask-counter) |
 |[Amazon sqs](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-30-jan-2019.md#2---amazon-sqs) |
-|[Amazon sqs, sns and s3](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-30-jan-2019.md#3---amazon-sqs,-sns-and-s3) |
+|[Amazon sqs, sns and s3](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-30-jan-2019.md#3---amazon-sqs-sns-and-s3) |
 |[Partitions of a integer](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-29-jan-2019.md#1---partitions-of-a-integer) |
 |[Radix sort](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-29-jan-2019.md#2---radix-sort) |
 |[Trie](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-27-jan-2019.md#1---trie) |
@@ -142,14 +142,14 @@
 |[Python-cheatsheet](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-26-dec-2018.md#1---python-cheatsheet) |
 |[Z3-solver](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-24-dec-2018.md#1---z3-solver) |
 |[Heap data structure](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-24-dec-2018.md#2---heap-data-structure) |
-|[Binary search tree, oops](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-24-dec-2018.md#3---binary-search-tree,-oops) |
+|[Binary search tree, oops](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-24-dec-2018.md#3---binary-search-tree-oops) |
 |[Avl tree python](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-24-dec-2018.md#4---avl-tree-python) |
 |[Graph representation; adjacency list](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-24-dec-2018.md#5---graph-representation;-adjacency-list) |
 |[More advanced sortings](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-23-dec-2018.md#1---more-advanced-sortings) |
 |[Using list to maintain a binary tree](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-23-dec-2018.md#2---using-list-to-maintain-a-binary-tree) |
 |[Binary tree class](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-23-dec-2018.md#3---binary-tree-class) |
 |[List](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-22-dec-2018.md#1---list) |
-|[Center, ljust, rjust the string](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-22-dec-2018.md#2---center,-ljust,-rjust-the-string) |
+|[Center, ljust, rjust the string](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-22-dec-2018.md#2---center-ljust-rjust-the-string) |
 |[Subset operations](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-22-dec-2018.md#3---subset-operations) |
 |[Logic gates and fraction class](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-22-dec-2018.md#4---logic-gates-and-fraction-class) |
 |[Timing a python standard type operations](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-22-dec-2018.md#5---timing-a-python-standard-type-operations) |
@@ -240,7 +240,7 @@
 |[Another twisted server](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-16-nov-2018.md#1---another-twisted-server) |
 |[Combinations yielding](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-16-nov-2018.md#2---combinations-yielding) |
 |[Rotation of 2d matrix](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-16-nov-2018.md#3---rotation-of-2d-matrix) |
-|[Some tricks with list,set and maps](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-15-nov-2018.md#1---some-tricks-with-list,set-and-maps) |
+|[Some tricks with list,set and maps](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-15-nov-2018.md#1---some-tricks-with-listset-and-maps) |
 |[Seemingly weird](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-15-nov-2018.md#2---seemingly-weird) |
 |[Method types example](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-15-nov-2018.md#3---method-types-example) |
 |[Class variable](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-15-nov-2018.md#4---class-variable) |
@@ -252,7 +252,7 @@
 |[Gevent.kill](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-15-nov-2018.md#10---gevent.kill) |
 |[Gevent timeout](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-15-nov-2018.md#11---gevent-timeout) |
 |[Monkey patching with gevents](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-15-nov-2018.md#12---monkey-patching-with-gevents) |
-|[Gevents events, and asynresult](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-15-nov-2018.md#13---gevents-events,-and-asynresult) |
+|[Gevents events, and asynresult](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-15-nov-2018.md#13---gevents-events-and-asynresult) |
 |[Gevent queue](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-15-nov-2018.md#14---gevent-queue) |
 |[Gevent group](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-15-nov-2018.md#15---gevent-group) |
 |[Twisted echo client server](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-15-nov-2018.md#16---twisted-echo-client-server) |
@@ -266,7 +266,7 @@
 |[Sympy](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-14-nov-2018.md#6---sympy) |
 |[Pyglet multimedia library hello world](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-14-nov-2018.md#7---pyglet-multimedia-library-hello-world) |
 |[Sqlalchemy simple example](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-14-nov-2018.md#8---sqlalchemy-simple-example) |
-|[Sys.getsizeof for int, byteobject, string](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-14-nov-2018.md#9---sys.getsizeof-for-int,-byteobject,-string) |
+|[Sys.getsizeof for int, byteobject, string](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-14-nov-2018.md#9---sys.getsizeof-for-int-byteobject-string) |
 |[Event driven network programming using twisted](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-14-nov-2018.md#10---event-driven-network-programming-using-twisted) |
 |[Concurrency using gevent](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-14-nov-2018.md#11---concurrency-using-gevent) |
 |[Greenlet select](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-14-nov-2018.md#12---greenlet-select) |
@@ -281,7 +281,7 @@
 |[Async decorator](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-12-nov-2018.md#1---async-decorator) |
 |[@total_ordering to do less work](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-12-nov-2018.md#3---@total_ordering-to-do-less-work) |
 |[Numpy reshaping](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-12-nov-2018.md#4---numpy-reshaping) |
-|[Self or call it anything, doesnt matter](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-12-nov-2018.md#5---self-or-call-it-anything,-doesnt-matter) |
+|[Self or call it anything, doesnt matter](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-12-nov-2018.md#5---self-or-call-it-anything-doesnt-matter) |
 |[Difference between cls and self](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-12-nov-2018.md#6---difference-between-cls-and-self) |
 |[Code from numpy quickstart](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-12-nov-2018.md#7---code-from-numpy-quickstart) |
 |[Histogram plot of normal distribution](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-12-nov-2018.md#8---histogram-plot-of-normal-distribution) |
@@ -321,7 +321,7 @@
 |[Svn file downloader in python using yield and subprocess](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-08-nov-2018.md#3---svn-file-downloader-in-python-using-yield-and-subprocess) |
 |[What if i want to pass arguments to the decorator itself (not the decorated function)?](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-08-nov-2018.md#4---what-if-i-want-to-pass-arguments-to-the-decorator-itself-not-the-decorated-function) |
 |[Http.server and simplehttpserver in python program](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-08-nov-2018.md#5---http.server-and-simplehttpserver-in-python-program) |
-|[Time complexity of python list, deque, set etc.](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-08-nov-2018.md#6---time-complexity-of-python-list,-deque,-set-etc.) |
+|[Time complexity of python list, deque, set etc.](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-08-nov-2018.md#6---time-complexity-of-python-list-deque-set-etc.) |
 |[Traversing a tree ( predefined structure with children attribute )](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-08-nov-2018.md#7---traversing-a-tree--predefined-structure-with-children-attribute-) |
 |[Using sys.\_getframe to get filename and lineno's](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-08-nov-2018.md#8---using-sys.\_getframe-to-get-filename-and-lineno's) |
 |[Timeout a function using sigalrm](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-08-nov-2018.md#9---timeout-a-function-using-sigalrm) |
@@ -401,7 +401,7 @@
 |[Asyncio call at a specific time](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-30-oct-2018.md#6---asyncio-call-at-a-specific-time) |
 |[Why gil](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-30-oct-2018.md#7---why-gil) |
 |[More gil](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-30-oct-2018.md#8---more-gil) |
-|[Dict comprehension shortcut for reversing key,value](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-30-oct-2018.md#9---dict-comprehension-shortcut-for-reversing-key,value) |
+|[Dict comprehension shortcut for reversing key,value](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-30-oct-2018.md#9---dict-comprehension-shortcut-for-reversing-keyvalue) |
 |[Various ways to use subprocess](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-30-oct-2018.md#10---various-ways-to-use-subprocess) |
 |[What i learned till now ( revision )](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-29-oct-2018.md#1---what-i-learned-till-now--revision-) |
 |[New style and old style classes](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-29-oct-2018.md#2---new-style-and-old-style-classes) |
@@ -437,9 +437,9 @@
 |[Dynamic array class](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-25-oct-2018.md#1---dynamic-array-class) |
 |[Accessing memory using cpython](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-25-oct-2018.md#2---accessing-memory-using-cpython) |
 |[Python compilation](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-25-oct-2018.md#3---python-compilation) |
-|[Files related to ast, parser and compilation in cpython source tree](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-25-oct-2018.md#4---files-related-to-ast,-parser-and-compilation-in-cpython-source-tree) |
+|[Files related to ast, parser and compilation in cpython source tree](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-25-oct-2018.md#4---files-related-to-ast-parser-and-compilation-in-cpython-source-tree) |
 |[Meddling with a program in middle](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-24-oct-2018.md#1---meddling-with-a-program-in-middle) |
-|[Source code for objects, classes, closures, generators, iterators](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-24-oct-2018.md#2---source-code-for-objects,-classes,-closures,-generators,-iterators) |
+|[Source code for objects, classes, closures, generators, iterators](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-24-oct-2018.md#2---source-code-for-objects-classes-closures-generators-iterators) |
 |[Pystringobject](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-23-oct-2018.md#1---pystringobject) |
 |[Code object and func object](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-23-oct-2018.md#2---code-object-and-func-object) |
 |[Dynamically creating type and object from that](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-23-oct-2018.md#3---dynamically-creating-type-and-object-from-that) |
@@ -486,7 +486,7 @@
 |[Legb scoping rules of python](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-19-oct-2018.md#3---legb-scoping-rules-of-python) |
 |[Yield syntax in python3](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-19-oct-2018.md#4---yield-syntax-in-python3) |
 |[List comprehension for flattening](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-19-oct-2018.md#5---list-comprehension-for-flattening) |
-|[Public, private , secret simple example](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-19-oct-2018.md#6---public,-private-,-secret-simple-example) |
+|[Public, private , secret simple example](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-19-oct-2018.md#6---public-private--secret-simple-example) |
 |[Input(): disaster](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-19-oct-2018.md#7---input:-disaster) |
 |[Pytest benchmark](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-19-oct-2018.md#8---pytest-benchmark) |
 |[Rounding up floats](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-19-oct-2018.md#9---rounding-up-floats) |
@@ -550,11 +550,11 @@
 |[Id() of mutables](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-16-oct-2018.md#4---id-of-mutables) |
 |[Context with](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-15-oct-2018.md#2---context-with) |
 |[Try except finally ~~ with](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-15-oct-2018.md#3---try-except-finally-~~-with) |
-|[Contextlib to create with interface, generator based](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-15-oct-2018.md#4---contextlib-to-create-with-interface,-generator-based) |
+|[Contextlib to create with interface, generator based](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-15-oct-2018.md#4---contextlib-to-create-with-interface-generator-based) |
 |[Wildcard imports and underscore](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-15-oct-2018.md#5---wildcard-imports-and-underscore) |
 |[__baz is name-mangled by python interpreter](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-15-oct-2018.md#6---__baz-is-name-mangled-by-python-interpreter) |
 |[__bam__ dunder bam](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-15-oct-2018.md#7---__bam__-dunder-bam) |
-|[_ ( don't care about it, it's underscore)](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-15-oct-2018.md#8---_--don't-care-about-it,-it's-underscore) |
+|[_ ( don't care about it, it's underscore)](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-15-oct-2018.md#8---_--don't-care-about-it-it's-underscore) |
 |[String formatting](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-15-oct-2018.md#10---string-formatting) |
 |[Del](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-15-oct-2018.md#11---del) |
 |[Making objects callable](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-15-oct-2018.md#12---making-objects-callable) |
@@ -589,7 +589,7 @@
 |[Zipping lists to dict](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-14-oct-2018.md#21---zipping-lists-to-dict) |
 |[Setting recursion limit in python](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-14-oct-2018.md#22---setting-recursion-limit-in-python) |
 |[List partitioning in python](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-14-oct-2018.md#23---list-partitioning-in-python) |
-|[Lambda, filter and reduce](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-14-oct-2018.md#24---lambda,-filter-and-reduce) |
+|[Lambda, filter and reduce](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-14-oct-2018.md#24---lambda-filter-and-reduce) |
 |[Counters](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-14-oct-2018.md#25---counters) |
 |[Chainmap](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-14-oct-2018.md#26---chainmap) |
 |[Breakpoint in python interpreter](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-14-oct-2018.md#27---breakpoint-in-python-interpreter) |
@@ -637,7 +637,7 @@
 |[List](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-01-oct-2018.md#1---list) |
 |[Generator list](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-01-oct-2018.md#2---generator-list) |
 |[Yeild list from function](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-01-oct-2018.md#3---yeild-list-from-function) |
-|[*args, \**kwargs](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-01-oct-2018.md#4---*args,-\**kwargs) |
+|[*args, \**kwargs](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-01-oct-2018.md#4---*args-\**kwargs) |
 |[Random shuffle](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-01-oct-2018.md#5---random-shuffle) |
 |[List sort](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-01-oct-2018.md#6---list-sort) |
 |[Decorators](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-01-oct-2018.md#7---decorators) |
@@ -678,7 +678,7 @@
 |[Ternary operator](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-01-oct-2018.md#44---ternary-operator) |
 |[Help() and dir()](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-01-oct-2018.md#45---help-and-dir) |
 |[Keywords](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-01-oct-2018.md#46---keywords) |
-|[Lstrip, rstrip, strip](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-01-oct-2018.md#47---lstrip,-rstrip,-strip) |
+|[Lstrip, rstrip, strip](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-01-oct-2018.md#47---lstrip-rstrip-strip) |
 |[// % **](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-01-oct-2018.md#48---//-%-**) |
 |[Exec() and eval()](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-01-oct-2018.md#49---exec-and-eval) |
 |[Flavours of python](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-01-oct-2018.md#50---flavours-of-python) |
@@ -706,14 +706,14 @@
 |[Dumping process's memory](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-20-nov-2019.md#1---dumping-process's-memory) |
 |[Buffer cache](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-04-oct-2019.md#1---buffer-cache) |
 |[Disk usage in linux](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-27-sep-2019.md#1---disk-usage-in-linux) |
-|[Stack, heap, and code virtual locations](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-05-jun-2019.md#1---stack,-heap,-and-code-virtual-locations) |
+|[Stack, heap, and code virtual locations](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-05-jun-2019.md#1---stack-heap-and-code-virtual-locations) |
 |[Learning kubernetes by hands-on](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-13-may-2019.md#1---learning-kubernetes-by-hands-on) |
 |[Golang file server and http server](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-12-may-2019.md#1---golang-file-server-and-http-server) |
 |[Simple random numbers example in golang](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-12-may-2019.md#2---simple-random-numbers-example-in-golang) |
 |[Golang all basic features](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-11-may-2019.md#1---golang-all-basic-features) |
 |[Embedded etcd3 server in golang](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-02-may-2019.md#1---embedded-etcd3-server-in-golang) |
 |[Kubernetes autoscaling](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-30-apr-2019.md#1---kubernetes-autoscaling) |
-|[Go exit value, is not same as what is returned](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-29-apr-2019.md#1---go-exit-value,-is-not-same-as-what-is-returned) |
+|[Go exit value, is not same as what is returned](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-29-apr-2019.md#1---go-exit-value-is-not-same-as-what-is-returned) |
 |[Handling sys signals in golang](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-29-apr-2019.md#2---handling-sys-signals-in-golang) |
 |[Running binaries as processes](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-29-apr-2019.md#3---running-binaries-as-processes) |
 |[Tcp puzzler](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-29-apr-2019.md#4---tcp-puzzler) |
@@ -748,7 +748,7 @@
 |[Coroutine function](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-17-oct-2018.md#5---coroutine-function) |
 |[Asynchronous generator functions](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-17-oct-2018.md#6---asynchronous-generator-functions) |
 |[Locals()](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-17-oct-2018.md#9---locals) |
-|[__getitem__ , next() , __iter__](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-17-oct-2018.md#10---__getitem__-,-next-,-__iter__) |
+|[__getitem__ , next() , __iter__](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-17-oct-2018.md#10---__getitem__--next--__iter__) |
 |[Midnight time evaluates to false](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-16-oct-2018.md#5---midnight-time-evaluates-to-false) |
 |[Assertions](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-15-oct-2018.md#1---assertions) |
 |[Var_ ( underscore after the name)](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-15-oct-2018.md#9---var_--underscore-after-the-name) |
