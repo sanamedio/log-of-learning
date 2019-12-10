@@ -8,10 +8,13 @@
 
 | LINK |
 |------|
+|[Circleci tutorial with flask and github](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-08-dec-2019.md#4---circleci-tutorial-with-flask-and-github) |
 |[Award budget cuts (coding problem)](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-08-dec-2019.md#6---award-budget-cuts-coding-problem) |
 |[Threadlocal in python](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-07-dec-2019.md#1---threadlocal-in-python) |
 |[Sorting when element is at max k-place deranged](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-07-dec-2019.md#2---sorting-when-element-is-at-max-k-place-deranged) |
 |[Not ""](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-06-dec-2019.md#1---not-"") |
+|[Python2 vs python3 comparision](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-05-dec-2019.md#1---python2-vs-python3-comparision) |
+|[Watching youtube videos in turtle window](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-05-dec-2019.md#2---watching-youtube-videos-in-turtle-window) |
 |[Css selectors and beautiful soup](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-05-dec-2019.md#3---css-selectors-and-beautiful-soup) |
 |[Regular expression parser](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-03-dec-2019.md#2---regular-expression-parser) |
 |[Call center oo design](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-03-dec-2019.md#3---call-center-oo-design) |
@@ -34,6 +37,7 @@
 |[Merge two sorted linked list](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-28-nov-2019.md#9---merge-two-sorted-linked-list) |
 |[Pseudo random numbers](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-27-nov-2019.md#1---pseudo-random-numbers) |
 |[Dutch national flag 3-way sort](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-27-nov-2019.md#2---dutch-national-flag-3-way-sort) |
+|[Pip can directly work on urls!](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-27-nov-2019.md#3---pip-can-directly-work-on-urls!) |
 |[Few useful one-liners](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-25-nov-2019.md#1---few-useful-one-liners) |
 |[Diagnosing memory leaks using guppy](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-20-nov-2019.md#2---diagnosing-memory-leaks-using-guppy) |
 |[Turtle animation of sine](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-20-nov-2019.md#3---turtle-animation-of-sine) |
@@ -596,10 +600,7 @@
 |[Entry points](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-08-dec-2019.md#1---entry-points) |
 |[Mongodb oplog access](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-08-dec-2019.md#2---mongodb-oplog-access) |
 |[A + b = c using regex](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-08-dec-2019.md#3---a-+-b-=-c-using-regex) |
-|[Circleci tutorial with flask and github](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-08-dec-2019.md#4---circleci-tutorial-with-flask-and-github) |
 |[Difference between let and var in js](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-08-dec-2019.md#5---difference-between-let-and-var-in-js) |
-|[Python2 vs python3 comparision](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-05-dec-2019.md#1---python2-vs-python3-comparision) |
-|[Watching youtube videos in turtle window](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-05-dec-2019.md#2---watching-youtube-videos-in-turtle-window) |
 |[Inverted index vs forward index](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-03-dec-2019.md#1---inverted-index-vs-forward-index) |
 |[Listing global npm modules](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-01-dec-2019.md#1---listing-global-npm-modules) |
 |[Pretty boxes and colors while making node cli tools](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-01-dec-2019.md#2---pretty-boxes-and-colors-while-making-node-cli-tools) |
@@ -607,7 +608,6 @@
 |[Async/await with axios](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-01-dec-2019.md#4---async/await-with-axios) |
 |[Two way data binding in pure js](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-28-nov-2019.md#1---two-way-data-binding-in-pure-js) |
 |[The mathematics of bulb switch problem](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-28-nov-2019.md#5---the-mathematics-of-bulb-switch-problem) |
-|[Pip can directly work on urls!](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-27-nov-2019.md#3---pip-can-directly-work-on-urls!) |
 |[Understanding cache in detail](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-21-nov-2019.md#1---understanding-cache-in-detail) |
 |[Dumping process's memory](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-20-nov-2019.md#1---dumping-process's-memory) |
 |[Buffer cache](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-04-oct-2019.md#1---buffer-cache) |
