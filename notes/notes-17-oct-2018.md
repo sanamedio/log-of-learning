@@ -271,6 +271,9 @@ print two_ages._fields
 
 ### 6 - Asynchronous generator functions
 
+```python
+```
+
 - A function or method which is defined using async def and which uses the yield statement is called a asynchronous generator function. Such a function, when called, returns an asynchronous iterator object which can be used in an async for statement to execute the body of the function.
 
 ### 5 - Coroutine function
