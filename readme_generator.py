@@ -11,33 +11,70 @@ mds.sort(key = lambda date: datetime.strptime(date.split(".")[0].split("notes-")
 
 date_arr = []
 
+categories = []
 result = []
 k = 1
+
+last_type = None
+
+
 for md in mds:
     data = open("./notes/"+md).readlines()
 
     temp_res = []
+
+    temp_content = []
     for line in data:
         if re.search("### \d+ - ", line.strip()):
+
+            if last_type:
+                categories += [last_type]
+            else:
+                categories += ["general"]
+            last_type = None
+            
             temp_res += [ ("["+(line.strip().split(" - ",1)[1]).capitalize() + "]("+ BLOB_PATH + md + "#" +  line.strip().lower().replace("###","")[1:].replace(" ","-") + ") ")]
             date_arr += [md.split(".md")[0].split("notes-")[1]]
             k = k+1
-    result += list(reversed(temp_res))
 
-#https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-21-oct-2018.md#9---py_main-cpython
+        if re.search("^```python", line.strip()):
+            last_type = "python"
+
+    result += list(temp_res)
+
+
+if last_type:
+    categories += [last_type]
+else:
+    categories += ["general"]
+    last_type = None
+categories = categories[1:]
+
 
 
 prefix = """
 # =================
 # programming-notes
 # =================
+"""
 
-### """+ str(k-1) + """/100000
-
-| SNO | LINK|
-|-----|----|
+prefix_sub = """
+| LINK |
+|------|
 """
 
 
+
 #print (prefix + "\n".join(list(reversed([ "|" + str(i+1)+"|" + result[i] + "|" + date_arr[i] + "|" for i in range(len(result))]))))
-print (prefix + "\n".join(list(reversed([ "|" + str(i+1)+"|" + result[i] + "|" for i in range(len(result))]))))
+
+print( prefix)
+
+print ("# Python")
+print ("")
+print (prefix_sub)
+print ( "\n".join(list(reversed([ "|" +  result[i] + "|" for i in range(len(result)) if categories[i] != "general" ]))))
+print ("\n\n")
+print ("# General")
+print ("")
+print (prefix_sub)
+print ( "\n".join(list(reversed([ "|" +  result[i] + "|" for i in range(len(result)) if categories[i] == "general" ]))))
