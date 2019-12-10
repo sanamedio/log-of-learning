@@ -8,7 +8,6 @@
 
 | LINK |
 |------|
-
 |[Award budget cuts (coding problem)](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-08-dec-2019.md#6---award-budget-cuts-(coding-problem)) |
 |[Threadlocal in python](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-07-dec-2019.md#1---threadlocal-in-python) |
 |[Sorting when element is at max k-place deranged](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-07-dec-2019.md#2---sorting-when-element-is-at-max-k-place-deranged) |
@@ -593,7 +592,6 @@
 
 | LINK |
 |------|
-
 |[Entry points(how i missed it?)](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-08-dec-2019.md#1---entry-points(how-i-missed-it?)) |
 |[Mongodb oplog access](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-08-dec-2019.md#2---mongodb-oplog-access) |
 |[A + b = c using regex](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-08-dec-2019.md#3---a-+-b-=-c-using-regex) |
