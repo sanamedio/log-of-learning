@@ -54,6 +54,8 @@ Foo().hello() # 'hello world' not function object
 
 ### 26 - Performance optimization - coroutine - and dangers
 
+```python
+```
  - Go to lower level API and yeild from there
  - Write a C extension and yield from there
  - do .send() also in C
