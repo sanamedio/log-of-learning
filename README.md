@@ -120,6 +120,7 @@
 |[Probability simulations!](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-21-jan-2019.md#1---probability-simulations!) |
 |[Https://locust.io/](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-17-jan-2019.md#1---https://locust.io/) |
 |[Flask counter](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-16-jan-2019.md#1---flask-counter) |
+|[Uninstalling things with pip](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-13-jan-2019.md#1---uninstalling-things-with-pip) |
 |[Pycuber](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-13-jan-2019.md#2---pycuber) |
 |[Red black tree](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-13-jan-2019.md#3---red-black-tree) |
 |[Selenium webdriver](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-12-jan-2019.md#1---selenium-webdriver) |
@@ -279,6 +280,7 @@
 |[Tor using python](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-13-nov-2018.md#3---tor-using-python) |
 |[How to connect to ngrok when firewall is interfering?](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-13-nov-2018.md#4---how-to-connect-to-ngrok-when-firewall-is-interfering) |
 |[Async decorator](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-12-nov-2018.md#1---async-decorator) |
+|[Dir() and dunder dict](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-12-nov-2018.md#2---dir-and-dunder-dict) |
 |[@total_ordering to do less work](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-12-nov-2018.md#3---@total_ordering-to-do-less-work) |
 |[Numpy reshaping](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-12-nov-2018.md#4---numpy-reshaping) |
 |[Self or call it anything, doesnt matter](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-12-nov-2018.md#5---self-or-call-it-anything-doesnt-matter) |
@@ -367,6 +369,7 @@
 |[Tracing program execution using -m trace](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-04-nov-2018.md#10---tracing-program-execution-using--m-trace) |
 |[Crashing using marshal](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-04-nov-2018.md#11---crashing-using-marshal) |
 |[Iterators use c recusion stack](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-04-nov-2018.md#12---iterators-use-c-recusion-stack) |
+|[Stringio vs bytesio (from so)](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-04-nov-2018.md#13---stringio-vs-bytesio-from-so) |
 |[Simple reactive dashboards in python using dash](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-04-nov-2018.md#14---simple-reactive-dashboards-in-python-using-dash) |
 |[Better_exceptions module](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-04-nov-2018.md#15---better_exceptions-module) |
 |[Platform module](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-03-nov-2018.md#1---platform-module) |
@@ -417,6 +420,7 @@
 |[Other data structures cpython](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-28-oct-2018.md#9---other-data-structures-cpython) |
 |[Variable flags to specify context of name def. (cpython sc)](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-28-oct-2018.md#10---variable-flags-to-specify-context-of-name-def.-cpython-sc) |
 |[Pytypeobject](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-28-oct-2018.md#12---pytypeobject) |
+|[How generators are able to capture execution state and update that at will](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-28-oct-2018.md#13---how-generators-are-able-to-capture-execution-state-and-update-that-at-will) |
 |[The need for gil](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-28-oct-2018.md#14---the-need-for-gil) |
 |[Tstate : thread state](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-28-oct-2018.md#15---tstate-:-thread-state) |
 |[Interpreter and thread state](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-28-oct-2018.md#16---interpreter-and-thread-state) |
@@ -434,6 +438,7 @@
 |[Pep 201: lockstep interation](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-26-oct-2018.md#5---pep-201:-lockstep-interation) |
 |[Pep 214: print](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-26-oct-2018.md#6---pep-214:-print) |
 |[Exception hook](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-26-oct-2018.md#7---exception-hook) |
+|[About peps](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-26-oct-2018.md#8---about-peps) |
 |[Dynamic array class](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-25-oct-2018.md#1---dynamic-array-class) |
 |[Accessing memory using cpython](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-25-oct-2018.md#2---accessing-memory-using-cpython) |
 |[Python compilation](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-25-oct-2018.md#3---python-compilation) |
@@ -492,6 +497,7 @@
 |[Rounding up floats](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-19-oct-2018.md#9---rounding-up-floats) |
 |[Danger with format strings](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-19-oct-2018.md#10---danger-with-format-strings) |
 |[Yield where possible](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-19-oct-2018.md#11---yield-where-possible) |
+|[Benefits of yield](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-19-oct-2018.md#12---benefits-of-yield) |
 |[Unzipping](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-19-oct-2018.md#13---unzipping) |
 |[Dataclasses](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-19-oct-2018.md#14---dataclasses) |
 |[Ipython_memory_usage](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-19-oct-2018.md#15---ipython_memory_usage) |
@@ -735,13 +741,7 @@
 |[Golang syntax](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-18-apr-2019.md#1---golang-syntax) |
 |[Golang defer](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-18-apr-2019.md#2---golang-defer) |
 |[Golang variadic functions](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-18-apr-2019.md#3---golang-variadic-functions) |
-|[Uninstalling things with pip](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-13-jan-2019.md#1---uninstalling-things-with-pip) |
-|[Dir() and dunder dict](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-12-nov-2018.md#2---dir-and-dunder-dict) |
-|[Stringio vs bytesio (from so)](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-04-nov-2018.md#13---stringio-vs-bytesio-from-so) |
 |[Basicblock data structure](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-28-oct-2018.md#11---basicblock-data-structure) |
-|[How generators are able to capture execution state and update that at will](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-28-oct-2018.md#13---how-generators-are-able-to-capture-execution-state-and-update-that-at-will) |
-|[About peps](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-26-oct-2018.md#8---about-peps) |
-|[Benefits of yield](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-19-oct-2018.md#12---benefits-of-yield) |
 |[Coroutine vs generator](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-19-oct-2018.md#21---coroutine-vs-generator) |
 |[Performance optimization - coroutine - and dangers](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-19-oct-2018.md#26---performance-optimization---coroutine---and-dangers) |
 |[Frozen set](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-17-oct-2018.md#4---frozen-set) |
