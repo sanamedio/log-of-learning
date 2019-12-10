@@ -70,6 +70,8 @@ a == c #True
 
 ### 17 - return None
 
+```python
+```
 - return None is added to every function without a return Value
 
 ### 16 - unpacking operator
