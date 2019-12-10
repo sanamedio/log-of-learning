@@ -293,6 +293,8 @@ class DataClassCard:
 
 ### 12 - benefits of yield
 
+```python
+```
 - Only one value is computed at a time. Low memory impact example above
 - Can break in the middle. Don't have to compute everything just to find out you needed none of it. Compute just what you need. 
 - If you often don't need it all, you can gain a lot of performance here.
