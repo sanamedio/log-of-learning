@@ -222,6 +222,8 @@ if not isinstance(x, (int, float)):
 
 ### 10 - __getitem__ , next() , __iter__
 
+```python
+```
 - An object can be iterated over with "for" if it implements
    __iter__() or __getitem__().
 - An object can function as an iterator if it implements next().
