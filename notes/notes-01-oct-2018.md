@@ -554,6 +554,10 @@ MyShinyClass = type('MyShinyClass', (), {}) # returns a class object
 ```
 
 ### 16 - Garbage collection in Python
+
+```python
+```
+
 With respect to CPython
 
 * Python maintains a count of the number of references to each object in memory. If a reference count goes to zero then the associated object is no longer live and the memory allocated to that object can be freed up for something else
