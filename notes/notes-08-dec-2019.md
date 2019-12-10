@@ -33,7 +33,9 @@ https://stackoverflow.com/questions/762011/whats-the-difference-between-using-le
 
 ### 4 - CircleCI tutorial with Flask and Github
 
+```python
 Something other than our old Jenkins:
+```
 
 https://circleci.com/blog/setting-up-continuous-integration-with-github/
 
