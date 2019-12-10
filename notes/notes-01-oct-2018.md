@@ -60,11 +60,14 @@ Instead do this:
 
   6          30 LOAD_FAST                0 (x)
              32 LOAD_FAST                1 (y)
-             34 BINARY_ADD
+             34 BINARY_ADDhttps://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-08-dec-2019.md#1---entry-points(how-i-missed-it?)
 36 RETURN_VALUE
 ```
 
 ### 50 - flavours of python
+
+```python
+```
 
 * CPython - The standard reference implementation from python.org. CPython is the reference implementation of Python, written in C. It compiles Python code to intermediate bytecode which is then interpreted by a virtual machine. CPython provides the highest level of compatibility with Python packages and C extension modules.If you are writing open-source Python code and want to reach the widest possible audience, targeting CPython is best. To use packages which rely on C extensions to function, CPython is your only implementation option.All versions of the Python language are implemented in C because CPython is the reference implementation.
 
