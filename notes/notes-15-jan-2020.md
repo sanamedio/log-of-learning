@@ -1,5 +1,26 @@
 # 15-jan-2020
 
+
+### 2 - termios handy password prompt
+
+- https://docs.python.org/3/library/termios.html
+
+```python3
+def getpass(prompt="Password: "):
+    import termios, sys
+    fd = sys.stdin.fileno()
+    old = termios.tcgetattr(fd)
+    new = termios.tcgetattr(fd)
+    new[3] = new[3] & ~termios.ECHO          # lflags
+    try:
+        termios.tcsetattr(fd, termios.TCSADRAIN, new)
+        passwd = input(prompt)
+    finally:
+        termios.tcsetattr(fd, termios.TCSADRAIN, old)
+    return passwd
+```
+
+
 ### 1 - faulthandler
 
 - Allows to get stacktraces in case of segmentation faults and similar 
