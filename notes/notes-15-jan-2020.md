@@ -1,6 +1,36 @@
 # 15-jan-2020
 
 
+### 3 - difflib to get edits
+
+```python3
+import sys
+from difflib import unified_diff
+
+
+s1 = [ x+"\n" for x in "a b c d".split()]
+s2 = [ x+"\n" for x in "aa bb dd cc".split()]
+
+
+sys.stdout.writelines(unified_diff(s1, s2, fromfile='before.py', tofile='after.py'))
+```
+
+```bash
+➜  python differ.py
+--- before.py
++++ after.py
+@@ -1,4 +1,4 @@
+-a
+-b
+-c
+-d
++aa
++bb
++dd
++cc
+```
+
+
 ### 2 - termios handy password prompt
 
 - https://docs.python.org/3/library/termios.html
