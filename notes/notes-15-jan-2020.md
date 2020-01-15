@@ -1,5 +1,66 @@
 # 15-jan-2020
 
+### 5 - cProfile usage to identify performance bottlenecks
+
+```python3
+import cProfile
+import re
+
+cProfile.run('re.compile("foo|bar")')
+```
+
+```bash
+➜  python3 main.py
+         214 function calls (207 primitive calls) in 0.000 seconds
+
+   Ordered by: standard name
+
+   ncalls  tottime  percall  cumtime  percall filename:lineno(function)
+        1    0.000    0.000    0.000    0.000 <string>:1(<module>)
+        2    0.000    0.000    0.000    0.000 enum.py:284(__call__)
+        2    0.000    0.000    0.000    0.000 enum.py:526(__new__)
+        1    0.000    0.000    0.000    0.000 enum.py:836(__and__)
+        1    0.000    0.000    0.000    0.000 re.py:232(compile)
+        1    0.000    0.000    0.000    0.000 re.py:271(_compile)
+        1    0.000    0.000    0.000    0.000 sre_compile.py:249(_compile_charset)
+        1    0.000    0.000    0.000    0.000 sre_compile.py:276(_optimize_charset)
+        2    0.000    0.000    0.000    0.000 sre_compile.py:453(_get_iscased)
+        1    0.000    0.000    0.000    0.000 sre_compile.py:461(_get_literal_prefix)
+        1    0.000    0.000    0.000    0.000 sre_compile.py:492(_get_charset_prefix)
+        1    0.000    0.000    0.000    0.000 sre_compile.py:536(_compile_info)
+        2    0.000    0.000    0.000    0.000 sre_compile.py:595(isstring)
+        1    0.000    0.000    0.000    0.000 sre_compile.py:598(_code)
+      3/1    0.000    0.000    0.000    0.000 sre_compile.py:71(_compile)
+        1    0.000    0.000    0.000    0.000 sre_compile.py:759(compile)
+        3    0.000    0.000    0.000    0.000 sre_parse.py:111(__init__)
+        7    0.000    0.000    0.000    0.000 sre_parse.py:160(__len__)
+       18    0.000    0.000    0.000    0.000 sre_parse.py:164(__getitem__)
+        7    0.000    0.000    0.000    0.000 sre_parse.py:172(append)
+      3/1    0.000    0.000    0.000    0.000 sre_parse.py:174(getwidth)
+        1    0.000    0.000    0.000    0.000 sre_parse.py:224(__init__)
+        8    0.000    0.000    0.000    0.000 sre_parse.py:233(__next)
+        2    0.000    0.000    0.000    0.000 sre_parse.py:249(match)
+        6    0.000    0.000    0.000    0.000 sre_parse.py:254(get)
+        1    0.000    0.000    0.000    0.000 sre_parse.py:286(tell)
+        1    0.000    0.000    0.000    0.000 sre_parse.py:411(_parse_sub)
+        2    0.000    0.000    0.000    0.000 sre_parse.py:469(_parse)
+        1    0.000    0.000    0.000    0.000 sre_parse.py:76(__init__)
+        2    0.000    0.000    0.000    0.000 sre_parse.py:81(groups)
+        1    0.000    0.000    0.000    0.000 sre_parse.py:897(fix_flags)
+        1    0.000    0.000    0.000    0.000 sre_parse.py:913(parse)
+        1    0.000    0.000    0.000    0.000 {built-in method _sre.compile}
+        1    0.000    0.000    0.000    0.000 {built-in method builtins.exec}
+       25    0.000    0.000    0.000    0.000 {built-in method builtins.isinstance}
+    29/26    0.000    0.000    0.000    0.000 {built-in method builtins.len}
+        2    0.000    0.000    0.000    0.000 {built-in method builtins.max}
+        9    0.000    0.000    0.000    0.000 {built-in method builtins.min}
+        6    0.000    0.000    0.000    0.000 {built-in method builtins.ord}
+       48    0.000    0.000    0.000    0.000 {method 'append' of 'list' objects}
+        1    0.000    0.000    0.000    0.000 {method 'disable' of '_lsprof.Profiler' objects}
+        5    0.000    0.000    0.000    0.000 {method 'find' of 'bytearray' objects}
+        1    0.000    0.000    0.000    0.000 {method 'items' of 'dict' objects}
+```
+
 ### 4 - tracemalloc to find memory additions
 
 - https://docs.python.org/3/library/tracemalloc.html
