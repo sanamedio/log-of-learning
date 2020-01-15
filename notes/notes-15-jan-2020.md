@@ -1,5 +1,42 @@
 # 15-jan-2020
 
+### 7 - fileinput for multiple file reading
+
+- https://docs.python.org/3/library/fileinput.html
+
+```python
+import fileinput
+with fileinput.input(files=('spam.txt', 'eggs.txt')) as f:
+    for line in f:
+        print(f.filename(), f.lineno(), line)
+```
+
+output:
+```bash
+spam.txt 1 lsdkfgjslfg
+
+spam.txt 2 dfgerg
+
+spam.txt 3 ertert
+
+spam.txt 4
+
+spam.txt 5 dfgdsfg
+
+eggs.txt 6 yellow
+
+eggs.txt 7 white
+
+eggs.txt 8 black
+
+eggs.txt 9 red
+
+eggs.txt 10 orange
+
+eggs.txt 11 brown
+```
+
+
 ### 6 - dircmp to compare directory structures
 
 - https://docs.python.org/3/library/filecmp.html
