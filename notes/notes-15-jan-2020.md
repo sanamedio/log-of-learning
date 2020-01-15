@@ -2,6 +2,8 @@
 
 ### 6 - dircmp to compare directory structures
 
+- https://docs.python.org/3/library/filecmp.html
+
 ```python3
 from filecmp import dircmp
 
