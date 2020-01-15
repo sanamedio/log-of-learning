@@ -2,6 +2,8 @@
 
 ### 5 - cProfile usage to identify performance bottlenecks
 
+- https://docs.python.org/3/library/profile.html#introduction-to-the-profilers
+
 ```python3
 import cProfile
 import re
