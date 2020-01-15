@@ -8,7 +8,13 @@
 
 | LINK |
 |------|
-|[Barcode in python](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-17-dec-2019.md#1---barcode-in-python) |
+|[Faulthandler](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-15-jan-2020.md#1---faulthandler) |
+|[Termios handy password prompt](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-15-jan-2020.md#2---termios-handy-password-prompt) |
+|[Difflib to get edits](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-15-jan-2020.md#3---difflib-to-get-edits) |
+|[Tracemalloc to find memory additions](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-15-jan-2020.md#4---tracemalloc-to-find-memory-additions) |
+|[Cprofile usage to identify performance bottlenecks](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-15-jan-2020.md#5---cprofile-usage-to-identify-performance-bottlenecks) |
+|[Dircmp to compare directory structures](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-15-jan-2020.md#6---dircmp-to-compare-directory-structures) |
+|[Fileinput for multiple file reading](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-15-jan-2020.md#7---fileinput-for-multiple-file-reading) |
 |[Entry points](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-08-dec-2019.md#1---entry-points) |
 |[Circleci tutorial with flask and github](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-08-dec-2019.md#4---circleci-tutorial-with-flask-and-github) |
 |[Award budget cuts (coding problem)](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-08-dec-2019.md#6---award-budget-cuts-coding-problem) |
