@@ -1,7 +1,32 @@
 # 15-jan-2020
 
+### 4 - tracemalloc to find memory additions
+
+- https://docs.python.org/3/library/tracemalloc.html
+
+```python3
+import tracemalloc
+import uuid
+
+tracemalloc.start()
+
+snapshot1 = tracemalloc.take_snapshot()
+
+### memory usage here
+x = [ uuid.uuid4() for x in range(100000) ]
+
+snapshot2 = tracemalloc.take_snapshot()
+
+top_stats = snapshot2.compare_to(snapshot1, 'lineno')
+
+print("[ Top 10 differences ]")
+for stat in top_stats[:10]:
+    print(stat)
+```
 
 ### 3 - difflib to get edits
+
+- https://docs.python.org/3/library/difflib.html
 
 ```python3
 import sys
