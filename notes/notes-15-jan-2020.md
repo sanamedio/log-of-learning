@@ -1,5 +1,17 @@
 # 15-jan-2020
 
+### 6 - dircmp to compare directory structures
+
+```python3
+from filecmp import dircmp
+
+dcmp = dircmp("/usr/local/bin", "/bin")
+
+print(dcmp)
+# outputs the difference and commonalities
+```
+
+
 ### 5 - cProfile usage to identify performance bottlenecks
 
 - https://docs.python.org/3/library/profile.html#introduction-to-the-profilers
