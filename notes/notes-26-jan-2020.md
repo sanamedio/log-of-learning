@@ -7,7 +7,7 @@
 
 
 
-```python3
+```python
 #https://medium.com/@yeraydiazdiaz/what-the-mock-cheatsheet-mocking-in-python-6a71db997832
 
 In [1]: from unittest import mock
@@ -40,7 +40,7 @@ In [11]: assert m.bar == 'baz'
 In [12]:
 ```
 
-```python3
+```python
 In [1]: from unittest import mock                                                                                                                          
 
 In [2]: m = mock.Mock()                                                                                                                                    
@@ -93,7 +93,7 @@ In [12]:
 ```
 
 
-```python3
+```python
 In [15]: m.assert_called()                                                                                     
 
 In [16]: m.assert_called_once()                                                                                
@@ -114,7 +114,51 @@ AssertionError: Expected 'mock' to have been called once. Called 6 times.
 In [17]:  m.reset_mock() #reset all interactions
 ```
 
+```python
+#(venv) ➜  programming-notes git:(master) ✗ cat work.py
+import os
 
+
+def work_on():
+    path = os.getcwd()
+    print(f'Working on {path}')
+    return path
+```
+
+```python
+#(venv) ➜  programming-notes git:(master) ✗ cat test1.py
+from unittest import TestCase, mock
+
+from work import work_on
+
+class TestWorkMockingFunction(TestCase):
+
+    def test_using_context_manager(self):
+        with mock.patch('work.os') as mocked_os:
+            work_on()
+            mocked_os.getcwd.assert_called_once()
+
+    @mock.patch('work.os')
+    def test_using_decorator(self, mocked_os):
+        work_on()
+        mocked_os.getcwd.assert_called_once()
+
+    def test_using_return_value(self):
+        with mock.patch('work.os.getcwd', return_value='testing'):
+            assert work_on() == 'testing'
+```
+
+```bash
+(venv) ➜  programming-notes git:(master) ✗ python -m unittest test1.py
+Working on <MagicMock name='os.getcwd()' id='4508578032'>
+.Working on <MagicMock name='os.getcwd()' id='4508668760'>
+.Working on testing
+.
+----------------------------------------------------------------------
+Ran 3 tests in 0.002s
+
+OK
+```
 
 
 
