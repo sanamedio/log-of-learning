@@ -1,5 +1,5 @@
 # 26-jan-2020
-T
+
 ### 2 - Mocking library functions
 
 ```python
