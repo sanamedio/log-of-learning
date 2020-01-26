@@ -8,6 +8,7 @@
 
 | LINK |
 |------|
+|[Python mocks](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-26-jan-2020.md#1---python-mocks) |
 |[Faulthandler](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-15-jan-2020.md#1---faulthandler) |
 |[Termios handy password prompt](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-15-jan-2020.md#2---termios-handy-password-prompt) |
 |[Difflib to get edits](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-15-jan-2020.md#3---difflib-to-get-edits) |
@@ -124,6 +125,7 @@
 |[Websocketd send-receive](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-26-jan-2019.md#2---websocketd-send-receive) |
 |[Websockets at lower level](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-26-jan-2019.md#3---websockets-at-lower-level) |
 |[Websockets and asyncio](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-26-jan-2019.md#4---websockets-and-asyncio) |
+|[Simple function call parallelization](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-22-jan-2019.md#1---simple-function-call-parallelization) |
 |[Probability simulations!](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-21-jan-2019.md#1---probability-simulations!) |
 |[Https://locust.io/](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-17-jan-2019.md#1---https://locust.io/) |
 |[Flask counter](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-16-jan-2019.md#1---flask-counter) |
