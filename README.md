@@ -9,6 +9,7 @@
 | LINK |
 |------|
 |[Python mocks](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-26-jan-2020.md#1---python-mocks) |
+|[Mocking library functions](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-26-jan-2020.md#2---mocking-library-functions) |
 |[Faulthandler](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-15-jan-2020.md#1---faulthandler) |
 |[Termios handy password prompt](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-15-jan-2020.md#2---termios-handy-password-prompt) |
 |[Difflib to get edits](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-15-jan-2020.md#3---difflib-to-get-edits) |

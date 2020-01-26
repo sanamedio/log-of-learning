@@ -1,5 +1,5 @@
 git pull
 python3 readme_generator.py > README.md
-git add --all
+git add notes/* deploy.sh README.md
 git commit -m "auto-update"
 git push --force
