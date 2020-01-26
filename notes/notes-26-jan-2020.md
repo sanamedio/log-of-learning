@@ -1,4 +1,38 @@
 # 26-jan-2020
+T
+### 2 - Mocking library functions
+
+```python
+In [6]: from unittest import mock
+
+In [7]: json = mock.Mock()
+
+In [8]: json
+Out[8]: <Mock id='4509706616'>
+
+In [9]: json.dumps()
+Out[9]: <Mock name='mock.dumps()' id='4509727824'>
+
+In [10]: json.loads('{"k":"v"}').get('k')
+Out[10]: <Mock name='mock.loads().get()' id='4509786576'>
+
+In [11]: json.method_calls
+Out[11]: [call.dumps(), call.loads('{"k":"v"}')]
+```
+
+```python
+In [35]: from unittest.mock import patch
+
+In [36]: with patch('__main__.listdir') as listdir_mock:
+    ...:     listdir(".")
+    ...:     listdir("/")
+    ...:     print(listdir_mock.mock_calls)
+    ...:
+    ...:
+    ...:
+[call('.'), call('/')]
+```
+
 
 ### 1 - Python Mocks
 
