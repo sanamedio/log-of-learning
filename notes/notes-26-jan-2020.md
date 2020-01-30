@@ -21,6 +21,8 @@ Out[11]: [call.dumps(), call.loads('{"k":"v"}')]
 ```
 
 ```python
+In [34]: from os import listdir
+
 In [35]: from unittest.mock import patch
 
 In [36]: with patch('__main__.listdir') as listdir_mock:
