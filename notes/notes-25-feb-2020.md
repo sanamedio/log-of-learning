@@ -16,7 +16,6 @@ print(m(2))
 #3
 ```
 - https://stackoverflow.com/q/16162015/2091949
-or more general template like this:
 
 ```python
 def my_side_effect(*args, **kwargs):
