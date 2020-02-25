@@ -1,5 +1,20 @@
 # 25-feb-2020
 
+### 3 - the side_effect can vary responses corresponding to args
+
+```python
+from unittest.mock import MagicMock
+
+def side_effect(value):
+    return value+1
+
+m = MagicMock(side_effect=side_effect)
+
+print(m(1))
+#2
+print(m(2))
+#3
+```
 
 ### 2 - recursive patching external calls
 
