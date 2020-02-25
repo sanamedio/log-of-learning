@@ -15,6 +15,20 @@ print(m(1))
 print(m(2))
 #3
 ```
+- https://stackoverflow.com/q/16162015/2091949
+or more general template like this:
+
+```python
+def my_side_effect(*args, **kwargs):
+    if args[0] == 42:
+        return "Called with 42"
+    elif args[0] == 43:
+        return "Called with 43"
+    elif kwargs['foo'] == 7:
+        return "Foo is seven"
+
+mockobj.mockmethod.side_effect = my_side_effect
+```
 
 ### 2 - recursive patching external calls
 
