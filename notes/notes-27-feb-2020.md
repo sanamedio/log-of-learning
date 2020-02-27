@@ -1,5 +1,36 @@
 # 27-feb-2020
 
+### 2 - custom serialization
+
+https://hynek.me/articles/serialization/
+
+```python
+
+In [1]: from datetime import datetime
+   ...: from functools import singledispatch
+   ...:
+   ...: @singledispatch
+   ...: def to_serializable(val):
+   ...:     """Used by default."""
+   ...:     return str(val)
+   ...:
+   ...: @to_serializable.register(datetime)
+   ...: def ts_datetime(val):
+   ...:     """Used if *val* is an instance of datetime."""
+   ...:     return val.isoformat() + "Z"
+   ...:
+
+In [2]: import json
+
+In [3]: json.dumps({"msg" : "hi", "ts":  datetime.now()}, default=to_serializable)
+Out[3]: '{"msg": "hi", "ts": "2020-02-28T02:43:34.331539Z"}'
+
+In [4]: json.dumps({"msg" : "hi", "ts":  datetime.now()})
+---------------------------------------------------------------------------
+TypeError                                 Traceback (most recent call last)
+```
+
+
 ### 1 - cloudpickle
 
 - stronger capabilties than pickle
