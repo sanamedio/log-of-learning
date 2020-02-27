@@ -1,5 +1,12 @@
 # 27-feb-2020
 
+### 3 - Where is the underscore io
+
+- saw this as error while pickling objects
+
+- https://stackoverflow.com/questions/5003276/python-import-io
+
+
 ### 2 - custom serialization
 
 https://hynek.me/articles/serialization/
