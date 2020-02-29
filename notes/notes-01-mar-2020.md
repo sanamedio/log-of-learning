@@ -1,5 +1,13 @@
 # 01-mar-2020
 
+### 7 - layering of different io objects
+
+```python
+f = io.FileIO("foo.txt") # Open the file (raw I/O) 
+g = io.BufferedReader(f) # Put buffering around it 
+h = io.TextIOWrapper(g,"utf-8") # Text I/O wrapper
+```
+
 ### 6 - FileIO object
 
 ```python
