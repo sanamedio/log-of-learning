@@ -1,5 +1,13 @@
 # 01-mar-2020
 
+### 6 - FileIO object
+
+```python
+f = io.FileIO("somefile","r") 
+data = f.read(4096) 
+f.seek(16384,os.SEEK_SET)
+```
+
 ### 5 - return type of open call
 
 ```python
