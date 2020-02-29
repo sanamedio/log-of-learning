@@ -1,5 +1,19 @@
 # 01-mar-2020
 
+### 8 - putting bytes in stdout
+
+```python
+>>> import sys
+>>> sys.stdout.write(b"Hello World\n") 
+Traceback (most recent call last):
+File "<stdin>", line 1, in <module> 
+TypeError: must be str, not bytes
+>>> sys.stdout.buffer.write(b"Hello World\n") 
+Hello World
+12
+>>>
+```
+
 ### 7 - layering of different io objects
 
 ```python
