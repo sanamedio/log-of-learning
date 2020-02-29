@@ -1,7 +1,22 @@
 # 01-mar-2020
 
+### 4 - memoryview
+
+- from david beazley masteringIO.pdf
+
+```python
+>>> a = bytearray(b'Hello World') 
+>>> b = memoryview(a)
+>>> b
+<memory at 0x1007014d0>
+>>> b[-5:] = b'There'
+>>> a
+bytearray(b'Hello There') >>>
+```
+
 ### 3 - run a bytearray through xor cipher
 
+- from david beazley masteringIO.pdf
 - notice the we used comprehension in a function argument directly!
 
 ```python
