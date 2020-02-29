@@ -11,7 +11,8 @@
 <memory at 0x1007014d0>
 >>> b[-5:] = b'There'
 >>> a
-bytearray(b'Hello There') >>>
+bytearray(b'Hello There') 
+>>>
 ```
 
 ### 3 - run a bytearray through xor cipher
