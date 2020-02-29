@@ -1,5 +1,19 @@
 # 01-mar-2020
 
+### 3 - run a bytearray through xor cipher
+
+- notice the we used comprehension in a function argument directly!
+
+```python
+>>> s = b"Hello World"
+>>> t = bytes(x^42 for x in s) 
+>>> t
+b'bOFFE\n}EXFN'
+>>> bytes(x^42 for x in t) 
+b'Hello World'
+>>>
+```
+
 ### 2 - joining vs concat has 1000x difference in performance
 
 from MasteringIO.pdf by david beazley
