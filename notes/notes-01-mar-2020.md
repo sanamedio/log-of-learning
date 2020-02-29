@@ -1,5 +1,18 @@
 # 01-mar-2020
 
+### 5 - return type of open call
+
+```python
+>>> open("foo.txt","rt")
+<_io.TextIOWrapper name='foo.txt' encoding='UTF-8'> 
+
+>>> open("foo.txt","rb")
+<_io.BufferedReader name='foo.txt'>
+
+>>> open("foo.txt","rb",buffering=0)
+<_io.FileIO name='foo.txt' mode='rb'>
+```
+
 ### 4 - memoryview
 
 - from david beazley masteringIO.pdf
