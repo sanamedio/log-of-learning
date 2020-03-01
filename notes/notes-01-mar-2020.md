@@ -1,5 +1,30 @@
 # 01-mar-2020
 
+### 11 - meta_path and find_spec 
+
+```python
+>>> import sys
+>>> sys.meta_path
+[<class '_frozen_importlib.BuiltinImporter'>, <class '_frozen_importlib.FrozenImporter'>, <class '_frozen_importlib_external.PathFinder'>]
+>>> from importlib.util import find_spec
+>>> find_spec('sys')
+ModuleSpec(name='sys', loader=<class '_frozen_importlib.BuiltinImporter'>)
+>>> find_spec('socket')
+ModuleSpec(name='socket', loader=<_frozen_importlib_external.SourceFileLoader object at 0x11057f908>, origin='/Users/username/.pyenv/versions/3.6.1/lib/python3.6/socket.py')
+>>> find_spec('math')
+ModuleSpec(name='math', loader=<_frozen_importlib_external.ExtensionFileLoader object at 0x11057f9b0>, origin='/Users/username/.pyenv/versions/3.6.1/lib/python3.6/lib-dynload/math.cpython-36m-darwin.so')
+>>> spec = find_spec('socket')
+>>> spec.name
+'socket'
+>>> spec.origin
+'/Users/username/.pyenv/versions/3.6.1/lib/python3.6/socket.py'
+>>> spec.cached
+'/Users/username/.pyenv/versions/3.6.1/lib/python3.6/__pycache__/socket.cpython-36.pyc'
+>>> src = spec.loader.get_source(spec.name)
+>>> src
+##dumps source code here
+```
+
 ### 10 - monkeypatching builtins
 
 ```python
