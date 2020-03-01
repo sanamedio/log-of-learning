@@ -1,5 +1,27 @@
 # 01-mar-2020
 
+### 9 - zips can be imported
+
+- .zip files added to sys.path work as if they were normal directories
+
+Example: Creating a .zip file
+```
+% zip -r myfiles.zip blah.py foo.py 
+adding: blah.py (deflated 13%) 
+adding: foo.py (deflated 10%)
+```
+
+```python
+>>> import sys
+>>> sys.path.append('myfiles.zip')
+>>> import blah # Loads myfiles.zip/blah.py
+>>> import foo # Loads myfiles.zip/foo.py
+```
+
+- .egg files are actually just directories or .zip files with extra metadata (for package managers), associated with setuptools
+
+
+
 ### 8 - putting bytes in stdout
 
 ```python
