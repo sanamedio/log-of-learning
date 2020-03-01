@@ -1,5 +1,35 @@
 # 01-mar-2020
 
+### 10 - monkeypatching builtins
+
+```python
+>>> def my_import(modname, *args, imp=__import__):
+...     print('importing', modname)
+...     return imp(modname, *args)
+...
+>>> import builtins
+>>> builtins.__import__ = my_import
+>>> import socket
+importing socket
+importing _socket
+importing _socket
+importing os
+importing sys
+importing io
+importing selectors
+importing abc
+importing collections
+importing math
+importing select
+importing sys
+importing builtins
+importing operator
+importing collections
+importing enum
+importing errno
+>>>
+```
+
 ### 9 - zips can be imported
 
 - .zip files added to sys.path work as if they were normal directories
