@@ -20,6 +20,7 @@ adding: foo.py (deflated 10%)
 
 - .egg files are actually just directories or .zip files with extra metadata (for package managers), associated with setuptools
 
+- ```python -vv``` can be used to identify what is tried while importing
 
 
 ### 8 - putting bytes in stdout
