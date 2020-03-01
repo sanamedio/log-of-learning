@@ -8,6 +8,26 @@
 
 | LINK |
 |------|
+|[Unicode in python3](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-01-mar-2020.md#1---unicode-in-python3) |
+|[Joining vs concat has 1000x difference in performance](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-01-mar-2020.md#2---joining-vs-concat-has-1000x-difference-in-performance) |
+|[Run a bytearray through xor cipher](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-01-mar-2020.md#3---run-a-bytearray-through-xor-cipher) |
+|[Memoryview](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-01-mar-2020.md#4---memoryview) |
+|[Return type of open call](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-01-mar-2020.md#5---return-type-of-open-call) |
+|[Fileio object](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-01-mar-2020.md#6---fileio-object) |
+|[Layering of different io objects](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-01-mar-2020.md#7---layering-of-different-io-objects) |
+|[Putting bytes in stdout](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-01-mar-2020.md#8---putting-bytes-in-stdout) |
+|[Zips can be imported](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-01-mar-2020.md#9---zips-can-be-imported) |
+|[Monkeypatching builtins](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-01-mar-2020.md#10---monkeypatching-builtins) |
+|[Meta_path and find_spec](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-01-mar-2020.md#11---metapath-and-findspec) |
+|[Reading variables from previous frames in python](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-28-feb-2020.md#1---reading-variables-from-previous-frames-in-python) |
+|[Cloudpickle](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-27-feb-2020.md#1---cloudpickle) |
+|[Custom serialization](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-27-feb-2020.md#2---custom-serialization) |
+|[Where is the underscore io](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-27-feb-2020.md#3---where-is-the-underscore-io) |
+|[Aspectlib for aop in python](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-25-feb-2020.md#1---aspectlib-for-aop-in-python) |
+|[Recursive patching external calls](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-25-feb-2020.md#2---recursive-patching-external-calls) |
+|[The side_effect can vary responses corresponding to args](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-25-feb-2020.md#3---the-sideeffect-can-vary-responses-corresponding-to-args) |
+|[Exiting python without exception](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-07-feb-2020.md#1---exiting-python-without-exception) |
+|[Patching patch and mock](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-30-jan-2020.md#1---patching-patch-and-mock) |
 |[Python mocks](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-26-jan-2020.md#1---python-mocks) |
 |[Mocking library functions](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-26-jan-2020.md#2---mocking-library-functions) |
 |[Faulthandler](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-15-jan-2020.md#1---faulthandler) |
