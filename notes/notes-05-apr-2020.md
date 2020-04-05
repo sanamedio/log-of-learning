@@ -3,6 +3,7 @@
 ### 1 - pytorch basic example
 
 Tries to find out a equation based on data; but very handtuned by the author.
+https://github.com/vahidk/EffectivePyTorch
 
 ```python
 import numpy as np
