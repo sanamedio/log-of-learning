@@ -8,6 +8,10 @@
 
 | LINK |
 |------|
+|[Pytorch examples](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-09-apr-2020.md#1---pytorch-examples) |
+|[Pytorch basic example](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-05-apr-2020.md#1---pytorch-basic-example) |
+|[Openai gym q-learning](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-15-mar-2020.md#1---openai-gym-q-learning) |
+|[Modifying variables from the past](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-03-mar-2020.md#1---modifying-variables-from-the-past) |
 |[Unicode in python3](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-01-mar-2020.md#1---unicode-in-python3) |
 |[Joining vs concat has 1000x difference in performance](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-01-mar-2020.md#2---joining-vs-concat-has-1000x-difference-in-performance) |
 |[Run a bytearray through xor cipher](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-01-mar-2020.md#3---run-a-bytearray-through-xor-cipher) |
@@ -121,6 +125,7 @@
 |[Bool type in parameters](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-27-mar-2019.md#6---bool-type-in-parameters) |
 |[Multiple parameters](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-27-mar-2019.md#7---multiple-parameters) |
 |[Fastapi](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-23-mar-2019.md#1---fastapi) |
+|[Simple reinforcement q learning](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-22-mar-2019.md#1---simple-reinforcement-q-learning) |
 |[Multithreaded hello world](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-21-mar-2019.md#1---multithreaded-hello-world) |
 |[Dining philosophers](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-21-mar-2019.md#2---dining-philosophers) |
 |[Str2dict](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-03-mar-2019.md#1---str2dict) |
@@ -741,6 +746,7 @@
 
 | LINK |
 |------|
+|[Comparing branches git](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-09-mar-2020.md#1---comparing-branches-git) |
 |[Mongodb oplog access](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-08-dec-2019.md#2---mongodb-oplog-access) |
 |[A + b = c using regex](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-08-dec-2019.md#3---a-+-b-=-c-using-regex) |
 |[Difference between let and var in js](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-08-dec-2019.md#5---difference-between-let-and-var-in-js) |
