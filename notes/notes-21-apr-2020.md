@@ -1,5 +1,26 @@
 # 21-apr-2020
 
+### 6 - passing functions into max
+
+```python
+>>> winnings = [ 'j', 'b', 'b', 's', 'b', 'j']
+>>> max( set(winnings), key = winnings.count)
+'b'
+>>> max((winnings), key = winnings.count)
+'b'
+>>>
+
+>>> model_scores = {'model_a': 100, 'model_z': 198, 'model_t': 150}
+>>> # workaround
+>>> keys, values = list(model_scores.keys()), list(model_scores.values())
+>>> keys[values.index(max(values))]
+'model_z'
+>>> # one-line
+>>> max(model_scores, key=model_scores.get)
+'model_z'
+```
+
+
 ### 5 - isdisjoint with set and use of filter
 
 [source](https://medium.com/better-programming/30-simple-tricks-to-level-up-your-python-coding-5b625c15b79a)
@@ -31,6 +52,13 @@ Type "help", "copyright", "credits" or "license" for more information.
 ...
 9
 >>>
+
+>>> a = ['j', 'a', 'k', 'd', 'c']
+>>> if (n := len(a))%2 == 1:
+...     print(f'The number of letters is {n}, which is odd.')
+...
+The number of letters is 5, which is odd.
+
 ```
 
 ### 3 - providing more than one input to map
