@@ -1,5 +1,16 @@
 # 21-apr-2020
 
+### 8 - .closed for file
+
+```python
+>>> with open(".bash_profile") as f:
+...     pass
+...
+>>> f.closed
+True
+>>>
+```
+
 ### 7 - why isinstance over type
 
 ```python
