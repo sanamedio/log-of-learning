@@ -1,5 +1,21 @@
 # 21-apr-2020
 
+### 7 - why isinstance over type
+
+```python
+>>> def check_type(number):
+...     if type(number) == int:
+...         print('do something with an int')
+...     if isinstance(number, (int, float)):
+...         print('do something with an int or float')
+... 
+>>> check_type(5)
+do something with an int
+do something with an int or float
+>>> check_type(4.2)
+do something with an int or float
+```
+
 ### 6 - passing functions into max
 
 ```python
