@@ -1,5 +1,21 @@
 # 21-apr-2020
 
+### 5 - isdisjoint with set and use of filter
+
+[source](https://medium.com/better-programming/30-simple-tricks-to-level-up-your-python-coding-5b625c15b79a)
+
+```python
+>>> def good_word(x: str):
+...     has_vowels = not set('aeiou').isdisjoint(x.lower())
+...     long_enough = len(x) > 7
+...     good_start = x.lower().startswith('pre')
+...     return has_vowels & long_enough & good_start
+... 
+>>> words = ['Good', 'Presentation', 'preschool', 'prefix']
+>>> list(filter(good_word, words))
+['Presentation', 'preschool']
+```
+
 ### 4 - new walrus operator for inline assignment
 
 ```python
