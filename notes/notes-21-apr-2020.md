@@ -1,5 +1,17 @@
 # 21-apr-2020
 
+### 9 - walrus operator with list comprehension
+
+```python
+>>> letters = list('this is to produce a list of letters')
+>>> letters
+['t', 'h', 'i', 's', ' ', 'i', 's', ' ', 't', 'o', ' ', 'p', 'r', 'o', 'd', 'u', 'c', 'e', ' ', 'a', ' ', 'l', 'i', 's', 't', ' ', 'o', 'f', ' ', 'l', 'e', 't', 't', 'e', 'r', 's']
+>>> import random
+>>> vowels = [letter.upper() for _ in range(0, 10) if (letter := random.choice(letters)) in list('aeoui')]
+>>> vowels
+['I', 'O', 'O', 'O', 'O']
+```
+
 ### 8 - .closed for file
 
 ```python
