@@ -8,6 +8,11 @@
 
 | LINK |
 |------|
+|[Adding a new attribute to existing object](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-27-apr-2020.md#1---adding-a-new-attribute-to-existing-object) |
+|[Coverage tool using sys.settrace](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-27-apr-2020.md#2---coverage-tool-using-sys.settrace) |
+|[Strings without commas](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-25-apr-2020.md#1---strings-without-commas) |
+|[Writing a file context manager](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-25-apr-2020.md#2---writing-a-file-context-manager) |
+|[Cgit for better exceptions](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-25-apr-2020.md#3---cgit-for-better-exceptions) |
 |[Zip in python](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-21-apr-2020.md#1---zip-in-python) |
 |[Embedding conditional in print](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-21-apr-2020.md#2---embedding-conditional-in-print) |
 |[Providing more than one input to map](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-21-apr-2020.md#3---providing-more-than-one-input-to-map) |
