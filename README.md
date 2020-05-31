@@ -8,6 +8,10 @@
 
 | LINK |
 |------|
+|[Lstrip and rstrip weirdness](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-29-may-2020.md#1---lstrip-and-rstrip-weirdness) |
+|[Asyncio repl](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-25-may-2020.md#1---asyncio-repl) |
+|[Interact inside pdb](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-21-may-2020.md#1---interact-inside-pdb) |
+|[Pythonbreakpoint](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-21-may-2020.md#2---pythonbreakpoint) |
 |[Adding a new attribute to existing object](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-27-apr-2020.md#1---adding-a-new-attribute-to-existing-object) |
 |[Coverage tool using sys.settrace](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-27-apr-2020.md#2---coverage-tool-using-sys.settrace) |
 |[Strings without commas](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-25-apr-2020.md#1---strings-without-commas) |
