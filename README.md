@@ -4,13 +4,15 @@
 # =================
 
 
-[ 797 ]
+[ 799 ]
 
 # Python
 
 
 | LINK |
 |------|
+|[Weird scoping rules](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-19-jun-2020.md#1---weird-scoping-rules) |
+|[Power of 2 iterator](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-15-jun-2020.md#1---power-of-2-iterator) |
 |[Lstrip and rstrip weirdness](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-29-may-2020.md#1---lstrip-and-rstrip-weirdness) |
 |[Asyncio repl](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-25-may-2020.md#1---asyncio-repl) |
 |[Interact inside pdb](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-21-may-2020.md#1---interact-inside-pdb) |
