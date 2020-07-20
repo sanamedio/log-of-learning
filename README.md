@@ -9,7 +9,7 @@
 # Python
 
 
-| LINK |
+| 🐍 |
 |------|
 |[Usefulness of comparators](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-20-jul-2020.md#1---usefulness-of-comparators) |
 |[Accumulate from itertools](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-04-jul-2020.md#1---accumulate-from-itertools) |
@@ -771,7 +771,7 @@
 # General
 
 
-| LINK |
+| 🐍 |
 |------|
 |[Comparing branches git](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-09-mar-2020.md#1---comparing-branches-git) |
 |[Mongodb oplog access](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-08-dec-2019.md#2---mongodb-oplog-access) |
