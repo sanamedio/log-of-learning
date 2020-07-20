@@ -1,3 +1,4 @@
+git fetch
 git pull
 python3 readme_generator.py > README.md
 git add notes/* deploy.sh README.md

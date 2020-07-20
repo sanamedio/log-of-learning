@@ -4,13 +4,16 @@
 # =================
 
 
-[ 799 ]
+[ 802 ]
 
 # Python
 
 
 | LINK |
 |------|
+|[Usefulness of comparators](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-20-jul-2020.md#1---usefulness-of-comparators) |
+|[Accumulate from itertools](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-04-jul-2020.md#1---accumulate-from-itertools) |
+|[Floating point issues](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-28-jun-2020.md#1---floating-point-issues) |
 |[Weird scoping rules](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-19-jun-2020.md#1---weird-scoping-rules) |
 |[Power of 2 iterator](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-15-jun-2020.md#1---power-of-2-iterator) |
 |[Lstrip and rstrip weirdness](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-29-may-2020.md#1---lstrip-and-rstrip-weirdness) |
