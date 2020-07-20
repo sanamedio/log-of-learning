@@ -1,5 +1,39 @@
 # 20-jul-2020
 
+### 2 - bottom view of binary tree
+
+https://practice.geeksforgeeks.org/problems/bottom-view-of-binary-tree/1
+
+```python
+def bottomView(root):
+    '''
+    :param root: root of the binary tree
+    :return: list containing the bottom view from left to right
+    '''
+    if not root:
+        return []
+    # code here
+    m = {}
+    def x(s,y,level):
+        if not s:
+            return
+        
+        if y not in m or ( y in m and m[y][1] <= level):
+            m[y]=(s.data,level)
+        
+        x(s.left,y-1,level+1)
+        x(s.right,y+1,level+1)
+    
+    x(root,0,0)
+    result = []
+    mn = min(m.keys())
+    mx = max(m.keys())
+
+    for i in range(mn,mx+1):
+        result+= [m[i][0]]
+    return result
+```
+
 ### 1 - usefulness of comparators
 
 - https://www.geeksforgeeks.org/given-an-array-of-numbers-arrange-the-numbers-to-form-the-biggest-number/
