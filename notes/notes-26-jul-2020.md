@@ -1,5 +1,28 @@
 # 26-jul-2020
 
+### 5 - deepdiff | DeepHash
+
+```python
+In [15]: from deepdiff import DeepHash
+
+In [16]: obj = {1:2, "a": "b" }
+
+In [17]: hash(obj)
+---------------------------------------------------------------------------
+TypeError                                 Traceback (most recent call last)
+<ipython-input-17-e3ef47dce4f7> in <module>
+----> 1 hash(obj)
+
+TypeError: unhashable type: 'dict'
+
+In [18]: DeepHash(obj)
+Out[18]: {1: 'c1800a30c736483f13615542e7096f7973631fef8ca935ee1ed9f35fb06fd44e', 2: '610e2bb86cee5362640bd1ab01b8a4a4559cced9dd6058376894c041629a7b69', 'a': '980410da9522db17c3ab8743541f192a5ab27772a6154dbc7795ee909e653a5c', 'b': 'd05faa460a5b4fbbfbd54286ef4e3080f5420c61daf22663163af098cd10182c', '!>*id4346798976': 'bf5478de322aa033da36bf3bcf9f0599e13a520773f50c6eb9f2487377a7929b'}
+
+In [19]: DeepHash(obj)[obj]
+Out[19]: 'bf5478de322aa033da36bf3bcf9f0599e13a520773f50c6eb9f2487377a7929b'
+
+```
+
 ### 4 - deepdiff | DeepSearch
 
 ```python
