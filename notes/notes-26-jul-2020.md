@@ -1,6 +1,23 @@
 # 26-jul-2020
 
-### 3 - deepdiff
+### 4 - deepdiff | DeepSearch
+
+```python
+In [7]: from deepdiff import grep
+In [8]: from pprint import pprint
+In [9]: obj = ["long somewhere", "string", 0, "somewhere great!"]
+In [10]: item = "somewhere"
+In [11]: ds = obj | grep(item)
+In [12]: pprint(ds)
+{'matched_values': OrderedSet(['root[0]', 'root[3]'])}
+In [13]: obj = ["something somewhere", {"long": "somewhere", "string": 2, 0: 0,
+    ...: "somewhere": "around"}]
+In [14]: pprint( obj | grep(item) )
+{'matched_paths': OrderedSet(["root[1]['somewhere']"]),
+ 'matched_values': OrderedSet(['root[0]', "root[1]['long']"])}
+ ```
+
+### 3 - deepdiff | DeepDiff
 
 - https://github.com/seperman/deepdiff
 - Library seems to be useful for operations in deeply nested objects
