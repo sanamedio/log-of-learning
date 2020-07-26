@@ -1,5 +1,42 @@
 # 26-jul-2020
 
+### 6 - deepdiff | Delta
+
+- getting diffs and storing them in a serializable delta object. Might be handy someday.
+
+```python
+In [20]: from deepdiff import DeepDiff, Delta
+
+In [22]: t1 = [1,2,3]
+
+In [23]: t2 = ['a', 2, 3, 4]
+
+In [24]: diff = DeepDiff(t1,t2)
+
+In [25]: diff
+Out[25]:
+{'type_changes': {'root[0]': {'old_type': int,
+   'new_type': str,
+   'old_value': 1,
+   'new_value': 'a'}},
+ 'iterable_item_added': {'root[3]': 4}}
+
+In [26]: delta = Delta(diff)
+
+In [27]: delta
+Out[27]: <Delta: {'type_changes': {'root[0]': {'old_type': <class 'int'>, 'new_type': <class 'str'>, 'new_value': ...}>
+
+In [28]: t1 + delta
+Out[28]: ['a', 2, 3, 4]
+
+In [29]: t1 + delta == t2
+Out[29]: True
+
+In [30]: delta.dumps()
+Out[30]: b'\x80\x04\x95\x8d\x00\x00\x00\x00\x00\x00\x00}\x94(\x8c\x0ctype_changes\x94}\x94\x8c\x07root[0]\x94}\x94(\x8c\x08old_type\x94\x8c\x08builtins\x94\x8c\x03int\x94\x93\x94\x8c\x08new_type\x94h\x06\x8c\x03str\x94\x93\x94\x8c\tnew_value\x94\x8c\x01a\x94us\x8c\x13iterable_item_added\x94}\x94\x8c\x07root[3]\x94K\x04su.'
+
+```
+
 ### 5 - deepdiff | DeepHash
 
 ```python
