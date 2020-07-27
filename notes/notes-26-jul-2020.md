@@ -1,6 +1,6 @@
 # 26-jul-2020
 
-### 6 - deepdiff | Delta
+### 6 - deepdiff Delta
 
 - getting diffs and storing them in a serializable delta object. Might be handy someday.
 
@@ -60,7 +60,7 @@ Out[19]: 'bf5478de322aa033da36bf3bcf9f0599e13a520773f50c6eb9f2487377a7929b'
 
 ```
 
-### 4 - deepdiff | DeepSearch
+### 4 - deepdiff DeepSearch
 
 ```python
 In [7]: from deepdiff import grep
@@ -77,7 +77,7 @@ In [14]: pprint( obj | grep(item) )
  'matched_values': OrderedSet(['root[0]', "root[1]['long']"])}
  ```
 
-### 3 - deepdiff | DeepDiff
+### 3 - deepdiff DeepDiff
 
 - https://github.com/seperman/deepdiff
 - Library seems to be useful for operations in deeply nested objects
@@ -117,7 +117,7 @@ In [7]:
 ```
 
 
-### 2 - functools.total_ordering
+### 2 - functools total_ordering
 
 - https://docs.python.org/3/library/functools.html#functools.total_ordering
 
@@ -142,7 +142,7 @@ Out[5]: False
 
 ```
 
-### 1 - math.prod
+### 1 - math prod
 
 ```python3
 from math import prod
