@@ -37,7 +37,7 @@ Out[30]: b'\x80\x04\x95\x8d\x00\x00\x00\x00\x00\x00\x00}\x94(\x8c\x0ctype_change
 
 ```
 
-### 5 - deepdiff | DeepHash
+### 5 - deepdiff DeepHash
 
 ```python
 In [15]: from deepdiff import DeepHash
