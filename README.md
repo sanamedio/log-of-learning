@@ -4,14 +4,21 @@
 # =================
 
 
-[ 802 ]
+[ 809 ]
 
 # Python
 
 
 | 🐍 |
 |------|
+|[Math.prod](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-26-jul-2020.md#1---math.prod) |
+|[Functools.total_ordering](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-26-jul-2020.md#2---functools.totalordering) |
+|[Deepdiff | deepdiff](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-26-jul-2020.md#3---deepdiff-|-deepdiff) |
+|[Deepdiff | deepsearch](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-26-jul-2020.md#4---deepdiff-|-deepsearch) |
+|[Deepdiff | deephash](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-26-jul-2020.md#5---deepdiff-|-deephash) |
+|[Deepdiff | delta](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-26-jul-2020.md#6---deepdiff-|-delta) |
 |[Usefulness of comparators](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-20-jul-2020.md#1---usefulness-of-comparators) |
+|[Bottom view of binary tree](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-20-jul-2020.md#2---bottom-view-of-binary-tree) |
 |[Accumulate from itertools](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-04-jul-2020.md#1---accumulate-from-itertools) |
 |[Floating point issues](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-28-jun-2020.md#1---floating-point-issues) |
 |[Weird scoping rules](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-19-jun-2020.md#1---weird-scoping-rules) |
