@@ -2,11 +2,15 @@
 
 ### 6 - getting function signature
 
-```python
+```
 >>> import inspect
 >>> inspect.getargspec([].index)
 <stdin>:1: DeprecationWarning: inspect.getargspec() is deprecated since Python 3.0, use inspect.signature() or inspect.getfullargspec()
 ArgSpec(args=['self', 'value', 'start', 'stop'], varargs=None, keywords=None, defaults=(0, 9223372036854775807))
+>>> inspect.signature([].index)
+<Signature (value, start=0, stop=9223372036854775807, /)>
+>>> inspect.getfullargspec([].index)
+FullArgSpec(args=['self', 'value', 'start', 'stop'], varargs=None, varkw=None, defaults=(0, 9223372036854775807), kwonlyargs=[], kwonlydefaults=None, annotations={})
 >>>
 ```
 
