@@ -3,6 +3,7 @@
 ### 10 - assertRaises
 
 [stackoverflow](https://stackoverflow.com/questions/6103825/how-to-properly-use-unit-testings-assertraises-with-nonetype-objects)
+https://ongspxm.gitlab.io/blog/2016/11/assertraises-testing-for-errors-in-unittest/
 
 ```python
 from unittest import TestCase
