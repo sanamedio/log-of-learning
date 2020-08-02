@@ -13,13 +13,7 @@ https://docs.python.org/3/library/unittest.mock.html
 >>> m.text
 <Mock name='mock.text' id='4506786592'>
 >>> m.text2
-Traceback (most recent call last):
-  File "<stdin>", line 1, in <module>
-  File "/Users/i0814/.pyenv/versions/3.8.0/lib/python3.8/unittest/mock.py", line 653, in __getattr__
-    result = self._get_child_mock(
-  File "/Users/i0814/.pyenv/versions/3.8.0/lib/python3.8/unittest/mock.py", line 1017, in _get_child_mock
-    raise AttributeError(mock_name)
-AttributeError: mock.text2
+# AttributeError: mock.text2
 >>>
 ```
 
