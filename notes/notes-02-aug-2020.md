@@ -1,5 +1,14 @@
 # 02-aug-2020
 
+### 19 - ImportError
+
+```
+try:
+    import gzip
+except ImportError:
+    gzip = None
+```
+
 ### 18 - subclasshook
 
 ```python
