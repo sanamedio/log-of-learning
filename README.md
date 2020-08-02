@@ -23,6 +23,8 @@
 |[Multiple initializations in same with](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-02-aug-2020.md#14---multiple-initializations-in-same-with) |
 |[Sentinel from unittest](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-02-aug-2020.md#15---sentinel-from-unittest) |
 |[Mock sealing](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-02-aug-2020.md#16---mock-sealing) |
+|[Issubclasscheck](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-02-aug-2020.md#17---issubclasscheck) |
+|[Subclasshook](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-02-aug-2020.md#18---subclasshook) |
 |[Math prod](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-26-jul-2020.md#1---math-prod) |
 |[Functools total_ordering](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-26-jul-2020.md#2---functools-totalordering) |
 |[Deepdiff deepdiff](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-26-jul-2020.md#3---deepdiff-deepdiff) |
