@@ -1,5 +1,33 @@
 # 02-aug-2020
 
+### 8 - pydispatcher
+
+`pip install pydispatcher`
+
+```python
+from pydispatch import dispatcher
+
+SIGNAL = "my-first-signal"
+
+
+def handle_event( sender ):
+    print("Signal was ent by ", sender)
+
+
+dispatcher.connect( handle_event, signal=SIGNAL, sender=dispatcher.Any)
+
+
+first_sender = object()
+second_sender = {}
+
+
+def main():
+    dispatcher.send( signal=SIGNAL, sender=first_sender)
+    dispatcher.send( signal=SIGNAL, sender=second_sender)
+
+main()
+```
+
 ### 7 - minimalistic hooks
 
 https://stackoverflow.com/questions/4309607/whats-the-preferred-way-to-implement-a-hook-or-callback-in-python
