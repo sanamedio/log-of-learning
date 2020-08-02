@@ -1,5 +1,51 @@
 # 02-aug-2020
 
+### 7 - minimalistic hooks
+
+```python
+class hookify(object):
+
+    def __init__(self, func):
+        self.callbacks = []
+        self.basefunc = func
+
+    def __iadd__(self, func):
+        if callable(func):
+            self.callbacks.append(func)
+        return self
+    
+    def callback(self, func):
+        if callable(func):
+            self.callbacks.append(func)
+        return func
+    
+    def __call__(self, *args, **kwargs):
+        result = self.basefunc(*args, **kwargs)
+        for func in self.callbacks:
+            newresult = func(result)
+            result = result if newresult is None else newresult
+        return result
+
+
+@hookify
+def intfactory(num):
+    return int(num)
+
+def notify(num):
+    print("notify:", num)
+
+def increment(num):
+    return num + 1
+
+intfactory += notify
+intfactory += increment
+intfactory += lambda num: num*2
+intfactory += notify
+
+intfactory(3)
+```
+
+
 ### 6 - getting function signature
 
 ```python
