@@ -1,5 +1,30 @@
 # 02-aug-2020
 
+### 12 - perf_counter and process_time
+
+https://stackoverflow.com/q/25785243/2091949
+
+```python
+In [11]: from time import perf_counter as clock
+
+In [12]: clock()
+Out[12]: 968.82726198
+
+In [13]: clock()
+Out[13]: 969.962888333
+
+In [14]: from time import process_time
+
+In [15]: process_time()
+Out[15]: 3.524516
+
+In [16]: process_time()
+Out[16]: 3.561495
+
+In [17]: process_time()
+Out[17]: 3.59703
+```
+
 ### 11 - ctypes Structure objects
 
 ```python
