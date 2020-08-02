@@ -3,13 +3,10 @@
 # programming-notes
 # =================
 
-
-[ 825 ]
-
 # Python
 
 
-| 🐍 |
+| LINK |
 |------|
 |[Isnan](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-02-aug-2020.md#2---isnan) |
 |[Round function](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-02-aug-2020.md#3---round-function) |
@@ -793,7 +790,7 @@
 # General
 
 
-| 🐍 |
+| LINK |
 |------|
 |[Math related funcs](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-02-aug-2020.md#1---math-related-funcs) |
 |[Comparing branches git](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-09-mar-2020.md#1---comparing-branches-git) |
