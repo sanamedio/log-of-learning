@@ -1,5 +1,25 @@
 # 02-aug-2020
 
+### 13 - checking errors in unittest
+
+```python
+import unittest
+
+class TestNoneTypeError(unittest.TestCase):
+
+
+    def setUp(self):
+        self.testListNone = None
+
+    def testListSlicing(self):
+        with self.assertRaises(TypeError) as ctx:
+            self.testListNone[:1]
+
+        self.assertEqual("'NoneType' object is not subscriptable", str(ctx.exception))
+
+unittest.main()
+```
+
 ### 12 - perf_counter and process_time
 
 https://stackoverflow.com/q/25785243/2091949
