@@ -1,5 +1,15 @@
 # 02-aug-2020
 
+### 5 - extending a list
+
+```
+>>> l = ["a","b" ]
+>>> l[len(l):] = ["c","d"]
+>>> l
+['a', 'b', 'c', 'd']
+>>>
+```
+
 ### 4 - columnwise matrix
 
 ```python
