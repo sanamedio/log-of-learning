@@ -1,5 +1,26 @@
 # 02-aug-2020
 
+### 10 - assertRaises
+
+[stackoverflow](https://stackoverflow.com/questions/6103825/how-to-properly-use-unit-testings-assertraises-with-nonetype-objects)
+
+```python
+from unittest import TestCase
+
+class TestNoneTypeError(TestCase):
+
+    def setUp(self):
+        self.testListNone = None
+
+    def testListSlicing(self):
+        with self.assertRaises(TypeError) as ctx:
+            self.testListNone[:1]
+
+        self.assertEqual("'NoneType' object is not subscriptable", str(ctx.exception))
+```
+
+run via `python -m unittest <filename.py>`
+
 ### 9 - hexlify
 
 ```python
