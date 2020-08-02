@@ -1,5 +1,15 @@
 # 02-aug-2020
 
+### 14 - comma separated arguments to with
+
+```python
+>>> with open("a.txt","w") as f1, open("b.txt","w") as f2:
+...     print(f1,f2)
+...
+<_io.TextIOWrapper name='a.txt' mode='w' encoding='UTF-8'> <_io.TextIOWrapper name='b.txt' mode='w' encoding='UTF-8'>
+>>>
+```
+
 ### 13 - checking errors in unittest
 
 ```python
