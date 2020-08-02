@@ -4,13 +4,17 @@
 # =================
 
 
-[ 809 ]
+[ 814 ]
 
 # Python
 
 
 | 🐍 |
 |------|
+|[Isnan](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-02-aug-2020.md#2---isnan) |
+|[Round function](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-02-aug-2020.md#3---round-function) |
+|[Columnwise matrix](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-02-aug-2020.md#4---columnwise-matrix) |
+|[Extending a list](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-02-aug-2020.md#5---extending-a-list) |
 |[Math prod](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-26-jul-2020.md#1---math-prod) |
 |[Functools total_ordering](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-26-jul-2020.md#2---functools-totalordering) |
 |[Deepdiff deepdiff](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-26-jul-2020.md#3---deepdiff-deepdiff) |
@@ -780,6 +784,7 @@
 
 | 🐍 |
 |------|
+|[Math related funcs](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-02-aug-2020.md#1---math-related-funcs) |
 |[Comparing branches git](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-09-mar-2020.md#1---comparing-branches-git) |
 |[Mongodb oplog access](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-08-dec-2019.md#2---mongodb-oplog-access) |
 |[A + b = c using regex](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-08-dec-2019.md#3---a-+-b-=-c-using-regex) |
