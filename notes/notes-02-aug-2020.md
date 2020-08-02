@@ -2,7 +2,7 @@
 
 ### 19 - ImportError
 
-```
+```python
 try:
     import gzip
 except ImportError:
