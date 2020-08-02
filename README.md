@@ -4,7 +4,7 @@
 # =================
 
 
-[ 814 ]
+[ 817 ]
 
 # Python
 
@@ -15,6 +15,9 @@
 |[Round function](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-02-aug-2020.md#3---round-function) |
 |[Columnwise matrix](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-02-aug-2020.md#4---columnwise-matrix) |
 |[Extending a list](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-02-aug-2020.md#5---extending-a-list) |
+|[Getting function signature](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-02-aug-2020.md#6---getting-function-signature) |
+|[Minimalistic hooks](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-02-aug-2020.md#7---minimalistic-hooks) |
+|[Pydispatcher](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-02-aug-2020.md#8---pydispatcher) |
 |[Math prod](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-26-jul-2020.md#1---math-prod) |
 |[Functools total_ordering](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-26-jul-2020.md#2---functools-totalordering) |
 |[Deepdiff deepdiff](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-26-jul-2020.md#3---deepdiff-deepdiff) |
