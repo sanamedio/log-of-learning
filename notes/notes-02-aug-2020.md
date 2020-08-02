@@ -1,5 +1,12 @@
 # 02-aug-2020
 
+### 9 - hexlify
+
+```python
+from binascii import hexlify
+hexlify(memoryview(b"assdsd")).decode()
+```
+
 ### 8 - pydispatcher
 
 `pip install pydispatcher`
