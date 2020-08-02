@@ -1,5 +1,32 @@
 # 02-aug-2020
 
+### 18 - subclasshook
+
+```python
+In [10]: import abc
+
+In [11]: class MyClsABC(abc.ABC):
+    ...:     @classmethod
+    ...:     def __subclasshook__(cls, subclass):
+    ...:         print("is subclasshook")
+    ...:         return True
+    ...:
+
+In [12]: class MyClsNoABC(object):
+    ...:     @classmethod
+    ...:     def __subclasshook__(cls, subclass):
+    ...:         print("is subclasshook")
+    ...:         return True
+    ...:
+
+In [13]: issubclass(int, MyClsABC)
+is subclasshook
+Out[13]: True
+
+In [14]: issubclass(int, MyClsNoABC)
+Out[14]: False
+```
+
 ### 17 - issubclasscheck
 
 ```python
