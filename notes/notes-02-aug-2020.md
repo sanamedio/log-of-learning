@@ -20,7 +20,7 @@ class TestNoneTypeError(TestCase):
         self.assertEqual("'NoneType' object is not subscriptable", str(ctx.exception))
 ```
 
-run via `python -m unittest <filename.py>`
+run via `python -m unittest <filename.py>` or import `unittest` and do a `unittest.main()` in the end.
 
 ### 9 - hexlify
 
