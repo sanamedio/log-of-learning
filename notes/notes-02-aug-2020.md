@@ -2,13 +2,15 @@
 
 ### 5 - extending a list
 
-```
+```python
 >>> l = ["a","b" ]
 >>> l[len(l):] = ["c","d"]
 >>> l
 ['a', 'b', 'c', 'd']
->>>
-```
+>>> l[len(l):] = {"x":"y","Z":"W" }
+>>> l
+['a', 'b', 'c', 'd', 'x', 'Z']
+>>>```
 
 ### 4 - columnwise matrix
 
