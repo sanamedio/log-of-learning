@@ -1,27 +1,5 @@
 # 02-aug-2020
 
-### 13 - cmp function
-
-```python
-# Python program to demonstrate the  
-# use of cmp() method 
-  
-# when a<b 
-a = 1 
-b = 2 
-print(cmp(a, b))   
-  
-# when a = b  
-a = 2
-b = 2 
-print(cmp(a, b))   
-  
-# when a>b  
-a = 3
-b = 2 
-print(cmp(a, b))
-```
-
 ### 12 - perf_counter and process_time
 
 https://stackoverflow.com/q/25785243/2091949
