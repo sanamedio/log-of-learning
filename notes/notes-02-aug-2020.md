@@ -1,5 +1,70 @@
 # 02-aug-2020
 
+### 11 - ctypes Structure objects
+
+```python
+In [1]: from ctypes import *
+
+In [2]: class X(Structure):
+   ...:     _fields_ = [("a",c_int),("b", c_int)]
+   ...:
+
+In [3]: x = X()
+
+In [4]: dir(x)
+Out[4]:
+['__class__',
+ '__ctypes_from_outparam__',
+ '__delattr__',
+ '__dict__',
+ '__dir__',
+ '__doc__',
+ '__eq__',
+ '__format__',
+ '__ge__',
+ '__getattribute__',
+ '__gt__',
+ '__hash__',
+ '__init__',
+ '__init_subclass__',
+ '__le__',
+ '__lt__',
+ '__module__',
+ '__ne__',
+ '__new__',
+ '__reduce__',
+ '__reduce_ex__',
+ '__repr__',
+ '__setattr__',
+ '__setstate__',
+ '__sizeof__',
+ '__str__',
+ '__subclasshook__',
+ '__weakref__',
+ '_b_base_',
+ '_b_needsfree_',
+ '_fields_',
+ '_objects',
+ 'a',
+ 'b']
+
+In [5]: x.a
+Out[5]: 0
+
+In [6]: x.b
+Out[6]: 0
+
+In [7]: x.a = 42
+
+In [8]: x.b = 96
+
+In [9]: x.a
+Out[9]: 42
+
+In [10]: x.b
+Out[10]: 96
+```
+
 ### 10 - assertRaises
 
 [stackoverflow](https://stackoverflow.com/questions/6103825/how-to-properly-use-unit-testings-assertraises-with-nonetype-objects)
