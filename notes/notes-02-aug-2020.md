@@ -1,5 +1,27 @@
 # 02-aug-2020
 
+### 17 - issubclasscheck
+
+```python
+In [6]: class YouWontFindSubclasses(type):
+   ...:     def __subclasscheck__(cls, subclass):
+   ...:         print(cls, subclass)
+   ...:         return False
+   ...:
+
+In [7]: class MyCls(metaclass=YouWontFindSubclasses):
+   ...:     pass
+   ...:
+
+In [8]: class MySubCls(MyCls):
+   ...:     pass
+   ...:
+
+In [9]: issubclass(MySubCls, MyCls)
+<class '__main__.MyCls'> <class '__main__.MySubCls'>
+Out[9]: False
+```
+
 ### 16 - mock sealing
 
 https://docs.python.org/3/library/unittest.mock.html
