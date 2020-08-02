@@ -1,6 +1,21 @@
 # 02-aug-2020
 
-### 14 - comma separated arguments to with
+### 15 - sentinel from unittest
+
+The sentinel object provides a convenient way of providing unique objects for your tests.
+
+```python
+real = ProductionClass()
+real.method = Mock(name="method")
+real.method.return_value = sentinel.some_object
+result = real.method()
+assert result is sentinel.some_object
+sentinel.some_object
+# output >> sentinel.some_object
+```
+
+
+### 14 - multiple initializations in same with
 
 ```python
 >>> with open("a.txt","w") as f1, open("b.txt","w") as f2:
