@@ -2,7 +2,7 @@
 
 ### 6 - getting function signature
 
-```
+```python
 >>> import inspect
 >>> inspect.getargspec([].index)
 <stdin>:1: DeprecationWarning: inspect.getargspec() is deprecated since Python 3.0, use inspect.signature() or inspect.getfullargspec()
