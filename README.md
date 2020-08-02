@@ -4,7 +4,7 @@
 # =================
 
 
-[ 817 ]
+[ 825 ]
 
 # Python
 
@@ -18,6 +18,14 @@
 |[Getting function signature](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-02-aug-2020.md#6---getting-function-signature) |
 |[Minimalistic hooks](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-02-aug-2020.md#7---minimalistic-hooks) |
 |[Pydispatcher](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-02-aug-2020.md#8---pydispatcher) |
+|[Hexlify](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-02-aug-2020.md#9---hexlify) |
+|[Assertraises](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-02-aug-2020.md#10---assertraises) |
+|[Ctypes structure objects](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-02-aug-2020.md#11---ctypes-structure-objects) |
+|[Perf_counter and process_time](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-02-aug-2020.md#12---perfcounter-and-processtime) |
+|[Checking errors in unittest](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-02-aug-2020.md#13---checking-errors-in-unittest) |
+|[Multiple initializations in same with](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-02-aug-2020.md#14---multiple-initializations-in-same-with) |
+|[Sentinel from unittest](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-02-aug-2020.md#15---sentinel-from-unittest) |
+|[Mock sealing](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-02-aug-2020.md#16---mock-sealing) |
 |[Math prod](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-26-jul-2020.md#1---math-prod) |
 |[Functools total_ordering](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-26-jul-2020.md#2---functools-totalordering) |
 |[Deepdiff deepdiff](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-26-jul-2020.md#3---deepdiff-deepdiff) |
