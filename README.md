@@ -8,6 +8,7 @@
 
 | LINK |
 |------|
+|[Math shortcuts](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-02-aug-2020.md#1---math-shortcuts) |
 |[Isnan](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-02-aug-2020.md#2---isnan) |
 |[Round function](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-02-aug-2020.md#3---round-function) |
 |[Columnwise matrix](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-02-aug-2020.md#4---columnwise-matrix) |
@@ -795,7 +796,6 @@
 
 | LINK |
 |------|
-|[Math shortcuts](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-02-aug-2020.md#1---math-shortcuts) |
 |[Comparing branches git](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-09-mar-2020.md#1---comparing-branches-git) |
 |[Mongodb oplog access](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-08-dec-2019.md#2---mongodb-oplog-access) |
 |[A + b = c using regex](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-08-dec-2019.md#3---a-+-b-=-c-using-regex) |
