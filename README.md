@@ -25,6 +25,7 @@
 |[Mock sealing](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-02-aug-2020.md#16---mock-sealing) |
 |[Issubclasscheck](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-02-aug-2020.md#17---issubclasscheck) |
 |[Subclasshook](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-02-aug-2020.md#18---subclasshook) |
+|[Importerror](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-02-aug-2020.md#19---importerror) |
 |[Math prod](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-26-jul-2020.md#1---math-prod) |
 |[Functools total_ordering](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-26-jul-2020.md#2---functools-totalordering) |
 |[Deepdiff deepdiff](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-26-jul-2020.md#3---deepdiff-deepdiff) |
@@ -794,7 +795,7 @@
 
 | LINK |
 |------|
-|[Math related funcs](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-02-aug-2020.md#1---math-related-funcs) |
+|[Math shortcuts](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-02-aug-2020.md#1---math-shortcuts) |
 |[Comparing branches git](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-09-mar-2020.md#1---comparing-branches-git) |
 |[Mongodb oplog access](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-08-dec-2019.md#2---mongodb-oplog-access) |
 |[A + b = c using regex](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-08-dec-2019.md#3---a-+-b-=-c-using-regex) |
