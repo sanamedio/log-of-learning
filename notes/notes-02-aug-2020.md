@@ -379,7 +379,7 @@ https://docs.python.org/3/tutorial/datastructures.html#comparing-sequences-and-o
 [56.2, 51.7, 55.3, 52.5, 47.8]
 ```
 
-### 1 - math related funcs
+### 1 - math shortcuts
 
 - `math.inf` : positive infinity
 - `float('-inf')` : negative infinity
