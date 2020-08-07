@@ -8,6 +8,9 @@
 
 | LINK |
 |------|
+|[Weird python scoping](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-07-aug-2020.md#1---weird-python-scoping) |
+|[Heapq](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-06-aug-2020.md#1---heapq) |
+|[Floating point example to remember](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-05-aug-2020.md#1---floating-point-example-to-remember) |
 |[Math shortcuts](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-02-aug-2020.md#1---math-shortcuts) |
 |[Isnan](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-02-aug-2020.md#2---isnan) |
 |[Round function](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-02-aug-2020.md#3---round-function) |
