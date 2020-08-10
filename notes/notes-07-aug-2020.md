@@ -1,5 +1,19 @@
 # 07-aug-2020
 
+### 4 - merging two dicts
+
+```python
+a = dict()
+b = dict()
+a.update(b)
+```
+
+```python
+a = dict()
+b = dict()
+c = { **a, **b }
+```
+
 ### 3 - accumulate from itertools
 
 ```python
