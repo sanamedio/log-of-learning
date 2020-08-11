@@ -8,7 +8,11 @@
 
 | LINK |
 |------|
+|[Parsing using ply](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-11-aug-2020.md#1---parsing-using-ply) |
 |[Weird python scoping](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-07-aug-2020.md#1---weird-python-scoping) |
+|[Groupby from itertools](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-07-aug-2020.md#2---groupby-from-itertools) |
+|[Accumulate from itertools](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-07-aug-2020.md#3---accumulate-from-itertools) |
+|[Merging two dicts](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-07-aug-2020.md#4---merging-two-dicts) |
 |[Heapq](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-06-aug-2020.md#1---heapq) |
 |[Floating point example to remember](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-05-aug-2020.md#1---floating-point-example-to-remember) |
 |[Math shortcuts](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-02-aug-2020.md#1---math-shortcuts) |
