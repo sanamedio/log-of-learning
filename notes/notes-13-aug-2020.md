@@ -1,5 +1,10 @@
 # 13-aug-2020
 
+### 2 - finding minimum index one liner
+
+```python
+index_min = min( range(len(temp)), key=temp.__getitem__)
+```
 
 ### 1 - Removed calls between two commits
 
