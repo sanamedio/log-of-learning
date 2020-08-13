@@ -4,13 +4,15 @@
 # =================
 
 
-[835]
+[837]
 
 # Python
 
 
 | LINK |
 |------|
+|[Removed calls between two commits](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-13-aug-2020.md#1---removed-calls-between-two-commits) |
+|[Finding minimum index one liner](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-13-aug-2020.md#2---finding-minimum-index-one-liner) |
 |[Parsing using ply](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-11-aug-2020.md#1---parsing-using-ply) |
 |[Weird python scoping](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-07-aug-2020.md#1---weird-python-scoping) |
 |[Groupby from itertools](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-07-aug-2020.md#2---groupby-from-itertools) |
