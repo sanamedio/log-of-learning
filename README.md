@@ -4,7 +4,7 @@
 # =================
 
 
-[838]
+[839]
 
 # Python
 
@@ -809,6 +809,7 @@
 
 | LINK |
 |------|
+|[Getting help on any method](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-17-aug-2020.md#1---getting-help-on-any-method) |
 |[Comparing branches git](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-09-mar-2020.md#1---comparing-branches-git) |
 |[Mongodb oplog access](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-08-dec-2019.md#2---mongodb-oplog-access) |
 |[A + b = c using regex](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-08-dec-2019.md#3---a-+-b-=-c-using-regex) |
