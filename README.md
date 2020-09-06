@@ -1,6 +1,6 @@
 
 # =================
-# programming-notes
+# python-notes
 # =================
 
 
