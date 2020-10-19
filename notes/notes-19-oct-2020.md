@@ -1,6 +1,30 @@
 # 19-oct-2020
 
-### 1 - _init_subclass_
+### 2 - apply decorator to all subclassess
+
+- https://stackoverflow.com/questions/35624872/apply-a-python-decorator-to-all-inheriting-classes
+
+```python
+def your_decorator(_cls):
+    print("Hello, I'm decor!")
+    def wrapper():
+        return _cls()
+    return wrapper
+
+
+class ParentClass:
+    def __init_subclass__(cls, **kwargs):
+        return your_decorator(_cls=cls)
+
+
+class A(ParentClass):
+    pass
+
+a = A()
+```
+
+
+### 1 - init subclass
 
 - hook executed whenever a subclass is getting made from parent class
 
