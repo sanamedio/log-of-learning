@@ -12,7 +12,7 @@ def b():
 def default():
    print "default"
 
-apply({1:a, 2:b}.get(x, default))
+({1:a, 2:b}.get(x, default))()
 ```
 
 ### 16 - logging only library
