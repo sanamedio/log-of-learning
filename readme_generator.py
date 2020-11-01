@@ -68,6 +68,8 @@ prefix_sub = """
 
 print( prefix)
 
+print("[ "+ str(len(result)) + " ]")
+
 print ("# Python")
 print ("")
 print (prefix_sub)
