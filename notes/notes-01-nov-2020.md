@@ -1,5 +1,11 @@
 # 01-nov-2020
 
+### 2 - python shaped by leaky abstractions
+
+- nice talk to dig into and understand how decisions took initially have now chained python interpreter
+
+https://www.youtube.com/watch?v=qCGofLIzX6g
+
 ### 1 - lsm-db transactions
 
 - https://charlesleifer.com/blog/using-sqlite4-s-lsm-storage-engine-as-a-stand-alone-nosql-database-with-python/
