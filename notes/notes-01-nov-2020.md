@@ -1,5 +1,16 @@
 # 01-nov-2020
 
+### 10 - always forget about namedtuples
+
+https://github.com/learning-zone/python-interview-questions
+
+```python
+from collections import namedtuple
+result=namedtuple('result','Physics Chemistry Maths') #format
+Ramayan=result(Physics=86,Chemistry=95,Maths=86) #declaring the tuple
+Ramayan.Chemistry
+```
+
 ### 9 - useless titlecase check
 
 ```python
