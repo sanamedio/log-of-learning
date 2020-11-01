@@ -3,7 +3,6 @@
 # programming-notes
 # =================
 
-[ 876 ]
 # Python
 
 
