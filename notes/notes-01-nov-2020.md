@@ -3,12 +3,14 @@
 
 ### 23 - unittest samples from popular projects
 
+```
 https://github.com/django/django/blob/master/tests/admin_filters/tests.py
 https://github.com/pallets/flask/blob/master/tests/test_cli.py
 https://github.com/httpie/httpie/blob/master/tests/test_binary.py
 https://github.com/psf/requests/blob/master/tests/test_hooks.py
 https://github.com/numpy/numpy/blob/master/numpy/core/tests/test_datetime.py
 https://github.com/celery/celery/blob/master/t/unit/security/test_certificate.py
+```
 
 The code structure in numpy is nice, having tests follow the same heirarchical structure in repo as the source tree.
 
