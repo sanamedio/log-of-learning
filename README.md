@@ -3,7 +3,7 @@
 # programming-notes
 # =================
 
-[ 857 ]
+[ 863 ]
 # Python
 
 
@@ -24,6 +24,12 @@
 |[Breesenham line generator](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-01-nov-2020.md#14---breesenham-line-generator) |
 |[Convex hull - jarvis algo](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-01-nov-2020.md#15---convex-hull---jarvis-algo) |
 |[Logging only library](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-01-nov-2020.md#16---logging-only-library) |
+|[Emulating switch](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-01-nov-2020.md#17---emulating-switch) |
+|[Oneliner factorial](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-01-nov-2020.md#18---oneliner-factorial) |
+|[Deepcopy oneliner](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-01-nov-2020.md#19---deepcopy-oneliner) |
+|[Word break dp](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-01-nov-2020.md#20---word-break-dp) |
+|[Duplicate finding using trie](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-01-nov-2020.md#21---duplicate-finding-using-trie) |
+|[Hashing binary as decimal](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-01-nov-2020.md#22---hashing-binary-as-decimal) |
 |[Init subclass](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-19-oct-2020.md#1---init-subclass) |
 |[Apply decorator to all subclassess](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-19-oct-2020.md#2---apply-decorator-to-all-subclassess) |
 |[Creating a gchat git commit notifier](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-15-aug-2020.md#1---creating-a-gchat-git-commit-notifier) |
