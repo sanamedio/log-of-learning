@@ -1,5 +1,62 @@
 # 01-nov-2020
 
+### 21 - duplicate finding using trie
+
+- generally hash table only comes into mind, but trie also a good option
+
+```python
+# A class representing a node:
+class Trie:
+	# Constructor
+	def __init__(self):
+
+		self.character = [None] * 2
+
+		# set when node is a leaf node
+		self.isLeaf = False
+
+
+# Iterative function to insert list in Trie.
+def insert(head, A):
+
+	# start from root node
+	curr = head
+
+	for i in A:
+		# create a node if path doesn't exists
+		if curr.character[i] is None:
+			curr.character[i] = Trie()
+
+		# go to next node
+		curr = curr.character[i]
+
+	# if row is inserted before, return false
+	if curr.isLeaf:
+		return False
+
+	# mark leaf node and return True
+	curr.isLeaf = True
+	return True
+
+
+if __name__ == '__main__':
+
+	mat = [
+		[1, 0, 0, 1, 0],
+		[0, 1, 1, 0, 0],
+		[1, 0, 0, 1, 0],
+		[0, 0, 1, 1, 0],
+		[0, 1, 1, 0, 0]
+	]
+
+	# insert all rows of into trie
+	head = Trie()
+	for i, e in enumerate(mat):
+		if not insert(head, e):
+			print(f"Duplicate row found: Row #{i+1}")
+
+```
+
 ### 20 - word break dp
 
 ```python
