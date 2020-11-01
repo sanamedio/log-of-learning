@@ -3,7 +3,7 @@
 # programming-notes
 # =================
 
-[ 855 ]
+[ 857 ]
 # Python
 
 
@@ -22,6 +22,8 @@
 |[Karatsuba multiplication](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-01-nov-2020.md#12---karatsuba-multiplication) |
 |[Isnumeric](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-01-nov-2020.md#13---isnumeric) |
 |[Breesenham line generator](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-01-nov-2020.md#14---breesenham-line-generator) |
+|[Convex hull - jarvis algo](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-01-nov-2020.md#15---convex-hull---jarvis-algo) |
+|[Logging only library](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-01-nov-2020.md#16---logging-only-library) |
 |[Init subclass](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-19-oct-2020.md#1---init-subclass) |
 |[Apply decorator to all subclassess](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-19-oct-2020.md#2---apply-decorator-to-all-subclassess) |
 |[Creating a gchat git commit notifier](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-15-aug-2020.md#1---creating-a-gchat-git-commit-notifier) |
