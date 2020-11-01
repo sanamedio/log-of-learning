@@ -3,7 +3,7 @@
 # programming-notes
 # =================
 
-[ 875 ]
+[ 876 ]
 # Python
 
 
@@ -40,6 +40,7 @@
 |[Codegolf004](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-01-nov-2020.md#31---codegolf004) |
 |[Qsort one-liner](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-01-nov-2020.md#33---qsort-one-liner) |
 |[Capping x](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-01-nov-2020.md#34---capping-x) |
+|[Alwaays forget about interact](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-01-nov-2020.md#35---alwaays-forget-about-interact) |
 |[Init subclass](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-19-oct-2020.md#1---init-subclass) |
 |[Apply decorator to all subclassess](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-19-oct-2020.md#2---apply-decorator-to-all-subclassess) |
 |[Creating a gchat git commit notifier](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-15-aug-2020.md#1---creating-a-gchat-git-commit-notifier) |
