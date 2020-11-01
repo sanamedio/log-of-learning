@@ -3,12 +3,25 @@
 # programming-notes
 # =================
 
-[ 841 ]
+[ 855 ]
 # Python
 
 
 | LINK |
 |------|
+|[Lsm-db transactions](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-01-nov-2020.md#1---lsm-db-transactions) |
+|[Python shaped by leaky abstractions](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-01-nov-2020.md#2---python-shaped-by-leaky-abstractions) |
+|[Simple way to make variable mock](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-01-nov-2020.md#3---simple-way-to-make-variable-mock) |
+|[What one liners should not be](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-01-nov-2020.md#5---what-one-liners-should-not-be) |
+|[Trivia](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-01-nov-2020.md#6---trivia) |
+|[Mysql with python](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-01-nov-2020.md#7---mysql-with-python) |
+|[Multithreading with thread subclassess](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-01-nov-2020.md#8---multithreading-with-thread-subclassess) |
+|[Useless titlecase check](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-01-nov-2020.md#9---useless-titlecase-check) |
+|[Always forget about namedtuples](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-01-nov-2020.md#10---always-forget-about-namedtuples) |
+|[Simple method overriding](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-01-nov-2020.md#11---simple-method-overriding) |
+|[Karatsuba multiplication](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-01-nov-2020.md#12---karatsuba-multiplication) |
+|[Isnumeric](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-01-nov-2020.md#13---isnumeric) |
+|[Breesenham line generator](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-01-nov-2020.md#14---breesenham-line-generator) |
 |[Init subclass](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-19-oct-2020.md#1---init-subclass) |
 |[Apply decorator to all subclassess](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-19-oct-2020.md#2---apply-decorator-to-all-subclassess) |
 |[Creating a gchat git commit notifier](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-15-aug-2020.md#1---creating-a-gchat-git-commit-notifier) |
@@ -809,6 +822,7 @@
 
 | LINK |
 |------|
+|[Capturing emails using regex](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-01-nov-2020.md#4---capturing-emails-using-regex) |
 |[Getting help on any method](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-17-aug-2020.md#1---getting-help-on-any-method) |
 |[Comparing branches git](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-09-mar-2020.md#1---comparing-branches-git) |
 |[Mongodb oplog access](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-08-dec-2019.md#2---mongodb-oplog-access) |
