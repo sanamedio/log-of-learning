@@ -1,5 +1,11 @@
 # 01-nov-2020
 
+### 35 - alwaays forget about interact
+
+- during pdb session, to have a full fleged python env just have to type interact
+
+https://www.youtube.com/watch?v=5AYIe-3cD-s&ab_channel=PyCon2020
+
 ### 34 - capping x
 
 ```python
