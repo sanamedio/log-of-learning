@@ -1,5 +1,19 @@
 # 01-nov-2020
 
+### 1 - simple method overriding
+
+```python
+class A:
+    def sayhello(self):
+        print("Hello, I'm A")
+class B(A):
+    def sayhello(self):
+        print("Hello, I'm B")
+a=A()
+b=B()
+a.sayhello()
+```
+
 ### 10 - always forget about namedtuples
 
 https://github.com/learning-zone/python-interview-questions
