@@ -41,6 +41,7 @@
 |[Capping x](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-01-nov-2020.md#34---capping-x) |
 |[Alwaays forget about interact](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-01-nov-2020.md#35---alwaays-forget-about-interact) |
 |[Why is python slow](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-01-nov-2020.md#36---why-is-python-slow) |
+|[Using numba with cpython](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-01-nov-2020.md#37---using-numba-with-cpython) |
 |[Init subclass](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-19-oct-2020.md#1---init-subclass) |
 |[Apply decorator to all subclassess](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-19-oct-2020.md#2---apply-decorator-to-all-subclassess) |
 |[Creating a gchat git commit notifier](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-15-aug-2020.md#1---creating-a-gchat-git-commit-notifier) |
