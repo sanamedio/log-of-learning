@@ -1,5 +1,58 @@
 # 01-nov-2020
 
+### 34 - capping x
+
+```python
+x = sorted([0.0, x, 1.0])[1]
+```
+
+### 33 - qsort one-liner
+
+```python
+qsort = lambda l : l if len(l)<=1 else qsort([x for x in l[1:] if x < l[0]]) + [l[0]] + qsort([x for x in l[1:] if x >= l[0]]) 
+qsort([1,2,5,7,8,2,6,8]) 
+```
+
+### 32 - codegolf005
+
+lookup tables for boolean can be saved as a simple number
+
+https://codegolf.stackexchange.com/a/41742/70636
+
+### 31 - codegolf004
+
+```python
+a=lambda b:lambda c:lambda d:lambda e:lambda f:0   # 48 bytes  (plain)
+exec"a=`b:`c:`d:`e:`f:0".replace('`','lambda ')    # 47 bytes  (replace)
+exec"a=%sb:%sc:%sd:%se:%sf:0"%(('lambda ',)*5)     # 46 bytes  (%)
+```
+
+### 30 - codegolf003
+
+```python
+r=range
+for x in r(10):
+ for y in r(100):print x,y
+```
+
+### 29 - codegolf002
+
+if a<b:return a
+else:return b
+
+can be written as(though not exact same)
+
+return(b,a)[a<b]
+
+### 28 - codegolf001
+
+https://codegolf.stackexchange.com/questions/54/tips-for-golfing-in-python
+
+Use a=b=c=0 instead of a,b,c=0,0,0.
+
+Use a,b,c='123' instead of a,b,c='1','2','3'.
+
+
 ### 27 - heirarchical state machine pattern
 
 https://milovantomasevic.com/courses/python-design-patterns-hsm/
