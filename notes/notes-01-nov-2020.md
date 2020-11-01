@@ -1,5 +1,11 @@
 # 01-nov-2020
 
+### 9 - useless titlecase check
+
+```python
+'Pro Development'.istitle()
+```
+
 ### 8 - multithreading with thread subclassess
 
 ```python
