@@ -1,5 +1,9 @@
 # 01-nov-2020
 
+### 36 - why is python slow
+
+https://www.youtube.com/watch?v=I4nkgJdVZFA&ab_channel=PyCon2020
+
 ### 35 - alwaays forget about interact
 
 - during pdb session, to have a full fleged python env just have to type interact
