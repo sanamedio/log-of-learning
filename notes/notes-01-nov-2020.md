@@ -1,6 +1,11 @@
 # 01-nov-2020
 
 
+### 24 - borg pattern
+
+- shouldn't this be a anti-pattern?
+https://github.com/faif/python-patterns/blob/master/patterns/creational/borg.py
+
 ### 23 - unittest samples from popular projects
 
 ```
