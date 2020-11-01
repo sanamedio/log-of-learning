@@ -1,5 +1,20 @@
 # 01-nov-2020
 
+### 17 - emulating switch
+
+```python
+def a():
+  print "a"
+
+def b():
+  print "b"
+
+def default():
+   print "default"
+
+apply({1:a, 2:b}.get(x, default))
+```
+
 ### 16 - logging only library
 
 - https://www.geeksforgeeks.org/python-add-logging-to-python-libraries/?ref=rp
