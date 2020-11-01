@@ -26,6 +26,11 @@ def my_side_effect(*args, **kwargs):
 
 mockobj.mockmethod.side_effect = my_side_effect
 ```
+or,
+
+```python
+m = MagicMock(side_effect=(lambda x: x+1))
+```
 
 ### 2 - python shaped by leaky abstractions
 
