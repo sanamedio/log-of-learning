@@ -1,5 +1,22 @@
 # 01-nov-2020
 
+### 16 - logging only library
+
+- https://www.geeksforgeeks.org/python-add-logging-to-python-libraries/?ref=rp
+
+```python
+import logging 
+  
+logging.basicConfig(level = logging.ERROR) 
+  
+import abc 
+print (abc.func()) 
+  
+Change the logging level for 'abc' only 
+logging.getLogger('abc').level = logging.DEBUG 
+print (abc.func()) 
+```
+
 ### 15 - convex hull - jarvis algo
 
 - https://www.geeksforgeeks.org/convex-hull-set-1-jarviss-algorithm-or-wrapping/
