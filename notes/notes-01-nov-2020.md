@@ -1,5 +1,11 @@
 # 01-nov-2020
 
+### 5 - what one liners should not be
+
+```python
+(lambda a,b:a if a>b else b)(3,3.5)
+```
+
 ### 4 - capturing emails using regex
 
 - regex is very clean thing, just like sql 
