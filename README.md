@@ -1,16 +1,15 @@
 
 # =================
-# python-notes
+# programming-notes
 # =================
-
-
-[839]
 
 # Python
 
 
 | LINK |
 |------|
+|[Init subclass](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-19-oct-2020.md#1---init-subclass) |
+|[Apply decorator to all subclassess](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-19-oct-2020.md#2---apply-decorator-to-all-subclassess) |
 |[Creating a gchat git commit notifier](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-15-aug-2020.md#1---creating-a-gchat-git-commit-notifier) |
 |[Removed calls between two commits](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-13-aug-2020.md#1---removed-calls-between-two-commits) |
 |[Finding minimum index one liner](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-13-aug-2020.md#2---finding-minimum-index-one-liner) |
