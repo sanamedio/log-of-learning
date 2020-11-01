@@ -1,5 +1,24 @@
 # 01-nov-2020
 
+### 37 - using numba with cpython
+
+https://numba.pydata.org/
+
+```python
+from numba import jit
+import random
+
+@jit(nopython=True)
+def monte_carlo_pi(nsamples):
+    acc = 0
+    for i in range(nsamples):
+        x = random.random()
+        y = random.random()
+        if (x ** 2 + y ** 2) < 1.0:
+            acc += 1
+    return 4.0 * acc / nsamples
+```
+
 ### 36 - why is python slow
 
 https://www.youtube.com/watch?v=I4nkgJdVZFA&ab_channel=PyCon2020
