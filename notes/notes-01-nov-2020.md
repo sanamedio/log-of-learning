@@ -1,5 +1,35 @@
 # 01-nov-2020
 
+### 22 - hashing binary as decimal
+
+```python
+if __name__ == '__main__':
+
+	M = [
+		[0, 0, 0, 0, 0],
+		[0, 1, 1, 0, 0],
+		[0, 0, 0, 0, 0],
+		[0, 0, 1, 1, 0],
+		[0, 1, 1, 0, 0]
+	]
+
+	s = set()
+
+	# do for each row i
+	for i in range(len(M)):
+		decimal = 0
+
+		# convert binary row i into its decimal equivalent
+		for j in range(len(M[i])):
+			decimal += M[i][j] * pow(2, j)
+
+		# if decimal value is seen before
+		if decimal in s:
+			print("Duplicate row found : Row", (i + 1))
+		else:
+			s.add(decimal)
+```
+
 ### 21 - duplicate finding using trie
 
 - generally hash table only comes into mind, but trie also a good option
