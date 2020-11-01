@@ -1,5 +1,27 @@
 # 01-nov-2020
 
+### 7 - mysql with python
+
+```python
+#import MySQLdb module as : 
+import MySQLdb
+
+#establish a connection to the database.
+db = MySQLdb.connect("host"="local host", "database-user"="user-name", "password"="password","database-name"="database")
+
+#initialize the cursor variable upon the established connection: 
+c1 = db.cursor()
+
+#retrieve the information by defining a required query string.
+s = "Select * from dept"
+
+#fetch the data using fetch() methods and print it. 
+data = c1.fetch(s)
+
+#close the database connection. 
+db.close()
+```
+
 ### 6 - trivia
 
 
