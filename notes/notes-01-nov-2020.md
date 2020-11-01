@@ -1,5 +1,17 @@
 # 01-nov-2020
 
+### 4 - capturing emails using regex
+
+- regex is very clean thing, just like sql 
+
+```
+>>> import re
+>>> e = re.search(r'[0-9a-zA-Z.]+@[a-zA-Z]+\.(com|co\.in)$','test@gmail.com')
+>>> e
+<_sre.SRE_Match object; span=(0, 22), match='test@gmail.com'>
+>>>
+```
+
 ### 3 - simple way to make variable mock
 
 ```python
