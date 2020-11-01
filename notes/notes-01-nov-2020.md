@@ -1,5 +1,18 @@
 # 01-nov-2020
 
+### 3 - simple way to make variable mock
+
+```python
+>>> from unittest.mock import Mock
+>>> mock = Mock()
+>>> mock.side_effect = { "input1" : "output1" , "input2": "output2" }.get
+>>> mock
+<Mock id='4331355160'>
+>>> mock("input1")
+'output1'
+>>>
+```
+
 ### 2 - python shaped by leaky abstractions
 
 - nice talk to dig into and understand how decisions took initially have now chained python interpreter
