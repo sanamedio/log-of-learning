@@ -1,5 +1,38 @@
 # 01-nov-2020
 
+### 14 - breesenham line generator
+
+https://github.com/devAmoghS/Python-Interview-Problems-for-Practice/blob/master/bresenham_line_algorithm.py
+
+```python
+def lineGenerator(x1, y1, x2, y2):
+	dx = x2 - x1
+	dy = y2 - y1
+
+	slope = 2*dy - dx
+
+	x = x1
+	y = y1
+	while x < x2:
+
+		#Print current coordinates
+		print(x, y)
+
+		#X increases any ways
+		x+= 1
+
+		# 2dy is always added in the slope. Do it.
+		slope += 2*dy
+		#Check for the current slope
+		if slope >= 0:
+			y += 1
+			slope -= 2 * (x2-x1)
+
+		elif slope <=0:
+			#No changes are made.
+			slope = slope
+```
+
 ### 13 - isnumeric 
 
 https://github.com/devAmoghS/Python-Interview-Problems-for-Practice/blob/master/is_numeric.py
