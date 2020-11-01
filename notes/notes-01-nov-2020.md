@@ -1,5 +1,11 @@
 # 01-nov-2020
 
+### 18 - oneliner factorial
+
+```python
+fac=lambda(n):reduce(int.__mul__,range(1,n+1),1)
+```
+
 ### 17 - emulating switch
 
 ```python
