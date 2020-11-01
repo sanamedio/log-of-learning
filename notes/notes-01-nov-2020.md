@@ -1,5 +1,11 @@
 # 01-nov-2020
 
+### 19 - deepcopy oneliner
+
+```python
+deepcopy = lambda x: cPickle.loads(cPickle.dumps(x))
+```
+
 ### 18 - oneliner factorial
 
 ```python
