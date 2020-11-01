@@ -3,7 +3,7 @@
 # programming-notes
 # =================
 
-[ 868 ]
+[ 875 ]
 # Python
 
 
@@ -35,6 +35,11 @@
 |[Memento pattern](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-01-nov-2020.md#25---memento-pattern) |
 |[Blackboard pattern](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-01-nov-2020.md#26---blackboard-pattern) |
 |[Heirarchical state machine pattern](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-01-nov-2020.md#27---heirarchical-state-machine-pattern) |
+|[Codegolf001](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-01-nov-2020.md#28---codegolf001) |
+|[Codegolf003](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-01-nov-2020.md#30---codegolf003) |
+|[Codegolf004](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-01-nov-2020.md#31---codegolf004) |
+|[Qsort one-liner](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-01-nov-2020.md#33---qsort-one-liner) |
+|[Capping x](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-01-nov-2020.md#34---capping-x) |
 |[Init subclass](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-19-oct-2020.md#1---init-subclass) |
 |[Apply decorator to all subclassess](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-19-oct-2020.md#2---apply-decorator-to-all-subclassess) |
 |[Creating a gchat git commit notifier](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-15-aug-2020.md#1---creating-a-gchat-git-commit-notifier) |
@@ -836,6 +841,8 @@
 | LINK |
 |------|
 |[Capturing emails using regex](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-01-nov-2020.md#4---capturing-emails-using-regex) |
+|[Codegolf002](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-01-nov-2020.md#29---codegolf002) |
+|[Codegolf005](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-01-nov-2020.md#32---codegolf005) |
 |[Getting help on any method](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-17-aug-2020.md#1---getting-help-on-any-method) |
 |[Comparing branches git](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-09-mar-2020.md#1---comparing-branches-git) |
 |[Mongodb oplog access](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-08-dec-2019.md#2---mongodb-oplog-access) |
