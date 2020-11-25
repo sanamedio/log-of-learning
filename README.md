@@ -8,6 +8,10 @@
 
 | LINK |
 |------|
+|[Regex alternative verex](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-25-nov-2020.md#1---regex-alternative-verex) |
+|[Overriding traceback handler](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-24-nov-2020.md#1---overriding-traceback-handler) |
+|[Why is python slow](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-21-nov-2020.md#1---why-is-python-slow) |
+|[Freezegun](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-03-nov-2020.md#1---freezegun) |
 |[Lsm-db transactions](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-01-nov-2020.md#1---lsm-db-transactions) |
 |[Python shaped by leaky abstractions](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-01-nov-2020.md#2---python-shaped-by-leaky-abstractions) |
 |[Simple way to make variable mock](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-01-nov-2020.md#3---simple-way-to-make-variable-mock) |
