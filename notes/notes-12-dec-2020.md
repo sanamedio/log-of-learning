@@ -4,7 +4,7 @@
 
 https://dangoldin.com/2020/12/11/amazon-owns-more-than-2b-worth-of-ipv4-addresses/
 
-```
+```python
 import urllib.request
 import json
 
