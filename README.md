@@ -8,6 +8,9 @@
 
 | LINK |
 |------|
+|[Disabling gc to improve performance](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-18-dec-2020.md#2---disabling-gc-to-improve-performance) |
+|[Strict modules concept](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-18-dec-2020.md#1---strict-modules-concept) |
+|[Getting list of ip addresses owned by amazon](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-12-dec-2020.md#1---getting-list-of-ip-addresses-owned-by-amazon) |
 |[Regex alternative verex](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-25-nov-2020.md#1---regex-alternative-verex) |
 |[Overriding traceback handler](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-24-nov-2020.md#1---overriding-traceback-handler) |
 |[Why is python slow](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-21-nov-2020.md#1---why-is-python-slow) |
@@ -846,6 +849,7 @@
 
 | LINK |
 |------|
+|[Merkle trees](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-18-dec-2020.md#3---merkle-trees) |
 |[Capturing emails using regex](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-01-nov-2020.md#4---capturing-emails-using-regex) |
 |[Codegolf002](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-01-nov-2020.md#29---codegolf002) |
 |[Codegolf005](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-01-nov-2020.md#32---codegolf005) |
