@@ -1,6 +1,5 @@
 # 18-dec-2020
 
-
 ### 1 - strict modules concept
 
 - High loading time can happen with large codebases due to the way python works
@@ -17,3 +16,12 @@ https://instagram-engineering.com/python-at-scale-strict-modules-c0bb9245c834
 - "Prove your theory first"
 
 https://instagram-engineering.com/dismissing-python-garbage-collection-at-instagram-4dca40b29172
+
+
+### 3 - merkle trees 
+
+- hashing tree recursively
+- allows to identify minimum nodes needed to verify integrity
+- how it relates to error correcting codes?
+
+https://www.codementor.io/blog/merkle-trees-5h9arzd3n8
