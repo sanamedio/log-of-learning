@@ -5,7 +5,7 @@
 
 https://filipnikolovski.com/posts/ebpf/
 
-```
+```python
 from bcc import BPF
 from bcc.utils import printb
 # define BPF program
