@@ -1,7 +1,33 @@
 # 23-dec-2020
 
+### 3 - largest contiguous section of array
+
+Array with disctinct elements
+Observe that to have a contiguous section of distinct element and maximise it; min-max == i-j
+
+```python
+def find_length(arr, n): 
+	
+	max_len = 1
+	for i in range(n - 1): 
+	
+		mn = arr[i] 
+		mx = arr[i] 
+
+		for j in range(i + 1, n): 
+		
+			mn = min(mn, arr[j]) 
+			mx = max(mx, arr[j]) 
+
+			if ((mx - mn) == j - i): 
+				max_len = max(max_len, mx - mn + 1) 
+		
+	return max_len 
+```
+
 ### 2 - smallest unrepresented element in sorted array
 
+Minimum positive integer which cannot be represented by summing the subset of array
 
 ```python
 def findSmallest(arr, n): 
