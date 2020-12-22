@@ -1,5 +1,35 @@
 # 23-dec-2020
 
+### 4 - largest continuous section of array with duplicates
+
+we ignore the duplicate subarrays
+https://www.geeksforgeeks.org/length-largest-subarray-contiguous-elements-set-2/
+
+```python
+def find_length(arr, n): 
+    max_len = 1
+    for i in range(0,n - 1): 
+  
+        myset = set() 
+        myset.add(arr[i]) 
+  
+        mn = arr[i] 
+        mx = arr[i] 
+        for j in range(i + 1,n): 
+  
+            if arr[j] in myset: 
+                break
+            myset.add(arr[j]) 
+            mn = min(mn, arr[j]) 
+            mx = max(mx, arr[j]) 
+  
+            if mx - mn == j - i: 
+                max_len = max(max_len, mx - mn + 1) 
+  
+    return max_len 
+```
+
+
 ### 3 - largest contiguous section of array
 
 Array with disctinct elements
