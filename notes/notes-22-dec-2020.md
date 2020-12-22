@@ -13,9 +13,7 @@ class Node:
     self.right = right
 
     
-#return type node
 def createTree(in_order, post_order):
-  #identify root
   
   if len(in_order) == 0 or len(post_order) == 0:
     return None
