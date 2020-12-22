@@ -1,5 +1,25 @@
 # 23-dec-2020
 
+### 7 - reverse string avoiding special chars
+
+```python
+def reverse_special(arr) 
+    
+    r = len(arr) - 1
+    l = 0; 
+  
+    while (l < r):
+        if (!isAlphabet(str[l])):
+            l+=1 
+        elif(!isAlphabet(str[r])):
+            r-=1
+        else:
+            swap(str[l], str[r]) 
+            l+=1 
+            r-=1 
+        
+```
+
 ### 6 - pythagorean triplet with hashing
 
 ```python
