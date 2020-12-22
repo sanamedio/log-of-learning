@@ -25,8 +25,6 @@ for md in mds:
 
     temp_content = []
     for line in data:
-        if "merkle" in line.lower():
-            import pdb;pdb.set_trace()
         if re.search("### \d+ - ", line.strip()):
 
             if last_type:
