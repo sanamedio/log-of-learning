@@ -8,6 +8,12 @@
 
 | LINK |
 |------|
+|[Krukshal algo](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-23-dec-2020.md#1---krukshal-algo) |
+|[Smallest unrepresented element in sorted array](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-23-dec-2020.md#2---smallest-unrepresented-element-in-sorted-array) |
+|[Largest contiguous section of array](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-23-dec-2020.md#3---largest-contiguous-section-of-array) |
+|[Largest continuous section of array with duplicates](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-23-dec-2020.md#4---largest-continuous-section-of-array-with-duplicates) |
+|[Pythagorean triplet](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-23-dec-2020.md#5---pythagorean-triplet) |
+|[Pythagorean triplet with hashing](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-23-dec-2020.md#6---pythagorean-triplet-with-hashing) |
 |[Building tree from inorder and postorder](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-22-dec-2020.md#1---building-tree-from-inorder-and-postorder) |
 |[Ebpf filters for kernel tracing](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-21-dec-2020.md#1---ebpf-filters-for-kernel-tracing) |
 |[Fast write counter usihng gil](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-21-dec-2020.md#2---fast-write-counter-usihng-gil) |
