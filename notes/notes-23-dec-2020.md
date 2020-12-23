@@ -2,6 +2,10 @@
 
 ### 16 - max subarray xor with trie
 
+https://www.geeksforgeeks.org/find-the-maximum-subarray-xor-in-a-given-array/
+
+Kinda clever usage of trie
+TODO work it out on paper
 
 ```python
 class Node:
