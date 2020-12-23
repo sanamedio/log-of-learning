@@ -1,5 +1,23 @@
 # 23-dec-2020
 
+### 10 - zigzag pattern
+
+```python
+def zig_zag(arr):
+    n = len(arr)
+    flag = True
+
+    for i in range(n - 1):
+
+        if (flag and arr[i] > arr[i + 1]) or (not flag and arr[i] < arr[i + 1]):
+            arr[i], arr[i + 1] = arr[i + 1], arr[i]
+        flag = not flag
+    return arr
+
+
+print(zig_zag([1, 2, 3, 4, 5, 6]))
+```
+
 ### 9 - count lesser triplets
 
 https://www.geeksforgeeks.org/count-triplets-with-sum-smaller-that-a-given-value/
