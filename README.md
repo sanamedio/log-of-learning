@@ -22,6 +22,8 @@
 |[Buy and sell stocks 1](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-23-dec-2020.md#12---buy-and-sell-stocks-1) |
 |[Buy and sell stocks 2](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-23-dec-2020.md#13---buy-and-sell-stocks-2) |
 |[Max diff in an array](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-23-dec-2020.md#14---max-diff-in-an-array) |
+|[Max subarray xor](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-23-dec-2020.md#15---max-subarray-xor) |
+|[Max subarray xor with trie](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-23-dec-2020.md#16---max-subarray-xor-with-trie) |
 |[Building tree from inorder and postorder](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-22-dec-2020.md#1---building-tree-from-inorder-and-postorder) |
 |[Ebpf filters for kernel tracing](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-21-dec-2020.md#1---ebpf-filters-for-kernel-tracing) |
 |[Fast write counter usihng gil](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-21-dec-2020.md#2---fast-write-counter-usihng-gil) |

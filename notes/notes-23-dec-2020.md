@@ -1,5 +1,114 @@
 # 23-dec-2020
 
+### 16 - max subarray xor with trie
+
+
+```python
+class Node:
+    def __init__(self, data):
+
+        self.data = data
+        self.left = None
+        self.right = None
+
+
+class Trie:
+    def __init__(self):
+        self.root = Node(0)
+
+    def insert(self, pre_xor):
+
+        self.temp = self.root
+
+        for i in range(31, -1, -1):
+
+            val = pre_xor & (1 << i)
+
+            if val:
+
+                if not self.temp.right:
+                    self.temp.right = Node(0)
+                self.temp = self.temp.right
+
+            if not val:
+                if not self.temp.left:
+                    self.temp.left = Node(0)
+                self.temp = self.temp.left
+
+        self.temp.data = pre_xor
+
+    def query(self, xor):
+
+        self.temp = self.root
+
+        for i in range(31, -1, -1):
+
+            val = xor & (1 << i)
+
+            if val:
+                if self.temp.left:
+                    self.temp = self.temp.left
+                elif self.temp.right:
+                    self.temp = self.temp.right
+            else:
+                if self.temp.right:
+                    self.temp = self.temp.right
+                elif self.temp.left:
+                    self.temp = self.temp.left
+
+        return xor ^ self.temp.data
+
+    def max_subarray_xor(self, n, arr):
+
+        self.insert(0)
+
+        result = -float("inf")
+        pre_xor = 0
+
+        for i in range(n):
+
+            pre_xor = pre_xor ^ arr[i]
+            self.insert(pre_xor)
+
+            result = max(result, self.query(pre_xor))
+
+        return result
+
+
+if __name__ == "__main__":
+
+    arr = [8, 1, 2, 12]
+    n = len(arr)
+    trie = Trie()
+    print(trie.max_subarray_xor(n, arr))
+```
+
+
+
+### 15 - max subarray xor
+
+
+```python
+def max_subarray_xor(arr):
+    ans = -2147483648
+    n = len(arr)
+    print(bin(ans))
+
+    for i in range(n):
+
+        curr_xor = 0
+
+        for j in range(i, n):
+
+            curr_xor = curr_xor ^ arr[j]
+            ans = max(ans, curr_xor)
+
+    return ans
+```
+
+
+
+
 ### 14 - max diff in an array
 
 https://www.geeksforgeeks.org/maximum-difference-between-two-elements/
