@@ -1,5 +1,39 @@
 # 23-dec-2020
 
+### 14 - max diff in an array
+
+https://www.geeksforgeeks.org/maximum-difference-between-two-elements/
+
+```python
+# The problem got reduced to finding
+# maximum sum subarray
+# 1 4 3 -> 3-1 = 2 and 4-1 + 3-4 = 2
+def max_diff(arr):
+
+    n = len(arr)
+
+    diff = [0] * (n - 1)
+
+    for i in range(0, n - 1):
+        diff[i] = arr[i + 1] - arr[i]
+
+    max_diff = diff[0]
+
+    for i in range(1, n - 1):
+        if diff[i - 1] > 0:
+            diff[i] += diff[i - 1]
+
+        if max_diff < diff[i]:
+            max_diff = diff[i]
+
+    return max_diff
+
+
+arr = [80, 2, 6, 3, 100]
+print(max_diff(arr))
+```
+
+
 ### 13 - buy and sell stocks 2
 
 https://www.geeksforgeeks.org/stock-buy-sell/
