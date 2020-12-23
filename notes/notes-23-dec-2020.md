@@ -1,5 +1,37 @@
 # 23-dec-2020
 
+### 9 - count lesser triplets
+
+https://www.geeksforgeeks.org/count-triplets-with-sum-smaller-that-a-given-value/
+
+```python
+def count_triplets(arr: list, total: int):
+
+    arr.sort()
+    n = len(arr)
+
+    ans = 0
+
+    for i in range(0, n - 2):
+
+        j = i + 1
+        k = n - 1
+
+        while j < k:
+
+            if arr[i] + arr[j] + arr[k] >= total:
+                k = k - 1
+            else:
+                ans += k - j
+                j = j + 1
+    return ans
+
+
+if __name__ == "__main__":
+    print(count_triplets([6, 1, 2, 3, 4, 5], 11))
+```
+
+
 ### 8 - finding palindrome partition
 
 https://www.geeksforgeeks.org/given-a-string-print-all-possible-palindromic-partition/
