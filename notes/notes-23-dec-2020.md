@@ -1,5 +1,51 @@
 # 23-dec-2020
 
+### 11 - generate sorted zigzag array from two array
+
+```python
+def generate_sorted(A, B, C, i, j, m, n, length, flag):
+
+    if flag:
+
+        if length:
+            print(C[: length + 1])
+
+        for k in range(i, m):
+
+            if not length:
+
+                C[length] = A[k]
+
+                generate_sorted(A, B, C, k + 1, j, m, n, length, not flag)
+            else:
+                if A[k] > C[length]:
+                    C[length + 1] = A[k]
+                    generate_sorted(A, B, C, k + 1, j, m, n, length + 1, not flag)
+    else:
+        for l in range(j, n):
+
+            if B[l] > C[length]:
+                C[length + 1] = B[l]
+                generate_sorted(A, B, C, i, l + 1, m, n, length + 1, not flag)
+
+
+def generate(A, B):
+    m = len(A)
+    n = len(B)
+
+    C = []
+    for i in range(m + n + 1):
+        C.append(0)
+
+    generate_sorted(A, B, C, 0, 0, m, n, 0, True)
+
+
+A = [0, 1, 2]
+B = [16, 1, 5]
+
+generate(A, B)
+```
+
 ### 10 - zigzag pattern
 
 ```python
