@@ -1,5 +1,56 @@
 # 23-dec-2020
 
+### 8 - finding palindrome partition
+
+https://www.geeksforgeeks.org/given-a-string-print-all-possible-palindromic-partition/
+
+```python
+def is_palindrome(string: str,  low: int, high: int):
+    while low < high:
+        if string[low] != string[high]:
+            return False
+        low += 1
+        high -= 1
+    return True
+
+
+def find_pal_part(all_part: list, curr_part:list,
+        start:int, n:int, string:str):
+
+    if start >= n:
+
+        x = curr_part.copy()
+
+        all_part.append(x)
+        return
+
+    for i in range(start, n):
+        if is_palindrome(string, start, i):
+            curr_part.append(string[start:i + 1])
+            find_pal_part(all_part, curr_part, i+1, n, string)
+            curr_part.pop()
+
+def all_pal_part(string: str):
+
+    n = len(string)
+
+    all_part = []
+
+    curr_part = []
+
+    find_pal_part(all_part, curr_part, 0, n, string)
+
+    for i in range(len(all_part)):
+        for j in range(len(all_part[i])):
+            print(all_part[i][j], end = " ")
+        print()
+
+if __name__ == "__main__":
+    string = "xoxoxoxi"
+    all_pal_part(string)
+```
+
+
 ### 7 - reverse string avoiding special chars
 
 ```python
