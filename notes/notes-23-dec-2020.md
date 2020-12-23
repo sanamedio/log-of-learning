@@ -1,5 +1,69 @@
 # 23-dec-2020
 
+### 13 - buy and sell stocks 2
+
+https://www.geeksforgeeks.org/stock-buy-sell/
+
+```python
+def max_profit(prices):
+
+    n = len(prices)
+    cost = 0
+    maxcost = 0
+
+    if not n:
+        return 0
+
+    min_price = prices[0]
+
+    for i in range(n):
+        min_price = min(min_price, prices[i])
+
+        cost = prices[i] - min_price
+
+        maxcost = max(maxcost, cost)
+
+    return maxcost
+
+
+print(max_profit([0, 0, 0]))
+print(max_profit([1, 2, 3]))
+print(max_profit([3, 2, 1]))
+print(max_profit([1, 1, 1]))
+print(max_profit([1, 0, 1, 0, 1]))
+```
+
+### 12 - buy and sell stocks 1
+
+```python
+def stock_buy_sell(price):
+    n = len(price)
+    if n == 1:
+        return
+
+    i = 0
+    while i < n - 1:
+        while (i < (n - 1)) and (price[i + 1] <= price[i]):
+            i += 1
+
+        if i == n - 1:
+            break
+
+        buy = i
+        i += 1
+
+        while (i < n) and (price[i] >= price[i - 1]):
+            i += 1
+
+        sell = i - 1
+
+        print(buy, sell)
+
+
+stock_buy_sell([10, 18, 26, 31, 4, 53, 69])
+```
+
+
 ### 11 - generate sorted zigzag array from two array
 
 ```python
