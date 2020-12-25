@@ -1,7 +1,15 @@
 # 25-dec-2020
 
 
-### 1 - mac reduce with pyspark
+### 2 - git log of function
+
+```
+git log -L :funcname:file_path
+```
+
+https://stackoverflow.com/questions/4781405/git-how-do-i-view-the-change-history-of-a-method-function/33953022#33953022
+
+### 1 - map reduce with pyspark
 
 rule discovery from data of transactions
 
