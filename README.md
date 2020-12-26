@@ -8,6 +8,7 @@
 
 | LINK |
 |------|
+|[Map reduce with pyspark](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-25-dec-2020.md#1---map-reduce-with-pyspark) |
 |[Krukshal algo](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-23-dec-2020.md#1---krukshal-algo) |
 |[Smallest unrepresented element in sorted array](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-23-dec-2020.md#2---smallest-unrepresented-element-in-sorted-array) |
 |[Largest contiguous section of array](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-23-dec-2020.md#3---largest-contiguous-section-of-array) |
@@ -868,6 +869,7 @@
 
 | LINK |
 |------|
+|[Git log of function](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-25-dec-2020.md#2---git-log-of-function) |
 |[Merkle trees](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-18-dec-2020.md#3---merkle-trees) |
 |[Capturing emails using regex](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-01-nov-2020.md#4---capturing-emails-using-regex) |
 |[Codegolf002](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-01-nov-2020.md#29---codegolf002) |
