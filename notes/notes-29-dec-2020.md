@@ -1,5 +1,13 @@
 # 29-dec-2020
 
+### 2 - Nth commit from start
+
+```zsh
+function gista {
+  git checkout $(git log --reverse  --pretty=format:"%H" $1 | head -$2 | tail -1)
+}
+```
+
 
 ### 1 - online sorted list using bisect
 
