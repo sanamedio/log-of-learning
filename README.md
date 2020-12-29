@@ -8,6 +8,7 @@
 
 | LINK |
 |------|
+|[Bisect right](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-30-dec-2020.md#1---bisect-right) |
 |[Online sorted list using bisect](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-29-dec-2020.md#1---online-sorted-list-using-bisect) |
 |[Map reduce with pyspark](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-25-dec-2020.md#1---map-reduce-with-pyspark) |
 |[Krukshal algo](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-23-dec-2020.md#1---krukshal-algo) |
@@ -870,6 +871,7 @@
 
 | LINK |
 |------|
+|[Nth commit from start](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-29-dec-2020.md#2---nth-commit-from-start) |
 |[Git log of function](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-25-dec-2020.md#2---git-log-of-function) |
 |[Merkle trees](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-18-dec-2020.md#3---merkle-trees) |
 |[Capturing emails using regex](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-01-nov-2020.md#4---capturing-emails-using-regex) |
