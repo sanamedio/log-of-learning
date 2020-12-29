@@ -1,5 +1,27 @@
 # 30-dec-2020
 
+### 2 - insort
+
+keeping a sorted array while inserting
+
+```python
+>>> from bisect import insort
+>>> arr = []
+>>> insort(arr,12)
+>>> arr
+[12]
+>>> insort(arr,1)
+>>> arr
+[1, 12]
+>>> insort(arr,25)
+>>> arr
+[1, 12, 25]
+>>> insort(arr,2)
+>>> arr
+[1, 2, 12, 25]
+>>>
+```
+
 ### 1 - bisect right
 
 https://github.com/python/cpython/blob/master/Lib/bisect.py
