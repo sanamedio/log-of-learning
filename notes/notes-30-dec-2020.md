@@ -1,5 +1,12 @@
 # 30-dec-2020
 
+### 3 - python quine
+
+https://stackoverflow.com/questions/6223285/shortest-python-quine
+```python
+print((lambda s:s%s)('print((lambda s:s%%s)(%r))'))
+```
+
 ### 2 - insort
 
 keeping a sorted array while inserting
