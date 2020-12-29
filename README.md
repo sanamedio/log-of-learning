@@ -8,6 +8,7 @@
 
 | LINK |
 |------|
+|[Online sorted list using bisect](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-29-dec-2020.md#1---online-sorted-list-using-bisect) |
 |[Map reduce with pyspark](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-25-dec-2020.md#1---map-reduce-with-pyspark) |
 |[Krukshal algo](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-23-dec-2020.md#1---krukshal-algo) |
 |[Smallest unrepresented element in sorted array](https://github.com/l0k3ndr/programming-notes/blob/master/notes/notes-23-dec-2020.md#2---smallest-unrepresented-element-in-sorted-array) |
