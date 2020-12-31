@@ -11,7 +11,7 @@ https://www.kenneth-truyers.net/2016/10/13/git-nosql-database/
 {"id": 1, "name":"loki"}
 ```
 
-### 1 - github actions are amazing
+### 1 - github actions
 
 - https://lab.github.com/githubtraining/github-actions:-hello-world
 - Just one .github/workflows/actions.yml file and magic. the followign one is to update readme of this repo!
