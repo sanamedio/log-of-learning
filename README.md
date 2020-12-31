@@ -3,11 +3,12 @@
 # python-notes
 # =================
 
-[ 913 ]
+[ 914 ]
 
 | LINK |
 |------|
 |[Github actions are amazing](https://github.com/l0k3ndr/python-notes/blob/master/notes/notes-31-dec-2020.md#1---github-actions-are-amazing) |
+|[Low level git ops](https://github.com/l0k3ndr/python-notes/blob/master/notes/notes-31-dec-2020.md#2---low-level-git-ops) |
 |[Bisect right](https://github.com/l0k3ndr/python-notes/blob/master/notes/notes-30-dec-2020.md#1---bisect-right) |
 |[Insort](https://github.com/l0k3ndr/python-notes/blob/master/notes/notes-30-dec-2020.md#2---insort) |
 |[Python quine](https://github.com/l0k3ndr/python-notes/blob/master/notes/notes-30-dec-2020.md#3---python-quine) |
