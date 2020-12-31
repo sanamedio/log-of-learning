@@ -1,5 +1,16 @@
 # 31-dec-2020
 
+### 2 - low level git ops
+
+https://www.kenneth-truyers.net/2016/10/13/git-nosql-database/
+
+```zsh
+➜  MyRepo git:(master) echo '{"id": 1, "name":"loki"}' | git hash-object -w --stdin
+064d8273bb560185c087f8b677a0e47796c73dca
+➜  MyRepo git:(master) git cat-file -p 064d8273bb560185c087f8b677a0e47796c73dca
+{"id": 1, "name":"loki"}
+```
+
 ### 1 - github actions are amazing
 
 - https://lab.github.com/githubtraining/github-actions:-hello-world
