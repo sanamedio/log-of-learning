@@ -2,8 +2,14 @@ import os
 import re
 from datetime import datetime
 
+readme_file = open("README.md","w")
 
-BLOB_PATH="https://github.com/l0k3ndr/programming-notes/blob/master/notes/"
+def override_print(x):
+    readme_file.write(x+"\n")
+
+print = override_print
+
+BLOB_PATH="https://github.com/l0k3ndr/python-notes/blob/master/notes/"
 
 mds = [ md for md in os.listdir("./notes/") if md.endswith(".md") ]
 
@@ -79,3 +85,5 @@ print ("# General")
 print ("")
 print (prefix_sub)
 print ( "\n".join(list(reversed([ "|" +  result[i] + "|" for i in range(len(result)) if categories[i] == "general" ]))))
+
+readme_file.close()
