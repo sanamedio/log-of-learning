@@ -74,16 +74,9 @@ prefix_sub = """
 
 print( prefix)
 
-#print("[ "+ str(len(result)) + " ]")
+print("[ "+ str(len(result)) + " ]")
 
-print ("# Python")
-print ("")
 print (prefix_sub)
-print ( "\n".join(list(reversed([ "|" +  result[i] + "|" for i in range(len(result)) if categories[i] != "general" ]))))
-print ("\n\n")
-print ("# General")
-print ("")
-print (prefix_sub)
-print ( "\n".join(list(reversed([ "|" +  result[i] + "|" for i in range(len(result)) if categories[i] == "general" ]))))
+print ( "\n".join(list(reversed([ "|" +  result[i] + "|" for i in range(len(result))]))))
 
 readme_file.close()
