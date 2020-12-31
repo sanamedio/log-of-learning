@@ -54,7 +54,7 @@ categories = categories[1:]
 
 prefix = """
 # =================
-# programming-notes
+# python-notes
 # =================
 """
 
