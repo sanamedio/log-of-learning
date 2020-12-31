@@ -3,8 +3,7 @@
 # python-notes
 # =================
 
-# Python
-
+[ 913 ]
 
 | LINK |
 |------|
@@ -13,7 +12,9 @@
 |[Insort](https://github.com/l0k3ndr/python-notes/blob/master/notes/notes-30-dec-2020.md#2---insort) |
 |[Python quine](https://github.com/l0k3ndr/python-notes/blob/master/notes/notes-30-dec-2020.md#3---python-quine) |
 |[Online sorted list using bisect](https://github.com/l0k3ndr/python-notes/blob/master/notes/notes-29-dec-2020.md#1---online-sorted-list-using-bisect) |
+|[Nth commit from start](https://github.com/l0k3ndr/python-notes/blob/master/notes/notes-29-dec-2020.md#2---nth-commit-from-start) |
 |[Map reduce with pyspark](https://github.com/l0k3ndr/python-notes/blob/master/notes/notes-25-dec-2020.md#1---map-reduce-with-pyspark) |
+|[Git log of function](https://github.com/l0k3ndr/python-notes/blob/master/notes/notes-25-dec-2020.md#2---git-log-of-function) |
 |[Krukshal algo](https://github.com/l0k3ndr/python-notes/blob/master/notes/notes-23-dec-2020.md#1---krukshal-algo) |
 |[Smallest unrepresented element in sorted array](https://github.com/l0k3ndr/python-notes/blob/master/notes/notes-23-dec-2020.md#2---smallest-unrepresented-element-in-sorted-array) |
 |[Largest contiguous section of array](https://github.com/l0k3ndr/python-notes/blob/master/notes/notes-23-dec-2020.md#3---largest-contiguous-section-of-array) |
@@ -33,6 +34,7 @@
 |[Building tree from inorder and postorder](https://github.com/l0k3ndr/python-notes/blob/master/notes/notes-22-dec-2020.md#1---building-tree-from-inorder-and-postorder) |
 |[Ebpf filters for kernel tracing](https://github.com/l0k3ndr/python-notes/blob/master/notes/notes-21-dec-2020.md#1---ebpf-filters-for-kernel-tracing) |
 |[Fast write counter usihng gil](https://github.com/l0k3ndr/python-notes/blob/master/notes/notes-21-dec-2020.md#2---fast-write-counter-usihng-gil) |
+|[Merkle trees](https://github.com/l0k3ndr/python-notes/blob/master/notes/notes-18-dec-2020.md#3---merkle-trees) |
 |[Disabling gc to improve performance](https://github.com/l0k3ndr/python-notes/blob/master/notes/notes-18-dec-2020.md#2---disabling-gc-to-improve-performance) |
 |[Strict modules concept](https://github.com/l0k3ndr/python-notes/blob/master/notes/notes-18-dec-2020.md#1---strict-modules-concept) |
 |[Getting list of ip addresses owned by amazon](https://github.com/l0k3ndr/python-notes/blob/master/notes/notes-12-dec-2020.md#1---getting-list-of-ip-addresses-owned-by-amazon) |
@@ -43,6 +45,7 @@
 |[Lsm-db transactions](https://github.com/l0k3ndr/python-notes/blob/master/notes/notes-01-nov-2020.md#1---lsm-db-transactions) |
 |[Python shaped by leaky abstractions](https://github.com/l0k3ndr/python-notes/blob/master/notes/notes-01-nov-2020.md#2---python-shaped-by-leaky-abstractions) |
 |[Simple way to make variable mock](https://github.com/l0k3ndr/python-notes/blob/master/notes/notes-01-nov-2020.md#3---simple-way-to-make-variable-mock) |
+|[Capturing emails using regex](https://github.com/l0k3ndr/python-notes/blob/master/notes/notes-01-nov-2020.md#4---capturing-emails-using-regex) |
 |[What one liners should not be](https://github.com/l0k3ndr/python-notes/blob/master/notes/notes-01-nov-2020.md#5---what-one-liners-should-not-be) |
 |[Trivia](https://github.com/l0k3ndr/python-notes/blob/master/notes/notes-01-nov-2020.md#6---trivia) |
 |[Mysql with python](https://github.com/l0k3ndr/python-notes/blob/master/notes/notes-01-nov-2020.md#7---mysql-with-python) |
@@ -67,8 +70,10 @@
 |[Blackboard pattern](https://github.com/l0k3ndr/python-notes/blob/master/notes/notes-01-nov-2020.md#26---blackboard-pattern) |
 |[Heirarchical state machine pattern](https://github.com/l0k3ndr/python-notes/blob/master/notes/notes-01-nov-2020.md#27---heirarchical-state-machine-pattern) |
 |[Codegolf001](https://github.com/l0k3ndr/python-notes/blob/master/notes/notes-01-nov-2020.md#28---codegolf001) |
+|[Codegolf002](https://github.com/l0k3ndr/python-notes/blob/master/notes/notes-01-nov-2020.md#29---codegolf002) |
 |[Codegolf003](https://github.com/l0k3ndr/python-notes/blob/master/notes/notes-01-nov-2020.md#30---codegolf003) |
 |[Codegolf004](https://github.com/l0k3ndr/python-notes/blob/master/notes/notes-01-nov-2020.md#31---codegolf004) |
+|[Codegolf005](https://github.com/l0k3ndr/python-notes/blob/master/notes/notes-01-nov-2020.md#32---codegolf005) |
 |[Qsort one-liner](https://github.com/l0k3ndr/python-notes/blob/master/notes/notes-01-nov-2020.md#33---qsort-one-liner) |
 |[Capping x](https://github.com/l0k3ndr/python-notes/blob/master/notes/notes-01-nov-2020.md#34---capping-x) |
 |[Alwaays forget about interact](https://github.com/l0k3ndr/python-notes/blob/master/notes/notes-01-nov-2020.md#35---alwaays-forget-about-interact) |
@@ -76,6 +81,7 @@
 |[Using numba with cpython](https://github.com/l0k3ndr/python-notes/blob/master/notes/notes-01-nov-2020.md#37---using-numba-with-cpython) |
 |[Init subclass](https://github.com/l0k3ndr/python-notes/blob/master/notes/notes-19-oct-2020.md#1---init-subclass) |
 |[Apply decorator to all subclassess](https://github.com/l0k3ndr/python-notes/blob/master/notes/notes-19-oct-2020.md#2---apply-decorator-to-all-subclassess) |
+|[Getting help on any method](https://github.com/l0k3ndr/python-notes/blob/master/notes/notes-17-aug-2020.md#1---getting-help-on-any-method) |
 |[Creating a gchat git commit notifier](https://github.com/l0k3ndr/python-notes/blob/master/notes/notes-15-aug-2020.md#1---creating-a-gchat-git-commit-notifier) |
 |[Removed calls between two commits](https://github.com/l0k3ndr/python-notes/blob/master/notes/notes-13-aug-2020.md#1---removed-calls-between-two-commits) |
 |[Finding minimum index one liner](https://github.com/l0k3ndr/python-notes/blob/master/notes/notes-13-aug-2020.md#2---finding-minimum-index-one-liner) |
@@ -139,6 +145,7 @@
 |[Pytorch examples](https://github.com/l0k3ndr/python-notes/blob/master/notes/notes-09-apr-2020.md#1---pytorch-examples) |
 |[Pytorch basic example](https://github.com/l0k3ndr/python-notes/blob/master/notes/notes-05-apr-2020.md#1---pytorch-basic-example) |
 |[Openai gym q-learning](https://github.com/l0k3ndr/python-notes/blob/master/notes/notes-15-mar-2020.md#1---openai-gym-q-learning) |
+|[Comparing branches git](https://github.com/l0k3ndr/python-notes/blob/master/notes/notes-09-mar-2020.md#1---comparing-branches-git) |
 |[Modifying variables from the past](https://github.com/l0k3ndr/python-notes/blob/master/notes/notes-03-mar-2020.md#1---modifying-variables-from-the-past) |
 |[Unicode in python3](https://github.com/l0k3ndr/python-notes/blob/master/notes/notes-01-mar-2020.md#1---unicode-in-python3) |
 |[Joining vs concat has 1000x difference in performance](https://github.com/l0k3ndr/python-notes/blob/master/notes/notes-01-mar-2020.md#2---joining-vs-concat-has-1000x-difference-in-performance) |
@@ -170,7 +177,10 @@
 |[Dircmp to compare directory structures](https://github.com/l0k3ndr/python-notes/blob/master/notes/notes-15-jan-2020.md#6---dircmp-to-compare-directory-structures) |
 |[Fileinput for multiple file reading](https://github.com/l0k3ndr/python-notes/blob/master/notes/notes-15-jan-2020.md#7---fileinput-for-multiple-file-reading) |
 |[Entry points](https://github.com/l0k3ndr/python-notes/blob/master/notes/notes-08-dec-2019.md#1---entry-points) |
+|[Mongodb oplog access](https://github.com/l0k3ndr/python-notes/blob/master/notes/notes-08-dec-2019.md#2---mongodb-oplog-access) |
+|[A + b = c using regex](https://github.com/l0k3ndr/python-notes/blob/master/notes/notes-08-dec-2019.md#3---a-+-b-=-c-using-regex) |
 |[Circleci tutorial with flask and github](https://github.com/l0k3ndr/python-notes/blob/master/notes/notes-08-dec-2019.md#4---circleci-tutorial-with-flask-and-github) |
+|[Difference between let and var in js](https://github.com/l0k3ndr/python-notes/blob/master/notes/notes-08-dec-2019.md#5---difference-between-let-and-var-in-js) |
 |[Award budget cuts (coding problem)](https://github.com/l0k3ndr/python-notes/blob/master/notes/notes-08-dec-2019.md#6---award-budget-cuts-coding-problem) |
 |[Threadlocal in python](https://github.com/l0k3ndr/python-notes/blob/master/notes/notes-07-dec-2019.md#1---threadlocal-in-python) |
 |[Sorting when element is at max k-place deranged](https://github.com/l0k3ndr/python-notes/blob/master/notes/notes-07-dec-2019.md#2---sorting-when-element-is-at-max-k-place-deranged) |
@@ -178,6 +188,7 @@
 |[Python2 vs python3 comparision](https://github.com/l0k3ndr/python-notes/blob/master/notes/notes-05-dec-2019.md#1---python2-vs-python3-comparision) |
 |[Watching youtube videos in turtle window](https://github.com/l0k3ndr/python-notes/blob/master/notes/notes-05-dec-2019.md#2---watching-youtube-videos-in-turtle-window) |
 |[Css selectors and beautiful soup](https://github.com/l0k3ndr/python-notes/blob/master/notes/notes-05-dec-2019.md#3---css-selectors-and-beautiful-soup) |
+|[Inverted index vs forward index](https://github.com/l0k3ndr/python-notes/blob/master/notes/notes-03-dec-2019.md#1---inverted-index-vs-forward-index) |
 |[Regular expression parser](https://github.com/l0k3ndr/python-notes/blob/master/notes/notes-03-dec-2019.md#2---regular-expression-parser) |
 |[Call center oo design](https://github.com/l0k3ndr/python-notes/blob/master/notes/notes-03-dec-2019.md#3---call-center-oo-design) |
 |[Deck of cards oo design](https://github.com/l0k3ndr/python-notes/blob/master/notes/notes-03-dec-2019.md#4---deck-of-cards-oo-design) |
@@ -188,11 +199,17 @@
 |[Reversing a linked list in python](https://github.com/l0k3ndr/python-notes/blob/master/notes/notes-02-dec-2019.md#1---reversing-a-linked-list-in-python) |
 |[Buy and sell stocks in python](https://github.com/l0k3ndr/python-notes/blob/master/notes/notes-02-dec-2019.md#2---buy-and-sell-stocks-in-python) |
 |[Finding max diff between two numbers problem](https://github.com/l0k3ndr/python-notes/blob/master/notes/notes-02-dec-2019.md#3---finding-max-diff-between-two-numbers-problem) |
+|[Listing global npm modules](https://github.com/l0k3ndr/python-notes/blob/master/notes/notes-01-dec-2019.md#1---listing-global-npm-modules) |
+|[Pretty boxes and colors while making node cli tools](https://github.com/l0k3ndr/python-notes/blob/master/notes/notes-01-dec-2019.md#2---pretty-boxes-and-colors-while-making-node-cli-tools) |
+|[Command line app with axios to show jokes](https://github.com/l0k3ndr/python-notes/blob/master/notes/notes-01-dec-2019.md#3---command-line-app-with-axios-to-show-jokes) |
+|[Async/await with axios](https://github.com/l0k3ndr/python-notes/blob/master/notes/notes-01-dec-2019.md#4---async/await-with-axios) |
 |[Headless selenium](https://github.com/l0k3ndr/python-notes/blob/master/notes/notes-30-nov-2019.md#1---headless-selenium) |
 |[Quick tkinter gui to help in time boxing](https://github.com/l0k3ndr/python-notes/blob/master/notes/notes-30-nov-2019.md#2---quick-tkinter-gui-to-help-in-time-boxing) |
+|[Two way data binding in pure js](https://github.com/l0k3ndr/python-notes/blob/master/notes/notes-28-nov-2019.md#1---two-way-data-binding-in-pure-js) |
 |[Finding lattice point is easier than i thought](https://github.com/l0k3ndr/python-notes/blob/master/notes/notes-28-nov-2019.md#2---finding-lattice-point-is-easier-than-i-thought) |
 |[Removing duplicates by swapping the dupes to the end](https://github.com/l0k3ndr/python-notes/blob/master/notes/notes-28-nov-2019.md#3---removing-duplicates-by-swapping-the-dupes-to-the-end) |
 |[Pain fence problem - memory optimized dp](https://github.com/l0k3ndr/python-notes/blob/master/notes/notes-28-nov-2019.md#4---pain-fence-problem---memory-optimized-dp) |
+|[The mathematics of bulb switch problem](https://github.com/l0k3ndr/python-notes/blob/master/notes/notes-28-nov-2019.md#5---the-mathematics-of-bulb-switch-problem) |
 |[Nim game play with dp](https://github.com/l0k3ndr/python-notes/blob/master/notes/notes-28-nov-2019.md#6---nim-game-play-with-dp) |
 |[Classmethod vs staticmethod](https://github.com/l0k3ndr/python-notes/blob/master/notes/notes-28-nov-2019.md#7---classmethod-vs-staticmethod) |
 |[Handling negative power](https://github.com/l0k3ndr/python-notes/blob/master/notes/notes-28-nov-2019.md#8---handling-negative-power) |
@@ -201,6 +218,8 @@
 |[Dutch national flag 3-way sort](https://github.com/l0k3ndr/python-notes/blob/master/notes/notes-27-nov-2019.md#2---dutch-national-flag-3-way-sort) |
 |[Pip can directly work on urls!](https://github.com/l0k3ndr/python-notes/blob/master/notes/notes-27-nov-2019.md#3---pip-can-directly-work-on-urls!) |
 |[Few useful one-liners](https://github.com/l0k3ndr/python-notes/blob/master/notes/notes-25-nov-2019.md#1---few-useful-one-liners) |
+|[Understanding cache in detail](https://github.com/l0k3ndr/python-notes/blob/master/notes/notes-21-nov-2019.md#1---understanding-cache-in-detail) |
+|[Dumping process's memory](https://github.com/l0k3ndr/python-notes/blob/master/notes/notes-20-nov-2019.md#1---dumping-process's-memory) |
 |[Diagnosing memory leaks using guppy](https://github.com/l0k3ndr/python-notes/blob/master/notes/notes-20-nov-2019.md#2---diagnosing-memory-leaks-using-guppy) |
 |[Turtle animation of sine](https://github.com/l0k3ndr/python-notes/blob/master/notes/notes-20-nov-2019.md#3---turtle-animation-of-sine) |
 |[Torrent download using python](https://github.com/l0k3ndr/python-notes/blob/master/notes/notes-08-nov-2019.md#1---torrent-download-using-python) |
@@ -208,16 +227,23 @@
 |[Crypto asymmetric in python](https://github.com/l0k3ndr/python-notes/blob/master/notes/notes-28-oct-2019.md#1---crypto-asymmetric-in-python) |
 |[Dbus send notifications](https://github.com/l0k3ndr/python-notes/blob/master/notes/notes-23-oct-2019.md#1---dbus-send-notifications) |
 |[Listening to dbus](https://github.com/l0k3ndr/python-notes/blob/master/notes/notes-23-oct-2019.md#2---listening-to-dbus) |
+|[Buffer cache](https://github.com/l0k3ndr/python-notes/blob/master/notes/notes-04-oct-2019.md#1---buffer-cache) |
 |[Probability game](https://github.com/l0k3ndr/python-notes/blob/master/notes/notes-03-oct-2019.md#1---probability-game) |
+|[Disk usage in linux](https://github.com/l0k3ndr/python-notes/blob/master/notes/notes-27-sep-2019.md#1---disk-usage-in-linux) |
 |[Afl fuzzing using python](https://github.com/l0k3ndr/python-notes/blob/master/notes/notes-13-aug-2019.md#1---afl-fuzzing-using-python) |
 |[Building grep with keras 99.57% accuracy](https://github.com/l0k3ndr/python-notes/blob/master/notes/notes-08-jun-2019.md#1---building-grep-with-keras-99.57%-accuracy) |
 |[Finding bitwise and of a range](https://github.com/l0k3ndr/python-notes/blob/master/notes/notes-08-jun-2019.md#2---finding-bitwise-and-of-a-range) |
 |[Building grep using keras](https://github.com/l0k3ndr/python-notes/blob/master/notes/notes-07-jun-2019.md#1---building-grep-using-keras) |
 |[Building grep using keras part 2](https://github.com/l0k3ndr/python-notes/blob/master/notes/notes-07-jun-2019.md#2---building-grep-using-keras-part-2) |
 |[Keras mnist tutorial](https://github.com/l0k3ndr/python-notes/blob/master/notes/notes-06-jun-2019.md#1---keras-mnist-tutorial) |
+|[Stack, heap, and code virtual locations](https://github.com/l0k3ndr/python-notes/blob/master/notes/notes-05-jun-2019.md#1---stack-heap-and-code-virtual-locations) |
 |[Finding solutions through graphing](https://github.com/l0k3ndr/python-notes/blob/master/notes/notes-05-jun-2019.md#2---finding-solutions-through-graphing) |
 |[Pythonic palindrome](https://github.com/l0k3ndr/python-notes/blob/master/notes/notes-22-may-2019.md#1---pythonic-palindrome) |
 |[A simple cpu emulator](https://github.com/l0k3ndr/python-notes/blob/master/notes/notes-18-may-2019.md#1---a-simple-cpu-emulator) |
+|[Learning kubernetes by hands-on](https://github.com/l0k3ndr/python-notes/blob/master/notes/notes-13-may-2019.md#1---learning-kubernetes-by-hands-on) |
+|[Golang file server and http server](https://github.com/l0k3ndr/python-notes/blob/master/notes/notes-12-may-2019.md#1---golang-file-server-and-http-server) |
+|[Simple random numbers example in golang](https://github.com/l0k3ndr/python-notes/blob/master/notes/notes-12-may-2019.md#2---simple-random-numbers-example-in-golang) |
+|[Golang all basic features](https://github.com/l0k3ndr/python-notes/blob/master/notes/notes-11-may-2019.md#1---golang-all-basic-features) |
 |[Python with cockroach db using psycopg2 driver](https://github.com/l0k3ndr/python-notes/blob/master/notes/notes-09-may-2019.md#1---python-with-cockroach-db-using-psycopg2-driver) |
 |[Linecache module](https://github.com/l0k3ndr/python-notes/blob/master/notes/notes-08-may-2019.md#1---linecache-module) |
 |[Sysconfig to get details about python env](https://github.com/l0k3ndr/python-notes/blob/master/notes/notes-08-may-2019.md#2---sysconfig-to-get-details-about-python-env) |
@@ -225,15 +251,39 @@
 |[Sched for scheduling](https://github.com/l0k3ndr/python-notes/blob/master/notes/notes-08-may-2019.md#4---sched-for-scheduling) |
 |[Turing machine](https://github.com/l0k3ndr/python-notes/blob/master/notes/notes-05-may-2019.md#1---turing-machine) |
 |[Ipc queues](https://github.com/l0k3ndr/python-notes/blob/master/notes/notes-05-may-2019.md#2---ipc-queues) |
+|[Embedded etcd3 server in golang](https://github.com/l0k3ndr/python-notes/blob/master/notes/notes-02-may-2019.md#1---embedded-etcd3-server-in-golang) |
 |[Python disable warnings](https://github.com/l0k3ndr/python-notes/blob/master/notes/notes-02-may-2019.md#2---python-disable-warnings) |
 |[Knight closure](https://github.com/l0k3ndr/python-notes/blob/master/notes/notes-02-may-2019.md#3---knight-closure) |
 |[Monotonic time in python](https://github.com/l0k3ndr/python-notes/blob/master/notes/notes-01-may-2019.md#1---monotonic-time-in-python) |
 |[Python with etcd - getting notified of key creation](https://github.com/l0k3ndr/python-notes/blob/master/notes/notes-01-may-2019.md#2---python-with-etcd---getting-notified-of-key-creation) |
 |[Locks with python-etcd3](https://github.com/l0k3ndr/python-notes/blob/master/notes/notes-01-may-2019.md#3---locks-with-python-etcd3) |
+|[Kubernetes autoscaling](https://github.com/l0k3ndr/python-notes/blob/master/notes/notes-30-apr-2019.md#1---kubernetes-autoscaling) |
 |[Python release vs. distribution](https://github.com/l0k3ndr/python-notes/blob/master/notes/notes-30-apr-2019.md#2---python-release-vs.-distribution) |
+|[Go exit value, is not same as what is returned](https://github.com/l0k3ndr/python-notes/blob/master/notes/notes-29-apr-2019.md#1---go-exit-value-is-not-same-as-what-is-returned) |
+|[Handling sys signals in golang](https://github.com/l0k3ndr/python-notes/blob/master/notes/notes-29-apr-2019.md#2---handling-sys-signals-in-golang) |
+|[Running binaries as processes](https://github.com/l0k3ndr/python-notes/blob/master/notes/notes-29-apr-2019.md#3---running-binaries-as-processes) |
+|[Tcp puzzler](https://github.com/l0k3ndr/python-notes/blob/master/notes/notes-29-apr-2019.md#4---tcp-puzzler) |
+|[Spawining processes in golang](https://github.com/l0k3ndr/python-notes/blob/master/notes/notes-29-apr-2019.md#5---spawining-processes-in-golang) |
+|[Kubernetes](https://github.com/l0k3ndr/python-notes/blob/master/notes/notes-29-apr-2019.md#6---kubernetes) |
+|[Server/client in bash for quick use](https://github.com/l0k3ndr/python-notes/blob/master/notes/notes-26-apr-2019.md#1---server/client-in-bash-for-quick-use) |
+|[Sentry with golang](https://github.com/l0k3ndr/python-notes/blob/master/notes/notes-26-apr-2019.md#2---sentry-with-golang) |
+|[Go routine](https://github.com/l0k3ndr/python-notes/blob/master/notes/notes-26-apr-2019.md#3---go-routine) |
+|[Getting links from text](https://github.com/l0k3ndr/python-notes/blob/master/notes/notes-26-apr-2019.md#4---getting-links-from-text) |
+|[Aws](https://github.com/l0k3ndr/python-notes/blob/master/notes/notes-26-apr-2019.md#5---aws) |
 |[Golang cmd prompt](https://github.com/l0k3ndr/python-notes/blob/master/notes/notes-24-apr-2019.md#1---golang-cmd-prompt) |
+|[Golang-set](https://github.com/l0k3ndr/python-notes/blob/master/notes/notes-24-apr-2019.md#2---golang-set) |
+|[Colorful text in golang](https://github.com/l0k3ndr/python-notes/blob/master/notes/notes-24-apr-2019.md#3---colorful-text-in-golang) |
+|[Golang now](https://github.com/l0k3ndr/python-notes/blob/master/notes/notes-24-apr-2019.md#4---golang-now) |
 |[Python http logging](https://github.com/l0k3ndr/python-notes/blob/master/notes/notes-24-apr-2019.md#5---python-http-logging) |
+|[Adding latency to network for testing](https://github.com/l0k3ndr/python-notes/blob/master/notes/notes-24-apr-2019.md#6---adding-latency-to-network-for-testing) |
+|[Go basic simple programs](https://github.com/l0k3ndr/python-notes/blob/master/notes/notes-24-apr-2019.md#7---go-basic-simple-programs) |
 |[Pysnooper for logging injection](https://github.com/l0k3ndr/python-notes/blob/master/notes/notes-22-apr-2019.md#1---pysnooper-for-logging-injection) |
+|[Golang tcp-server and client](https://github.com/l0k3ndr/python-notes/blob/master/notes/notes-22-apr-2019.md#2---golang-tcp-server-and-client) |
+|[Terraform basic script for aws http server](https://github.com/l0k3ndr/python-notes/blob/master/notes/notes-20-apr-2019.md#1---terraform-basic-script-for-aws-http-server) |
+|[Generating random string on terminal using openssl](https://github.com/l0k3ndr/python-notes/blob/master/notes/notes-20-apr-2019.md#2---generating-random-string-on-terminal-using-openssl) |
+|[Golang syntax](https://github.com/l0k3ndr/python-notes/blob/master/notes/notes-18-apr-2019.md#1---golang-syntax) |
+|[Golang defer](https://github.com/l0k3ndr/python-notes/blob/master/notes/notes-18-apr-2019.md#2---golang-defer) |
+|[Golang variadic functions](https://github.com/l0k3ndr/python-notes/blob/master/notes/notes-18-apr-2019.md#3---golang-variadic-functions) |
 |[Range is a sequence](https://github.com/l0k3ndr/python-notes/blob/master/notes/notes-16-apr-2019.md#1---range-is-a-sequence) |
 |[Pysolr](https://github.com/l0k3ndr/python-notes/blob/master/notes/notes-16-apr-2019.md#2---pysolr) |
 |[Executing web assembly with python](https://github.com/l0k3ndr/python-notes/blob/master/notes/notes-16-apr-2019.md#3---executing-web-assembly-with-python) |
@@ -582,6 +632,7 @@
 |[Symbol table ( cpython source)](https://github.com/l0k3ndr/python-notes/blob/master/notes/notes-28-oct-2018.md#8---symbol-table--cpython-source) |
 |[Other data structures cpython](https://github.com/l0k3ndr/python-notes/blob/master/notes/notes-28-oct-2018.md#9---other-data-structures-cpython) |
 |[Variable flags to specify context of name def. (cpython sc)](https://github.com/l0k3ndr/python-notes/blob/master/notes/notes-28-oct-2018.md#10---variable-flags-to-specify-context-of-name-def.-cpython-sc) |
+|[Basicblock data structure](https://github.com/l0k3ndr/python-notes/blob/master/notes/notes-28-oct-2018.md#11---basicblock-data-structure) |
 |[Pytypeobject](https://github.com/l0k3ndr/python-notes/blob/master/notes/notes-28-oct-2018.md#12---pytypeobject) |
 |[How generators are able to capture execution state and update that at will](https://github.com/l0k3ndr/python-notes/blob/master/notes/notes-28-oct-2018.md#13---how-generators-are-able-to-capture-execution-state-and-update-that-at-will) |
 |[The need for gil](https://github.com/l0k3ndr/python-notes/blob/master/notes/notes-28-oct-2018.md#14---the-need-for-gil) |
@@ -724,6 +775,8 @@
 |[Lifecycle of python code](https://github.com/l0k3ndr/python-notes/blob/master/notes/notes-16-oct-2018.md#2---lifecycle-of-python-code) |
 |[Python docs ( damn; reached them so late )](https://github.com/l0k3ndr/python-notes/blob/master/notes/notes-16-oct-2018.md#3---python-docs--damn;-reached-them-so-late-) |
 |[Id() of mutables](https://github.com/l0k3ndr/python-notes/blob/master/notes/notes-16-oct-2018.md#4---id-of-mutables) |
+|[Midnight time evaluates to false](https://github.com/l0k3ndr/python-notes/blob/master/notes/notes-16-oct-2018.md#5---midnight-time-evaluates-to-false) |
+|[Assertions](https://github.com/l0k3ndr/python-notes/blob/master/notes/notes-15-oct-2018.md#1---assertions) |
 |[Context with](https://github.com/l0k3ndr/python-notes/blob/master/notes/notes-15-oct-2018.md#2---context-with) |
 |[Try except finally ~~ with](https://github.com/l0k3ndr/python-notes/blob/master/notes/notes-15-oct-2018.md#3---try-except-finally-~~-with) |
 |[Contextlib to create with interface, generator based](https://github.com/l0k3ndr/python-notes/blob/master/notes/notes-15-oct-2018.md#4---contextlib-to-create-with-interface-generator-based) |
@@ -843,6 +896,7 @@
 |[Print in python 2 vs 3](https://github.com/l0k3ndr/python-notes/blob/master/notes/notes-01-oct-2018.md#26---print-in-python-2-vs-3) |
 |[Memory management](https://github.com/l0k3ndr/python-notes/blob/master/notes/notes-01-oct-2018.md#27---memory-management) |
 |[Builtin datatypes](https://github.com/l0k3ndr/python-notes/blob/master/notes/notes-01-oct-2018.md#28---builtin-datatypes) |
+|[Try except](https://github.com/l0k3ndr/python-notes/blob/master/notes/notes-01-oct-2018.md#29---try-except) |
 |[Id()](https://github.com/l0k3ndr/python-notes/blob/master/notes/notes-01-oct-2018.md#30---id) |
 |[Gil](https://github.com/l0k3ndr/python-notes/blob/master/notes/notes-01-oct-2018.md#31---gil) |
 |[Inheritance](https://github.com/l0k3ndr/python-notes/blob/master/notes/notes-01-oct-2018.md#32---inheritance) |
@@ -866,66 +920,3 @@
 |[Flavours of python](https://github.com/l0k3ndr/python-notes/blob/master/notes/notes-01-oct-2018.md#50---flavours-of-python) |
 |[Bytecode for cpython](https://github.com/l0k3ndr/python-notes/blob/master/notes/notes-01-oct-2018.md#51---bytecode-for-cpython) |
 |[Default argument initialization issue](https://github.com/l0k3ndr/python-notes/blob/master/notes/notes-01-oct-2018.md#52---default-argument-initialization-issue) |
-
-
-
-# General
-
-
-| LINK |
-|------|
-|[Nth commit from start](https://github.com/l0k3ndr/python-notes/blob/master/notes/notes-29-dec-2020.md#2---nth-commit-from-start) |
-|[Git log of function](https://github.com/l0k3ndr/python-notes/blob/master/notes/notes-25-dec-2020.md#2---git-log-of-function) |
-|[Merkle trees](https://github.com/l0k3ndr/python-notes/blob/master/notes/notes-18-dec-2020.md#3---merkle-trees) |
-|[Capturing emails using regex](https://github.com/l0k3ndr/python-notes/blob/master/notes/notes-01-nov-2020.md#4---capturing-emails-using-regex) |
-|[Codegolf002](https://github.com/l0k3ndr/python-notes/blob/master/notes/notes-01-nov-2020.md#29---codegolf002) |
-|[Codegolf005](https://github.com/l0k3ndr/python-notes/blob/master/notes/notes-01-nov-2020.md#32---codegolf005) |
-|[Getting help on any method](https://github.com/l0k3ndr/python-notes/blob/master/notes/notes-17-aug-2020.md#1---getting-help-on-any-method) |
-|[Comparing branches git](https://github.com/l0k3ndr/python-notes/blob/master/notes/notes-09-mar-2020.md#1---comparing-branches-git) |
-|[Mongodb oplog access](https://github.com/l0k3ndr/python-notes/blob/master/notes/notes-08-dec-2019.md#2---mongodb-oplog-access) |
-|[A + b = c using regex](https://github.com/l0k3ndr/python-notes/blob/master/notes/notes-08-dec-2019.md#3---a-+-b-=-c-using-regex) |
-|[Difference between let and var in js](https://github.com/l0k3ndr/python-notes/blob/master/notes/notes-08-dec-2019.md#5---difference-between-let-and-var-in-js) |
-|[Inverted index vs forward index](https://github.com/l0k3ndr/python-notes/blob/master/notes/notes-03-dec-2019.md#1---inverted-index-vs-forward-index) |
-|[Listing global npm modules](https://github.com/l0k3ndr/python-notes/blob/master/notes/notes-01-dec-2019.md#1---listing-global-npm-modules) |
-|[Pretty boxes and colors while making node cli tools](https://github.com/l0k3ndr/python-notes/blob/master/notes/notes-01-dec-2019.md#2---pretty-boxes-and-colors-while-making-node-cli-tools) |
-|[Command line app with axios to show jokes](https://github.com/l0k3ndr/python-notes/blob/master/notes/notes-01-dec-2019.md#3---command-line-app-with-axios-to-show-jokes) |
-|[Async/await with axios](https://github.com/l0k3ndr/python-notes/blob/master/notes/notes-01-dec-2019.md#4---async/await-with-axios) |
-|[Two way data binding in pure js](https://github.com/l0k3ndr/python-notes/blob/master/notes/notes-28-nov-2019.md#1---two-way-data-binding-in-pure-js) |
-|[The mathematics of bulb switch problem](https://github.com/l0k3ndr/python-notes/blob/master/notes/notes-28-nov-2019.md#5---the-mathematics-of-bulb-switch-problem) |
-|[Understanding cache in detail](https://github.com/l0k3ndr/python-notes/blob/master/notes/notes-21-nov-2019.md#1---understanding-cache-in-detail) |
-|[Dumping process's memory](https://github.com/l0k3ndr/python-notes/blob/master/notes/notes-20-nov-2019.md#1---dumping-process's-memory) |
-|[Buffer cache](https://github.com/l0k3ndr/python-notes/blob/master/notes/notes-04-oct-2019.md#1---buffer-cache) |
-|[Disk usage in linux](https://github.com/l0k3ndr/python-notes/blob/master/notes/notes-27-sep-2019.md#1---disk-usage-in-linux) |
-|[Stack, heap, and code virtual locations](https://github.com/l0k3ndr/python-notes/blob/master/notes/notes-05-jun-2019.md#1---stack-heap-and-code-virtual-locations) |
-|[Learning kubernetes by hands-on](https://github.com/l0k3ndr/python-notes/blob/master/notes/notes-13-may-2019.md#1---learning-kubernetes-by-hands-on) |
-|[Golang file server and http server](https://github.com/l0k3ndr/python-notes/blob/master/notes/notes-12-may-2019.md#1---golang-file-server-and-http-server) |
-|[Simple random numbers example in golang](https://github.com/l0k3ndr/python-notes/blob/master/notes/notes-12-may-2019.md#2---simple-random-numbers-example-in-golang) |
-|[Golang all basic features](https://github.com/l0k3ndr/python-notes/blob/master/notes/notes-11-may-2019.md#1---golang-all-basic-features) |
-|[Embedded etcd3 server in golang](https://github.com/l0k3ndr/python-notes/blob/master/notes/notes-02-may-2019.md#1---embedded-etcd3-server-in-golang) |
-|[Kubernetes autoscaling](https://github.com/l0k3ndr/python-notes/blob/master/notes/notes-30-apr-2019.md#1---kubernetes-autoscaling) |
-|[Go exit value, is not same as what is returned](https://github.com/l0k3ndr/python-notes/blob/master/notes/notes-29-apr-2019.md#1---go-exit-value-is-not-same-as-what-is-returned) |
-|[Handling sys signals in golang](https://github.com/l0k3ndr/python-notes/blob/master/notes/notes-29-apr-2019.md#2---handling-sys-signals-in-golang) |
-|[Running binaries as processes](https://github.com/l0k3ndr/python-notes/blob/master/notes/notes-29-apr-2019.md#3---running-binaries-as-processes) |
-|[Tcp puzzler](https://github.com/l0k3ndr/python-notes/blob/master/notes/notes-29-apr-2019.md#4---tcp-puzzler) |
-|[Spawining processes in golang](https://github.com/l0k3ndr/python-notes/blob/master/notes/notes-29-apr-2019.md#5---spawining-processes-in-golang) |
-|[Kubernetes](https://github.com/l0k3ndr/python-notes/blob/master/notes/notes-29-apr-2019.md#6---kubernetes) |
-|[Server/client in bash for quick use](https://github.com/l0k3ndr/python-notes/blob/master/notes/notes-26-apr-2019.md#1---server/client-in-bash-for-quick-use) |
-|[Sentry with golang](https://github.com/l0k3ndr/python-notes/blob/master/notes/notes-26-apr-2019.md#2---sentry-with-golang) |
-|[Go routine](https://github.com/l0k3ndr/python-notes/blob/master/notes/notes-26-apr-2019.md#3---go-routine) |
-|[Getting links from text](https://github.com/l0k3ndr/python-notes/blob/master/notes/notes-26-apr-2019.md#4---getting-links-from-text) |
-|[Aws](https://github.com/l0k3ndr/python-notes/blob/master/notes/notes-26-apr-2019.md#5---aws) |
-|[Golang-set](https://github.com/l0k3ndr/python-notes/blob/master/notes/notes-24-apr-2019.md#2---golang-set) |
-|[Colorful text in golang](https://github.com/l0k3ndr/python-notes/blob/master/notes/notes-24-apr-2019.md#3---colorful-text-in-golang) |
-|[Golang now](https://github.com/l0k3ndr/python-notes/blob/master/notes/notes-24-apr-2019.md#4---golang-now) |
-|[Adding latency to network for testing](https://github.com/l0k3ndr/python-notes/blob/master/notes/notes-24-apr-2019.md#6---adding-latency-to-network-for-testing) |
-|[Go basic simple programs](https://github.com/l0k3ndr/python-notes/blob/master/notes/notes-24-apr-2019.md#7---go-basic-simple-programs) |
-|[Golang tcp-server and client](https://github.com/l0k3ndr/python-notes/blob/master/notes/notes-22-apr-2019.md#2---golang-tcp-server-and-client) |
-|[Terraform basic script for aws http server](https://github.com/l0k3ndr/python-notes/blob/master/notes/notes-20-apr-2019.md#1---terraform-basic-script-for-aws-http-server) |
-|[Generating random string on terminal using openssl](https://github.com/l0k3ndr/python-notes/blob/master/notes/notes-20-apr-2019.md#2---generating-random-string-on-terminal-using-openssl) |
-|[Golang syntax](https://github.com/l0k3ndr/python-notes/blob/master/notes/notes-18-apr-2019.md#1---golang-syntax) |
-|[Golang defer](https://github.com/l0k3ndr/python-notes/blob/master/notes/notes-18-apr-2019.md#2---golang-defer) |
-|[Golang variadic functions](https://github.com/l0k3ndr/python-notes/blob/master/notes/notes-18-apr-2019.md#3---golang-variadic-functions) |
-|[Basicblock data structure](https://github.com/l0k3ndr/python-notes/blob/master/notes/notes-28-oct-2018.md#11---basicblock-data-structure) |
-|[Midnight time evaluates to false](https://github.com/l0k3ndr/python-notes/blob/master/notes/notes-16-oct-2018.md#5---midnight-time-evaluates-to-false) |
-|[Assertions](https://github.com/l0k3ndr/python-notes/blob/master/notes/notes-15-oct-2018.md#1---assertions) |
-|[Try except](https://github.com/l0k3ndr/python-notes/blob/master/notes/notes-01-oct-2018.md#29---try-except) |
