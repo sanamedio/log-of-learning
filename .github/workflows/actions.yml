@@ -1,10 +1,17 @@
 name: learn-github-actions
 on: [push]
 jobs:
-  check-bats-version:
+  update-readme:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
-      - uses: actions/setup-node@v1
-      - run: npm install -g bats
-      - run: bats -v
+     - name: checkout repo content
+       uses: actions/checkout@v2 # checkout the repository content to github runner.
+     - name: setup python
+       uses: actions/setup-python@v2
+       with:
+         python-version: 3.8
+     - name: execute  
+       run: |
+          python readme_generator.py
+     - name: commit back 
+       uses: stefanzweifel/git-auto-commit-action@v4
