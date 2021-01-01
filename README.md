@@ -757,15 +757,15 @@ _                               __         _                            _
 |[Virtualenv and venv](https://github.com/l0k3ndr/log-of-learning/blob/master/notes/notes-18-oct-2018.md#19---virtualenv-and-venv) |
 |[Sys.getcounts](https://github.com/l0k3ndr/log-of-learning/blob/master/notes/notes-18-oct-2018.md#20---sys.getcounts) |
 |[Everything on this link](https://github.com/l0k3ndr/log-of-learning/blob/master/notes/notes-17-oct-2018.md#1---everything-on-this-link) |
-|[Id() and is](https://github.com/l0k3ndr/log-of-learning/blob/master/notes/notes-17-oct-2018.md#2---id-and-is) |
+|[Id and is](https://github.com/l0k3ndr/log-of-learning/blob/master/notes/notes-17-oct-2018.md#2---id-and-is) |
 |[Datamodel](https://github.com/l0k3ndr/log-of-learning/blob/master/notes/notes-17-oct-2018.md#3---datamodel) |
 |[Frozen set](https://github.com/l0k3ndr/log-of-learning/blob/master/notes/notes-17-oct-2018.md#4---frozen-set) |
 |[Coroutine function](https://github.com/l0k3ndr/log-of-learning/blob/master/notes/notes-17-oct-2018.md#5---coroutine-function) |
 |[Asynchronous generator functions](https://github.com/l0k3ndr/log-of-learning/blob/master/notes/notes-17-oct-2018.md#6---asynchronous-generator-functions) |
 |[Namedtuple](https://github.com/l0k3ndr/log-of-learning/blob/master/notes/notes-17-oct-2018.md#7---namedtuple) |
-|[Pip -> pipenv](https://github.com/l0k3ndr/log-of-learning/blob/master/notes/notes-17-oct-2018.md#8---pip-->-pipenv) |
-|[Locals()](https://github.com/l0k3ndr/log-of-learning/blob/master/notes/notes-17-oct-2018.md#9---locals) |
-|[__getitem__ , next() , __iter__](https://github.com/l0k3ndr/log-of-learning/blob/master/notes/notes-17-oct-2018.md#10---getitem--next--iter) |
+|[Pip vs pipenv](https://github.com/l0k3ndr/log-of-learning/blob/master/notes/notes-17-oct-2018.md#8---pip-vs-pipenv) |
+|[Locals](https://github.com/l0k3ndr/log-of-learning/blob/master/notes/notes-17-oct-2018.md#9---locals) |
+|[Getitem , next and iter](https://github.com/l0k3ndr/log-of-learning/blob/master/notes/notes-17-oct-2018.md#10---getitem--next-and-iter) |
 |[Isinstance](https://github.com/l0k3ndr/log-of-learning/blob/master/notes/notes-17-oct-2018.md#11---isinstance) |
 |[Revisiting yield](https://github.com/l0k3ndr/log-of-learning/blob/master/notes/notes-17-oct-2018.md#12---revisiting-yield) |
 |[Inline absolute value](https://github.com/l0k3ndr/log-of-learning/blob/master/notes/notes-17-oct-2018.md#13---inline-absolute-value) |
