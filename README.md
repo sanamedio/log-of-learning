@@ -8,10 +8,11 @@
            |___/                                                                   |___/
 ```
 
-[ 928 ]
+[ 929 ]
 
 | LINK |
 |------|
+|[Primes with yield](https://github.com/l0k3ndr/log-of-learning/blob/master/notes/notes-01-jan-2021.md#15---primes-with-yield) |
 |[Fibonacci strings with yield](https://github.com/l0k3ndr/log-of-learning/blob/master/notes/notes-01-jan-2021.md#14---fibonacci-strings-with-yield) |
 |[Indexing trick with defaultdict](https://github.com/l0k3ndr/log-of-learning/blob/master/notes/notes-01-jan-2021.md#13---indexing-trick-with-defaultdict) |
 |[Morse coder reader with state machine](https://github.com/l0k3ndr/log-of-learning/blob/master/notes/notes-01-jan-2021.md#12---morse-coder-reader-with-state-machine) |
