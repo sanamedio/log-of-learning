@@ -1,5 +1,22 @@
 # 01-jan-2021
 
+### 9 - yield to fibonacci
+
+```python
+def fib():
+    yield 0
+    yield 1
+    f1, f2 = fib(), fib()
+    next(f2)
+    while True:
+        yield next(f1) + next(f2)
+
+F = fib()
+print([next(F) for _ in range(10)])
+
+# [0, 1, 1, 2, 3, 5, 8, 13, 21, 34]
+```
+
 ### 8 - fixed length strings using recursion
 
 ```python
