@@ -1,5 +1,37 @@
 # 01-jan-2021
 
+### 3 - sort letter vs count letter prehash
+
+https://sahandsaba.com/interview-question-grouping-words-into-anagrams.html
+
+```python
+import collections
+
+def sort_prehash(word):
+    return ''.join(sorted(word))
+
+
+def count_letters_prehash(word):
+    return tuple(collections.Counter(word).items())
+
+
+def group_anagrams(words, hash_function):
+    result = {}
+    for w in words:
+        s = hash_function(w.lower())
+        if s in result:
+            result[s] |= {w}
+        else:
+            result[s] = {w}
+    return result.values()
+
+# Usage:
+>>> group_anagrams(['tsar', 'rat', 'tar', 'star', 'tars', 'cheese'], sort_prehash)
+[set(['tars', 'tsar', 'star']), set(['cheese']), set(['rat', 'tar'])]
+>>> group_anagrams(['tsar', 'rat', 'tar', 'star', 'tars', 'cheese'], count_letters_prehash)
+[set(['tars', 'tsar', 'star']), set(['cheese']), set(['rat', 'tar'])]
+```
+
 ### 2 - fast inverse square root
 
 http://h14s.p5r.org/2012/09/0x5f3759df.html
