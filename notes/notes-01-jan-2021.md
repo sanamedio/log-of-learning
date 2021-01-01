@@ -47,6 +47,13 @@ print([next(F) for _ in range(10)])
 # [0, 1, 1, 2, 3, 5, 8, 13, 21, 34]
 ```
 
+zeros can also be done recursive
+```python
+def zeros():
+    yield 0
+    yield from zeros()
+```
+
 ### 8 - fixed length strings using recursion
 
 ```python
