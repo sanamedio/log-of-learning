@@ -878,11 +878,11 @@ _                               __         _                            _
 |[List](https://github.com/l0k3ndr/log-of-learning/blob/master/notes/notes-01-oct-2018.md#1---list) |
 |[Generator list](https://github.com/l0k3ndr/log-of-learning/blob/master/notes/notes-01-oct-2018.md#2---generator-list) |
 |[Yeild list from function](https://github.com/l0k3ndr/log-of-learning/blob/master/notes/notes-01-oct-2018.md#3---yeild-list-from-function) |
-|[*args, \**kwargs](https://github.com/l0k3ndr/log-of-learning/blob/master/notes/notes-01-oct-2018.md#4---*args-\**kwargs) |
+|[Args and kwargs](https://github.com/l0k3ndr/log-of-learning/blob/master/notes/notes-01-oct-2018.md#4---args-and-kwargs) |
 |[Random shuffle](https://github.com/l0k3ndr/log-of-learning/blob/master/notes/notes-01-oct-2018.md#5---random-shuffle) |
 |[List sort](https://github.com/l0k3ndr/log-of-learning/blob/master/notes/notes-01-oct-2018.md#6---list-sort) |
 |[Decorators](https://github.com/l0k3ndr/log-of-learning/blob/master/notes/notes-01-oct-2018.md#7---decorators) |
-|[What is pep 8?](https://github.com/l0k3ndr/log-of-learning/blob/master/notes/notes-01-oct-2018.md#8---what-is-pep-8) |
+|[What is pep8](https://github.com/l0k3ndr/log-of-learning/blob/master/notes/notes-01-oct-2018.md#8---what-is-pep8) |
 |[Counter](https://github.com/l0k3ndr/log-of-learning/blob/master/notes/notes-01-oct-2018.md#9---counter) |
 |[Print directory listings recursively](https://github.com/l0k3ndr/log-of-learning/blob/master/notes/notes-01-oct-2018.md#10---print-directory-listings-recursively) |
 |[Module import location in python code](https://github.com/l0k3ndr/log-of-learning/blob/master/notes/notes-01-oct-2018.md#11---module-import-location-in-python-code) |
@@ -893,18 +893,18 @@ _                               __         _                            _
 |[Garbage collection in python](https://github.com/l0k3ndr/log-of-learning/blob/master/notes/notes-01-oct-2018.md#16---garbage-collection-in-python) |
 |[Dynamic class creation](https://github.com/l0k3ndr/log-of-learning/blob/master/notes/notes-01-oct-2018.md#17---dynamic-class-creation) |
 |[Code in finally clause](https://github.com/l0k3ndr/log-of-learning/blob/master/notes/notes-01-oct-2018.md#18---code-in-finally-clause) |
-|[__name__ == "__main__"](https://github.com/l0k3ndr/log-of-learning/blob/master/notes/notes-01-oct-2018.md#19---name-==-"main") |
-|[Cout << x << y ...](https://github.com/l0k3ndr/log-of-learning/blob/master/notes/notes-01-oct-2018.md#20---cout-<<-x-<<-y-...) |
+|[What is dunder main](https://github.com/l0k3ndr/log-of-learning/blob/master/notes/notes-01-oct-2018.md#19---what-is-dunder-main) |
+|[Cout](https://github.com/l0k3ndr/log-of-learning/blob/master/notes/notes-01-oct-2018.md#20---cout) |
 |[Dict](https://github.com/l0k3ndr/log-of-learning/blob/master/notes/notes-01-oct-2018.md#21---dict) |
 |[Timing functions in python](https://github.com/l0k3ndr/log-of-learning/blob/master/notes/notes-01-oct-2018.md#22---timing-functions-in-python) |
 |[Self](https://github.com/l0k3ndr/log-of-learning/blob/master/notes/notes-01-oct-2018.md#23---self) |
-|[\__init__](https://github.com/l0k3ndr/log-of-learning/blob/master/notes/notes-01-oct-2018.md#24---\init) |
+|[Dunder init](https://github.com/l0k3ndr/log-of-learning/blob/master/notes/notes-01-oct-2018.md#24---dunder-init) |
 |[Multithreading](https://github.com/l0k3ndr/log-of-learning/blob/master/notes/notes-01-oct-2018.md#25---multithreading) |
-|[Print in python 2 vs 3](https://github.com/l0k3ndr/log-of-learning/blob/master/notes/notes-01-oct-2018.md#26---print-in-python-2-vs-3) |
+|[Print in python 2vs3](https://github.com/l0k3ndr/log-of-learning/blob/master/notes/notes-01-oct-2018.md#26---print-in-python-2vs3) |
 |[Memory management](https://github.com/l0k3ndr/log-of-learning/blob/master/notes/notes-01-oct-2018.md#27---memory-management) |
 |[Builtin datatypes](https://github.com/l0k3ndr/log-of-learning/blob/master/notes/notes-01-oct-2018.md#28---builtin-datatypes) |
 |[Try except](https://github.com/l0k3ndr/log-of-learning/blob/master/notes/notes-01-oct-2018.md#29---try-except) |
-|[Id()](https://github.com/l0k3ndr/log-of-learning/blob/master/notes/notes-01-oct-2018.md#30---id) |
+|[Id of object](https://github.com/l0k3ndr/log-of-learning/blob/master/notes/notes-01-oct-2018.md#30---id-of-object) |
 |[Gil](https://github.com/l0k3ndr/log-of-learning/blob/master/notes/notes-01-oct-2018.md#31---gil) |
 |[Inheritance](https://github.com/l0k3ndr/log-of-learning/blob/master/notes/notes-01-oct-2018.md#32---inheritance) |
 |[Composition](https://github.com/l0k3ndr/log-of-learning/blob/master/notes/notes-01-oct-2018.md#33---composition) |
@@ -914,16 +914,16 @@ _                               __         _                            _
 |[Dict comprehension](https://github.com/l0k3ndr/log-of-learning/blob/master/notes/notes-01-oct-2018.md#37---dict-comprehension) |
 |[Inline conditional](https://github.com/l0k3ndr/log-of-learning/blob/master/notes/notes-01-oct-2018.md#38---inline-conditional) |
 |[Enumerate](https://github.com/l0k3ndr/log-of-learning/blob/master/notes/notes-01-oct-2018.md#39---enumerate) |
-|[Globals()](https://github.com/l0k3ndr/log-of-learning/blob/master/notes/notes-01-oct-2018.md#40---globals) |
+|[Globals](https://github.com/l0k3ndr/log-of-learning/blob/master/notes/notes-01-oct-2018.md#40---globals) |
 |[Deepcopy](https://github.com/l0k3ndr/log-of-learning/blob/master/notes/notes-01-oct-2018.md#41---deepcopy) |
 |[List to dict conversion](https://github.com/l0k3ndr/log-of-learning/blob/master/notes/notes-01-oct-2018.md#42---list-to-dict-conversion) |
 |[List to tuple](https://github.com/l0k3ndr/log-of-learning/blob/master/notes/notes-01-oct-2018.md#43---list-to-tuple) |
 |[Ternary operator](https://github.com/l0k3ndr/log-of-learning/blob/master/notes/notes-01-oct-2018.md#44---ternary-operator) |
-|[Help() and dir()](https://github.com/l0k3ndr/log-of-learning/blob/master/notes/notes-01-oct-2018.md#45---help-and-dir) |
+|[Help and dir](https://github.com/l0k3ndr/log-of-learning/blob/master/notes/notes-01-oct-2018.md#45---help-and-dir) |
 |[Keywords](https://github.com/l0k3ndr/log-of-learning/blob/master/notes/notes-01-oct-2018.md#46---keywords) |
-|[Lstrip, rstrip, strip](https://github.com/l0k3ndr/log-of-learning/blob/master/notes/notes-01-oct-2018.md#47---lstrip-rstrip-strip) |
-|[// % **](https://github.com/l0k3ndr/log-of-learning/blob/master/notes/notes-01-oct-2018.md#48---//-%-**) |
-|[Exec() and eval()](https://github.com/l0k3ndr/log-of-learning/blob/master/notes/notes-01-oct-2018.md#49---exec-and-eval) |
+|[Strip](https://github.com/l0k3ndr/log-of-learning/blob/master/notes/notes-01-oct-2018.md#47---strip) |
+|[Some math operators](https://github.com/l0k3ndr/log-of-learning/blob/master/notes/notes-01-oct-2018.md#48---some-math-operators) |
+|[Exec and eval](https://github.com/l0k3ndr/log-of-learning/blob/master/notes/notes-01-oct-2018.md#49---exec-and-eval) |
 |[Flavours of python](https://github.com/l0k3ndr/log-of-learning/blob/master/notes/notes-01-oct-2018.md#50---flavours-of-python) |
 |[Bytecode for cpython](https://github.com/l0k3ndr/log-of-learning/blob/master/notes/notes-01-oct-2018.md#51---bytecode-for-cpython) |
 |[Default argument initialization issue](https://github.com/l0k3ndr/log-of-learning/blob/master/notes/notes-01-oct-2018.md#52---default-argument-initialization-issue) |
