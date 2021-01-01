@@ -1,5 +1,18 @@
 # 01-jan-2021
 
+### 16 - Counter is a multiset
+
+https://sahandsaba.com/common-substring-permutation.html
+
+```
+from collections import Counter
+
+def common_permutation(a, b):
+    return ''.join(k * v for k, v in sorted((Counter(a) & Counter(b)).items()))
+```
+
+
+
 ### 15 - primes with yield
 
 ```python
