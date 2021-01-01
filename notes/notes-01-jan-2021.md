@@ -1,5 +1,18 @@
 # 01-jan-2021
 
+### 8 - fixed length strings using recursion
+
+```python
+In [55]: def strings(A, n):
+    ...:     if n == 0:
+    ...:         return ['']
+    ...:     return [s+c for s in strings(A, n-1) for c in A]
+    ...:
+
+In [56]: strings(['0','1','2'], 2)
+Out[56]: ['00', '01', '02', '10', '11', '12', '20', '21', '22']
+```
+
 ### 7 - Y combinator
 
 - ONGOING
