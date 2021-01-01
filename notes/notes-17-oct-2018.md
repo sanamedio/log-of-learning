@@ -220,7 +220,7 @@ if not isinstance(x, (int, float)):
    raise TypeError( x must be numeric )
 ```
 
-### 10 - __getitem__ , next() , __iter__
+### 10 - getitem , next and iter
 
 ```python
 ```
@@ -230,14 +230,14 @@ if not isinstance(x, (int, float)):
 - https://stackoverflow.com/a/926649
 - https://stackoverflow.com/a/20551346
 
-### 9 - locals()
+### 9 - locals
 
 ```python
 locals()
 ```
 - Get the variables in local scope. There is no nonlocals() though.
 
-### 8 - pip -> pipenv
+### 8 - pip vs pipenv
 
 - create requirement.txt using pip freeze
 - pipenv = pip + virtualenv combined: better way to manage python 
@@ -302,7 +302,7 @@ frozenset()
 - CPython implementation detail: CPython currently uses a reference-counting scheme with (optional) delayed detection of cyclically linked garbage, which collects most objects as soon as they become unreachable, but is not guaranteed to collect garbage containing circular references.
 - use of the implementation’s tracing or debugging facilities may keep objects alive that would normally be collectable. Also note that catching an exception with a ‘try…except’ statement may keep objects alive.
 
-### 2 - id() and is
+### 2 - id and is
 
 - CPython implementation detail: id() is the address of the object in memory.
 - The ‘is’ operator compares the identity of two objects; the id() function returns an integer representing its identity.
