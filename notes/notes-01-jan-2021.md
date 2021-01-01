@@ -1,5 +1,19 @@
 # 01-jan-2021
 
+### 11 - kleene closure with yield
+
+```python
+>>> def kleene(a):
+...     yield ""
+...     for s in kleene(a):
+...             for c in a:
+...                     yield c+s
+... 
+>>> K = kleene("01")
+>>> [ next(K) for _ in range(20) ]
+['', '0', '1', '00', '10', '01', '11', '000', '100', '010', '110', '001', '101', '011', '111', '0000', '1000', '0100', '1100', '0010']
+```
+
 ### 10 - ruler function with yield
 
 https://sahandsaba.com/the-infinite-in-haskell-and-python.html
