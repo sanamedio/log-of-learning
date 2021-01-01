@@ -1,5 +1,31 @@
 # 01-jan-2021
 
+### 15 - primes with yield
+
+```python
+def filter_out_divisible_by(p, xs):
+    for x in xs:
+        if x % p != 0:
+            yield x
+
+
+def sieve(xs):
+    p = next(xs)
+    yield p
+    yield from sieve(filter_out_divisible_by(p, xs))
+
+
+def primes():
+    yield from sieve(itertools.count(2))
+
+
+P = primes()
+
+print([next(P) for _ in range(20)])
+
+# [2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67, 71]
+```
+
 ### 14 - fibonacci strings with yield
 
 https://sahandsaba.com/understanding-recurrence-relations-using-python-automata-and-matrices-visualized.html
