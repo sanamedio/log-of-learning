@@ -1,6 +1,8 @@
 # 01-jan-2021
 
-### 17 - balanced paranthesis way
+### 17 - balanced paranthesis generation
+
+https://sahandsaba.com/interview-question-generating-all-balanced-parentheses.html
 
 recursive
 ```python
