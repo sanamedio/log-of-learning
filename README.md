@@ -8,10 +8,11 @@
            |___/                                                                   |___/
 ```
 
-[ 925 ]
+[ 926 ]
 
 | LINK |
 |------|
+|[Morse coder reader with state machine](https://github.com/l0k3ndr/log-of-learning/blob/master/notes/notes-01-jan-2021.md#12---morse-coder-reader-with-state-machine) |
 |[Kleene closure with yield](https://github.com/l0k3ndr/log-of-learning/blob/master/notes/notes-01-jan-2021.md#11---kleene-closure-with-yield) |
 |[Ruler function with yield](https://github.com/l0k3ndr/log-of-learning/blob/master/notes/notes-01-jan-2021.md#10---ruler-function-with-yield) |
 |[Yield to fibonacci](https://github.com/l0k3ndr/log-of-learning/blob/master/notes/notes-01-jan-2021.md#9---yield-to-fibonacci) |
