@@ -60,7 +60,7 @@ categories = categories[1:]
 
 prefix = """
 # =================
-# python-notes
+# log-of-learning
 # =================
 """
 
