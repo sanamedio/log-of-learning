@@ -8,10 +8,11 @@
            |___/                                                                   |___/
 ```
 
-[ 916 ]
+[ 917 ]
 
 | LINK |
 |------|
+|[Sort letter vs count letter prehash](https://github.com/l0k3ndr/log-of-learning/blob/master/notes/notes-01-jan-2021.md#3---sort-letter-vs-count-letter-prehash) |
 |[Fast inverse square root](https://github.com/l0k3ndr/log-of-learning/blob/master/notes/notes-01-jan-2021.md#2---fast-inverse-square-root) |
 |[Overlayfs](https://github.com/l0k3ndr/log-of-learning/blob/master/notes/notes-01-jan-2021.md#1---overlayfs) |
 |[Low level git ops](https://github.com/l0k3ndr/log-of-learning/blob/master/notes/notes-31-dec-2020.md#2---low-level-git-ops) |
