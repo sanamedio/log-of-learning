@@ -8,10 +8,11 @@
            |___/                                                                   |___/
 ```
 
-[ 930 ]
+[ 931 ]
 
 | LINK |
 |------|
+|[Balanced paranthesis way](https://github.com/l0k3ndr/log-of-learning/blob/master/notes/notes-01-jan-2021.md#17---balanced-paranthesis-way) |
 |[Counter is a multiset](https://github.com/l0k3ndr/log-of-learning/blob/master/notes/notes-01-jan-2021.md#16---counter-is-a-multiset) |
 |[Primes with yield](https://github.com/l0k3ndr/log-of-learning/blob/master/notes/notes-01-jan-2021.md#15---primes-with-yield) |
 |[Fibonacci strings with yield](https://github.com/l0k3ndr/log-of-learning/blob/master/notes/notes-01-jan-2021.md#14---fibonacci-strings-with-yield) |
