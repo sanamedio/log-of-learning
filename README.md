@@ -8,10 +8,11 @@
            |___/                                                                   |___/
 ```
 
-[ 919 ]
+[ 920 ]
 
 | LINK |
 |------|
+|[Fsm for n cross m tilings](https://github.com/l0k3ndr/log-of-learning/blob/master/notes/notes-01-jan-2021.md#6---fsm-for-n-cross-m-tilings) |
 |[Visualising tilings](https://github.com/l0k3ndr/log-of-learning/blob/master/notes/notes-01-jan-2021.md#5---visualising-tilings) |
 |[Von neuman extraction](https://github.com/l0k3ndr/log-of-learning/blob/master/notes/notes-01-jan-2021.md#4---von-neuman-extraction) |
 |[Sort letter vs count letter prehash](https://github.com/l0k3ndr/log-of-learning/blob/master/notes/notes-01-jan-2021.md#3---sort-letter-vs-count-letter-prehash) |
