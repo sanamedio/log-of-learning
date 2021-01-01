@@ -14,7 +14,7 @@
 |------|
 |[Yield to fibonacci](https://github.com/l0k3ndr/log-of-learning/blob/master/notes/notes-01-jan-2021.md#9---yield-to-fibonacci) |
 |[Fixed length strings using recursion](https://github.com/l0k3ndr/log-of-learning/blob/master/notes/notes-01-jan-2021.md#8---fixed-length-strings-using-recursion) |
-|[Y combinator ongoing](https://github.com/l0k3ndr/log-of-learning/blob/master/notes/notes-01-jan-2021.md#7---y-combinator-ongoing) |
+|[Y z combinators](https://github.com/l0k3ndr/log-of-learning/blob/master/notes/notes-01-jan-2021.md#7---y-z-combinators) |
 |[Fsm for n cross m tilings](https://github.com/l0k3ndr/log-of-learning/blob/master/notes/notes-01-jan-2021.md#6---fsm-for-n-cross-m-tilings) |
 |[Visualising tilings](https://github.com/l0k3ndr/log-of-learning/blob/master/notes/notes-01-jan-2021.md#5---visualising-tilings) |
 |[Von neuman extraction](https://github.com/l0k3ndr/log-of-learning/blob/master/notes/notes-01-jan-2021.md#4---von-neuman-extraction) |
