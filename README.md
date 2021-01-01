@@ -8,10 +8,11 @@
            |___/                                                                   |___/
 ```
 
-[ 924 ]
+[ 925 ]
 
 | LINK |
 |------|
+|[Kleene closure with yield](https://github.com/l0k3ndr/log-of-learning/blob/master/notes/notes-01-jan-2021.md#11---kleene-closure-with-yield) |
 |[Ruler function with yield](https://github.com/l0k3ndr/log-of-learning/blob/master/notes/notes-01-jan-2021.md#10---ruler-function-with-yield) |
 |[Yield to fibonacci](https://github.com/l0k3ndr/log-of-learning/blob/master/notes/notes-01-jan-2021.md#9---yield-to-fibonacci) |
 |[Fixed length strings using recursion](https://github.com/l0k3ndr/log-of-learning/blob/master/notes/notes-01-jan-2021.md#8---fixed-length-strings-using-recursion) |
