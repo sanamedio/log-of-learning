@@ -3,6 +3,7 @@
 ### 4 - von neuman extraction
 
 given a biased coin, how to get fair outcome
+
 https://sahandsaba.com/interview-question-fairness-from-unfairness-randomness-extraction.html
 
 ```python
@@ -86,6 +87,8 @@ float FastInvSqrt(float x) {
 ```
 
 ### 1 - overlayfs
+
+This is used in containers
 
 https://en.wikipedia.org/wiki/OverlayFS
 
