@@ -1,5 +1,43 @@
 # 01-jan-2021
 
+### 4 - von neuman extraction
+
+given a biased coin, how to get fair outcome
+https://sahandsaba.com/interview-question-fairness-from-unfairness-randomness-extraction.html
+
+```python
+In [1]: import random
+   ...:
+   ...:
+   ...: def bernoulli_process(p):
+   ...:     if p > 1.0 or p < 0.0:
+   ...:         raise ValueError("p should be between 0.0 and 1.0.")
+   ...:     while True:
+   ...:         yield random.random() > p
+   ...:
+   ...:
+   ...: def von_neumann_extractor(process):
+   ...:     while True:
+   ...:         x, y = next(process), next(process)
+   ...:         if x != y:
+   ...:             yield x
+   ...:
+
+In [17]: vne = von_neumann_extractor(bernoulli_process(0.1))
+
+In [19]: from collections import Counter
+
+In [21]: Counter([ next(vne) for x in range(100)])
+Out[21]: Counter({False: 55, True: 45})
+
+In [22]: Counter([ next(vne) for x in range(1000)])
+Out[22]: Counter({False: 490, True: 510})
+
+In [23]: Counter([ next(vne) for x in range(10000)])
+Out[23]: Counter({True: 5074, False: 4926})
+
+```
+
 ### 3 - sort letter vs count letter prehash
 
 https://sahandsaba.com/interview-question-grouping-words-into-anagrams.html
