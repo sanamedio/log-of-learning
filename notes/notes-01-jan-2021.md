@@ -1,5 +1,56 @@
 # 01-jan-2021
 
+### 17 - balanced paranthesis way
+
+recursive
+```python
+def get_balanced(n):
+    if n == 0:
+        yield ""
+        return
+    for i in range(n):
+        for x in get_balanced(i):
+            for y in get_balanced(n - i - 1):
+                yield "(" + x + ")" + y
+
+
+print(list(get_balanced(2)))
+```
+
+memorization - nice trick to not create a full size table before algo kicks in
+```python
+table = [['']]
+
+
+def gen_balanced(n):
+    if n < len(table):
+        return table[n]
+
+    result = []
+    for i in range(n):
+        for x in gen_balanced(i):
+            for y in gen_balanced(n - i - 1):
+                result.append('(' + x + ')' + y)
+
+    table.append(result)
+    return table[n]
+```
+
+bottoms up
+```python
+def gen_balanced(n):
+    table = [['']]
+    for j in range(1, n + 1):
+        result = []
+        for i in range(j):
+            for x in table[i]:
+                for y in table[j - i - 1]:
+                    result.append('(' + x + ')' + y)
+        table.append(result)
+    return table[n]
+```
+
+
 ### 16 - Counter is a multiset
 
 https://sahandsaba.com/common-substring-permutation.html
