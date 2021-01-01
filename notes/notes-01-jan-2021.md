@@ -1,5 +1,21 @@
 # 01-jan-2021
 
+### 14 - fibonacci strings with yield
+
+https://sahandsaba.com/understanding-recurrence-relations-using-python-automata-and-matrices-visualized.html
+
+```python
+>>> def fibs():
+...     yield ""
+...     for s in fibs():
+...             yield "0"+ s
+...             yield "10" + s
+...
+>>> F = fibs()
+>>> [next(F) for _ in range(10) ]
+['', '0', '10', '00', '100', '010', '1010', '000', '1000', '0100']
+```
+
 ### 13 - indexing trick with defaultdict
 
 https://sahandsaba.com/understanding-recurrence-relations-using-python-automata-and-matrices-visualized.html
