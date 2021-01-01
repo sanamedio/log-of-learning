@@ -33,28 +33,12 @@ for md in mds:
     for line in data:
         if re.search("### \d+ - ", line.strip()):
 
-            if last_type:
-                categories += [last_type]
-            else:
-                categories += ["general"]
-            last_type = None
-            
-            temp_res += [ ("["+(line.strip().split(" - ",1)[1]).capitalize() + "]("+ BLOB_PATH + md + "#" +  line.strip().lower().replace("###","")[1:].replace(" ","-").replace("?","").replace("(","").replace(")","").replace(",","").replace("_","") + ") ")]
+            temp_res += list(reversed([ ("["+(line.strip().split(" - ",1)[1]).capitalize() + "]("+ BLOB_PATH + md + "#" +  line.strip().lower().replace("###","")[1:].replace(" ","-").replace("?","").replace("(","").replace(")","").replace(",","").replace("_","") + ") ")]))
             date_arr += [md.split(".md")[0].split("notes-")[1]]
             k = k+1
 
-        if re.search("^```python", line.strip()) or re.search("python",line.strip(), re.IGNORECASE) or re.search("py", line.strip(), re.IGNORECASE):
-            last_type = "python"
 
     result += list(temp_res)
-
-
-if last_type:
-    categories += [last_type]
-else:
-    categories += ["general"]
-    last_type = None
-categories = categories[1:]
 
 
 
