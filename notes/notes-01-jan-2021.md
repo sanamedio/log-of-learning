@@ -30,9 +30,9 @@ In [56]: strings(['0','1','2'], 2)
 Out[56]: ['00', '01', '02', '10', '11', '12', '20', '21', '22']
 ```
 
-### 7 - Y combinator ONGOING
+### 7 - Y Z combinators
 
-- The Y combinator is a central concept in lambda calculus, which is the formal foundation of functional languages. Y allows one to define recursive functions without using self-referential definitions.(REF: https://lptk.github.io/programming/2019/10/15/simple-essence-y-combinator.html#:~:text=The%20Y%20combinator%20is%20a,without%20using%20self-referential%20definitions.)
+- The Y combinator is a central concept in lambda calculus, which is the formal foundation of functional languages. Y allows one to define recursive functions without using self-referential definitions.(REF: [link](https://lptk.github.io/programming/2019/10/15/simple-essence-y-combinator.html#:~:text=The%20Y%20combinator%20is%20a,without%20using%20self-referential%20definitions.))
 
 - Y combinator allows to find out fixed points of a meta-function. fixed point of a fibonaaci function would be itself (or exact same func probably)
 
@@ -51,26 +51,22 @@ def ff():
   return lambda: ff()
 ```
 
-factorial without explicit self reference
-```python
-fact_base = (lambda rec, x:
-  1 if x == 0 else rec(rec, x - 1) * x)
-fact = lambda x: fact_base(fact_base, x)
+mkrec_nice is a Z combinator
+```
+In [7]: mkrec = lambda f: f(f)
+   ...:
+   ...: mkrec_nice = (lambda g:
+   ...:   mkrec(lambda rec:
+   ...:     g(lambda y: rec(rec)(y))))
+   ...:
+   ...: fact = mkrec_nice(lambda rec: lambda x:
+   ...:   1 if x == 0 else rec(x - 1) * x)
 
+In [8]: fact
+Out[8]: <function __main__.<lambda>.<locals>.<lambda>(x)>
 
-# assuming the curried:
-fact_base = (lambda rec: lambda x:
-  1 if x == 0 else rec(rec)(x - 1) * x)
-fact = fact_base(fact_base)
-
-#progress at removing self reference
-mkrec = lambda f: f(f)
-fact = mkrec(lambda rec: lambda x:
-  1 if x == 0 else rec(rec)(x - 1) * x)
-
-y combinator
-```python
-Y = lambda f: (lambda x: x(x))(lambda x: f(lambda y: x(x)(y)))
+In [9]: fact(10)
+Out[9]: 3628800
 ```
 
 
