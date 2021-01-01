@@ -1,5 +1,100 @@
 # 01-jan-2021
 
+
+
+
+### 6 - fsm for n cross m tilings
+
+https://sahandsaba.com/understanding-recurrence-relations-using-python-automata-and-matrices-visualized.html
+
+```python
+from collections import deque
+
+def construct_fsm(m):
+    """Construct an fsm that reco domino tilings of an m x n board"""
+
+    fsm = {}
+    starting_state = frozenset(range(m))
+
+    Q = deque()
+
+    def construct_outgoing_transitions(source):
+
+        if source in fsm:
+            return
+
+        fsm[source] = []
+
+        if not source:
+            fsm[source].append((starting_state, []))
+            return
+
+        def recurse(j, target, tiling):
+            if j > max(source):
+                fsm[source].append((target, tiling))
+                Q.append(target)
+            elif j in source:
+                if j + 1 in source:
+                    recurse(j + 2, target, tiling + [(j, "V")])
+                recurse(j + 1, target - {j}, tiling + [(j, "H")])
+
+        recurse(min(source), starting_state, [])
+
+    Q.append(starting_state)
+    while Q:
+        state = Q.popleft()
+        construct_outgoing_transitions(state)
+
+    return fsm
+
+
+def generate_fsm_language(fsm, n, initial_state, accepting_states):
+    """
+    Generate all strings of length n accepted by the given FSM.
+    Assumes no epsilon-cycles exist in the FSM.
+    """
+
+    def dfs(current_state, string_so_far):
+        if len(string_so_far) == n:
+            if current_state in accepting_states:
+                yield string_so_far
+            return
+        for target_state, label in fsm[current_state]:
+            yield from dfs(target_state, string_so_far + [label])
+
+    yield from dfs(initial_state, [])
+
+
+def tilings(m, n):
+    """Generate all tilings of an m x n board using dominoes,"""
+    fsm = construct_fsm(m)
+    initial_state = accepting_state = frozenset(range(m))
+    yield from generate_fsm_language(fsm, n, initial_state, [accepting_state])
+
+
+#Ipython
+In [16]: list(tilings(1,1))
+Out[16]: []
+
+In [17]: list(tilings(1,2))
+Out[17]: [[[(0, 'H')], []]]
+
+In [18]: list(tilings(2,1))
+Out[18]: [[[(0, 'V')]]]
+
+In [19]: list(tilings(2,2))
+Out[19]: [[[(0, 'V')], [(0, 'V')]], [[(0, 'H'), (1, 'H')], []]]
+
+In [20]: list(tilings(2,4))
+Out[20]:
+[[[(0, 'V')], [(0, 'V')], [(0, 'V')], [(0, 'V')]],
+ [[(0, 'V')], [(0, 'V')], [(0, 'H'), (1, 'H')], []],
+ [[(0, 'V')], [(0, 'H'), (1, 'H')], [], [(0, 'V')]],
+ [[(0, 'H'), (1, 'H')], [], [(0, 'V')], [(0, 'V')]],
+ [[(0, 'H'), (1, 'H')], [], [(0, 'H'), (1, 'H')], []]]
+
+```
+
 ### 5 - visualising tilings
 
 https://sahandsaba.com/understanding-recurrence-relations-using-python-automata-and-matrices-visualized.html
