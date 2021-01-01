@@ -1,6 +1,48 @@
 # 01-jan-2021
 
+### 7 - Y combinator
 
+- ONGOING
+- The Y combinator is a central concept in lambda calculus, which is the formal foundation of functional languages. Y allows one to define recursive functions without using self-referential definitions.(REF: https://lptk.github.io/programming/2019/10/15/simple-essence-y-combinator.html#:~:text=The%20Y%20combinator%20is%20a,without%20using%20self-referential%20definitions.)
+
+- Y combinator allows to find out fixed points of a meta-function. fixed point of a fibonaaci function would be itself (or exact same func probably)
+
+- it helps to avoid explicit self reference in a generic manner
+
+simple example of indirection
+```python
+#indirect
+def f(g):
+  print("in f")
+  return lambda: g(g)
+
+#explicit
+def ff():
+  print("in f")
+  return lambda: ff()
+```
+
+factorial without explicit self reference
+```python
+fact_base = (lambda rec, x:
+  1 if x == 0 else rec(rec, x - 1) * x)
+fact = lambda x: fact_base(fact_base, x)
+
+
+# assuming the curried:
+fact_base = (lambda rec: lambda x:
+  1 if x == 0 else rec(rec)(x - 1) * x)
+fact = fact_base(fact_base)
+
+#progress at removing self reference
+mkrec = lambda f: f(f)
+fact = mkrec(lambda rec: lambda x:
+  1 if x == 0 else rec(rec)(x - 1) * x)
+
+y combinator
+```python
+Y = lambda f: (lambda x: x(x))(lambda x: f(lambda y: x(x)(y)))
+```
 
 
 ### 6 - fsm for n cross m tilings
