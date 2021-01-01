@@ -1,6 +1,36 @@
 # 01-jan-2021
 
+### 10 - ruler function with yield
+
+https://sahandsaba.com/the-infinite-in-haskell-and-python.html
+
+```python
+
+In [15]: def zeros():
+    ...:     while True:
+    ...:         yield 0
+    ...:
+
+In [17]: def alternate(xs, ys):
+    ...:     while True:
+    ...:         yield next(xs)
+    ...:         yield next(ys)
+    ...:
+    ...:
+
+In [18]: def ruler():
+    ...:     yield from alternate(zeros(), map(lambda x: x+1, ruler()))
+    ...:
+
+In [19]: R = ruler()
+
+In [20]: [ next(R) for _ in range(10) ]
+Out[20]: [0, 1, 0, 2, 0, 1, 0, 3, 0, 1]
+```
+
 ### 9 - yield to fibonacci
+
+https://sahandsaba.com/the-infinite-in-haskell-and-python.html
 
 ```python
 def fib():
