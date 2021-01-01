@@ -1,5 +1,25 @@
 # 01-jan-2021
 
+### 13 - indexing trick with defaultdict
+
+https://sahandsaba.com/understanding-recurrence-relations-using-python-automata-and-matrices-visualized.html
+
+whenever a new key is accessed with state_to_index var, it uses the count iterator to give a new id to it. clean.
+
+```python
+from collections import defaultdict
+from itertools import count
+
+
+def fsm_to_matrix(fsm):
+    state_to_index = defaultdict(count().__next__)
+    M = [[0] * len(fsm) for state in fsm]
+    for source_state, transitions in fsm.items():
+        for target_state, label in transitions:
+            M[state_to_index[source_state]][state_to_index[target_state]] += 1
+    return M
+```
+
 ### 12 - morse coder reader with state machine
 
 https://nullprogram.com/blog/2020/12/31/
