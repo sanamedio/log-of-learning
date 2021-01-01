@@ -8,10 +8,11 @@
            |___/                                                                   |___/
 ```
 
-[ 921 ]
+[ 922 ]
 
 | LINK |
 |------|
+|[Fixed length strings using recursion](https://github.com/l0k3ndr/log-of-learning/blob/master/notes/notes-01-jan-2021.md#8---fixed-length-strings-using-recursion) |
 |[Y combinator](https://github.com/l0k3ndr/log-of-learning/blob/master/notes/notes-01-jan-2021.md#7---y-combinator) |
 |[Fsm for n cross m tilings](https://github.com/l0k3ndr/log-of-learning/blob/master/notes/notes-01-jan-2021.md#6---fsm-for-n-cross-m-tilings) |
 |[Visualising tilings](https://github.com/l0k3ndr/log-of-learning/blob/master/notes/notes-01-jan-2021.md#5---visualising-tilings) |
