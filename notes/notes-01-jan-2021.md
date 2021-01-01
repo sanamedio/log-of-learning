@@ -13,9 +13,8 @@ In [56]: strings(['0','1','2'], 2)
 Out[56]: ['00', '01', '02', '10', '11', '12', '20', '21', '22']
 ```
 
-### 7 - Y combinator
+### 7 - Y combinator ONGOING
 
-- ONGOING
 - The Y combinator is a central concept in lambda calculus, which is the formal foundation of functional languages. Y allows one to define recursive functions without using self-referential definitions.(REF: https://lptk.github.io/programming/2019/10/15/simple-essence-y-combinator.html#:~:text=The%20Y%20combinator%20is%20a,without%20using%20self-referential%20definitions.)
 
 - Y combinator allows to find out fixed points of a meta-function. fixed point of a fibonaaci function would be itself (or exact same func probably)
