@@ -8,10 +8,11 @@
            |___/                                                                   |___/
 ```
 
-[ 929 ]
+[ 930 ]
 
 | LINK |
 |------|
+|[Counter is a multiset](https://github.com/l0k3ndr/log-of-learning/blob/master/notes/notes-01-jan-2021.md#16---counter-is-a-multiset) |
 |[Primes with yield](https://github.com/l0k3ndr/log-of-learning/blob/master/notes/notes-01-jan-2021.md#15---primes-with-yield) |
 |[Fibonacci strings with yield](https://github.com/l0k3ndr/log-of-learning/blob/master/notes/notes-01-jan-2021.md#14---fibonacci-strings-with-yield) |
 |[Indexing trick with defaultdict](https://github.com/l0k3ndr/log-of-learning/blob/master/notes/notes-01-jan-2021.md#13---indexing-trick-with-defaultdict) |
