@@ -9,7 +9,7 @@ def override_print(x):
 
 print = override_print
 
-BLOB_PATH="https://github.com/l0k3ndr/python-notes/blob/master/notes/"
+BLOB_PATH="https://github.com/l0k3ndr/log-of-learning/blob/master/notes/"
 
 mds = [ md for md in os.listdir("./notes/") if md.endswith(".md") ]
 
