@@ -4,7 +4,7 @@
 
 https://sahandsaba.com/common-substring-permutation.html
 
-```
+```python
 from collections import Counter
 
 def common_permutation(a, b):
