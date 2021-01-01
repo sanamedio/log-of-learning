@@ -8,11 +8,12 @@
            |___/                                                                   |___/
 ```
 
-[ 915 ]
+[ 916 ]
 
 | LINK |
 |------|
 |[Overlayfs](https://github.com/l0k3ndr/log-of-learning/blob/master/notes/notes-01-jan-2021.md#1---overlayfs) |
+|[Fast inverse square root](https://github.com/l0k3ndr/log-of-learning/blob/master/notes/notes-01-jan-2021.md#2---fast-inverse-square-root) |
 |[Github actions](https://github.com/l0k3ndr/log-of-learning/blob/master/notes/notes-31-dec-2020.md#1---github-actions) |
 |[Low level git ops](https://github.com/l0k3ndr/log-of-learning/blob/master/notes/notes-31-dec-2020.md#2---low-level-git-ops) |
 |[Bisect right](https://github.com/l0k3ndr/log-of-learning/blob/master/notes/notes-30-dec-2020.md#1---bisect-right) |
