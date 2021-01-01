@@ -75,7 +75,7 @@ Instead do this:
 
 * Jython - An implementation of Python on the Java virtual machine. Jython is a Python implementation that compiles Python code to Java bytecode which is then executed by the JVM (Java Virtual Machine). Additionally, it is able to import and use any Java class like a Python module.If you need to interface with an existing Java codebase or have other reasons to need to write Python code for the JVM, Jython is the best choice.
 
-### 49 - exec() and eval()
+### 49 - exec and eval
 
 exec() is to execute code present as string whereas eval() is to evaluate expressions and get the value they evaluate to.
 
@@ -113,14 +113,15 @@ Python is cool
 
 ```
 
-### 48 - // % **
+### 48 - some math operators
+
 ```python
 7//2 #3
 2**10 #1024
 3.5%1.5 #0.5 
 ```
 
-### 47 - lstrip, rstrip, strip
+### 47 - strip
 
 Functions to remove left, right and both side whitespace
 
@@ -168,7 +169,7 @@ while
 with
 yield
 ```
-### 45 - help() and dir() 
+### 45 - help and dir 
 
 ```python
 The help() function displays the documentation string and help for its argument.
@@ -210,7 +211,7 @@ b = copy.deepcopy(a)
 shallow_copy = copy.copy(a)
 ```
 
-### 40 - globals()
+### 40 - globals
 
 ```python
 # Example: globals() function 
@@ -361,7 +362,7 @@ print(lap.processor, lap.os, lap.ram)
 * Python supports GIL (the global interpreter lock) which is a mutex used to secure access to Python objects, synchronizing multiple threads from running the Python bytecodes at the same time.
 * The GIL (Global Interpreter Lock) ensures that a single thread executes at a time. A thread holds the GIL and does a little work before passing it on to the next thread. This makes for an illusion of parallel execution. But in reality, it is just threaded taking turns at the CPU. Of course, all the passing around adds overhead to the execution.
 
-### 30 - id()
+### 30 - id of object
 
 Inbuilt function to give a unique id which remains same during lifetime of the object. 
 ```python
@@ -399,7 +400,7 @@ Mutable built-in datatypes of Python
 * The allocation of Python heap space for Python objects is done by Python memory manager. The core API gives access to some tools for the programmer to code.
 * Python also have an inbuilt garbage collector, which recycle all the unused memory and frees the memory and makes it available to the heap space.
 
-### 26 - print in python 2 vs 3
+### 26 - print in python 2vs3
 
 It seems in python3 print is a function and not a keyword
 
@@ -456,7 +457,7 @@ if __name__ == "__main__":
     print("Done!") 
 ```
 
-### 24 - \__init__
+### 24 - dunder init
 
 ```python
 ```
@@ -486,7 +487,7 @@ timer(max, range(1e6))
 dict(a=1, b=2, c=3, dee=4) 
 ```    
 
-### 20 - cout << x << y ...
+### 20 - cout
 
 ```python
 import sys
@@ -506,7 +507,7 @@ nl = '\n'
 cout << x << " " << y << nl
 ```
 
-### 19 - __name__ == "__main__"
+### 19 - what is dunder main
 
 ```python
 # a.py
@@ -650,7 +651,7 @@ c=Counter(['a','b','c','a','b','a'])
 c
 ```
 
-### 8 - What is PEP 8?
+### 8 - What is PEP8
 
 [PEP8](https://www.python.org/dev/peps/pep-0008/) is a coding convention, a set of recommendation, about how to write your Python code more readable. 
 
@@ -691,7 +692,7 @@ shuffle(x)
 print(x)
 ```
 
-### 4 - *args, \**kwargs 
+### 4 - args and kwargs
 
 We use *args when we aren’t sure how many arguments are going to be passed to a function, or if we want to pass a stored list or tuple of arguments to a function. 
 \**kwargs is used when we don’t know how many keyword arguments will be passed to a function, or it can be used to pass the values of a dictionary as keyword arguments. The identifiers args and kwargs are a convention, you could also use *bob and \**billy but that would not be wise.
