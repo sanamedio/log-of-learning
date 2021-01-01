@@ -6,8 +6,8 @@
 >>> def kleene(a):
 ...     yield ""
 ...     for s in kleene(a):
-...             for c in a:
-...                     yield c+s
+...         for c in a:
+...             yield c+s
 ... 
 >>> K = kleene("01")
 >>> [ next(K) for _ in range(20) ]
