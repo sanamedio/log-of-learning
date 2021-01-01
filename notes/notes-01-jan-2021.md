@@ -4,8 +4,6 @@
 
 https://nullprogram.com/blog/2020/12/31/
 
-cool, but not for real development.
-
 ```c
 int
 morse_decode(int state, int c)
