@@ -1,5 +1,32 @@
 # 01-jan-2021
 
+### 5 - visualising tilings
+
+https://sahandsaba.com/understanding-recurrence-relations-using-python-automata-and-matrices-visualized.html
+
+```python
+In [24]: def tilings(n):
+    ...:     if n < 0:
+    ...:         return
+    ...:     if n == 0:
+    ...:         yield ''
+    ...:     for tiling in tilings(n - 1):
+    ...:         yield '|' + tiling
+    ...:     for tiling in tilings(n - 2):
+    ...:         yield '==' + tiling
+    ...:
+
+In [27]: for x in tilings(5): print(x)
+|||||
+|||==
+||==|
+|==||
+|====
+==|||
+==|==
+====|
+```
+
 ### 4 - von neuman extraction
 
 given a biased coin, how to get fair outcome
