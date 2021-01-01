@@ -33,12 +33,12 @@ for md in mds:
     for line in data:
         if re.search("### \d+ - ", line.strip()):
 
-            temp_res += list(reversed([ ("["+(line.strip().split(" - ",1)[1]).capitalize() + "]("+ BLOB_PATH + md + "#" +  line.strip().lower().replace("###","")[1:].replace(" ","-").replace("?","").replace("(","").replace(")","").replace(",","").replace("_","") + ") ")]))
+            temp_res += [ ("["+(line.strip().split(" - ",1)[1]).capitalize() + "]("+ BLOB_PATH + md + "#" +  line.strip().lower().replace("###","")[1:].replace(" ","-").replace("?","").replace("(","").replace(")","").replace(",","").replace("_","") + ") ")]
             date_arr += [md.split(".md")[0].split("notes-")[1]]
             k = k+1
 
 
-    result += list(temp_res)
+    result += list(reversed(list(temp_res)))
 
 
 
