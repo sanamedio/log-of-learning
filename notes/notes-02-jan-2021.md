@@ -29,6 +29,10 @@ def get_balanced_iterative(n):
         o, c = 0, 0
 
         for i in range(1, 2 * n):
+        
+            if i == 2*n:
+                return #this is to end probaby
+        
             if s[-i] == "(":
                 o += 1
                 if c > o:
