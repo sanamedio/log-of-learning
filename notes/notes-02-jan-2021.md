@@ -6,7 +6,7 @@ without any tooling we can make it like follows
 
 https://meribold.org/python/2018/02/13/virtual-environments-9487/
 
-```python
+```bash
 ➜   touch pyvenv.cfg
 ➜   echo "home = /usr/bin" >> pyvenv.cfg
 ➜   mkdir -p lib/python3.8/site-packages
