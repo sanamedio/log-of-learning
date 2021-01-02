@@ -46,7 +46,7 @@ print(result)
 
 
 
-### 1 - building grep with keras 99.57% accuracy
+### 1 - building grep with keras
 
 
 learner.py
