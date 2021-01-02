@@ -1,5 +1,8 @@
 # 02-jan-2021
 
+### 4 - permutat
+
+
 ### 3 - lexiographic fixed length strings generation
 
 https://sahandsaba.com/combinatorial-generation-for-coding-interviews-in-python.html
