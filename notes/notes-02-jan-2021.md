@@ -1,5 +1,52 @@
 # 02-jan-2021
 
+### 4 - minimal virtualenv
+
+without any tooling we can make it like follows
+
+https://meribold.org/python/2018/02/13/virtual-environments-9487/
+
+```python
+➜   touch pyvenv.cfg
+➜   echo "home = /usr/bin" >> pyvenv.cfg
+➜   mkdir -p lib/python3.8/site-packages
+➜   mkdir bin
+➜   pip3 install -t lib/python3.6/site-packages left-pad==0.0.3
+Collecting left-pad==0.0.3
+  Downloading https://files.pythonhosted.org/packages/a0/34/cd668981dc6818d8a39f1185af8113268ddc71d99b0ba4aa8ceee2a123e7/left-pad-0.0.3.tar.gz
+Installing collected packages: left-pad
+  Running setup.py install for left-pad ... done
+Successfully installed left-pad-0.0.3
+➜   tree
+.
+├── bin
+│   └── python3
+├── lib
+│   └── python3.8
+│       └── site-packages
+│           ├── __pycache__
+│           │   └── left_pad.cpython-38.pyc
+│           ├── left_pad-0.0.3-py3.8.egg-info
+│           │   ├── PKG-INFO
+│           │   ├── SOURCES.txt
+│           │   ├── dependency_links.txt
+│           │   ├── installed-files.txt
+│           │   └── top_level.txt
+│           └── left_pad.py
+└── pyvenv.cfg
+
+6 directories, 9 files
+
+➜   ./bin/python3 -c "import left_pad"
+
+➜   python3 -c "import left_pad"
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+ModuleNotFoundError: No module named 'left_pad'
+
+```
+
+
 ### 3 - lexiographic fixed length strings generation
 
 https://sahandsaba.com/combinatorial-generation-for-coding-interviews-in-python.html
