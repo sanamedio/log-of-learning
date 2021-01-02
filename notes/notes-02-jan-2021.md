@@ -1,5 +1,31 @@
 # 02-jan-2021
 
+### 3 - lexiographic fixed length strings generation
+
+```python
+def strings_2(A, n):
+
+    index_of = {x: i for i, x in enumerate(A)}
+    s = [A[0]] * n
+
+    while True:
+        yield "".join(s)
+
+        for i in range(1, n + 1):
+            if s[-i] == A[-1]:
+                s[-i] = A[0]
+            else:
+                s[-i] = A[index_of[s[-i]] + 1]
+                break
+        else:
+            break
+
+
+Y = strings_2("abc", 2)
+
+for y in Y:
+    print(y)
+```
 
 ### 2 - inplace permutation iterator
 
