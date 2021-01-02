@@ -2,6 +2,8 @@
 
 ### 3 - lexiographic fixed length strings generation
 
+https://sahandsaba.com/combinatorial-generation-for-coding-interviews-in-python.html
+
 ```python
 def strings_2(A, n):
 
@@ -28,6 +30,8 @@ for y in Y:
 ```
 
 ### 2 - inplace permutation iterator
+
+https://sahandsaba.com/combinatorial-generation-for-coding-interviews-in-python.html
 
 ```python
 def permutations(pi, i):
