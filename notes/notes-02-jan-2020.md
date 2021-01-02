@@ -44,6 +44,40 @@ for i in range(1, 10):
     print(next(G))
 ```
 
+counting operations per string
+```python
+def balanced_iterative_operations(n):
+
+    T, C = 0, 0
+
+    s = ["("] * n + [")"] * n
+
+    while True:
+
+        C += 1
+        o, c = 0, 0
+
+        for i in range(1, 2 * n + 1):
+
+            if s[-i] == "(":
+                o += 1
+                if c > o:
+                    T += i
+                    s[-i:] = [")"] + ["("] * o + [")"] * (c - 1)
+                    break
+            else:
+                c += 1
+        if o == n:
+            T += 2 * n
+            break
+    return T, C
+
+
+for n in range(1, 20):
+    T, C = balanced_iterative_operations(n)
+    print(n, T, C, T / C)
+```
+
 
 
 
