@@ -7,10 +7,11 @@
                    |___/                                                                   |___/
         
 
-[ 934 ]
+[ 935 ]
 
 | LINK |
 |------|
+|[Minimal virtualenv](https://github.com/l0k3ndr/log-of-learning/blob/master/notes/notes-02-jan-2021.md#4---minimal-virtualenv) |
 |[Lexiographic fixed length strings generation](https://github.com/l0k3ndr/log-of-learning/blob/master/notes/notes-02-jan-2021.md#3---lexiographic-fixed-length-strings-generation) |
 |[Inplace permutation iterator](https://github.com/l0k3ndr/log-of-learning/blob/master/notes/notes-02-jan-2021.md#2---inplace-permutation-iterator) |
 |[Counting balanced paranthesis](https://github.com/l0k3ndr/log-of-learning/blob/master/notes/notes-02-jan-2021.md#1---counting-balanced-paranthesis) |
