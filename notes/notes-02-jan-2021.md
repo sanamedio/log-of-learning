@@ -1,5 +1,49 @@
 # 02-jan-2021
 
+
+### 2 - inplace permutation iterator
+
+```python
+def permutations(pi, i):
+
+    if i == len(pi):
+        while True:
+            yield False
+
+    sub_permutations = permutations(pi, i + 1)
+
+    while True:
+
+        for j in range(i, len(pi) - 1):
+            pi[j], pi[j + 1] = pi[j + 1], pi[j]
+            yield True
+
+        last = pi[-1]
+
+        for j in range(len(pi) - 1, i, -1):
+            pi[j] = pi[j - 1]
+        pi[i] = last
+
+        yield next(sub_permutations)
+
+
+pi = [1, 2, 3]
+
+
+perm_generator = permutations(pi, 0)
+
+
+print(pi)
+while next(perm_generator):
+    print(pi)
+print("------")
+
+print(pi)
+while next(perm_generator):
+    print(pi)
+print("------")
+```
+
 ### 1 - counting balanced paranthesis
 
 https://sahandsaba.com/interview-question-generating-all-balanced-parentheses.html
