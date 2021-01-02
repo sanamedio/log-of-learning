@@ -258,7 +258,7 @@
 |[Disk usage in linux](https://github.com/l0k3ndr/log-of-learning/blob/master/notes/notes-27-sep-2019.md#1---disk-usage-in-linux) |
 |[Afl fuzzing using python](https://github.com/l0k3ndr/log-of-learning/blob/master/notes/notes-13-aug-2019.md#1---afl-fuzzing-using-python) |
 |[Finding bitwise and of a range](https://github.com/l0k3ndr/log-of-learning/blob/master/notes/notes-08-jun-2019.md#2---finding-bitwise-and-of-a-range) |
-|[Building grep with keras 99.57% accuracy](https://github.com/l0k3ndr/log-of-learning/blob/master/notes/notes-08-jun-2019.md#1---building-grep-with-keras-99.57%-accuracy) |
+|[Building grep with keras](https://github.com/l0k3ndr/log-of-learning/blob/master/notes/notes-08-jun-2019.md#1---building-grep-with-keras) |
 |[Building grep using keras part 2](https://github.com/l0k3ndr/log-of-learning/blob/master/notes/notes-07-jun-2019.md#2---building-grep-using-keras-part-2) |
 |[Building grep using keras](https://github.com/l0k3ndr/log-of-learning/blob/master/notes/notes-07-jun-2019.md#1---building-grep-using-keras) |
 |[Keras mnist tutorial](https://github.com/l0k3ndr/log-of-learning/blob/master/notes/notes-06-jun-2019.md#1---keras-mnist-tutorial) |
