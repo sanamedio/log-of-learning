@@ -53,7 +53,7 @@ prefix = """
 ```
 """
 
-prefix = [" "*12+s for s in prefix]
+prefix = "\n".join([" "*12+s for s in prefix.split("\n")])
 
 prefix_sub = """
 | LINK |
