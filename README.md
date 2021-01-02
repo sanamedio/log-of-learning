@@ -8,7 +8,7 @@
            |___/                                                                   |___/
 ```
 
-[ 931 ]
+[ 932 ]
 
 | LINK |
 |------|
@@ -199,6 +199,7 @@
 |[Difflib to get edits](https://github.com/l0k3ndr/log-of-learning/blob/master/notes/notes-15-jan-2020.md#3---difflib-to-get-edits) |
 |[Termios handy password prompt](https://github.com/l0k3ndr/log-of-learning/blob/master/notes/notes-15-jan-2020.md#2---termios-handy-password-prompt) |
 |[Faulthandler](https://github.com/l0k3ndr/log-of-learning/blob/master/notes/notes-15-jan-2020.md#1---faulthandler) |
+|[Counting balanced paranthesis](https://github.com/l0k3ndr/log-of-learning/blob/master/notes/notes-02-jan-2020.md#1---counting-balanced-paranthesis) |
 |[Award budget cuts (coding problem)](https://github.com/l0k3ndr/log-of-learning/blob/master/notes/notes-08-dec-2019.md#6---award-budget-cuts-coding-problem) |
 |[Difference between let and var in js](https://github.com/l0k3ndr/log-of-learning/blob/master/notes/notes-08-dec-2019.md#5---difference-between-let-and-var-in-js) |
 |[Circleci tutorial with flask and github](https://github.com/l0k3ndr/log-of-learning/blob/master/notes/notes-08-dec-2019.md#4---circleci-tutorial-with-flask-and-github) |
