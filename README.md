@@ -7,10 +7,11 @@
                    |___/                                                                   |___/
         
 
-[ 932 ]
+[ 933 ]
 
 | LINK |
 |------|
+|[Inplace permutation iterator](https://github.com/l0k3ndr/log-of-learning/blob/master/notes/notes-02-jan-2021.md#2---inplace-permutation-iterator) |
 |[Counting balanced paranthesis](https://github.com/l0k3ndr/log-of-learning/blob/master/notes/notes-02-jan-2021.md#1---counting-balanced-paranthesis) |
 |[Balanced paranthesis generation](https://github.com/l0k3ndr/log-of-learning/blob/master/notes/notes-01-jan-2021.md#17---balanced-paranthesis-generation) |
 |[Counter is a multiset](https://github.com/l0k3ndr/log-of-learning/blob/master/notes/notes-01-jan-2021.md#16---counter-is-a-multiset) |
