@@ -11,6 +11,7 @@ https://meribold.org/python/2018/02/13/virtual-environments-9487/
 ➜   echo "home = /usr/bin" >> pyvenv.cfg
 ➜   mkdir -p lib/python3.8/site-packages
 ➜   mkdir bin
+➜   cp <your python3.8 exec> bin/python3
 ➜   pip3 install -t lib/python3.8/site-packages left-pad==0.0.3
 Collecting left-pad==0.0.3
   Downloading https://files.pythonhosted.org/packages/a0/34/cd668981dc6818d8a39f1185af8113268ddc71d99b0ba4aa8ceee2a123e7/left-pad-0.0.3.tar.gz
