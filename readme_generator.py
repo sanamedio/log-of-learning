@@ -51,7 +51,7 @@ prefix = """
            |___/                                                                   |___/
 """
 
-prefix = "```\n" + "\n".join([" "*8+s for s in prefix.split("\n")]) + "```\n"
+prefix = "\n".join([" "*8+s for s in prefix.split("\n")]) +"\n"
 
 prefix_sub = """
 | LINK |
