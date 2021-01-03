@@ -7,10 +7,11 @@
                    |___/                                                                   |___/
         
 
-[ 949 ]
+[ 950 ]
 
 | LINK |
 |------|
+|[Itertools product implementation](https://github.com/l0k3ndr/log-of-learning/blob/master/notes/notes-04-jan-2021.md#4---itertools-product-implementation) |
 |[Multi radix numbers with coroutines](https://github.com/l0k3ndr/log-of-learning/blob/master/notes/notes-04-jan-2021.md#3---multi-radix-numbers-with-coroutines) |
 |[Generating multi radix numbers](https://github.com/l0k3ndr/log-of-learning/blob/master/notes/notes-04-jan-2021.md#2---generating-multi-radix-numbers) |
 |[Postorder with generators](https://github.com/l0k3ndr/log-of-learning/blob/master/notes/notes-04-jan-2021.md#1---postorder-with-generators) |
