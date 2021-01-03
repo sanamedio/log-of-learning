@@ -4,7 +4,7 @@
 
 itertools product uses iterative approach
 
-```python
+```c
 /* Update the pool indices right-to-left.  Only advance to the
    next pool when the previous one rolls-over */
 for (i=npools-1 ; i >= 0 ; i--) {
