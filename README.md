@@ -7,13 +7,15 @@
                    |___/                                                                   |___/
         
 
-[ 940 ]
+[ 942 ]
 
 | LINK |
 |------|
-|[Using sysaudithook to sandbox](https://github.com/l0k3ndr/log-of-learning/blob/master/notes/notes-03-jan-2021.md#6---using-sysaudithook-to-sandbox) |
-|[Creating pyc files manually](https://github.com/l0k3ndr/log-of-learning/blob/master/notes/notes-03-jan-2021.md#4---creating-pyc-files-manually) |
-|[Excecuting pyc files directly](https://github.com/l0k3ndr/log-of-learning/blob/master/notes/notes-03-jan-2021.md#3---excecuting-pyc-files-directly) |
+|[Using subprocess to check shell output](https://github.com/l0k3ndr/log-of-learning/blob/master/notes/notes-03-jan-2021.md#7---using-subprocess-to-check-shell-output) |
+|[Using counter to bucket random numbers](https://github.com/l0k3ndr/log-of-learning/blob/master/notes/notes-03-jan-2021.md#6---using-counter-to-bucket-random-numbers) |
+|[Generating a pyc manually from py file](https://github.com/l0k3ndr/log-of-learning/blob/master/notes/notes-03-jan-2021.md#5---generating-a-pyc-manually-from-py-file) |
+|[Using sysaudithook to sandbox](https://github.com/l0k3ndr/log-of-learning/blob/master/notes/notes-03-jan-2021.md#4---using-sysaudithook-to-sandbox) |
+|[Creating pyc files manually](https://github.com/l0k3ndr/log-of-learning/blob/master/notes/notes-03-jan-2021.md#3---creating-pyc-files-manually) |
 |[Python startup](https://github.com/l0k3ndr/log-of-learning/blob/master/notes/notes-03-jan-2021.md#2---python-startup) |
 |[Zipfly for big files](https://github.com/l0k3ndr/log-of-learning/blob/master/notes/notes-03-jan-2021.md#1---zipfly-for-big-files) |
 |[Minimal virtualenv](https://github.com/l0k3ndr/log-of-learning/blob/master/notes/notes-02-jan-2021.md#4---minimal-virtualenv) |
