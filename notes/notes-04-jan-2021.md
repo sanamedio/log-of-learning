@@ -1,5 +1,35 @@
 # 04-jan-2021
 
+### 4 - itertools product implementation
+
+itertools product uses iterative approach
+
+```python
+/* Update the pool indices right-to-left.  Only advance to the
+   next pool when the previous one rolls-over */
+for (i=npools-1 ; i >= 0 ; i--) {
+    pool = PyTuple_GET_ITEM(pools, i);
+    indices[i]++;
+    if (indices[i] == PyTuple_GET_SIZE(pool)) {
+        /* Roll-over and advance to next pool */
+        indices[i] = 0;
+        elem = PyTuple_GET_ITEM(pool, 0);
+        Py_INCREF(elem);
+        oldelem = PyTuple_GET_ITEM(result, i);
+        PyTuple_SET_ITEM(result, i, elem);
+        Py_DECREF(oldelem);
+    } else {
+        /* No rollover. Just increment and stop here. */
+        elem = PyTuple_GET_ITEM(pool, indices[i]);
+        Py_INCREF(elem);
+        oldelem = PyTuple_GET_ITEM(result, i);
+        PyTuple_SET_ITEM(result, i, elem);
+        Py_DECREF(oldelem);
+        break;
+    }
+}
+```
+
 ### 3 - multi radix numbers with coroutines
 
 ```python
