@@ -49,7 +49,7 @@ def perms_3(A):
             # A[j] is the smallest element in A[i:] that is greater
             # than A[i - 1]
             A[i - 1], A[j] = A[j], A[i - 1]
-            A[i:] = A[-1:i - 1:-1]
+            A[i:] = A[-1:i - 1:-1] # reversal of subarray
         else:
             break
 
