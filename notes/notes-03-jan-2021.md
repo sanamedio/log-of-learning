@@ -1,5 +1,16 @@
 # 03-jan-2021
 
+### 10 - lexiographic subset enumeration
+
+https://sahandsaba.com/combinatorial-generation-for-coding-interviews-in-python.html
+
+```python
+def subsets_2(A):
+    n = len(A)
+    for k in range(1 << n):
+        yield [A[i] for i in range(n) if k & (1 << i)]
+```
+
 ### 9 - subsets of a set recursively
 
 https://sahandsaba.com/combinatorial-generation-for-coding-interviews-in-python.html
