@@ -29,6 +29,35 @@ for pi in perms_2(['1', '2', '3'], 0):
 321
 ```
 
+lexiographic order
+```python
+def perms_3(A):
+    while True:
+        yield A #wrap in list if not consuming immediately
+        i = len(A) - 1
+        while i > 0:
+            if A[i - 1] < A[i]:
+                break
+            i -= 1
+        if i > 0:
+            # A[i - 1:] is the shortest non-decreasing suffix
+            j = len(A) - 1
+            while j >= i:
+                if A[j] > A[i - 1]:
+                    break
+                j -= 1
+            # A[j] is the smallest element in A[i:] that is greater
+            # than A[i - 1]
+            A[i - 1], A[j] = A[j], A[i - 1]
+            A[i:] = A[-1:i - 1:-1]
+        else:
+            break
+
+print(list(perms_3([1,2,3,4])))
+# [[1, 2, 3, 4], [1, 2, 4, 3], [1, 3, 2, 4], [1, 3, 4, 2], [1, 4, 2, 3], [1, 4, 3, 2], [2, 1, 3, 4], [2, 1, 4, 3], [2, 3, 1, 4], [2, 3, 4, 1], [2, 4, 1, 3], [2, 4, 3, 1], [3, 1, 2, 4], [3, 1, 4, 2], [3, 2, 1, 4], [3, 2, 4, 1], [3, 4, 1, 2], [3, 4, 2, 1], [4, 1, 2, 3], [4, 1, 3, 2], [4, 2, 1, 3], [4, 2, 3, 1], [4, 3, 1, 2], [4, 3, 2, 1]]
+```
+
+
 
 ### 7 - using subprocess to check shell output
 
