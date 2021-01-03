@@ -55,6 +55,7 @@ b'U\r\r\n\x00\x00\x00\x00\xb1\xb6\xf1_\x15\x00\x00\x00\xe3\x00\x00\x00\x00\x00\x
 ### 4 - using sysaudithook to sandbox 
 
 Runtime auditing can be done with sysaudithook
+
 https://stackoverflow.com/questions/48992030/disable-built-in-module-import-in-embedded-python
 
 https://stackoverflow.com/questions/3068139/how-can-i-sandbox-python-in-pure-python
