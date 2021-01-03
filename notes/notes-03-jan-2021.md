@@ -99,7 +99,7 @@ This can be really useful to do aspect oriented programming. Raise custom events
 
 https://stackoverflow.com/questions/53833455/how-to-find-out-the-magic-number-for-the-pyc-header-in-python-3
 
-```
+```python
 Python 3.8.0 (default, Apr 21 2020, 09:37:48)
 Type 'copyright', 'credits' or 'license' for more information
 IPython 7.15.0 -- An enhanced Interactive Python. Type '?' for help.
