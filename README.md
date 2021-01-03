@@ -7,10 +7,11 @@
                    |___/                                                                   |___/
         
 
-[ 944 ]
+[ 945 ]
 
 | LINK |
 |------|
+|[Lexiographic subset enumeration](https://github.com/l0k3ndr/log-of-learning/blob/master/notes/notes-03-jan-2021.md#10---lexiographic-subset-enumeration) |
 |[Subsets of a set recursively](https://github.com/l0k3ndr/log-of-learning/blob/master/notes/notes-03-jan-2021.md#9---subsets-of-a-set-recursively) |
 |[Inplace permutation generation](https://github.com/l0k3ndr/log-of-learning/blob/master/notes/notes-03-jan-2021.md#8---inplace-permutation-generation) |
 |[Using subprocess to check shell output](https://github.com/l0k3ndr/log-of-learning/blob/master/notes/notes-03-jan-2021.md#7---using-subprocess-to-check-shell-output) |
