@@ -1,5 +1,38 @@
 # 04-jan-2021
 
+### 3 - multi radix numbers with coroutines
+
+```python
+def nobody():
+    while True:
+        yield False
+
+
+def troll(M, a, i):
+    previous = troll(M, a, i - 1) if i > 0 else nobody()
+
+    while True:
+        if a[i] == M[i] - 1:
+            a[i] = 0
+            yield next(previous)
+        else:
+            a[i] += 1
+            yield True
+
+
+def multiradix_coroutine(M):
+    n = len(M)
+    a = [0] * n
+    lead = troll(M, a, n - 1)
+    yield a
+    while next(lead):
+        yield a
+
+
+for x in multiradix_coroutine([4, 3, 2]):
+    print(x)
+```
+
 ### 2 - generating multi radix numbers
 
 https://sahandsaba.com/combinatorial-generation-using-coroutines-in-python.html
