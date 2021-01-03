@@ -1,5 +1,83 @@
 # 04-jan-2021
 
+### 6 - Steinhaus-Johnson-Trotter permutation generation
+
+https://sahandsaba.com/combinatorial-generation-using-coroutines-in-python.html
+
+SJT is an algorithm for generating all permutations in Gray order. Here, Gray order means that "distance" between two subsequent permutations is one, where a distance of one means that they differ from each other by one swap of adjacent elements, also called a transposition. The basic idea of the algorithm is recursive. Given a list of permutations of n-1 , we can produce a list of permutations of n by inserting nn into each permutation of n-1 , first by starting at the very right end and moving to the left, and then moving to the right, and so on. 
+
+recursive
+```python
+def permutations(n):
+    if n:
+        r = list(range(n))
+        for pi in permutations(n - 1):
+            for i in r:
+                yield pi[i:] + [n] + pi[:i]
+            r.reverse()
+    else:
+        yield []
+```
+
+### 5 - binary reflected gray codes
+
+https://sahandsaba.com/combinatorial-generation-using-coroutines-in-python.html
+
+A binary Gray code is a listing of all binary strings of length nn such that each two subsequent strings are different in exactly one index. The binary reflected Gray code (BGRC), is one such code. It is given by recursively generating the BGRC for n - 1n−1 , then prepending a zero to all strings, and a one to all the strings in reverse order
+
+recursive
+```python
+def gray(n):
+    if n > 0:
+        g = gray(n - 1)
+        gr = reversed(g)
+        return (['0' + a for a in g] +
+                ['1' + a for a in gr])
+    else:
+        return ['']
+And example output:
+
+>>> for a in gray(3):
+...     print(a)
+...
+000
+001
+011
+010
+110
+111
+101
+100
+```
+
+with coroutines
+```
+def nobody():
+    while True:
+        yield False
+
+def troll(a, i):
+    previous = troll(a, i - 1) if i > 0 else nobody()
+    while True:
+        a[i] = 1 - a[i]
+        yield True
+        yield next(previous)
+
+
+def setup(n):
+    a = [0] * n
+    lead_coroutine = troll(a, n - 1)
+    return a, lead_coroutine
+
+
+def gray(n):
+    a, lead = setup(n)
+    yield a
+    while next(lead):
+        yield a
+```
+
+
 ### 4 - itertools product implementation
 
 itertools product uses iterative approach
@@ -31,6 +109,10 @@ for (i=npools-1 ; i >= 0 ; i--) {
 ```
 
 ### 3 - multi radix numbers with coroutines
+
+https://sahandsaba.com/combinatorial-generation-using-coroutines-in-python.html
+
+very unconventional approach
 
 ```python
 def nobody():
