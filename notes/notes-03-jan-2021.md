@@ -1,5 +1,35 @@
 # 03-jan-2021
 
+### 8 - inplace permutation generation
+
+https://sahandsaba.com/combinatorial-generation-for-coding-interviews-in-python.html
+
+```python
+def perms_2(A, starting_index):
+    if starting_index == len(A) - 1:
+        yield A
+        return
+    for _ in perms_2(A, starting_index + 1):
+        yield A
+        # Keep moving A[starting_index] to the right one at a time
+        for i in range(starting_index, len(A) - 1):
+            A[i], A[i + 1] = A[i + 1], A[i]
+            yield A
+        # Now move it all the way back to where it was at the beginning
+        for i in range(len(A) - 1, starting_index, -1):
+            A[i], A[i - 1] = A[i - 1], A[i]
+
+for pi in perms_2(['1', '2', '3'], 0):
+   print(''.join(pi))
+123
+213
+231
+132
+312
+321
+```
+
+
 ### 7 - using subprocess to check shell output
 
 http://prooffreaderplus.blogspot.com/2014/11/top-10-python-idioms-i-wished-id.html
