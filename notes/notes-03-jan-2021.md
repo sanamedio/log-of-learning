@@ -1,5 +1,40 @@
 # 03-jan-2021
 
+### 11 - combination enumeration
+
+recursive
+```python
+def combinations(A, k):
+    if k == 0:
+        return [[]]
+    if len(A) == k:
+        return [list(A)]
+    result = [[A[0]] + c for c in combinations(A[1:], k - 1)]
+    result += combinations(A[1:], k)
+    return result
+```
+
+iterative and lexiographic
+```python
+def combinations_2(n, k):
+    c = [0] * (n - k) + [1] * k
+    while True:
+        yield c
+        # Look for the right-most 01 while counting ones encountered.
+        i = n - 2
+        ones = 0
+        while i >= 0 and c[i:i + 2] != [0, 1]:
+            if c[i + 1] == 1:
+                ones += 1
+            i -= 1
+        if i < 0:
+            break
+        # Change the 01 to 10 and reset the suffix to the smallest
+        # lexicographic string with the right number of ones and zeros.
+        c[i:] = [1] + [0] * (n - i - ones - 1) + [1] * ones
+```
+
+
 ### 10 - lexiographic subset enumeration
 
 https://sahandsaba.com/combinatorial-generation-for-coding-interviews-in-python.html
