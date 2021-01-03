@@ -1,6 +1,6 @@
 # 04-jan-2021
 
-### 2 - generating multi radix numbers with itertools
+### 2 - generating multi radix numbers
 
 https://sahandsaba.com/combinatorial-generation-using-coroutines-in-python.html
 
@@ -49,6 +49,48 @@ Out[10]:
 
 ```
 
+There is another arithimetic approach, whereis we generate binary but just transform them to multi radix
+
+```python
+from operator import mul
+from functools import reduce
+
+
+def number_to_multiradix(M, x, a):
+    n = len(M)
+    for i in range(1, n + 1):
+        x, a[-i] = divmod(x, M[-i])
+    return a
+
+
+def multiradix_counting(M):
+    n = len(M)
+    a = [0] * n
+    last = reduce(mul, M, 1)
+    for x in range(last):
+        yield number_to_multiradix(M, x, a)
+```
+
+Then another approach is to use recursion over subproblems
+
+```python
+def multiradix(M, n, a, i):
+    if i < 0:
+        yield a
+    else:
+        for __ in multiradix(M, n, a, i - 1):
+            # Extend each multi-radix number of length i with all possible
+            # 0 <= x < M[i] to get a multi-radix number of length i + 1.
+            for x in range(M[i]):
+                a[i] = x
+                yield a
+
+
+def multiradix_recursive(M):
+    n = len(M)
+    a = [0] * n
+    return multiradix(M, n, a, n - 1)
+```
 
 ### 1 - postorder with generators
 
