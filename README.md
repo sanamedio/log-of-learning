@@ -7,10 +7,14 @@
                    |___/                                                                   |___/
         
 
-[ 936 ]
+[ 940 ]
 
 | LINK |
 |------|
+|[Using sysaudithook to sandbox](https://github.com/l0k3ndr/log-of-learning/blob/master/notes/notes-03-jan-2021.md#6---using-sysaudithook-to-sandbox) |
+|[Creating pyc files manually](https://github.com/l0k3ndr/log-of-learning/blob/master/notes/notes-03-jan-2021.md#4---creating-pyc-files-manually) |
+|[Excecuting pyc files directly](https://github.com/l0k3ndr/log-of-learning/blob/master/notes/notes-03-jan-2021.md#3---excecuting-pyc-files-directly) |
+|[Python startup](https://github.com/l0k3ndr/log-of-learning/blob/master/notes/notes-03-jan-2021.md#2---python-startup) |
 |[Zipfly for big files](https://github.com/l0k3ndr/log-of-learning/blob/master/notes/notes-03-jan-2021.md#1---zipfly-for-big-files) |
 |[Minimal virtualenv](https://github.com/l0k3ndr/log-of-learning/blob/master/notes/notes-02-jan-2021.md#4---minimal-virtualenv) |
 |[Lexiographic fixed length strings generation](https://github.com/l0k3ndr/log-of-learning/blob/master/notes/notes-02-jan-2021.md#3---lexiographic-fixed-length-strings-generation) |
