@@ -7,10 +7,11 @@
                    |___/                                                                   |___/
         
 
-[ 947 ]
+[ 948 ]
 
 | LINK |
 |------|
+|[Generating multi radix numbers with itertools](https://github.com/l0k3ndr/log-of-learning/blob/master/notes/notes-04-jan-2021.md#2---generating-multi-radix-numbers-with-itertools) |
 |[Postorder with generators](https://github.com/l0k3ndr/log-of-learning/blob/master/notes/notes-04-jan-2021.md#1---postorder-with-generators) |
 |[Combination enumeration](https://github.com/l0k3ndr/log-of-learning/blob/master/notes/notes-03-jan-2021.md#11---combination-enumeration) |
 |[Lexiographic subset enumeration](https://github.com/l0k3ndr/log-of-learning/blob/master/notes/notes-03-jan-2021.md#10---lexiographic-subset-enumeration) |
