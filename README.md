@@ -7,10 +7,11 @@
                    |___/                                                                   |___/
         
 
-[ 946 ]
+[ 947 ]
 
 | LINK |
 |------|
+|[Postorder with generators](https://github.com/l0k3ndr/log-of-learning/blob/master/notes/notes-04-jan-2021.md#1---postorder-with-generators) |
 |[Combination enumeration](https://github.com/l0k3ndr/log-of-learning/blob/master/notes/notes-03-jan-2021.md#11---combination-enumeration) |
 |[Lexiographic subset enumeration](https://github.com/l0k3ndr/log-of-learning/blob/master/notes/notes-03-jan-2021.md#10---lexiographic-subset-enumeration) |
 |[Subsets of a set recursively](https://github.com/l0k3ndr/log-of-learning/blob/master/notes/notes-03-jan-2021.md#9---subsets-of-a-set-recursively) |
