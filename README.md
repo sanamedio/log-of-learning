@@ -7,10 +7,11 @@
                    |___/                                                                   |___/
         
 
-[ 942 ]
+[ 943 ]
 
 | LINK |
 |------|
+|[Inplace permutation generation](https://github.com/l0k3ndr/log-of-learning/blob/master/notes/notes-03-jan-2021.md#8---inplace-permutation-generation) |
 |[Using subprocess to check shell output](https://github.com/l0k3ndr/log-of-learning/blob/master/notes/notes-03-jan-2021.md#7---using-subprocess-to-check-shell-output) |
 |[Using counter to bucket random numbers](https://github.com/l0k3ndr/log-of-learning/blob/master/notes/notes-03-jan-2021.md#6---using-counter-to-bucket-random-numbers) |
 |[Generating a pyc manually from py file](https://github.com/l0k3ndr/log-of-learning/blob/master/notes/notes-03-jan-2021.md#5---generating-a-pyc-manually-from-py-file) |
