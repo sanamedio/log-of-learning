@@ -1,6 +1,6 @@
 # 04-jan-2021
 
-### 2 - generating cross product withi itertools
+### 2 - generating multi radix numbers with itertools
 
 https://sahandsaba.com/combinatorial-generation-using-coroutines-in-python.html
 
