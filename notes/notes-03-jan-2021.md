@@ -1,5 +1,40 @@
 # 03-jan-2021
 
+### 9 - subsets of a set recursively
+
+https://sahandsaba.com/combinatorial-generation-for-coding-interviews-in-python.html
+
+```python
+In [2]: def subsets(A):
+   ...:     if not A:
+   ...:         yield []
+   ...:     else:
+   ...:         for s in subsets(A[1:]):
+   ...:             yield s
+   ...:             yield [A[0]] + s
+   ...:
+
+In [4]: X = subsets([1,2,3,4])
+
+In [5]: for x in X: print(x)
+[]
+[1]
+[2]
+[1, 2]
+[3]
+[1, 3]
+[2, 3]
+[1, 2, 3]
+[4]
+[1, 4]
+[2, 4]
+[1, 2, 4]
+[3, 4]
+[1, 3, 4]
+[2, 3, 4]
+[1, 2, 3, 4]
+```
+
 ### 8 - inplace permutation generation
 
 https://sahandsaba.com/combinatorial-generation-for-coding-interviews-in-python.html
