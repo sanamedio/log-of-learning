@@ -1,6 +1,58 @@
 # 03-jan-2021
 
-### 6 - using sysaudithook to sandbox 
+### 7 - using subprocess to check shell output
+
+http://prooffreaderplus.blogspot.com/2014/11/top-10-python-idioms-i-wished-id.html
+
+```python
+import subprocess
+output = subprocess.check_output('dir', shell=True)
+print(output)
+```
+
+
+### 6 - using counter to bucket random numbers
+
+http://prooffreaderplus.blogspot.com/2014/11/top-10-python-idioms-i-wished-id.html
+
+```python
+In [1]: from collections import Counter
+   ...: from random import randrange
+   ...: import pprint
+   ...: mycounter = Counter()
+   ...: for i in range(1000):
+   ...:     random_number = randrange(10)
+   ...:     mycounter[random_number] += 1
+   ...: for i in range(10):
+   ...:     print(i, mycounter[i])
+   ...:
+0 92
+1 101
+2 94
+3 120
+4 94
+5 105
+6 96
+7 104
+8 94
+9 100
+```
+
+### 5 - generating a pyc manually from py file
+
+https://stackoverflow.com/questions/5607283/how-can-i-manually-generate-a-pyc-file-from-a-py-file/5607315
+
+```
+python -m compileall filename.py
+```
+
+can print the content like, (pycache folder is where to look if not visible in current)
+```
+➜  ~ python -c 'print(open("__pycache__/filename.cpython-38.pyc","rb").read())'
+b'U\r\r\n\x00\x00\x00\x00\xb1\xb6\xf1_\x15\x00\x00\x00\xe3\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x02\x00\x00\x00@\x00\x00\x00s\x0c\x00\x00\x00e\x00d\x00\x83\x01\x01\x00d\x01S\x00)\x02z\x0bhello worldN)\x01\xda\x05print\xa9\x00r\x02\x00\x00\x00r\x02\x00\x00\x00\xfa\x08test3.py\xda\x08<module>\x01\x00\x00\x00\xf3\x00\x00\x00\x00'
+```
+
+### 4 - using sysaudithook to sandbox 
 
 Runtime auditing can be done with sysaudithook
 https://stackoverflow.com/questions/48992030/disable-built-in-module-import-in-embedded-python
@@ -42,9 +94,39 @@ For different type of audit events, different actions can be taken.
 This can be really useful to do aspect oriented programming. Raise custom events, and execute a list of functions for them.
 
 
-### 4 - creating pyc files manually
+### 3 - creating pyc files manually
 
-### 3 - excecuting pyc files directly
+https://stackoverflow.com/questions/53833455/how-to-find-out-the-magic-number-for-the-pyc-header-in-python-3
+
+```
+Python 3.8.0 (default, Apr 21 2020, 09:37:48)
+Type 'copyright', 'credits' or 'license' for more information
+IPython 7.15.0 -- An enhanced Interactive Python. Type '?' for help.
+
+In [1]: import dis
+   ...: import marshal
+   ...:
+   ...: PYC_HEADER = b'\x42\x0d\x0d\x0a\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00'
+   ...:
+   ...: def f():
+   ...:     print('Hello     World')
+   ...:
+   ...: with open('test.pyc', 'wb') as pyc:
+   ...:     pyc.write(PYC_HEADER)
+   ...:     marshal.dump(dis.Bytecode(f).codeobj, pyc)
+   ...:
+
+In [2]: exit
+➜  ~ python test.pyc
+RuntimeError: Bad magic number in .pyc file
+```
+
+This gives error because .pyc needs the correct magic number to be run directly by the python interpreter
+
+https://nedbatchelder.com/blog/200804/the_structure_of_pyc_files.html
+This blog gives some info on the structure of it, but isn't useful because lot of changes happened since python version it has used.
+
+After comparing two pyc files of 3.8, was able to check the header is b'U\r\r\n\x00\x00\x00\x00\xb1\xb6\xf1_\x15\x00\x00\x00' and this works for the above program.
 
 ### 2 - python startup
 
@@ -228,6 +310,9 @@ hello
 # cleanup[3] wiping builtins
 # destroy _frozen_importlib
 ```
+
+importlib is bootstrapped https://hg.python.org/cpython/file/62cf4e77f785/Python/importlib.h
+https://stackoverflow.com/questions/22378507/globals-frozen-importlib-builtinimporter
 
 
 ### 1 - zipfly for big files
