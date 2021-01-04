@@ -7,10 +7,11 @@
                    |___/                                                                   |___/
         
 
-[ 953 ]
+[ 954 ]
 
 | LINK |
 |------|
+|[Number of steps required to reduce to 1](https://github.com/l0k3ndr/log-of-learning/blob/master/notes/notes-05-jan-2021.md#2---number-of-steps-required-to-reduce-to-1) |
 |[K smallest element in sorted matrix](https://github.com/l0k3ndr/log-of-learning/blob/master/notes/notes-05-jan-2021.md#1---k-smallest-element-in-sorted-matrix) |
 |[Steinhaus-johnson-trotter permutation generation](https://github.com/l0k3ndr/log-of-learning/blob/master/notes/notes-04-jan-2021.md#6---steinhaus-johnson-trotter-permutation-generation) |
 |[Binary reflected gray codes](https://github.com/l0k3ndr/log-of-learning/blob/master/notes/notes-04-jan-2021.md#5---binary-reflected-gray-codes) |
