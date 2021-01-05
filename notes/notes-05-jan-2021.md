@@ -1,5 +1,68 @@
 # 05-jan-2021
 
+### 4 - min perfect squares summing upto n
+
+dp
+```
+from math import ceil, sqrt
+ 
+def getMinSquares(n):
+ 
+    dp = [0, 1, 2, 3]
+ 
+    for i in range(4, n + 1):
+         
+        dp.append(i)
+ 
+        for x in range(1, int(ceil(sqrt(i))) + 1):
+            temp = x * x;
+            if temp > i:
+                break
+            else:
+                dp[i] = min(dp[i], 1 + dp[i-temp])
+ 
+    return dp[n]
+ 
+print(getMinSquares(6))
+```
+
+
+bfs
+```python
+import sys
+ 
+def numSquares(n) : 
+ 
+    visited = [0]*(n + 1) 
+    q = []
+    ans = sys.maxsize
+    q.append([n, 0])
+     
+    visited[n] = 1
+    while(len(q) > 0) :
+         
+        p = q[0]
+        q.pop(0)
+     
+        if(p[0] == 0) :
+            ans = min(ans, p[1])
+     
+        i = 1
+        while i * i <= p[0] :
+           
+            path = p[0] - i * i
+         
+            if path >= 0 and (visited[path] == 0 or path == 0):
+                visited[path] = 1         
+                q.append([path,p[1] + 1])
+             
+            i += 1
+     
+    return ans
+ 
+print(numSquares(12))
+```
+
 ### 3 - derandomize virtual memory
 
 https://youtu.be/JRyrhsx-L5Y?t=696
