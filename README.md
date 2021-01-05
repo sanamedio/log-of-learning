@@ -7,10 +7,11 @@
                    |___/                                                                   |___/
         
 
-[ 957 ]
+[ 958 ]
 
 | LINK |
 |------|
+|[Pdb where](https://github.com/l0k3ndr/log-of-learning/blob/master/notes/notes-06-jan-2021.md#1---pdb-where) |
 |[Roman numbers to int](https://github.com/l0k3ndr/log-of-learning/blob/master/notes/notes-05-jan-2021.md#5---roman-numbers-to-int) |
 |[Min perfect squares summing upto n](https://github.com/l0k3ndr/log-of-learning/blob/master/notes/notes-05-jan-2021.md#4---min-perfect-squares-summing-upto-n) |
 |[Derandomize virtual memory](https://github.com/l0k3ndr/log-of-learning/blob/master/notes/notes-05-jan-2021.md#3---derandomize-virtual-memory) |
