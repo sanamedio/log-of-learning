@@ -6,7 +6,7 @@ https://www.geeksforgeeks.org/number-of-steps-required-to-convert-a-binary-numbe
 
 one is to simulate the process, but that would be slow. Next thing is to observe multiple optimizations and handle to process with those cases. 
 
-```
+```python
 def calc(s):
     if len(s) == 0:
         return 0
