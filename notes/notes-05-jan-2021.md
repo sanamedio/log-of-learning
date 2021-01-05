@@ -3,7 +3,7 @@
 ### 4 - min perfect squares summing upto n
 
 dp
-```
+```python
 from math import ceil, sqrt
  
 def getMinSquares(n):
