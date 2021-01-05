@@ -1,6 +1,15 @@
 # 05-jan-2021
 
-### 2 - number of steps required to reduce to 1
+### 3 - derandomize virtual memory
+
+https://youtu.be/JRyrhsx-L5Y?t=696
+
+```bash
+echo 0 > /proc/sys/kernel/randomize_va_space
+```
+
+
+### 2 - number of steps required to reduce to one
 
 https://www.geeksforgeeks.org/number-of-steps-required-to-convert-a-binary-number-to-one/
 
