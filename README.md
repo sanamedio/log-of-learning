@@ -7,10 +7,11 @@
                    |___/                                                                   |___/
         
 
-[ 955 ]
+[ 956 ]
 
 | LINK |
 |------|
+|[Min perfect squares summing upto n](https://github.com/l0k3ndr/log-of-learning/blob/master/notes/notes-05-jan-2021.md#4---min-perfect-squares-summing-upto-n) |
 |[Derandomize virtual memory](https://github.com/l0k3ndr/log-of-learning/blob/master/notes/notes-05-jan-2021.md#3---derandomize-virtual-memory) |
 |[Number of steps required to reduce to one](https://github.com/l0k3ndr/log-of-learning/blob/master/notes/notes-05-jan-2021.md#2---number-of-steps-required-to-reduce-to-one) |
 |[K smallest element in sorted matrix](https://github.com/l0k3ndr/log-of-learning/blob/master/notes/notes-05-jan-2021.md#1---k-smallest-element-in-sorted-matrix) |
