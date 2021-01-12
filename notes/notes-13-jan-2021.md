@@ -1,6 +1,22 @@
 # 13-jan-2021
 
+### 5 - computing quotient with add, subtract and shift
 
+when we say 5 divmod 2 = 2,1 it means we can take out two 2's from 5 and leave 1 as remainder. These bit operations work similarly to find out the quotient.
+
+```python
+def divide(x,y):
+  result, power = 0, 32
+  y_power = y << power
+  while x >= y:
+    while y_power > x:
+      y_power >>= 1
+      power -= 1
+    
+    result += 1 << power
+    x -= y_power
+  return result
+```
 
 ### 4 - computer a x b without arithimetic operators
 
