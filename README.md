@@ -7,10 +7,13 @@
                    |___/                                                                   |___/
         
 
-[ 969 ]
+[ 972 ]
 
 | LINK |
 |------|
+|[Dutch flag partition](https://github.com/l0k3ndr/log-of-learning/blob/master/notes/notes-13-jan-2021.md#12---dutch-flag-partition) |
+|[Even odd sort](https://github.com/l0k3ndr/log-of-learning/blob/master/notes/notes-13-jan-2021.md#11---even-odd-sort) |
+|[Rectangle intersection](https://github.com/l0k3ndr/log-of-learning/blob/master/notes/notes-13-jan-2021.md#10---rectangle-intersection) |
 |[Generate uniform random numbers](https://github.com/l0k3ndr/log-of-learning/blob/master/notes/notes-13-jan-2021.md#9---generate-uniform-random-numbers) |
 |[Integer is palindrome](https://github.com/l0k3ndr/log-of-learning/blob/master/notes/notes-13-jan-2021.md#8---integer-is-palindrome) |
 |[Reverse digits](https://github.com/l0k3ndr/log-of-learning/blob/master/notes/notes-13-jan-2021.md#7---reverse-digits) |
