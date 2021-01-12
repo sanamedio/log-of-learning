@@ -4,7 +4,7 @@
 
 weight of non negative integer x as number of set bits
 
-``python
+```python
 #page.29
 def closest_int_same_bit_count(x):
   NUM_UNSIGNED_BITS = 64
