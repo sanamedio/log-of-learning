@@ -1,10 +1,25 @@
 # 13-jan-2021
 
+### 6 - compute x pow y
+
+```python
+def power(x, y):
+  result, power = 1.0, y
+  if y < 0:
+    power, x = -power, 1.0/x
+  while power:
+    if power & 1:
+      result *= x
+    x, power = x*x, power >> 1
+  return result
+```
+
 ### 5 - computing quotient with add, subtract and shift
 
 when we say 5 divmod 2 = 2,1 it means we can take out two 2's from 5 and leave 1 as remainder. These bit operations work similarly to find out the quotient.
 
 ```python
+#4.6 section
 def divide(x,y):
   result, power = 0, 32
   y_power = y << power
