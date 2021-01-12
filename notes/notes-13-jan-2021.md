@@ -1,5 +1,58 @@
 # 13-jan-2021
 
+### 9 - generate uniform random numbers
+
+Assuming we have zero_one_random() which gives us random bits
+we find out the capacity of range, let our while loop build a result worthy of that range by giving it that many size times to do flip, and then we take out whatever we get and add it to lower_bound
+
+```python
+def uniform_random(lower_bound, upper_bound):
+
+  number_of_outcomes = upper_bound - lower_bound + 1
+  
+  while True:
+    result, i = 0, 0
+    while ( 1 << i ) < number_of_outcomes:
+      # zero_one_random() is provided random number generator
+      result = (result << 1) | zero_one_random()
+      i += 1
+    if result < number_of_outcomes:
+      break
+  
+  return result + lower_bound
+```
+    
+
+### 8 - integer is palindrome
+
+```python
+def is_palindrome_number(x):
+  if x <= 0:
+    return x == 0
+    
+  num_digits = math.floor(math.log10(x)) + 1
+  msd_mask = 10**(num_digits - 1)
+  for i in range(num_digits // 2):
+    if x // msd_mask != x % 10:
+      return False
+    x %= msd_mask
+    x //= 10
+    msd_mask //= 100
+  return True
+```
+
+
+### 7 - reverse digits
+
+```python
+def reverse(x):
+  result, x_remaining = 0, abs(x)
+  while x_remaining:
+    result = result * 10 + x_remaining % 10
+    x_remaining //= 10
+  return -result if x < 0 else result
+```
+
 ### 6 - compute x pow y
 
 ```python
