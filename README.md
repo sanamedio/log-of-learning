@@ -7,10 +7,11 @@
                    |___/                                                                   |___/
         
 
-[ 965 ]
+[ 966 ]
 
 | LINK |
 |------|
+|[Compute x pow y](https://github.com/l0k3ndr/log-of-learning/blob/master/notes/notes-13-jan-2021.md#6---compute-x-pow-y) |
 |[Computing quotient with add, subtract and shift](https://github.com/l0k3ndr/log-of-learning/blob/master/notes/notes-13-jan-2021.md#5---computing-quotient-with-add-subtract-and-shift) |
 |[Computer a x b without arithimetic operators](https://github.com/l0k3ndr/log-of-learning/blob/master/notes/notes-13-jan-2021.md#4---computer-a-x-b-without-arithimetic-operators) |
 |[Closest integer with same weight](https://github.com/l0k3ndr/log-of-learning/blob/master/notes/notes-13-jan-2021.md#3---closest-integer-with-same-weight) |
