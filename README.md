@@ -7,10 +7,13 @@
                    |___/                                                                   |___/
         
 
-[ 966 ]
+[ 969 ]
 
 | LINK |
 |------|
+|[Generate uniform random numbers](https://github.com/l0k3ndr/log-of-learning/blob/master/notes/notes-13-jan-2021.md#9---generate-uniform-random-numbers) |
+|[Integer is palindrome](https://github.com/l0k3ndr/log-of-learning/blob/master/notes/notes-13-jan-2021.md#8---integer-is-palindrome) |
+|[Reverse digits](https://github.com/l0k3ndr/log-of-learning/blob/master/notes/notes-13-jan-2021.md#7---reverse-digits) |
 |[Compute x pow y](https://github.com/l0k3ndr/log-of-learning/blob/master/notes/notes-13-jan-2021.md#6---compute-x-pow-y) |
 |[Computing quotient with add, subtract and shift](https://github.com/l0k3ndr/log-of-learning/blob/master/notes/notes-13-jan-2021.md#5---computing-quotient-with-add-subtract-and-shift) |
 |[Computer a x b without arithimetic operators](https://github.com/l0k3ndr/log-of-learning/blob/master/notes/notes-13-jan-2021.md#4---computer-a-x-b-without-arithimetic-operators) |
