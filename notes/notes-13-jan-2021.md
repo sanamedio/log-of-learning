@@ -1,9 +1,69 @@
 # 13-jan-2021
 
+
+### 12 - dutch flag partition
+
+```python
+RED, WHITE, BLUE = range(3)
+
+def dutch_flag_partition(pivot_index, A):
+  pivot = A[pivot_index]
+  
+  for i in range(len(A)):
+    for j in range(i+1, len(A)):
+      if A[j] < pivot:
+        A[i], A[j] = A[j], A[i]
+        break
+  
+  for i in reversed(range(len(A))):
+    if A[i] < pivot:
+      break
+      
+    for j in reversed(range(i)):
+      if A[j] > pivot:
+        A[i], A[j] = A[j], A[i]
+        break
+
+```
+
+### 11 - even odd sort
+
+```python
+def even_odd(A):
+  next_even, next_odd = 0, len(A) - 1
+  while next_even < next_odd:
+    if A[next_even] % 2 == 0:
+      next_even += 1
+    else:
+      A[next_even], A[next_odd] = A[next_odd], A[next_even]
+      next_odd -= 1
+```
+
+### 10 - rectangle intersection
+
+sides are parallel to x and y axis and we have to return the intersection rectangle if there is one. We are representing the rectangle with one point and width and height
+
+```python
+Rectangle = collections.namedtuple("Rectangle", ("x", "y", "width", "height"))
+
+def intersect_rectangle(R1, R2):
+  def is_intersect(R1, R2):
+    return (R1.x <= R2.x + R2.width and R1.x + R1.width >= R2.x and R1.y <= R2.y + R2.height and R1.y + R1.height >= R2.y)
+    
+  if not is_intersect(R1, R2):
+    return Rectangle(0, 0, -1, -1) # No intersection
+  
+  return Rectangle(
+    max(R1.x, R2.x),
+    max(R1.y, R2.y),
+    min(R1.x + R1.width, R2.x + R2.width) - max(R1.x, R2.x),
+    min(R1.y + R1.height, R2.y + R2.height) - max(R1.y, R2.y))
+```
+
 ### 9 - generate uniform random numbers
 
 Assuming we have zero_one_random() which gives us random bits
-we find out the capacity of range, let our while loop build a result worthy of that range by giving it that many size times to do flip, and then we take out whatever we get and add it to lower_bound
+we find out the capacity of range, let our while loop build a result worthy of that range by giving it that many size times to do flip, and then we take out whatever we get and add it to lower_bound (example from EOPS book)
 
 ```python
 def uniform_random(lower_bound, upper_bound):
