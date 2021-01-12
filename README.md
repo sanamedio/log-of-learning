@@ -7,10 +7,11 @@
                    |___/                                                                   |___/
         
 
-[ 960 ]
+[ 961 ]
 
 | LINK |
 |------|
+|[Bit parity](https://github.com/l0k3ndr/log-of-learning/blob/master/notes/notes-13-jan-2021.md#1---bit-parity) |
 |[Converting recursion to stack](https://github.com/l0k3ndr/log-of-learning/blob/master/notes/notes-11-jan-2021.md#1---converting-recursion-to-stack) |
 |[Frozenset hash algo](https://github.com/l0k3ndr/log-of-learning/blob/master/notes/notes-10-jan-2021.md#1---frozenset-hash-algo) |
 |[Pdb where](https://github.com/l0k3ndr/log-of-learning/blob/master/notes/notes-06-jan-2021.md#1---pdb-where) |
