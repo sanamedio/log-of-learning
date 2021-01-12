@@ -7,10 +7,11 @@
                    |___/                                                                   |___/
         
 
-[ 963 ]
+[ 964 ]
 
 | LINK |
 |------|
+|[Computer a x b without arithimetic operators](https://github.com/l0k3ndr/log-of-learning/blob/master/notes/notes-13-jan-2021.md#4---computer-a-x-b-without-arithimetic-operators) |
 |[Closest integer with same weight](https://github.com/l0k3ndr/log-of-learning/blob/master/notes/notes-13-jan-2021.md#3---closest-integer-with-same-weight) |
 |[Swap bits](https://github.com/l0k3ndr/log-of-learning/blob/master/notes/notes-13-jan-2021.md#2---swap-bits) |
 |[Bit parity](https://github.com/l0k3ndr/log-of-learning/blob/master/notes/notes-13-jan-2021.md#1---bit-parity) |
