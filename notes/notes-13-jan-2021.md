@@ -1,6 +1,77 @@
 # 13-jan-2021
 
 
+### 22 - random sampling
+
+The key to efficiently building a random subset of size exactly k is to first build one of sizek - 1. and then adding one more element, selected randomly from the rest. (pg. 54, EOPI) I think it's called knuth shuffle
+
+```python
+def random_sampling(k, A):
+  for i in range(k):
+    r = random.randint(i, len(A) - 1)
+    A[i], A[r] = A[r], A[i]
+```
+
+### 21 - next permutation
+
+```python
+def next_permutation(perm):
+  inversion_point = len(perm) - 2
+
+  while ( inversion_point >= 0 and perm[inversion_point] >= perm[inversion_point + 1]):
+    inversion_point -= 1 
+  if inversion_point == -1:
+    return [] # perm is the last permutation
+
+  for i in reversed(range(inversion_point + 1, len(perm))):
+    if perm[i] > perm[inversion_point]:
+      perm[inversion_point], perm[i] = perm[i], perm[inversion_point]
+      break
+
+  perm[inversion_point = 1:] = reversed(perm[inversion_point + 1:])
+  return perm
+```
+
+### 20 - apply permutation
+
+to avoid reprocessing, this code subtracts size of array and later on restores the array by addition
+
+```python
+def apply_permutation(perm, A):
+  for i in range(len(A)):
+    next = i
+    while perm[next] >= 0:
+      A[i], A[perm[next]] = A[perm[next]], A[i]
+      temp = perm[next]
+      perm[next] -= len(perm)
+      next = temp
+  
+  perm[:] = [ a + len(perm) for a in perm]
+```
+
+another way, as we know that it's processed left to right and all members of cyclic permutation would have been processed, so if there is a backward reference we skip that one. Though it is processing the input cycle by cycle.
+```python
+def apply_permutations(perm, A):
+  def cyclic_permutation(start, perm, A):
+    i, temp = start, A[start]
+    while True:
+      next_i = perm[i]
+      next_temp = A[next_i]
+      A[next_i] = temp
+      i, temp = next_i, next_temp
+      if i == start:
+        break
+
+  for i in range(len(A)):
+    j = perm[i]
+    while j != i:
+      if j < i:
+        break
+      j = perm[j]
+    else:
+      cycle_permutation(i, perm, A)
+```
+
 ### 19 - sieve of erasthones
 
 ```python

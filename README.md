@@ -7,10 +7,13 @@
                    |___/                                                                   |___/
         
 
-[ 979 ]
+[ 982 ]
 
 | LINK |
 |------|
+|[Random sampling](https://github.com/l0k3ndr/log-of-learning/blob/master/notes/notes-13-jan-2021.md#22---random-sampling) |
+|[Next permutation](https://github.com/l0k3ndr/log-of-learning/blob/master/notes/notes-13-jan-2021.md#21---next-permutation) |
+|[Apply permutation](https://github.com/l0k3ndr/log-of-learning/blob/master/notes/notes-13-jan-2021.md#20---apply-permutation) |
 |[Sieve of erasthones](https://github.com/l0k3ndr/log-of-learning/blob/master/notes/notes-13-jan-2021.md#19---sieve-of-erasthones) |
 |[Interleaving sort](https://github.com/l0k3ndr/log-of-learning/blob/master/notes/notes-13-jan-2021.md#18---interleaving-sort) |
 |[Buy and sell stock variants](https://github.com/l0k3ndr/log-of-learning/blob/master/notes/notes-13-jan-2021.md#17---buy-and-sell-stock-variants) |
