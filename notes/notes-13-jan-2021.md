@@ -1,6 +1,100 @@
 # 13-jan-2021
 
 
+
+### 17 - buy and sell stock variants
+
+buy sell once
+```python
+def buy_and_sell_stock_once(prices):
+  min_price_so_far, max_profit = float('inf'), 0.0
+
+  for price in prices:
+    max_profit_sell_today = price - min_price_so_far
+    max_profit = max( max_profit, max_profit_sell_today)
+    min_price_so_far = mihn( min_price_so_far, price)
+  
+  return max_profit
+```
+
+
+
+buy sell twice - calculate one buy profits and then two buy profits derived from that in another phase; need to see to proof that it's optimal
+```python
+def buy_and_sell_stock_twice(prices):
+  max_total_profit, min_price_so_far = 0.0, float('inf')
+  first_buy_sell_profits = [0] * len(prices)
+
+  for i, price in enumerate(prices):
+    min_price_so_far = min(min_price_so_far, price)
+    max_total_profit = max(max_total_profit, price - min_price_so_far)
+    first_buy_sell_profits[i] = max_total_profit
+
+  max_price_so_far = float('-inf')
+  for i, price in reversed(list(enumerate(prices[1:], 1))):
+    max_price_so_far = max(max_price_so_far, price)
+    max_total_profit = max(
+        max_total_profit,
+        max_price_so_far - price + first_buy_sell_profits[i-1])
+  return max_total_profit
+```
+
+### 16 - delete duplicates from an array
+
+```python
+def delete_duplicates(A):
+  if not A:
+    return 0
+
+  write_index = 1
+  for i in range(1, len(A)):
+    if A[write_index - 1] != A[i]:
+      A[write_index] = A[i]
+      write_index += 1
+  
+  return write_index
+```
+
+### 15 - furtherst reach by jumping
+
+standard problem about reachability given indexes and steps you can take from there
+
+```python
+def can_reach_end(A):
+  furthest_reach_so_far, last_index = 0, len(A) - 1
+  i = 0
+  while i <= furthest_reach_so_far and furthest_reach_so_far < last_index:
+    furthest_reach_so_far = max(furthest_reach_so_far, A[i] +i )
+    i += 1
+  return furthest_reach_so_far >= last_index
+```
+
+### 14 - bigint multiplication
+
+straightforward school method of multiplication simulated
+
+```python
+# 5.3 section EOPI
+def multiply(num1, num2):
+  sign = -1 if (num1[0] < 0) ^ (num2[0] < 0) else 1
+  num1[0], num2[0] = abs(num1[0]), abs(num2[0])
+
+  result = [0] * (len(num1) + len(num2))
+
+  for i in reversed(range(len(num1))):
+
+    for j in reversed(range(len(num2))):
+
+      result[i + j + 1] += num1[i] * num2[j]
+      result[i + j] += result[i + j + 1] // 10
+      result[i + j + 1] %= 10
+
+  result = result[next((i for i,x in enumerate(result) if x != 0), len(result)):] or [0]
+
+  return [sign * result[0]] + result[1:]
+```
+
+
 ### 13 - addition on an array
 
 D = D + 1, when D is an array represending a base 10 number

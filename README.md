@@ -7,10 +7,14 @@
                    |___/                                                                   |___/
         
 
-[ 973 ]
+[ 977 ]
 
 | LINK |
 |------|
+|[Buy and sell stock variants](https://github.com/l0k3ndr/log-of-learning/blob/master/notes/notes-13-jan-2021.md#17---buy-and-sell-stock-variants) |
+|[Delete duplicates from an array](https://github.com/l0k3ndr/log-of-learning/blob/master/notes/notes-13-jan-2021.md#16---delete-duplicates-from-an-array) |
+|[Furtherst reach by jumping](https://github.com/l0k3ndr/log-of-learning/blob/master/notes/notes-13-jan-2021.md#15---furtherst-reach-by-jumping) |
+|[Bigint multiplication](https://github.com/l0k3ndr/log-of-learning/blob/master/notes/notes-13-jan-2021.md#14---bigint-multiplication) |
 |[Addition on an array](https://github.com/l0k3ndr/log-of-learning/blob/master/notes/notes-13-jan-2021.md#13---addition-on-an-array) |
 |[Dutch flag partition](https://github.com/l0k3ndr/log-of-learning/blob/master/notes/notes-13-jan-2021.md#12---dutch-flag-partition) |
 |[Even odd sort](https://github.com/l0k3ndr/log-of-learning/blob/master/notes/notes-13-jan-2021.md#11---even-odd-sort) |
