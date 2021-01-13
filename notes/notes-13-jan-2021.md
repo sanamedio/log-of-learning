@@ -1,6 +1,17 @@
 # 13-jan-2021
 
 
+### 18 - interleaving sort
+
+every even position element is greater than or equal to it's adjancent element
+
+```python
+def rearrange(A):
+  for i in range(len(A)):
+    A[i:i + 2] = sorted(A[i: i + 2], reverse=i%2)
+```
+
+what makes a property local or global? max difference of relative indexes required to mention in it's statement may be.
 
 ### 17 - buy and sell stock variants
 
