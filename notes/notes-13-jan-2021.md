@@ -1,7 +1,32 @@
 # 13-jan-2021
 
 
+### 13 - addition on an array
 
+D = D + 1 
+```python
+def plus_one(A):
+  A[-1] += 1
+  for i in reversed(range(1, len(A))):
+    if A[i] != 10:
+      break
+    A[i] = 0
+    A[i-1] += 1
+  
+  if A[0] == 10: # for example 999
+    A[0] = 1
+    A.append(0)
+  return A
+```
+
+```bash
+(Pdb) plus_one([0,0,0])
+[0, 0, 1]
+(Pdb) plus_one([0,0,9])
+[0, 1, 0]
+(Pdb) plus_one([9,9,9])
+[1, 0, 0, 0]
+```
 
 ### 12 - dutch flag partition
 
