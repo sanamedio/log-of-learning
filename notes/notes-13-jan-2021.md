@@ -3,7 +3,7 @@
 
 ### 13 - addition on an array
 
-D = D + 1 
+D = D + 1, when D is an array represending a base 10 number
 ```python
 def plus_one(A):
   A[-1] += 1
