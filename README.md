@@ -7,10 +7,11 @@
                    |___/                                                                   |___/
         
 
-[ 978 ]
+[ 979 ]
 
 | LINK |
 |------|
+|[Sieve of erasthones](https://github.com/l0k3ndr/log-of-learning/blob/master/notes/notes-13-jan-2021.md#19---sieve-of-erasthones) |
 |[Interleaving sort](https://github.com/l0k3ndr/log-of-learning/blob/master/notes/notes-13-jan-2021.md#18---interleaving-sort) |
 |[Buy and sell stock variants](https://github.com/l0k3ndr/log-of-learning/blob/master/notes/notes-13-jan-2021.md#17---buy-and-sell-stock-variants) |
 |[Delete duplicates from an array](https://github.com/l0k3ndr/log-of-learning/blob/master/notes/notes-13-jan-2021.md#16---delete-duplicates-from-an-array) |

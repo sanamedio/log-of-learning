@@ -1,6 +1,46 @@
 # 13-jan-2021
 
 
+### 19 - sieve of erasthones
+
+```python
+# given n, return all primes upto and including n
+def generate_primes(n):
+  if n < 2:
+    return []
+
+  size = (n-3) // 2 + 1
+
+  primes = [2]
+  is_prime = [True] * size
+
+  for i in range(size):
+    if is_prime[i]:
+      p = i * 2 + 3
+      primes.append(p)
+
+      # is prime is only storing 2i + 3 sequence indexes so that has to be equated to p^2 to get correct position
+      for j in range(2* i ** 2 + 6 * i + 3, size, p):
+        is_prime[j] = False
+  
+  return primes
+```
+
+
+```python
+def generate_primes(n):
+  primes = []
+
+  is_prime = [False, False] + [True]* (n-1)
+
+  for p in range(2, n+1):
+    if is_prime[p]:
+      primes.append(p)
+      for i in range(p, n+1, p):
+        is_prime[i] = False
+  return False
+```
+
 ### 18 - interleaving sort
 
 every even position element is greater than or equal to it's adjancent element
