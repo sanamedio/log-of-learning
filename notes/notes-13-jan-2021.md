@@ -1,7 +1,41 @@
 # 13-jan-2021
 
 
-### 22 - random sampling
+### 24 - getting random subset
+
+```python
+def random_subset(n, k):
+  changed_elements = {}
+  for i in range(k):
+    rand_idx = random.randrange(i, n)
+    rand_idx_mapped = changed_elements.get(rand_idx, rand_idx)
+    i_mapped = changed_elements.get(i, i)
+    changed_elements[rand_idx] = i_mapped
+    changed_elements[i] = rand_idx_mapped
+
+  return [changed_elements[i] for i in range(k)]
+```
+
+### 23 - random sampling online data
+
+Design a program that takes as input a size k, and reads packets, continuously maintaining a uniform random subset of size k of the read packets (pg. 56 EOPI)
+
+```python
+def online_random_sample(it, k):
+
+  sampling_results = list(itertools.islice(it, k))
+  num_seen_so_far = k
+
+  for x in it:
+    num_seen_so_far += 1
+    idx_to_replace = random.randrange(num_seen_so_far)
+    if idx_to_replace < k:
+      sampling_results[idx_to_replace] = x
+  
+  return sampling_results
+```
+
+### 22 - random sampling offline data
 
 The key to efficiently building a random subset of size exactly k is to first build one of sizek - 1. and then adding one more element, selected randomly from the rest. (pg. 54, EOPI) I think it's called knuth shuffle
 
@@ -10,6 +44,14 @@ def random_sampling(k, A):
   for i in range(k):
     r = random.randint(i, len(A) - 1)
     A[i], A[r] = A[r], A[i]
+```
+
+we can generate permutations using it
+```python
+def compute_random_permutation(n):
+  permutation = list(range(n))
+  random_sampling(n, permutation)
+  return permutation
 ```
 
 ### 21 - next permutation

@@ -7,11 +7,13 @@
                    |___/                                                                   |___/
         
 
-[ 982 ]
+[ 984 ]
 
 | LINK |
 |------|
-|[Random sampling](https://github.com/l0k3ndr/log-of-learning/blob/master/notes/notes-13-jan-2021.md#22---random-sampling) |
+|[Getting random subset](https://github.com/l0k3ndr/log-of-learning/blob/master/notes/notes-13-jan-2021.md#24---getting-random-subset) |
+|[Random sampling online data](https://github.com/l0k3ndr/log-of-learning/blob/master/notes/notes-13-jan-2021.md#23---random-sampling-online-data) |
+|[Random sampling offline data](https://github.com/l0k3ndr/log-of-learning/blob/master/notes/notes-13-jan-2021.md#22---random-sampling-offline-data) |
 |[Next permutation](https://github.com/l0k3ndr/log-of-learning/blob/master/notes/notes-13-jan-2021.md#21---next-permutation) |
 |[Apply permutation](https://github.com/l0k3ndr/log-of-learning/blob/master/notes/notes-13-jan-2021.md#20---apply-permutation) |
 |[Sieve of erasthones](https://github.com/l0k3ndr/log-of-learning/blob/master/notes/notes-13-jan-2021.md#19---sieve-of-erasthones) |
