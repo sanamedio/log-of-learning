@@ -1,5 +1,24 @@
 # 15-jan-2021
 
+### 8 - merge sorted linked lists
+
+iterative version
+
+```python
+def merge_sorted_ll(L1, L2):
+    dummy_head = tail = ListNode()
+    
+    while L1 and L2:
+        if L1.data < L2.data:
+            tail.next, L1 = L1, L2.next
+        else;
+            tail.next, L2 = L2, L2.next
+        tail = tail.next
+    
+    tail.next = L1 or L2
+    return dummy_head.next
+```
+
 ### 7 - rabin karp
 
 idea is to keep a rolling hash to not repeat expensive comparisions
