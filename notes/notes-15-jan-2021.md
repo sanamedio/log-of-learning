@@ -1,5 +1,39 @@
 # 15-jan-2021
 
+### 13 - remove duplicates
+
+```
+def remove_duplicates(L):
+    it = L 
+    while it:
+        next_distinct = it.next
+        while next_distinct and next_distinct.data == it.data:
+            next_distinct = next_distinct.next
+        it.next = next_distinct
+        it = next_distinct
+    return L
+```
+
+### 12 - remove kth last element
+
+this is such a nice approach; no need to calculate size of list and retraverse(as I always did in past)
+```python
+def remove_kth_last(L, k):
+    dummy_head = ListNode(0, L)
+    first = dummy_head.next
+    
+    for _ in range(k):
+        first = first.next
+    
+    second = dummy_head
+    
+    while first:
+        first, second = first.next, second.next
+        
+    second.next = second.next.next
+    return dummy_head.next
+```
+
 ### 11 - overlapping lists
 
 
