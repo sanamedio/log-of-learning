@@ -1,5 +1,13 @@
 # 15-jan-2021
 
+### 6 - ispalindromic
+
+```python
+# Note that s[~i] for i in [0,len(s) - 1] is s[-(i + 1)]
+def is_palindromic(s):
+  return all(s[i] == s[~i] for i in range(len(s) // 2))
+```
+
 ### 5 - pascal triangle
 
 ```python
