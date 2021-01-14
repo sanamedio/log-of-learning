@@ -7,10 +7,12 @@
                    |___/                                                                   |___/
         
 
-[ 993 ]
+[ 995 ]
 
 | LINK |
 |------|
+|[Overlapping lists](https://github.com/l0k3ndr/log-of-learning/blob/master/notes/notes-15-jan-2021.md#11---overlapping-lists) |
+|[Cycle test in linked list](https://github.com/l0k3ndr/log-of-learning/blob/master/notes/notes-15-jan-2021.md#10---cycle-test-in-linked-list) |
 |[Reverse sublist](https://github.com/l0k3ndr/log-of-learning/blob/master/notes/notes-15-jan-2021.md#9---reverse-sublist) |
 |[Merge sorted linked lists](https://github.com/l0k3ndr/log-of-learning/blob/master/notes/notes-15-jan-2021.md#8---merge-sorted-linked-lists) |
 |[Rabin karp](https://github.com/l0k3ndr/log-of-learning/blob/master/notes/notes-15-jan-2021.md#7---rabin-karp) |
