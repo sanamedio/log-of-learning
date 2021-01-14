@@ -7,10 +7,11 @@
                    |___/                                                                   |___/
         
 
-[ 999 ]
+[ 1000 ]
 
 | LINK |
 |------|
+|[Check linked list is palindrome](https://github.com/l0k3ndr/log-of-learning/blob/master/notes/notes-15-jan-2021.md#16---check-linked-list-is-palindrome) |
 |[Even odd merge](https://github.com/l0k3ndr/log-of-learning/blob/master/notes/notes-15-jan-2021.md#15---even-odd-merge) |
 |[Cyclic right shift ll](https://github.com/l0k3ndr/log-of-learning/blob/master/notes/notes-15-jan-2021.md#14---cyclic-right-shift-ll) |
 |[Remove duplicates in ll](https://github.com/l0k3ndr/log-of-learning/blob/master/notes/notes-15-jan-2021.md#13---remove-duplicates-in-ll) |
