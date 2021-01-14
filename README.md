@@ -7,10 +7,11 @@
                    |___/                                                                   |___/
         
 
-[ 988 ]
+[ 989 ]
 
 | LINK |
 |------|
+|[Pascal triangle](https://github.com/l0k3ndr/log-of-learning/blob/master/notes/notes-15-jan-2021.md#5---pascal-triangle) |
 |[Rotate matrix](https://github.com/l0k3ndr/log-of-learning/blob/master/notes/notes-15-jan-2021.md#4---rotate-matrix) |
 |[Spiral ordering of matrix](https://github.com/l0k3ndr/log-of-learning/blob/master/notes/notes-15-jan-2021.md#3---spiral-ordering-of-matrix) |
 |[Valid sudoku](https://github.com/l0k3ndr/log-of-learning/blob/master/notes/notes-15-jan-2021.md#2---valid-sudoku) |
