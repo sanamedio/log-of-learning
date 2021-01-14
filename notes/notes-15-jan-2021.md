@@ -1,5 +1,31 @@
 # 15-jan-2021
 
+### 4 - rotate matrix
+
+``` python
+# A[-i] for i in [0, len(A) - 1] is A[-(i + 1)]
+def rotate_matrix(square_matrix):
+  matrix_size = len(square_matrix) - 1
+  for i in range(len(square_matrix) // 2):
+    for j in range(i, matrix_size - i):
+      (square_matrix[i][j], square_matrix[~j][i], square_matrix[~i][~j], square_matrix[j][~i])=
+        (square_matrix[~j][i], square_matrix[~i][~j], square_matrix[j][~i], square_matrix[i][j] )
+```
+
+a wrapper can also give a view of rotated matrix with copy on write
+
+```python
+class RotatedMatrix:
+  def __init__(self, square_matrix):
+    self._matrix = square_matrix
+    
+  def read(self,i,j):
+    return self._matrix[~j][i]
+    
+  def write(self, i, j, v):
+    self._matrix[~j][i] =  v
+```
+
 ### 3 - spiral ordering of matrix
 
 nice trick with anding 3, gets equivalent to mod 4
