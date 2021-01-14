@@ -7,10 +7,11 @@
                    |___/                                                                   |___/
         
 
-[ 989 ]
+[ 990 ]
 
 | LINK |
 |------|
+|[Ispalindromic](https://github.com/l0k3ndr/log-of-learning/blob/master/notes/notes-15-jan-2021.md#6---ispalindromic) |
 |[Pascal triangle](https://github.com/l0k3ndr/log-of-learning/blob/master/notes/notes-15-jan-2021.md#5---pascal-triangle) |
 |[Rotate matrix](https://github.com/l0k3ndr/log-of-learning/blob/master/notes/notes-15-jan-2021.md#4---rotate-matrix) |
 |[Spiral ordering of matrix](https://github.com/l0k3ndr/log-of-learning/blob/master/notes/notes-15-jan-2021.md#3---spiral-ordering-of-matrix) |
