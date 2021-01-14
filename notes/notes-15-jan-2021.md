@@ -2,7 +2,7 @@
 
 ### 4 - rotate matrix
 
-EOPI book pg. 60
+EOPI book pg. 65
 
 ``` python
 # A[-i] for i in [0, len(A) - 1] is A[-(i + 1)]
