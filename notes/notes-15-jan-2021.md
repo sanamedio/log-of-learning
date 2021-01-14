@@ -1,5 +1,26 @@
 # 15-jan-2021
 
+### 9 - reverse sublist
+
+
+```python
+#7.2
+def reverse_sublist(L, start, finish):
+    dummy_head = sublist_head = ListNode(0,L)
+    
+    for _ in range(1, start):
+        sublist_head = sublist_head.next
+    
+    sublist_iter = sublist_head.next
+    
+    for _ in range(finish - start):
+        temp = sublist_iter.next
+        #confusing way of writing it
+        sublist_iter.next, temp.next, sublist_head.next = (temp.next, sublist_head.next, temp)
+    
+    return dummy_head.next
+```
+
 ### 8 - merge sorted linked lists
 
 iterative version
