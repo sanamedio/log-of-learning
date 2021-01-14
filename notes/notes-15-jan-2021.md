@@ -1,5 +1,127 @@
 # 15-jan-2021
 
+### 11 - overlapping lists
+
+
+this has some interesting case by case handling(REVISE)
+```python
+def overlapping_list(L1,L2):
+    root1, root2 = has_cycle(L1), has_cycle(L2)
+    
+    if not root1 and not root2:
+        return overlapping_no_cycle_lists(L1,L2)
+
+    elif (root1 and not root2) or (not root and root2):
+        return None
+        
+    temp = root2
+    
+    while True:
+        temp = temp.next
+        if temp is root1 or temp is root2:
+            break
+            
+    if temp is not root1:
+        return None
+        
+    def distance(a, b):
+        dis = 0
+        while a is not b:
+            a = a.next
+            dis += 1
+        return dis
+    
+    stem1_length, stemp2_length = distance(L1, root1), distance(L2, root2)
+    
+    if stem1_length > stem2_length:
+        L2, L1 = L1, L2
+        root1, root2 = root2, root1
+    
+    for _ in range(abs(stem1_length - stem2_length)):
+        L2 = L2.next
+    
+    while L1 is not L2 and L1 is not root1 and L2 is not root2:
+        L1, L2  = L1.next, L2.next
+    
+    return L1 if L1 is L2 else root1
+```
+
+
+with assumption is they are cycle free
+
+```python
+def overlapping_no_cycle_lists(L1, L2):
+    def length(L):
+        length = 0
+        while L:
+            length += 1
+            L = L.next
+        return length
+    
+    L1_len, L2_len = length(L1), length(L2)
+    
+    if L1_len > L2_len:
+        L1, L2 = L2, L1
+        
+    for _ in range(abs(L1_len - L2_len)):
+        L2 = L2.next
+        
+    while L1 and L2 and L1 is not L2:
+        L1, L2 = L1.next, L2.next
+    
+    return L1
+```
+
+### 10 - cycle test in linked list
+
+
+```python
+def has_cycle(head):
+    fast = slow = head
+    while fast and fast.next and fast.next.next:
+        slow, fast = slow.next, fast.next.next
+        
+        if slow is fast:
+            slow = head
+            while slow is not fast:
+                slow, fast = slow.next, fast.next
+            
+            return slow
+    return None
+```
+
+finds length of cycle as well
+```python
+def has_cycle(head):
+   def cycle_len(end):
+      start, step = end, 0
+      while True:
+        step += 1
+        start = start.next
+        if start is end:
+            return step
+  
+  fast = slow = head
+  
+  while fast and fast.next and fast.next.next:
+    slow, fast = slow.next, fast.next.next
+    if slow is fast:
+        cycle_len_advanced_iter = head
+        for _ in range(cycle_len(slow)):
+            cycle_len_advanced_iter = cycle_len_advanced_iter.next
+        
+        it = head
+        
+        while it is not cycle_len_advanced_iter:
+            it = it.next
+            cycle_len_advanced_iter = cycle_len_advanced_iter.next
+        
+        return it
+
+  return None
+```
+
+
 ### 9 - reverse sublist
 
 
