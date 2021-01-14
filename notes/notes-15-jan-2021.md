@@ -1,5 +1,29 @@
 # 15-jan-2021
 
+### 19 - calculate gcd
+
+```python
+# page 351
+def gcd(x, y):
+    if x > y:
+        return gcd(y, x)
+        
+    elif x == 0:
+        return y
+    
+    elif not x & 1 and not y & 1:
+        return gcd(x >> 1, y >> 1) << 1
+    
+    elif not x & 1 and y & 1:
+        return gcd(x >> 1, y)
+        
+    elif x & 1 and not y & 1:
+        return gcd(x, y >> 1)
+    
+    return gcd(x, y -x )
+```
+no division, addition, and modulus; works for non-negative
+
 ### 18 - add two numbers
 
 ```python
