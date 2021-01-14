@@ -2,7 +2,7 @@
 
 ### 13 - remove duplicates
 
-```
+```python
 def remove_duplicates(L):
     it = L 
     while it:
