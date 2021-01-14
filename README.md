@@ -7,10 +7,11 @@
                    |___/                                                                   |___/
         
 
-[ 986 ]
+[ 987 ]
 
 | LINK |
 |------|
+|[Spiral ordering of matrix](https://github.com/l0k3ndr/log-of-learning/blob/master/notes/notes-15-jan-2021.md#3---spiral-ordering-of-matrix) |
 |[Valid sudoku](https://github.com/l0k3ndr/log-of-learning/blob/master/notes/notes-15-jan-2021.md#2---valid-sudoku) |
 |[Nonuniform random number](https://github.com/l0k3ndr/log-of-learning/blob/master/notes/notes-15-jan-2021.md#1---nonuniform-random-number) |
 |[Getting random subset](https://github.com/l0k3ndr/log-of-learning/blob/master/notes/notes-13-jan-2021.md#24---getting-random-subset) |
