@@ -7,10 +7,11 @@
                    |___/                                                                   |___/
         
 
-[ 992 ]
+[ 993 ]
 
 | LINK |
 |------|
+|[Reverse sublist](https://github.com/l0k3ndr/log-of-learning/blob/master/notes/notes-15-jan-2021.md#9---reverse-sublist) |
 |[Merge sorted linked lists](https://github.com/l0k3ndr/log-of-learning/blob/master/notes/notes-15-jan-2021.md#8---merge-sorted-linked-lists) |
 |[Rabin karp](https://github.com/l0k3ndr/log-of-learning/blob/master/notes/notes-15-jan-2021.md#7---rabin-karp) |
 |[Ispalindromic](https://github.com/l0k3ndr/log-of-learning/blob/master/notes/notes-15-jan-2021.md#6---ispalindromic) |
