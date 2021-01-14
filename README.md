@@ -7,10 +7,11 @@
                    |___/                                                                   |___/
         
 
-[ 1003 ]
+[ 1004 ]
 
 | LINK |
 |------|
+|[First missing positive number](https://github.com/l0k3ndr/log-of-learning/blob/master/notes/notes-15-jan-2021.md#20---first-missing-positive-number) |
 |[Calculate gcd](https://github.com/l0k3ndr/log-of-learning/blob/master/notes/notes-15-jan-2021.md#19---calculate-gcd) |
 |[Add two numbers](https://github.com/l0k3ndr/log-of-learning/blob/master/notes/notes-15-jan-2021.md#18---add-two-numbers) |
 |[List pivoting](https://github.com/l0k3ndr/log-of-learning/blob/master/notes/notes-15-jan-2021.md#17---list-pivoting) |
