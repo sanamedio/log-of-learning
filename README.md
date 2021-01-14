@@ -7,11 +7,12 @@
                    |___/                                                                   |___/
         
 
-[ 997 ]
+[ 998 ]
 
 | LINK |
 |------|
-|[Remove duplicates](https://github.com/l0k3ndr/log-of-learning/blob/master/notes/notes-15-jan-2021.md#13---remove-duplicates) |
+|[Cyclic right shift ll](https://github.com/l0k3ndr/log-of-learning/blob/master/notes/notes-15-jan-2021.md#14---cyclic-right-shift-ll) |
+|[Remove duplicates in ll](https://github.com/l0k3ndr/log-of-learning/blob/master/notes/notes-15-jan-2021.md#13---remove-duplicates-in-ll) |
 |[Remove kth last element](https://github.com/l0k3ndr/log-of-learning/blob/master/notes/notes-15-jan-2021.md#12---remove-kth-last-element) |
 |[Overlapping lists](https://github.com/l0k3ndr/log-of-learning/blob/master/notes/notes-15-jan-2021.md#11---overlapping-lists) |
 |[Cycle test in linked list](https://github.com/l0k3ndr/log-of-learning/blob/master/notes/notes-15-jan-2021.md#10---cycle-test-in-linked-list) |
