@@ -7,10 +7,11 @@
                    |___/                                                                   |___/
         
 
-[ 1001 ]
+[ 1002 ]
 
 | LINK |
 |------|
+|[Add two numbers](https://github.com/l0k3ndr/log-of-learning/blob/master/notes/notes-15-jan-2021.md#18---add-two-numbers) |
 |[List pivoting](https://github.com/l0k3ndr/log-of-learning/blob/master/notes/notes-15-jan-2021.md#17---list-pivoting) |
 |[Check linked list is palindrome](https://github.com/l0k3ndr/log-of-learning/blob/master/notes/notes-15-jan-2021.md#16---check-linked-list-is-palindrome) |
 |[Even odd merge](https://github.com/l0k3ndr/log-of-learning/blob/master/notes/notes-15-jan-2021.md#15---even-odd-merge) |
