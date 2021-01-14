@@ -2,6 +2,8 @@
 
 ### 4 - rotate matrix
 
+EOPI book pg. 60
+
 ``` python
 # A[-i] for i in [0, len(A) - 1] is A[-(i + 1)]
 def rotate_matrix(square_matrix):
