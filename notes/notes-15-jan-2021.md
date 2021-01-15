@@ -1,5 +1,56 @@
 # 15-jan-2021
 
+### 24 - math has gcd
+
+```python
+from math import gcd
+gcd(10,2)
+```
+
+### 23 - rotate array
+
+```python
+def rotate_array(rotate_amount, A):
+
+    def apply_cyclic_permutation(rotate_amount, offset):
+        temp = A[offset]
+        for i in range(1, cycle_length):
+            idx = (offset + i * rotate_amount)% len(A)
+            A[idx] , temp = temp . A[idx]
+        A[offset] = temp
+    
+    rotate_amount %= len(A)
+    if rotate_amount == 0:
+        return 
+    
+    num_cycles = gcd(len(A), rotate_amount)
+    cycle_length = len(A) // num_cycles
+    for c in range(num_cycles):
+        apply_cyclic_permutation(rotate_amount, c)
+```
+
+```python
+def rotate_array(i, A):
+    i %= len(A)
+    
+    def reverse(begin, end):
+        while begin < end:
+            A[begin], A[end] = A[end], A[begin]
+            begin, end = begin+1, end - 1
+    
+    reverse(0, len(A) - 1)
+    reverse(0, i-1)
+    reverse(i, len(A) - 1)
+```
+
+```python
+def rotate_array(A):
+    i %= len(A)
+    A[:] = A[::-1]
+    A[:i] = A[:i][::-1]
+    A[i:] = A[i:][::-1]
+```
+
 ### 22 - longest increasing subarray
 
 almost brute force
