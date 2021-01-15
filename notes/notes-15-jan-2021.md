@@ -1,5 +1,34 @@
 # 15-jan-2021
 
+### 26 - copy postings list
+
+
+A postings list is a singly linked list with an additional "jump" field at each node. The jump field points to any other node
+```python
+# 24.10
+def copy_postings_ist(L):
+    if not L:
+        return None
+        
+    it = L
+    while it:
+        new_node = PostingListNode(it.order, it.next, None)
+        it.next = new_node
+        it = new_node.next
+    
+    it = L
+    while it:
+        if it.jump:
+            it.next.jump = it.jump.next
+        it = it.next.next
+    
+    it = L
+    
+    new_list_head = it.next
+    while it.next:
+        it.next, it = it.next.next = it.next
+    return new_list_head
+```
 
 ### 25 - zipping linked list
 
