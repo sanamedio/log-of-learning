@@ -1,5 +1,25 @@
 # 15-jan-2021
 
+
+### 21 - max product all but one entry
+
+couldn't understand buy and sell stock k times so skipped that [TODO]
+
+```python
+def find_biggest_n_minus_one_product(A):
+    
+    suffix_products = list(
+        reversed(list(itertools.accumulate(reversed(A), operator.mul))))
+        
+    prefix_product, max_product = 1, float('-inf')
+    
+    for i in range(len(A)):
+        suffix_product = suffix_products[i+1] if i+1 < len(A) else 1
+        max_product = max(max_product, prefix_product * suffix_product)
+        prefix_product *= A[i]
+    return max_product
+```
+
 ### 20 - first missing positive number
 
 use the array itself as a hash table to store till what is encountered
