@@ -1,5 +1,36 @@
 # 15-jan-2021
 
+
+### 25 - zipping linked list
+
+```python
+def zipping_linked_list(L):
+
+    if not L or not L.next:
+        return L
+        
+    slow = fast = L
+    
+    while fast and fast.next:
+        slow, fast = slow.next, fast.next.next
+        
+    first_half_head = L
+    second_half_head = slow.next
+    slow.next = None
+    
+    second_half_head = reverse_linked_list(second_half_head)
+    
+    first_half_iter, second_half_iter = first_half_head, second_half_head
+    
+    while second_half_iter:
+        second_half_iter.next, first_half_iter.next,  second_half_iter = (
+            first_half_iter.next, second_half_iter, second_half_iter.next)
+        first_half_iter = first_half_iter.next.next
+    
+    return first_half_head
+```
+    
+
 ### 24 - math has gcd
 
 ```python
