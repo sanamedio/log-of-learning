@@ -7,10 +7,11 @@
                    |___/                                                                   |___/
         
 
-[ 1008 ]
+[ 1009 ]
 
 | LINK |
 |------|
+|[Zipping linked list](https://github.com/l0k3ndr/log-of-learning/blob/master/notes/notes-15-jan-2021.md#25---zipping-linked-list) |
 |[Math has gcd](https://github.com/l0k3ndr/log-of-learning/blob/master/notes/notes-15-jan-2021.md#24---math-has-gcd) |
 |[Rotate array](https://github.com/l0k3ndr/log-of-learning/blob/master/notes/notes-15-jan-2021.md#23---rotate-array) |
 |[Longest increasing subarray](https://github.com/l0k3ndr/log-of-learning/blob/master/notes/notes-15-jan-2021.md#22---longest-increasing-subarray) |
