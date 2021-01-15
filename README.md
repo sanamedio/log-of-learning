@@ -7,10 +7,11 @@
                    |___/                                                                   |___/
         
 
-[ 1004 ]
+[ 1005 ]
 
 | LINK |
 |------|
+|[Max product all but one entry](https://github.com/l0k3ndr/log-of-learning/blob/master/notes/notes-15-jan-2021.md#21---max-product-all-but-one-entry) |
 |[First missing positive number](https://github.com/l0k3ndr/log-of-learning/blob/master/notes/notes-15-jan-2021.md#20---first-missing-positive-number) |
 |[Calculate gcd](https://github.com/l0k3ndr/log-of-learning/blob/master/notes/notes-15-jan-2021.md#19---calculate-gcd) |
 |[Add two numbers](https://github.com/l0k3ndr/log-of-learning/blob/master/notes/notes-15-jan-2021.md#18---add-two-numbers) |
