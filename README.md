@@ -7,10 +7,11 @@
                    |___/                                                                   |___/
         
 
-[ 1028 ]
+[ 1029 ]
 
 | LINK |
 |------|
+|[Subset sum while removing duplicates](https://github.com/l0k3ndr/log-of-learning/blob/master/notes/notes-17-jan-2021.md#17---subset-sum-while-removing-duplicates) |
 |[Rotating matrix in different ways](https://github.com/l0k3ndr/log-of-learning/blob/master/notes/notes-17-jan-2021.md#16---rotating-matrix-in-different-ways) |
 |[Matrix spiral order](https://github.com/l0k3ndr/log-of-learning/blob/master/notes/notes-17-jan-2021.md#15---matrix-spiral-order) |
 |[Set row col zero](https://github.com/l0k3ndr/log-of-learning/blob/master/notes/notes-17-jan-2021.md#14---set-row-col-zero) |
