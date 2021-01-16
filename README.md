@@ -7,10 +7,11 @@
                    |___/                                                                   |___/
         
 
-[ 1010 ]
+[ 1011 ]
 
 | LINK |
 |------|
+|[Finding longest streak from an array](https://github.com/l0k3ndr/log-of-learning/blob/master/notes/notes-16-jan-2021.md#1---finding-longest-streak-from-an-array) |
 |[Copy postings list](https://github.com/l0k3ndr/log-of-learning/blob/master/notes/notes-15-jan-2021.md#26---copy-postings-list) |
 |[Zipping linked list](https://github.com/l0k3ndr/log-of-learning/blob/master/notes/notes-15-jan-2021.md#25---zipping-linked-list) |
 |[Math has gcd](https://github.com/l0k3ndr/log-of-learning/blob/master/notes/notes-15-jan-2021.md#24---math-has-gcd) |
