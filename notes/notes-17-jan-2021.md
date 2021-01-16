@@ -1,5 +1,60 @@
 # 17-jan-2021
 
+### 13 - majority element in many ways
+
+https://leetcode.com/problems/majority-element/solution/
+
+bayers moore algo
+```python
+class Solution:
+    def majorityElement(self, nums):
+        count = 0
+        candidate = None
+
+        for num in nums:
+            if count == 0:
+                candidate = num
+            count += (1 if num == candidate else -1)
+
+        return candidate
+```
+
+divide and conquer
+```python
+def majorityElement(self, nums, lo=0, hi=None):
+        def majority_element_rec(lo, hi):
+            if lo == hi:
+                return nums[lo]
+
+            mid = (hi-lo)//2 + lo
+            left = majority_element_rec(lo, mid)
+            right = majority_element_rec(mid+1, hi)
+
+            if left == right:
+                return left
+
+            left_count = sum(1 for i in range(lo, hi+1) if nums[i] == left)
+            right_count = sum(1 for i in range(lo, hi+1) if nums[i] == right)
+
+            return left if left_count > right_count else right
+
+        return majority_element_rec(0, len(nums)-1)
+```
+
+randomized algo with o(inf)
+```python
+import random
+
+class Solution:
+    def majorityElement(self, nums):
+        majority_count = len(nums)//2
+        while True:
+            candidate = random.choice(nums)
+            if sum(1 for elem in nums if elem == candidate) > majority_count:
+                return candidate
+```
+
+
 ### 12 - longest word trie
 
 This is just black magic; how the fuck someone came with this short approach to build trie
