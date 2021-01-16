@@ -7,10 +7,11 @@
                    |___/                                                                   |___/
         
 
-[ 1023 ]
+[ 1024 ]
 
 | LINK |
 |------|
+|[Longest word trie](https://github.com/l0k3ndr/log-of-learning/blob/master/notes/notes-17-jan-2021.md#12---longest-word-trie) |
 |[Backspaced strings compare](https://github.com/l0k3ndr/log-of-learning/blob/master/notes/notes-17-jan-2021.md#11---backspaced-strings-compare) |
 |[Sorted squares](https://github.com/l0k3ndr/log-of-learning/blob/master/notes/notes-17-jan-2021.md#10---sorted-squares) |
 |[Invert binary tree iterative](https://github.com/l0k3ndr/log-of-learning/blob/master/notes/notes-17-jan-2021.md#9---invert-binary-tree-iterative) |
