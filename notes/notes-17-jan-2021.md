@@ -1,5 +1,28 @@
 # 17-jan-2021
 
+### 6 - LCA on a binary search tree
+
+due to bst property its easier than the general tree problem
+https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/solution/
+
+```python
+def lowestCommonAncestor(self, root, p, q):
+
+    p_val = p.val
+    q_val = q.val
+    node = root
+
+    while node:
+        parent_val = node.val
+
+        if p_val > parent_val and q_val > parent_val:    
+            node = node.right
+        elif p_val < parent_val and q_val < parent_val:
+            node = node.left
+        else:
+            return node
+```
+
 ### 5 - diameter of a binary tree
 
 ```python
