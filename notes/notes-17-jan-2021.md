@@ -3,9 +3,10 @@
 ### 11 - backspaced strings compare
 
 liked how reduce is used to apply backspace operation to both strings
+
 https://leetcode.com/problems/backspace-string-compare/discuss/135603/JavaC%2B%2BPython-O(N)-time-and-O(1)-space
 
-```
+```python
 # $ denotes deletion operation
 def backspaceCompare(self, S, T):
         def back(res, c):
