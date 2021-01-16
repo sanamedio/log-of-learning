@@ -7,10 +7,11 @@
                    |___/                                                                   |___/
         
 
-[ 1021 ]
+[ 1022 ]
 
 | LINK |
 |------|
+|[Sorted squares](https://github.com/l0k3ndr/log-of-learning/blob/master/notes/notes-17-jan-2021.md#10---sorted-squares) |
 |[Invert binary tree iterative](https://github.com/l0k3ndr/log-of-learning/blob/master/notes/notes-17-jan-2021.md#9---invert-binary-tree-iterative) |
 |[Adding comma separated values to list](https://github.com/l0k3ndr/log-of-learning/blob/master/notes/notes-17-jan-2021.md#8---adding-comma-separated-values-to-list) |
 |[Lca on a binary search tree](https://github.com/l0k3ndr/log-of-learning/blob/master/notes/notes-17-jan-2021.md#6---lca-on-a-binary-search-tree) |
