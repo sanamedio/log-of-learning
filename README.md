@@ -7,10 +7,11 @@
                    |___/                                                                   |___/
         
 
-[ 1017 ]
+[ 1018 ]
 
 | LINK |
 |------|
+|[Diameter of a binary tree](https://github.com/l0k3ndr/log-of-learning/blob/master/notes/notes-17-jan-2021.md#5---diameter-of-a-binary-tree) |
 |[Find whether meeting can be scheduled](https://github.com/l0k3ndr/log-of-learning/blob/master/notes/notes-17-jan-2021.md#4---find-whether-meeting-can-be-scheduled) |
 |[Divide and conquer approach for maxsubarraysum](https://github.com/l0k3ndr/log-of-learning/blob/master/notes/notes-17-jan-2021.md#3---divide-and-conquer-approach-for-maxsubarraysum) |
 |[Climbing stairs](https://github.com/l0k3ndr/log-of-learning/blob/master/notes/notes-17-jan-2021.md#2---climbing-stairs) |
