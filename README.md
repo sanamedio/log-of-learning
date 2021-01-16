@@ -7,10 +7,11 @@
                    |___/                                                                   |___/
         
 
-[ 1026 ]
+[ 1027 ]
 
 | LINK |
 |------|
+|[Matrix spiral order](https://github.com/l0k3ndr/log-of-learning/blob/master/notes/notes-17-jan-2021.md#15---matrix-spiral-order) |
 |[Set row col zero](https://github.com/l0k3ndr/log-of-learning/blob/master/notes/notes-17-jan-2021.md#14---set-row-col-zero) |
 |[Majority element in many ways](https://github.com/l0k3ndr/log-of-learning/blob/master/notes/notes-17-jan-2021.md#13---majority-element-in-many-ways) |
 |[Longest word trie](https://github.com/l0k3ndr/log-of-learning/blob/master/notes/notes-17-jan-2021.md#12---longest-word-trie) |
