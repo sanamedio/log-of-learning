@@ -1,5 +1,23 @@
 # 17-jan-2021
 
+### 8 - adding comma separated values to list
+
+probably it's converting the rhs to tuple first and then iterating, but seemed very weird for first time
+
+```python
+>>> s = []
+>>> s += 1,2
+>>> s
+[1, 2]
+>>> s += 3,4,5
+>>> s
+[1, 2, 3, 4, 5]
+>>> s += 7,8,
+>>> s
+[1, 2, 3, 4, 5, 7, 8]
+>>>
+```
+
 ### 6 - LCA on a binary search tree
 
 due to bst property its easier than the general tree problem
