@@ -1,5 +1,28 @@
 # 17-jan-2021
 
+### 10 - sorted squares 
+
+use of two points to keep a sorted list even after squaring
+
+https://leetcode.com/problems/squares-of-a-sorted-array/discuss/221922/Java-two-pointers-O(N)
+```java
+public int[] sortedSquares(int[] A) {
+        int n = A.length;
+        int[] result = new int[n];
+        int i = 0, j = n - 1;
+        for (int p = n - 1; p >= 0; p--) {
+            if (Math.abs(A[i]) > Math.abs(A[j])) {
+                result[p] = A[i] * A[i];
+                i++;
+            } else {
+                result[p] = A[j] * A[j];
+                j--;
+            }
+        }
+        return result;
+    }
+```
+
 ### 9 - invert binary tree iterative
 
 https://leetcode.com/problems/invert-binary-tree/discuss/62714/3-4-lines-Python
