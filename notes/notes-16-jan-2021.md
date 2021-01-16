@@ -5,6 +5,8 @@
 minimum number of ranges to remove to make the set non-overlapping
 https://www.geeksforgeeks.org/minimum-removals-required-to-make-ranges-non-overlapping/
 
+merge overlapping intervals problem can also be solved in similar sorted approach
+
 ```python
 def minRemovels(ranges):
 
