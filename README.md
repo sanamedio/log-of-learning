@@ -7,10 +7,11 @@
                    |___/                                                                   |___/
         
 
-[ 1014 ]
+[ 1015 ]
 
 | LINK |
 |------|
+|[Climbing stairs](https://github.com/l0k3ndr/log-of-learning/blob/master/notes/notes-17-jan-2021.md#2---climbing-stairs) |
 |[Find numbers missing from array](https://github.com/l0k3ndr/log-of-learning/blob/master/notes/notes-17-jan-2021.md#1---find-numbers-missing-from-array) |
 |[Running median](https://github.com/l0k3ndr/log-of-learning/blob/master/notes/notes-16-jan-2021.md#3---running-median) |
 |[Making ranges non-overlapping](https://github.com/l0k3ndr/log-of-learning/blob/master/notes/notes-16-jan-2021.md#2---making-ranges-non-overlapping) |
