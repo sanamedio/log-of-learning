@@ -7,10 +7,11 @@
                    |___/                                                                   |___/
         
 
-[ 1012 ]
+[ 1013 ]
 
 | LINK |
 |------|
+|[Running median](https://github.com/l0k3ndr/log-of-learning/blob/master/notes/notes-16-jan-2021.md#3---running-median) |
 |[Making ranges non-overlapping](https://github.com/l0k3ndr/log-of-learning/blob/master/notes/notes-16-jan-2021.md#2---making-ranges-non-overlapping) |
 |[Finding longest streak from an array](https://github.com/l0k3ndr/log-of-learning/blob/master/notes/notes-16-jan-2021.md#1---finding-longest-streak-from-an-array) |
 |[Copy postings list](https://github.com/l0k3ndr/log-of-learning/blob/master/notes/notes-15-jan-2021.md#26---copy-postings-list) |
