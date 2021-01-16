@@ -1,5 +1,20 @@
 # 17-jan-2021
 
+### 9 - invert binary tree iterative
+
+https://leetcode.com/problems/invert-binary-tree/discuss/62714/3-4-lines-Python
+
+```python
+def invertTree(self, root):
+    stack = [root]
+    while stack:
+        node = stack.pop()
+        if node:
+            node.left, node.right = node.right, node.left
+            stack += node.left, node.right
+    return root
+```
+
 ### 8 - adding comma separated values to list
 
 probably it's converting the rhs to tuple first and then iterating, but seemed very weird for first time
