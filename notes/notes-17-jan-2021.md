@@ -1,8 +1,28 @@
 # 17-jan-2021
 
+### 11 - backspaced strings compare
+
+liked how reduce is used to apply backspace operation to both strings
+https://leetcode.com/problems/backspace-string-compare/discuss/135603/JavaC%2B%2BPython-O(N)-time-and-O(1)-space
+
+```
+# $ denotes deletion operation
+def backspaceCompare(self, S, T):
+        def back(res, c):
+            if c != '#': res.append(c)
+            elif res: res.pop()
+            return res
+return reduce(back, S, []) == reduce(back, T, [])
+```
+
+
 ### 10 - sorted squares 
 
 use of two points to keep a sorted list even after squaring
+
+initial input can be -2, -1, 3 , 4
+
+output will be like 1 3 4 4
 
 https://leetcode.com/problems/squares-of-a-sorted-array/discuss/221922/Java-two-pointers-O(N)
 ```java
