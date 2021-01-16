@@ -7,10 +7,11 @@
                    |___/                                                                   |___/
         
 
-[ 1015 ]
+[ 1016 ]
 
 | LINK |
 |------|
+|[Divide and conquer approach for maxsubarraysum](https://github.com/l0k3ndr/log-of-learning/blob/master/notes/notes-17-jan-2021.md#3---divide-and-conquer-approach-for-maxsubarraysum) |
 |[Climbing stairs](https://github.com/l0k3ndr/log-of-learning/blob/master/notes/notes-17-jan-2021.md#2---climbing-stairs) |
 |[Find numbers missing from array](https://github.com/l0k3ndr/log-of-learning/blob/master/notes/notes-17-jan-2021.md#1---find-numbers-missing-from-array) |
 |[Running median](https://github.com/l0k3ndr/log-of-learning/blob/master/notes/notes-16-jan-2021.md#3---running-median) |
