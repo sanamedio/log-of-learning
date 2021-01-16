@@ -1,5 +1,15 @@
 # 17-jan-2021
 
+### 15 - matrix spiral order
+
+this is so elegant one-liner in python
+https://leetcode.com/problems/spiral-matrix/discuss/20571/1-liner-in-Python-%2B-Ruby
+
+```python
+def spiralOrder(self, matrix):
+    return matrix and [*matrix.pop(0)] + self.spiralOrder([*zip(*matrix)][::-1])
+```
+
 ### 14 - set row col zero
 
 set-matrix-zero from leetcode
