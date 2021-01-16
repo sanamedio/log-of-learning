@@ -1,5 +1,34 @@
 # 17-jan-2021
 
+### 17 - subset sum while removing duplicates
+
+sorting plus handling duplicates reduces the memory usage. no need of separate set to avoid overcounting
+
+https://leetcode.com/problems/combination-sum-ii/discuss/16944/Beating-98-Python-solution-using-recursion-with-comments
+
+```python
+def combinationSum2(self, candidates, target):
+    candidates.sort()                      
+    result = []
+    self.combine_sum_2(candidates, 0, [], result, target)
+    return result
+    
+def combine_sum_2(self, nums, start, path, result, target):
+    if not target:
+        result.append(path)
+        return
+    
+    for i in xrange(start, len(nums)):
+        if i > start and nums[i] == nums[i - 1]:
+            continue
+
+        if nums[i] > target:
+            break
+
+        self.combine_sum_2(nums, i + 1, path + [nums[i]], 
+                           result, target - nums[i])
+```
+
 ### 16 - rotating matrix in different ways
 
 https://leetcode.com/problems/rotate-image/discuss/18884/Seven-Short-Solutions-(1-to-7-lines)
