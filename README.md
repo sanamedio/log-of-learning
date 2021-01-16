@@ -11,6 +11,7 @@
 
 | LINK |
 |------|
+|[Find numbers missing from array](https://github.com/l0k3ndr/log-of-learning/blob/master/notes/notes-17-jan-2021.md#1---find-numbers-missing-from-array) |
 |[Running median](https://github.com/l0k3ndr/log-of-learning/blob/master/notes/notes-16-jan-2021.md#3---running-median) |
 |[Making ranges non-overlapping](https://github.com/l0k3ndr/log-of-learning/blob/master/notes/notes-16-jan-2021.md#2---making-ranges-non-overlapping) |
 |[Finding longest streak from an array](https://github.com/l0k3ndr/log-of-learning/blob/master/notes/notes-16-jan-2021.md#1---finding-longest-streak-from-an-array) |
@@ -273,7 +274,6 @@
 |[Patching patch and mock](https://github.com/l0k3ndr/log-of-learning/blob/master/notes/notes-30-jan-2020.md#1---patching-patch-and-mock) |
 |[Mocking library functions](https://github.com/l0k3ndr/log-of-learning/blob/master/notes/notes-26-jan-2020.md#2---mocking-library-functions) |
 |[Python mocks](https://github.com/l0k3ndr/log-of-learning/blob/master/notes/notes-26-jan-2020.md#1---python-mocks) |
-|[Find numbers missing from array](https://github.com/l0k3ndr/log-of-learning/blob/master/notes/notes-17-jan-2020.md#1---find-numbers-missing-from-array) |
 |[Fileinput for multiple file reading](https://github.com/l0k3ndr/log-of-learning/blob/master/notes/notes-15-jan-2020.md#7---fileinput-for-multiple-file-reading) |
 |[Dircmp to compare directory structures](https://github.com/l0k3ndr/log-of-learning/blob/master/notes/notes-15-jan-2020.md#6---dircmp-to-compare-directory-structures) |
 |[Cprofile usage to identify performance bottlenecks](https://github.com/l0k3ndr/log-of-learning/blob/master/notes/notes-15-jan-2020.md#5---cprofile-usage-to-identify-performance-bottlenecks) |
