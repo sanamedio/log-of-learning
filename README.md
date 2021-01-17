@@ -7,10 +7,11 @@
                    |___/                                                                   |___/
         
 
-[ 1037 ]
+[ 1038 ]
 
 | LINK |
 |------|
+|[Kth smallest element in sorted matrix with bs](https://github.com/l0k3ndr/log-of-learning/blob/master/notes/notes-17-jan-2021.md#26---kth-smallest-element-in-sorted-matrix-with-bs) |
 |[Reversing a sub-linkedlist](https://github.com/l0k3ndr/log-of-learning/blob/master/notes/notes-17-jan-2021.md#25---reversing-a-sub-linkedlist) |
 |[Sort a linked list](https://github.com/l0k3ndr/log-of-learning/blob/master/notes/notes-17-jan-2021.md#24---sort-a-linked-list) |
 |[Buy and sell stocks with cooldown](https://github.com/l0k3ndr/log-of-learning/blob/master/notes/notes-17-jan-2021.md#23---buy-and-sell-stocks-with-cooldown) |
