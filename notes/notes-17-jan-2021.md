@@ -1,5 +1,121 @@
 # 17-jan-2021
 
+### 24 - sort a linked list
+
+merge sort on linked list
+
+but this isn't O(1) extra space solution. Recursion itself takes O(logn) space
+
+```java
+class Solution {
+public:
+    ListNode* sortList(ListNode* head) {
+        if (!head || !head->next)
+            return head;
+        ListNode* mid = getMid(head);
+        ListNode* left = sortList(head);
+        ListNode* right = sortList(mid);
+        return merge(left, right);
+    }
+
+    ListNode* merge(ListNode* list1, ListNode* list2) {
+        ListNode dummyHead(0);
+        ListNode* ptr = &dummyHead;
+        while (list1 && list2) {
+            if (list1->val < list2->val) {
+                ptr->next = list1;
+                list1 = list1->next;
+            } else {
+                ptr->next = list2;
+                list2 = list2->next;
+            }
+            ptr = ptr->next;
+        }
+        if(list1) ptr->next = list1;
+        else ptr->next = list2;
+
+        return dummyHead.next;
+    }
+
+    ListNode* getMid(ListNode* head) {
+        ListNode* midPrev = nullptr;
+        while (head && head->next) {
+            midPrev = (midPrev == nullptr) ? head : midPrev->next;
+            head = head->next->next;
+        }
+        ListNode* mid = midPrev->next;
+        midPrev->next = nullptr;
+        return mid;
+    }
+};
+
+```
+
+this is constant extra space code
+https://leetcode.com/problems/sort-list/discuss/46712/Bottom-to-up(not-recurring)-with-o(1)-space-complextity-and-o(nlgn)-time-complextity
+
+```java
+
+class Solution {
+public:
+	ListNode *sortList(ListNode *head) {
+		if(!head || !(head->next)) return head;
+		
+		//get the linked list's length
+		ListNode* cur = head;
+		int length = 0;
+		while(cur){
+			length++;
+			cur = cur->next;
+		}
+		
+		ListNode dummy(0);
+		dummy.next = head;
+		ListNode *left, *right, *tail;
+		for(int step = 1; step < length; step <<= 1){
+			cur = dummy.next;
+			tail = &dummy;
+			while(cur){
+				left = cur;
+				right = split(left, step);
+				cur = split(right,step);
+				tail = merge(left, right, tail);
+			}
+		}
+		return dummy.next;
+	}
+private:
+	ListNode* split(ListNode *head, int n){
+		//if(!head) return NULL;
+		for(int i = 1; head && i < n; i++) head = head->next;
+		
+		if(!head) return NULL;
+		ListNode *second = head->next;
+		head->next = NULL;
+		return second;
+	}
+	ListNode* merge(ListNode* l1, ListNode* l2, ListNode* head){
+		ListNode *cur = head;
+		while(l1 && l2){
+			if(l1->val > l2->val){
+				cur->next = l2;
+				cur = l2;
+				l2 = l2->next;
+			}
+			else{
+				cur->next = l1;
+				cur = l1;
+				l1 = l1->next;
+			}
+		}
+		cur->next = (l1 ? l1 : l2);
+		while(cur->next) cur = cur->next;
+		return cur;
+	}
+};
+```
+
+
 ### 23 - buy and sell stocks with cooldown
 
 you cant do multiple buy sells at the same day, but can do after a cooldown
