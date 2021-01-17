@@ -1,5 +1,33 @@
 # 17-jan-2021
 
+### 23 - buy and sell stocks with cooldown
+
+you cant do multiple buy sells at the same day, but can do after a cooldown
+the approach this author has presented is quite good, by thinking the problem as of a state machine
+arent all kind of such problems a state machine which can be the iterative blueprint for DP
+
+https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-cooldown/discuss/75928/Share-my-DP-solution-(By-State-Machine-Thinking)
+
+```python
+def maxProfit(prices){
+    if (len(prices) <= 1) return 0;
+    s0 = [0 for _ in range(len(prices))
+    s1 = [0 for _ in range(len(prices))
+    s2 = [0 for _ in range(len(prices))
+    s1[0] = -prices[0];
+    s0[0] = 0;
+    s2[0] = INT_MIN;
+    for i in range(len(prices)):
+        s0[i] = max(s0[i - 1], s2[i - 1])
+        s1[i] = max(s1[i - 1], s0[i - 1] - prices[i])
+        s2[i] = s1[i - 1] + prices[i]
+    
+    return max(s0[prices.__len__ - 1], s2[prices.__len__ - 1])
+
+
+```
+
+
 ### 22 - can partition k subsets
 
 https://leetcode.com/problems/partition-to-k-equal-sum-subsets/solution/
