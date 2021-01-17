@@ -7,10 +7,11 @@
                    |___/                                                                   |___/
         
 
-[ 1038 ]
+[ 1039 ]
 
 | LINK |
 |------|
+|[K pairs with smallest sum](https://github.com/l0k3ndr/log-of-learning/blob/master/notes/notes-17-jan-2021.md#27---k-pairs-with-smallest-sum) |
 |[Kth smallest element in sorted matrix with bs](https://github.com/l0k3ndr/log-of-learning/blob/master/notes/notes-17-jan-2021.md#26---kth-smallest-element-in-sorted-matrix-with-bs) |
 |[Reversing a sub-linkedlist](https://github.com/l0k3ndr/log-of-learning/blob/master/notes/notes-17-jan-2021.md#25---reversing-a-sub-linkedlist) |
 |[Sort a linked list](https://github.com/l0k3ndr/log-of-learning/blob/master/notes/notes-17-jan-2021.md#24---sort-a-linked-list) |
