@@ -7,10 +7,11 @@
                    |___/                                                                   |___/
         
 
-[ 1031 ]
+[ 1032 ]
 
 | LINK |
 |------|
+|[Count palindromic substrings](https://github.com/l0k3ndr/log-of-learning/blob/master/notes/notes-17-jan-2021.md#20---count-palindromic-substrings) |
 |[Longest increasing subsequence fast](https://github.com/l0k3ndr/log-of-learning/blob/master/notes/notes-17-jan-2021.md#19---longest-increasing-subsequence-fast) |
 |[Maximum product subarray](https://github.com/l0k3ndr/log-of-learning/blob/master/notes/notes-17-jan-2021.md#18---maximum-product-subarray) |
 |[Subset sum while removing duplicates](https://github.com/l0k3ndr/log-of-learning/blob/master/notes/notes-17-jan-2021.md#17---subset-sum-while-removing-duplicates) |
