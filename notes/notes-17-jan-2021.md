@@ -1,5 +1,26 @@
 # 17-jan-2021
 
+### 19 - LIS nlogn
+
+https://www.youtube.com/watch?v=1RpMc3fv0y4
+
+```python
+def lengthOfLIS(self, nums):
+    tails = [0] * len(nums)
+    size = 0
+    for x in nums:
+        i, j = 0, size
+        while i != j:
+            m = (i + j) / 2
+            if tails[m] < x:
+                i = m + 1
+            else:
+                j = m
+        tails[i] = x
+        size = max(i + 1, size)
+    return size
+```
+
 ### 18 - maximum product subarray
 
 https://leetcode.com/problems/maximum-product-subarray/discuss/48230/Possibly-simplest-solution-with-O(n)-time-complexity
