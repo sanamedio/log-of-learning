@@ -7,10 +7,11 @@
                    |___/                                                                   |___/
         
 
-[ 1040 ]
+[ 1041 ]
 
 | LINK |
 |------|
+|[First missing positive integer](https://github.com/l0k3ndr/log-of-learning/blob/master/notes/notes-17-jan-2021.md#29---first-missing-positive-integer) |
 |[Intersection of two range sets](https://github.com/l0k3ndr/log-of-learning/blob/master/notes/notes-17-jan-2021.md#28---intersection-of-two-range-sets) |
 |[K pairs with smallest sum](https://github.com/l0k3ndr/log-of-learning/blob/master/notes/notes-17-jan-2021.md#27---k-pairs-with-smallest-sum) |
 |[Kth smallest element in sorted matrix with bs](https://github.com/l0k3ndr/log-of-learning/blob/master/notes/notes-17-jan-2021.md#26---kth-smallest-element-in-sorted-matrix-with-bs) |
