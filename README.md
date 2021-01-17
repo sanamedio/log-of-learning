@@ -7,10 +7,11 @@
                    |___/                                                                   |___/
         
 
-[ 1030 ]
+[ 1031 ]
 
 | LINK |
 |------|
+|[Lis nlogn](https://github.com/l0k3ndr/log-of-learning/blob/master/notes/notes-17-jan-2021.md#19---lis-nlogn) |
 |[Maximum product subarray](https://github.com/l0k3ndr/log-of-learning/blob/master/notes/notes-17-jan-2021.md#18---maximum-product-subarray) |
 |[Subset sum while removing duplicates](https://github.com/l0k3ndr/log-of-learning/blob/master/notes/notes-17-jan-2021.md#17---subset-sum-while-removing-duplicates) |
 |[Rotating matrix in different ways](https://github.com/l0k3ndr/log-of-learning/blob/master/notes/notes-17-jan-2021.md#16---rotating-matrix-in-different-ways) |
