@@ -1,6 +1,6 @@
 # 17-jan-2021
 
-### 19 - LIS nlogn
+### 19 - Longest Increasing Subsequence fast
 
 https://www.youtube.com/watch?v=1RpMc3fv0y4
 
