@@ -1,6 +1,6 @@
 # 17-jan-2021
 
-### 28 - intersection of two ranges
+### 28 - intersection of two range sets
 
 https://leetcode.com/problems/interval-list-intersections/discuss/647482/Python-Two-Pointer-Approach-%2B-Thinking-Process-Diagrams
 
