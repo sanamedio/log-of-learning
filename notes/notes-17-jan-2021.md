@@ -1,5 +1,25 @@
 # 17-jan-2021
 
+### 29 - first missing positive integer
+
+this is interesting because of the trick to store information of frequency without losing original information
+
+```python
+def firstMissingPositive(self, nums):
+    nums.append(0)
+    n = len(nums)
+    for i in range(len(nums)): #delete those useless elements
+        if nums[i]<0 or nums[i]>=n:
+            nums[i]=0
+    for i in range(len(nums)): #use the index as the hash to record the frequency of each number
+        nums[nums[i]%n]+=n
+    for i in range(1,len(nums)):
+        if nums[i]/n==0:
+            return i
+    return n
+```
+
+
 ### 28 - intersection of two range sets
 
 https://leetcode.com/problems/interval-list-intersections/discuss/647482/Python-Two-Pointer-Approach-%2B-Thinking-Process-Diagrams
