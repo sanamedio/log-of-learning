@@ -7,10 +7,11 @@
                    |___/                                                                   |___/
         
 
-[ 1039 ]
+[ 1040 ]
 
 | LINK |
 |------|
+|[Intersection of two ranges](https://github.com/l0k3ndr/log-of-learning/blob/master/notes/notes-17-jan-2021.md#28---intersection-of-two-ranges) |
 |[K pairs with smallest sum](https://github.com/l0k3ndr/log-of-learning/blob/master/notes/notes-17-jan-2021.md#27---k-pairs-with-smallest-sum) |
 |[Kth smallest element in sorted matrix with bs](https://github.com/l0k3ndr/log-of-learning/blob/master/notes/notes-17-jan-2021.md#26---kth-smallest-element-in-sorted-matrix-with-bs) |
 |[Reversing a sub-linkedlist](https://github.com/l0k3ndr/log-of-learning/blob/master/notes/notes-17-jan-2021.md#25---reversing-a-sub-linkedlist) |
