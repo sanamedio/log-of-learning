@@ -1,5 +1,35 @@
 # 17-jan-2021
 
+### 22 - can partition k subsets
+
+https://leetcode.com/problems/partition-to-k-equal-sum-subsets/solution/
+```python
+class Solution(object):
+    def canPartitionKSubsets(self, nums, k):
+        target, rem = divmod(sum(nums), k)
+        if rem: return False
+
+        def search(groups):
+            if not nums: return True
+            v = nums.pop()
+            for i, group in enumerate(groups):
+                if group + v <= target:
+                    groups[i] += v
+                    if search(groups): return True
+                    groups[i] -= v
+                if not group: break
+            nums.append(v)
+            return False
+
+        nums.sort()
+        if nums[-1] > target: return False
+        while nums and nums[-1] == target:
+            nums.pop()
+            k -= 1
+
+        return search([0] * k)
+```
+
 ### 21 - using bisect with objects
 
 It has been raised as request many times within python community to add key argument to bisect, but there are good reasons to not do so. as a workaround one can add comparator to objects or just decorate them with total ordering so that the natural comparators behave as needed
