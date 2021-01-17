@@ -1,5 +1,30 @@
 # 17-jan-2021
 
+### 18 - maximum product subarray
+
+https://leetcode.com/problems/maximum-product-subarray/discuss/48230/Possibly-simplest-solution-with-O(n)-time-complexity
+
+```python
+int maxProduct(int A[], int n) {
+    int r = A[0];
+
+    for (int i = 1, imax = r, imin = r; i < n; i++) {
+        // multiplied by a negative makes big number smaller, small number bigger
+        // so we redefine the extremums by swapping them
+        if (A[i] < 0)
+            swap(imax, imin);
+
+        // max/min product for the current number is either the current number itself
+        // or the max/min by the previous number times the current one
+        imax = max(A[i], imax * A[i]);
+        imin = min(A[i], imin * A[i]);
+
+        r = max(r, imax);
+    }
+    return r;
+}
+```
+
 ### 17 - subset sum while removing duplicates
 
 sorting plus handling duplicates reduces the memory usage. no need of separate set to avoid overcounting
