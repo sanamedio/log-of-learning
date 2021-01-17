@@ -1,5 +1,39 @@
 # 17-jan-2021
 
+### 21 - using bisect with objects
+
+It has been raised as request many times within python community to add key argument to bisect, but there are good reasons to not do so. as a workaround one can add comparator to objects or just decorate them with total ordering so that the natural comparators behave as needed
+
+```python
+import bisect
+import functools
+
+@functools.total_ordering
+class MyData:
+    def __init__(self, color, number):
+        self.color = color
+        self.number = number
+
+    def __lt__(self, other):
+        return self.number < other.number
+
+    def __str__(self):
+        return "{} {}".format(self.color, self.number)
+
+
+mydatas = [
+    MyData("red", 5),
+    MyData("blue", 1),
+    MyData("yellow", 8),
+    MyData("black", 0),
+]
+mydatas_sorted = []
+for mydata in mydatas:
+    bisect.insort(mydatas_sorted, mydata)
+for mydata in mydatas_sorted:
+    print(mydata)
+```
+
 ### 20 - Count palindromic substrings
 
 generally recursive solutions are easy to think, and elegant to look at; but they are not efficient in space usage.(anybody can write elegant, but few can do efficient, and fewer can do effective.. read somewhere, but seems fitting)
