@@ -7,10 +7,11 @@
                    |___/                                                                   |___/
         
 
-[ 1035 ]
+[ 1036 ]
 
 | LINK |
 |------|
+|[Sort a linked list](https://github.com/l0k3ndr/log-of-learning/blob/master/notes/notes-17-jan-2021.md#24---sort-a-linked-list) |
 |[Buy and sell stocks with cooldown](https://github.com/l0k3ndr/log-of-learning/blob/master/notes/notes-17-jan-2021.md#23---buy-and-sell-stocks-with-cooldown) |
 |[Can partition k subsets](https://github.com/l0k3ndr/log-of-learning/blob/master/notes/notes-17-jan-2021.md#22---can-partition-k-subsets) |
 |[Using bisect with objects](https://github.com/l0k3ndr/log-of-learning/blob/master/notes/notes-17-jan-2021.md#21---using-bisect-with-objects) |
