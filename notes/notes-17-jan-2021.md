@@ -4,6 +4,8 @@
 
 https://www.youtube.com/watch?v=1RpMc3fv0y4
 
+https://leetcode.com/problems/longest-increasing-subsequence/discuss/74824/JavaPython-Binary-search-O(nlogn)-time-with-explanation
+
 ```python
 def lengthOfLIS(self, nums):
     tails = [0] * len(nums)
