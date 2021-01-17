@@ -3,6 +3,7 @@
 ### 29 - first missing positive integer
 
 this is interesting because of the trick to store information of frequency without losing original information
+https://leetcode.com/problems/first-missing-positive/discuss/17080/Python-O(1)-space-O(n)-time-solution-with-explanation
 
 ```python
 def firstMissingPositive(self, nums):
