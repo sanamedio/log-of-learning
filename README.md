@@ -7,10 +7,11 @@
                    |___/                                                                   |___/
         
 
-[ 1033 ]
+[ 1034 ]
 
 | LINK |
 |------|
+|[Can partition k subsets](https://github.com/l0k3ndr/log-of-learning/blob/master/notes/notes-17-jan-2021.md#22---can-partition-k-subsets) |
 |[Using bisect with objects](https://github.com/l0k3ndr/log-of-learning/blob/master/notes/notes-17-jan-2021.md#21---using-bisect-with-objects) |
 |[Count palindromic substrings](https://github.com/l0k3ndr/log-of-learning/blob/master/notes/notes-17-jan-2021.md#20---count-palindromic-substrings) |
 |[Longest increasing subsequence fast](https://github.com/l0k3ndr/log-of-learning/blob/master/notes/notes-17-jan-2021.md#19---longest-increasing-subsequence-fast) |
