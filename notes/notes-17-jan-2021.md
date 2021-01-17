@@ -1,5 +1,25 @@
 # 17-jan-2021
 
+### 20 - Count palindromic substrings
+
+generally recursive solutions are easy to think, and elegant to look at; but they are not efficient in space usage.(anybody can write elegant, but few can do efficient, and fewer can do effective.. read somewhere, but seems fitting)
+
+DP solution
+https://leetcode.com/problems/palindromic-substrings/discuss/105707/Java-Python-DP-solution-based-on-longest-palindromic-substring
+
+```python
+def countSubstrings(self, s: str) -> int:
+        n = len(s)
+        dp = [[0] * n for _ in range(n)]
+        
+        res = 0
+        for i in range(n-1, -1, -1):
+            for j in range(i, n):
+                dp[i][j] = s[i] == s[j] and ((j-i+1) < 3 or dp[i+1][j-1])
+                res += dp[i][j]
+        return res
+```
+
 ### 19 - Longest Increasing Subsequence fast
 
 https://www.youtube.com/watch?v=1RpMc3fv0y4
