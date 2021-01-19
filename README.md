@@ -7,10 +7,12 @@
                    |___/                                                                   |___/
         
 
-[ 1043 ]
+[ 1045 ]
 
 | LINK |
 |------|
+|[Locate smallest window to be sorted](https://github.com/l0k3ndr/log-of-learning/blob/master/notes/notes-19-jan-2021.md#4---locate-smallest-window-to-be-sorted) |
+|[Number of smaller elements to the right](https://github.com/l0k3ndr/log-of-learning/blob/master/notes/notes-19-jan-2021.md#3---number-of-smaller-elements-to-the-right) |
 |[Max circular subarray with wraparound](https://github.com/l0k3ndr/log-of-learning/blob/master/notes/notes-19-jan-2021.md#2---max-circular-subarray-with-wraparound) |
 |[Datetime combine](https://github.com/l0k3ndr/log-of-learning/blob/master/notes/notes-19-jan-2021.md#1---datetime-combine) |
 |[First missing positive integer](https://github.com/l0k3ndr/log-of-learning/blob/master/notes/notes-17-jan-2021.md#29---first-missing-positive-integer) |
