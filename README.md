@@ -7,10 +7,12 @@
                    |___/                                                                   |___/
         
 
-[ 1045 ]
+[ 1047 ]
 
 | LINK |
 |------|
+|[Fakeuseragent](https://github.com/l0k3ndr/log-of-learning/blob/master/notes/notes-14-jul-2021.md#2---fakeuseragent) |
+|[Nth multiple in fibonacci](https://github.com/l0k3ndr/log-of-learning/blob/master/notes/notes-14-jul-2021.md#1---nth-multiple-in-fibonacci) |
 |[Locate smallest window to be sorted](https://github.com/l0k3ndr/log-of-learning/blob/master/notes/notes-19-jan-2021.md#4---locate-smallest-window-to-be-sorted) |
 |[Number of smaller elements to the right](https://github.com/l0k3ndr/log-of-learning/blob/master/notes/notes-19-jan-2021.md#3---number-of-smaller-elements-to-the-right) |
 |[Max circular subarray with wraparound](https://github.com/l0k3ndr/log-of-learning/blob/master/notes/notes-19-jan-2021.md#2---max-circular-subarray-with-wraparound) |
