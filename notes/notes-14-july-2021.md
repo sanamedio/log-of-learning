@@ -1,4 +1,16 @@
-# 14-july-2021
+# 14-jul-2021
+
+### 2 - fakeuseragent
+
+simplified library to fake user agents
+
+```python
+import requests
+from fake_useragent import UserAgent
+ua = UserAgent()
+header = {'User-Agent':str(ua.chrome)}
+response = requests.get(url, headers=header)
+```
 
 ### 1 - nth multiple in fibonacci
 
